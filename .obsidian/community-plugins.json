@@ -9,5 +9,6 @@
   "cm-editor-syntax-highlight-obsidian",
   "execute-code",
   "obsidian-style-settings",
-  "obsidian-local-rest-api"
+  "obsidian-local-rest-api",
+  "obsidian-git"
 ]
