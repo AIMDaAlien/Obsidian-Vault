@@ -1,0 +1,5 @@
+- Buy or make your own router
+- Get a mesh wifi something like "TP-Link Deco AX 1800"
+- You'll want to get a switch with 8-16 ports for when you get smart home devices
+- Aug 29 2025 -- Got a TP-Link Archer AX 3000 Wifi 6 Router
+- Wifi 7 seems really powerful but I don't pay for beefy Wifi so unless I'm futureproofing, it's not very useful right now

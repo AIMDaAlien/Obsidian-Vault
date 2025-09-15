@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: nucvq-vgamz
+created: 2025-06-02T17:00:32-04:00
