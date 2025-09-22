@@ -18,7 +18,7 @@
 3. **Tertiary**: Professional reviews, YouTube demos
 4. **Avoid**: Sponsored content, affiliate marketing sites
 
-### Red Flag Detection
+### Red Flags
 - No mention of specific device compatibility
 - Only positive reviews (fake review farms)
 - Vague technical specifications
@@ -26,7 +26,7 @@
 
 ## Effective Research Tactics
 
-### Technical Documentation Deep Dive
+### Technical Documentation
 - Search for actual implementation details
 - Look for protocol specifications
 - Check compatibility matrices
@@ -61,7 +61,6 @@
 - Verify claims with independent testing
 
 ### Hardware Compatibility
-- Test return policies before purchasing
 - Check specific OS version compatibility
 - Verify driver availability and update frequency
 - Research long-term support commitments
