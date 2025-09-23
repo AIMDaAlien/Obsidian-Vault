@@ -67,14 +67,10 @@
             "id": "d7820fa16ca0c4f9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homelab/Pi-hole Setup Guide - Complete Journey.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pi-hole Setup Guide - Complete Journey"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -241,8 +237,8 @@
   },
   "active": "d7820fa16ca0c4f9",
   "lastOpenFiles": [
-    "Learning/Troubleshooting Lessons Learned.md",
     "Homelab/Pi-hole Setup Guide - Complete Journey.md",
+    "Learning/Troubleshooting Lessons Learned.md",
     "Homelab",
     "Learning/Privacy Hardening Journey.md",
     "Learning/Performance Comparison Methods.md",

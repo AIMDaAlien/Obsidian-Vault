@@ -21,11 +21,27 @@
 - **Power supply** (5V, 2.5A minimum)
 - **Heatsink** (recommended for 24/7 operation)
 
-### Why Pi 3 B+ Instead of Pi 5?
-- **Cost-effective**: $35-40 vs $65-100
-- **Power efficient**: 2-5W vs 5-12W consumption
-- **Adequate performance**: Pi-hole uses only 5-15% CPU on Pi 3 B+
-- **No active cooling needed**: Pi 5 requires a fan for 24/7 operation
+### The Initial Question
+
+"I want to get a raspberry pi but not sure which device would be the best for my use case. I just want to use Pi-hole for ad blocking and maybe more privacy features."
+
+### Models Considered
+
+1. **Raspberry Pi Zero 2 W** (~$15)
+    - ✅ Ultra budget-friendly
+    - ❌ WiFi only, no Ethernet
+    - ❌ Limited expansion
+2. **Raspberry Pi 3 B+** (~$35-40) ← **CHOSEN**
+    - ✅ Perfect for Pi-hole
+    - ✅ Gigabit Ethernet
+    - ✅ Low power usage
+    - ✅ 1GB RAM sufficient for multiple services
+3. **Raspberry Pi 4 B** (~$55-75)
+    - ✅ Future-proof
+    - ❌ Overkill for just Pi-hole
+4. **Raspberry Pi 5** (~$80-100)
+    - ❌ Excessive for this use case
+    - ❌ Requires active cooling
 
 ---
 
@@ -63,9 +79,9 @@ This gives you effectively Lite OS but with working ethernet drivers.
 
 ## Initial Configuration
 
-### Problem 2: Keyboard Layout Issues
+### Personal Problem 2: Keyboard Layout Issues
 
-**Issue:** Pipe symbol (|) appearing as tilde (~), making command entry difficult
+**Issue:** Pipe symbol (|) appearing as tilde (~), making command entry difficult. Found out the default setting for locale was set to en_GB (British) so I had to set it to en_US.
 
 **Solution 1 - Via raspi-config:**
 ```bash
