@@ -67,14 +67,10 @@
             "id": "d7820fa16ca0c4f9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🗺️ Knowledge Base - Main Index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🗺️ Knowledge Base - Main Index"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -241,6 +237,7 @@
   },
   "active": "d7820fa16ca0c4f9",
   "lastOpenFiles": [
+    "🗺️ Knowledge Base - Main Index.md",
     "Myself/Career/Making Positive Impressions.md",
     "Learning/Performance Comparison Methods.md",
     "Career/Personal Brand & Writing.md",
@@ -261,7 +258,6 @@
     "Obsidian-Vault",
     "Obsidian-Vault-main/README.md",
     "Obsidian-Vault-main",
-    "🗺️ Knowledge Base - Main Index.md",
     "Systems/Obsidian Productivity Mastery.md",
     "Programming/Python Fundamentals.md",
     "Programming/Python Advanced Topics.md",
