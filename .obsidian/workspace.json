@@ -106,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#linux",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -127,7 +127,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -235,7 +236,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d7820fa16ca0c4f9",
+  "active": "d0ac9712e288ace8",
   "lastOpenFiles": [
     "🗺️ Knowledge Base - Main Index.md",
     "Myself/Career/Making Positive Impressions.md",
