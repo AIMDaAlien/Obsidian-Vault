@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GrapheneOS Migration Guide - Complete Documentation.md",
+                "file": "Obsidian Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GrapheneOS Migration Guide - Complete Documentation"
+              "title": "Obsidian Git"
             }
           }
         ],
@@ -241,12 +241,13 @@
   },
   "active": "d7820fa16ca0c4f9",
   "lastOpenFiles": [
+    "Programming/Python Control Flow.md",
+    "GrapheneOS Migration Guide - Complete Documentation.md",
     "Router Configuration/07 - Performance Optimization Checklist.md",
     "Router Configuration/06 - VPN Configuration.md",
     "Router Configuration/05 - ALG Settings.md",
     "Router Configuration/04 - Advanced Wireless Settings.md",
     "GrapheneOS Migration Guide - From Verizon Hell to Privacy Success.md",
-    "GrapheneOS Migration Guide - Complete Documentation.md",
     "WireGuard VPN Setup.md",
     "Router Configuration/03 - Dynamic DNS Setup.md",
     "Router Configuration/02 - DNS Configuration.md",
@@ -271,7 +272,6 @@
     "Homelab",
     "Learning/Privacy Hardening Journey.md",
     "Learning/Tech Research Strategies.md",
-    "Myself/Personal Documentation (Setting up Home Machinery)/FIRST OF ALL.md",
     "Learning",
     "Obsidian-Vault",
     "Obsidian-Vault-main",
