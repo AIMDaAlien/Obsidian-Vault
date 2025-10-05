@@ -76,21 +76,9 @@
               "icon": "lucide-file",
               "title": "Obsidian Git"
             }
-          },
-          {
-            "id": "990d765a84894fbc",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.14"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
