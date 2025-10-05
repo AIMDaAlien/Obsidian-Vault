@@ -76,9 +76,21 @@
               "icon": "lucide-file",
               "title": "Obsidian Git"
             }
+          },
+          {
+            "id": "990d765a84894fbc",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.14"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -239,8 +251,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d7820fa16ca0c4f9",
+  "active": "9a7329c7d9c63c20",
   "lastOpenFiles": [
+    "Projects/Budget SAS Drive NAS Build Guide.md",
+    "Projects",
     "Programming/Python Control Flow.md",
     "GrapheneOS Migration Guide - Complete Documentation.md",
     "Router Configuration/07 - Performance Optimization Checklist.md",
@@ -271,7 +285,6 @@
     "Learning/Troubleshooting Lessons Learned.md",
     "Homelab",
     "Learning/Privacy Hardening Journey.md",
-    "Learning/Tech Research Strategies.md",
     "Learning",
     "Obsidian-Vault",
     "Obsidian-Vault-main",
@@ -280,7 +293,6 @@
     "images/Pasted image 20230520171145.png",
     "images/asset-v1_edX+BCT-python+2T2022+type@asset+block@python-try-it-operator-meaning.png",
     "Systems",
-    "Career",
     "images/Pasted image 20230822173331.png",
     "images/Pasted image 20230621220540.png",
     "images/Pasted image 20230621215642.png",
