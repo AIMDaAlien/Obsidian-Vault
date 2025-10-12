@@ -63,10 +63,14 @@
             "id": "48a7622ff9bfecd4",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "IT Projects/Website Development/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ],
@@ -233,6 +237,8 @@
   },
   "active": "48a7622ff9bfecd4",
   "lastOpenFiles": [
+    "Learning/3D Printing Optimization Journey.md",
+    "Systems/Obsidian Productivity Mastery.md",
     "IT Projects/Website Development/README.md",
     "IT Projects/Website Development/Content/About Me Draft.md",
     "IT Projects/Website Development/Deployment/Github Pages Setup.md",
@@ -263,8 +269,6 @@
     "Router Configuration/01 - Network Connection Settings.md",
     "Router Configuration/00 - Router Optimization Index.md",
     "Router Configuration",
-    "IT Projects/Session Notes/2025-10-01 Uptime Kuma Attempt & Career Path Analysis.md",
-    "Learning/3D Printing Optimization Journey.md",
     "IT Projects/Session Notes",
     "IT Projects",
     "Untitled.base",
