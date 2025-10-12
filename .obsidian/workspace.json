@@ -58,9 +58,19 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "48a7622ff9bfecd4",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -221,8 +231,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a7329c7d9c63c20",
+  "active": "48a7622ff9bfecd4",
   "lastOpenFiles": [
+    "Privacy Filter.md",
     "Pasted image 20230618121253.png.md",
     "Learning/Tech Research Strategies.md",
     "Programming/C Programming.md",
@@ -253,7 +264,6 @@
     "Myself/Career/Making Positive Impressions.md",
     "Learning/Performance Comparison Methods.md",
     "Career/Personal Brand & Writing.md",
-    "Career/Job Search Strategy.md",
     "Homelab",
     "Learning",
     "Obsidian-Vault",
