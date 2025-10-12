@@ -1,5 +1,9 @@
 # Matrix-Decode Privacy Filter Implementation
 
+> **Tags**: #web-development #privacy #animation #javascript #css #github-pages #portfolio
+> **Related**: [[Github Pages Setup]] | [[Development Tools]] | [[About Me Draft]]
+> **Status**: ✅ Implemented & Deployed
+
 A privacy-first approach to displaying sensitive contact information with a declassification animation inspired by redacted government documents.
 
 ## Overview
@@ -239,6 +243,8 @@ The selector `#contact .contact-info` prevents interference with forms and other
 500ms delay allows page to render before applying redactions.
 
 ### GitHub Pages Deploy
+See [[Github Pages Setup]] for complete deployment instructions.
+
 1. Ensure editing `index.html` (not backup files)
 2. Check Settings → Pages → Branch set to `main`
 3. Verify commit pushed: `git log origin/main --oneline`
@@ -260,6 +266,13 @@ Chrome 120+, Firefox 120+, Safari 17+, Edge 120+
 
 Requires CSS animations, clip-path, ES6 JavaScript
 
+## Related Development Tools
+
+For Git workflow and troubleshooting, see:
+- [[Git Troubleshooting]] - Common deployment issues
+- [[Development Tools]] - Complete Git command reference
+
 ---
 
 *Created: October 2025*
+*Last Updated: October 2025*
