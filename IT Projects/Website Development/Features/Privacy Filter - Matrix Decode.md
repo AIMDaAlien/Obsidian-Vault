@@ -269,7 +269,7 @@ Requires CSS animations, clip-path, ES6 JavaScript
 ## Related Development Tools
 
 For Git workflow and troubleshooting, see:
-- [[Git Troubleshooting]] - Common deployment issues
+- [[Git Push Conflict Troubleshooting]] - Common deployment issues
 - [[Development Tools]] - Complete Git command reference
 
 ---

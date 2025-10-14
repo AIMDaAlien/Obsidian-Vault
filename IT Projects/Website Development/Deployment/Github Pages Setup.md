@@ -1,7 +1,7 @@
 # Github Pages Setup & Deployment
 
 > **Tags**: #github-pages #deployment #hosting #web-development #portfolio
-> **Related**: [[Git Troubleshooting]] | [[Privacy Filter - Matrix Decode]] | [[Development Tools]]
+> **Related**: [[Git Push Conflict Troubleshooting]] | [[Privacy Filter - Matrix Decode]] | [[Development Tools]]
 > **Status**: ✅ Configured & Active
 
 ## Overview
@@ -116,7 +116,7 @@ After pushing:
 
 ### Push Rejected
 
-See [[Git Troubleshooting]] for detailed solutions to:
+See [[Git Push Conflict Troubleshooting]] for detailed solutions to:
 - Non-fast-forward errors
 - Merge conflicts
 - Authentication issues

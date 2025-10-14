@@ -660,7 +660,7 @@ This knowledge base includes a real-world website development project that demon
 
 ### Git & GitHub Pages Workflow
 - [[Website Development/Deployment/Github Pages Setup]] - Practical deployment guide
-- [[Website Development/Deployment/Git Troubleshooting]] - Real troubleshooting scenarios
+- [[Git Push Conflict Troubleshooting]] - Real troubleshooting scenarios
 
 ### Feature Implementation
 - [[Website Development/Features/Privacy Filter - Matrix Decode]] - JavaScript + CSS implementation

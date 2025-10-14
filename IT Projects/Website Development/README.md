@@ -19,7 +19,7 @@ Website Development/
 
 ### 🚀 Deployment
 - [[Github Pages Setup]] - Hosting configuration & workflow
-- [[Git Troubleshooting]] - Common deployment issues & solutions
+- [[Git Push Conflict Troubleshooting]] - Common deployment issues & solutions
 
 ### ✍️ Content
 - [[About Me Draft]] - Bio section content planning
@@ -63,7 +63,7 @@ Website Development/
 4. Deploy via standard workflow
 
 ### Troubleshoot Deployment
-See [[Git Troubleshooting]] for:
+See [[Git Push Conflict Troubleshooting]] for:
 - Push conflicts
 - Non-fast-forward errors
 - Cache issues
