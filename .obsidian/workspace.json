@@ -53,10 +53,14 @@
             "id": "126ccb36917115a7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "IT Projects/Website Development/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ],
@@ -221,7 +225,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d6216f2f4698b1bc",
+  "active": "126ccb36917115a7",
   "lastOpenFiles": [
     "Projects/Teardown Documentation Lessons.md",
     "Meta/Claude Power User Workflow - Practical Implementation.md",
