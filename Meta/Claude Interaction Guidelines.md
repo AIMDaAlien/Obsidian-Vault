@@ -339,3 +339,126 @@ Last conversation: [brief title]
 
 ## Tags
 #claude #workflow #efficiency #token-optimization #communication-guidelines
+
+
+---
+
+## Context Navigation Pattern
+
+When user references a project or dashboard, follow this intelligent navigation pattern.
+
+### Standard Flow
+
+**User provides:** Project name or [[Active Projects Dashboard]] reference
+
+**Claude's process:**
+1. Read the referenced starting point
+2. Navigate to [[Project Name - Current State]]
+3. Read "Related Documentation" section
+4. Determine which additional notes needed
+5. Read only what's relevant to the task
+6. Begin work
+
+### Decision Logic
+
+```
+Task type determines what to read:
+
+Adding content/photos?
+  → [[Project - Content Workflow]]
+
+Code/configuration changes?
+  → [[Project - Technical Setup]]
+
+Design/styling work?
+  → [[Project - Design System]]
+
+Debugging/troubleshooting?
+  → [[Project - Troubleshooting]]
+
+Understanding project context?
+  → [[Project - Overview]]
+
+Multiple aspects?
+  → Read multiple relevant notes
+
+Uncertain what's needed?
+  → Ask user which docs would help
+```
+
+### Example Workflow
+
+**User message:**
+```
+Add RSS feed to teardown.cafe
+Context: [[Active Projects Dashboard]]
+```
+
+**Claude's navigation:**
+1. Read Active Projects Dashboard → Find Teardown Cafe
+2. Read [[Teardown Cafe - Current State]] → See related docs
+3. Determine task needs technical knowledge
+4. Read [[Teardown Cafe - Technical Setup]]
+5. Begin RSS implementation with full context
+
+**Token cost:** ~3,000 (dashboard + current + technical)
+**vs. manual listing:** ~500 (but requires user to know which notes)
+**vs. context search:** ~30,000 (loading past conversations)
+
+### Benefits of This Pattern
+
+**For user:**
+- Single reference point (dashboard or current state)
+- No need to list all relevant notes
+- No need to remember documentation structure
+- Consistent conversation starters
+
+**For Claude:**
+- Intelligent navigation
+- Read only what's needed
+- Efficient token usage
+- Full context without waste
+
+**For conversation efficiency:**
+- ~3K tokens for full context
+- 90% savings vs. context search
+- Scalable across projects
+- Self-documenting system
+
+### Edge Cases
+
+**If Current State doesn't list needed doc:**
+```
+Claude: "I've read [[Project - Current State]]. 
+        For [specific task], I may also need info about [topic].
+        Is there a note covering this?"
+
+User: "Check [[Specific Note]]"
+Claude: [Reads and proceeds]
+```
+
+**If project has no Current State:**
+```
+User: "Work on [new project]"
+Claude: "I don't see a Current State note for this project.
+        Should I create one, or is there existing documentation?"
+```
+
+### Maintenance
+
+**User responsibilities:**
+- Keep Current State "Related Documentation" section updated
+- Update dashboard when project status changes
+- Create Current State for new projects
+
+**Claude responsibilities:**
+- Navigate intelligently based on task type
+- Only read relevant documentation
+- Ask for clarification when uncertain
+- Update Current State at end of session (if user requests)
+
+---
+
+*This navigation pattern makes Claude a smart collaborator that knows where to find information, rather than a tool that needs explicit instruction.*
+
+**Updated:** October 16, 2025
