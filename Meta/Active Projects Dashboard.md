@@ -1,17 +1,16 @@
-# Active Projects Dashboard
 
-Last updated: October 16, 2025
+Last updated: October 19, 2025
 
 ---
-
 ## 🔥 Priority 1 (This Week)
 
 ### Teardown Cafe
 **Status:** Maintenance mode, ready for new content
 **Entry point:** [[Teardown Cafe - Current State]]
 **Quick context:** Device teardown website, Astro v5.14.5, Material You 3 dark theme
-**Next task:** Add new teardown content (pending photos) OR implement RSS feed
+**Next task:** Add new teardown content (pending photos) 
 **Location:** `/Users/aim/Documents/teardown-cafe/`
+3 teardowns: HP EliteBook G7 (May 2023), ThinkPad T490s (Aug 2023), Pi 5 (Oct 2025) Structure: src/data/teardowns/ (Content Layer API)
 
 ---
 
