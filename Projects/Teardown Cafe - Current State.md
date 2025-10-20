@@ -125,3 +125,35 @@ Device teardown showcase website built with Astro v5.14.5 and Material You 3 des
 ---
 
 *This note serves as the entry point for all Teardown Cafe work. Claude navigates to related docs based on task type.*
+
+
+### Completed ✅ (October 19, 2025 Session)
+- [x] Vertical progress bar with descending scroll
+- [x] SVG device icons (replacing emojis)
+- [x] Focus Mode toggle (ADHD accessibility)
+- [x] Progress bar UI refinements
+- [x] Removed DifficultyMeter from homepage
+
+
+## Recent Changes
+
+- **Oct 19, 2025:** Vertical progress bar implementation
+- **Oct 19, 2025:** SVG icons + Focus Mode toggle
+- **Oct 19, 2025:** Progress bar UI refinements
+- **Oct 19, 2025:** Removed DifficultyMeter from homepage
+- **Oct 16, 2025:** Created comprehensive Obsidian documentation suite
+- **Oct 15, 2025:** Added Raspberry Pi 5 NVMe teardown with 6 images
+- **Oct 15, 2025:** Troubleshot Astro v5 compatibility issues
+- **Oct 14, 2025:** Initial project setup with first teardown
+
+## Files Recently Modified
+
+- `src/components/VerticalProgress.astro` - New vertical progress bar
+- `src/components/DeviceIcons.astro` - SVG icon components
+- `src/components/FocusMode.astro` - ADHD accessibility toggle
+- `src/pages/index.astro` - Homepage with SVG icons
+- `src/pages/teardowns/[id].astro` - Teardown pages with vertical progress
+
+## Last Commit
+
+**Commit:** `4e27a05` - "feat: vertical progress bar (Concept 1)"
