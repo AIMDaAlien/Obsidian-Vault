@@ -176,3 +176,13 @@ Device teardown showcase website built with Astro v5.14.5 and Material You 3 des
 - [x] Official specifications documented (no hallucinations)
 - [x] Git commit: e738cb7
 - [x] Entry marked for future expansion
+
+
+### October 19, 2025 - Content Corrections
+- [x] Corrected Moto G hero image (battery → screen showing S6)
+- [x] Relocated S6 caption to opening section
+- [x] Reduced article length by removing redundant conclusion
+- [x] Adjusted difficulty context (easy-medium spectrum)
+- [x] Removed MacBook Air duplicate image
+- [x] Git commit: 5809820
+- [x] Article length optimized: ~25% shorter
