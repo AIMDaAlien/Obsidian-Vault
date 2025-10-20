@@ -157,3 +157,12 @@ Device teardown showcase website built with Astro v5.14.5 and Material You 3 des
 ## Last Commit
 
 **Commit:** `4e27a05` - "feat: vertical progress bar (Concept 1)"
+
+
+### October 19, 2025 - Evening Session
+- [x] Added Moto G Stylus 2022 screen repair entry
+- [x] Implemented HTML5 video support (self-hosted, privacy-first)
+- [x] Updated content schema with optional video field  
+- [x] Added Material You video styling to teardown pages
+- [x] 4 repair images + 1 video, all EXIF stripped
+- [x] Git commit: cb04030
