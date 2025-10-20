@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Active Projects Dashboard.md",
+                "file": "Projects/Teardown Cafe - Current State.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Projects Dashboard"
+              "title": "Teardown Cafe - Current State"
             }
           }
         ],
@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -198,12 +197,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d0ac9712e288ace8",
+  "active": "126ccb36917115a7",
   "lastOpenFiles": [
+    "Meta/Active Projects Dashboard.md",
     "Projects/Teardown Cafe - Context Prompt.md",
     "Projects/Teardown Cafe - Building Material You 3 Website Lessons.md",
     "Projects/Teardown Cafe - Current State.md",
-    "Meta/Active Projects Dashboard.md",
     "Myself/Personal Documentation (Setting up Home Machinery)/CPU Architectures.md",
     "Computer Related Stuff/Operating Systems/Linux/Basic Commands in the Starting Terminal.md",
     "Myself/Personal Documentation (Setting up Home Machinery)/Home Lab.md",
