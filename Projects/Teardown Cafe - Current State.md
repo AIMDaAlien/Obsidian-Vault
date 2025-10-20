@@ -186,3 +186,14 @@ Device teardown showcase website built with Astro v5.14.5 and Material You 3 des
 - [x] Removed MacBook Air duplicate image
 - [x] Git commit: 5809820
 - [x] Article length optimized: ~25% shorter
+
+
+### October 19, 2025 - Image Enhancement Session
+- [x] HP EliteBook 840 G7: Added frankenstein AIO final product image
+- [x] Created "The Final Product" conclusion section
+- [x] MacBook Air 2015: Added NVMe adapter installation image
+- [x] Created "SSD Upgrade Considerations" section
+- [x] Documented 15% adapter speed penalty
+- [x] Noted potential OEM performance advantage despite reduction
+- [x] Both images EXIF sanitized
+- [x] Git commit: 38a9d32
