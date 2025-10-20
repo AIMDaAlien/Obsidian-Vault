@@ -166,3 +166,13 @@ Device teardown showcase website built with Astro v5.14.5 and Material You 3 des
 - [x] Added Material You video styling to teardown pages
 - [x] 4 repair images + 1 video, all EXIF stripped
 - [x] Git commit: cb04030
+
+
+### October 19, 2025 - Late Evening Session
+- [x] Added caption to Moto G hero photo (Samsung Galaxy S6 reference)
+- [x] Created MacBook Air 2015 13" entry
+- [x] 3 MacBook Air images organized and EXIF stripped
+- [x] Researched firmware update requirements (High Sierra 10.13+)
+- [x] Official specifications documented (no hallucinations)
+- [x] Git commit: e738cb7
+- [x] Entry marked for future expansion
