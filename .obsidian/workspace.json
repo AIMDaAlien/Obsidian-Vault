@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Teardown Cafe - Current State.md",
+                "file": "Projects/Teardown Cafe - TrueNAS Build Entry.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teardown Cafe - Current State"
+              "title": "Teardown Cafe - TrueNAS Build Entry"
             }
           }
         ],
@@ -199,17 +199,17 @@
   },
   "active": "126ccb36917115a7",
   "lastOpenFiles": [
+    "Projects/Teardown Cafe - Current State.md",
+    "Projects/Teardown Documentation Lessons.md",
     "Meta/Active Projects Dashboard.md",
     "Projects/Teardown Cafe - Context Prompt.md",
     "Projects/Teardown Cafe - Building Material You 3 Website Lessons.md",
-    "Projects/Teardown Cafe - Current State.md",
     "Myself/Personal Documentation (Setting up Home Machinery)/CPU Architectures.md",
     "Computer Related Stuff/Operating Systems/Linux/Basic Commands in the Starting Terminal.md",
     "Myself/Personal Documentation (Setting up Home Machinery)/Home Lab.md",
     "Projects/Teardown Cafe - TrueNAS Build Entry.md",
     "IT Projects/Website Development/README.md",
     "Technology/Homelab/Prometheus Grafana Stack - Implementation Guide.md",
-    "Projects/Teardown Documentation Lessons.md",
     "Meta/Claude Power User Workflow - Practical Implementation.md",
     "Meta/Claude Power User Workflow - Quick Reference.md",
     "Meta/Maximizing Claude Conversations - Token Optimization.md",
