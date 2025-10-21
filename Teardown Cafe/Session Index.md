@@ -4,16 +4,17 @@
 
 ## Recent Sessions
 
+- **2025-10-21 1557-cursor** - [cursor session](/Users/aim/Documents/Obsidian Notes Vault/Teardown Cafe/Sessions/2025-10-21-1557-cursor-session.md)
 - **2025-10-21 1556-cursor** - [cursor session](/Users/aim/Documents/Obsidian Notes Vault/Teardown Cafe/Sessions/2025-10-21-1556-cursor-session.md)
 
 ## Session Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total Sessions | 1 |
+| Total Sessions | 2 |
 | Claude Sessions | 0 |
-| Cursor Sessions | 1 |
-| Last Updated | October 21, 2025 at 03:56 PM |
+| Cursor Sessions | 2 |
+| Last Updated | October 21, 2025 at 03:57 PM |
 
 ## Quick Actions
 
@@ -22,4 +23,4 @@
 - [[simple-workflow-guide]] - Usage guide
 
 ---
-*Auto-generated at 03:56 PM*
+*Auto-generated at 03:57 PM*
