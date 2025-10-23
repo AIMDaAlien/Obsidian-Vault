@@ -197,3 +197,146 @@ Device teardown showcase website built with Astro v5.14.5 and Material You 3 des
 - [x] Noted potential OEM performance advantage despite reduction
 - [x] Both images EXIF sanitized
 - [x] Git commit: 38a9d32
+---
+tags: [teardown-cafe, project-status, current-state]
+updated: 2025-10-20
+---
+
+# Teardown Cafe - Current State
+
+**Last Updated:** October 20, 2025  
+**Live Site:** https://teardown-cafe.vercel.app  
+**Repository:** https://github.com/AIMDaAlien/teardown-cafe  
+**Tech Stack:** Astro v5.14.5, Material You 3 Design System
+
+## Recent Session Summary (Oct 20, 2025)
+
+### What Got Built
+1. **Related Teardowns Component** - Smart filtering by device type
+2. **Progressive Image Loading** - Blur-up technique for better UX
+3. **Device Type Pages** - `/device/[type]` routes with 8 categories
+4. **Plausible Analytics** - Privacy-friendly tracking
+5. **Theme Toggle** - Light/dark mode switcher
+6. **3D Prints Gallery POCs** - Grid and timeline views (not yet populated)
+7. **Obsidian Integration** - Automated tag matching system
+8. **About Page Rewrite** - Solo hobbyist voice, privacy emphasis
+
+### Current Teardown Entries (9 total)
+1. Raspberry Pi 5 NVMe Build
+2. ThinkPad T490s Under the Hood
+3. HP EliteBook 840 G7 Frankenstein AIO
+4. MacBook Air 2015 13-inch
+5. Moto G Stylus 2022 Screen Repair
+6. TrueNAS Enterprise SAS Build
+7. Bambu Lab A1 Mini Setup (Aug 27, 2025)
+8. Bambu Lab A1 Combo Upgrade (Sept 13, 2025)
+9. MacBook Pro 2010 OS Upgrades (Lion → Sequoia)
+
+### Pending Implementation (Specs Created)
+- **Image Optimization:** Vercel image caching via `@astrojs/vercel/image`
+- **Styling Fixes:** 
+  - Circuit accent hover (darker in light mode)
+  - Lavender background (#F5F0FF) instead of white
+- **Quick Looks Page:** Single-photo items (Tozo charger, iPod Touch, Realme watch)
+- **Prints Gallery:** Populate with actual print data
+
+## Project Structure
+
+```
+teardown-cafe/
+├── .cursor-specs/          # Specs for Cursor implementation
+│   ├── portfolio-obsidian-integration.md
+│   ├── quick-looks-spec.md
+│   ├── deployment-guide.md
+│   ├── image-optimization-styling-fixes.md
+│   └── hover-glow-lavender-fixes.md
+├── src/
+│   ├── components/
+│   │   ├── Analytics.astro (Plausible)
+│   │   ├── ProgressiveImage.astro (blur-up loading)
+│   │   ├── RelatedTeardowns.astro (smart filtering)
+│   │   ├── RelatedObsidianNotes.astro (tag matching)
+│   │   ├── TagCloud.astro
+│   │   ├── ThemeToggle.astro
+│   │   └── CircuitAccents.astro (decorative elements)
+│   ├── data/
+│   │   ├── teardowns/*.md (9 entries)
+│   │   └── obsidian-overrides.json (manual tag connections)
+│   ├── pages/
+│   │   ├── index.astro (homepage with device type grid)
+│   │   ├── about.astro (updated with personal voice)
+│   │   ├── device/[type].astro (8 device categories)
+│   │   ├── prints/index.astro (gallery POC)
+│   │   └── prints/timeline.astro (timeline POC)
+│   └── styles/global.css (Material You 3 tokens)
+├── scripts/
+│   ├── build-obsidian-links.js (tag matching automation)
+│   └── organize-images.sh
+└── public/
+    ├── images/ (optimized teardown photos)
+    └── data/
+        ├── obsidian-relationships.json (auto-generated)
+        └── tag-stats.json (auto-generated)
+```
+
+## Workflow Established
+
+### Claude → Cursor Division
+- **Claude:** Architecture, specs, content creation, image optimization, strategy
+- **Cursor:** Implementation from specs, component building, code execution
+
+### Deployment
+- **Platform:** Vercel (auto-deploys on `git push`)
+- **Critical:** Always push to GitHub before expecting deployment updates
+- **Vercel MCP:** Connected for Claude to trigger deploys and check status
+
+### Image Optimization
+- Original images: 10-15MB each
+- Optimized: 400KB-1.4MB (95% reduction)
+- Command: `sips -Z 1920 -s format jpeg -s formatOptions 80`
+
+## Tag System
+
+Each teardown has 8-12 tags for automated Obsidian matching:
+- **Device types:** laptop-repair, 3d-printing, nas-storage, smartphone-repair
+- **Skills:** thermal-management, cable-management, opencore, zfs
+- **Difficulty:** beginner-friendly, advanced-repair
+- **Tech:** bambu-lab, raspberry-pi, truenas
+
+Build script scans Obsidian vault, matches tags, generates relationships.
+
+## Known Issues & Next Steps
+
+### Ready for Cursor Implementation
+1. Vercel image optimization (install `@astrojs/vercel`)
+2. Circuit accent hover fixes (darker glow in light mode)
+3. Lavender background for light theme
+4. Quick Looks page for single-photo items
+5. Populate prints gallery with actual data
+
+### Future Enhancements (Not Spec'd)
+- Search functionality
+- RSS feed
+- View counter
+- Open Graph images for social sharing
+- Estimated read time on cards
+
+## Git Status
+
+**Latest Commit:** 078f10d (About page rewrite)  
+**Branch:** main  
+**Remote:** GitHub sync'd, Vercel deployed
+
+## Key Learnings This Session
+
+1. **Vercel deploys from GitHub, not local** - Always push first
+2. **Cursor has smaller context** - Break tasks into smaller chunks, reference specific files
+3. **Tag automation works** - Zero manual maintenance after setup
+4. **Obsidian MCP** - Can create/update notes directly
+5. **Privacy matters** - EXIF stripping, no tracking analytics
+
+## Related Notes
+- [[Teardown Cafe - Deployment Guide]]
+- [[Claude-Cursor Workflow]]
+- [[Tag System & Portfolio Integration]]
+- [[Projects/Teardown Cafe]]
