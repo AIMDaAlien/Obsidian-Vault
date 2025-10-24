@@ -340,3 +340,14 @@ Build script scans Obsidian vault, matches tags, generates relationships.
 - [[Claude-Cursor Workflow]]
 - [[Tag System & Portfolio Integration]]
 - [[Projects/Teardown Cafe]]
+
+
+### October 23, 2025 - Keyboard Mod Entry
+- [x] Added Epomaker Split 65% Sound Mod entry
+- [x] Poron foam + AKKO V3 Fairy silent switches documentation
+- [x] 5 images + 1 assembly video
+- [x] Medium difficulty (foam cutting, border switch reassembly)
+- [x] Home office sound dampening project
+- **NOTE:** EXIF stripping needed for images (run organize-images.sh)
+
+**Updated count:** 10 total teardown entries
