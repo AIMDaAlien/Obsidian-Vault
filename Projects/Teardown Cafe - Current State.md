@@ -351,3 +351,21 @@ Build script scans Obsidian vault, matches tags, generates relationships.
 - **NOTE:** EXIF stripping needed for images (run organize-images.sh)
 
 **Updated count:** 10 total teardown entries
+
+
+### October 23, 2025 - Domain & GMK67 Entry
+- [x] Added GMK67 Custom Mechanical Keyboard Build entry
+- [x] AKKO Lavender + KTT Baby White switches documented
+- [x] 2 images + 2 videos (assembly + sound test)
+- [x] Easy difficulty (first-time build)
+- [x] **Domain purchased:** teardown.cafe via Hostinger ($30/yr)
+- [x] DNS A record configured (216.198.79.1)
+- [x] Vercel deployment protection disabled (site now public)
+- [x] Site live at https://teardown.cafe
+- [x] Created deployment and content workflow docs
+
+**Updated count:** 11 total teardown entries
+
+**Site Status:** Live and publicly accessible
+**Production URL:** https://teardown.cafe
+**Vercel URL:** https://teardown-cafe.vercel.app (redirects to custom domain)
