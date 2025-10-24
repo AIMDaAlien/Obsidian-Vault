@@ -369,3 +369,15 @@ Build script scans Obsidian vault, matches tags, generates relationships.
 **Site Status:** Live and publicly accessible
 **Production URL:** https://teardown.cafe
 **Vercel URL:** https://teardown-cafe.vercel.app (redirects to custom domain)
+
+
+### October 24, 2025 - Portfolio Presentation Updates
+- [x] Updated GitHub README with professional description, tech stack, workflow scripts
+- [x] Created portfolio card HTML with SVG icons (Material You design)
+- [x] Updated resume with TECHNICAL PROJECTS section featuring Teardown Cafe
+- [x] Replaced all emojis with custom SVG icons (coffee+wrench logo, device icons)
+- [x] Reduced device card size by 30% (280px → 196px)
+- [x] Added hover effects on SVG icons (scale + glow)
+- [x] Git commit: 42d6b09
+
+**Portfolio Ready:** Resume bullets drafted, GitHub README updated, portfolio card HTML created
