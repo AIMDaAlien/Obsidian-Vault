@@ -42,3 +42,36 @@ Material 3 expressive sidebar with floating pill navigation, morphing animations
 
 ---
 *Last updated: 2025-10-26*
+
+
+## Update 2025-10-26 Session 2
+
+**Status:** Partially Fixed - Core issues resolved, folder collapse remaining
+
+### Fixed Issues ✅
+1. Featured section now functional
+   - Shows 4/5 featured notes (1 path mismatch)
+   - Chevron icon toggles properly
+   - Collapsed by default as intended
+2. Icon centering in collapsed state fixed
+3. CSS overflow handling improved
+4. Better note path matching logic
+
+### Remaining Issue ❌
+- **All folders auto-expand on load** showing 316 notes
+- Need to ensure folders start collapsed (only icons visible)
+- Hover should expand to show full pill navigation
+
+### Next Actions
+1. Fix folder auto-expansion bug
+2. Verify smooth morphing animations work
+3. Test hover expansion behavior
+4. Update featured notes path (Pi-hole location)
+
+### Technical Notes
+- CSS: Added padding, overflow-y handling, width fixes
+- JS: Removed `expanded` class from featured, added click handler, improved search logic
+- Concept 3 pill design partially implemented, needs folder collapse fix
+
+---
+*Session end - awaiting next task*
