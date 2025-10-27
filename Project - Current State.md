@@ -108,3 +108,22 @@ My CSS/JS changes only resulted in indented chevrons - sidebar still broken. Cur
 **Next:** User will work with Cursor AI using this prompt to fix implementation.
 
 ---
+
+
+## Rollback - 2025-10-26
+
+**Action:** Reset to commit `17d85a2` (both local and GitHub)
+
+**Reason:** Further breakage occurred during sidebar fix attempts
+
+**Current State:** 
+- Local repo: Reset to 17d85a2
+- GitHub: Force pushed to match local
+- Sidebar implementation: Reverted to pre-fix state
+
+**Next Steps:**
+- Assess current sidebar state at commit 17d85a2
+- Plan fresh approach for floating pill implementation
+- Consider alternative implementation strategy
+
+---
