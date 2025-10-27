@@ -25,14 +25,10 @@
             "id": "126ccb36917115a7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Portfolio - Current State.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Portfolio - Current State"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -199,6 +195,7 @@
   },
   "active": "126ccb36917115a7",
   "lastOpenFiles": [
+    "Projects/Portfolio - Current State.md",
     "images/55950.png",
     "images",
     "Projects/Knowledge Garden - Sidebar Implementation Session.md",
@@ -208,7 +205,6 @@
     "Meta/Active Projects Dashboard.md",
     "Projects/Teardown Cafe - TrueNAS Build Entry.md",
     "Project - Current State.md",
-    "Projects/Portfolio - Current State.md",
     "Teardown Cafe - Portfolio Presentation.md",
     "Teardown Cafe - Adding Entries.md",
     "Teardown Cafe - Deployment Guide.md",
@@ -244,7 +240,6 @@
     "images/Pasted image 20230621215642.png",
     "images/Pasted image 20230621202316.png",
     "images/Pasted image 20230621201231.png",
-    "images/Pasted image 20230621201150.png",
     "Untitled.canvas"
   ]
 }
