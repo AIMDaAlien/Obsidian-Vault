@@ -414,4 +414,58 @@ The inclusion of advanced techniques, such as dialogue flow management to preven
 
   
 
-using this research as stated, create the prompts for claude pro and perplexity pro with my criteria. IM NOT ASKING FOR RESEARCH
+using this research as stated, improve my prompt below for claude pro and perplexity pro with my criteria and make a whole workflow. IM NOT ASKING FOR RESEARCH
+
+Youre a professional decision maker and based on your research, lets say i wanted to create a to do list planner as a mac os 26 app that will when i start the day ask for whats to be done for the day and update me on things that are to be done with strict deadlines. I might have adhd and am very spontaneous on things. Ill start on new things and have new ideas but ill go a bit or midway and never get it finished. School assignments have hard set deadlines which eventually gets me to finishing them... At the last hour. This app will need to have a design and interaction where it will psychologically try to get me locked in. A pomodoro timer built in would also be useful. It should have a dynamic prayer times implementation as im a muslim who does my daily 5 prayers which may need an api but with it, make timings for whatever i plan to go around those prayers and not be in conflict.
+
+  
+
+### Phase 1: Deep Research & Validation (The 'What')
+
+Before you write a single line of code, we must gather the "intel."
+
+- **Tool:** **Perplexity Pro (Deep Research Mode)**.
+    
+- **Why:** This is your autonomous researcher. You need to gather facts, not just opinions.
+    
+- **Your Action:**
+    
+    1. **Technical Research:** "Best modern Prayer Time APIs 2026," "SwiftUI frameworks for complex calendar/timeline views macOS 26," "Implementing dynamic Pomodoro timers in Swift."
+        
+    2. **Psychological Research:** This is critical. "UI/UX design principles for ADHD focus," "Gamification loops for task completion," "Psychological 'lock-in' mechanisms for productivity apps."
+        
+- **The Output:** A "Research Brief" document. This is pure, synthesized knowledge that will feed the next phase.
+    
+
+> **🔒 A Butler's Note on Privacy:** Be mindful that using Perplexity logs your search queries. When researching the psychological aspects, I advise using general terms (e.g., "ADHD," "focus") rather than first-person "I" statements. Keep your personal health data firewalled from your research data.
+
+---
+
+### Phase 2: Architectural Blueprinting (The 'Plan')
+
+This is where we address your core need for planning and structure. We turn the _research_ into a _plan_.
+
+- **Tool:** **Claude 4.1 Opus**.
+    
+- **Why:** As you noted, Opus excels at high-level reasoning, creative planning, and understanding nuanced constraints. It is the best tool for creating the "master prompt" you described.
+    
+- **Your Action:**
+    
+    1. Feed the _entire_ "Research Brief" from Phase 1 into Opus.
+        
+    2. Provide your full prompt (as you gave me): describe the app, the user (spontaneous, ADHD-like traits), the prayer time constraint, the Pomodoro, etc.
+        
+    3. **The Master Prompt:** "You are a principal software architect. Using the provided research, generate a complete **Software Requirements Specification (SRS)** for this macOS 26 app. It must include:
+        
+        - **User Stories:** (e.g., "As a user, I want the app to block out prayer times in my schedule _automatically_.")
+            
+        - **Data Models:** (The Swift `structs` for `Task`, `UserPreferences`, `PrayerTimeWindow`.)
+            
+        - **Core Logic Algorithm:** (A pseudocode algorithm for the `TaskScheduler` that _de-conflicts_ tasks with prayer times.)
+            
+        - **API Integration Plan:** (A step-by-step plan for integrating the chosen Prayer Time API.)
+            
+- **The Output:** A comprehensive "Master Blueprint." This document is your "good amount of context" that you will use to guide all other AIs and agents.
+
+
+Think very hard and thoroughly
