@@ -34,23 +34,9 @@
               "icon": "lucide-file",
               "title": "Responses"
             }
-          },
-          {
-            "id": "b0bcf5463dc14001",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GEMINI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GEMINI"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,32 +199,32 @@
   },
   "active": "d6216f2f4698b1bc",
   "lastOpenFiles": [
-    "Technical/Homelab/Prometheus Grafana Stack - Implementation Guide.md",
-    "Technical/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learned.md",
-    "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/Asterisk.md",
-    "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/Question Mark.md",
-    "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/File Globbing or Wildcards.md",
-    "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/Listing With Globs.md",
-    "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/Exclamation Point Char.md",
-    "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/Bracket Characters.md",
-    "Technical/Operating Systems/Linux/Environment Variables/printenv.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/~ Home Directory.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/What are Special Chars.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/Single Character Wildcard.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/Parent DIrectory.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/Current Directory.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/Comment or Trim Strings.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/Character Set Wildcard.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/Character Sequence Wildcard.md",
-    "Technical/Operating Systems/Linux/Special Chars For Bash/ Path Directory Separator.md",
-    "Technical/Operating Systems/Linux/Quoting/Single Quotes.md",
-    "Technical/Operating Systems/Linux/Quoting/Double Quotes.md",
-    "Technical/Operating Systems/Linux/Quoting/Backslash.md",
-    "Technical/Operating Systems/Linux/Quoting/Backquotes `.md",
-    "Technical/Operating Systems/Linux/Navigating the Filesystem/The . Char.md",
-    "Technical/Operating Systems/Linux/Navigating the Filesystem/The . . Chars.md",
-    "Technical/Operating Systems/Linux/Navigating the Filesystem/Sort a Listing.md",
-    "Technical/Operating Systems/Linux/Navigating the Filesystem/Relative Paths.md",
+    "Projects/Teardown Cafe/Documentation/TrueNAS Build Entry.md",
+    "Projects/Teardown Cafe/Documentation/Troubleshooting.md",
+    "Projects/Teardown Cafe/Documentation/Technical Setup.md",
+    "Projects/Teardown Cafe/Documentation/Project Overview.md",
+    "Projects/Teardown Cafe/Documentation/Documentation Index.md",
+    "Projects/Teardown Cafe/Documentation/Design System.md",
+    "Projects/Teardown Cafe/Documentation/Deployment Guide (Projects).md",
+    "Projects/Teardown Cafe/Documentation/Current State.md",
+    "Projects/Teardown Cafe/Documentation/Context Prompt.md",
+    "Projects/Teardown Cafe/Documentation/Content Workflow.md",
+    "Projects/Teardown Cafe/Documentation/Building Material You 3 Website Lessons.md",
+    "Projects/Teardown Cafe/Documentation/Portfolio Presentation.md",
+    "Projects/Teardown Cafe/Documentation/Deployment Guide.md",
+    "Projects/Teardown Cafe/Documentation/Adding Entries.md",
+    "Meta/Token Efficiency Analysis.md",
+    "Meta/GEMINI.md",
+    "Meta/Claude Container Setup.md",
+    "Technical/Obsidian Productivity Mastery.md",
+    "Technical/Development Tools.md",
+    "Technical/Programming/Python Fundamentals.md",
+    "Technical/Programming/Python Functions.md",
+    "Technical/Programming/Python Data Structures.md",
+    "Technical/Programming/Python Control Flow.md",
+    "Technical/Programming/Python Advanced Topics.md",
+    "Technical/Programming/Computer Science Concepts.md",
+    "Technical/Programming/C Programming.md",
     "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing",
     "Technical/Operating Systems/Linux/Special Chars For Bash",
     "Technical/Operating Systems/Linux/Quoting",
