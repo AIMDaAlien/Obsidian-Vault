@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "claude",
+                "query": "myself",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,8 +103,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -212,7 +211,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d0ac9712e288ace8",
+  "active": "d6216f2f4698b1bc",
   "lastOpenFiles": [
     "Sessions/2025-11-10 Tech Consulting Website.md",
     "Sessions",
