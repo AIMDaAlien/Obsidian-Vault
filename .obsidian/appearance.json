@@ -2,7 +2,10 @@
   "accentColor": "#baa1e8",
   "interfaceFontFamily": "Ubuntu",
   "baseFontSize": 20,
-  "translucency": false,
+  "translucency": true,
   "theme": "obsidian",
-  "cssTheme": "Atom"
+  "cssTheme": "Catppuccin",
+  "baseFontSizeAction": true,
+  "textFontFamily": "Ubuntu",
+  "monospaceFontFamily": "JetBrains Mono"
 }
