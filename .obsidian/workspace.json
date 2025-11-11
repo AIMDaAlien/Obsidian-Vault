@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Myself/Personal Documentation (Setting up Home Machinery)/CPU Architectures.md",
+                "file": "Sessions/2025-11-10 Tech Consulting Website.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CPU Architectures"
+              "title": "2025-11-10 Tech Consulting Website"
             }
           }
         ]
@@ -182,8 +182,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d6216f2f4698b1bc",
+  "active": "764456ae8c937c8c",
   "lastOpenFiles": [
+    "GEMINI.md",
+    "Myself/Career/Job Search Strategy.md",
+    "Myself/Career/Interview Mastery.md",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/Templates/Client Intake Template.md",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/Technical Implementation/Dark Mode Implementation.md",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/Design System/Material 3 Expressive - Core Principles.md",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/Templates",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/Technical Implementation",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/README.md",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/Quick Reference.md",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook/Design System",
+    "Projects/Tech Consulting Website/Tech Consultation Playbook",
     "Myself/Career/Computer Build Consultation/Responses.md",
     "Myself/Career/Computer Build Consultation",
     "Projects/Tech Consulting Website/Current State.md",
@@ -203,23 +215,11 @@
     "Projects/Teardown Cafe/claude-cursor-collaboration-prompt.md",
     "Projects/Teardown Cafe/Workflow Dashboard.md",
     "Projects/Teardown Cafe/Session Index.md",
-    "Projects/Teardown Cafe/Sessions/2025-10-21-1557-cursor-session.md",
-    "Projects/Teardown Cafe/Sessions/2025-10-21-1556-cursor-session.md",
-    "Projects/Teardown Cafe/Documentation/TrueNAS Build Entry.md",
-    "Projects/Teardown Cafe/Documentation/Troubleshooting.md",
-    "Projects/Teardown Cafe/Documentation/Technical Setup.md",
-    "Projects/Teardown Cafe/Documentation/Project Overview.md",
-    "Projects/Teardown Cafe/Documentation/Documentation Index.md",
-    "Projects/Teardown Cafe/Documentation/Design System.md",
     "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing",
     "Technical/Operating Systems/Linux/Special Chars For Bash",
     "Technical/Operating Systems/Linux/Quoting",
     "Technical/Operating Systems/Linux/Navigating the Filesystem",
     "Technical/Operating Systems/Linux/Managing Files and Directories",
-    "Technical/Operating Systems/Linux/Linux File Permissions",
-    "Technical/Operating Systems/Linux/Linux CL Commands",
-    "Technical/Operating Systems/Linux/Environment Variables",
-    "Technical/Operating Systems/Linux/Documentation",
     "images/55950.png",
     "images/86681.png",
     "images/Pasted image 20230621202327.png",
