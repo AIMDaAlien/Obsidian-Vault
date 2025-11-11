@@ -213,6 +213,8 @@
   },
   "active": "d6216f2f4698b1bc",
   "lastOpenFiles": [
+    "Technical/Homelab/Prometheus Grafana Stack - Implementation Guide.md",
+    "Technical/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learned.md",
     "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/Asterisk.md",
     "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/Question Mark.md",
     "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing/File Globbing or Wildcards.md",
@@ -237,8 +239,6 @@
     "Technical/Operating Systems/Linux/Navigating the Filesystem/The . . Chars.md",
     "Technical/Operating Systems/Linux/Navigating the Filesystem/Sort a Listing.md",
     "Technical/Operating Systems/Linux/Navigating the Filesystem/Relative Paths.md",
-    "Technical/Operating Systems/Linux/Navigating the Filesystem/Recursive Listing.md",
-    "Technical/Operating Systems/Linux/Navigating the Filesystem/Paths.md",
     "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing",
     "Technical/Operating Systems/Linux/Special Chars For Bash",
     "Technical/Operating Systems/Linux/Quoting",
