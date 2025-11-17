@@ -133,3 +133,109 @@
 **Last Updated:** November 8, 2025  
 **Status:** Ready for critical issue remediation  
 **Confidence:** High (91%)
+# Current Status - 3D Print Shoppe Rebuild
+
+**Last Updated**: November 16, 2025  
+**Phase**: Foundation - Agents Created  
+**Progress**: 15% complete
+
+## Immediate Status
+
+### ✅ Completed
+- [x] Strategic planning (service model, pricing strategy)
+- [x] Technical architecture decided (Astro + Material Web)
+- [x] 5 Claude Code subagents created in `.claude/agents/`
+- [x] Execution sequence documented
+- [x] Remote repo prepared for wipe
+
+### 🔄 In Progress
+- [ ] **NEXT**: Run Step 0 (repo wipe)
+- [ ] **NEXT**: Run Steps 2-6 (project initialization → testing)
+
+### ⏳ Pending
+- [ ] Generate 8 product images (AI tools)
+- [ ] Set up Formspree account
+- [ ] Deploy to Vercel
+- [ ] Configure aim3dprints.com DNS
+- [ ] Update Nextdoor post
+
+## Key Context
+
+**GitHub**: https://github.com/AIMDaAlien/3D-Print-Shoppe  
+**Domain**: aim3dprints.com (ready to migrate)  
+**Tools Available**: Claude Code, Gemini CLI, Cursor AI, OpenCode
+
+**Constraints**:
+- No OpenAI (privacy concerns)
+- Self-host n8n later (not immediate priority)
+- Single Bambu Lab A1 printer
+- Target live: Tomorrow (Nov 17) afternoon
+
+## Execution Ready
+
+All agent files saved to `.claude/agents/`:
+1. astro-architect.md
+2. material-web-specialist.md
+3. form-integration-engineer.md
+4. deployment-engineer.md
+5. image-generation-specialist.md
+
+**Next Command** (in Claude Code):
+```
+Use astro-architect subagent to:
+1. Search "Astro 4.x latest version November 2025"
+2. Initialize Astro project with Material Web
+3. Create directory structure
+4. Test: npm run dev
+```
+
+## Critical Decisions Made
+
+**Why service model**: MakerWorld has no API/iframe capability  
+**Why Astro**: Already familiar, fast static builds  
+**Why Material Web**: Most accurate M3 Expressive implementation  
+**Why quote-based**: Variable sizing/colors/complexity
+
+## Issues to Watch
+
+- **Image generation**: AI tools may not produce realistic enough 3D prints
+- **Formspree limits**: 50 free submissions/month
+- **Photography**: May need to print samples for hero images
+- **Timeline pressure**: Holiday season already started (2 weeks late)
+
+## Success Criteria
+
+- [ ] Site live with working quote form
+- [ ] Price calculator updates in real-time
+- [ ] Mobile responsive (≥48px touch targets)
+- [ ] Lighthouse score ≥85 mobile
+- [ ] Deployed to aim3dprints.com with HTTPS
+- [ ] Nextdoor post updated with link
+
+
+---
+
+## Update - November 16, 2025 (Evening)
+
+**Progress**: 60% complete
+
+### ✅ Just Completed (Steps 0-6)
+- [x] Repo wiped and fresh start
+- [x] Astro 4.x + Material Web 2.x project initialized
+- [x] M3 tokens and styling configured
+- [x] Homepage built (hero, 8 product cards, how it works, footer)
+- [x] Quote form built (order types, calculator, Formspree integration)
+- [x] Local build and preview tested
+
+### 🔄 Current Blockers
+- Need 8 product images (placeholders in place)
+- Need Formspree account/form ID
+- Ready to deploy once above complete
+
+### ⏳ Next Actions
+1. Generate 8 product images via AI (Leonardo.ai/Ideogram)
+2. Create Formspree account, get form ID
+3. Replace placeholder images and form ID
+4. Deploy to Vercel
+5. Configure DNS
+6. Update Nextdoor
