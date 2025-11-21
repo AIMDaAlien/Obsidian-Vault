@@ -239,3 +239,277 @@ Use astro-architect subagent to:
 4. Deploy to Vercel
 5. Configure DNS
 6. Update Nextdoor
+
+
+---
+
+## Update - November 21, 2025
+
+### Current Status: 85% Complete - Pre-Deployment
+
+**Progress Since Nov 16:**
+- ✅ Astro 5.0 + Material Web 2.4.1 site fully built
+- ✅ 45+ product images (webp format, optimized)
+- ✅ Formspree forms configured (contact: xdkpeyjr, custom: mzzkeyqd)
+- ✅ Hero copy updated (Lake Ridge/Woodbridge specific)
+- ✅ Clean M3 theming restored (reduced gradient overlays)
+- ✅ Vendor catalog system operational (3 creators)
+- ✅ Shopping cart + inventory management implemented
+- ⚠️ Needs DNS configuration + Vercel deployment
+
+### Architectural Evolution
+
+**From Documentation → Reality:**
+
+The actual build significantly exceeds documented plans:
+
+| Documented Plan | Actual Implementation |
+|----------------|----------------------|
+| Simple quote-only site | Full e-commerce platform |
+| No catalog/cart | Shopping cart + localStorage persistence |
+| Basic service model | Vendor catalog system + inventory tracking |
+| 8 product placeholders | 45+ actual product images |
+| Simple form | Comprehensive quote forms + color selector |
+
+**Why the expansion:** Initial MakerWorld integration constraints (no API/iframe) led to vendor catalog approach, which naturally evolved into full cart system for better UX.
+
+### Technical Stack (Final)
+
+**Core:**
+- Astro 5.0.0 (SSG with hybrid rendering)
+- Material Web 2.4.1 (M3 Expressive components)
+- TypeScript 5.6.3 (strict mode)
+- Nanostores 0.11.3 (state management)
+
+**Build Tools:**
+- Playwright (E2E testing)
+- ESLint + Prettier (code quality)
+- Husky + lint-staged (git hooks)
+
+**Deployment:**
+- Vercel (hosting)
+- GitHub (version control)
+- Domain ready: aim3dprints.com
+
+### Business Model Finalized
+
+**Target Market:**
+- Location: Lake Ridge & Woodbridge, Virginia
+- Audience: Nextdoor neighbors (30+ age demographic)
+- Service: Custom 3D printing with pickup
+- USP: Color/size customization, 1-4 day turnaround
+
+**Pricing Structure:**
+- Small items: $8-15 (ornaments, keychains)
+- Medium items: $15-30 (planters, organizers)
+- Large items: $30-50+ (wall art, decor)
+- Rush fee: +$5 (1-2 day delivery)
+
+**Payment Methods:**
+- PayPal, Venmo, CashApp, Cash
+
+**Pickup:**
+- Saturday 10am-6pm
+- Sunday 12pm-5pm
+- Weekdays by appointment
+
+### Key Systems Implemented
+
+**1. Vendor Catalog System**
+- 3 MakerWorld creators: SabreDesign (117 models), Zhakryuu (50 models), Lov3d (267 models)
+- VendorCard components with modal browsing
+- Specialty tagging (modern, hueforge, seasonal, etc.)
+- Direct links to MakerWorld profiles
+
+**2. Shopping Cart**
+- Nanostores-based state management
+- localStorage persistence across sessions
+- Rush order toggle (+$5)
+- Real-time subtotal/total calculations
+- Add/remove/update quantity actions
+
+**3. Inventory Management**
+- Admin pages: /admin/inventory (3 variants)
+- Filament tracking via inventory.json
+- Color availability system
+- API endpoints for CRUD operations
+- Components: FilamentCard, FilamentEditorModal, QuickActionBar
+
+**4. Form Systems**
+- Contact form (Formspree: xdkpeyjr)
+- Custom order form (Formspree: mzzkeyqd)
+- FilamentColorSelector for product customization
+- Scheduling component for pickup coordination
+
+### Design System: M3 Expressive
+
+**Brand Colors:**
+- Primary: Periwinkle #6366F1
+- Secondary: Lavender #A78BFA
+- Tertiary: Green #10B981
+
+**Typography:**
+- Font: Ubuntu (replaces Roboto Flex)
+- Body text: 18px+ (age-friendly)
+- Touch targets: 48px+ minimum
+
+**Animation Philosophy:**
+- Spring physics (spring-physics.js)
+- M3 Expressive motion tokens
+- Anime.js 4.2.2 for complex animations
+- Mouse parallax effects
+- Reduced motion support
+
+**Corner Radii:**
+- Expressive: 24-28px (larger than standard M3)
+- Cards hover: scale(1.03) + rotate(-1deg)
+
+### Assets Completed
+
+**Product Images (45 files):**
+- Alphabet Decor, Birdie Card Holder, Cloth Plant Pots (multiple variants)
+- Cute Cat, Fairy Door, Floral Mandala
+- Knitted Bowl, Overlapping Pen Cup
+- String Art pieces (flowers, Christmas ornaments)
+- Wall Art (Mountain, Fishing, The Office themed)
+- All optimized as .webp format
+
+**Vendor Avatars:**
+- 3 SVG avatars for creators (sabre-design, zhakryuu, lov3d)
+
+**Forms:**
+- Both Formspree endpoints configured and tested
+- No additional API keys needed
+
+### Deployment Checklist
+
+**Ready:**
+- ✅ Build succeeds (npm run build)
+- ✅ All images optimized
+- ✅ Forms functional
+- ✅ Mobile responsive
+- ✅ Accessibility compliant (48px+ targets, ARIA labels)
+- ✅ Vercel config (vercel.json)
+
+**Remaining (30 min total):**
+- [ ] Run `vercel --prod`
+- [ ] Configure aim3dprints.com DNS
+- [ ] Lighthouse audit (target >85 mobile)
+- [ ] Update Nextdoor business page
+
+### Marketing Strategy (Free)
+
+**Nextdoor Tactics:**
+- Weekly rotation: "Made This Week" showcase, vendor spotlights, weekend specials
+- Engagement hooks: "What would YOU print?", "Guess the print time"
+- Show pricing ranges ($8-15, $15-30, $30-50+) not exact prices
+- 1-3 items per post max (not full catalog)
+- Request reviews from 2 existing customers
+
+**SEO Optimization:**
+- Local keywords: "Lake Ridge 3D printing", "Woodbridge custom prints"
+- Meta descriptions updated with location
+- Hero badge changed from "Local Business" to "Lake Ridge & Woodbridge"
+
+### Lessons Learned
+
+**1. Architecture Decisions:**
+- Vendor catalog approach solved MakerWorld API limitation elegantly
+- Cart system emerged organically from UX needs
+- Inventory tracking became necessary for color management
+
+**2. M3 Implementation:**
+- Over-aggressive gradients (0.15 opacity) caused muddy appearance
+- Reduced to 0.03-0.04 for clean look while maintaining theme
+- Removed backdrop-filter on hero (caused blur issues)
+
+**3. Workflow Optimization:**
+- Google Antigravity useful but hits rate limits/timeouts
+- macOS Dictation + Claude prompt optimization effective workflow
+- Breaking tasks into <100 line edits prevents agent timeouts
+
+**4. Business Validation:**
+- First 2 customers in 2 weeks validates market
+- Catalog posts got less engagement than showcase posts
+- Pricing transparency needed (ranges work better than "contact for quote")
+
+### Files Structure
+
+```
+src/
+├── components/
+│   ├── CartButton.astro, CartDrawer.astro
+│   ├── FilamentColorSelector.astro
+│   ├── Hero.astro, Navigation.astro, Footer.astro
+│   ├── Scheduling.astro, ThemeToggle.astro
+│   ├── VendorAvatar.astro, VendorCard.astro, VendorCatalogModal.astro
+│   └── inventory/
+│       ├── FilamentCard.astro, FilamentEditorModal.astro
+│       ├── InventoryHeader.astro, QuickActionBar.astro
+├── data/
+│   ├── inventory.json (filament tracking)
+│   └── vendors.json (3 creator profiles)
+├── lib/
+│   ├── inventory.ts, vendors.ts
+│   ├── m3-init.ts, m3-loader.js
+│   ├── spring-physics.js
+│   └── types/ (7 type definition files)
+├── pages/
+│   ├── index.astro (vendor showcase)
+│   ├── contact.astro, custom-order.astro
+│   ├── how-it-works.astro, inventory.astro
+│   ├── admin/inventory*.astro (3 variants)
+│   ├── api/inventory*.ts (2 endpoints)
+│   └── poc-*.astro (5 M3 proofs-of-concept)
+├── stores/
+│   ├── cartStore.ts (items, totals, actions)
+│   ├── inventoryStore.ts (filament state)
+│   └── vendorModalStore.ts (modal state)
+└── styles/
+    ├── global.css (base styles)
+    ├── material-theme.css (M3 tokens)
+    ├── m3-expressive.css (expressive variants)
+    ├── animations.css, liquid-glass.css
+    └── inventory.css
+```
+
+### Next Session Priorities
+
+1. Deploy to Vercel production (10 min)
+2. Configure DNS at domain registrar (10 min)
+3. Run Lighthouse audit, fix any <85 scores (10 min)
+4. Update Nextdoor with website link (5 min)
+5. Create first "showcase" post with 2-3 finished prints
+
+### Recruiter-Relevant Highlights
+
+**Full-Stack Development:**
+- Built e-commerce platform from scratch using modern JAMstack (Astro 5)
+- Implemented complex state management (Nanostores) with localStorage persistence
+- Created RESTful API endpoints for inventory CRUD operations
+
+**UI/UX Design:**
+- Material Design 3 implementation with custom theming
+- Age-friendly accessibility (WCAG AA compliance)
+- Responsive design (320px mobile to 1920px+ desktop)
+
+**Business Development:**
+- Validated market with 2 customers in 2 weeks
+- Identified target demographic and optimized for their needs
+- Created scalable vendor partnership model
+
+**Project Management:**
+- Evolved from 60% to 85% complete in 5 days
+- Pivoted from simple service site to full e-commerce platform
+- Documented technical decisions and architectural rationale
+
+**Technologies:**
+- Frontend: Astro 5, TypeScript, Material Web Components
+- State: Nanostores
+- Testing: Playwright E2E
+- Deployment: Vercel, GitHub Actions
+- Design: Material Design 3 Expressive
+
+---
+
+*Last updated: November 21, 2025 - Ready for production deployment*
