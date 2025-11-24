@@ -127,3 +127,34 @@ My CSS/JS changes only resulted in indented chevrons - sidebar still broken. Cur
 - Consider alternative implementation strategy
 
 ---
+
+
+---
+
+## Session Update: 2024-11-23 - Technical Documentation
+
+### Changes Documented
+- ✅ Created [[Payment Workflow]] note (post-quote deposit system)
+- ✅ Created [[Custom Order System]] note (refactored form)
+- ✅ Created [[Branding & Assets]] note (colors, logo, typography)
+
+### Key Refactoring Points
+1. **Payment separated from order submission** - customers now get quoted before paying
+2. **New "Request a Specific Color" field** - handles custom color requests outside standard inventory
+3. **Logo integration complete** - `/logo.png` in navigation with hover effects
+4. **Material Design 3 color tokens** - periwinkle (#6366f1), lavender (#a78bfa), green (#10b981)
+
+### Technical Debt / TODOs
+- [ ] Generate QR codes for Venmo/CashApp (`/public/images/`)
+- [ ] Replace placeholder URLs in payment.astro with actual accounts
+- [ ] Create multiple favicon sizes for cross-platform support
+- [ ] Consider adding PayPal as payment option
+- [ ] Implement automated quote-to-payment email workflow
+
+### Files Analyzed
+- `src/pages/payment.astro` (282 lines)
+- `src/pages/custom-order.astro` (685 lines)
+- `src/components/Navigation.astro` (323 lines)
+- `src/data/filaments.json` (22 colors)
+- `src/components/VendorCatalogModal.astro` (971 lines)
+- `src/styles/material-theme.css` (195 lines)
