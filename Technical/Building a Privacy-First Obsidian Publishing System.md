@@ -1,16 +1,18 @@
 ---
-created: 2024-11-28T16:30:00
-modified: 2024-11-28T16:30:00
-tags:
-  - mcp
-  - obsidian
-  - privacy
-  - automation
-  - publishing
-  - technical
-visibility: public
+created: 2024-11-28 16:30:00
+garden_path: Technical/Building a Privacy-First Obsidian Publishing System.md
+last_published: '2025-11-28T12:28:48.200334'
+modified: 2024-11-28 16:30:00
 privacy_scan: not_scanned
-published_to_garden: false
+published_to_garden: true
+tags:
+- mcp
+- obsidian
+- privacy
+- automation
+- publishing
+- technical
+visibility: public
 ---
 
 # Building a Privacy-First Obsidian Publishing System
