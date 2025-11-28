@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Project - Current State"
             }
+          },
+          {
+            "id": "42a18f5055bbaa82",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
