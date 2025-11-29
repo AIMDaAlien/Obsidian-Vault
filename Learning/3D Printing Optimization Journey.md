@@ -1,3 +1,9 @@
+---
+garden_path: Learning/3D Printing Optimization Journey.md
+last_published: '2025-11-28T20:36:42.343273'
+published_to_garden: true
+---
+
 # 3D Printing Optimization Journey
 
 #3d-printing #bambu-lab #optimization #gcode #petg-cf
