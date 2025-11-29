@@ -1,3 +1,8 @@
+---
+garden_path: Projects/Archive/Pi-hole Setup Guide - Complete Journey.md
+last_published: '2025-11-28T19:41:13.152631'
+published_to_garden: true
+---
 
 *A real-world guide documenting the setup of Pi-hole on Raspberry Pi 3 B+ with solutions to common issues*
 

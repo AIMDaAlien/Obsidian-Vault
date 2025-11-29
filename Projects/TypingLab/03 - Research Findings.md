@@ -1,3 +1,9 @@
+---
+garden_path: Projects/TypingLab/03 - Research Findings.md
+last_published: '2025-11-28T19:44:49.340420'
+published_to_garden: true
+---
+
 # Research Findings
 
 > **Academic research that shaped TypingLab's design**

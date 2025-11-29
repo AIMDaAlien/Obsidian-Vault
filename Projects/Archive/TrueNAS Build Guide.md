@@ -1,3 +1,9 @@
+---
+garden_path: Projects/Archive/TrueNAS Build Guide.md
+last_published: '2025-11-28T19:41:06.987212'
+published_to_garden: true
+---
+
 # Building a Beast: TrueNAS SAS Server for $270
 
 *How I turned $50 of enterprise drives into a legitimate storage server*

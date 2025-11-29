@@ -1,3 +1,9 @@
+---
+garden_path: Projects/TypingLab/01 - Technical Architecture.md
+last_published: '2025-11-28T19:44:32.154028'
+published_to_garden: true
+---
+
 # Technical Architecture
 
 > **How TypingLab works under the hood**

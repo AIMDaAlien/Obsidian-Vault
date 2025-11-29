@@ -1,3 +1,9 @@
+---
+garden_path: Projects/TypingLab/00 - TypingLab Project Overview.md
+last_published: '2025-11-28T19:44:25.536276'
+published_to_garden: true
+---
+
 # TypingLab Project Overview
 
 > **Privacy-focused offline typing speed trainer with adaptive AI**

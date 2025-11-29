@@ -1,3 +1,9 @@
+---
+garden_path: Projects/TypingLab/06 - Subagent Implementation Guide.md
+last_published: '2025-11-28T19:45:25.120974'
+published_to_garden: true
+---
+
 # Subagent Implementation Guide
 
 > **Practical guide for implementing remaining features using Claude Code Web subagents**

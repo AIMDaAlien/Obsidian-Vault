@@ -1,3 +1,9 @@
+---
+garden_path: Projects/Teardown Cafe/Documentation/Current State.md
+last_published: '2025-11-28T19:47:28.436847'
+published_to_garden: true
+---
+
 # Teardown Cafe - Current State
 
 Last updated: October 16, 2025 - Initial creation

@@ -1,3 +1,9 @@
+---
+garden_path: Projects/TypingLab/04 - Performance Optimization.md
+last_published: '2025-11-28T19:44:59.350292'
+published_to_garden: true
+---
+
 # Performance Optimization
 
 > **How TypingLab achieves <16ms input latency and 60fps sustained**
