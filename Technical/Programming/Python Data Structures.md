@@ -1,3 +1,9 @@
+---
+garden_path: Technical/Programming/Python Data Structures.md
+last_published: '2025-11-30T20:08:57.982181'
+published_to_garden: true
+---
+
 # Python Data Structures
 
 #programming #python #data-structures #lists #dictionaries

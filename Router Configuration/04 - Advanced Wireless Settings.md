@@ -1,3 +1,9 @@
+---
+garden_path: Router Configuration/04 - Advanced Wireless Settings.md
+last_published: '2025-11-30T20:05:16.209468'
+published_to_garden: true
+---
+
 # Advanced Wireless Settings
 
 Fine-tune your WiFi for optimal performance, compatibility, and device management.

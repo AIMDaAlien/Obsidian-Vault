@@ -1,3 +1,9 @@
+---
+garden_path: Router Configuration/00 - Router Optimization Index.md
+last_published: '2025-11-30T20:04:32.124216'
+published_to_garden: true
+---
+
 # Router Optimization Guide
 
 A comprehensive guide to optimizing TP-Link router settings for performance and privacy.

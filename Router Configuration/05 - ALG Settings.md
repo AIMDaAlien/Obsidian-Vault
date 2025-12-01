@@ -1,3 +1,9 @@
+---
+garden_path: Router Configuration/05 - ALG Settings.md
+last_published: '2025-11-30T20:05:32.548512'
+published_to_garden: true
+---
+
 # ALG Settings (Application Layer Gateway)
 
 Understanding and optimizing ALG settings for better performance and security.

@@ -1,3 +1,9 @@
+---
+garden_path: Router Configuration/06 - VPN Configuration.md
+last_published: '2025-11-30T20:05:45.157850'
+published_to_garden: true
+---
+
 # VPN Configuration
 
 Understanding router-level VPN options and when to use them.

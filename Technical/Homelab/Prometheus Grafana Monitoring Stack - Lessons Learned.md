@@ -1,7 +1,10 @@
 ---
-tags: #homelab #monitoring #prometheus #grafana #raspberry-pi #infrastructure #sre #lessons-learned
 created: 2025-10-14
+garden_path: Technical/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learned.md
+last_published: '2025-11-30T20:06:51.819191'
+published_to_garden: true
 status: complete
+tags: null
 ---
 
 # Prometheus & Grafana Monitoring Stack - Lessons Learned

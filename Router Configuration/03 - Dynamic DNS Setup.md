@@ -1,3 +1,9 @@
+---
+garden_path: Router Configuration/03 - Dynamic DNS Setup.md
+last_published: '2025-11-30T20:05:03.063712'
+published_to_garden: true
+---
+
 # Dynamic DNS Setup
 
 Dynamic DNS (DDNS) gives your home network a permanent domain name even though your ISP changes your IP address regularly.

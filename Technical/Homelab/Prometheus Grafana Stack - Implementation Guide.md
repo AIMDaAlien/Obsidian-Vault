@@ -1,8 +1,12 @@
 ---
-tags: #homelab #monitoring #prometheus #grafana #raspberry-pi #tutorial #implementation
 created: 2025-10-18
+garden_path: Technical/Homelab/Prometheus Grafana Stack - Implementation Guide.md
+last_published: '2025-11-30T20:06:27.451477'
+published_to_garden: true
+related:
+- - Prometheus Grafana Monitoring Stack - Lessons Learned
 status: deployed
-related: [[Prometheus Grafana Monitoring Stack - Lessons Learned]]
+tags: null
 ---
 
 # Prometheus + Grafana Monitoring Stack - Implementation Guide

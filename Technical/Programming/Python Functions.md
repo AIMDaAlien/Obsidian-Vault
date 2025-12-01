@@ -1,3 +1,9 @@
+---
+garden_path: Technical/Programming/Python Functions.md
+last_published: '2025-11-30T20:10:22.496859'
+published_to_garden: true
+---
+
 # Python Functions
 
 #programming #python #functions #modules #code-organization
