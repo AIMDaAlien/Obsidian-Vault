@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/3D Print Shoppe/Project - Current State.md",
+                "file": "Projects/3D Print Shoppe/3D Print Shoppe - Technical Recommendations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Project - Current State"
+              "title": "3D Print Shoppe - Technical Recommendations"
             }
           }
         ],
@@ -197,17 +197,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a7329c7d9c63c20",
+  "active": "d6216f2f4698b1bc",
   "lastOpenFiles": [
+    "Vault Index.base",
+    "Projects/3D Print Shoppe/Business & Marketing Guide.md",
+    "Projects/3D Print Shoppe/Quick Reference - Development Guide.md",
+    "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
+    "Projects/3D Print Shoppe/Project - Current State.md",
     "Projects/3D Print Shoppe - Marketing Strategy.md",
     "Projects/3D Print Shoppe - Session Notes 2024-12-05.md",
     "Projects/Project - Aim's 3D Print Shoppe - Current State.md",
     "Technical/Building a Privacy-First Obsidian Publishing System.md",
-    "3D Print Shoppe - Technical Recommendations.md",
+    "Projects/3D Print Shoppe/3D Print Shoppe - Technical Recommendations.md",
     "Branding & Assets.md",
     "Custom Order System.md",
     "Payment Workflow.md",
-    "Projects/3D Print Shoppe/Business & Marketing Guide.md",
     "Projects/3D Print Shoppe/Technical Architecture.md",
     "Projects/TypingLab/Project - Current State.md",
     "Projects/TypingLab/README.md",
@@ -222,10 +226,6 @@
     "Projects/TypingLab",
     "🗺️ Knowledge Base - Main Index.md",
     "Meta/Claude Container Setup.md",
-    "Projects/3D Print Shoppe/Website Rebuild - Nov 2025.md",
-    "Business/Quick Start Checklist.md",
-    "Business/Key Lessons & Insights.md",
-    "Business/Pricing Strategy.md",
     "Business",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Templates",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Technical Implementation",
@@ -234,7 +234,6 @@
     "Myself/Career/Computer Build Consultation",
     "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing",
     "Technical/Operating Systems/Linux/Special Chars For Bash",
-    "Technical/Operating Systems/Linux/Quoting",
     "images/55950.png",
     "images/86681.png",
     "images/Pasted image 20230621202327.png",
