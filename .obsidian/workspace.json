@@ -13,15 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/3D Print Shoppe/Project - Current State.md",
+                "file": "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Project - Current State"
+              "title": "3D Print Shoppe - Development Summary"
+            }
+          },
+          {
+            "id": "bb334eb6b9ac9c31",
+            "type": "leaf",
+            "state": {
+              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin Updates"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +160,7 @@
             }
           },
           {
-            "id": "9a7329c7d9c63c20",
+            "id": "a8bcc1f7855088fa",
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
@@ -157,14 +168,23 @@
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
+          },
+          {
+            "id": "f33634dc57618572",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 231.5,
-    "collapsed": true
+    "width": 231.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,16 +202,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "764456ae8c937c8c",
+  "active": "a8bcc1f7855088fa",
   "lastOpenFiles": [
+    "Sessions/2025-11-10 Tech Consulting Website.md",
+    "Technical/Programming/C Programming.md",
+    "Technical/Programming/Python Advanced Topics.md",
+    "Technical/Programming/Computer Science Concepts.md",
+    "Project - Current State.md",
+    "images/55950.png",
     "Untitled 1.base",
     "Untitled.base",
+    "Vault Index.base",
+    "Projects/3D Print Shoppe/Project - Current State.md",
     "Projects/3D Print Shoppe/Quick Reference - Development Guide.md",
     "Projects/3D Print Shoppe/Business & Marketing Guide.md",
-    "Vault Index.base",
     "Projects/3D Print Shoppe/3D Print Shoppe - Technical Recommendations.md",
     "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
-    "Projects/3D Print Shoppe/Project - Current State.md",
     "Projects/3D Print Shoppe - Marketing Strategy.md",
     "Projects/3D Print Shoppe - Session Notes 2024-12-05.md",
     "Projects/Project - Aim's 3D Print Shoppe - Current State.md",
@@ -208,19 +234,13 @@
     "Projects/TypingLab/04 - Performance Optimization.md",
     "Projects/TypingLab/03 - Research Findings.md",
     "Projects/TypingLab/02 - Implementation Journey.md",
-    "Projects/TypingLab/01 - Technical Architecture.md",
-    "Projects/TypingLab/00 - TypingLab Project Overview.md",
     "Projects/TypingLab",
-    "🗺️ Knowledge Base - Main Index.md",
-    "Meta/Claude Container Setup.md",
     "Business",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Templates",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Technical Implementation",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Design System",
     "Projects/Tech Consulting Website/Tech Consultation Playbook",
     "Myself/Career/Computer Build Consultation",
-    "Technical/Operating Systems/Linux/Managing Files and Directories/File Globiing",
-    "images/55950.png",
     "images/86681.png",
     "images/Pasted image 20230621202327.png",
     "images/Pasted image 20230520171145.png",
