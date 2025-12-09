@@ -1,6 +1,6 @@
 ---
 created: '2025-12-05T17:09:49.520120'
-modified: '2025-12-05T17:09:49.520120'
+modified: '2025-12-09T14:50:40.067481'
 privacy_scan: not_scanned
 published_to_garden: false
 tags: []
@@ -152,3 +152,29 @@ vercel --prod
 ## Related Notes
 - [[3D Print Shoppe - Session Notes 2024-12-05]]
 - [[3D Print Shoppe - Marketing Strategy]]
+
+
+
+---
+
+## Session Update: 2024-12-09
+
+### Quick Context
+- **Stage:** Launched on Nextdoor, website needs lead capture fixes
+- **Next Action:** Website flow redesign for better lead conversion
+- **Next Marketing:** Monday "Prints of the Week" post
+
+### Completed Today
+- [x] Nextdoor business page bio created
+- [x] First "relaunch" post published
+
+### New Pending Tasks
+- [ ] Redesign homepage: problem-first CTA
+- [ ] Create "Tell me what you need" intake form
+- [ ] Demote MakerWorld catalog to secondary
+- [ ] Monday: "Prints of the Week" post
+- [ ] MakerWorld walkthrough video
+
+### Key Decisions
+- Problem-first: visitors describe need → Aim recommends
+- Catalog = self-serve fallback, not primary path
