@@ -25,10 +25,14 @@
             "id": "1a8d264063c1f19c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Projects/3D Print Shoppe/Quick Reference - Development Guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Quick Reference - Development Guide"
             }
           }
         ],
@@ -195,9 +199,9 @@
   },
   "active": "1a8d264063c1f19c",
   "lastOpenFiles": [
-    "Projects/3D Print Shoppe/3D Print Shoppe - Technical Recommendations.md",
-    "Vault Index.base",
     "Projects/3D Print Shoppe/Business & Marketing Guide.md",
+    "Vault Index.base",
+    "Projects/3D Print Shoppe/3D Print Shoppe - Technical Recommendations.md",
     "Projects/3D Print Shoppe/Quick Reference - Development Guide.md",
     "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
     "Projects/3D Print Shoppe/Project - Current State.md",
