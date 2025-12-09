@@ -22,13 +22,13 @@
             }
           },
           {
-            "id": "bb334eb6b9ac9c31",
+            "id": "4da4d9affceacff3",
             "type": "leaf",
             "state": {
-              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin Updates"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -202,8 +202,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a8bcc1f7855088fa",
+  "active": "4da4d9affceacff3",
   "lastOpenFiles": [
+    "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
     "Sessions/2025-11-10 Tech Consulting Website.md",
     "Technical/Programming/C Programming.md",
     "Technical/Programming/Python Advanced Topics.md",
@@ -217,7 +218,6 @@
     "Projects/3D Print Shoppe/Quick Reference - Development Guide.md",
     "Projects/3D Print Shoppe/Business & Marketing Guide.md",
     "Projects/3D Print Shoppe/3D Print Shoppe - Technical Recommendations.md",
-    "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
     "Projects/3D Print Shoppe - Marketing Strategy.md",
     "Projects/3D Print Shoppe - Session Notes 2024-12-05.md",
     "Projects/Project - Aim's 3D Print Shoppe - Current State.md",
