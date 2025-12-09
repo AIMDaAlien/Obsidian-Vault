@@ -11,7 +11,7 @@
       "query": "Python ",
       "color": {
         "a": 1,
-        "rgb": 9950105
+        "rgb": 1957155
       }
     },
     {
@@ -46,6 +46,6 @@
   "repelStrength": 20,
   "linkStrength": 0.537116345467523,
   "linkDistance": 374,
-  "scale": 0.04926411288632592,
+  "scale": 0.08278086312243586,
   "close": false
 }
