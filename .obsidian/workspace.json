@@ -180,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -202,7 +202,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4da4d9affceacff3",
+  "active": "a8bcc1f7855088fa",
   "lastOpenFiles": [
     "Projects/Portfolio Website/docs/CSS Breakpoint Strategy.md",
     "Projects/Portfolio Website/docs/GitHub API for Dynamic Content.md",
