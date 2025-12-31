@@ -25,10 +25,14 @@
             "id": "4da4d9affceacff3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Data Center Technicals/Standardization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Standardization"
             }
           }
         ],
@@ -202,8 +206,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a8bcc1f7855088fa",
+  "active": "4da4d9affceacff3",
   "lastOpenFiles": [
+    "Vault Index.base",
+    "Data Center Technicals/Standardization.md",
+    "Data Center Technicals",
     "Projects/Portfolio Website/docs/CSS Breakpoint Strategy.md",
     "Projects/Portfolio Website/docs/GitHub API for Dynamic Content.md",
     "Projects/Portfolio Website/docs/Building a Knowledge Garden with D3.md",
@@ -218,7 +225,6 @@
     "images/55950.png",
     "Untitled 1.base",
     "Untitled.base",
-    "Vault Index.base",
     "Projects/3D Print Shoppe/Project - Current State.md",
     "Projects/3D Print Shoppe/Quick Reference - Development Guide.md",
     "Projects/3D Print Shoppe/Business & Marketing Guide.md",
@@ -233,14 +239,11 @@
     "Projects/3D Print Shoppe/Technical Architecture.md",
     "Projects/TypingLab/Project - Current State.md",
     "Projects/TypingLab/README.md",
-    "Projects/TypingLab/07 - Testing and Verification.md",
-    "Projects/TypingLab/06 - Subagent Implementation Guide.md",
     "Projects/TypingLab",
     "Business",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Templates",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Technical Implementation",
     "Projects/Tech Consulting Website/Tech Consultation Playbook/Design System",
-    "Projects/Tech Consulting Website/Tech Consultation Playbook",
     "images/86681.png",
     "images/Pasted image 20230621202327.png",
     "images/Pasted image 20230520171145.png",
