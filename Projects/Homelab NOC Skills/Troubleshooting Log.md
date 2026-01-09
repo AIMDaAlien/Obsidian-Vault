@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:45.339981'
-modified: '2026-01-07T22:57:45.339981'
+modified: '2026-01-09T09:48:14.246769'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -77,3 +77,30 @@ Running log of issues encountered and solutions found during the homelab build. 
 
 ---
 *Last Updated: 2026-01-07*
+
+
+
+## Network/SSH Issues
+
+### 2026-01-09 - SSH Connection Instability + Wrong Device
+**Symptom**: SSH connection reset, refused, timed out. Eventually connected but to wrong Pi.
+**Context**: Attempting to SSH to RPi 5 at 192.168.0.117
+**Root Cause**: 
+1. RPi may have been rebooting/updating
+2. IP 192.168.0.117 actually belongs to Pi-hole (RPi B+), not RPi 5
+3. Interrupted apt upgrade required `sudo dpkg --configure -a` to fix
+
+**Indicators of wrong device**:
+- `armv6l` instead of `aarch64`
+- 427MB RAM instead of 4GB
+- Hostname shows `pihole`
+
+**Solution**: Need to identify correct IP for RPi 5
+**Prevention**: 
+- Set static IPs or DHCP reservations for each Pi
+- Use distinct hostnames
+- Document IP assignments
+
+**Time to Resolve**: ~30 min debugging + next day dpkg fix
+
+---
