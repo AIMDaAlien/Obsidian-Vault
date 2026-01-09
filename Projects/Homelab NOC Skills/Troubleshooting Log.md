@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:45.339981'
-modified: '2026-01-09T09:48:14.246769'
+modified: '2026-01-09T11:12:15.471924'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -104,3 +104,16 @@ Running log of issues encountered and solutions found during the homelab build. 
 **Time to Resolve**: ~30 min debugging + next day dpkg fix
 
 ---
+
+
+### Resolution - Correct Device Found
+**RPi 5 IP**: 192.168.0.145 (hostname: pi5)
+**RPi B+ IP**: 192.168.0.117 (hostname: pihole)
+
+System verified:
+- aarch64 architecture
+- 4GB RAM (3.4Gi available)
+- 49GB disk free
+- Kernel 6.12.47
+
+**Lesson**: Maintain IP address documentation for all homelab devices.
