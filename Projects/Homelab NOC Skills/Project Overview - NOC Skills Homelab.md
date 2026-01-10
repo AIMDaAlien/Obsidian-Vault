@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:12.633493'
-modified: '2026-01-10T11:36:41.368108'
+modified: '2026-01-10T12:05:25.626203'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -75,3 +75,29 @@ Build demonstrable NOC/Data Center technician skills through hands-on homelab pr
 
 ### Next Session
 - Deploy Uptime Kuma or Prometheus + Grafana
+
+
+
+---
+## Status Update: 2026-01-10 (Revised)
+
+### Actually Completed (Discovered existing setup!)
+- ✅ Docker 29.1.4 + Portainer CE
+- ✅ Prometheus (systemd, ~10 weeks running)
+- ✅ Node Exporter (systemd)
+- ✅ Blackbox Exporter (systemd)
+- ✅ Grafana with 2 dashboards (systemd)
+
+### Updated Skills Matrix
+| Skill | Tool/Project | Status |
+|-------|--------------|--------|
+| Containerization | Docker + Portainer | ✅ Complete |
+| Metrics Collection | Prometheus + Node Exporter | ✅ Complete |
+| Visualization | Grafana | ✅ Complete |
+| HTTP Probing | Blackbox Exporter | ✅ Complete |
+| Service Monitoring | Uptime Kuma | Skipped (redundant) |
+| Alerting | Alertmanager + Ntfy | Not Started |
+| Log Aggregation | Loki | Not Started |
+
+### Next Priority
+Alerting configuration - make monitoring actionable
