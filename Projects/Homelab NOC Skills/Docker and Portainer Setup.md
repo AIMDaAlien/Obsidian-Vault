@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:31.997978'
-modified: '2026-01-07T22:57:31.997978'
+modified: '2026-01-10T11:25:55.360552'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -150,3 +150,26 @@ After Docker + Portainer are running:
 
 ---
 *Last Updated: 2026-01-07*
+
+
+
+### 2026-01-10 - Docker Installation Complete
+**Device**: RPi 5 at 192.168.0.145 (hostname: pi5)
+**Docker Version**: 29.1.4, build 0e6fee6
+**Status**: ✅ Docker installed and verified with hello-world
+
+**Update**: Changed Portainer image from `:latest` to `:lts` per current Portainer documentation (Jan 2026). LTS provides more stable, long-term supported releases.
+
+**Corrected Portainer command**:
+```bash
+docker run -d \
+  -p 8000:8000 \
+  -p 9443:9443 \
+  --name portainer \
+  --restart=always \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v portainer_data:/data \
+  portainer/portainer-ce:lts
+```
+
+**Access URL**: https://192.168.0.145:9443
