@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:12.633493'
-modified: '2026-01-07T22:57:12.633493'
+modified: '2026-01-10T11:36:41.368108'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -55,3 +55,23 @@ Build demonstrable NOC/Data Center technician skills through hands-on homelab pr
 ---
 *Project started: 2026-01-07*
 *Goal: Build interview-ready monitoring portfolio*
+
+
+
+---
+## Status Update: 2026-01-10
+
+### Completed
+- ✅ Docker 29.1.4 installed on RPi 5
+- ✅ Portainer CE (LTS) deployed and accessible
+- ✅ Local environment connected
+
+### Network Map
+| Device | IP | Role |
+|--------|-----|------|
+| RPi 5 (pi5) | 192.168.0.145 | Monitoring stack |
+| RPi B+ (pihole) | 192.168.0.117 | DNS/Pi-hole |
+| TrueNAS | TBD | Storage |
+
+### Next Session
+- Deploy Uptime Kuma or Prometheus + Grafana
