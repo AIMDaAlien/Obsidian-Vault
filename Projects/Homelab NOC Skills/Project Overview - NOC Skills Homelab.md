@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:12.633493'
-modified: '2026-01-10T23:19:07.301017'
+modified: '2026-01-11T18:48:09.555025'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -129,3 +129,35 @@ Alerting configuration - make monitoring actionable
 | Changedetection | TBD | 1 core, 512MB |
 | Filebrowser | TBD | 0.5 core, 256MB |
 | Scrutiny | TBD | 1 core, 512MB |
+
+
+
+---
+## Session Update: 2026-01-11
+
+### New Services Deployed
+
+**TrueNAS (192.168.0.120):**
+| Service | Port | Status |
+|---------|------|--------|
+| Vaultwarden | 30032 | ✅ |
+| Scrutiny | 31054 | ✅ |
+| Immich | 30041 | ✅ |
+
+**RPi 5 (192.168.0.145):**
+| Service | Port | Status |
+|---------|------|--------|
+| Nginx Proxy Manager | 81/443 | ✅ |
+| Homepage | 3001 | ✅ |
+| Watchtower | - | ✅ |
+| Alertmanager | 9093 | ✅ |
+| ntfy | 8080 | ✅ |
+
+### SSL Setup
+- NPM + self-signed cert for vault.local
+- Hosts entry: `192.168.0.145 vault.local`
+
+### Pending
+- Paperless-ngx (2 cores, 2GB)
+- Changedetection (1 core, 512MB)
+- Jellyfin (2 cores, 2-4GB + iGPU passthrough)
