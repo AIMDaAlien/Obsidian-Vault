@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:45.339981'
-modified: '2026-01-09T11:12:15.471924'
+modified: '2026-01-10T23:18:57.729892'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -117,3 +117,22 @@ System verified:
 - Kernel 6.12.47
 
 **Lesson**: Maintain IP address documentation for all homelab devices.
+
+
+
+---
+## Troubleshooting: 2026-01-10
+
+### Alertmanager dpkg Error
+**Symptom**: `prometheus user already exists but is not system user`
+**Solution**: Skip apt, use Docker instead
+```bash
+docker run -d --name alertmanager --restart=always -p 9093:9093 \
+  -v /etc/prometheus/alertmanager.yml:/etc/alertmanager/alertmanager.yml \
+  prom/alertmanager:latest
+```
+
+### Prometheus YAML Duplicates
+**Symptom**: `field alerting already set in type config.plain`
+**Cause**: Added sections without removing existing ones
+**Solution**: Replace entire prometheus.yml, ensure no duplicate keys

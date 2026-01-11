@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:12.633493'
-modified: '2026-01-10T12:05:25.626203'
+modified: '2026-01-10T23:19:07.301017'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -101,3 +101,31 @@ Build demonstrable NOC/Data Center technician skills through hands-on homelab pr
 
 ### Next Priority
 Alerting configuration - make monitoring actionable
+
+
+
+---
+## Service Architecture: 2026-01-10
+
+### RPi 5 Services (192.168.0.145)
+| Service | Port | Type |
+|---------|------|------|
+| Prometheus | 9090 | systemd |
+| Grafana | 3000 | systemd |
+| Node Exporter | 9100 | systemd |
+| Blackbox Exporter | 9115 | systemd |
+| Portainer | 9443 | Docker |
+| Alertmanager | 9093 | Docker |
+| ntfy | 8080 | Docker |
+| Homepage | 3001 | Docker |
+| Watchtower | - | Docker |
+
+### TrueNAS Services (192.168.0.120)
+| Service | Port | Resources |
+|---------|------|-----------|
+| Immich | 30041 | - |
+| Vaultwarden | TBD | 1 core, 512MB |
+| Paperless-ngx | TBD | 2 cores, 1-2GB |
+| Changedetection | TBD | 1 core, 512MB |
+| Filebrowser | TBD | 0.5 core, 256MB |
+| Scrutiny | TBD | 1 core, 512MB |

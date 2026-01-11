@@ -1,6 +1,6 @@
 ---
 created: '2026-01-10T12:05:16.232280'
-modified: '2026-01-10T12:05:16.232280'
+modified: '2026-01-10T23:18:48.631817'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -107,3 +107,46 @@ Blackbox probes external targets every 15s, generating ~5,760 DNS queries/day pe
 
 ---
 *Discovered: 2026-01-10 (running ~10 weeks)*
+
+
+
+---
+## Session Update: 2026-01-10
+
+### Alerting Configured
+- **Alertmanager**: Running via Docker on :9093
+- **ntfy**: Self-hosted on :8080, topic `homelab`
+- **Alert rule**: ServiceDown (probe_success == 0 for 1m)
+
+### Current Prometheus Targets
+**Blackbox (HTTP):**
+- google.com, github.com, prometheus.io
+- Pi5 Prometheus/Grafana
+- Router (192.168.0.1)
+- TrueNAS (192.168.0.120)
+- Pi-hole (192.168.0.117/admin)
+- Immich (192.168.0.120:30041)
+
+**Ping (ICMP):**
+- Router, Pi-hole, TrueNAS, 8.8.8.8
+
+### New Services Added
+- Homepage (:3001) - Dashboard
+- Watchtower - Auto-updates containers
+- Vaultwarden - Password manager (on TrueNAS)
+
+### Alertmanager Config
+Location: `/etc/prometheus/alertmanager.yml`
+```yaml
+route:
+  receiver: 'ntfy'
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+
+receivers:
+  - name: 'ntfy'
+    webhook_configs:
+      - url: 'http://172.17.0.1:8080/homelab'
+        send_resolved: true
+```
