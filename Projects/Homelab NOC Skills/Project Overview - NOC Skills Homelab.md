@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:12.633493'
-modified: '2026-01-11T18:48:09.555025'
+modified: '2026-01-11T22:35:25.419769'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -161,3 +161,44 @@ Alerting configuration - make monitoring actionable
 - Paperless-ngx (2 cores, 2GB)
 - Changedetection (1 core, 512MB)
 - Jellyfin (2 cores, 2-4GB + iGPU passthrough)
+
+
+
+---
+## Final Session Update: 2026-01-11
+
+### Complete Service Inventory
+
+**RPi 5 (192.168.0.145):**
+| Service | Port | Type |
+|---------|------|------|
+| Prometheus | 9090 | systemd |
+| Grafana | 3000 | systemd |
+| Node Exporter | 9100 | systemd |
+| Blackbox Exporter | 9115 | systemd |
+| Alertmanager | 9093 | Docker |
+| ntfy | 8080 | Docker |
+| Portainer | 9443 | Docker |
+| Homepage | 3001 | Docker |
+| Watchtower | - | Docker |
+| Nginx Proxy Manager | 81/443 | Docker |
+
+**TrueNAS (192.168.0.120):**
+| Service | Port | Resources |
+|---------|------|-----------|
+| Immich | 30041 | - |
+| Vaultwarden | 30032 | 1 core, 512MB |
+| Scrutiny | 31054 | 1 core, 512MB |
+| Jellyfin | 30013 | 2 cores, 4GB |
+| Changedetection | 30159 | 1 core, 512MB |
+| qBittorrent | 30024 | 1 core, 1GB |
+| Filebrowser | 30051 | 0.5 core, 256MB |
+| Nextcloud | 30027 | 2 cores, 2-4GB |
+
+### Skills Demonstrated
+- Linux administration (systemd, Docker)
+- Monitoring stack (Prometheus, Grafana, Alertmanager)
+- Container orchestration (Portainer)
+- Reverse proxy + SSL (NPM, self-signed certs)
+- Self-hosted services deployment
+- Alert configuration and notification routing
