@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:12.633493'
-modified: '2026-01-11T22:35:25.419769'
+modified: '2026-01-21T17:25:50.211907'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -202,3 +202,30 @@ Alerting configuration - make monitoring actionable
 - Reverse proxy + SSL (NPM, self-signed certs)
 - Self-hosted services deployment
 - Alert configuration and notification routing
+
+
+
+---
+## Backup Strategy Discussion: 2026-01-15
+
+### Current Storage
+- Storage_Pool: 6 SAS drives in RAID-Z2 (~4.86 TiB usable)
+- 1 hot spare SAS drive
+- Unassigned: 1.09 TiB SAS, 3.64 TiB external
+
+### Recommended Backup Config
+- Create single-drive "Backup" pool with 4TB external
+- Keep spare SAS as hot spare for Storage_Pool
+- Don't mix mismatched drives — wastes capacity
+
+### 3-2-1 Status
+| Copy | Location | Status |
+|------|----------|--------|
+| 1 | Storage_Pool | ✅ |
+| 2 | Backup pool (4TB) | Pending |
+| 3 | Offsite (cloud) | Pending |
+
+### Next Steps
+- IaC with Ansible (prompt ready for Haiku)
+- Obsidian→Portfolio pipeline (prompt ready for Haiku)
+- Set up replication tasks to Backup pool
