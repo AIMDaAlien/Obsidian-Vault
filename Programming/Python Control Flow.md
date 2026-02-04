@@ -1,5 +1,5 @@
 ---
-garden_path: Technical/Programming/Python Control Flow.md
+garden_path: Programming/Python Control Flow.md
 last_published: '2025-11-30T20:09:38.360425'
 published_to_garden: true
 ---

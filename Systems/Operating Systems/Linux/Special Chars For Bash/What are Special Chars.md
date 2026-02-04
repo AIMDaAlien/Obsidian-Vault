@@ -2,7 +2,7 @@ A set of chars the [[Bash]] shell treats in two different ways. Here we'll show 
 
 [[~ Home Directory]]
 
-[[Computer Related Stuff/Operating Systems/Linux/Special Chars For Bash/Current Directory]] 
+[[Systems/Operating Systems/Linux/Special Chars For Bash/Current Directory]]
 
 [[Parent DIrectory]]
 

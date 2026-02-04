@@ -1,6 +1,6 @@
 ---
 created: 2025-10-14
-garden_path: Technical/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learned.md
+garden_path: Systems/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learned.md
 last_published: '2025-11-30T20:06:51.819191'
 published_to_garden: true
 status: complete

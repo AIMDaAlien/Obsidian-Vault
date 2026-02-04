@@ -1,5 +1,5 @@
 ---
-garden_path: Technical/Programming/Python Fundamentals.md
+garden_path: Programming/Python Fundamentals.md
 last_published: '2025-11-30T20:08:22.834687'
 published_to_garden: true
 ---

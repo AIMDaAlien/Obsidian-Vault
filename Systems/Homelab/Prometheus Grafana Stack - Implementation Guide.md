@@ -1,6 +1,6 @@
 ---
 created: 2025-10-18
-garden_path: Technical/Homelab/Prometheus Grafana Stack - Implementation Guide.md
+garden_path: Systems/Homelab/Prometheus Grafana Stack - Implementation Guide.md
 last_published: '2025-11-30T20:06:27.451477'
 published_to_garden: true
 related:

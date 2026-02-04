@@ -68,8 +68,8 @@ The scanner grades findings by severity:
 ### Hard-Blocked Folders
 
 Certain folders never see daylight:
-- `/Myself/` - Personal plans, credentials
-- `/Career/` - Work stuff, client info  
+- `/Myself/` - Personal plans (including career), credentials
+- `/Business/` - Business notes and plans
 - `/Sessions/` - Temporary notes
 
 These are physically blocked. No scan needed, they're just off-limits.
@@ -128,7 +128,7 @@ vaults:
   garden: /path/to/knowledge-garden
 
 privacy:
-  private_folders: ["/Myself", "/Career"]
+  private_folders: ["/Myself", "/Business"]
   sensitive_patterns:
     - "api[_-]?key\\s*[=:]\\s*['\"]?[a-zA-Z0-9]{20,}"
     - "\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b"

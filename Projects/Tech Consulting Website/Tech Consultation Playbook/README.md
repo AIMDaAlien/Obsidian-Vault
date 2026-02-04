@@ -10,10 +10,10 @@ Everything from building a student-run tech consultation business: M3 Expressive
 
 ## 🗂️ Structure
 
-**[[Projects/Tech Consultation Playbook/Design System/Material 3 Expressive - Core Principles|Design System]]** - Shape systems, spring physics, containment  
-**[[Projects/Tech Consultation Playbook/Technical Implementation/Dark Mode Implementation|Technical Implementation]]** - React patterns, dark mode, tech stack  
-**[[Projects/Tech Consultation Playbook/Business Strategy/Positioning and Brand Strategy|Business Strategy]]** - Positioning, pricing, target customers  
-**[[Projects/Tech Consultation Playbook/Templates/Client Intake Template|Templates]]** - Client intake, service checklists
+**[[Projects/Tech Consulting Website/Tech Consultation Playbook/Design System/Material 3 Expressive - Core Principles|Design System]]** - Shape systems, spring physics, containment  
+**[[Projects/Tech Consulting Website/Tech Consultation Playbook/Technical Implementation/Dark Mode Implementation|Technical Implementation]]** - React patterns, dark mode, tech stack  
+**[[Projects/Tech Consulting Website/Tech Consultation Playbook/Business Strategy/Positioning and Brand Strategy|Business Strategy]]** - Positioning, pricing, target customers  
+**[[Projects/Tech Consulting Website/Tech Consultation Playbook/Templates/Client Intake Template|Templates]]** - Client intake, service checklists
 
 ## 🚀 Quick Paths
 

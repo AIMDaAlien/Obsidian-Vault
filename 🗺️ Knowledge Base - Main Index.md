@@ -26,13 +26,8 @@
 7. [[Programming/C Programming]] ← Understand how computers work
 ```
 
-### 🏢 Career Development Track  
-```
-1. [[Career/Personal Brand & Writing]] ← Professional communication
-2. [[Career/Job Search Strategy]] ← Land that dream job
-3. [[Career/Interview Mastery]] ← Ace the interviews
-4. [[Career/Skill Development]] ← Continuous improvement
-```
+### 🏢 Career Development Track
+Career notes are maintained privately (not published).
 
 ### ⚙️ Systems & Tools Track
 ```
@@ -57,14 +52,6 @@
 | [[Programming/Computer Science Concepts]] | ✅ Complete | Today |
 | [[Programming/Web Development]] | 🔄 Planned | - |
 
-### 💼 **Career Development**
-| Topic | Status | Notes |
-|-------|--------|-------|
-| [[Career/Personal Brand & Writing]] | ✅ Consolidated | Combined CV tips, writing, branding |
-| [[Career/Job Search Strategy]] | ✅ Consolidated | ATS, job boards, research |
-| [[Career/Interview Mastery]] | ✅ Consolidated | Questions, impressions, prep |
-| [[Career/Skill Development]] | ✅ Consolidated | Soft skills, continuous learning |
-
 ### ⚙️ **Systems & Tools**
 | Topic | Status | Notes |
 |-------|--------|-------|
@@ -83,7 +70,6 @@
 
 ### By Domain  
 - `#programming` - Code, algorithms, languages
-- `#career` - Professional development
 - `#systems` - Hardware, OS, tools
 - `#theory` - Computer science concepts
 
@@ -99,7 +85,6 @@
 ### Powerful Search Techniques
 ```
 #programming AND python          ← Find Python programming notes
-path:Career/                     ← All career-related notes  
 tag:#beginner                    ← Beginner-friendly content
 line:(TODO OR FIXME)            ← Find items needing attention
 ```
@@ -118,7 +103,6 @@ line:(TODO OR FIXME)            ← Find items needing attention
 - **Python Notes**: 27 files → 5 comprehensive guides (-85% redundancy!)
 - **C Programming**: 4 files → 1 complete guide  
 - **Computer Science**: Scattered content → 1 foundational guide
-- **Career Notes**: 13 files → 4 strategic guides
 
 ### Next Phase 🔄
 - [ ] Consolidate web development content (HTML/CSS)

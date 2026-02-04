@@ -52,7 +52,6 @@ Exact phrase:
 ### Advanced Search Operators
 ```
 📁 Path-based search:
-path:Career/                    # All career notes
 path:"Programming/"             # Notes in Programming folder
 
 🏷️ Tag-based search:
@@ -73,7 +72,6 @@ section:Overview               # Search in specific sections
 Complex queries:
 tag:#programming AND path:Python/ AND line:function
 (#beginner OR #intermediate) AND file:notes
-tag:#career -tag:#archived     # Career notes, not archived
 ```
 
 ## Note Organization System
@@ -83,7 +81,6 @@ tag:#career -tag:#archived     # Career notes, not archived
 📂 Top-Level Organization:
 🗺️ Knowledge Base - Main Index.md    # Central navigation
 📁 Programming/                      # Technical content
-📁 Career/                          # Professional development  
 📁 Systems/                         # Tools and processes
 📁 Projects/                        # Active work
 📁 Archive/                         # Completed/outdated
@@ -110,11 +107,6 @@ tag:#career -tag:#archived     # Career notes, not archived
   #programming/python
   #programming/web
   #programming/databases
-
-#career
-  #career/interviews
-  #career/networking
-  #career/skills
 
 #project
   #project/active
@@ -449,4 +441,4 @@ Your Obsidian vault should become an extension of your thinking. The more you in
 
 ---
 *Tags: #obsidian #productivity #knowledge-management #workflow*  
-*Related: [[🗺️ Knowledge Base - Main Index]] | [[Systems/Development Tools]] | [[Career/Skill Development]]*
+*Related: [[🗺️ Knowledge Base - Main Index]] | [[Systems/Development Tools]]*
