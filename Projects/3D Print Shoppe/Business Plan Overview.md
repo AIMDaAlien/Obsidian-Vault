@@ -1,7 +1,7 @@
 # Business Plan Overview
 
 ## Business Model
-**Name:** Aim's 3D Print Shoppe  
+**Name:** 3D Print Shoppe
 **Launch:** October 2025  
 **Model:** 90% Catalog + 10% Custom
 

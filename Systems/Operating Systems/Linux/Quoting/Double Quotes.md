@@ -10,7 +10,7 @@ Value of the `PATH` variable is still displayed:
 ![[Pasted image 20230601203423.png]]
 
 ##### On backquotes
-Double quote chars have no effect on [[Backquotes `]]. The shell will still use them as command substitution.
+Double quote chars have no effect on [[Backquotes]]. The shell will still use them as command substitution.
 `` echo This is the command "`date`"
 ![[Pasted image 20230610145501.png]]
 

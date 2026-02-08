@@ -8,7 +8,7 @@
 ---
 
 ## Quick Context
-Student-run PC setup and consultation service in Woodbridge, VA. Modern Next.js site with Material Design 3, Stripe payments, and privacy-focused approach.
+Student-run PC setup and consultation service in [local area]. Modern Next.js site with Material Design 3, Stripe payments, and privacy-focused approach.
 
 ---
 
@@ -221,7 +221,7 @@ tech-consulting-local/
 ---
 
 ## Reference Links
-- **Repo:** https://github.com/AIMDaAlien/tech-consulting
+- **Repo:** https://github.com/username/tech-consulting
 - **Live Site:** https://aimstechconsulting.com
 - **Vercel Dashboard:** https://vercel.com (check deployment status)
 - **Stripe Dashboard:** https://dashboard.stripe.com/test/apikeys

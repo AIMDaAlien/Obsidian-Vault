@@ -11,7 +11,7 @@ User Name:  `sysadmin
 System Name:  `localhost
 Current Directory: `` ~
 
-The [[~ Home Directory]] is under the */home* directory and named after the user account name. Ex: /home/AIM .
+The [[Tilde Home Directory]] is under the */home* directory and named after the user account name. Ex: /home/AIM .
 
 
 #linux #CLI 

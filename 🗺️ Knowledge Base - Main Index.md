@@ -1,74 +1,135 @@
-# 🗺️ Knowledge Base - Main Index
+# Knowledge Base - Main Index
 
 #moc #index #navigation #knowledge-base
 
-*Welcome to your organized knowledge vault! This is your central 司令塔 (しれいとう - command center) for navigating all your notes.*
+*Central command center for navigating all your notes.*
 
 ---
 
-## 🚀 **Quick Access**
-- **Start Here**: [[Programming/Python Fundamentals]] - Begin your programming journey
-- **Recently Updated**: Use `Ctrl+Shift+F` to search recent changes
-- **Daily Notes**: `Ctrl+N` for quick note creation
+## Quick Access
+- **Start Here**: [[Programming Concepts/Python/Python Fundamentals]] - Begin your programming journey
+- **Quick Switcher**: `Ctrl+O` to jump to any note instantly
+- **Global Search**: `Ctrl+Shift+F` to search across all notes
 
 ---
 
-## 🎯 **Learning Paths**
+## Vault Structure
 
-### 💻 Programming Track
+### Programming Concepts
+Theory, languages, and hands-on coding notes.
+
+| Topic | Path | Status |
+|-------|------|--------|
+| [[Programming Concepts/Computer Science Concepts]] | General theory | Complete |
+| [[Programming Concepts/Python/Python Fundamentals]] | Python basics | Complete |
+| [[Programming Concepts/Python/Python Data Structures]] | Lists, dicts, tuples | Complete |
+| [[Programming Concepts/Python/Python Control Flow]] | Conditionals, loops | Complete |
+| [[Programming Concepts/Python/Python Functions]] | Functions, scope | Complete |
+| [[Programming Concepts/Python/Python Advanced Topics]] | Decorators, generators | Complete |
+| [[Programming Concepts/C/C Programming]] | C language fundamentals | Complete |
+| [[Programming Concepts/Web Development]] | HTML, CSS, web tech | In Progress |
+
+**Subfolders**: `C/`, `CSS/`, `General Programming/`, `HTML/`, `Intro to SQL/`, `Python/`
+
+---
+
+### Systems
+Infrastructure, operating systems, networking, and tools.
+
+| Topic | Path |
+|-------|------|
+| [[Systems/Development Tools]] | IDEs, Git, productivity |
+| [[Systems/Operating Systems]] | OS concepts overview |
+| [[Systems/Operating Systems/Linux]] | Linux commands, filesystem, permissions |
+| [[Systems/Homelab]] | Home server, Prometheus/Grafana, Raspberry Pi |
+| [[Systems/Router Configuration]] | TP-Link optimization (8-part guide, 00-07) |
+| [[Systems/Obsidian Productivity Mastery]] | Vault management |
+| [[Systems/Personal Setup]] | Workspace optimization |
+
+---
+
+### Projects
+Active and archived project work (non-IT focused).
+
+| Project | Description |
+|---------|-------------|
+| [[Projects/3D Print Shoppe]] | Bambu Lab printing business - branding, orders, payments |
+| [[Projects/Teardown Cafe]] | Documentation, sessions, workflow |
+| [[Projects/Tech Consulting]] | Local tech consultation service - strategy, playbook, website |
+| [[Projects/TypingLab]] | Typing practice application (8-part guide, 00-07) |
+| [[Projects/Portfolio Website]] | Personal portfolio with M3 sidebar |
+| [[Projects/Homelab NOC Skills]] | Network operations center practice |
+| [[Projects/Archive]] | Completed/shelved project notes |
+
+---
+
+### IT Projects
+Technical projects, session logs, and implementation writeups.
+
+| Content | Description |
+|---------|-------------|
+| [[IT Projects/Session Notes]] | Dated session logs (Omarchy, DNS troubleshooting, etc.) |
+| [[IT Projects/Website Development]] | Web dev project notes |
+| [[IT Projects/Building a Privacy-First Obsidian Publishing System]] | MCP-based vault publishing system |
+
+---
+
+### Myself
+Career development and personal growth.
+
+| Topic | Path |
+|-------|------|
+| [[Myself/Career]] | Job search, interviews, ATS optimization, soft skills |
+
+---
+
+### Learning Journals
+Personal experience notes on process, methodology, and optimization.
+
+| Journal | Topic |
+|---------|-------|
+| [[Learning Journals/3D Printing Optimization Journey]] | G-code optimization, material testing |
+| [[Learning Journals/Privacy Hardening Journey]] | Android privacy, device hardening |
+| [[Learning Journals/Tech Research Strategies]] | Due diligence, source evaluation |
+| [[Learning Journals/Performance Comparison Methods]] | Network benchmarking, A/B testing |
+| [[Learning Journals/Troubleshooting Lessons Learned]] | Problem-solving frameworks |
+
+---
+
+## Learning Paths
+
+### Programming Track
 ```
-1. [[Programming/Computer Science Concepts]] ← Start here for theory
-2. [[Programming/Python Fundamentals]] ← Learn your first language  
-3. [[Programming/Python Data Structures]] ← Organize your data
-4. [[Programming/Python Control Flow]] ← Make smart decisions  
-5. [[Programming/Python Functions]] ← Write reusable code
-6. [[Programming/Python Advanced Topics]] ← Professional techniques
-7. [[Programming/C Programming]] ← Understand how computers work
+1. Computer Science Concepts       - Start here for theory
+2. Python Fundamentals             - Learn your first language
+3. Python Data Structures          - Organize your data
+4. Python Control Flow             - Make smart decisions
+5. Python Functions                - Write reusable code
+6. Python Advanced Topics          - Professional techniques
+7. C Programming                   - Understand how computers work
 ```
 
-### 🏢 Career Development Track
+### Career Development Track
 Career notes are maintained privately (not published).
 
-### ⚙️ Systems & Tools Track
+### Systems Track
 ```
-1. [[Systems/Development Tools]] ← IDEs, Git, productivity
-2. [[Systems/Operating Systems]] ← How computers manage resources  
-3. [[Systems/Personal Setup]] ← Optimize your workspace
+1. Development Tools               - IDEs, Git, productivity
+2. Operating Systems (Linux)       - Commands, filesystem, permissions
+3. Router Configuration            - Network optimization
+4. Homelab                         - Server infrastructure
 ```
 
 ---
 
-## 📚 **Knowledge Domains**
-
-### 🖥️ **Programming**
-| Topic | Status | Last Updated |
-|-------|--------|-------------|
-| [[Programming/Python Fundamentals]] | ✅ Complete | Today |
-| [[Programming/Python Data Structures]] | ✅ Complete | Today |
-| [[Programming/Python Control Flow]] | ✅ Complete | Today |
-| [[Programming/Python Functions]] | ✅ Complete | Today |
-| [[Programming/Python Advanced Topics]] | ✅ Complete | Today |
-| [[Programming/C Programming]] | ✅ Complete | Today |
-| [[Programming/Computer Science Concepts]] | ✅ Complete | Today |
-| [[Programming/Web Development]] | 🔄 Planned | - |
-
-### ⚙️ **Systems & Tools**
-| Topic | Status | Notes |
-|-------|--------|-------|
-| [[Systems/Development Tools]] | ✅ Created | IDEs, productivity tools |
-| [[Systems/Operating Systems]] | 🔄 Planned | OS concepts, file systems |
-| [[Systems/Personal Setup]] | 🔄 Planned | Home machinery, typing, etc. |
-
----
-
-## 🏷️ **Tag System**
+## Tag System
 
 ### By Difficulty
-- `#beginner` - New to programming/topic
-- `#intermediate` - Some experience needed  
+- `#beginner` - New to topic
+- `#intermediate` - Some experience needed
 - `#advanced` - Complex concepts
 
-### By Domain  
+### By Domain
 - `#programming` - Code, algorithms, languages
 - `#systems` - Hardware, OS, tools
 - `#theory` - Computer science concepts
@@ -80,74 +141,11 @@ Career notes are maintained privately (not published).
 
 ---
 
-## 🔍 **Search & Discovery**
+## Session File Convention
 
-### Powerful Search Techniques
-```
-#programming AND python          ← Find Python programming notes
-tag:#beginner                    ← Beginner-friendly content
-line:(TODO OR FIXME)            ← Find items needing attention
-```
-
-### Quick Navigation
-- **Graph View**: See connections between notes
-- **Backlinks**: See what references current note
-- **Tags Pane**: Browse by topic
-- **Recent Files**: Quick access to latest work
+All dated session/log files follow the format: `YYYY-MM-DD Topic.md`
 
 ---
 
-## 📈 **Progress Tracking**
-
-### Completed Consolidations ✅
-- **Python Notes**: 27 files → 5 comprehensive guides (-85% redundancy!)
-- **C Programming**: 4 files → 1 complete guide  
-- **Computer Science**: Scattered content → 1 foundational guide
-
-### Next Phase 🔄
-- [ ] Consolidate web development content (HTML/CSS)
-- [ ] Create systems/tools guides
-- [ ] Add cross-references and linking
-- [ ] Build project-based learning paths
-
----
-
-## 🎨 **Obsidian Power Features**
-
-### Templates
-- Create note templates for consistent structure
-- Use `Templates` core plugin
-
-### Hotkeys (Most Important)
-- `Ctrl + O` - Quick switcher (find any note instantly)
-- `Ctrl + Shift + F` - Global search
-- `Ctrl + N` - New note  
-- `Ctrl + P` - Command palette
-- `Ctrl + G` - Graph view
-
-### Recommended Plugins
-- **Dataview**: Create dynamic lists and tables
-- **Calendar**: Daily notes with calendar interface  
-- **Templater**: Advanced templating
-- **Tag Wrangler**: Better tag management
-
----
-
-## 💡 **Learning Philosophy**
-
-> **連鎖学習 (れんさがくしゅう - "chain learning")**: Each topic builds on the previous, creating strong knowledge connections.
-
-### Effective Study Pattern
-1. **Read** the foundational concepts
-2. **Practice** with hands-on examples  
-3. **Build** small projects applying the knowledge
-4. **Teach** by explaining to others (or rubber duck!)
-5. **Connect** new learning to existing knowledge
-
----
-
-*🧭 Navigate using the links above, or use `Ctrl + O` to quickly jump to any note!*
-
----
-*Tags: #moc #index #navigation #organization*  
-*Updated: Today | Version: 2.0 (Post-Consolidation)*
+*Tags: #moc #index #navigation #organization*
+*Updated: 2026-02-08 | Version: 3.0 (Post-Refactor)*

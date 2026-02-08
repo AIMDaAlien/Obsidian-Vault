@@ -12,7 +12,7 @@ If it is placed in single quotes, `$1` and `PATH` are not considered as variable
 
 ![[Pasted image 20230601222123.png]]
 
-You can also place a backslash char in fron t of each [[Backquotes `]].
+You can also place a backslash char in fron t of each [[Backquotes]].
 ``echo This is the command \`date\` 
 ![[Pasted image 20230610145308.png]]
 

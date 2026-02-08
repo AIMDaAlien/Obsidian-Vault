@@ -1,4 +1,4 @@
-The directory where you first find yourself in when you login is called **[[~ Home Directory]]**. Most of the work you'll do will be in the home directory and its subdirectories to organize files.
+The directory where you first find yourself in when you login is called **[[Tilde Home Directory]]**. Most of the work you'll do will be in the home directory and its subdirectories to organize files.
 [[What are directories]]  
 [[Directories inside Linux file system]]
 

@@ -4,7 +4,7 @@ For example, to make the `$` simply mean a `$`, rather than an indicator to th
 
 ![[Pasted image 20230601203717.png]]
 
-If you dont want [[Backquotes `]] to be used to execute a cmd, place single quotes around them. 
+If you dont want [[Backquotes]] to be used to execute a cmd, place single quotes around them. 
 ![[Pasted image 20230610145025.png]]
 
 
