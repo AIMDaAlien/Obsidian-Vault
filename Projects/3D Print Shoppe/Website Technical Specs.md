@@ -1,7 +1,7 @@
 # Website Technical Specs
 
 ## Overview
-**Domain:** aim3dprints.com (pending purchase)  
+**Domain:** your-domain.com (pending purchase)  
 **Hosting:** Vercel (free tier)  
 **Status:** Phase 1 - Week 1 build  
 **Launch Target:** This week (urgency: 12 empty page visits)
@@ -331,7 +331,7 @@ interface Product {
 ## Form Specifications
 
 ### Formspree Setup
-**Account:** amasudtech@gmail.com  
+**Account:** email@example.com  
 **Plan:** Free tier (50 submissions/month)
 
 **Form 1: Contact**
@@ -378,11 +378,11 @@ const customOrderSchema = z.object({
 ```typescript
 // app/layout.tsx
 export const metadata = {
-  title: "Aim's 3D Print Shoppe | Custom 3D Printing [Neighborhood]",
+  title: "3D Print Shoppe | Custom 3D Printing [Neighborhood]",
   description: "Local 3D printing for custom decor, organizers, and gifts. Eco-friendly PLA, 3-5 day turnaround. Order online or pickup locally.",
   keywords: "3D printing, custom prints, local printing, eco-friendly, [neighborhood], gifts, organizers",
   openGraph: {
-    title: "Aim's 3D Print Shoppe",
+    title: "3D Print Shoppe",
     description: "Custom 3D Prints Made by Your Neighbor",
     images: ['/images/og-image.jpg'],
   }
@@ -392,7 +392,7 @@ export const metadata = {
 ### Dynamic Page Titles
 ```typescript
 // Product pages
-title: `${product.name} | Aim's 3D Print Shoppe`
+title: `${product.name} | 3D Print Shoppe`
 
 // Shop page
 title: "Shop 3D Prints | Organizers, Decor & Gifts"
@@ -440,7 +440,7 @@ main (production) ← Protected branch
 ```env
 NEXT_PUBLIC_FORMSPREE_CONTACT=f/{form_id_1}
 NEXT_PUBLIC_FORMSPREE_CUSTOM=f/{form_id_2}
-NEXT_PUBLIC_SITE_URL=https://aim3dprints.com
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
 ```
 
 ---

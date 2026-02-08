@@ -388,7 +388,7 @@ When working with frameworks beyond knowledge cutoff:
 ### 4. Domain Purchase
 **Status:** Not purchased
 
-**Domain:** teardown.cafe (~$30/year)
+**Domain:** your-project.com (~$30/year)
 
 **Waiting for:** Initial content completion and deployment testing
 

@@ -25,7 +25,7 @@ published_to_garden: true
 
 ### Setup
 1. Open Claude Code Web
-2. Clone: `git clone https://github.com/AIMDaAlien/local-keebspeed.git`
+2. Clone: `git clone https://github.com/username/local-keebspeed.git`
 3. Verify build: `npm install && npm run dev`
 4. Create feature branch for each subagent
 

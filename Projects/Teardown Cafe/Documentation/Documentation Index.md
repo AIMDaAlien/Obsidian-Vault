@@ -2,7 +2,7 @@
 
 ## 📋 Quick Navigation
 
-This documentation set covers the complete development journey of **teardown.cafe**, a device teardown showcase website built with Astro.js and Material You 3 design.
+This documentation set covers the complete development journey of **your-project.com**, a device teardown showcase website built with Astro.js and Material You 3 design.
 
 ### Core Documentation
 
@@ -102,7 +102,7 @@ git commit -m "Add teardown: [Device]"
 ### Planned 📋
 - RSS feed implementation
 - Deployment (Vercel/Netlify)
-- Domain purchase (teardown.cafe)
+- Domain purchase (your-project.com)
 - Privacy-friendly analytics (optional)
 - Additional device teardowns
 
@@ -236,7 +236,7 @@ Projects/
 ### Project Links
 - **Local:** http://localhost:4321
 - **Repository:** (GitHub URL when created)
-- **Production:** https://teardown.cafe (when deployed)
+- **Production:** https://your-project.com (when deployed)
 
 ### Related Obsidian Notes
 - [[Pi-hole Setup]]

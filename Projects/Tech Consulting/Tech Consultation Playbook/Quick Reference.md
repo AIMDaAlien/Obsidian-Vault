@@ -12,11 +12,11 @@
 
 ## Business Success Formula
 
-**Position**: Student-run + Anti-big-box + Local (22192 zip)  
+**Position**: Student-run + Anti-big-box + Local ([zip code] zip)  
 **Price**: $175 setup / $100 consult (flat rates)  
 **Market**: Nextdoor → Older adults → Referrals  
 **Time**: 3-4 hours per service  
-**Proof**: teardown.cafe portfolio
+**Proof**: your-project.com portfolio
 
 ## Essential Components
 

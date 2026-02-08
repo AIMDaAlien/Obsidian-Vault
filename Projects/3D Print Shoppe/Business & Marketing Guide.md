@@ -1,8 +1,8 @@
 # Business & Marketing Guide - 3D Print Shoppe
 
-**Business:** Aim's 3D Print Shoppe  
+**Business:** 3D Print Shoppe  
 **Model:** Local service-based 3D printing  
-**Location:** Lake Ridge & Woodbridge, Virginia  
+**Location:** [local area] & [local area], [state]  
 **Launch:** November 2025  
 **Last Updated:** November 21, 2025
 
@@ -29,7 +29,7 @@
 
 **Primary Demographic:**
 - Age: 30-65 (Nextdoor core users)
-- Location: Lake Ridge, Woodbridge, Dale City, Montclair (5 mile radius)
+- Location: [local area], [local area], [local area], [local area] (5 mile radius)
 - Income: Middle class ($50k-$100k household)
 - Tech comfort: Moderate (smartphone users, not tech-savvy)
 - Values: Support local, eco-friendly, personalization
@@ -93,7 +93,7 @@ Add-ons:
 - Time: $0 (passive printing)
 
 **Fixed Costs (Monthly):**
-- Domain: $1.25/month (aim3dprints.com)
+- Domain: $1.25/month (your-domain.com)
 - Hosting: $0 (Vercel free tier)
 - Formspree: $0 (50 forms/month free)
 - Marketing: $0 (organic Nextdoor)
@@ -115,7 +115,7 @@ Add-ons:
 ```
 📸 3 photos of finished prints
 💬 Caption: "Wrapped up this week! Love how the [item] turned out in [color]. 
-    Available for custom orders - DM or visit aim3dprints.com"
+    Available for custom orders - DM or visit your-domain.com"
 🎯 Goal: Build portfolio, show quality
 ```
 
@@ -132,7 +132,7 @@ Add-ons:
 ```
 📸 1 hero product
 💬 Caption: "Weekend Special: [Item] just $[X] (reg $[Y]) 
-    Order today, pickup Saturday! Lake Ridge/Woodbridge area.
+    Order today, pickup Saturday! [local area]/[local area] area.
     DM to order 📩"
 🎯 Goal: Urgency + conversion
 ```
@@ -141,7 +141,7 @@ Add-ons:
 ```
 📸 Customer photo with their print
 💬 Caption: "[Name] is loving their new [item]! 🎉
-    Thanks for supporting local. Want your own? Visit aim3dprints.com
+    Thanks for supporting local. Want your own? Visit your-domain.com
     ⭐⭐⭐⭐⭐"
 🎯 Goal: Social proof, testimonials
 ```
@@ -151,7 +151,7 @@ Add-ons:
 - Ask questions: "What would YOU print?"
 - Run polls: "Which color? 🔵 Blue or 🔴 Red"
 - Share behind-scenes: printer timelapse
-- Tag location in posts (Lake Ridge, Woodbridge)
+- Tag location in posts ([local area], [local area])
 
 **Post Timing:**
 - Best: Tuesday-Thursday 7-9pm (after dinner)
@@ -161,20 +161,20 @@ Add-ons:
 ### Website SEO
 
 **Local Keywords:**
-- "3D printing Lake Ridge VA"
-- "Custom 3D prints Woodbridge"
+- "3D printing [local area] VA"
+- "Custom 3D prints [local area]"
 - "Local 3D printing service Virginia"
 - "3D printed gifts near me"
 
 **Content Optimization:**
-- Title tags: "Aim's 3D Print Shoppe | Lake Ridge & Woodbridge, VA"
+- Title tags: "3D Print Shoppe | [local area] & [local area], VA"
 - Meta descriptions: Include location + service
 - Alt text on images: Descriptive with keywords
 - H1/H2 tags: Clear hierarchy
 
 **Google Business Profile:**
 - Category: 3D Printing Service
-- Service areas: Lake Ridge, Woodbridge, Dale City
+- Service areas: [local area], [local area], [local area]
 - Photos: Storefront (home workspace), products, process
 - Posts: Weekly updates matching Nextdoor
 
@@ -248,8 +248,8 @@ Payment accepted via PayPal, Venmo, CashApp, or cash.
 Ready to proceed? Reply to confirm!
 
 Best,
-Aim
-aim3dprints.com
+[owner]
+your-domain.com
 ```
 
 **Ready for Pickup:**
@@ -265,7 +265,7 @@ Your [item] is ready for pickup! 🎉
 Looking forward to seeing you!
 
 Best,
-Aim
+[owner]
 ```
 
 ---
@@ -532,4 +532,4 @@ Columns:
 
 ---
 
-*For collaboration or questions: amasudtech@gmail.com*
+*For collaboration or questions: email@example.com*

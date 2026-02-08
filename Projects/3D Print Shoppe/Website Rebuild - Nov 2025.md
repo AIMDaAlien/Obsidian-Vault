@@ -8,7 +8,7 @@ Complete site overhaul from static catalog to service-based model with MakerWorl
 ### Architecture
 - **Fresh start**: Wiped existing repo, rebuilt from scratch
 - **Stack**: Astro 4.x + Material Web 2.x + Formspree
-- **Deployment**: Vercel with aim3dprints.com
+- **Deployment**: Vercel with your-domain.com
 - **No catalog**: Link to MakerWorld collection, quote-based pricing
 
 ### Why Service Model
@@ -62,7 +62,7 @@ Each agent has WebSearch enabled to use latest 2025 documentation.
 1. Generate 8 product images (AI-generated)
 2. Set up Formspree account, add form ID
 3. Deploy to Vercel production
-4. Configure aim3dprints.com DNS
+4. Configure your-domain.com DNS
 5. Update Nextdoor post with link
 
 ## Timeline

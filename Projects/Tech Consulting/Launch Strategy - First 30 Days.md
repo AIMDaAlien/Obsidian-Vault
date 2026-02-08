@@ -5,10 +5,10 @@
 - [ ] Set up Calendly with prayer time blocks (20 min)
 - [ ] Test both with dummy submission (5 min)
 - [ ] Take 2-3 service photos
-- [ ] Talk to dad - give him script + phone cards
+- [ ] Talk to [family member] - give him script + phone cards
 - [ ] Post on Facebook Marketplace as "item for sale"
 
-**Dad's Script:**
+**[family member]'s Script:**
 > "Hey, random thing - my son does tech consulting now. If you ever need help setting up a new computer or figuring out which one to buy, he's really good at explaining things in normal language. Just thought I'd mention it!"
 
 ## Week 2: Bridge Campaign
@@ -27,7 +27,7 @@
 - Take before/after photos (bloatware screenshots, etc.)
 - Request testimonials 7 days after service
 - Create simple PDF template for Service 1
-- Track lead sources (dad vs Facebook vs other)
+- Track lead sources ([family member] vs Facebook vs other)
 
 ## Month 2 Goals
 - Add Service 1 (consultation) to offerings

@@ -16,7 +16,7 @@
 - Material 3 expressive design (periwinkle accents)
 
 **SVG Icons Created:**
-- Coffee/cafe (teardown.cafe)
+- Coffee/cafe (your-project.com)
 - Shield (GrapheneOS, security projects)
 - Storage (TrueNAS, NAS builds)
 - Network (Pi-hole)
@@ -28,4 +28,4 @@
 **Solution:** Fixed rsync script, ran manual sync, pushed to GitHub
 
 **Portfolio site:** /Users/aim/Documents/First Portfolio Iteration
-**Knowledge Garden:** https://github.com/AIMDaAlien/knowledge-garden-vault
+**Knowledge Garden:** https://github.com/username/knowledge-garden-vault

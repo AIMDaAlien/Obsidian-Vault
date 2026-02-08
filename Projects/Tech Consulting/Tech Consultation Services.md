@@ -58,7 +58,7 @@
 **Time Protection:**
 - 2-hour hard limit
 - Pre-scheduled with prayer time buffers
-- Travel: 15 miles max from 22192
+- Travel: 15 miles max from [zip code]
 - Client must have PC unboxed + powered on before arrival
 
 **Why This First:** Highest urgency, fastest conversion (people need help NOW).

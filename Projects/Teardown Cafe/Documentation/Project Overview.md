@@ -37,7 +37,7 @@ A public-facing website showcasing amateur device teardowns to help others learn
 `/Users/aim/Documents/teardown-cafe/`
 
 ## Domain
-teardown.cafe (available, ~$30/yr)
+your-project.com (available, ~$30/yr)
 
 ## Privacy Considerations
 - EXIF data stripped from all images

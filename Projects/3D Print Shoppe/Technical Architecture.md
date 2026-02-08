@@ -1,6 +1,6 @@
 # Technical Architecture - 3D Print Shoppe
 
-**Project:** Aim's 3D Print Shoppe  
+**Project:** 3D Print Shoppe  
 **Tech Stack:** Astro 5.0 + Material Web 2.4.1 + TypeScript  
 **Status:** Production-ready  
 **Last Updated:** November 21, 2025
@@ -225,12 +225,12 @@ interface FilamentSpool {
 ### 4. Form Systems
 
 **Contact Form:**
-- Endpoint: formspree.io/f/xdkpeyjr
+- Endpoint: formspree.io/f/your-form-id
 - Fields: name, email, phone, message
 - Validation: HTML5 + client-side
 
 **Custom Order Form:**
-- Endpoint: formspree.io/f/mzzkeyqd
+- Endpoint: formspree.io/f/your-form-id
 - Fields: name, email, phone, project details, size, color preferences
 - Conditional fields based on order type
 - File upload support (STL files)
@@ -365,7 +365,7 @@ test('should open vendor modal on card click', async ({ page }) => {
 - Edge functions for API routes
 - CDN for static assets
 
-### DNS Setup (aim3dprints.com)
+### DNS Setup (your-domain.com)
 
 ```
 Type: CNAME
@@ -505,4 +505,4 @@ TTL: 3600
 
 ---
 
-*For questions or collaboration: amasudtech@gmail.com*
+*For questions or collaboration: email@example.com*

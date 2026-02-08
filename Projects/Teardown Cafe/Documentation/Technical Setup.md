@@ -59,7 +59,7 @@ teardown-cafe/
 ```javascript
 // astro.config.mjs
 export default defineConfig({
-  site: 'https://teardown.cafe',
+  site: 'https://your-project.com',
   integrations: [
     mdx(),
     sitemap()

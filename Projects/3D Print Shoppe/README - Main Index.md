@@ -1,6 +1,6 @@
 # 3D Print Business - Main Index
 
-**Business Name:** Aim's 3D Print Shoppe  
+**Business Name:** 3D Print Shoppe  
 **Launch Date:** October 2025  
 **Status:** Pre-launch (Week 1 - Website Development)  
 **Last Updated:** October 27, 2025
@@ -39,7 +39,7 @@
 - [x] Business concept validated (first sale)
 - [x] Market research completed
 - [x] Product catalog researched
-- [x] Domain decided (aim3dprints.com)
+- [x] Domain decided (your-domain.com)
 - [ ] Website MVP built
 - [ ] Product photos taken
 - [ ] Domain purchased
@@ -90,7 +90,7 @@
 
 ### Completed
 - ✅ Nextdoor Business Page claimed
-- ✅ Email: amasudtech@gmail.com
+- ✅ Email: email@example.com
 - ✅ Phone: (571) 866-3024
 - ✅ Formspree account created
 - ✅ Product research completed
@@ -158,10 +158,10 @@
 ## 📞 Contact & Tools
 
 ### Business Contact
-- **Email:** amasudtech@gmail.com
+- **Email:** email@example.com
 - **Phone:** (571) 866-3024 (text preferred)
 - **Nextdoor:** Business Page (Printing service • Arcade)
-- **Website:** aim3dprints.com (pending)
+- **Website:** your-domain.com (pending)
 
 ### AI Tools in Use
 - **Claude Pro** - Strategy, planning, code assistance
@@ -266,7 +266,7 @@
 1. Respond to 3 customer inquiries (Henock, Stephanie, test print)
 2. Complete website MVP (8 products minimum)
 3. Take product photos (6-8 items)
-4. Purchase domain (aim3dprints.com)
+4. Purchase domain (your-domain.com)
 
 **Important:**
 5. Set up Formspree forms
@@ -283,7 +283,7 @@
 
 ## 🤝 Team & Support
 
-### Primary: Aim
+### Primary: [owner]
 - **Role:** Owner, operator, printer, fulfillment
 - **Time:** 60-90 min/day
 - **Skills:** Tech, photography, optimization

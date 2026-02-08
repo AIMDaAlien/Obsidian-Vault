@@ -33,8 +33,8 @@ match what you're looking for.
 What specifically did you want to create?
 
 Best,
-Aim
-amasudtech@gmail.com
+[owner]
+email@example.com
 (571) 866-3024 - text preferred
 ```
 
@@ -78,9 +78,9 @@ messages to narrow down what your clients would love?
 
 Looking forward to working together!
 
-Aim
+[owner]
 (571) 866-3024 - text preferred
-amasudtech@gmail.com
+email@example.com
 ```
 
 **Next Action:** 
@@ -126,8 +126,8 @@ What's the intended use? That helps me assess if my
 printer can meet your needs.
 
 Best,
-Aim
-amasudtech@gmail.com
+[owner]
+email@example.com
 (571) 866-3024 - text preferred
 ```
 
@@ -211,7 +211,7 @@ Deposit (50%): $[half]
 Due at pickup: $[half]
 
 To secure your spot:
-PayPal: amasudtech@gmail.com (Friends & Family or add 3% for G&S)
+PayPal: email@example.com (Friends & Family or add 3% for G&S)
 OR
 Cash App: $[yourcashtag]
 

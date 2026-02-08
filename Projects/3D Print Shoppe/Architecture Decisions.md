@@ -220,7 +220,7 @@ if (stored) cartItems.set(JSON.parse(stored));
 
 **Implementation:**
 ```javascript
-const mailto = `mailto:amasudtech@gmail.com?subject=${subject}&body=${body}`;
+const mailto = `mailto:email@example.com?subject=${subject}&body=${body}`;
 window.location.href = mailto;
 ```
 

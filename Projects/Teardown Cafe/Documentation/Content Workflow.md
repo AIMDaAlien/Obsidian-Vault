@@ -290,11 +290,11 @@ Last updated: [timestamp]
 ## By Device Type
 
 ### Monitors
-- [Dell U2415 Monitor](https://teardown.cafe/teardowns/monitor-oct-2025) - Easy
+- [Dell U2415 Monitor](https://your-project.com/teardowns/monitor-oct-2025) - Easy
   - Related: [[Display Technology]]
 
 ### Raspberry Pi
-- [Pi 5 NVMe Build](https://teardown.cafe/teardowns/raspberry-pi-5-nvme) - Easy
+- [Pi 5 NVMe Build](https://your-project.com/teardowns/raspberry-pi-5-nvme) - Easy
   - Related: [[Pi-hole Setup]], [[ARM Architecture]]
 
 [etc.]
@@ -309,7 +309,7 @@ obsidian://open?vault=YourVault&file=Path/To/Note
 
 **Obsidian to Website:**
 ```
-[Teardown Title](https://teardown.cafe/teardowns/slug)
+[Teardown Title](https://your-project.com/teardowns/slug)
 ```
 
 ## Phase 7: Deployment (Planned)

@@ -2,9 +2,9 @@
 
 ## Primary Channels (Priority Order)
 
-### 1. Dad's Network ⭐ FASTEST
+### 1. [family member]'s Network ⭐ FASTEST
 **Why:** Warm leads, trusted referral source, daily customer contact
-**Action:** Give dad phone number cards, simple script
+**Action:** Give [family member] phone number cards, simple script
 **Expected ROI:** 2-3 clients in first 3 weeks
 
 ### 2. Google Business Profile
@@ -40,8 +40,8 @@
 **Goal:** Answer questions → rank in Google → build authority
 
 ## Portfolio Leverage
-**Link teardown.cafe in About section:**
-> "When I'm not helping clients, I document device teardowns and builds at teardown.cafe - check it out to see my approach to technical projects."
+**Link your-project.com in About section:**
+> "When I'm not helping clients, I document device teardowns and builds at your-project.com - check it out to see my approach to technical projects."
 
 **Why this works:** Proves you don't just talk about tech - you build enterprise-grade systems.
 

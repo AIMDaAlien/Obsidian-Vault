@@ -157,8 +157,8 @@ Formspree free tier has limits:
 If you exceed limits, form submissions will fail. Customers can't contact you.
 
 **Current Usage:**
-- Custom order form: `https://formspree.io/f/xovbldvl`
-- Vendor quote form: `https://formspree.io/f/mgvqzkvl`
+- Custom order form: `https://formspree.io/f/your-form-id`
+- Vendor quote form: `https://formspree.io/f/your-form-id`
 - **That's 2 forms** - you may already be on paid plan?
 
 **Action Items:**
@@ -332,8 +332,8 @@ When sharing site links on social media, preview may show generic/incorrect info
 - [ ] Create Open Graph preview image (1200x630px)
 - [ ] Add meta tags to base layout:
 ```html
-<meta property="og:title" content="Aim's 3D Print Shoppe">
-<meta property="og:description" content="Custom 3D printing in Woodbridge, VA">
+<meta property="og:title" content="3D Print Shoppe">
+<meta property="og:description" content="Custom 3D printing in [local area], VA">
 <meta property="og:image" content="/og-image.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">

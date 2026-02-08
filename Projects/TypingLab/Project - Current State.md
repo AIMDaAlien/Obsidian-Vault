@@ -10,7 +10,7 @@
 
 **What:** Privacy-focused offline typing trainer with adaptive AI  
 **Status:** MVP Functional - Core features complete, enhancements queued  
-**Repo:** https://github.com/AIMDaAlien/local-keebspeed  
+**Repo:** https://github.com/username/local-keebspeed  
 **Time Invested:** 16 hours total (research + implementation)
 
 ---
@@ -209,7 +209,7 @@ Bundle Size:      265KB   (target: <280KB)✅
 
 **Branch:** main  
 **Last Commit:** "feat: fully functional MVP with adaptive AI and offline mode"  
-**Remote:** https://github.com/AIMDaAlien/local-keebspeed  
+**Remote:** https://github.com/username/local-keebspeed  
 **Status:** Clean (no uncommitted changes)
 
 **To Push Changes:**

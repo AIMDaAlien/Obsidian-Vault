@@ -7,7 +7,7 @@
 **Action:** Launch with minimum viable tools, improve as you earn
 
 ### 2. Warm Leads > Cold Marketing
-**Insight:** Dad's network converts 10x faster than Facebook posts
+**Insight:** [family member]'s network converts 10x faster than Facebook posts
 **Action:** Leverage existing relationships before spending energy on strangers
 
 ### 3. One Service > Three Services
@@ -19,7 +19,7 @@
 **Action:** Emphasize "I come to you" in all marketing
 
 ### 5. Portfolio > Claims
-**Insight:** Showing teardown.cafe proves capability better than saying "I'm good at tech"
+**Insight:** Showing your-project.com proves capability better than saying "I'm good at tech"
 **Action:** Always link to proof of work
 
 ## Common Mistakes to Avoid
@@ -73,10 +73,10 @@
 
 ## Best Advice From This Whole Process
 
-1. **Launch fast, improve later** - Form + dad's network beats perfect website
+1. **Launch fast, improve later** - Form + [family member]'s network beats perfect website
 2. **Text > calls** - Protects your time + prayer schedule flexibility
 3. **Separate brands matter** - 3D printing ≠ tech consultation audiences
-4. **Portfolio speaks louder** - teardown.cafe > any marketing copy
+4. **Portfolio speaks louder** - your-project.com > any marketing copy
 5. **Boundaries = sustainability** - "No" to scope creep = yes to longevity
 
 ## When You Know It's Working

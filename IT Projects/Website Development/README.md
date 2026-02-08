@@ -107,7 +107,7 @@ Related homelab/infrastructure projects:
 
 ## Resources
 
-- **Repository**: `github.com/AIMDaAlien/First-Portfolio-Iteration`
+- **Repository**: `github.com/username/First-Portfolio-Iteration`
 - **Live Site**: `aimdaalien.github.io/First-Portfolio-Iteration`
 - **Documentation**: This vault!
 

@@ -4,11 +4,11 @@ last_published: '2025-11-28T19:46:59.816145'
 published_to_garden: true
 ---
 
-## Custom Domain Setup (teardown.cafe)
+## Custom Domain Setup (your-project.com)
 
 ### Purchasing Domain
 - Registrar: Hostinger
-- Domain: teardown.cafe
+- Domain: your-project.com
 - Cost: ~$30/year for .cafe TLD
 
 ### DNS Configuration
@@ -23,13 +23,13 @@ published_to_garden: true
 
 2. **Verify DNS propagation:**
    ```bash
-   dig teardown.cafe
+   dig your-project.com
    # Should show 216.198.79.1 in ANSWER SECTION
    ```
 
 3. **Vercel Settings:**
    - Project Settings → Domains
-   - Add teardown.cafe
+   - Add your-project.com
    - Vercel shows DNS instructions
    - Wait 5-30 minutes for propagation
 
@@ -41,7 +41,7 @@ published_to_garden: true
 3. Without this, site requires Vercel login to view
 
 ### Optional Enhancements
-- **www redirect:** Add CNAME for www.teardown.cafe → teardown.cafe
+- **www redirect:** Add CNAME for www.your-project.com → your-project.com
 - **DNSSEC:** Enable in Hostinger for security (optional)
 - **SSL:** Auto-provisioned by Vercel (Let's Encrypt)
 

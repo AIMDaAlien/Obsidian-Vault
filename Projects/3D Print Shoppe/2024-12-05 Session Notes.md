@@ -11,7 +11,7 @@ visibility: private
 # 3D Print Shoppe - Session Notes 2024-12-05
 
 ## Session Overview
-Two-session deep dive into launching Aim's 3D Print Shoppe, covering marketing strategy, website copy overhaul, legal registration, and launch preparation.
+Two-session deep dive into launching 3D Print Shoppe, covering marketing strategy, website copy overhaul, legal registration, and launch preparation.
 
 ---
 
@@ -63,12 +63,12 @@ Two-session deep dive into launching Aim's 3D Print Shoppe, covering marketing s
 **Bad Copy Example:**
 > "We provide precision-manufactured 3D printed products using commercial-grade equipment."
 
-### Legal Requirements (Virginia)
+### Legal Requirements ([state])
 
 **What's Actually Required:**
 1. **EIN** - Free, instant, needed for sales tax registration
-2. **VA Fictitious Name** - $10 at SCC, registers "Aim's 3D Print Shoppe"
-3. **VA Sales Tax** - 6% in Prince William County, quarterly filing
+2. **VA Fictitious Name** - $10 at SCC, registers "3D Print Shoppe"
+3. **[state] Sales Tax** - 6% in [county], quarterly filing
 4. **PWC Business License** - Optional under $500k gross ($0 tax), but adds legitimacy
 
 **What's NOT Required:**
@@ -108,7 +108,7 @@ Two-session deep dive into launching Aim's 3D Print Shoppe, covering marketing s
 
 **Car Enthusiasts (via NTB):**
 - Want: Cool stuff, local connection
-- Lead gen only (passive display at dad's shop)
+- Lead gen only (passive display at [family member]'s shop)
 - Gear shifter keychains as conversation starters
 
 ### Website UX Learnings
@@ -123,7 +123,7 @@ Two-session deep dive into launching Aim's 3D Print Shoppe, covering marketing s
 - Phone number visible
 - "Text only" framing (sets expectations)
 - Testimonials from neighbors
-- "Lake Ridge" mentioned specifically
+- "[local area]" mentioned specifically
 
 **Modal Flow Problem:**
 - Current: Click catalog → Modal → External site → Copy URL → Return → Paste → Submit
@@ -200,6 +200,6 @@ Your public brand should be tight (home decor, desk organization, lighting). But
 ---
 
 ## Related Notes
-- [[Project - Aim's 3D Print Shoppe - Current State]]
+- [[Project - 3D Print Shoppe - Current State]]
 - [[Nextdoor Marketing Strategy]]
-- [[Virginia Small Business Registration]]
+- [[[state] Small Business Registration]]

@@ -57,15 +57,15 @@ hey neighbors - been lurking here for a while but finally have something worth s
 
 I've been doing 3D printing from my place for a few months now, mostly just figuring things out. finally got a real website up and sorted out the boring legal stuff so figured I'd put myself out there
 
-I'm Aim, GMU student, trying to help pay tuition doing something I actually enjoy. I make stuff like lamps, desk organizers, vases, that kind of thing. Not the flimsy plastic toys you're probably picturing - these come out with a matte finish that honestly looks more like ceramic or wood
+I'm a [university] student, trying to help pay tuition doing something I actually enjoy. I make stuff like lamps, desk organizers, vases, that kind of thing. Not the flimsy plastic toys you're probably picturing - these come out with a matte finish that honestly looks more like ceramic or wood
 
 this lamp is one of my favorites. Japanese-style, warm glow, fits on a nightstand or desk. took about 20 hours to print
 
-anyway if you've got something you've been wanting to organize or decorate, or just curious what modern 3D printing can actually do - website is aim3dprints.com, or just message me here
+anyway if you've got something you've been wanting to organize or decorate, or just curious what modern 3D printing can actually do - website is your-domain.com, or just message me here
 
 no shipping, just porch pickup whenever works for you
 
-- Aim
+- [owner]
 ```
 
 **Photo:** Shoji Lamp, lit
@@ -81,9 +81,9 @@ I printed these modular rack things that stack however you want them. each one h
 
 if you've got a weird corner or awkward space that store-bought organizers don't fit, that's kind of my thing. I can usually find or adapt a design in a day or two
 
-$15 per rack piece, porch pickup. aim3dprints.com or DM me
+$15 per rack piece, porch pickup. your-domain.com or DM me
 
-- Aim
+- [owner]
 ```
 
 **Photo:** Shoe rack in use with real shoes
@@ -101,7 +101,7 @@ this one's the famous Great Wave but I've done car photos, pets, all kinds of st
 
 takes a while to print but the result is pretty unique. definitely not something you'll see at target
 
-aim3dprints.com - Aim
+your-domain.com - [owner]
 ```
 
 **Photo:** Great Wave panel held at angle to show depth
@@ -111,14 +111,14 @@ aim3dprints.com - Aim
 ## NTB Passive Lead Gen
 
 ### Setup
-- Display prints at NTB Telegraph Rd (dad's shop)
+- Display prints at [partner location] ([family member]'s shop)
 - Gear shifter keychains for car guys
 - 3D printed business cards
-- QR code linking to aim3dprints.com
+- QR code linking to your-domain.com
 
 ### Positioning
 Don't say: "come here for pickup"
-Do say: "browse my display at NTB Telegraph Rd next time you're getting tires"
+Do say: "browse my display at [partner location] next time you're getting tires"
 
 ### Products for Display
 - Gear shifter keychains (car audience)
@@ -133,14 +133,14 @@ Do say: "browse my display at NTB Telegraph Rd next time you're getting tires"
 Paper card (Avery 8371 cardstock) + mini keychain print combo
 
 ### Card Content
-- Name: Aim
+- Name: [owner]
 - Business: 3D Prints
-- Phone: 571-866-3024 (text only)
-- QR code to aim3dprints.com
+- Phone: [phone] (text only)
+- QR code to your-domain.com
 - Tagline: "Your neighbor with a printer"
 
 ### Production
-- Print on Epson WF-2950
+- Print on [printer model]
 - 80-110lb cardstock
 - Hole punch corner, attach keychain with string/zip tie
 - Cost: ~$0.50 each
@@ -149,21 +149,21 @@ Paper card (Avery 8371 cardstock) + mini keychain print combo
 
 ## Testimonials
 
-### Real (from Ryan L.)
-> "The Buddha statue came out really nice - shiny finish, solid quality. Aim was super helpful with color options and even sent photos before I picked it up." - Ryan L., Lake Ridge
+### Real (from [customer])
+> "The Buddha statue came out really nice - shiny finish, solid quality. [owner] was super helpful with color options and even sent photos before I picked it up." - [customer], [local area]
 
 ### Synthetic (approved for use)
-> "Needed a headphone stand that didn't look like cheap Amazon junk. Aim printed one that matches my desk setup perfectly. Took like 3 days." - Marcus T.
+> "Needed a headphone stand that didn't look like cheap Amazon junk. [owner] printed one that matches my desk setup perfectly. Took like 3 days." - [reviewer 1]
 
-> "Got a custom lamp for my daughter's room. He texted me when it was ready and I just grabbed it off his porch. Easiest transaction ever." - Jennifer K.
+> "Got a custom lamp for my daughter's room. He texted me when it was ready and I just grabbed it off his porch. Easiest transaction ever." - [reviewer 2]
 
 ---
 
 ## Future Channels
 
 ### Instagram (Winter Break)
-- Handle: @aims3dprintshoppe (check availability)
-- Bio: "3D printed home decor and functional pieces | Lake Ridge, VA | No shipping fees | DM or aim3dprints.com"
+- Handle: @[social-handle] (check availability)
+- Bio: "3D printed home decor and functional pieces | [local area], VA | No shipping fees | DM or your-domain.com"
 - Content: Product shots, behind-the-scenes printer shots, customer pickups
 
 ### Launch Sequence
@@ -187,5 +187,5 @@ Paper card (Avery 8371 cardstock) + mini keychain print combo
 ---
 
 ## Related Notes
-- [[Project - Aim's 3D Print Shoppe - Current State]]
+- [[Project - 3D Print Shoppe - Current State]]
 - [[3D Print Shoppe - Session Notes 2024-12-05]]

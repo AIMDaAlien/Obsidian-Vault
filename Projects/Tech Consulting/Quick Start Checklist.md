@@ -5,13 +5,13 @@
 - [ ] Set up Calendly (block prayer times)
 - [ ] Test both with dummy submission
 - [ ] Take 2-3 photos (you working, clean PC setup)
-- [ ] Write script for dad
+- [ ] Write script for [family member]
 - [ ] Fix form typo ("what you need with?" → "what you need help with:")
 
 ## THIS WEEK (4 hours)
 - [ ] Post on Facebook Marketplace ("item for sale" workaround)
 - [ ] Join 2-3 local Facebook groups
-- [ ] Give dad phone number cards + script
+- [ ] Give [family member] phone number cards + script
 - [ ] Set up Google Business Profile (15 min)
 - [ ] Create simple price sheet (Services + pricing)
 

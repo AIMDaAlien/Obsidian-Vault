@@ -116,4 +116,4 @@ article img {
 5. **Methodology over tools** - Good documentation transcends workspace limitations
 6. **Frankenstein builds viable** - Broken-screen laptops have salvageable internals
 
-**Applied to:** teardown.cafe website, hardware documentation practices
+**Applied to:** your-project.com website, hardware documentation practices

@@ -37,7 +37,7 @@ Material 3 expressive sidebar with floating pill navigation, morphing animations
 - **Sidebar:** 80px collapsed → 280px hover-expanded
 
 ## Repository
-- **GitHub:** AIMDaAlien/First-Portfolio-Iteration
+- **GitHub:** username/First-Portfolio-Iteration
 - **Branch:** main
 
 ---

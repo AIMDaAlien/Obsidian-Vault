@@ -15,7 +15,7 @@ Client fills Google Form → you get email notification
 
 ### Step 2: Initial Contact (within 4 hours)
 ```
-Hi [NAME], this is Aim - thanks for filling out the PC setup form!
+Hi [NAME], this is [owner] - thanks for filling out the PC setup form!
 
 Quick clarification: [1-2 specific questions based on form]
 

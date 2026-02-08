@@ -249,7 +249,7 @@ node server/server.js
 - [ ] **Actually test if I like monitoring work** (original goal)
 
 ### Career Development (Ongoing)
-- [ ] Continue George Mason IT studies
+- [ ] Continue [university] IT studies
 - [ ] Start GitHub documentation for completed projects (Pi-hole, WireGuard)
 - [ ] Research NOC analyst job descriptions to validate skill requirements
 - [ ] Consider AWS Cloud Practitioner cert (still evaluating ROI)
@@ -301,7 +301,7 @@ node server/server.js
 
 **Emotional journey:** Excitement → frustration → confusion → clarity → planning
 
-**Alfred's assessment:** "Master Aim, this is 石橋を叩いて渡る (*ishibashi wo tataite wataru* - tap the stone bridge before crossing) in action. You tested before committing to a path, discovered a foundational issue, and adjusted course rationally. That's precisely the mindset that succeeds in IT operations."
+**Alfred's assessment:** "[owner], this is 石橋を叩いて渡る (*ishibashi wo tataite wataru* - tap the stone bridge before crossing) in action. You tested before committing to a path, discovered a foundational issue, and adjusted course rationally. That's precisely the mindset that succeeds in IT operations."
 
 ---
 

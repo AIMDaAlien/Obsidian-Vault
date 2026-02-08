@@ -1,7 +1,7 @@
 # Tech Consulting Website - Current State
 
 **Last Updated:** 2025-11-10
-**Project:** Aim's Tech Consulting (aimstechconsulting.com)
+**Project:** Tech Consulting (your-project.com)
 **Status:** Active Development
 **Deploy Status:** ✅ Production (Vercel)
 
@@ -222,7 +222,7 @@ tech-consulting-local/
 
 ## Reference Links
 - **Repo:** https://github.com/username/tech-consulting
-- **Live Site:** https://aimstechconsulting.com
+- **Live Site:** https://your-project.com
 - **Vercel Dashboard:** https://vercel.com (check deployment status)
 - **Stripe Dashboard:** https://dashboard.stripe.com/test/apikeys
 - **GA Dashboard:** https://analytics.google.com (property: G-M81P4EWVJZ)

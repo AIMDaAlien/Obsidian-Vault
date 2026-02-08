@@ -19,7 +19,7 @@ created: 2025-10-23
 6. **Real-world problem solving** - Built to share hardware knowledge
 
 ### Resume Bullet Points (Pick 2-3)
-- Built full-stack hardware documentation site using Astro v5 and Material You 3 design system, deployed to production at teardown.cafe
+- Built full-stack hardware documentation site using Astro v5 and Material You 3 design system, deployed to production at your-project.com
 - Implemented privacy-first content pipeline with automated EXIF stripping and Vercel CDN deployment
 - Designed responsive UI with custom Material Design System, supporting 11 device teardown categories with video/image galleries
 - Configured production infrastructure including DNS management, SSL certificates, and automated deployment pipeline
@@ -31,7 +31,7 @@ Add to teardown-cafe README.md:
 ```markdown
 # Teardown Cafe
 
-**Live Site:** [teardown.cafe](https://teardown.cafe)
+**Live Site:** [your-project.com](https://your-project.com)
 
 Hardware teardown documentation and repair guides with privacy-first design.
 
@@ -75,8 +75,8 @@ Automated via Vercel on push to main branch.
   <p>Hardware repair documentation site with privacy-first architecture. 
      11 device teardowns, custom CMS, responsive design.</p>
   <div class="project-links">
-    <a href="https://teardown.cafe">Live Site</a>
-    <a href="https://github.com/AIMDaAlien/teardown-cafe">GitHub</a>
+    <a href="https://your-project.com">Live Site</a>
+    <a href="https://github.com/username/teardown-cafe">GitHub</a>
   </div>
 </div>
 ```
@@ -100,7 +100,7 @@ What I built:
 
 Tech: Astro, Material Design, Vercel, Content Collections API
 
-Check it out: teardown.cafe
+Check it out: your-project.com
 
 #webdev #astro #ux
 ```
@@ -109,7 +109,7 @@ Check it out: teardown.cafe
 
 **When asked "Tell me about a recent project":**
 
-> "I built Teardown Cafe - a hardware documentation site using Astro and Material Design. The challenge was balancing technical content with good UX, while maintaining privacy. I implemented automated EXIF stripping for all images, custom content validation schemas, and deployed to production with a custom domain. It's live at teardown.cafe with 11 device teardowns."
+> "I built Teardown Cafe - a hardware documentation site using Astro and Material Design. The challenge was balancing technical content with good UX, while maintaining privacy. I implemented automated EXIF stripping for all images, custom content validation schemas, and deployed to production with a custom domain. It's live at your-project.com with 11 device teardowns."
 
 **Technical depth if asked:**
 - Content Layer API for markdown processing
@@ -128,7 +128,7 @@ Check it out: teardown.cafe
 ### Portfolio Site URL
 
 Include prominently:
-- Hero section: "Check out my latest project: teardown.cafe"
+- Hero section: "Check out my latest project: your-project.com"
 - Projects grid: Feature as top/recent project
 - GitHub pinned repo: Pin teardown-cafe repository
 
@@ -145,4 +145,4 @@ Include prominently:
 
 ---
 *Created: October 23, 2025*
-*Site Status: Live at teardown.cafe*
+*Site Status: Live at your-project.com*

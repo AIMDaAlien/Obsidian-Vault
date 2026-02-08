@@ -202,7 +202,7 @@ Covers 4 major features:
 ## 🔗 External Resources
 
 **Repository:**
-- GitHub: https://github.com/AIMDaAlien/local-keebspeed
+- GitHub: https://github.com/username/local-keebspeed
 
 **Live App:**
 - Local: http://localhost:3000 (npm run dev)

@@ -4,14 +4,14 @@ modified: '2025-12-09T14:50:40.067481'
 privacy_scan: not_scanned
 published_to_garden: false
 tags: []
-title: Project   Aim'S 3D Print Shoppe   Current State
+title: Project   3D Print Shoppe   Current State
 visibility: private
 ---
 
-# Aim's 3D Print Shoppe - Current State
+# 3D Print Shoppe - Current State
 
 ## Quick Context
-Hyperlocal 3D printing business serving Lake Ridge/Woodbridge, VA. Porch pickup only, no shipping. One-person operation run from home while attending GMU.
+Hyperlocal 3D printing business serving [local area]/[local area], VA. Porch pickup only, no shipping. One-person operation run from home while attending [university].
 
 ---
 
@@ -30,8 +30,8 @@ Hyperlocal 3D printing business serving Lake Ridge/Woodbridge, VA. Porch pickup 
 
 ### Business Model
 - **Service type:** Curator/manufacturer, NOT designer (I don't do CAD)
-- **Pickup only:** Porch pickup in Lake Ridge, no shipping
-- **Secondary lead gen:** Prints displayed at NTB Telegraph Rd (dad's shop)
+- **Pickup only:** Porch pickup in [local area], no shipping
+- **Secondary lead gen:** Prints displayed at [partner location] ([family member]'s shop)
 - **Payment:** Stripe Payment Links, also accept Venmo/CashApp/PayPal
 - **Deposit required:** Yes, before printing starts
 - **Rush orders:** +20% fee for under 48 hours
@@ -51,7 +51,7 @@ Hyperlocal 3D printing business serving Lake Ridge/Woodbridge, VA. Porch pickup 
 | Keychains | $3-8 |
 
 ### Communication Policy
-- **Phone:** Text only (571-866-3024)
+- **Phone:** Text only ([phone])
 - **No calls:** Spam problem on GrapheneOS, plus introvert preference
 - **Response time:** Within 12 hours during daytime
 - **Future:** May get separate business number (Google Voice or OpenPhone)
@@ -61,7 +61,7 @@ Hyperlocal 3D printing business serving Lake Ridge/Woodbridge, VA. Porch pickup 
 - First person singular ("I" not "we")
 - Conversational, not corporate
 - No jargon: avoid "manufacturing", "precision", "factory-quality"
-- Specific to Lake Ridge location
+- Specific to [local area] location
 
 ---
 
@@ -70,8 +70,8 @@ Hyperlocal 3D printing business serving Lake Ridge/Woodbridge, VA. Porch pickup 
 | Requirement | Status | Details |
 |-------------|--------|---------|
 | Federal EIN | Done | Obtained for sole proprietor |
-| VA Fictitious Name (DBA) | Done | "Aim's 3D Print Shoppe" - $10 filed |
-| VA Sales Tax | Done | 6% Prince William County, quarterly filing |
+| VA Fictitious Name (DBA) | Done | "3D Print Shoppe" - $10 filed |
+| VA Sales Tax | Done | 6% [county], quarterly filing |
 | PWC Business License | Optional | $0 under $500k gross, recommended but not required |
 | Zoning | Compliant | Home occupation rules met (no signage, no employees, porch pickup) |
 
@@ -125,9 +125,9 @@ vercel --prod
 3. **Post 3 (Week 4):** Hueforge/Great Wave - photo-to-art capability
 
 ### Testimonials Ready
-- Ryan L. (real) - Buddha statue
-- Marcus T. (synthetic) - Headphone stand
-- Jennifer K. (synthetic) - Custom lamp
+- [customer] (real) - Buddha statue
+- [reviewer 1] (synthetic) - Headphone stand
+- [reviewer 2] (synthetic) - Custom lamp
 
 ---
 
@@ -176,5 +176,5 @@ vercel --prod
 - [ ] MakerWorld walkthrough video
 
 ### Key Decisions
-- Problem-first: visitors describe need → Aim recommends
+- Problem-first: visitors describe need → [owner] recommends
 - Catalog = self-serve fallback, not primary path

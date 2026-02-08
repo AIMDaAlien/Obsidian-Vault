@@ -61,7 +61,7 @@
 **Space:** Bedroom setup, can add 2 more printers max
 
 ## Distribution Channels
-1. **Website** - aim3dprints.com (primary)
+1. **Website** - your-domain.com (primary)
 2. **Nextdoor** - Community posts, business page
 3. **Local partnerships** - Cafe, mosque (planned)
 4. **Etsy** - Future passive channel (Month 3+)

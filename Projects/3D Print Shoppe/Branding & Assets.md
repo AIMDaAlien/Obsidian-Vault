@@ -7,9 +7,9 @@
 
 ## Brand Identity
 
-**Business Name:** Aim's 3D Print Shoppe  
+**Business Name:** 3D Print Shoppe  
 **Tagline:** *(To be defined)*  
-**Target Audience:** Local customers in Woodbridge/DMV area, hobbyists, gift-buyers
+**Target Audience:** Local customers in [local area]/[metro area], hobbyists, gift-buyers
 
 ---
 
@@ -100,8 +100,8 @@ The brand uses a **Material Design 3** color system with a periwinkle/lavender a
 ```astro
 <a href="/" class="logo-link">
   <div class="logo">
-    <img src="/logo.png" alt="Aim's 3D Print Shoppe Logo" class="logo-image" />
-    <span class="logo-text">Aim's 3D Print Shoppe</span>
+    <img src="/logo.png" alt="3D Print Shoppe Logo" class="logo-image" />
+    <span class="logo-text">3D Print Shoppe</span>
   </div>
 </a>
 ```

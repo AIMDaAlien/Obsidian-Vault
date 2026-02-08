@@ -10,9 +10,9 @@
 
 ```bash
 aim@MacBook-Air First-Portfolio-Iteration % git push origin
-To https://github.com/AIMDaAlien/First-Portfolio-Iteration.git
+To https://github.com/username/First-Portfolio-Iteration.git
  ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/AIMDaAlien/First-Portfolio-Iteration.git'
+error: failed to push some refs to 'https://github.com/username/First-Portfolio-Iteration.git'
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.

@@ -57,7 +57,7 @@ Device teardown showcase website built with Astro v5.14.5 and Material You 3 des
 - [ ] RSS feed implementation (@astrojs/rss)
 - [ ] Image optimization automation (sharp package)
 - [ ] Deployment to Vercel/Netlify
-- [ ] Domain purchase (teardown.cafe)
+- [ ] Domain purchase (your-project.com)
 
 ### Future Considerations 💭
 - [ ] Privacy-friendly analytics (Plausible/GoatCounter)
@@ -212,7 +212,7 @@ updated: 2025-10-20
 
 **Last Updated:** October 20, 2025  
 **Live Site:** https://teardown-cafe.vercel.app  
-**Repository:** https://github.com/AIMDaAlien/teardown-cafe  
+**Repository:** https://github.com/username/teardown-cafe  
 **Tech Stack:** Astro v5.14.5, Material You 3 Design System
 
 ## Recent Session Summary (Oct 20, 2025)
@@ -364,16 +364,16 @@ Build script scans Obsidian vault, matches tags, generates relationships.
 - [x] AKKO Lavender + KTT Baby White switches documented
 - [x] 2 images + 2 videos (assembly + sound test)
 - [x] Easy difficulty (first-time build)
-- [x] **Domain purchased:** teardown.cafe via Hostinger ($30/yr)
+- [x] **Domain purchased:** your-project.com via Hostinger ($30/yr)
 - [x] DNS A record configured (216.198.79.1)
 - [x] Vercel deployment protection disabled (site now public)
-- [x] Site live at https://teardown.cafe
+- [x] Site live at https://your-project.com
 - [x] Created deployment and content workflow docs
 
 **Updated count:** 11 total teardown entries
 
 **Site Status:** Live and publicly accessible
-**Production URL:** https://teardown.cafe
+**Production URL:** https://your-project.com
 **Vercel URL:** https://teardown-cafe.vercel.app (redirects to custom domain)
 
 

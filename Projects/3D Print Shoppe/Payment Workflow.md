@@ -43,7 +43,7 @@ The payment system uses a **post-quote deposit model** where customers don't pay
 #### Payment Options
 
 **1. Stripe (Credit Card)**
-- **Link:** `https://buy.stripe.com/3cIaEQ1pp1007Qsg7M6J200`
+- **Link:** `[payment-link]`
 - **Implementation:** Direct link in full-width button
 - **Button text:** "Pay $10 with Credit Card"
 - **Opens in:** New tab with `target="_blank"`

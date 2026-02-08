@@ -14,7 +14,7 @@ The custom order form is the primary entry point for customers requesting person
 ## Form Architecture
 
 **File:** `src/pages/custom-order.astro`  
-**Submission:** Formspree (`https://formspree.io/f/xovbldvl`)  
+**Submission:** Formspree (`https://formspree.io/f/your-form-id`)  
 **Success redirect:** `/thank-you`  
 **Layout:** Two-column grid (form + info sidebar)
 
