@@ -25,38 +25,17 @@
             "id": "4da4d9affceacff3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "f1470add99dcff81",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
+              "type": "bases",
               "state": {
-                "currentVersion": "1.11.5"
+                "file": "Vault Index.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
-            }
-          },
-          {
-            "id": "ccdf0770cb410396",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "icon": "lucide-table",
+              "title": "Vault Index"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -227,8 +206,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a8bcc1f7855088fa",
+  "active": "4da4d9affceacff3",
   "lastOpenFiles": [
+    "AGENTS.md",
+    "Vault Index.base",
     "Untitled.base",
     "IT Projects/Session Notes/2026-01-02 Starting Omarchy (Arch Linux).md",
     "Projects/Homelab NOC Skills/Prometheus Grafana Stack.md",
@@ -238,7 +219,6 @@
     "Projects/Homelab NOC Skills/Docker and Portainer Setup.md",
     "Projects/Homelab NOC Skills/Project Overview - NOC Skills Homelab.md",
     "Projects/Homelab NOC Skills",
-    "Vault Index.base",
     "Data Center Technicals",
     "Projects/Portfolio Website/docs/CSS Breakpoint Strategy.md",
     "Projects/Portfolio Website/docs/GitHub API for Dynamic Content.md",
