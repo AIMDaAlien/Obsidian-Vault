@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T03:56:41Z",
+  "generated_at": "2026-02-09T04:06:35Z",
   "tree": [
     {
       "path": "README.md",
@@ -690,10 +690,6 @@
       "type": "file"
     },
     {
-      "path": "Programming Concepts/Intro to SQL",
-      "type": "dir"
-    },
-    {
       "path": "Programming Concepts/Python",
       "type": "dir"
     },
@@ -1380,10 +1376,6 @@
     {
       "path": "Systems/Operating Systems/Linux/Command HIstory/Step 3.md",
       "type": "file"
-    },
-    {
-      "path": "Systems/Operating Systems/Linux/Command Line Skills",
-      "type": "dir"
     },
     {
       "path": "Systems/Operating Systems/Linux/Command Types",
