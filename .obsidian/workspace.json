@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IT Projects/Building a Privacy-First Obsidian Publishing System.md",
+                "file": "Projects/Archive/TrueNAS Build Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Building a Privacy-First Obsidian Publishing System"
+              "title": "TrueNAS Build Guide"
             }
           }
         ],
@@ -207,8 +207,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d6216f2f4698b1bc",
+  "active": "4da4d9affceacff3",
   "lastOpenFiles": [
+    "Projects/Archive/Pi-hole TrueNAS Network Conflict Troubleshooting.md",
+    "Projects/Archive/Tag System & Portfolio Integration.md",
+    "Projects/Archive/Knowledge Garden - Sidebar Implementation Session.md",
+    "Projects/Archive/Teardown Documentation Lessons.md",
+    "Programming Concepts/Web Development.md",
+    "IT Projects/Building a Privacy-First Obsidian Publishing System.md",
     "garden-manifest.json",
     "README.md",
     "Projects/3D Print Shoppe/Project - 3D Print Shoppe - Current State.md",
@@ -230,11 +236,6 @@
     "Projects/Tech Consulting/Tech Consultation Services.md",
     "Projects/Tech Consulting/Tech Consultation Launch Guide.md",
     "Projects/Tech Consulting/Quick Start Checklist.md",
-    "Projects/Tech Consulting/Pricing Strategy.md",
-    "Projects/Tech Consulting/Marketing Channels.md",
-    "Projects/Tech Consulting/Launch Strategy - First 30 Days.md",
-    "Projects/Tech Consulting/Key Lessons & Insights.md",
-    "Projects/Tech Consulting/Client Boundaries & Scripts.md",
     "Projects/Tech Consulting/Tech Consultation Playbook/Templates",
     "Projects/Tech Consulting/Tech Consultation Playbook/Technical Implementation",
     "Projects/Tech Consulting/Tech Consultation Playbook/Design System",
@@ -244,7 +245,6 @@
     "Learning Journals",
     "Systems/Router Configuration",
     "Programming Concepts/Python",
-    "Programming Concepts/Intro to SQL",
     "images/55950.png",
     "images/86681.png",
     "images/Pasted image 20230621202327.png",

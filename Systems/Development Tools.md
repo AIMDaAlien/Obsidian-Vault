@@ -654,16 +654,16 @@ Your development environment is your 道具 (どうぐ - tools). Invest time in 
 
 ## Practical Application: Portfolio Website Project
 
-**See It In Action**: [[IT Projects/Website Development/README]]
+**See It In Action**: [[IT Projects/Portfolio Website Development/README]]
 
 This knowledge base includes a real-world website development project that demonstrates many of the tools and practices covered here:
 
 ### Git & GitHub Pages Workflow
-- [[IT Projects/Website Development/Deployment/Github Pages Setup]] - Practical deployment guide
-- [[IT Projects/Website Development/Deployment/Git Push Conflict Troubleshooting]] - Real troubleshooting scenarios
+- [[Github Pages Setup]] - Practical deployment guide
+- [[Git Push Conflict Troubleshooting]] - Real troubleshooting scenarios
 
 ### Feature Implementation
-- [[IT Projects/Website Development/Features/Privacy Filter - Matrix Decode]] - JavaScript + CSS implementation
+- [[Privacy Filter - Matrix Decode]] - JavaScript + CSS implementation
 
 ### Development Process
 The Website Development project showcases:
