@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T04:21:11Z",
+  "generated_at": "2026-02-09T15:23:10Z",
   "tree": [
     {
       "path": "README.md",
@@ -26,6 +26,42 @@
       "type": "file"
     },
     {
+      "path": "IT Projects/Portfolio Website Development",
+      "type": "dir"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/README.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/Content",
+      "type": "dir"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/Content/About Me Draft.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/Deployment",
+      "type": "dir"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/Deployment/Git Push Conflict Troubleshooting.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/Deployment/Github Pages Setup.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/Features",
+      "type": "dir"
+    },
+    {
+      "path": "IT Projects/Portfolio Website Development/Features/Privacy Filter - Matrix Decode.md",
+      "type": "file"
+    },
+    {
       "path": "IT Projects/Session Notes",
       "type": "dir"
     },
@@ -47,42 +83,6 @@
     },
     {
       "path": "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md",
-      "type": "file"
-    },
-    {
-      "path": "IT Projects/Website Development",
-      "type": "dir"
-    },
-    {
-      "path": "IT Projects/Website Development/README.md",
-      "type": "file"
-    },
-    {
-      "path": "IT Projects/Website Development/Content",
-      "type": "dir"
-    },
-    {
-      "path": "IT Projects/Website Development/Content/About Me Draft.md",
-      "type": "file"
-    },
-    {
-      "path": "IT Projects/Website Development/Deployment",
-      "type": "dir"
-    },
-    {
-      "path": "IT Projects/Website Development/Deployment/Git Push Conflict Troubleshooting.md",
-      "type": "file"
-    },
-    {
-      "path": "IT Projects/Website Development/Deployment/Github Pages Setup.md",
-      "type": "file"
-    },
-    {
-      "path": "IT Projects/Website Development/Features",
-      "type": "dir"
-    },
-    {
-      "path": "IT Projects/Website Development/Features/Privacy Filter - Matrix Decode.md",
       "type": "file"
     },
     {
@@ -1799,6 +1799,21 @@
     "IT Projects/README.md": {
       "title": "IT Projects"
     },
+    "IT Projects/Portfolio Website Development/README.md": {
+      "title": "Website Development - Project Overview"
+    },
+    "IT Projects/Portfolio Website Development/Content/About Me Draft.md": {
+      "title": "About Me - Website Content Draft"
+    },
+    "IT Projects/Portfolio Website Development/Deployment/Git Push Conflict Troubleshooting.md": {
+      "title": "Git Troubleshooting - Non-Fast-Forward & Push Conflicts"
+    },
+    "IT Projects/Portfolio Website Development/Deployment/Github Pages Setup.md": {
+      "title": "Github Pages Setup & Deployment"
+    },
+    "IT Projects/Portfolio Website Development/Features/Privacy Filter - Matrix Decode.md": {
+      "title": "Matrix-Decode Privacy Filter Implementation"
+    },
     "IT Projects/Session Notes/2025-10-01 Uptime Kuma Attempt & Career Path Analysis.md": {
       "title": "Session: Uptime Kuma Attempt & Career Path Analysis"
     },
@@ -1813,21 +1828,6 @@
     },
     "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md": {
       "title": "Network Troubleshooting Log: Intermittent WAN Instability"
-    },
-    "IT Projects/Website Development/README.md": {
-      "title": "Website Development - Project Overview"
-    },
-    "IT Projects/Website Development/Content/About Me Draft.md": {
-      "title": "About Me - Website Content Draft"
-    },
-    "IT Projects/Website Development/Deployment/Git Push Conflict Troubleshooting.md": {
-      "title": "Git Troubleshooting - Non-Fast-Forward & Push Conflicts"
-    },
-    "IT Projects/Website Development/Deployment/Github Pages Setup.md": {
-      "title": "Github Pages Setup & Deployment"
-    },
-    "IT Projects/Website Development/Features/Privacy Filter - Matrix Decode.md": {
-      "title": "Matrix-Decode Privacy Filter Implementation"
     },
     "Learning Journals/3D Printing Optimization Journey.md": {
       "garden_path": "Learning/3D Printing Optimization Journey.md",
