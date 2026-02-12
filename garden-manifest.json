@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T15:23:10Z",
+  "generated_at": "2026-02-12T19:19:26Z",
   "tree": [
     {
       "path": "README.md",
@@ -975,6 +975,30 @@
     },
     {
       "path": "Projects/Portfolio Website/docs/Mobile Responsive Sidebar Patterns.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Architecture Guide - Sovereign AI Stack.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Setup Tutorial - Sovereign AI Stack.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md",
       "type": "file"
     },
     {
@@ -2090,6 +2114,21 @@
     },
     "Projects/Portfolio Website/docs/Mobile Responsive Sidebar Patterns.md": {
       "title": "Mobile Responsive Sidebar Patterns"
+    },
+    "Projects/Sovereign AI Stack/Architecture Guide - Sovereign AI Stack.md": {
+      "title": "Architecture Guide - Sovereign AI Stack"
+    },
+    "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md": {
+      "title": "Project Overview - Sovereign AI Stack"
+    },
+    "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md": {
+      "title": "Project Status - Sovereign AI Stack"
+    },
+    "Projects/Sovereign AI Stack/Setup Tutorial - Sovereign AI Stack.md": {
+      "title": "Setup Tutorial - Sovereign AI Stack"
+    },
+    "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md": {
+      "title": "Speed Myth - Ollama vs Text-Gen-WebUI"
     },
     "Projects/Teardown Cafe/Session Index.md": {
       "title": "📊 Session Index"
