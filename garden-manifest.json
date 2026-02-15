@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T19:19:26Z",
+  "generated_at": "2026-02-15T23:30:35Z",
   "tree": [
     {
       "path": "README.md",
@@ -1190,6 +1190,14 @@
       "type": "file"
     },
     {
+      "path": "Projects/The Penthouse",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/The Penthouse/2025-02-13 Session Notes.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/TypingLab",
       "type": "dir"
     },
@@ -2262,6 +2270,15 @@
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/Templates/Client Intake Template.md": {
       "title": "Client Intake Template"
+    },
+    "Projects/The Penthouse/2025-02-13 Session Notes.md": {
+      "created": "2026-02-13T10:37:00.000000",
+      "modified": "2026-02-13T10:37:00.000000",
+      "privacy_scan": "not_scanned",
+      "published_to_garden": false,
+      "tags": "[penthouse, deployment, android, truenas, caddy]",
+      "title": "The Penthouse - Session Notes 2026-02-13",
+      "visibility": "private"
     },
     "Projects/TypingLab/00 - TypingLab Project Overview.md": {
       "garden_path": "Projects/TypingLab/00 - TypingLab Project Overview.md",
