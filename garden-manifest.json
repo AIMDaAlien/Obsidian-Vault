@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-20T21:40:42Z",
+  "generated_at": "2026-02-20T22:10:44Z",
   "tree": [
     {
       "path": "README.md",
@@ -2276,7 +2276,7 @@
       "modified": "2026-02-13T10:37:00.000000",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": "[penthouse, deployment, android, truenas, caddy]",
+      "tags": null,
       "title": "The Penthouse - Session Notes 2026-02-13",
       "visibility": "private"
     },
