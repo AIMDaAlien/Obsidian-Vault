@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🗺️ Knowledge Base - Main Index.md",
+                "file": "IT Projects/Session Notes/2025-11-10 Tech Consulting Website.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🗺️ Knowledge Base - Main Index"
+              "title": "2025-11-10 Tech Consulting Website"
             }
           },
           {
@@ -204,8 +204,14 @@
   },
   "active": "764456ae8c937c8c",
   "lastOpenFiles": [
-    "Vault Index.base",
+    "IT Projects/Session Notes/2026-01-09 Troubleshooting DNS Loop.md",
+    "IT Projects/Session Notes/2026-01-02 Starting Omarchy (Arch Linux).md",
+    "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md",
+    "IT Projects/Session Notes/2025-10-01 Uptime Kuma Attempt & Career Path Analysis.md",
     "IT Projects/README.md",
+    "Projects/The Penthouse/2025-02-13 Session Notes.md",
+    "🗺️ Knowledge Base - Main Index.md",
+    "Vault Index.base",
     "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
     "Projects/Archive/TrueNAS Build Guide.md",
     "Projects/Archive/Pi-hole TrueNAS Network Conflict Troubleshooting.md",
@@ -218,7 +224,6 @@
     "README.md",
     "Projects/3D Print Shoppe/Project - 3D Print Shoppe - Current State.md",
     "Learning Journals/README.md",
-    "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md",
     "Myself/README.md",
     "Projects/README.md",
     "Programming Concepts/README.md",
@@ -227,10 +232,6 @@
     "Projects/Teardown Cafe/Sessions/2025-10-21 Cursor Session 2.md",
     "Projects/Teardown Cafe/Sessions/2025-10-21 Cursor Session.md",
     "Projects/Teardown Cafe/Teardown Cafe.md",
-    "Projects/3D Print Shoppe/Project - Aim's 3D Print Shoppe - Current State.md",
-    "Projects/3D Print Shoppe/3D Print Shoppe - Session Notes 2024-12-05.md",
-    "Projects/3D Print Shoppe/3D Print Shoppe - Marketing Strategy.md",
-    "Projects/Tech Consulting/Tools & Client Workflow.md",
     "Projects/Tech Consulting/Tech Consultation Playbook/Templates",
     "Projects/Tech Consulting/Tech Consultation Playbook/Technical Implementation",
     "Projects/Tech Consulting/Tech Consultation Playbook/Design System",
@@ -239,7 +240,6 @@
     "Projects/Tech Consulting",
     "Learning Journals",
     "Systems/Router Configuration",
-    "Programming Concepts/Python",
     "images/55950.png",
     "images/86681.png",
     "images/Pasted image 20230621202327.png",

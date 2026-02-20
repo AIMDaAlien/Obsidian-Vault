@@ -1,9 +1,14 @@
 ---
-created: '2026-02-13T10:37:00.000000'
-modified: '2026-02-13T10:37:00.000000'
+created: 2026-02-13T10:37:00.000000
+modified: 2026-02-13T10:37:00.000000
 privacy_scan: not_scanned
 published_to_garden: false
-tags: [penthouse, deployment, android, truenas, caddy]
+tags:
+  - penthouse
+  - deployment
+  - android
+  - truenas
+  - caddy
 title: The Penthouse - Session Notes 2026-02-13
 visibility: private
 ---
