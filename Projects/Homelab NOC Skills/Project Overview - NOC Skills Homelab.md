@@ -1,6 +1,6 @@
 ---
 created: '2026-01-07T22:57:12.633493'
-modified: '2026-01-21T17:25:50.211907'
+modified: '2026-03-15T00:00:00.000000'
 privacy_scan: not_scanned
 published_to_garden: false
 tags:
@@ -20,9 +20,9 @@ visibility: private
 Build demonstrable NOC/Data Center technician skills through hands-on homelab projects. This project directly supports the IT career transition by creating portfolio-worthy monitoring infrastructure.
 
 ## Hardware
-- **RPi 5 (4GB)** - Primary lab box for monitoring stack
-- **RPi B+ (512MB)** - Running Pi-hole (leave as-is)
-- **TrueNAS Server** - Storage-heavy applications
+- **RPi 5 (4GB)** — Primary lab box for monitoring stack + Pi-hole + Unbound (migrated 2026-03-15)
+- **RPi B+** — ~~Running Pi-hole~~ **Retired** (see [[Pi-hole Migration - RPi B+ to RPi 5 NVMe]])
+- **TrueNAS Server** — Storage-heavy applications
 
 ## Target Skills (Based on Job Market Research)
 | Skill | Tool/Project | Status |
@@ -49,6 +49,7 @@ Build demonstrable NOC/Data Center technician skills through hands-on homelab pr
 
 ## Related
 - [[Projects/Archive/Pi-hole Setup Guide - Complete Journey]]
+- [[Projects/Archive/Pi-hole Migration - RPi B+ to RPi 5 NVMe]]
 - [[Projects/Archive/TrueNAS Build Guide]]
 - NOC-DC-Job-Research-2025.docx (generated research document)
 
@@ -229,3 +230,29 @@ Alerting configuration - make monitoring actionable
 - IaC with Ansible (prompt ready for Haiku)
 - Obsidian→Portfolio pipeline (prompt ready for Haiku)
 - Set up replication tasks to Backup pool
+
+
+
+---
+## Session Update: 2026-03-15
+
+### Pi-hole Migrated to RPi 5
+
+The Pi-hole instance previously running on the Raspberry Pi B+ (`192.168.0.117`) has been migrated to this machine (`192.168.0.145`). The B+ is now retired.
+
+**What changed:**
+- Pi-hole now runs on the RPi 5 alongside the existing NOC monitoring stack
+- Unbound recursive DNS running on this machine (port `5335`)
+- HaGeZi Pro + TIF blocklists deployed with telemetry regex filters
+- DNS loop resolved — `/etc/resolv.conf` forced to `127.0.0.1`, TP-Link DHCP updated
+- RPi B+ retired
+
+**Updated network map:**
+
+| Device | IP | Role |
+|---|---|---|
+| RPi 5 (pi5) | 192.168.0.145 | NOC monitoring stack + Pi-hole + Unbound |
+| RPi B+ | 192.168.0.117 | **Retired** |
+| TrueNAS | 192.168.0.120 | Storage |
+
+**Full migration write-up:** [[Pi-hole Migration - RPi B+ to RPi 5 NVMe]]

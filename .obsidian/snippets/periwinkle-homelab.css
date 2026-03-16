@@ -1,0 +1,155 @@
+/* ============================================================
+   periwinkle-homelab.css
+   Periwinkle / lavender palette layer for homelab project notes
+   Sits on top of Catppuccin — does not override global theme vars
+   Ubuntu font is already set in appearance.json
+   ============================================================ */
+
+/* --- Palette tokens --- */
+:root {
+  --peri-50:  #f0effd;
+  --peri-100: #dddaf9;
+  --peri-200: #c8c2f5;
+  --peri-400: #a9a1e8;   /* accent match */
+  --peri-600: #7b72d4;
+  --peri-800: #534ab7;
+  --peri-900: #3a3282;
+  --lavender:  #c4b5f4;
+  --lilac:     #e2d9f3;
+}
+
+/* --- Headings — periwinkle tint on H1/H2 --- */
+.markdown-rendered h1,
+.markdown-preview-view h1 {
+  color: var(--peri-800);
+  border-bottom: 2px solid var(--peri-200);
+  padding-bottom: 6px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+}
+
+.markdown-rendered h2,
+.markdown-preview-view h2 {
+  color: var(--peri-600);
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+}
+
+.markdown-rendered h3,
+.markdown-preview-view h3 {
+  color: var(--peri-400);
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+}
+
+/* --- Inline code — periwinkle pill --- */
+.markdown-rendered code,
+.markdown-preview-view code {
+  background-color: var(--peri-50);
+  color: var(--peri-800);
+  border: 1px solid var(--peri-200);
+  border-radius: 4px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.88em;
+  padding: 1px 5px;
+}
+
+/* --- Code blocks --- */
+.markdown-rendered pre code,
+.markdown-preview-view pre code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* --- Tables — periwinkle header row --- */
+.markdown-rendered th,
+.markdown-preview-view th {
+  background-color: var(--peri-100);
+  color: var(--peri-900);
+  font-weight: 500;
+  font-family: Ubuntu, sans-serif;
+}
+
+.markdown-rendered tr:nth-child(even),
+.markdown-preview-view tr:nth-child(even) {
+  background-color: var(--peri-50);
+}
+
+/* --- Tags --- */
+.tag {
+  background-color: var(--peri-100) !important;
+  color: var(--peri-800) !important;
+  border: 1px solid var(--peri-200) !important;
+  border-radius: 12px !important;
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.78em;
+}
+
+/* --- Callouts: remap types to periwinkle palette --- */
+
+/* [!abstract] / [!tldr] — periwinkle */
+.callout[data-callout="abstract"],
+.callout[data-callout="tldr"] {
+  --callout-color: 109, 99, 210;
+  --callout-icon: lucide-sparkles;
+  background-color: var(--peri-50);
+  border-left-color: var(--peri-600);
+}
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="tldr"] .callout-title {
+  color: var(--peri-800);
+}
+
+/* [!info] — soft lavender */
+.callout[data-callout="info"] {
+  --callout-color: 169, 161, 232;
+  background-color: var(--lilac);
+  border-left-color: var(--peri-400);
+}
+.callout[data-callout="info"] .callout-title {
+  color: var(--peri-800);
+}
+
+/* [!tip] / [!success] — keep readable, tint toward peri */
+.callout[data-callout="tip"],
+.callout[data-callout="success"] {
+  background-color: #eef9f4;
+  border-left-color: #3aaa78;
+}
+
+/* [!warning] — warm amber, unchanged for contrast */
+.callout[data-callout="warning"] {
+  background-color: #fdf3e3;
+  border-left-color: #d4860a;
+}
+
+/* [!danger] — red, unchanged for contrast */
+.callout[data-callout="danger"] {
+  background-color: #fdecea;
+  border-left-color: #c0392b;
+}
+
+/* --- Horizontal rule — periwinkle tint --- */
+.markdown-rendered hr,
+.markdown-preview-view hr {
+  border-color: var(--peri-200);
+}
+
+/* --- Bold text — periwinkle tint --- */
+.markdown-rendered strong,
+.markdown-preview-view strong {
+  color: var(--peri-800);
+}
+
+/* --- Internal links — periwinkle --- */
+.markdown-rendered .internal-link,
+.markdown-preview-view .internal-link {
+  color: var(--peri-600);
+  text-decoration-color: var(--peri-200);
+}
+.markdown-rendered .internal-link:hover,
+.markdown-preview-view .internal-link:hover {
+  color: var(--peri-800);
+}
