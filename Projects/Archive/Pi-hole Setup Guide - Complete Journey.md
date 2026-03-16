@@ -15,20 +15,20 @@ published_to_garden: true
 
 ## Hardware
 
-| Component | Choice | Why |
-|---|---|---|
-| Pi model | Raspberry Pi 3 B+ (~$35) | Gigabit Ethernet, 1GB RAM, low power — right-sized for Pi-hole |
-| Storage | 32GB MicroSD (Class 10/A2) | Sufficient for Pi-hole + light services |
-| Network | Ethernet cable | Always use wired for DNS — WiFi drops = everyone's internet dies |
-| Cooling | Heatsink | Running 24/7, keeps temps stable |
+| Component | Choice                     | Why                                                              |
+| --------- | -------------------------- | ---------------------------------------------------------------- |
+| Pi model  | Raspberry Pi 3 B+ (~$35)   | Gigabit Ethernet, 1GB RAM, low power — right-sized for Pi-hole   |
+| Storage   | 32GB MicroSD (Class 10/A2) | Sufficient for Pi-hole + light services                          |
+| Network   | Ethernet cable             | Always use wired for DNS — WiFi drops = everyone's internet dies |
+| Cooling   | Heatsink                   | Running 24/7, keeps temps stable                                 |
 
 **Why not other models:**
 
-| Model | Reason skipped |
-|---|---|
-| Zero 2 W (~$15) | No Ethernet port — non-starter for a DNS server |
-| Pi 4 B (~$55–75) | Overkill for just Pi-hole |
-| Pi 5 (~$80–100) | Excessive at the time, requires active cooling |
+| Model            | Reason skipped                                  |
+| ---------------- | ----------------------------------------------- |
+| Zero 2 W (~$15)  | No Ethernet port — non-starter for a DNS server |
+| Pi 4 B (~$55–75) | Overkill for just Pi-hole                       |
+| Pi 5 (~$80–100)  | Excessive at the time, requires active cooling  |
 
 ---
 

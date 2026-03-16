@@ -2,10 +2,13 @@
   "accentColor": "#a9a1e8",
   "interfaceFontFamily": "Ubuntu",
   "baseFontSize": 20,
-  "translucency": true,
+  "translucency": false,
   "theme": "obsidian",
   "cssTheme": "Catppuccin",
   "baseFontSizeAction": true,
   "textFontFamily": "Ubuntu",
-  "monospaceFontFamily": "JetBrains Mono"
+  "monospaceFontFamily": "JetBrains Mono",
+  "enabledCssSnippets": [
+    "periwinkle-homelab"
+  ]
 }
