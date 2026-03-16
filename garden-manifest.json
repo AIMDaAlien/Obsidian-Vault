@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-28T00:50:39Z",
+  "generated_at": "2026-03-16T03:12:05Z",
   "tree": [
     {
       "path": "README.md",
@@ -907,6 +907,10 @@
     },
     {
       "path": "Projects/Archive/Knowledge Garden - Sidebar Implementation Session.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Archive/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md",
       "type": "file"
     },
     {
@@ -2051,11 +2055,20 @@
     "Projects/Archive/Knowledge Garden - Sidebar Implementation Session.md": {
       "title": "Knowledge Garden - Sidebar Implementation Session"
     },
+    "Projects/Archive/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md": {
+      "created": "2026-03-15T00:00:00.000000",
+      "modified": "2026-03-15T00:00:00.000000",
+      "privacy_scan": "not_scanned",
+      "published_to_garden": false,
+      "tags": null,
+      "title": "Pi-hole Migration: RPi B+ → RPi 5 NVMe",
+      "visibility": "review"
+    },
     "Projects/Archive/Pi-hole Setup Guide - Complete Journey.md": {
       "garden_path": "Projects/Archive/Pi-hole Setup Guide - Complete Journey.md",
       "last_published": "2025-11-28T19:41:13.152631",
       "published_to_garden": true,
-      "title": "Use Raspberry Pi OS with Desktop (32-bit) - NOT \"with recommended software\""
+      "title": "Pi-hole Setup: Raspberry Pi 3 B+"
     },
     "Projects/Archive/Pi-hole TrueNAS Network Conflict Troubleshooting.md": {
       "title": "Pi-hole Stopped Working After TrueNAS Setup"
@@ -2091,7 +2104,7 @@
     },
     "Projects/Homelab NOC Skills/Project Overview - NOC Skills Homelab.md": {
       "created": "2026-01-07T22:57:12.633493",
-      "modified": "2026-01-21T17:25:50.211907",
+      "modified": "2026-03-15T00:00:00.000000",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
       "tags": null,
