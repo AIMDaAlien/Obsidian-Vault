@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Archive/Pi-hole Setup Guide - Complete Journey.md",
+                "file": "IT Projects/Session Notes/2026-03-29 LG G8 ThinQ G820TM Resurrection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pi-hole Setup Guide - Complete Journey"
+              "title": "2026-03-29 LG G8 ThinQ G820TM Resurrection"
             }
           }
         ],
@@ -217,8 +217,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "18a2b2c2f760124d",
+  "active": "d6216f2f4698b1bc",
   "lastOpenFiles": [
+    "images/LG-G8-download-mode-tmous-restore.png",
+    "images/LG-G8-fastboot-wrong-identity.png",
+    "images/LG-G8-qfil-sahara-failure.png",
+    "images/Unconfirmed 929950.crdownload",
+    "images/LG-G8-edl-usb3-timeout-error.png",
+    "images/Unconfirmed 662627.crdownload",
+    "images/LG-G8-gpt-partition-table-laf.png",
+    "images/LG-G8-kdztools-extraction.png",
+    "images/LG-G8-edl-laf-write-success.png",
+    "images/LG-G8-download-mode-tmous-restore.jpeg",
+    "images/Unconfirmed 122864.crdownload",
+    "images/LG-G8-LGUP-G850UM-identity-crisis.png",
+    "images/Unconfirmed 605725.crdownload",
+    "Projects/Archive/Pi-hole Setup Guide - Complete Journey.md",
     "Projects/Homelab NOC Skills/Project Overview - NOC Skills Homelab.md",
     "Systems/Development Tools.md",
     "Projects/3D Print Shoppe/README - Main Index.md",
@@ -247,24 +261,10 @@
     "Projects/3D Print Shoppe/Project - 3D Print Shoppe - Current State.md",
     "Learning Journals/README.md",
     "Myself/README.md",
-    "Projects/README.md",
-    "Programming Concepts/README.md",
     "Projects/Tech Consulting/Tech Consultation Playbook/Templates",
     "Projects/Tech Consulting/Tech Consultation Playbook/Technical Implementation",
-    "Projects/Tech Consulting/Tech Consultation Playbook/Design System",
-    "Projects/Tech Consulting/Tech Consultation Playbook/Business Strategy",
-    "Projects/Tech Consulting/Tech Consultation Playbook",
-    "Projects/Tech Consulting",
     "images/55950.png",
     "images/86681.png",
-    "images/Pasted image 20230621202327.png",
-    "images/Pasted image 20230520171145.png",
-    "images/asset-v1_edX+BCT-python+2T2022+type@asset+block@python-try-it-operator-meaning.png",
-    "images/Pasted image 20230822173331.png",
-    "images/Pasted image 20230621220540.png",
-    "images/Pasted image 20230621215642.png",
-    "images/Pasted image 20230621202316.png",
-    "images/Pasted image 20230621201231.png",
     "Untitled.canvas"
   ]
 }
