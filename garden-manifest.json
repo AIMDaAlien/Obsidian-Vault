@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T22:15:49Z",
+  "generated_at": "2026-04-01T22:45:50Z",
   "tree": [
     {
       "path": "README.md",
@@ -94,7 +94,7 @@
       "type": "file"
     },
     {
-      "path": "IT Projects/Session Notes/2026-04-01 LG G8 ThinQ G820TM Resurrection.md",
+      "path": "IT Projects/Session Notes/2026-03-29 LG G8 ThinQ G820TM Resurrection.md",
       "type": "file"
     },
     {
@@ -1824,6 +1824,10 @@
     {
       "path": "Systems/Router Configuration/07 - Performance Optimization Checklist.md",
       "type": "file"
+    },
+    {
+      "path": "images",
+      "type": "dir"
     }
   ],
   "metadata": {
@@ -1877,7 +1881,7 @@
     "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md": {
       "title": "Network Troubleshooting Log: Intermittent WAN Instability"
     },
-    "IT Projects/Session Notes/2026-04-01 LG G8 ThinQ G820TM Resurrection.md": {
+    "IT Projects/Session Notes/2026-03-29 LG G8 ThinQ G820TM Resurrection.md": {
       "created": "2026-04-01",
       "modified": "2026-04-01",
       "tags": null,
