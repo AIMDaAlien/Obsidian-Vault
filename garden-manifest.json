@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T03:42:07Z",
+  "generated_at": "2026-04-01T21:54:43Z",
   "tree": [
     {
       "path": "README.md",
@@ -91,6 +91,10 @@
     },
     {
       "path": "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Session Notes/2026-04-01 LG G8 ThinQ G820TM Resurrection.md",
       "type": "file"
     },
     {
@@ -1872,6 +1876,15 @@
     },
     "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md": {
       "title": "Network Troubleshooting Log: Intermittent WAN Instability"
+    },
+    "IT Projects/Session Notes/2026-04-01 LG G8 ThinQ G820TM Resurrection.md": {
+      "created": "2026-04-01",
+      "modified": "2026-04-01",
+      "tags": null,
+      "privacy_scan": "not_scanned",
+      "published_to_garden": false,
+      "visibility": "private",
+      "title": "Troubleshooting Report: The Great LG G8 ThinQ (G820TM) Resurrection"
     },
     "Learning Journals/3D Printing Optimization Journey.md": {
       "garden_path": "Learning/3D Printing Optimization Journey.md",
