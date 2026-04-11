@@ -44,9 +44,21 @@
               "icon": "lucide-file",
               "title": "2026-03-29 LG G8 ThinQ G820TM Resurrection"
             }
+          },
+          {
+            "id": "4cd7c6c0795f16a0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -217,7 +229,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d6216f2f4698b1bc",
+  "active": "a8bcc1f7855088fa",
   "lastOpenFiles": [
     "images/LG-G8-download-mode-tmous-restore.png",
     "images/LG-G8-fastboot-wrong-identity.png",
