@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "764456ae8c937c8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Systems/Homelab/Prometheus Grafana Stack - Implementation Guide.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Prometheus Grafana Stack - Implementation Guide"
-            }
-          },
-          {
             "id": "4da4d9affceacff3",
             "type": "leaf",
             "state": {
@@ -30,35 +16,8 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
-          },
-          {
-            "id": "18a2b2c2f760124d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IT Projects/Session Notes/2026-03-29 LG G8 ThinQ G820TM Resurrection.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-03-29 LG G8 ThinQ G820TM Resurrection"
-            }
-          },
-          {
-            "id": "4cd7c6c0795f16a0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.7"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -231,6 +190,33 @@
   },
   "active": "a8bcc1f7855088fa",
   "lastOpenFiles": [
+    "Projects/The Penthouse Self-Hosting/11 - What Changed Between Notes.md",
+    "Projects/The Penthouse Self-Hosting/10 - Mobile Update Versioning Protocol.md",
+    "Projects/The Penthouse Self-Hosting/09 - Disk Exhaustion Prevention.md",
+    "Projects/The Penthouse Self-Hosting/08 - SSH Hardening on TrueNAS.md",
+    "Projects/The Penthouse Self-Hosting/07 - Security Gotchas.md",
+    "Projects/The Penthouse Self-Hosting/06 - Deploy Downtime Minimization.md",
+    "Projects/The Penthouse Self-Hosting/05 - Git Push Auto-Deploy.md",
+    "Projects/The Penthouse Self-Hosting/04 - IP Drift and DDNS.md",
+    "Projects/The Penthouse Self-Hosting/03 - Backend Hardening Checklist.md",
+    "Projects/The Penthouse Self-Hosting/02 - TrueNAS Deploy Runbook.md",
+    "Projects/The Penthouse Self-Hosting/01 - Architecture.md",
+    "Projects/The Penthouse/PWA-00 - Knowledge Hub.md",
+    "Projects/The Penthouse Self-Hosting/00 - Index.md",
+    "Projects/The Penthouse/18 - Wave C - Community Features.md",
+    "Projects/The Penthouse/17 - Wave B - Rich Messaging.md",
+    "Projects/The Penthouse/16 - Wave A - Live Chat on the PWA.md",
+    "Projects/The Penthouse/15 - PWA Rebuild.md",
+    "Projects/The Penthouse/14 - Opencode Handoff.md",
+    "Projects/The Penthouse/12 - Native Notifications and Strict Read Receipts.md",
+    "Projects/The Penthouse/11 - Stability Fixes v1.md",
+    "Projects/The Penthouse/10 - Media Integration.md",
+    "Projects/The Penthouse/09 - Realtime Hardening.md",
+    "Projects/The Penthouse/08 - Live Chat Essentials.md",
+    "Projects/The Penthouse/07 - User Management Basics.md",
+    "Projects/The Penthouse/06 - Copyable Rebuild Checklist.md",
+    "Projects/The Penthouse/05 - Multi-Model Delegation Workflow.md",
+    "Projects/The Penthouse Self-Hosting",
     "images/LG-G8-download-mode-tmous-restore.png",
     "images/LG-G8-fastboot-wrong-identity.png",
     "images/LG-G8-qfil-sahara-failure.png",
@@ -244,39 +230,12 @@
     "images/Unconfirmed 122864.crdownload",
     "images/LG-G8-LGUP-G850UM-identity-crisis.png",
     "images/Unconfirmed 605725.crdownload",
-    "Projects/Archive/Pi-hole Setup Guide - Complete Journey.md",
-    "Projects/Homelab NOC Skills/Project Overview - NOC Skills Homelab.md",
-    "Systems/Development Tools.md",
-    "Projects/3D Print Shoppe/README - Main Index.md",
-    "Projects/The Penthouse/2025-02-13 Session Notes.md",
-    "Systems/Homelab/Home Server.md",
     "Untitled 1.base",
     "Untitled.base",
-    "IT Projects/Session Notes/2025-11-10 Tech Consulting Website.md",
-    "IT Projects/Session Notes/2026-01-09 Troubleshooting DNS Loop.md",
-    "IT Projects/Session Notes/2026-01-02 Starting Omarchy (Arch Linux).md",
-    "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md",
-    "IT Projects/Session Notes/2025-10-01 Uptime Kuma Attempt & Career Path Analysis.md",
-    "IT Projects/README.md",
-    "🗺️ Knowledge Base - Main Index.md",
     "Vault Index.base",
-    "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md",
-    "Projects/Archive/TrueNAS Build Guide.md",
-    "Projects/Archive/Pi-hole TrueNAS Network Conflict Troubleshooting.md",
-    "Projects/Archive/Tag System & Portfolio Integration.md",
-    "Projects/Archive/Knowledge Garden - Sidebar Implementation Session.md",
-    "Projects/Archive/Teardown Documentation Lessons.md",
-    "Programming Concepts/Web Development.md",
-    "IT Projects/Building a Privacy-First Obsidian Publishing System.md",
     "garden-manifest.json",
-    "README.md",
-    "Projects/3D Print Shoppe/Project - 3D Print Shoppe - Current State.md",
-    "Learning Journals/README.md",
-    "Myself/README.md",
     "Projects/Tech Consulting/Tech Consultation Playbook/Templates",
-    "Projects/Tech Consulting/Tech Consultation Playbook/Technical Implementation",
     "images/55950.png",
-    "images/86681.png",
     "Untitled.canvas"
   ]
 }

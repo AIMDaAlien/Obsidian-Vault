@@ -1226,6 +1226,126 @@
       "type": "file"
     },
     {
+      "path": "Projects/The Penthouse/02 - Architecture in Plain English.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/03 - Stability Rules (Anti-Tech-Debt).md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/04 - Reliability Fix Log.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/05 - Multi-Model Delegation Workflow.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/06 - Copyable Rebuild Checklist.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/07 - User Management Basics.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/08 - Live Chat Essentials.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/09 - Realtime Hardening.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/10 - Media Integration.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/11 - Stability Fixes v1.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/12 - Native Notifications and Strict Read Receipts.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/14 - Opencode Handoff.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/15 - PWA Rebuild.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/16 - Wave A - Live Chat on the PWA.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/17 - Wave B - Rich Messaging.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/18 - Wave C - Community Features.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/PWA-00 - Knowledge Hub.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/00 - Index.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/01 - Architecture.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/02 - TrueNAS Deploy Runbook.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/03 - Backend Hardening Checklist.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/04 - IP Drift and DDNS.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/05 - Git Push Auto-Deploy.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/06 - Deploy Downtime Minimization.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/07 - Security Gotchas.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/08 - SSH Hardening on TrueNAS.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/09 - Disk Exhaustion Prevention.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/10 - Mobile Update Versioning Protocol.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/11 - What Changed Between Notes.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/TypingLab",
       "type": "dir"
     },
@@ -2344,6 +2464,180 @@
       "tags": null,
       "title": "The Penthouse - Session Notes 2026-02-13",
       "visibility": "private"
+    },
+    "Projects/The Penthouse/02 - Architecture in Plain English.md": {
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Architecture in Plain English"
+    },
+    "Projects/The Penthouse/03 - Stability Rules (Anti-Tech-Debt).md": {
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Stability Rules (Anti-Tech-Debt)"
+    },
+    "Projects/The Penthouse/04 - Reliability Fix Log.md": {
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Reliability Fix Log"
+    },
+    "Projects/The Penthouse/05 - Multi-Model Delegation Workflow.md": {
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Multi-Model AI Delegation Workflow"
+    },
+    "Projects/The Penthouse/06 - Copyable Rebuild Checklist.md": {
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Copyable Rebuild Checklist"
+    },
+    "Projects/The Penthouse/07 - User Management Basics.md": {
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "User Management Basics"
+    },
+    "Projects/The Penthouse/08 - Live Chat Essentials.md": {
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Live Chat Essentials"
+    },
+    "Projects/The Penthouse/09 - Realtime Hardening.md": {
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Realtime Hardening"
+    },
+    "Projects/The Penthouse/10 - Media Integration.md": {
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Media Integration"
+    },
+    "Projects/The Penthouse/11 - Stability Fixes v1.md": {
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Stability Fixes v1"
+    },
+    "Projects/The Penthouse/12 - Native Notifications and Strict Read Receipts.md": {
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Native Notifications and Strict Read Receipts"
+    },
+    "Projects/The Penthouse/14 - Opencode Handoff.md": {
+      "created": "2026-03-12",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Opencode Handoff (Historical)"
+    },
+    "Projects/The Penthouse/15 - PWA Rebuild.md": {
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "PWA Rebuild"
+    },
+    "Projects/The Penthouse/16 - Wave A - Live Chat on the PWA.md": {
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Wave A - Live Chat on the PWA"
+    },
+    "Projects/The Penthouse/17 - Wave B - Rich Messaging.md": {
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Wave B - Rich Messaging"
+    },
+    "Projects/The Penthouse/18 - Wave C - Community Features.md": {
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Wave C - Community Features"
+    },
+    "Projects/The Penthouse/PWA-00 - Knowledge Hub.md": {
+      "created": "2026-04-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "The Penthouse PWA - Knowledge Hub"
+    },
+    "Projects/The Penthouse Self-Hosting/00 - Index.md": {
+      "created": "2026-02-17",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Self-Hosting a Chat App on TrueNAS - Index"
+    },
+    "Projects/The Penthouse Self-Hosting/01 - Architecture.md": {
+      "created": "2026-02-17",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Architecture - TrueNAS, Public Internet, No Proxy"
+    },
+    "Projects/The Penthouse Self-Hosting/02 - TrueNAS Deploy Runbook.md": {
+      "created": "2026-02-17",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "TrueNAS Deploy Runbook"
+    },
+    "Projects/The Penthouse Self-Hosting/03 - Backend Hardening Checklist.md": {
+      "created": "2026-02-18",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Backend Hardening Checklist"
+    },
+    "Projects/The Penthouse Self-Hosting/04 - IP Drift and DDNS.md": {
+      "created": "2026-02-17",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "IP Drift and DDNS"
+    },
+    "Projects/The Penthouse Self-Hosting/05 - Git Push Auto-Deploy.md": {
+      "created": "2026-02-18",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Git Push Auto-Deploy"
+    },
+    "Projects/The Penthouse Self-Hosting/06 - Deploy Downtime Minimization.md": {
+      "created": "2026-02-18",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Deploy Downtime Minimization"
+    },
+    "Projects/The Penthouse Self-Hosting/07 - Security Gotchas.md": {
+      "created": "2026-02-18",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Security Gotchas (Self-Hosted, Public Internet)"
+    },
+    "Projects/The Penthouse Self-Hosting/08 - SSH Hardening on TrueNAS.md": {
+      "created": "2026-02-18",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "SSH Hardening on TrueNAS SCALE"
+    },
+    "Projects/The Penthouse Self-Hosting/09 - Disk Exhaustion Prevention.md": {
+      "created": "2026-02-18",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Disk Exhaustion Prevention"
+    },
+    "Projects/The Penthouse Self-Hosting/10 - Mobile Update Versioning Protocol.md": {
+      "created": "2026-02-21",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Mobile Update and Versioning Protocol"
+    },
+    "Projects/The Penthouse Self-Hosting/11 - What Changed Between Notes.md": {
+      "created": "2026-03-03",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "What Changed Between Notes (v1 Phase 1 Summary)"
     },
     "Projects/TypingLab/00 - TypingLab Project Overview.md": {
       "garden_path": "Projects/TypingLab/00 - TypingLab Project Overview.md",
