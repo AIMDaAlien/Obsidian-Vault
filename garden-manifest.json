@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T13:41:56Z",
+  "generated_at": "2026-04-16T21:18:55Z",
   "tree": [
     {
       "path": "README.md",
@@ -1210,6 +1210,18 @@
       "type": "dir"
     },
     {
+      "path": "Projects/The Penthouse/00 - Knowledge Hub.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/01 - Rebuild Timeline.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/13 - MVP Stability Plan v2.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/The Penthouse/2025-02-13 Session Notes.md",
       "type": "file"
     },
@@ -2308,6 +2320,21 @@
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/Templates/Client Intake Template.md": {
       "title": "Client Intake Template"
+    },
+    "Projects/The Penthouse/00 - Knowledge Hub.md": {
+      "tags": "[penthouse, rebuild, knowledge-base, obsidian]",
+      "created": "2026-03-05",
+      "title": "The Penthouse Rebuild Knowledge Hub"
+    },
+    "Projects/The Penthouse/01 - Rebuild Timeline.md": {
+      "tags": "[penthouse, timeline, changelog, rebuild]",
+      "created": "2026-03-05",
+      "title": "Rebuild Timeline"
+    },
+    "Projects/The Penthouse/13 - MVP Stability Plan v2.md": {
+      "tags": "[penthouse, mvp, stability, backend-first, obsidian]",
+      "created": "2026-03-12",
+      "title": "MVP Stability Plan v2"
     },
     "Projects/The Penthouse/2025-02-13 Session Notes.md": {
       "created": "2026-02-13T10:37:00.000000",
