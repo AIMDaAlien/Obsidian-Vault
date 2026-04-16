@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T21:18:55Z",
+  "generated_at": "2026-04-16T21:58:56Z",
   "tree": [
     {
       "path": "README.md",
@@ -1218,14 +1218,6 @@
       "type": "file"
     },
     {
-      "path": "Projects/The Penthouse/13 - MVP Stability Plan v2.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/The Penthouse/2025-02-13 Session Notes.md",
-      "type": "file"
-    },
-    {
       "path": "Projects/The Penthouse/02 - Architecture in Plain English.md",
       "type": "file"
     },
@@ -1270,6 +1262,10 @@
       "type": "file"
     },
     {
+      "path": "Projects/The Penthouse/13 - MVP Stability Plan v2.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/The Penthouse/14 - Opencode Handoff.md",
       "type": "file"
     },
@@ -1287,6 +1283,10 @@
     },
     {
       "path": "Projects/The Penthouse/18 - Wave C - Community Features.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/2025-02-13 Session Notes.md",
       "type": "file"
     },
     {
@@ -2451,10 +2451,123 @@
       "created": "2026-03-05",
       "title": "Rebuild Timeline"
     },
+    "Projects/The Penthouse/02 - Architecture in Plain English.md": {
+      "tags": "[penthouse, architecture, overview]",
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Architecture in Plain English"
+    },
+    "Projects/The Penthouse/03 - Stability Rules (Anti-Tech-Debt).md": {
+      "tags": "[penthouse, tech-debt, quality-gates, reliability]",
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Stability Rules (Anti-Tech-Debt)"
+    },
+    "Projects/The Penthouse/04 - Reliability Fix Log.md": {
+      "tags": "[penthouse, reliability, bugs, postmortem]",
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Reliability Fix Log"
+    },
+    "Projects/The Penthouse/05 - Multi-Model Delegation Workflow.md": {
+      "tags": "[penthouse, ai-workflow, delegation, multi-agent]",
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Multi-Model AI Delegation Workflow"
+    },
+    "Projects/The Penthouse/06 - Copyable Rebuild Checklist.md": {
+      "tags": "[penthouse, checklist, mvp, execution]",
+      "created": "2026-03-05",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Copyable Rebuild Checklist"
+    },
+    "Projects/The Penthouse/07 - User Management Basics.md": {
+      "tags": "[penthouse, user-management, auth, admin]",
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "User Management Basics"
+    },
+    "Projects/The Penthouse/08 - Live Chat Essentials.md": {
+      "tags": "[penthouse, realtime, typing, presence]",
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Live Chat Essentials"
+    },
+    "Projects/The Penthouse/09 - Realtime Hardening.md": {
+      "tags": "[penthouse, realtime, socket, android, reliability]",
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Realtime Hardening"
+    },
+    "Projects/The Penthouse/10 - Media Integration.md": {
+      "tags": "[penthouse, media, uploads, gif]",
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Media Integration"
+    },
+    "Projects/The Penthouse/11 - Stability Fixes v1.md": {
+      "tags": "[penthouse, stability, fixes, android]",
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Stability Fixes v1"
+    },
+    "Projects/The Penthouse/12 - Native Notifications and Strict Read Receipts.md": {
+      "tags": "[penthouse, notifications, push, read-receipts, android]",
+      "created": "2026-03-08",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Native Notifications and Strict Read Receipts"
+    },
     "Projects/The Penthouse/13 - MVP Stability Plan v2.md": {
       "tags": "[penthouse, mvp, stability, backend-first, obsidian]",
       "created": "2026-03-12",
       "title": "MVP Stability Plan v2"
+    },
+    "Projects/The Penthouse/14 - Opencode Handoff.md": {
+      "tags": "[penthouse, handoff, historical]",
+      "created": "2026-03-12",
+      "archived": "2026-03-22",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Opencode Handoff (Historical)"
+    },
+    "Projects/The Penthouse/15 - PWA Rebuild.md": {
+      "tags": "[penthouse, pwa, sveltekit, rebuild]",
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "PWA Rebuild"
+    },
+    "Projects/The Penthouse/16 - Wave A - Live Chat on the PWA.md": {
+      "tags": "[penthouse, pwa, realtime, typing, presence, read-receipts, gif, muting]",
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Wave A — Live Chat on the PWA"
+    },
+    "Projects/The Penthouse/17 - Wave B - Rich Messaging.md": {
+      "tags": "[penthouse, pwa, reactions, reply, pins, delete]",
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Wave B — Rich Messaging"
+    },
+    "Projects/The Penthouse/18 - Wave C - Community Features.md": {
+      "tags": "[penthouse, pwa, polls, slash-commands, note-to-self]",
+      "created": "2026-04-09",
+      "published_to_garden": true,
+      "visibility": "public",
+      "title": "Wave C — Community Features"
     },
     "Projects/The Penthouse/2025-02-13 Session Notes.md": {
       "created": "2026-02-13T10:37:00.000000",
@@ -2465,175 +2578,92 @@
       "title": "The Penthouse - Session Notes 2026-02-13",
       "visibility": "private"
     },
-    "Projects/The Penthouse/02 - Architecture in Plain English.md": {
-      "created": "2026-03-05",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Architecture in Plain English"
-    },
-    "Projects/The Penthouse/03 - Stability Rules (Anti-Tech-Debt).md": {
-      "created": "2026-03-05",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Stability Rules (Anti-Tech-Debt)"
-    },
-    "Projects/The Penthouse/04 - Reliability Fix Log.md": {
-      "created": "2026-03-05",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Reliability Fix Log"
-    },
-    "Projects/The Penthouse/05 - Multi-Model Delegation Workflow.md": {
-      "created": "2026-03-05",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Multi-Model AI Delegation Workflow"
-    },
-    "Projects/The Penthouse/06 - Copyable Rebuild Checklist.md": {
-      "created": "2026-03-05",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Copyable Rebuild Checklist"
-    },
-    "Projects/The Penthouse/07 - User Management Basics.md": {
-      "created": "2026-03-08",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "User Management Basics"
-    },
-    "Projects/The Penthouse/08 - Live Chat Essentials.md": {
-      "created": "2026-03-08",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Live Chat Essentials"
-    },
-    "Projects/The Penthouse/09 - Realtime Hardening.md": {
-      "created": "2026-03-08",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Realtime Hardening"
-    },
-    "Projects/The Penthouse/10 - Media Integration.md": {
-      "created": "2026-03-08",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Media Integration"
-    },
-    "Projects/The Penthouse/11 - Stability Fixes v1.md": {
-      "created": "2026-03-08",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Stability Fixes v1"
-    },
-    "Projects/The Penthouse/12 - Native Notifications and Strict Read Receipts.md": {
-      "created": "2026-03-08",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Native Notifications and Strict Read Receipts"
-    },
-    "Projects/The Penthouse/14 - Opencode Handoff.md": {
-      "created": "2026-03-12",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Opencode Handoff (Historical)"
-    },
-    "Projects/The Penthouse/15 - PWA Rebuild.md": {
-      "created": "2026-04-09",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "PWA Rebuild"
-    },
-    "Projects/The Penthouse/16 - Wave A - Live Chat on the PWA.md": {
-      "created": "2026-04-09",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Wave A - Live Chat on the PWA"
-    },
-    "Projects/The Penthouse/17 - Wave B - Rich Messaging.md": {
-      "created": "2026-04-09",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Wave B - Rich Messaging"
-    },
-    "Projects/The Penthouse/18 - Wave C - Community Features.md": {
-      "created": "2026-04-09",
-      "published_to_garden": true,
-      "visibility": "public",
-      "title": "Wave C - Community Features"
-    },
     "Projects/The Penthouse/PWA-00 - Knowledge Hub.md": {
+      "tags": "[penthouse, pwa, sveltekit, knowledge-base]",
       "created": "2026-04-05",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "The Penthouse PWA - Knowledge Hub"
+      "title": "The Penthouse PWA — Knowledge Hub"
     },
     "Projects/The Penthouse Self-Hosting/00 - Index.md": {
+      "tags": "[self-hosting, truenas, docker, ops, penthouse-v1]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "Self-Hosting a Chat App on TrueNAS - Index"
+      "title": "Self-Hosting a Chat App on TrueNAS — Index"
     },
     "Projects/The Penthouse Self-Hosting/01 - Architecture.md": {
+      "tags": "[self-hosting, truenas, docker, caddy, networking]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "Architecture - TrueNAS, Public Internet, No Proxy"
+      "title": "Architecture — TrueNAS, Public Internet, No Proxy"
     },
     "Projects/The Penthouse Self-Hosting/02 - TrueNAS Deploy Runbook.md": {
+      "tags": "[self-hosting, truenas, docker, deployment, runbook]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "TrueNAS Deploy Runbook"
+      "title": "TrueNAS Deploy Runbook (SCALE 25.x + Compose)"
     },
     "Projects/The Penthouse Self-Hosting/03 - Backend Hardening Checklist.md": {
+      "tags": "[self-hosting, security, backend, hardening]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
       "title": "Backend Hardening Checklist"
     },
     "Projects/The Penthouse Self-Hosting/04 - IP Drift and DDNS.md": {
+      "tags": "[self-hosting, ddns, cloudflare, tls, networking]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "IP Drift and DDNS"
+      "title": "IP Drift and DDNS (Cloudflare DNS-Only)"
     },
     "Projects/The Penthouse Self-Hosting/05 - Git Push Auto-Deploy.md": {
+      "tags": "[self-hosting, ci-cd, github-actions, deployment]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "Git Push Auto-Deploy"
+      "title": "Git Push Auto-Deploy (GitHub Actions Self-Hosted Runner on TrueNAS)"
     },
     "Projects/The Penthouse Self-Hosting/06 - Deploy Downtime Minimization.md": {
+      "tags": "[self-hosting, deployment, downtime, docker]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "Deploy Downtime Minimization"
+      "title": "Deploy Downtime Minimization (Compose + Caddy)"
     },
     "Projects/The Penthouse Self-Hosting/07 - Security Gotchas.md": {
+      "tags": "[self-hosting, security, gotchas]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
       "title": "Security Gotchas (Self-Hosted, Public Internet)"
     },
     "Projects/The Penthouse Self-Hosting/08 - SSH Hardening on TrueNAS.md": {
+      "tags": "[self-hosting, ssh, truenas, security]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
       "title": "SSH Hardening on TrueNAS SCALE"
     },
     "Projects/The Penthouse Self-Hosting/09 - Disk Exhaustion Prevention.md": {
+      "tags": "[self-hosting, truenas, docker, disk, ops]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "Disk Exhaustion Prevention"
+      "title": "Disk Exhaustion Prevention (Home Server, Docker)"
     },
     "Projects/The Penthouse Self-Hosting/10 - Mobile Update Versioning Protocol.md": {
+      "tags": "[self-hosting, mobile, updates, versioning, expo]",
       "created": "2026-02-21",
       "published_to_garden": true,
       "visibility": "public",
-      "title": "Mobile Update and Versioning Protocol"
+      "title": "Mobile Update and Versioning Protocol (Expo + Self-Hosted APK)"
     },
     "Projects/The Penthouse Self-Hosting/11 - What Changed Between Notes.md": {
+      "tags": "[self-hosting, changelog, v1, penthouse]",
       "created": "2026-03-03",
       "published_to_garden": true,
       "visibility": "public",
