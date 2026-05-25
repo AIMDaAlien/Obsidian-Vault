@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T21:58:56Z",
+  "generated_at": "2026-05-25T19:22:34Z",
   "tree": [
     {
       "path": "README.md",
@@ -1286,6 +1286,14 @@
       "type": "file"
     },
     {
+      "path": "Projects/The Penthouse/19 - v4 Clean-Room Rebuild.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/20 - V5 Redesign.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/The Penthouse/2025-02-13 Session Notes.md",
       "type": "file"
     },
@@ -2568,6 +2576,16 @@
       "published_to_garden": true,
       "visibility": "public",
       "title": "Wave C — Community Features"
+    },
+    "Projects/The Penthouse/19 - v4 Clean-Room Rebuild.md": {
+      "tags": "[penthouse, v4, rebuild, sveltekit, drizzle]",
+      "created": "2026-05-07",
+      "title": "v4 Clean-Room Rebuild"
+    },
+    "Projects/The Penthouse/20 - V5 Redesign.md": {
+      "tags": "[penthouse, v5, redesign, theme, design-system]",
+      "created": "2026-05-14",
+      "title": "V5 Redesign"
     },
     "Projects/The Penthouse/2025-02-13 Session Notes.md": {
       "created": "2026-02-13T10:37:00.000000",
