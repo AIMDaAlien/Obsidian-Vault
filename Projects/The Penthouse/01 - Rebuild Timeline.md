@@ -245,3 +245,109 @@ Highlights:
 - Phase 1/2 backend work for MVP Stability Plan v2 is done in code.
 - Strict DB release gate still needs a clean rerun in a working Docker/Postgres environment.
 - Public PWA/API cutover is live on the Backup pool; the remaining operational blockers are strict DB gate rerun, mobile install proof, and cleaning up the third-party font dependency.
+
+
+### 2026-05-06 — v4 Clean-Room Rebuild Begins (Kimi)
+
+**Scope:** Complete frontend-backend rebuild from scratch.
+**Agent:** Kimi K2.6
+
+Highlights:
+- Decided on stack: SvelteKit 2 + Svelte 5 + Fastify 5 + Drizzle ORM + Socket.IO 4
+- Reason: v2.1 accumulated 29 migrations, 2,287-line chat monolith, raw `pg` queries
+- Decomposed chat page into lazy-loaded components
+- Deterministic Drizzle schema from day one (no incremental migration drift)
+- Bootstrapped `apps/web/` SvelteKit PWA with `@vite-pwa/sveltekit`
+- Built auth, socket store, chat UI, settings, push banner, audio recorder
+- Created comprehensive backend scaffold guide for Codex (`docs/adr/04-backend-scaffold.md`)
+
+### 2026-05-06 — Backend Implementation (Codex)
+
+**Scope:** `services/api/` implementation.
+**Agent:** Codex
+
+Highlights:
+- Fastify 5 + Drizzle ORM + Socket.IO 4
+- Auth routes (register, login, refresh, logout)
+- Chat/message REST routes
+- Socket.IO realtime (join, leave, message send/ack/broadcast)
+- Push notifications (VAPID endpoints + delivery)
+- Media uploads (multipart)
+- Rate limiting on auth surface
+- Integration tests for all routes
+
+### 2026-05-06 — Frontend-Backend Integration (Kimi)
+
+**Scope:** Wire frontend to real backend, fix bugs.
+**Agent:** Kimi K2.6
+
+Highlights:
+- Wired `+page.svelte` to `/api/v1/chats` API (real chat list)
+- Fixed IntersectionObserver leak (create once, observe incrementally)
+- Fixed socket reconnect listener loss (watch `socketStore.instance`)
+- Fixed typing timer stale closure (per-user Map)
+- Fixed push badge undefined (`payload.badge ?? undefined`)
+- Fixed auth button contrast (dark text on gold)
+- Added graceful shutdown (SIGTERM/SIGINT handlers)
+- Security hardening: updated vulnerable packages (`@fastify/jwt` 9→10, `@fastify/static` 8→9, `drizzle-orm` 0.38→0.45)
+- Client-side outbox store (localStorage, 5 retries, survives reloads)
+- Offline fallback page (`static/offline.html`)
+
+### 2026-05-07 — AntiGravity Browser Testing
+
+**Scope:** End-to-end validation across all user flows.
+**Agent:** Gemini 3 Pro (AntiGravity IDE)
+
+Highlights:
+- All 8 stages passed: Visual, Auth, Chat, Push UI, Offline, Settings, Accessibility, Audio
+- Found and confirmed bugs:
+  - `effect_orphan` crash — `$effect` inside `.svelte.ts` module level
+  - Edit/Delete sync failure — REST handlers didn't emit socket events
+  - Offline composer disabled — `disabled={!socketStore.isConnected}`
+  - CAPTCHA blocking automation
+- Bugs fixed during testing:
+  - Moved `$effect` to `+layout.svelte`
+  - Added `fastify.io.to(...).emit(...)` to PATCH/DELETE handlers
+  - Removed disabled prop, added pending indicator (◌)
+  - Auto-bypassed CAPTCHA in dev via `PUBLIC_SKIP_CAPTCHA=true`
+- Re-test confirmed edit/delete sync works live
+- Re-test confirmed offline composer queues and delivers on reconnect
+
+### 2026-05-07 — Push Notification Hardening
+
+**Scope:** VAPID configuration + testing prep.
+**Agent:** Kimi K2.6
+
+Highlights:
+- Generated VAPID keys: `npx web-push generate-vapid-keys`
+- Added to `services/api/.env` and `apps/web/.env`
+- Verified `/api/v1/push/vapid-key` endpoint returns public key
+- Created `docs/AGENT-HANDOFF-PUSH-TESTING.md` for AntiGravity
+- All services restarted with new config
+
+### 2026-05-14 — V5 Redesign (Kimi)
+
+**Scope:** Complete visual redesign — theme system, component token swap, chat clustering, profile styles, wallpaper purge.
+**Agent:** Kimi K2.6
+
+Highlights:
+- 5-theme OKLCH design system with dark/light mode support
+- Inline `style:` token binding replaces CSS theme blocks
+- All P0 components migrated from `--color-*` to `--p-*`
+- New components: `AppearanceSettings`, `ThemePicker`, `ProfileStyleSettings`, `ProfileCard`
+- Users page rewritten with roster + focus pane split layout
+- Chat layout restructured with clustering, time-below-pfp, sibling-reactions-row
+- Wallpaper system fully deleted (store, service, routes, schema, contracts)
+- Backend schema updated: `profile_style` + `banner_url` columns on `users`
+- Migration `0006_profile_style.sql` adds columns and drops `user_wallpapers`
+- Avatar fallback texture overlay (fractal noise, 45% dark / 30% light)
+- Build clean across frontend, contracts, and backend
+- Pushed as commit `e5417c0` on `main`
+
+## Where this leaves us now
+
+- Auth, chat, media, push, user management, realtime hardening, and accessibility are present and tested.
+- V5 redesign is live on `main`: 5 themes, light mode, clustering, profile cards.
+- AntiGravity browser testing signed off on all 8 stages.
+- Push notification VAPID keys configured, ready for delivery testing.
+- Remaining blockers: manual mobile PWA install proof, actual push delivery on real device.

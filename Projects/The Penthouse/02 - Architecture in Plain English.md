@@ -50,6 +50,7 @@ flowchart LR
 - **DB uniqueness** on `(chat_id, sender_id, client_message_id)` prevents duplicate messages even if something retries.
 - **Token rotation** keeps sessions safer and predictable.
 - **Offline queue with retry** means the app survives network drops without losing messages.
+- **Inline theme tokens** (`style:--p-*` on the app shell) mean theming is pure data — no CSS block overrides, no FOUC, no runtime stylesheet injection.
 
 ## What breaks what
 

@@ -144,6 +144,68 @@ This vault is the "what we built and why" map for people joining the project lat
   - glassmorphic cards, atmospheric background, mobile-first responsive
   - copy updated to singular first-person voice for staged single-tester rollout
 
+## v4 Clean-Room Rebuild Status (as of 2026-05-07)
+
+A new clean-room rebuild (`v4.0.0-alpha.1`) was started to address accumulated technical debt in the v2.1 PWA. Key differences:
+
+| Concern | v2.1 | v4 |
+|---------|------|-----|
+| Frontend | Vue 3 + Capacitor | SvelteKit 2 + Svelte 5 (runes) |
+| DB layer | Raw `pg` + 29 migrations | Drizzle ORM + generated migrations |
+| Chat page | 2,287-line monolith | Decomposed components |
+| Tests | Sequential | Parallel ephemeral DBs |
+| Push | Basic VAPID | + quiet hours + per-chat mute + privacy levels |
+
+### v4 Features Implemented
+
+- ✅ Auth: register, login, session, logout, refresh tokens
+- ✅ Chat list: real-time list with unread badges
+- ✅ Chat thread: messages, composer, optimistic UI, outbox
+- ✅ Reactions, replies, edit, delete
+- ✅ Read receipts (IntersectionObserver + marker model)
+- ✅ Typing indicators (per-user Map)
+- ✅ Audio messages (MediaRecorder + upload)
+- ✅ Push notifications: VAPID subscribe, permission banner, settings toggle
+- ✅ Service worker: offline fallback, push handler, notificationclick routing
+- ✅ Accessibility: WCAG 2.1 AA, keyboard nav, ARIA labels
+- ✅ Security: dependency updates (JWT, static, drizzle)
+
+### v4 Testing Completed
+
+- ✅ Backend integration tests: 7 suites, all passing
+- ✅ Contract tests: 25 schemas, all passing
+- ✅ E2E tests: 12 passing (4 tests × 3 browsers)
+- ✅ AntiGravity browser testing: All 8 stages passed
+- ✅ Edit/delete real-time sync verified working
+- ✅ Offline composer + outbox queue verified working
+
+### v4 Known Limitations
+
+- Scale: 15–25 users, ~10 concurrent (no Redis, no horizontal scaling)
+- Virtual scrolling: deferred (not needed at current scale)
+- Message search: deferred (needs `tsvector` + GIN)
+- E2EE: deferred (post-launch)
+- Voice/video calls: deferred (audio messages only)
+- Bio field: backend supports it, UI input missing from settings
+
+## V5 Redesign Status (as of 2026-05-14)
+
+Complete visual redesign landed on `main` (commit `e5417c0`). See [[20 - V5 Redesign]] for full detail.
+
+### What shipped
+
+- ✅ 5-theme design system (periwinkle, sage, slate, plum, charcoal) with dark/light modes
+- ✅ Inline token binding on `.app-shell` — no CSS theme blocks at runtime
+- ✅ All P0 components token-swapped from `--color-*` to `--p-*`
+- ✅ Settings page: `AppearanceSettings` + `ProfileStyleSettings` wired
+- ✅ Profile card system: editorial / vogue / wallpaper variants
+- ✅ Users page: roster + focus pane split layout with `ProfileCard`
+- ✅ Chat layout: clustering, time below pfp, reactions as sibling row
+- ✅ Wallpaper system fully purged (frontend + backend + contracts)
+- ✅ Backend: `profile_style` + `banner_url` columns, migration `0006`
+- ✅ Avatar texture overlay on fallback avatars
+- ✅ Build clean: `svelte-check` 0 errors, `tsc` clean across all packages
+
 ## PWA rebuild status (as of 2026-04-09)
 
 The `pwa` branch is the active development branch and public deployment target. The PWA is the canonical release surface; older Android APKs are legacy fallback only. The current alpha release tag is `v2.1.0-alpha.1`.
@@ -159,3 +221,4 @@ The `pwa` branch is the active development branch and public deployment target. 
 - Strict DB release gate still needs a rerun in a working Docker/Postgres environment.
 - Manual mobile PWA install proof is still needed on a real iOS/Android browser.
 - The third-party Erode font CDN request should be removed or self-hosted in the next frontend pass.
+- Push notification delivery: needs manual background-browser test on real device.
