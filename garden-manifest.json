@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T19:22:34Z",
+  "generated_at": "2026-07-25T20:41:10Z",
   "tree": [
     {
       "path": "README.md",
@@ -1295,6 +1295,14 @@
     },
     {
       "path": "Projects/The Penthouse/2025-02-13 Session Notes.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/21 - v4.2 Privacy Terms and Operator Trust.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse/22 - v4.3 Collaboration Wave.md",
       "type": "file"
     },
     {
@@ -2595,6 +2603,16 @@
       "tags": null,
       "title": "The Penthouse - Session Notes 2026-02-13",
       "visibility": "private"
+    },
+    "Projects/The Penthouse/21 - v4.2 Privacy Terms and Operator Trust.md": {
+      "tags": "[penthouse, v4.2, privacy, terms, admin, hardening]",
+      "created": "2026-07-14",
+      "title": "v4.2 Privacy Terms and Operator Trust"
+    },
+    "Projects/The Penthouse/22 - v4.3 Collaboration Wave.md": {
+      "tags": "[penthouse, v4.3, collaboration, groups, channels, forwarding, embeds]",
+      "created": "2026-07-22",
+      "title": "v4.3 Collaboration Wave"
     },
     "Projects/The Penthouse/PWA-00 - Knowledge Hub.md": {
       "tags": "[penthouse, pwa, sveltekit, knowledge-base]",
