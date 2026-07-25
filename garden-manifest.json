@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T20:41:10Z",
+  "generated_at": "2026-07-25T21:05:55Z",
   "tree": [
     {
       "path": "README.md",
@@ -31,6 +31,18 @@
     },
     {
       "path": "IT Projects/README.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Home Lab",
+      "type": "dir"
+    },
+    {
+      "path": "IT Projects/Home Lab/01 - Services Dashboard.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Home Lab/02 - Network Map.md",
       "type": "file"
     },
     {
@@ -1999,6 +2011,20 @@
     "IT Projects/README.md": {
       "title": "IT Projects"
     },
+    "IT Projects/Home Lab/01 - Services Dashboard.md": {
+      "tags": "[homelab, services, dashboard]",
+      "created": "2026-07-25",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
+      "title": "Services Dashboard"
+    },
+    "IT Projects/Home Lab/02 - Network Map.md": {
+      "tags": "[homelab, network, map]",
+      "created": "2026-07-25",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
+      "title": "Network Map"
+    },
     "IT Projects/Portfolio Website Development/README.md": {
       "title": "Website Development - Project Overview"
     },
@@ -2460,11 +2486,15 @@
     "Projects/The Penthouse/00 - Knowledge Hub.md": {
       "tags": "[penthouse, rebuild, knowledge-base, obsidian]",
       "created": "2026-03-05",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
       "title": "The Penthouse Rebuild Knowledge Hub"
     },
     "Projects/The Penthouse/01 - Rebuild Timeline.md": {
       "tags": "[penthouse, timeline, changelog, rebuild]",
       "created": "2026-03-05",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
       "title": "Rebuild Timeline"
     },
     "Projects/The Penthouse/02 - Architecture in Plain English.md": {
@@ -2588,11 +2618,15 @@
     "Projects/The Penthouse/19 - v4 Clean-Room Rebuild.md": {
       "tags": "[penthouse, v4, rebuild, sveltekit, drizzle]",
       "created": "2026-05-07",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
       "title": "v4 Clean-Room Rebuild"
     },
     "Projects/The Penthouse/20 - V5 Redesign.md": {
       "tags": "[penthouse, v5, redesign, theme, design-system]",
       "created": "2026-05-14",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
       "title": "V5 Redesign"
     },
     "Projects/The Penthouse/2025-02-13 Session Notes.md": {
@@ -2607,11 +2641,15 @@
     "Projects/The Penthouse/21 - v4.2 Privacy Terms and Operator Trust.md": {
       "tags": "[penthouse, v4.2, privacy, terms, admin, hardening]",
       "created": "2026-07-14",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
       "title": "v4.2 Privacy Terms and Operator Trust"
     },
     "Projects/The Penthouse/22 - v4.3 Collaboration Wave.md": {
       "tags": "[penthouse, v4.3, collaboration, groups, channels, forwarding, embeds]",
       "created": "2026-07-22",
+      "published_to_garden": true,
+      "last_published": "2026-07-25T21:05:10.185673",
       "title": "v4.3 Collaboration Wave"
     },
     "Projects/The Penthouse/PWA-00 - Knowledge Hub.md": {
