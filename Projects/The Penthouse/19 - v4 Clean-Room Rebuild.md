@@ -1,6 +1,8 @@
 ---
 tags: [penthouse, v4, rebuild, sveltekit, drizzle]
 created: 2026-05-07
+published_to_garden: true
+last_published: '2026-07-25T21:05:10.185673'
 ---
 
 # v4 Clean-Room Rebuild

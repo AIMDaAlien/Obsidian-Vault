@@ -1,6 +1,8 @@
 ---
 tags: [penthouse, rebuild, knowledge-base, obsidian]
 created: 2026-03-05
+published_to_garden: true
+last_published: '2026-07-25T21:05:10.185673'
 ---
 
 # The Penthouse Rebuild Knowledge Hub

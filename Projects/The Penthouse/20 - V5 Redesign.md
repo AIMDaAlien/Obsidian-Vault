@@ -1,6 +1,8 @@
 ---
 tags: [penthouse, v5, redesign, theme, design-system]
 created: 2026-05-14
+published_to_garden: true
+last_published: '2026-07-25T21:05:10.185673'
 ---
 
 # V5 Redesign
