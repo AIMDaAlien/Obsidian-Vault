@@ -24,12 +24,19 @@ This vault is the "what we built and why" map for people joining the project lat
 13. [[13 - MVP Stability Plan v2]]
 14. [[14 - Opencode Handoff]] (historical snapshot)
 
-### PWA rebuild (v2.1 — current branch)
+### PWA rebuild (v2.1 - current branch)
 
-15. [[15 - PWA Rebuild]] — why the frontend was rebuilt as a PWA and what the baseline covers
-16. [[16 - Wave A - Live Chat on the PWA]] — typing indicators, presence, read receipts, GIF, muting
-17. [[17 - Wave B - Rich Messaging]] — reactions, reply/quote, delete, pins, icon refresh
-18. [[18 - Wave C - Community Features]] — slash commands, polls, note to self
+15. [[15 - PWA Rebuild]] - why the frontend was rebuilt as a PWA and what the baseline covers
+16. [[16 - Wave A - Live Chat on the PWA]] - typing indicators, presence, read receipts, GIF, muting
+17. [[17 - Wave B - Rich Messaging]] - reactions, reply/quote, delete, pins, icon refresh
+18. [[18 - Wave C - Community Features]] - slash commands, polls, note to self
+
+### Clean-room rebuild and recent releases
+
+19. [[19 - v4 Clean-Room Rebuild]] - SvelteKit, Drizzle, and decomposed chat
+20. [[20 - V5 Redesign]] - 5 themes, tokens, profile cards, chat clustering
+21. [[21 - v4.2 Privacy Terms and Operator Trust]] - public legal pages and real admin diagnostics
+22. [[22 - v4.3 Collaboration Wave]] - community discovery, forwarding, files, and gated embeds
 
 ## Source docs in repo
 
@@ -126,8 +133,8 @@ This vault is the "what we built and why" map for people joining the project lat
   - browser smoke reaches `/welcome`, enters `/auth`, validates the manifest, confirms `/sw.js` controls the page, and confirms the app shell renders offline for `/welcome` and `/`
   - backend production smoke registered two fresh users, created a DM, sent a message, and read the message back from `https://api.penthouse.blog`
   - production `JWT_SECRET` and `ALTCHA_HMAC_KEY` were rotated during the alpha deploy, invalidating old sessions by design
-  - nightly PostgreSQL dumps now run from TrueNAS cron job `1` at 03:00 into `/mnt/Backup/penthouse-rebuild/backups/postgres/`; restore was tested with a temporary database
-  - known frontend warning: the welcome page still requests `https://fonts.cdnfonts.com/css/erode?weights=400,600`, which returned HTTP 500 during smoke; the page falls back to local serif fonts
+  - nightly PostgreSQL dumps now run from TrueNAS cron job `1` at 03:00 into `/mnt/Backup/penthouse-rebuild/backups/postgres/`. Restore was tested with a temporary database
+  - known frontend warning: the welcome page still requests `https://fonts.cdnfonts.com/css/erode?weights=400,600`, which returned HTTP 500 during smoke. The page falls back to local serif fonts
 - Android release signing was prepared for the earlier rebuild APK path, but APK distribution is now legacy-only:
   - fresh signing key created outside the repo
   - release baseline set to `versionCode 100`
@@ -137,7 +144,7 @@ This vault is the "what we built and why" map for people joining the project lat
   - migration `007` added
   - API/realtime gating active
   - mobile register/ack flow active
-- Real-device smoke proof exists for the earlier Android public-domain path. The 2026-04-15 PWA TrueNAS cutover has fresh browser/PWA proof and backend DM proof; mobile Add-to-Home-Screen proof remains a manual device check.
+- Real-device smoke proof exists for the earlier Android public-domain path. The 2026-04-15 PWA TrueNAS cutover has fresh browser/PWA proof and backend DM proof. Mobile Add-to-Home-Screen proof remains a manual device check.
 - Public site refresh completed:
   - landing page redesigned to match mobile app visual identity (Erode logo, Ubuntu body, JetBrains Mono technical)
   - frosted glass periwinkle palette coherent with mobile app CSS variables
@@ -195,7 +202,7 @@ Complete visual redesign landed on `main` (commit `e5417c0`). See [[20 - V5 Rede
 ### What shipped
 
 - ✅ 5-theme design system (periwinkle, sage, slate, plum, charcoal) with dark/light modes
-- ✅ Inline token binding on `.app-shell` — no CSS theme blocks at runtime
+- ✅ Inline token binding on `.app-shell` - no CSS theme blocks at runtime
 - ✅ All P0 components token-swapped from `--color-*` to `--p-*`
 - ✅ Settings page: `AppearanceSettings` + `ProfileStyleSettings` wired
 - ✅ Profile card system: editorial / vogue / wallpaper variants
@@ -206,9 +213,42 @@ Complete visual redesign landed on `main` (commit `e5417c0`). See [[20 - V5 Rede
 - ✅ Avatar texture overlay on fallback avatars
 - ✅ Build clean: `svelte-check` 0 errors, `tsc` clean across all packages
 
+## v4.2 and v4.3 status (as of 2026-07-22)
+
+v4.2 shipped public privacy and terms pages plus real admin diagnostics. v4.3 shipped the collaboration surfaces. See [[21 - v4.2 Privacy Terms and Operator Trust]] and [[22 - v4.3 Collaboration Wave]] for full detail.
+
+### What v4.2 added
+
+- Public `/privacy` and `/terms` routes with honest self-hosting language
+- Settings Legal section and registration acknowledgement links
+- Admin dashboard with real system, backup, push, and error diagnostics
+- Shared rate limiting, notification lifecycle fixes, and validation hardening
+- Caddy security headers and dead-code removal
+- Package versions realigned to `4.2.0-alpha.1`
+
+### What v4.3 added
+
+- Community screen with People, Discover, Requests, and Invites tabs
+- Compact group discovery cards for public and private groups
+- Manager invite links with expiry and use limits
+- Request-to-join flow for private groups
+- Scrollable underline channel tabs with a right-edge pointer
+- Locked-channel notice for manager-only channels
+- Message forwarding to several chats with recipient chips
+- Softer file attachment cards with clear type and size
+- Privacy-first social embeds with Auto, Ask first, and Never modes
+- Separate embed bubbles so message text stays readable
+
+### Current blockers
+
+- The collaboration-wave worktree is dirty and needs clean commits before deploy.
+- Older Playwright helpers assume General is auto-joined. They need updating.
+- Instagram embeds fall back to generic metadata without provider credentials.
+- Manual Add-to-Home-Screen proof is still needed on a real mobile browser.
+
 ## PWA rebuild status (as of 2026-04-09)
 
-The `pwa` branch is the active development branch and public deployment target. The PWA is the canonical release surface; older Android APKs are legacy fallback only. The current alpha release tag is `v2.1.0-alpha.1`.
+The `pwa` branch is the active development branch and public deployment target. The PWA is the canonical release surface. Older Android APKs are legacy fallback only. The current alpha release tag is `v2.1.0-alpha.1`.
 
 - PWA baseline is complete and testable in a browser
 - Wave A is complete (typing, presence, read receipts, GIF, muting)

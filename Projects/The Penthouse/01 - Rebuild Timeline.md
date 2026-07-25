@@ -117,8 +117,8 @@ Current working tree:
 
 Current working tree:
 - Typing was already wired end-to-end, but the indicator lived inside the scroll container and was clipped below the viewport in real chats.
-- Directory presence looked missing in runtime because offline users rendered no marker at all; the directory now always shows a presence dot.
-- Klipy inline chat rendering was using the preview asset instead of the animated asset; inline playback now follows the animated URL.
+- Directory presence looked missing in runtime because offline users rendered no marker at all. The directory now always shows a presence dot.
+- Klipy inline chat rendering was using the preview asset instead of the animated asset. Inline playback now follows the animated URL.
 - The typing event contract now accepts nullable `displayName` values so valid typing events are not dropped for users without a display name.
 - Two-emulator Android retesting confirmed typing, presence, and Klipy inline playback are restored in runtime.
 
@@ -160,13 +160,13 @@ Highlights:
 - Restarted Caddy and obtained certificates for both domains.
 - Verified `https://penthouse.blog/` returns HTTP 200.
 - Verified `https://api.penthouse.blog/api/v1/health` returns OK.
-- Ran a headless browser smoke against `https://penthouse.blog/`; it redirects to `/auth` and shows the sign-in UI.
+- Ran a headless browser smoke against `https://penthouse.blog/`. It redirects to `/auth` and shows the sign-in UI.
 
 Current blocker:
 - Public cutover is not complete until APK downloads and logged-in chat proof pass.
 - `/mnt/Storage_Pool/penthouse-rebuild/downloads` is empty, so `https://penthouse.blog/downloads/the-penthouse.apk` and `https://penthouse.blog/downloads/the-penthouse-rebuild.apk` return HTTP 404.
 - No local or TrueNAS APK artifact was found during the 2026-04-14 deploy retry.
-- Browser smoke still sees pre-auth protected calls to `/api/v1/chats/self` and `/api/v1/chats`; these do not block auth UI loading, but should be cleaned up so production console/API diagnostics stay quiet.
+- Browser smoke still sees pre-auth protected calls to `/api/v1/chats/self` and `/api/v1/chats`. These do not block auth UI loading, but should be cleaned up so production console/API diagnostics stay quiet.
 
 ### 2026-04-15 - Backup Pool Cutover
 
@@ -177,13 +177,13 @@ Highlights:
 - `infra/compose/.env` was backed up and rewritten so TrueNAS bind mounts point at `/mnt/Backup/penthouse-rebuild`.
 - The Compose stack was rebuilt and restarted from `/mnt/Backup/penthouse-rebuild/app/infra/compose`.
 - Verified the running container mounts now point at `/mnt/Backup/penthouse-rebuild/{postgres,uploads,downloads,caddy-data,caddy-config}`.
-- Ran migrations from the API container; result was `[migration] complete`.
+- Ran migrations from the API container. Result was `[migration] complete`.
 - Verified `https://penthouse.blog/` returns HTTP 200 and `https://api.penthouse.blog/api/v1/health` returns OK after the cutover.
 
 Current blocker:
 - APK downloads are no longer the public source of truth. The PWA at `https://penthouse.blog/` is the default release surface.
 - Legacy APK status stays unavailable until an older APK is recovered and placed under `/mnt/Backup/penthouse-rebuild/downloads/legacy/the-penthouse.apk`.
-- The deployment folder is still named `penthouse-rebuild`; that is only a NAS path label. The code comes from the `pwa` branch of the current optimized repo.
+- The deployment folder is still named `penthouse-rebuild`. That is only a NAS path label. The code comes from the `pwa` branch of the current optimized repo.
 
 ### 2026-04-15 - PWA-first distribution policy
 
@@ -205,9 +205,9 @@ Highlights:
 - Pushed Claude's welcome-page/auth-guard handoff commit to `origin/pwa`.
 - Built the SvelteKit frontend locally because the TrueNAS host does not have `npm`, then copied `apps/web/build/` into `/mnt/Backup/penthouse-rebuild/app/infra/compose/site/public/`.
 - Added absolute service-worker registration in `apps/web/src/app.html` so `/sw.js` registers with scope `/` on routed pages like `/welcome` and `/auth`.
-- Rotated production `JWT_SECRET` and `ALTCHA_HMAC_KEY`; old sessions were intentionally invalidated.
+- Rotated production `JWT_SECRET` and `ALTCHA_HMAC_KEY`. Old sessions were intentionally invalidated.
 - Rebuilt and restarted the TrueNAS Compose stack from `/mnt/Backup/penthouse-rebuild/app/infra/compose`.
-- Ran migrations inside the production API container; result was `[migration] complete`.
+- Ran migrations inside the production API container. Result was `[migration] complete`.
 - Added nightly PostgreSQL dumps through TrueNAS cron job `1` at 03:00 using `/mnt/Backup/penthouse-rebuild/scripts/nightly-pg-dump.sh`.
 - Verified backup integrity with `gunzip -t` and restored the latest dump into a temporary `penthouse_restore_test` database before dropping it.
 - Verified public API health and app-distribution metadata:
@@ -235,7 +235,7 @@ Highlights:
 - Added glassmorphic cards for testing scope and legacy fallback sections.
 - Atmospheric background: radial gradient ellipses, floating orbs, grain texture overlay.
 - Mobile-first responsive: 1.5x logo on phones, generous side margins, safe area insets, reduced-motion support.
-- Three POC variants explored (Soft Glass, Editorial Stack, Neon Pulse); Editorial Stack chosen and refined.
+- Three POC variants explored (Soft Glass, Editorial Stack, Neon Pulse). Editorial Stack chosen and refined.
 - Copy updated to singular/first-person voice reflecting single-tester staged rollout.
 - Both APK download paths preserved: `/downloads/the-penthouse-rebuild.apk` and `/downloads/the-penthouse.apk`.
 
@@ -244,10 +244,10 @@ Highlights:
 - Auth, chat, media, user management, realtime hardening, and Android push foundations are present.
 - Phase 1/2 backend work for MVP Stability Plan v2 is done in code.
 - Strict DB release gate still needs a clean rerun in a working Docker/Postgres environment.
-- Public PWA/API cutover is live on the Backup pool; the remaining operational blockers are strict DB gate rerun, mobile install proof, and cleaning up the third-party font dependency.
+- Public PWA/API cutover is live on the Backup pool. The remaining operational blockers are strict DB gate rerun, mobile install proof, and cleaning up the third-party font dependency.
 
 
-### 2026-05-06 — v4 Clean-Room Rebuild Begins (Kimi)
+### 2026-05-06 - v4 Clean-Room Rebuild Begins (Kimi)
 
 **Scope:** Complete frontend-backend rebuild from scratch.
 **Agent:** Kimi K2.6
@@ -261,7 +261,7 @@ Highlights:
 - Built auth, socket store, chat UI, settings, push banner, audio recorder
 - Created comprehensive backend scaffold guide for Codex (`docs/adr/04-backend-scaffold.md`)
 
-### 2026-05-06 — Backend Implementation (Codex)
+### 2026-05-06 - Backend Implementation (Codex)
 
 **Scope:** `services/api/` implementation.
 **Agent:** Codex
@@ -276,7 +276,7 @@ Highlights:
 - Rate limiting on auth surface
 - Integration tests for all routes
 
-### 2026-05-06 — Frontend-Backend Integration (Kimi)
+### 2026-05-06 - Frontend-Backend Integration (Kimi)
 
 **Scope:** Wire frontend to real backend, fix bugs.
 **Agent:** Kimi K2.6
@@ -293,7 +293,7 @@ Highlights:
 - Client-side outbox store (localStorage, 5 retries, survives reloads)
 - Offline fallback page (`static/offline.html`)
 
-### 2026-05-07 — AntiGravity Browser Testing
+### 2026-05-07 - AntiGravity Browser Testing
 
 **Scope:** End-to-end validation across all user flows.
 **Agent:** Gemini 3 Pro (AntiGravity IDE)
@@ -301,9 +301,9 @@ Highlights:
 Highlights:
 - All 8 stages passed: Visual, Auth, Chat, Push UI, Offline, Settings, Accessibility, Audio
 - Found and confirmed bugs:
-  - `effect_orphan` crash — `$effect` inside `.svelte.ts` module level
-  - Edit/Delete sync failure — REST handlers didn't emit socket events
-  - Offline composer disabled — `disabled={!socketStore.isConnected}`
+  - `effect_orphan` crash - `$effect` inside `.svelte.ts` module level
+  - Edit/Delete sync failure - REST handlers didn't emit socket events
+  - Offline composer disabled - `disabled={!socketStore.isConnected}`
   - CAPTCHA blocking automation
 - Bugs fixed during testing:
   - Moved `$effect` to `+layout.svelte`
@@ -313,7 +313,7 @@ Highlights:
 - Re-test confirmed edit/delete sync works live
 - Re-test confirmed offline composer queues and delivers on reconnect
 
-### 2026-05-07 — Push Notification Hardening
+### 2026-05-07 - Push Notification Hardening
 
 **Scope:** VAPID configuration + testing prep.
 **Agent:** Kimi K2.6
@@ -325,9 +325,9 @@ Highlights:
 - Created `docs/AGENT-HANDOFF-PUSH-TESTING.md` for AntiGravity
 - All services restarted with new config
 
-### 2026-05-14 — V5 Redesign (Kimi)
+### 2026-05-14 - V5 Redesign (Kimi)
 
-**Scope:** Complete visual redesign — theme system, component token swap, chat clustering, profile styles, wallpaper purge.
+**Scope:** Complete visual redesign - theme system, component token swap, chat clustering, profile styles, wallpaper purge.
 **Agent:** Kimi K2.6
 
 Highlights:
@@ -344,10 +344,50 @@ Highlights:
 - Build clean across frontend, contracts, and backend
 - Pushed as commit `e5417c0` on `main`
 
+### 2026-07-14 - v4.2 Privacy Terms and Operator Trust (Codex)
+
+**Scope:** Public legal pages, real admin diagnostics, backend hardening, version realignment.
+**Agent:** Codex
+
+Highlights:
+- Added `/privacy` and `/terms` routes with plain first-person copy
+- Linked legal pages from registration and Settings
+- Replaced placeholder admin counters with real system, backup, push, and error sections
+- Consolidated rate limiting across auth surfaces
+- Hardened notification lifecycle, validation, and error mapping
+- Removed dead code and unused dependencies
+- Added Caddy security headers
+- Realigned all package versions to `4.2.0-alpha.1`
+- Full validation passed: typecheck, lint, format, API tests, production build
+
+### 2026-07-22 - v4.3 Collaboration Wave (Kimi + Codex)
+
+**Scope:** Community discovery, invites, forwarding, files, and privacy-first social embeds.
+**Agents:** Kimi K2.6 frontend, Codex backend wiring and verification
+
+Highlights:
+- Replaced the People tab with a Community screen
+- Added People, Discover, Requests, and Invites tabs
+- Built compact group discovery cards
+- Added public direct-join and private request-to-join flows
+- Added manager invite links with expiry and use limits
+- Built `/join?token=...` redemption that survives sign-in
+- Made General an opt-in community hub instead of automatic membership
+- Added scrollable underline channel tabs with a right-edge pointer
+- Added locked-channel notice for manager-only channels
+- Added message forwarding to several chats with recipient chips
+- Updated file attachment cards with softer captions and clearer metadata
+- Added gated social embeds with Auto, Ask first, and Never modes
+- Stored embed consent in the user profile via migration `042`
+- Added rate-limited `GET /api/v1/embeds/preview` that returns metadata only
+- Full validation passed: web typecheck, web unit tests, API integration tests, contract tests, WebKit collaboration wiring test, production build
+
 ## Where this leaves us now
 
 - Auth, chat, media, push, user management, realtime hardening, and accessibility are present and tested.
 - V5 redesign is live on `main`: 5 themes, light mode, clustering, profile cards.
+- v4.2 shipped public legal pages and real admin diagnostics.
+- v4.3 shipped community discovery, invites, forwarding, files, and gated embeds.
 - AntiGravity browser testing signed off on all 8 stages.
 - Push notification VAPID keys configured, ready for delivery testing.
-- Remaining blockers: manual mobile PWA install proof, actual push delivery on real device.
+- Remaining blockers: split the dirty collaboration-wave tree into clean commits, update stale Playwright helpers, manual mobile PWA install proof, actual push delivery on real device.
