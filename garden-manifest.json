@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T21:05:55Z",
+  "generated_at": "2026-07-29T23:16:43Z",
   "tree": [
     {
       "path": "README.md",
@@ -36,6 +36,10 @@
     {
       "path": "IT Projects/Home Lab",
       "type": "dir"
+    },
+    {
+      "path": "IT Projects/Home Lab/00 - Server Inventory.md",
+      "type": "file"
     },
     {
       "path": "IT Projects/Home Lab/01 - Services Dashboard.md",
@@ -107,6 +111,14 @@
     },
     {
       "path": "IT Projects/Session Notes/2026-03-29 LG G8 ThinQ G820TM Resurrection.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Session Notes/2026-06-20 Unraid Hardware Swap ASRock B660M.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md",
       "type": "file"
     },
     {
@@ -1027,6 +1039,10 @@
     },
     {
       "path": "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Unraid Qwen3.6 Terminal Agent - July 2026.md",
       "type": "file"
     },
     {
@@ -2011,6 +2027,14 @@
     "IT Projects/README.md": {
       "title": "IT Projects"
     },
+    "IT Projects/Home Lab/00 - Server Inventory.md": {
+      "tags": "[homelab, server-inventory, unraid, hardware]",
+      "created": "2026-06-27",
+      "published_to_garden": true,
+      "last_published": "2026-07-29T23:14:32",
+      "last_incident": "2026-06-27",
+      "title": "Server Inventory"
+    },
     "IT Projects/Home Lab/01 - Services Dashboard.md": {
       "tags": "[homelab, services, dashboard]",
       "created": "2026-07-25",
@@ -2063,6 +2087,14 @@
       "published_to_garden": false,
       "visibility": "private",
       "title": "Troubleshooting Report: The Great LG G8 ThinQ (G820TM) Resurrection"
+    },
+    "IT Projects/Session Notes/2026-06-20 Unraid Hardware Swap ASRock B660M.md": {
+      "tags": "[unraid, hardware-swap, troubleshooting, homelab]",
+      "created": "2026-06-20",
+      "title": "Unraid Server Hardware Swap — B660M + 12600KF Transplant"
+    },
+    "IT Projects/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md": {
+      "title": "2026-06-27 Home Lab Restoration & Expansion"
     },
     "Learning Journals/3D Printing Optimization Journey.md": {
       "garden_path": "Learning/3D Printing Optimization Journey.md",
@@ -2339,6 +2371,10 @@
       "title": "Architecture Guide - Sovereign AI Stack"
     },
     "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md": {
+      "tags": "[sovereign-ai, project-overview, self-hosted, privacy, llm]",
+      "created": "2026-02-10",
+      "published_to_garden": true,
+      "last_published": "2026-07-29T23:14:32",
       "title": "Project Overview - Sovereign AI Stack"
     },
     "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md": {
@@ -2349,6 +2385,13 @@
     },
     "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md": {
       "title": "Speed Myth - Ollama vs Text-Gen-WebUI"
+    },
+    "Projects/Sovereign AI Stack/Unraid Qwen3.6 Terminal Agent - July 2026.md": {
+      "tags": "[sovereign-ai, unraid, qwen, terminal-agent, llm]",
+      "created": "2026-07-28",
+      "published_to_garden": true,
+      "last_published": "2026-07-29T23:14:32",
+      "title": "Unraid Qwen3.6 terminal agent"
     },
     "Projects/Teardown Cafe/Session Index.md": {
       "title": "📊 Session Index"
