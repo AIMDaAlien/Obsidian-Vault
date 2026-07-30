@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T13:05:58Z",
+  "generated_at": "2026-07-30T21:27:39Z",
   "tree": [
     {
       "path": "README.md",
@@ -996,6 +996,14 @@
     {
       "path": "Projects/Local Language Engine/01 - Architecture and Implementation Plan.md",
       "type": "file"
+    },
+    {
+      "path": "Projects/Local Language Engine/02 - Build, Device, and Product Record.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Local Language Engine/Assets",
+      "type": "dir"
     },
     {
       "path": "Projects/Portfolio Website",
@@ -2366,8 +2374,8 @@
     },
     "Projects/Local Language Engine/00 - Project Overview.md": {
       "project": "Local Language Engine",
-      "status": "Core implementation active — device and network hardening pending",
-      "phase": "Phase 2–4 core slices implemented; dependability verification",
+      "status": "Standalone Android and beginner UI proven — release hardening active",
+      "phase": "Physical-device pipeline and progressive interface proven; dependability hardening",
       "repository": "/Users/aim/Documents/language-engine",
       "platform": "Android-first",
       "updated": "2026-07-30",
@@ -2375,10 +2383,18 @@
     },
     "Projects/Local Language Engine/01 - Architecture and Implementation Plan.md": {
       "project": "Local Language Engine",
-      "status": "Core implementation active — device and network hardening pending",
+      "status": "Standalone Android and beginner UI proven — release hardening active",
       "repository": "/Users/aim/Documents/language-engine",
       "updated": "2026-07-30",
       "title": "Architecture and Implementation Plan"
+    },
+    "Projects/Local Language Engine/02 - Build, Device, and Product Record.md": {
+      "project": "Local Language Engine",
+      "status": "Standalone Android and beginner UI proven — release hardening active",
+      "repository": "/Users/aim/Documents/language-engine",
+      "device": "OnePlus 12 CPH2583 — Android 16 / API 36",
+      "updated": "2026-07-30",
+      "title": "Build, Device, and Product Record"
     },
     "Projects/Portfolio Website/Project - Current State.md": {
       "title": "Knowledge Garden Sidebar Project - Current State"
