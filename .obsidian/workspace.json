@@ -194,6 +194,9 @@
   },
   "active": "4da4d9affceacff3",
   "lastOpenFiles": [
+    "Projects/Local Language Engine/01 - Architecture and Implementation Plan.md",
+    "Projects/Local Language Engine/00 - Project Overview.md",
+    "Projects/Local Language Engine",
     "Projects/The Penthouse Self-Hosting/11 - What Changed Between Notes.md",
     "Projects/The Penthouse Self-Hosting/10 - Mobile Update Versioning Protocol.md",
     "Projects/The Penthouse Self-Hosting/09 - Disk Exhaustion Prevention.md",
@@ -218,8 +221,6 @@
     "Projects/The Penthouse/09 - Realtime Hardening.md",
     "Projects/The Penthouse/08 - Live Chat Essentials.md",
     "Projects/The Penthouse/07 - User Management Basics.md",
-    "Projects/The Penthouse/06 - Copyable Rebuild Checklist.md",
-    "Projects/The Penthouse/05 - Multi-Model Delegation Workflow.md",
     "Projects/The Penthouse Self-Hosting",
     "images/LG-G8-download-mode-tmous-restore.png",
     "images/LG-G8-fastboot-wrong-identity.png",
@@ -238,7 +239,6 @@
     "Untitled.base",
     "Vault Index.base",
     "garden-manifest.json",
-    "Projects/Tech Consulting/Tech Consultation Playbook/Templates",
     "images/55950.png",
     "Untitled.canvas"
   ]
