@@ -1,6 +1,6 @@
 ---
 project: Local Language Engine
-status: Core implementation active — device and network hardening pending
+status: Standalone Android and beginner UI proven — release hardening active
 repository: /Users/aim/Documents/language-engine
 updated: 2026-07-30
 ---
@@ -21,8 +21,8 @@ and synchronization are stable.
 
 ```mermaid
 flowchart LR
-    subgraph Android["Android — Expo development build"]
-        UI["RTL live lesson UI"]
+    subgraph Android["Android — locally built standalone Expo app"]
+        UI["Progressive English → bilingual → Arabic UI"]
         RTC["WebRTC audio + event channel"]
         Cache["Offline SQLite + media cache"]
         Outbox["Sync outbox"]
@@ -124,11 +124,32 @@ Direction: a dark, focused listening room rather than a generic dashboard.
 - Very Peri is the dynamic session color, not a purple-on-white gradient.
 - Near-black indigo surfaces, readable warm-white Arabic, and one warm accent.
 - Restrained glassmorphism on the live transcript and transport dock only.
-- Large Arabic type, full RTL mirroring, minimum 44-point touch targets.
+- Large Arabic type, explicit RTL lesson regions, directional isolation for
+  mixed Arabic/English text, and minimum 44-point touch targets.
 - Live state is unmistakable: listening, thinking, speaking, paused, offline.
 - Motion is short and functional; reduced-motion settings are honored.
 - Recordings, suggestions, approvals, sync state, and destructive actions are
   explicit.
+- Android hides the status bar during use. The navigation bar remains available
+  so the app does not trap a new learner in an unfamiliar full-screen gesture.
+
+### Progressive interface language
+
+The application shell must not begin as an Arabic-only test. It advances through
+four reversible stages:
+
+1. **Trailhead — English:** English controls and guidance; Arabic lesson content
+   remains correctly RTL and includes a small essential-word compass.
+2. **Bridge — English + Arabic:** English leads; learned Arabic control words
+   appear beside it.
+3. **Guided Arabic — Arabic + English:** Arabic leads; English remains as rescue
+   text.
+4. **Immersion — Arabic:** Arabic controls lead, but the Guide always permits a
+   manual step back.
+
+Aim explicitly confirms each vocabulary bundle before the interface advances.
+Automatic promotion may later use spaced-repetition mastery, but it must never
+pretend that opening a screen proves understanding.
 
 ## Repository
 
@@ -231,7 +252,7 @@ contains data contracts only.
 
 ## Current Phase
 
-**Core implementation active — device and network hardening pending**
+**Standalone Android and beginner UI proven — release hardening active**
 
 Canonical repository: `/Users/aim/Documents/language-engine`
 
@@ -262,12 +283,40 @@ Implemented and proven on the Mac:
   English translations as LTR, Japanese content as LTR, a clean console, and a
   working suggestion-to-card flow.
 
+Implemented and proven on the physical Android target:
+
+- OnePlus 12 (`CPH2583`) on Android 16 / API 36 installs the locally assembled
+  APK and launches with Metro stopped and `adb reverse` removed.
+- Tailscale Serve exposes only the local host service to the private tailnet at
+  `https://macbook-pro.tail7124d6.ts.net/`.
+- A real microphone turn completed WebRTC audio capture, MLX Whisper Arabic
+  transcription, tutor response, signed WAV synthesis, and phone playback.
+- Arabic content renders right-to-left on the phone; the Latin `MSA` label is
+  directionally isolated.
+- Expo OTA updates are disabled. The app does not need Expo's cloud build,
+  deployment, or update services.
+- Camera and Android overlay permissions are blocked.
+- The Android status bar is hidden while the app is focused; the bottom system
+  navigation gesture remains available.
+- The whole application shell now starts in English and advances through
+  Trailhead, Bridge, Guided Arabic, and Immersion. Interface stage persists in
+  mobile SQLite and can always move backward.
+- The recording-consent switch uses physical in-track positions independent of
+  text direction. Its off and on states were both inspected on the OnePlus.
+- The release APK was rebuilt, installed, and checked without Metro. TypeScript,
+  Expo configuration, Android API 36 assembly, focus/full-screen state, and
+  accessibility switch state all passed.
+
 Still required before dependable-device status:
 
-- Install the current APK on a physical Android phone.
-- Prove microphone audio, WebRTC partial transcription, interruption, reconnect,
-  recording consent, and offline replay on that phone.
-- Run degraded-LAN, packet-loss, battery, thermal, storage-pressure, and trusted
-  local HTTPS tests.
+- Replace debug-certificate release signing with Aim's permanent release key.
+- Provision the API key so Tailscale is not the sole application-level trust
+  boundary.
+- Run the Mac host as a resilient local service with startup and recovery.
+- Prove interruption, reconnect, recording consent, and offline replay on the
+  phone outside the successful baseline round trip.
+- Run degraded-LAN, packet-loss, battery, thermal, and storage-pressure tests.
 - Add bounded offline media downloads; the current mobile cache stores lesson
   snapshots and the idempotent operation outbox, not lesson audio.
+- Attach accurate English meaning and transliteration to generated Arabic tutor
+  replies; a static translation must never be shown for a different live reply.

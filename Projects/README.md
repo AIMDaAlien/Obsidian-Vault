@@ -11,7 +11,7 @@ Active and archived project work. Each project has its own subfolder with releva
 - **Portfolio Website/** - Personal portfolio with M3 floating pill sidebar
 - **Homelab NOC Skills/** - Network operations center practice and troubleshooting
 - **Sovereign AI Stack/** - Fully local, privacy-first AI assistant (Ollama + OpenClaw + Discord)
-- **Local Language Engine/** - Android-first, Mac-hosted private Arabic language tutor
+- **Local Language Engine/** - Standalone Android, Mac-hosted private Arabic tutor with progressive English-to-Arabic UI
 
 ## Archive
 
