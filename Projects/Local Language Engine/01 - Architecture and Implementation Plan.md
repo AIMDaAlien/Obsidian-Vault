@@ -1,8 +1,8 @@
 ---
 project: Local Language Engine
-status: Planning approved — implementation pending
+status: Core implementation active — device and network hardening pending
 repository: /Users/aim/Documents/language-engine
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 # Architecture and Implementation Plan
@@ -231,7 +231,43 @@ contains data contracts only.
 
 ## Current Phase
 
-**Planning approved — implementation pending**
+**Core implementation active — device and network hardening pending**
 
 Canonical repository: `/Users/aim/Documents/language-engine`
 
+## Implementation Record — 2026-07-30
+
+Implemented and proven on the Mac:
+
+- MLX Whisper large-v3-turbo produces partial/final Arabic transcripts from
+  WebRTC audio windows; the Arabic prompt correctly preserves Aim's name.
+- Live speech events cover start, partial transcript, final transcript, tutor
+  text deltas, final reply, interruption, and idempotent turn persistence.
+- Arabic and Japanese tutor speech is delivered as short-lived signed PCM WAV.
+- Recording consent is off by default. Consented turns map recording, learner
+  turn, transcript, correction, review state, deletion event, and audit history.
+- Pending Hijazi suggestions can be generated, reviewed, rejected, or explicitly
+  approved as cards. Card creation remains impossible before review.
+- The mobile cache stores lesson snapshots, queues offline work once, surfaces
+  host/mobile review conflicts, and requires an explicit resolution.
+- Rights-confirmed YouTube provenance can be paired with a local media copy and
+  prepared into 30-second mono lesson segments. No access controls are bypassed.
+- Backup, restore, SQLite integrity, media-path integrity, and checksum
+  verification use local standard-library tooling with rollback artifacts.
+- Japanese has its own tutor policy, ASR language, TTS voice, and explicit LTR
+  content styles; the Arabic shell remains RTL.
+- `/v1` APIs support a 32-character shared key. Media uses five-minute signed
+  URLs so playback clients never place the host key in a URL.
+- Browser proof at 375 px shows Arabic root/content as RTL and right-aligned,
+  English translations as LTR, Japanese content as LTR, a clean console, and a
+  working suggestion-to-card flow.
+
+Still required before dependable-device status:
+
+- Install the current APK on a physical Android phone.
+- Prove microphone audio, WebRTC partial transcription, interruption, reconnect,
+  recording consent, and offline replay on that phone.
+- Run degraded-LAN, packet-loss, battery, thermal, storage-pressure, and trusted
+  local HTTPS tests.
+- Add bounded offline media downloads; the current mobile cache stores lesson
+  snapshots and the idempotent operation outbox, not lesson audio.

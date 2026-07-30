@@ -1,10 +1,10 @@
 ---
 project: Local Language Engine
-status: Planning approved — implementation pending
-phase: Documentation and Phase 1 proof
+status: Core implementation active — device and network hardening pending
+phase: Phase 2–4 core slices implemented; dependability verification
 repository: /Users/aim/Documents/language-engine
 platform: Android-first
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 # Local Language Engine
@@ -20,13 +20,15 @@ The first release teaches Arabic:
 - Modern Standard Arabic (MSA) is the grammatical and written foundation.
 - Reviewed Hijazi Arabic overrides make conversation sound natural without
   silently replacing the MSA lesson objective.
-- Japanese is a later language pack, not a second Phase 1 scope.
+- Japanese is an isolated beta language pack; Arabic remains the release gate.
 
 ## Status
 
-**Planning approved — implementation pending**
+**Core implementation active — device and network hardening pending**
 
-Current phase: documentation and Phase 1 compatibility proof.
+Current phase: the core Phase 2–4 flows are implemented on the Mac and in the
+Expo client. Physical Android audio, WebRTC, reconnect, bounded media download,
+trusted HTTPS, and degraded-LAN proof remain open.
 
 Canonical repository: `/Users/aim/Documents/language-engine`
 
@@ -49,7 +51,8 @@ remaining 12 GB. An out-of-memory crash or swap-heavy run is a failed test.
 - Optional decode path: MTP, enabled only after a quality and latency benchmark
 - Host service: Python, MLX, WebRTC, SQLite, local filesystem media
 - Mobile: Expo + React Native + TypeScript development build
-- Transport: WebRTC for live audio and events; HTTPS for sync and library APIs
+- Transport: encrypted WebRTC media/events; shared-key local HTTP APIs with
+  signed media URLs. Trusted local HTTPS remains a hardening gate.
 - Storage authority: Mac-owned SQLite database and media directory
 - Offline storage: bounded mobile SQLite/media cache with an operation outbox
 
@@ -72,4 +75,3 @@ remaining 12 GB. An out-of-memory crash or swap-heavy run is a failed test.
 - [[01 - Architecture and Implementation Plan]]
 - Repository: `/Users/aim/Documents/language-engine`
 - Parent index: [[Projects/README]]
-
