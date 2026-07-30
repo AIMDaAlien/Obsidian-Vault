@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T23:32:33Z",
+  "generated_at": "2026-07-30T03:03:54Z",
   "tree": [
     {
       "path": "README.md",
@@ -983,6 +983,18 @@
     },
     {
       "path": "Projects/Homelab NOC Skills/Troubleshooting Log.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Local Language Engine",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/Local Language Engine/00 - Project Overview.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Local Language Engine/01 - Architecture and Implementation Plan.md",
       "type": "file"
     },
     {
@@ -2351,6 +2363,22 @@
       "tags": null,
       "title": "Troubleshooting Log - NOC Skills Homelab",
       "visibility": "private"
+    },
+    "Projects/Local Language Engine/00 - Project Overview.md": {
+      "project": "Local Language Engine",
+      "status": "Planning approved — implementation pending",
+      "phase": "Documentation and Phase 1 proof",
+      "repository": "/Users/aim/Documents/language-engine",
+      "platform": "Android-first",
+      "updated": "2026-07-29",
+      "title": "Local Language Engine"
+    },
+    "Projects/Local Language Engine/01 - Architecture and Implementation Plan.md": {
+      "project": "Local Language Engine",
+      "status": "Planning approved — implementation pending",
+      "repository": "/Users/aim/Documents/language-engine",
+      "updated": "2026-07-29",
+      "title": "Architecture and Implementation Plan"
     },
     "Projects/Portfolio Website/Project - Current State.md": {
       "title": "Knowledge Garden Sidebar Project - Current State"
