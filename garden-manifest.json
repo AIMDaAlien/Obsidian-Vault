@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T21:27:39Z",
+  "generated_at": "2026-07-31T16:56:57Z",
   "tree": [
     {
       "path": "README.md",
@@ -963,6 +963,22 @@
     },
     {
       "path": "Projects/Archive/WireGuard VPN Setup.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Corne Accuracy Trainer",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/Corne Accuracy Trainer/00 - Project Overview.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Corne Accuracy Trainer/01 - Technical Architecture and Product Record.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Corne Accuracy Trainer/02 - Word Progression and Public Release Roadmap.md",
       "type": "file"
     },
     {
@@ -2335,6 +2351,29 @@
       "last_published": "2025-11-28T19:41:38.709685",
       "published_to_garden": true,
       "title": "WireGuard VPN Setup"
+    },
+    "Projects/Corne Accuracy Trainer/00 - Project Overview.md": {
+      "project": "Corne Accuracy Trainer",
+      "status": "Private working release — public customization roadmap defined",
+      "repository": "https://github.com/AIMDaAlien/aim-corne-accuracy-trainer",
+      "local_repository": "/Users/aim/Documents/Corne Accuracy Trainer",
+      "deployment": "https://corne-accuracy-trainer.aliennerd8988.chatgpt.site",
+      "updated": "2026-07-31",
+      "title": "Corne Accuracy Trainer"
+    },
+    "Projects/Corne Accuracy Trainer/01 - Technical Architecture and Product Record.md": {
+      "project": "Corne Accuracy Trainer",
+      "status": "Implemented private release",
+      "repository": "/Users/aim/Documents/Corne Accuracy Trainer",
+      "updated": "2026-07-31",
+      "title": "Technical Architecture and Product Record"
+    },
+    "Projects/Corne Accuracy Trainer/02 - Word Progression and Public Release Roadmap.md": {
+      "project": "Corne Accuracy Trainer",
+      "status": "Approved direction — not yet implemented",
+      "repository": "/Users/aim/Documents/Corne Accuracy Trainer",
+      "updated": "2026-07-31",
+      "title": "Word Progression and Public Release Roadmap"
     },
     "Projects/Homelab NOC Skills/Docker and Portainer Setup.md": {
       "created": "2026-01-07T22:57:31.997978",
