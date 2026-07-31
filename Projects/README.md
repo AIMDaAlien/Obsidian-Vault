@@ -8,6 +8,7 @@ Active and archived project work. Each project has its own subfolder with releva
 - **Teardown Cafe/** - Documentation, cursor sessions, workflow guides
 - **Tech Consulting/** - Local tech consultation service (strategy docs, playbook, website, pricing, client workflows)
 - **TypingLab/** - Typing practice application (8-part sequential guide, 00-07)
+- **Corne Accuracy Trainer/** - Offline-first Corne typing trainer, Weak Spot Lab, word progression, and public customization roadmap
 - **Portfolio Website/** - Personal portfolio with M3 floating pill sidebar
 - **Homelab NOC Skills/** - Network operations center practice and troubleshooting
 - **Sovereign AI Stack/** - Fully local, privacy-first AI assistant (Ollama + OpenClaw + Discord)
