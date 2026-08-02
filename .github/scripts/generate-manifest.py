@@ -31,16 +31,18 @@ def load_gitignore_dirs(repo_root):
     return ignored
 
 
-def parse_frontmatter_and_title(filepath):
-    """Extract YAML frontmatter and first H1 title. Returns ({frontmatter}, title|None)."""
+def parse_file_metadata(filepath):
+    """Extract YAML frontmatter, first H1 title, and [[wikilink]] targets.
+    Returns (frontmatter_dict, title_or_None, wikilink_targets_list).
+    """
     try:
         with open(filepath, 'r', encoding='utf-8', errors='replace') as f:
-            content = f.read(8192)
+            content = f.read()
     except (OSError, UnicodeDecodeError):
-        return {}, None
+        return {}, None, []
 
     body = content
-    result = {}
+    fm = {}
 
     if content.startswith('---'):
         end = content.find('\n---', 3)
@@ -56,21 +58,31 @@ def parse_frontmatter_and_title(filepath):
                 val = m.group(2).strip().strip("'\"")
 
                 if val.lower() == 'true':
-                    result[key] = True
+                    fm[key] = True
                 elif val.lower() == 'false':
-                    result[key] = False
+                    fm[key] = False
                 elif val.lower() == 'null' or val == '':
-                    result[key] = None
+                    fm[key] = None
                 else:
-                    result[key] = val
+                    fm[key] = val
 
-    # Extract first H1 from body
+    # Extract first H1 from body (excluding frontmatter)
     title = None
     h1 = re.search(r'^\s*#\s+(.+)$', body, re.MULTILINE)
     if h1:
         title = h1.group(1).strip()
 
-    return result, title
+    # Extract [[wikilinks]] from body — target names only, deduplicated, order preserved
+    link_pattern = re.compile(r'\[\[([^\]|#]+)(?:[#|][^\]]+)?\]\]')
+    links = []
+    seen = set()
+    for m in link_pattern.finditer(body):
+        target = m.group(1).strip()
+        if target and target not in seen:
+            seen.add(target)
+            links.append(target)
+
+    return fm, title, links
 
 
 def should_skip(parts):
@@ -87,6 +99,7 @@ def main():
 
     tree = []
     metadata = {}
+    links = {}
 
     for dirpath, dirnames, filenames in os.walk(repo_root):
         # Prune hidden/skipped/gitignored directories
@@ -120,19 +133,22 @@ def main():
 
             tree.append({'path': rel_path, 'type': 'file'})
 
-            # Extract frontmatter and title for .md files
+            # Extract frontmatter, title, and wikilinks for .md files
             if fname.endswith('.md'):
                 full_path = os.path.join(dirpath, fname)
-                fm, title = parse_frontmatter_and_title(full_path)
+                fm, title, wlinks = parse_file_metadata(full_path)
                 if title:
                     fm['title'] = title
                 if fm:
                     metadata[rel_path] = fm
+                if wlinks:
+                    links[rel_path] = wlinks
 
     manifest = {
         'generated_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         'tree': tree,
         'metadata': metadata,
+        'links': links,
     }
 
     output_path = os.path.join(repo_root, 'garden-manifest.json')
@@ -142,7 +158,9 @@ def main():
     files = sum(1 for e in tree if e['type'] == 'file')
     dirs = sum(1 for e in tree if e['type'] == 'dir')
     published = sum(1 for v in metadata.values() if v.get('published_to_garden') is True)
-    print(f'Manifest generated: {files} files, {dirs} dirs, {published} published notes')
+    num_linked = len(links)
+    total_links = sum(len(v) for v in links.values())
+    print(f'Manifest generated: {files} files, {dirs} dirs, {published} published notes, {total_links} links across {num_linked} notes')
 
 
 if __name__ == '__main__':

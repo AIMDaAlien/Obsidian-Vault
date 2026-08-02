@@ -1,4 +1,12 @@
-# Website Development - Project Overview
+---
+tags: [portfolio, web-development, project-index, github-pages]
+created: 2025-10-01
+updated: 2026-08-01
+published_to_garden: true
+visibility: public
+---
+
+# Portfolio Website Development — Project Overview
 
 > **Tags**: #portfolio #web-development #project-index #github-pages
 > **Status**: 🚀 Active Development
@@ -21,6 +29,9 @@ Website Development/
 - [[Github Pages Setup]] - Hosting configuration & workflow
 - [[Git Push Conflict Troubleshooting]] - Common deployment issues & solutions
 
+### 📍 Current State
+- [[Project - Current State]] - What is live, why it was built this way, and the ordered next moves
+
 ### ✍️ Content
 - [[About Me Draft]] - Bio section content planning
 
@@ -29,7 +40,9 @@ Website Development/
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 - **Hosting**: GitHub Pages
 - **Version Control**: Git/GitHub
-- **Design**: Custom animations, periwinkle/lavender theme
+- **Design**: Dark Material 3 Expressive, pastel periwinkle theme
+- **Content source**: Public Obsidian vault manifest with GitHub fallbacks
+- **Operations**: Sanitized five-minute Unraid health snapshot
 
 ## Development Workflow
 
@@ -46,12 +59,16 @@ Website Development/
 | Periwinkle Theme | ✅ Live | CSS | Brand colors |
 | Responsive Layout | ✅ Live | CSS | Mobile-first |
 | GitHub Pages Deploy | ✅ Configured | Git | [[Github Pages Setup]] |
+| Custom Domain + HTTPS | ✅ Live | DNS + Pages | `portfolio.penthouse.blog` |
+| Knowledge Garden | ✅ Live | JS + generated manifest | Five-minute refresh |
+| Live Unraid Telemetry | ✅ Live | Shell + JSON + JS | Sanitized public payload |
+| Activity Feed | ✅ Live | JS | Precise times and update batches |
 
 ## Common Tasks
 
 ### Add New Feature
 1. Create feature documentation in `Features/`
-2. Implement code locally
+2. Implement code locally without adding a framework or build dependency
 3. Test thoroughly
 4. Commit: `git commit -m "feat: description"`
 5. Push and verify deployment
@@ -89,11 +106,13 @@ Related homelab/infrastructure projects:
 - [ ] Project gallery
 - [ ] Interactive demos
 - [ ] Contact form (external service)
-- [ ] Custom domain
+- [x] Custom domain
 
 **Feature Ideas**:
-- [ ] Dark mode toggle
-- [ ] Terminal-style interactions
+- [x] Dark interface
+- [x] Terminal-style interactions
+- [ ] Filesystem-style terminal commands (`ls`, `cd`, `pwd`, `head`, `find`, `grep`, `tree`)
+- [ ] Final AIM.EXE favicon
 - [ ] Animated transitions
 - [ ] Performance optimizations
 
@@ -107,11 +126,11 @@ Related homelab/infrastructure projects:
 
 ## Resources
 
-- **Repository**: `github.com/username/First-Portfolio-Iteration`
-- **Live Site**: `aimdaalien.github.io/First-Portfolio-Iteration`
+- **Repository**: `github.com/AIMDaAlien/First-Portfolio-Iteration`
+- **Live Site**: `portfolio.penthouse.blog`
 - **Documentation**: This vault!
 
 ---
 
 *Created: October 2025*
-*Last Updated: October 2025*
+*Last Updated: August 2026*
