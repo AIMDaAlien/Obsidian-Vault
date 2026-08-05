@@ -5,6 +5,9 @@ created: 2026-03-12
 
 # MVP Stability Plan v2
 
+> [!note] Historical plan
+> This note preserves the v2 stabilization plan. Current production hosting and active trust-safety status are tracked in [[00 - Knowledge Hub]], [[23 - Trust and Safety Blocks]], and [[../The Penthouse Self-Hosting/12 - Unraid Pool Recovery 2026-08-04]].
+
 ## Summary
 
 The rebuild is now live publicly. The strategy has shifted from "make the rebuild viable" to "expand the admin/operator surface carefully without reopening core reliability risk."

@@ -7,6 +7,9 @@ visibility: public
 
 # User Management Basics
 
+> [!note] Current trust-safety work
+> Member block/unblock controls now exist in the `trust-safety/blocks` worktree, with broad Kimi verification completed on 2026-08-04. They are not committed or deployed because final concurrency fixes remain. See [[23 - Trust and Safety Blocks]].
+
 ## Why this slice mattered
 
 Before this work the app could do basic invite auth and shared chat, but it had no real account management. No profiles, no member directory, no way to remove someone, no forced password change. It could demo chat but couldn't manage people. This slice fixed that.
