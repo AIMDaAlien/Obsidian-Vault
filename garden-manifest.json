@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T02:51:16Z",
+  "generated_at": "2026-08-05T01:25:10Z",
   "tree": [
     {
       "path": "README.md",
@@ -1370,6 +1370,10 @@
       "type": "file"
     },
     {
+      "path": "Projects/The Penthouse/23 - Trust and Safety Blocks.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/The Penthouse/PWA-00 - Knowledge Hub.md",
       "type": "file"
     },
@@ -1423,6 +1427,10 @@
     },
     {
       "path": "Projects/The Penthouse Self-Hosting/11 - What Changed Between Notes.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/The Penthouse Self-Hosting/12 - Unraid Pool Recovery 2026-08-04.md",
       "type": "file"
     },
     {
@@ -2629,6 +2637,7 @@
       "created": "2026-03-05",
       "published_to_garden": true,
       "last_published": "2026-07-25T21:05:10.185673",
+      "updated": "2026-08-04",
       "title": "The Penthouse Rebuild Knowledge Hub"
     },
     "Projects/The Penthouse/01 - Rebuild Timeline.md": {
@@ -2793,6 +2802,14 @@
       "last_published": "2026-07-25T21:05:10.185673",
       "title": "v4.3 Collaboration Wave"
     },
+    "Projects/The Penthouse/23 - Trust and Safety Blocks.md": {
+      "tags": "[penthouse, trust-safety, blocks, dm, presence]",
+      "created": "2026-08-04",
+      "updated": "2026-08-04",
+      "published_to_garden": false,
+      "visibility": "private",
+      "title": "Trust and Safety Blocks"
+    },
     "Projects/The Penthouse/PWA-00 - Knowledge Hub.md": {
       "tags": "[penthouse, pwa, sveltekit, knowledge-base]",
       "created": "2026-04-05",
@@ -2801,7 +2818,7 @@
       "title": "The Penthouse PWA — Knowledge Hub"
     },
     "Projects/The Penthouse Self-Hosting/00 - Index.md": {
-      "tags": "[self-hosting, truenas, docker, ops, penthouse-v1]",
+      "tags": "[self-hosting, truenas, unraid, docker, ops, penthouse-v1]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
@@ -2883,6 +2900,14 @@
       "published_to_garden": true,
       "visibility": "public",
       "title": "What Changed Between Notes (v1 Phase 1 Summary)"
+    },
+    "Projects/The Penthouse Self-Hosting/12 - Unraid Pool Recovery 2026-08-04.md": {
+      "tags": "[self-hosting, unraid, zfs, docker, recovery, penthouse]",
+      "created": "2026-08-04",
+      "updated": "2026-08-04",
+      "published_to_garden": false,
+      "visibility": "private",
+      "title": "Unraid Pool Recovery - 2026-08-04"
     },
     "Projects/TypingLab/00 - TypingLab Project Overview.md": {
       "garden_path": "Projects/TypingLab/00 - TypingLab Project Overview.md",
@@ -3724,16 +3749,24 @@
       "20 - V5 Redesign",
       "21 - v4.2 Privacy Terms and Operator Trust",
       "22 - v4.3 Collaboration Wave",
+      "23 - Trust and Safety Blocks",
       "../START_HERE",
       "../adr/ADR-0001-rebuild-baseline",
       "../BACKEND_READINESS_MVP_V2",
       "../../services/api/docs/RELIABILITY_DRILL",
-      "../../antigravity/customizations"
+      "../../antigravity/customizations",
+      "../The Penthouse Self-Hosting/12 - Unraid Pool Recovery 2026-08-04"
     ],
     "Projects/The Penthouse/03 - Stability Rules (Anti-Tech-Debt).md": [
       "05 - Multi-Model Delegation Workflow"
     ],
+    "Projects/The Penthouse/07 - User Management Basics.md": [
+      "23 - Trust and Safety Blocks"
+    ],
     "Projects/The Penthouse/13 - MVP Stability Plan v2.md": [
+      "00 - Knowledge Hub",
+      "23 - Trust and Safety Blocks",
+      "../The Penthouse Self-Hosting/12 - Unraid Pool Recovery 2026-08-04",
       "../BACKEND_READINESS_MVP_V2"
     ],
     "Projects/The Penthouse/14 - Opencode Handoff.md": [
@@ -3766,6 +3799,7 @@
       "07 - User Management Basics"
     ],
     "Projects/The Penthouse Self-Hosting/00 - Index.md": [
+      "12 - Unraid Pool Recovery 2026-08-04",
       "01 - Architecture",
       "02 - TrueNAS Deploy Runbook",
       "03 - Backend Hardening Checklist",
