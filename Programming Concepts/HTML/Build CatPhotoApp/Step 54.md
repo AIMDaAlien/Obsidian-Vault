@@ -1,0 +1,14 @@
+Forms commonly use checkboxes for questions that may have more than one answer. For example, here's a checkbox with the option of `tacos`: `<input type="checkbox"> tacos`.
+
+Under the `legend` element you just added, add an `input` with its `type` attribute set to `checkbox` and give it the option of:
+
+`Loving`
+
+```html
+ <legend>What's your cat's personality?</legend>
+
+ <input type="checkbox"> Loving
+```
+
+
+#Web

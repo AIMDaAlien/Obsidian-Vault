@@ -1,0 +1,17 @@
+{
+  "daysToSuppressNewUpdates": 0,
+  "dismissedVersionsByPluginId": {
+    "obsidian-git": {
+      "pluginId": "obsidian-git",
+      "pluginRepoPath": "Vinzent03/obsidian-git",
+      "dismissedVersions": []
+    }
+  },
+  "showIconOnMobile": true,
+  "showNotificationOnNewUpdate": false,
+  "excludeBetaVersions": true,
+  "excludeDisabledPlugins": false,
+  "minUpdateCountToShowIcon": 0,
+  "hoursBetweenCheckingForUpdates": 0.5,
+  "hideIconIfNoUpdatesAvailable": false
+}
