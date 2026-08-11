@@ -1,6 +1,6 @@
 ---
 project: Veyra Companion
-status: Packaged app installed; Screen Recording and live approval pending
+status: Stable signing and composer prototypes implemented; trust and browser approval pending
 repository: /Users/aim/Downloads/Holo_Companion_Sprites
 platform: macOS
 updated: 2026-08-11
@@ -18,7 +18,7 @@ Canonical repository: `/Users/aim/Downloads/Holo_Companion_Sprites`
 
 ## Current Status
 
-**Packaged app installed; Screen Recording and live approval pending.**
+**Stable signing and six composer prototypes are implemented; Keychain trust, browser proof, and Aim's design choice are pending.**
 
 Implemented:
 
@@ -34,6 +34,8 @@ Implemented:
 - Quiet-hour and daily-limit initiative policy.
 - Native `Veyra Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Veyra Companion.app`.
 - Persistent composer restoration from SQLite, transient touch status, single-family sprite transitions, and observation-driven expression feedback with cooldowns.
+- Permission-safe screen awareness: launch preflight only, plus a deliberate enable action in Mind Settings.
+- Six disposable composer directions under `Prototypes/Veyra-Composer/`; production `ComposerView` is intentionally unchanged.
 
 Verified on 2026-08-11:
 
@@ -54,7 +56,10 @@ Verified on 2026-08-10:
 
 Still awaiting proof or approval:
 
-- Screen Recording permission and real OCR behavior; the installed app currently reports capture permission declined.
+- One-time trust and private-key approval for `Veyra Local Code Signing`, followed by two signed rebuilds proving a stable designated requirement and retained Screen Recording approval.
+- Real-browser screenshots and console, accessibility, focus-order, overflow, contrast, and layout-shift proof for all six composer directions. Browser discovery returned no available browser on 2026-08-11.
+- Aim's composer direction or hybrid choice before topic persistence or production UI implementation.
+- Screen Recording permission and real OCR behavior.
 - Live visual review of the packaged app on L01N8A.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
 - Qwen3.6-35B-A3B Q2/MTP versus 4-bit model selection benchmark.

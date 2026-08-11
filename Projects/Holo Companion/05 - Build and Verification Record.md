@@ -5,6 +5,31 @@ updated: 2026-08-11
 
 # Build and Verification Record
 
+## 2026-08-11 — Stable Screen Permission and Composer Study (Partial)
+
+### Implemented
+
+- Added a ten-year `Veyra Local Code Signing` certificate and private key to the login Keychain.
+- Made packaging require that exact trusted code-signing identity; ad-hoc fallback is removed.
+- Added `NSScreenCaptureUsageDescription`.
+- Added launch-time `CGPreflightScreenCaptureAccess()` gating. When access is absent, Veyra does not construct or start `ScreenAwareness`.
+- Added the deliberate **Mind → Settings → Enable Screen Awareness** action. Only that action calls `CGRequestScreenCaptureAccess()` and opens the Screen Recording privacy pane when access is still denied.
+- Built six standalone responsive composer studies under `Prototypes/Veyra-Composer/`: Slate Ledger, Field Notes, Signal Board, Foundry, Cipher Wall, and Ash Frame.
+- Recorded the raw local Qwen3.6-27B Q6_K briefs and critique. Production `ComposerView` remains unchanged pending Aim's selection.
+
+### Proof
+
+- All 26 Swift tests pass; release build, shell syntax, JavaScript syntax, Git whitespace, prototype HTTP routes, and the shared artwork route pass.
+- Static color checks cover the primary text pairs; the weakest checked ratio is 4.68:1.
+- Qwen was unloaded after the study. Bonsai is restored as `holo-fast` with 16K context, MTP, and a 30-minute TTL; `holo-embed` remains loaded. The local API returned exactly `Veyra core ready`.
+
+### Open Gates
+
+- The certificate is imported but not yet trusted for code signing. Packaging now fails fast with `Missing or untrusted Keychain identity: Veyra Local Code Signing` until Aim approves the one-time Keychain trust and private-key access prompts.
+- The signed app has therefore not been installed, and stable designated-requirement retention across two rebuilds is not yet proven. The resident app remains stopped rather than relaunching the old ad-hoc build.
+- Browser discovery returned `[]` (`No browser is available`). Desktop/portable screenshots, console, accessibility tree, focus order, rendered overflow, and layout-shift checks remain unverified; the gallery shows explicit capture placeholders.
+- No prototype commit/push or production topic/UI work should proceed until browser proof is complete and Aim chooses a direction or hybrid.
+
 ## 2026-08-11 — State Repair and Public Rename
 
 Repository commit: `8433709` (`Fix companion state and rename Veyra`), pushed to `origin/main`.
