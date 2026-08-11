@@ -1,7 +1,7 @@
 ---
 project: Holo Companion
-status: Foundation implemented; hardware and model-selection gates open
-updated: 2026-08-10
+status: Packaged app installed; hardware and model-selection gates open
+updated: 2026-08-11
 ---
 
 # Architecture and Implementation Plan
@@ -58,7 +58,7 @@ These are safety ceilings, not target lengths. There is no universal 180-token c
 
 ### Phase 1 — Live interface proof
 
-- Launch the release app normally.
+- Packaged app installation and login startup are complete.
 - Approve Screen Recording permission.
 - Verify L01N8A exclusion, 0-point left margin, 15-point composer gap, streaming, Mind panel, and text sizing.
 - Tune pat distance/speed only from physical use.
@@ -84,4 +84,3 @@ These are safety ceilings, not target lengths. There is no universal 180-token c
 - SearXNG failover and HTML fallback work.
 - Raw frames are absent from disk and outbound requests.
 - Aim approves the physical display, personality, pat behavior, and selected model.
-

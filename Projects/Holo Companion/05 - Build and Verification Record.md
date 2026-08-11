@@ -1,9 +1,36 @@
 ---
 project: Holo Companion
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 # Build and Verification Record
+
+## 2026-08-11 — Packaged macOS App
+
+Repository commit: `6ee6d9e` (`Package Holo as a login app`), pushed to `origin/main`.
+
+### Implemented
+
+- Added a native app bundle with identifier `com.aim.holo-companion`.
+- Bundled `expression-catalog.json` and all runtime portraits and chibis.
+- Installed the app at `~/Applications/Holo Companion.app`.
+- Added a user LaunchAgent that opens Holo at login.
+- Made bundled resources discoverable without relying on the repository working directory.
+- Added one-command build and install through `./Scripts/package-app.sh --install`.
+
+### Proof
+
+- 25 Swift tests pass.
+- Release build, plist validation, shell syntax, Git whitespace, and code-sign verification pass.
+- The installed process runs from the app bundle and opens `holo-mind.sqlite3`.
+- Installed asset counts are 67 portraits and 18 chibis.
+- The live display diagnostic still detects L01N8A in dedicated mode.
+
+### Open Gate
+
+ScreenCaptureKit still reports `The user declined TCCs for application, window, display capture`. Aim must enable Holo Companion under **System Settings → Privacy & Security → Screen & System Audio Recording**, then restart the app.
+
+This Mac has no Apple code-signing certificate. The installer therefore uses an ad-hoc signature. Apple ties privacy approval to that exact build, so a code rebuild may require Screen Recording approval again. Set `HOLO_CODESIGN_IDENTITY` to an installed Apple Development or Developer ID certificate when one is available.
 
 ## 2026-08-10 — Mind and Awareness Foundation
 

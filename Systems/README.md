@@ -13,6 +13,7 @@ Infrastructure, operating systems, networking, and tooling documentation.
 ### Standalone Notes
 
 - **Development Tools.md** - IDEs, Git, and productivity tooling
+- **Obsidian Vault Git Sync.md** - Git auto-sync state and 2026-08-11 recovery record
 - **Obsidian Productivity Mastery.md** - Vault management and workflow
 - **Operating Systems.md** - General OS concepts overview
 - **Personal Setup.md** - Workspace and environment configuration

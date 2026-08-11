@@ -1,9 +1,9 @@
 ---
 project: Holo Companion
-status: Mind and awareness foundation implemented; live hardware approval pending
+status: Packaged app installed; Screen Recording and live approval pending
 repository: /Users/aim/Downloads/Holo_Companion_Sprites
 platform: macOS
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 # Holo Companion
@@ -18,7 +18,7 @@ Canonical repository: `/Users/aim/Downloads/Holo_Companion_Sprites`
 
 ## Current Status
 
-**Mind and awareness foundation implemented; live hardware approval pending.**
+**Packaged app installed; Screen Recording and live approval pending.**
 
 Implemented:
 
@@ -32,6 +32,15 @@ Implemented:
 - Cursor, poke-pressure, pat, idle-affect, foreground-app, OCR, and external development-event awareness.
 - Bounded qualitative research through local SearXNG then the Unraid instance.
 - Quiet-hour and daily-limit initiative policy.
+- Native `Holo Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Holo Companion.app`.
+
+Verified on 2026-08-11:
+
+- The packaged app launches from its installed bundle and opens the shared mind database.
+- The bundle contains all 67 portraits and 18 chibis.
+- The `com.aim.holo-companion` LaunchAgent is installed and its RunAtLoad invocation succeeds.
+- 25 Swift tests, release build, plist validation, code-sign verification, and app installation pass.
+- Repository commit `6ee6d9e` is pushed to `origin/main`.
 
 Verified on 2026-08-10:
 
@@ -43,8 +52,8 @@ Verified on 2026-08-10:
 
 Still awaiting proof or approval:
 
-- Live visual review after restarting the currently running Holo process onto this build.
-- Screen Recording permission and real OCR behavior; macOS currently reports capture permission declined.
+- Screen Recording permission and real OCR behavior; the installed app currently reports capture permission declined.
+- Live visual review of the packaged app on L01N8A.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
 - Qwen3.6-35B-A3B Q2/MTP versus 4-bit model selection benchmark.
 
