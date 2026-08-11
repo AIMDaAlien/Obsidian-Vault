@@ -1,6 +1,6 @@
 ---
 project: Veyra Companion
-status: Margin Companion and topic-aware research implemented; signing trust and live hardware proof pending
+status: Signed Margin Companion installed; Screen Recording grant and live hardware proof pending
 repository: /Users/aim/Downloads/Holo_Companion_Sprites
 platform: macOS
 updated: 2026-08-11
@@ -18,7 +18,7 @@ Canonical repository: `/Users/aim/Downloads/Holo_Companion_Sprites`
 
 ## Current Status
 
-**Aim approved Margin Companion A. Its native AppKit layout, topic persistence, and Markdown research handoff are implemented; Keychain trust and live hardware proof remain.**
+**Aim approved Margin Companion A. Its native AppKit layout, topic persistence, and Markdown research handoff are installed with a stable local signature; Screen Recording approval and live hardware proof remain.**
 
 Implemented:
 
@@ -44,7 +44,9 @@ Verified on 2026-08-11:
 
 - 30 Swift tests pass, including legacy topic migration, isolated context, exact resume, cancelled partials, Return/Shift-Return behavior, and Markdown research artifacts.
 - Release build passes. Runtime diagnosis detects L01N8A at 1280×800 with a 593×800 portrait stage and 687×800 composer.
-- The new package contains the Screen Recording usage description, but final signing correctly stops because the local identity is currently reported as untrusted.
+- Two signed installs pass strict code-sign verification with the same designated requirement: bundle ID `com.aim.holo-companion` plus certificate SHA-1 `11e6fbcc37d446911d84f9a3f4ae9706bc3dace8`.
+- The signed app is installed and running from `~/Applications/Veyra Companion.app`; its runtime diagnosis confirms the exact 1280×800, 593/687 dedicated layout.
+- The installed process reports `screenCaptureAuthorized=false`, so the new stable identity still needs its one-time Screen Recording grant.
 
 - The packaged app launches from its installed bundle and opens the shared mind database.
 - The bundle contains all 67 portraits and 18 chibis.
@@ -63,9 +65,8 @@ Verified on 2026-08-10:
 
 Still awaiting proof or approval:
 
-- One-time trust and private-key approval for `Veyra Local Code Signing`, followed by two signed rebuilds proving a stable designated requirement and retained Screen Recording approval.
+- One-time Screen Recording approval for the signed identity, followed by a rebuild proving the approval is retained.
 - Real-browser screenshots and console, accessibility, focus-order, overflow, contrast, and layout-shift proof for all six composer directions. Browser discovery returned no available browser on 2026-08-11.
-- Signed packaging and installation of the new Margin Companion build. The existing installed app was not replaced.
 - Screen Recording permission and real OCR behavior.
 - Live visual review of the packaged app on L01N8A.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
