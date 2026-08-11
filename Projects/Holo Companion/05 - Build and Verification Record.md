@@ -30,6 +30,14 @@ updated: 2026-08-11
 - Browser discovery returned `[]` (`No browser is available`). Desktop/portable screenshots, console, accessibility tree, focus order, rendered overflow, and layout-shift checks remain unverified; the gallery shows explicit capture placeholders.
 - No prototype commit/push or production topic/UI work should proceed until browser proof is complete and Aim chooses a direction or hybrid.
 
+### Composer narrowing
+
+- Aim selected Field Notes as the strongest first-round direction and identified Signal Board as the weakest.
+- The original Field Notes portrait was changed from a side-cropped fixed-height image to a contained silhouette with breathing room.
+- Added four same-palette branches: Margin Companion, Open Folio, Pinboard, and Correspondence.
+- Periwinkle and lavender are liked generally but were explicitly excluded from the Field Notes theme; its warm paper/tan/ink palette remains unchanged.
+- Production `ComposerView` is still untouched. Browser discovery again returned `No browser is available`, so rendered visual proof remains open.
+
 ## 2026-08-11 — State Repair and Public Rename
 
 Repository commit: `8433709` (`Fix companion state and rename Veyra`), pushed to `origin/main`.
