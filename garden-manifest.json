@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T13:24:02Z",
+  "generated_at": "2026-08-11T13:33:10Z",
   "tree": [
     {
       "path": "README.md",
@@ -1554,6 +1554,10 @@
       "type": "file"
     },
     {
+      "path": "Systems/Obsidian Vault Git Sync.md",
+      "type": "file"
+    },
+    {
       "path": "Systems/Operating Systems.md",
       "type": "file"
     },
@@ -2459,16 +2463,16 @@
     },
     "Projects/Holo Companion/00 - Project Overview.md": {
       "project": "Holo Companion",
-      "status": "Mind and awareness foundation implemented; live hardware approval pending",
+      "status": "Packaged app installed; Screen Recording and live approval pending",
       "repository": "/Users/aim/Downloads/Holo_Companion_Sprites",
       "platform": "macOS",
-      "updated": "2026-08-10",
+      "updated": "2026-08-11",
       "title": "Holo Companion"
     },
     "Projects/Holo Companion/01 - Architecture and Implementation Plan.md": {
       "project": "Holo Companion",
-      "status": "Foundation implemented; hardware and model-selection gates open",
-      "updated": "2026-08-10",
+      "status": "Packaged app installed; hardware and model-selection gates open",
+      "updated": "2026-08-11",
       "title": "Architecture and Implementation Plan"
     },
     "Projects/Holo Companion/02 - Mind, Personality, and Memory.md": {
@@ -2488,7 +2492,7 @@
     },
     "Projects/Holo Companion/05 - Build and Verification Record.md": {
       "project": "Holo Companion",
-      "updated": "2026-08-10",
+      "updated": "2026-08-11",
       "title": "Build and Verification Record"
     },
     "Projects/Homelab NOC Skills/Docker and Portainer Setup.md": {
@@ -3094,6 +3098,12 @@
     },
     "Systems/Obsidian Productivity Mastery.md": {
       "title": "Obsidian Productivity Mastery"
+    },
+    "Systems/Obsidian Vault Git Sync.md": {
+      "system": "Obsidian Notes Vault",
+      "status": "Repaired and syncing",
+      "updated": "2026-08-11",
+      "title": "Obsidian Vault Git Sync"
     },
     "Systems/Operating Systems.md": {
       "title": "Operating Systems"
