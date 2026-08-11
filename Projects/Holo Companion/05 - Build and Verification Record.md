@@ -37,6 +37,11 @@ updated: 2026-08-11
 - Added four same-palette branches: Margin Companion, Open Folio, Pinboard, and Correspondence.
 - Periwinkle and lavender are liked generally but were explicitly excluded from the Field Notes theme; its warm paper/tan/ink palette remains unchanged.
 - Production `ComposerView` is still untouched. Browser discovery again returned `No browser is available`, so rendered visual proof remains open.
+- Aim then locked Margin Companion as the only retained layout. Veyra now uses the portrait margin with exactly 10px above her, no left/right/bottom image inset, preserved aspect ratio, and no frame or quote overlay.
+- The installed Qwen3.6-27B Q6_K was loaded as `veyra-design` at 32K context, proposed six turn structures, and critiqued them. Its retained directions were Turn Ledger, Focus Stage, and Two-Column Exchange; the raw review is preserved in `QWEN-MARGIN-TURNS.md`.
+- Added the three retained clickable prototypes and a round-three gallery. All keep the Field Notes palette and mention only the planned voice model: `Qwen3-TTS 1.7B Base`.
+- Qwen was unloaded and Bonsai was restored as `holo-fast` with 16K context, MTP, and a 30-minute TTL. The app core check returned exactly `Veyra core ready`.
+- Static JavaScript, Git whitespace, required-control checks, and all new HTTP routes pass. Browser discovery still returns `[]`, so rendered desktop/portable and accessibility proof remains open.
 
 ## 2026-08-11 — State Repair and Public Rename
 
