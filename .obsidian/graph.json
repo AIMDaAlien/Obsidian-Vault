@@ -6,36 +6,7 @@
   "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "Python ",
-      "color": {
-        "a": 1,
-        "rgb": 1957155
-      }
-    },
-    {
-      "query": "Linux",
-      "color": {
-        "a": 1,
-        "rgb": 5147338
-      }
-    },
-    {
-      "query": "Career",
-      "color": {
-        "a": 1,
-        "rgb": 15963410
-      }
-    },
-    {
-      "query": "Web",
-      "color": {
-        "a": 1,
-        "rgb": 11153784
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -1.6,
@@ -46,6 +17,6 @@
   "repelStrength": 20,
   "linkStrength": 0.537116345467523,
   "linkDistance": 374,
-  "scale": 0.057659581389132214,
+  "scale": 0.05792232848258949,
   "close": false
 }
