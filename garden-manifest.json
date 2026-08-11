@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T14:41:20Z",
+  "generated_at": "2026-08-11T16:30:37Z",
   "tree": [
     {
       "path": "README.md",
@@ -2463,7 +2463,7 @@
     },
     "Projects/Holo Companion/00 - Project Overview.md": {
       "project": "Veyra Companion",
-      "status": "Packaged app installed; Screen Recording and live approval pending",
+      "status": "Stable signing and composer prototypes implemented; trust and browser approval pending",
       "repository": "/Users/aim/Downloads/Holo_Companion_Sprites",
       "platform": "macOS",
       "updated": "2026-08-11",
