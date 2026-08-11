@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T22:01:26Z",
+  "generated_at": "2026-08-11T22:51:49Z",
   "tree": [
     {
       "path": "README.md",
@@ -2463,7 +2463,7 @@
     },
     "Projects/Holo Companion/00 - Project Overview.md": {
       "project": "Veyra Companion",
-      "status": "Margin Companion and topic-aware research implemented; signing trust and live hardware proof pending",
+      "status": "Signed Margin Companion installed; Screen Recording grant and live hardware proof pending",
       "repository": "/Users/aim/Downloads/Holo_Companion_Sprites",
       "platform": "macOS",
       "updated": "2026-08-11",
