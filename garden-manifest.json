@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T01:45:45Z",
+  "generated_at": "2026-08-11T13:24:02Z",
   "tree": [
     {
       "path": "README.md",
@@ -982,6 +982,34 @@
       "type": "file"
     },
     {
+      "path": "Projects/Holo Companion",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/Holo Companion/00 - Project Overview.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Holo Companion/01 - Architecture and Implementation Plan.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Holo Companion/02 - Mind, Personality, and Memory.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Holo Companion/03 - Assets, Expressions, and Display.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Holo Companion/04 - Models, Research, and Privacy.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Holo Companion/05 - Build and Verification Record.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/Homelab NOC Skills",
       "type": "dir"
     },
@@ -1062,6 +1090,34 @@
       "type": "file"
     },
     {
+      "path": "Projects/Sovereign AI Stack/Deepwen-3.6.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q4.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q8.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/LFM2.5-2.6B.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/LFM2.5-8B-A1B.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/LLM Benchmark Registry - Mac vs Unraid.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Maple-Preview 20B.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md",
       "type": "file"
     },
@@ -1075,6 +1131,10 @@
     },
     {
       "path": "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Ternary Bonsai 27B.md",
       "type": "file"
     },
     {
@@ -1483,6 +1543,10 @@
     },
     {
       "path": "Systems/Development Tools.md",
+      "type": "file"
+    },
+    {
+      "path": "Systems/Local AI Stack Research - Gemma 4 on M5 Pro.md",
       "type": "file"
     },
     {
@@ -2393,6 +2457,40 @@
       "updated": "2026-07-31",
       "title": "Word Progression and Public Release Roadmap"
     },
+    "Projects/Holo Companion/00 - Project Overview.md": {
+      "project": "Holo Companion",
+      "status": "Mind and awareness foundation implemented; live hardware approval pending",
+      "repository": "/Users/aim/Downloads/Holo_Companion_Sprites",
+      "platform": "macOS",
+      "updated": "2026-08-10",
+      "title": "Holo Companion"
+    },
+    "Projects/Holo Companion/01 - Architecture and Implementation Plan.md": {
+      "project": "Holo Companion",
+      "status": "Foundation implemented; hardware and model-selection gates open",
+      "updated": "2026-08-10",
+      "title": "Architecture and Implementation Plan"
+    },
+    "Projects/Holo Companion/02 - Mind, Personality, and Memory.md": {
+      "project": "Holo Companion",
+      "updated": "2026-08-10",
+      "title": "Mind, Personality, and Memory"
+    },
+    "Projects/Holo Companion/03 - Assets, Expressions, and Display.md": {
+      "project": "Holo Companion",
+      "updated": "2026-08-10",
+      "title": "Assets, Expressions, and Display"
+    },
+    "Projects/Holo Companion/04 - Models, Research, and Privacy.md": {
+      "project": "Holo Companion",
+      "updated": "2026-08-10",
+      "title": "Models, Research, and Privacy"
+    },
+    "Projects/Holo Companion/05 - Build and Verification Record.md": {
+      "project": "Holo Companion",
+      "updated": "2026-08-10",
+      "title": "Build and Verification Record"
+    },
     "Projects/Homelab NOC Skills/Docker and Portainer Setup.md": {
       "created": "2026-01-07T22:57:31.997978",
       "modified": "2026-01-10T11:36:27.766509",
@@ -2476,6 +2574,27 @@
     "Projects/Sovereign AI Stack/Architecture Guide - Sovereign AI Stack.md": {
       "title": "Architecture Guide - Sovereign AI Stack"
     },
+    "Projects/Sovereign AI Stack/Deepwen-3.6.md": {
+      "title": "Deepwen-3.6"
+    },
+    "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q4.md": {
+      "title": "Gemma 4 12B QAT Q4"
+    },
+    "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q8.md": {
+      "title": "Gemma 4 12B QAT Q8"
+    },
+    "Projects/Sovereign AI Stack/LFM2.5-2.6B.md": {
+      "title": "LFM2.5-2.6B"
+    },
+    "Projects/Sovereign AI Stack/LFM2.5-8B-A1B.md": {
+      "title": "LFM2.5-8B-A1B"
+    },
+    "Projects/Sovereign AI Stack/LLM Benchmark Registry - Mac vs Unraid.md": {
+      "title": "LLM Benchmark Registry — Mac vs Unraid"
+    },
+    "Projects/Sovereign AI Stack/Maple-Preview 20B.md": {
+      "title": "Maple-Preview 20B"
+    },
     "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md": {
       "tags": "[sovereign-ai, project-overview, self-hosted, privacy, llm]",
       "created": "2026-02-10",
@@ -2491,6 +2610,9 @@
     },
     "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md": {
       "title": "Speed Myth - Ollama vs Text-Gen-WebUI"
+    },
+    "Projects/Sovereign AI Stack/Ternary Bonsai 27B.md": {
+      "title": "Ternary Bonsai 27B"
     },
     "Projects/Sovereign AI Stack/Unraid Qwen3.6 Terminal Agent - July 2026.md": {
       "tags": "[sovereign-ai, unraid, qwen, terminal-agent, llm]",
@@ -2803,10 +2925,8 @@
       "title": "v4.3 Collaboration Wave"
     },
     "Projects/The Penthouse/23 - Trust and Safety Blocks.md": {
-      "tags": "[penthouse, trust-safety, blocks, dm, presence]",
-      "created": "2026-08-04",
-      "updated": "2026-08-04",
-      "published_to_garden": false,
+      "tags": "[penthouse, trust-safety, blocks, direct-messages, release]",
+      "created": "2026-08-09",
       "visibility": "private",
       "title": "Trust and Safety Blocks"
     },
@@ -2968,6 +3088,9 @@
     },
     "Systems/Development Tools.md": {
       "title": "Development Tools & Productivity"
+    },
+    "Systems/Local AI Stack Research - Gemma 4 on M5 Pro.md": {
+      "title": "Local AI Stack Research - Gemma 4 on M5 Pro"
     },
     "Systems/Obsidian Productivity Mastery.md": {
       "title": "Obsidian Productivity Mastery"
@@ -3499,6 +3622,14 @@
       "02 - Word Progression and Public Release Roadmap",
       "Projects/README"
     ],
+    "Projects/Holo Companion/00 - Project Overview.md": [
+      "01 - Architecture and Implementation Plan",
+      "02 - Mind, Personality, and Memory",
+      "03 - Assets, Expressions, and Display",
+      "04 - Models, Research, and Privacy",
+      "05 - Build and Verification Record",
+      "Projects/README"
+    ],
     "Projects/Homelab NOC Skills/Project Overview - NOC Skills Homelab.md": [
       "Pi-hole Migration - RPi B+ to RPi 5 NVMe",
       "Docker and Portainer Setup",
@@ -3551,6 +3682,36 @@
       "Project Overview - Sovereign AI Stack",
       "Setup Tutorial - Sovereign AI Stack"
     ],
+    "Projects/Sovereign AI Stack/Deepwen-3.6.md": [
+      "Qwen3.6 35B A3B Abliterated",
+      "LLM Benchmark Registry - Mac vs Unraid"
+    ],
+    "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q4.md": [
+      "Gemma 4 12B QAT Q8"
+    ],
+    "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q8.md": [
+      "Gemma 4 12B QAT Q4"
+    ],
+    "Projects/Sovereign AI Stack/LFM2.5-2.6B.md": [
+      "LFM2.5-8B-A1B"
+    ],
+    "Projects/Sovereign AI Stack/LFM2.5-8B-A1B.md": [
+      "LFM2.5-2.6B"
+    ],
+    "Projects/Sovereign AI Stack/LLM Benchmark Registry - Mac vs Unraid.md": [
+      "Gemma 4 12B QAT Q8",
+      "Gemma 4 12B QAT Q4",
+      "LFM2.5-8B-A1B",
+      "LFM2.5-2.6B",
+      "Ternary Bonsai 27B",
+      "Maple-Preview 20B",
+      "Qwen3.6 35B A3B Abliterated",
+      "Deepwen-3.6",
+      "Unraid Qwen3.6 Terminal Agent - July 2026"
+    ],
+    "Projects/Sovereign AI Stack/Maple-Preview 20B.md": [
+      "Ternary Bonsai 27B"
+    ],
     "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md": [
       "Speed Myth - Ollama vs Text-Gen-WebUI",
       "Architecture Guide - Sovereign AI Stack",
@@ -3573,6 +3734,9 @@
     ],
     "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md": [
       "Project Overview - Sovereign AI Stack"
+    ],
+    "Projects/Sovereign AI Stack/Ternary Bonsai 27B.md": [
+      "Gemma 4 12B QAT Q4"
     ],
     "Projects/Teardown Cafe/Session Index.md": [
       "Workflow Dashboard",
@@ -3788,6 +3952,9 @@
     "Projects/The Penthouse/2025-02-13 Session Notes.md": [
       "DEPLOYMENT.md",
       "THE_PENTHOUSE_NATIVE_SPECIFICATION.md"
+    ],
+    "Projects/The Penthouse/22 - v4.3 Collaboration Wave.md": [
+      "23 - Trust and Safety Blocks"
     ],
     "Projects/The Penthouse/PWA-00 - Knowledge Hub.md": [
       "15 - PWA Rebuild",
