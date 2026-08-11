@@ -29,12 +29,14 @@ Implemented:
 - Automatic brief, normal, deep, creative, and research response modes.
 - SQLite conversation, memory, commitment, activity, and embedding storage.
 - Editable Mind panel.
-- Cursor, poke-pressure, pat, idle-affect, foreground-app, OCR, and external development-event awareness.
+- Cursor, poke-pressure, pat, idle-affect, foreground-app, visual screen context, and external development-event awareness.
 - Bounded qualitative research through local SearXNG then the Unraid instance.
 - Quiet-hour and daily-limit initiative policy.
 - Native `Veyra Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Veyra Companion.app`.
 - Persistent composer restoration from SQLite, transient touch status, single-family sprite transitions, and observation-driven expression feedback with cooldowns.
 - Permission-safe screen awareness: launch preflight only, plus a deliberate enable action in Mind Settings.
+- Visual context replaces OCR: the latest non-Veyra display frame is reduced to a 768-pixel long edge, JPEG-compressed, and attached to the existing local Bonsai vision request only when Aim sends a message. Frames are not stored.
+- Mind uses the Field Notes palette, human-readable rows, useful empty states, current visual-context/privacy status, and hides stale OCR/error dumps when capture is disabled.
 - Approved Field Notes Margin Companion in native AppKit: 593/687 dedicated-display split, 64/620/116 composer regions, large chronological turn rows, paper/ink styling, and New Topic/Mind-only permanent header controls.
 - SQLite topics with one-active-topic enforcement, historical-message migration, active-topic inference isolation, exact transcript restoration, and cancelled partial-output preservation.
 - Return sends, Shift-Return inserts a newline, `Command-N` creates a topic, and text sizing lives in Mind while retaining `Command-Plus`/`Command-Minus`.
@@ -51,6 +53,7 @@ Verified on 2026-08-11:
 - The catalog and installed bundle contain 85 uniquely named Veyra assets: 67 portraits and 18 chibis.
 - The old LaunchAgent is removed; `com.aim.veyra-companion` is installed and Veyra is running as the renamed executable.
 - LM Studio retains only `veyra-fast`; the superseded fast and embedding aliases were unloaded.
+- Bonsai correctly described the real composer screenshot at both 960 and 768 pixels. The Baidu Unlimited-OCR MLX conversion was rejected for live awareness after missing most UI text with its official prompt and hallucinating with a general extraction prompt.
 - Structural commits `0b85f22`, `ee209ac`, `74c2330`, `c90310a`, and `81f3b0c` are pushed to the private `AIMDaAlien/Veyra_Companion_Sprites` GitHub repository.
 
 Verified on 2026-08-10:
@@ -64,7 +67,7 @@ Verified on 2026-08-10:
 Still awaiting proof or approval:
 
 - One-time Screen Recording approval for the signed identity, followed by a rebuild proving the approval is retained.
-- Screen Recording permission and real OCR behavior.
+- Screen Recording permission and end-to-end visual-context behavior through the installed app.
 - Live visual review of the packaged app on L01N8A.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
 - Qwen3.6-35B-A3B Q2/MTP versus 4-bit model selection benchmark.
@@ -75,10 +78,10 @@ Still awaiting proof or approval:
 - Primary model API: LM Studio at `127.0.0.1:1234`.
 - Research: `127.0.0.1:8082`, then Unraid `192.168.0.120:8082`.
 - Dedicated display name: `L01N8A`; detected AppKit frame: 1280×800.
-- Raw screen frames remain in memory and are never stored by Veyra. Capture input is downsampled to at most 1280 pixels on its longest edge before OCR.
-- OCR and activity summaries expire after 24 hours.
+- Raw screen frames remain in memory and are never stored by Veyra. The current frame is downsampled to at most 768 pixels on its longest edge and JPEG-compressed before local visual analysis.
+- Activity summaries expire after 24 hours; legacy OCR rows remain only in the migrated database and are no longer produced or shown as live context.
 - Conversation history remains until Aim edits or deletes it.
-- Search queries and public page requests may leave the LAN; memories, screenshots, OCR dumps, and unrelated private context are not added to search queries.
+- Search queries and public page requests may leave the LAN; memories, screenshots, legacy OCR dumps, and unrelated private context are not added to search queries.
 
 ## Links
 
