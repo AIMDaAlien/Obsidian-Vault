@@ -1,5 +1,5 @@
 ---
-project: Holo Companion
+project: Veyra Companion
 status: Packaged app installed; hardware and model-selection gates open
 updated: 2026-08-11
 ---
@@ -10,10 +10,10 @@ updated: 2026-08-11
 
 ```mermaid
 flowchart LR
-    Cursor[Cursor and touch geometry] --> Runtime[Holo runtime]
+    Cursor[Cursor and touch geometry] --> Runtime[Veyra runtime]
     Screen[ScreenCaptureKit and Vision OCR] --> Runtime
     Apps[NSWorkspace app events] --> Runtime
-    CLI[Codex and tool event CLI] --> Mind[(Holo Mind SQLite)]
+    CLI[Codex and tool event CLI] --> Mind[(Veyra Mind SQLite)]
     Composer[Composer] --> Router[Response planner]
     Router --> Memory[Memory retrieval and Nomic embeddings]
     Memory <--> Mind
@@ -32,14 +32,14 @@ flowchart LR
 
 ## Implemented Architecture
 
-- `HoloMindStore` is an actor owning one SQLite connection in WAL mode.
+- `VeyraMindStore` is an actor owning one SQLite connection in WAL mode.
 - Durable tables store messages, semantic memories, commitments, and 24-hour activity observations.
 - `ResponsePlan.classify` chooses brief, normal, deep, creative, or research mode before inference.
 - Visible prose streams first. Structured mood, memory, and commitment appraisal runs afterward.
 - Nomic embeddings supplement lexical retrieval. Linear cosine search is intentional for a single-user database.
 - `ResearchAgent` performs at most three search/evidence rounds and keeps at most eight sources.
 - Immediate app events remain authoritative over model mood.
-- Screen OCR runs at most every two seconds; capture is limited to one frame per second and excludes Holo's windows and dedicated display.
+- Screen OCR runs at most every two seconds; capture is limited to one frame per second and excludes Veyra's windows and dedicated display.
 - Foreground-app and CLI work events enter the same activity ledger used by conversation context.
 
 ## Response Budgets
@@ -67,7 +67,7 @@ These are safety ceilings, not target lengths. There is no universal 180-token c
 
 - Restore or download the chosen 35B-A3B candidates.
 - Compare warm latency, decode speed, MTP acceptance, memory pressure, long-form quality, prompt copying, and research faithfulness.
-- Keep one model warm if it satisfies both lanes; otherwise configure `HOLO_DELIBERATE_MODEL` for deep, creative, and research work.
+- Keep one model warm if it satisfies both lanes; otherwise configure `VEYRA_DELIBERATE_MODEL` for deep, creative, and research work.
 
 ### Phase 3 — Awareness refinement
 

@@ -1,5 +1,5 @@
 ---
-project: Holo Companion
+project: Veyra Companion
 updated: 2026-08-10
 ---
 
@@ -7,19 +7,19 @@ updated: 2026-08-10
 
 ## Current Runtime
 
-- Fast/default model: `prism-ml/bonsai-27b` as LM Studio alias `holo-fast`.
+- Fast/default model: `prism-ml/bonsai-27b` as LM Studio alias `veyra-fast`.
 - Context: 16K.
 - MTP load flag: enabled where accepted by LM Studio.
-- Embedding model: Nomic Embed Text v1.5 as `holo-embed`, 2K context.
-- Deliberate lane: optional through `HOLO_DELIBERATE_MODEL`; not selected until benchmark approval.
+- Embedding model: Nomic Embed Text v1.5 as `veyra-embed`, 2K context.
+- Deliberate lane: optional through `VEYRA_DELIBERATE_MODEL`; not selected until benchmark approval.
 - API bind: `127.0.0.1:1234`.
 
-The old Holo-tuned Qwen3.6-35B-A3B MXFP4 path is documented but the local weights are currently absent.
+The old Veyra-tuned Qwen3.6-35B-A3B MXFP4 path is documented but the local weights are currently absent.
 
 ## Model Selection Candidates
 
 - Qwen3.6-35B-A3B Q2 MLX plus compatible MTP drafter.
-- Holo-tuned Qwen3.6-35B-A3B MXFP4.
+- Veyra-tuned Qwen3.6-35B-A3B MXFP4.
 - Qwen3.6-35B-A3B OptiQ 4-bit MTP.
 - Bonsai 27B 2-bit.
 - Official Qwen3.6-27B 4-bit.
@@ -65,7 +65,7 @@ Observed on 2026-08-10:
 - Local endpoint unavailable.
 - Unraid endpoint returns HTTP 200.
 - Unraid JSON search returns HTTP 403 because JSON output is disabled.
-- HTML search works, so Holo now falls back to native SearXNG HTML parsing.
+- HTML search works, so Veyra now falls back to native SearXNG HTML parsing.
 
 ## Outbound Privacy Boundary
 
@@ -76,7 +76,7 @@ Allowed to leave the LAN during research:
 
 Never intentionally sent to search engines or fetched websites:
 
-- Holo memories or raw transcript history.
+- Veyra memories or raw transcript history.
 - Screenshots or OCR dumps.
 - Local filesystem paths.
 - LAN addresses.

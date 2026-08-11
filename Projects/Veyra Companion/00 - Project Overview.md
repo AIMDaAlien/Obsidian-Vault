@@ -1,7 +1,7 @@
 ---
 project: Veyra Companion
-status: Signed Margin Companion installed; Screen Recording grant and live hardware proof pending
-repository: /Users/aim/Downloads/Holo_Companion_Sprites
+status: Veyra rename installed; Screen Recording grant and live visual proof pending
+repository: /Users/aim/Downloads/Veyra_Companion_Sprites
 platform: macOS
 updated: 2026-08-11
 ---
@@ -10,11 +10,11 @@ updated: 2026-08-11
 
 ## Purpose
 
-Veyra Companion is Aim's private, local macOS companion. Veyra combines a persistent conversational mind, deterministic expressions, screen and cursor awareness, local research, and a dedicated-display interface. The repository, database path, Swift symbols, and asset IDs retain their historical `Holo*` names for compatibility.
+Veyra Companion is Aim's private, local macOS companion. Veyra combines a persistent conversational mind, deterministic expressions, screen and cursor awareness, local research, and a dedicated-display interface.
 
 She is not designed as an otome chatbot or engagement product. The goal is a perceptive long-term partner who can be warm, teasing, skeptical, disciplinary, and practically useful without pretending to be human.
 
-Canonical repository: `/Users/aim/Downloads/Holo_Companion_Sprites`
+Canonical repository: `/Users/aim/Downloads/Veyra_Companion_Sprites`
 
 ## Current Status
 
@@ -42,18 +42,16 @@ Implemented:
 
 Verified on 2026-08-11:
 
-- 30 Swift tests pass, including legacy topic migration, isolated context, exact resume, cancelled partials, Return/Shift-Return behavior, and Markdown research artifacts.
+- 32 Swift tests pass, including legacy database/defaults migration, topic isolation, exact resume, cancelled partials, Return/Shift-Return behavior, and Markdown research artifacts.
 - Release build passes. Runtime diagnosis detects L01N8A at 1280×800 with a 593×800 portrait stage and 687×800 composer.
-- Two signed installs pass strict code-sign verification with the same designated requirement: bundle ID `com.aim.holo-companion` plus certificate SHA-1 `11e6fbcc37d446911d84f9a3f4ae9706bc3dace8`.
+- Two signed installs pass strict code-sign verification with the same designated requirement: bundle ID `com.aim.veyra-companion` plus certificate SHA-1 `11e6fbcc37d446911d84f9a3f4ae9706bc3dace8`.
 - The signed app is installed and running from `~/Applications/Veyra Companion.app`; its runtime diagnosis confirms the exact 1280×800, 593/687 dedicated layout.
 - The installed process reports `screenCaptureAuthorized=false`, so the new stable identity still needs its one-time Screen Recording grant.
-
-- The packaged app launches from its installed bundle and opens the shared mind database.
-- The bundle contains all 67 portraits and 18 chibis.
-- The `com.aim.holo-companion` LaunchAgent is installed and its RunAtLoad invocation succeeds.
-- 26 Swift tests, release build, plist validation, code-sign verification, and app installation pass.
-- Runtime proof confirmed one installed process, restored transcript history, and visible CLI action feedback without terminating the resident app.
-- Repository commit `8433709` is pushed to `origin/main`.
+- The previous database migrated transactionally to `~/Library/Application Support/VeyraCompanion/veyra-mind.sqlite3` with all 14 messages and one topic preserved; a closed backup remains under `Veyra Migration Backups`.
+- The catalog and installed bundle contain 85 uniquely named Veyra assets: 67 portraits and 18 chibis.
+- The old LaunchAgent is removed; `com.aim.veyra-companion` is installed and Veyra is running as the renamed executable.
+- LM Studio retains only `veyra-fast`; the superseded fast and embedding aliases were unloaded.
+- Structural commits `0b85f22`, `ee209ac`, `74c2330`, `c90310a`, and `81f3b0c` are local and not yet pushed.
 
 Verified on 2026-08-10:
 
@@ -61,12 +59,11 @@ Verified on 2026-08-10:
 - Release build passes.
 - Warm local greeting completes end to end, including semantic appraisal and persistence.
 - A three-round-cap research request completed through Unraid SearXNG and produced a local synthesis.
-- The CLI event bridge writes to the shared Holo mind database.
+- The CLI event bridge writes to the shared Veyra mind database.
 
 Still awaiting proof or approval:
 
 - One-time Screen Recording approval for the signed identity, followed by a rebuild proving the approval is retained.
-- Real-browser screenshots and console, accessibility, focus-order, overflow, contrast, and layout-shift proof for all six composer directions. Browser discovery returned no available browser on 2026-08-11.
 - Screen Recording permission and real OCR behavior.
 - Live visual review of the packaged app on L01N8A.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.

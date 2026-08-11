@@ -30,7 +30,7 @@ Exact sample replies do not belong in the system prompt because tested models co
 
 ## Durable Mind
 
-Database: `~/Library/Application Support/HoloCompanion/holo-mind.sqlite3`
+Database: `~/Library/Application Support/VeyraCompanion/veyra-mind.sqlite3`
 
 Stored indefinitely:
 
