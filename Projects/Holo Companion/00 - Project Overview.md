@@ -1,6 +1,6 @@
 ---
 project: Veyra Companion
-status: Stable signing and composer prototypes implemented; trust and browser approval pending
+status: Margin Companion and topic-aware research implemented; signing trust and live hardware proof pending
 repository: /Users/aim/Downloads/Holo_Companion_Sprites
 platform: macOS
 updated: 2026-08-11
@@ -18,7 +18,7 @@ Canonical repository: `/Users/aim/Downloads/Holo_Companion_Sprites`
 
 ## Current Status
 
-**Stable signing and six composer prototypes are implemented; Keychain trust, browser proof, and Aim's design choice are pending.**
+**Aim approved Margin Companion A. Its native AppKit layout, topic persistence, and Markdown research handoff are implemented; Keychain trust and live hardware proof remain.**
 
 Implemented:
 
@@ -35,9 +35,16 @@ Implemented:
 - Native `Veyra Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Veyra Companion.app`.
 - Persistent composer restoration from SQLite, transient touch status, single-family sprite transitions, and observation-driven expression feedback with cooldowns.
 - Permission-safe screen awareness: launch preflight only, plus a deliberate enable action in Mind Settings.
-- Six disposable composer directions under `Prototypes/Veyra-Composer/`; production `ComposerView` is intentionally unchanged.
+- Approved Field Notes Margin Companion in native AppKit: 593/687 dedicated-display split, 64/620/116 composer regions, large chronological turn rows, paper/ink styling, and New Topic/Mind-only permanent header controls.
+- SQLite topics with one-active-topic enforcement, historical-message migration, active-topic inference isolation, exact transcript restoration, and cancelled partial-output preservation.
+- Return sends, Shift-Return inserts a newline, `Command-N` creates a topic, and text sizing lives in Mind while retaining `Command-Plus`/`Command-Minus`.
+- Research writes a standalone Markdown report under `~/Documents/Veyra Research/` and returns a clickable local file pointer in chat.
 
 Verified on 2026-08-11:
+
+- 30 Swift tests pass, including legacy topic migration, isolated context, exact resume, cancelled partials, Return/Shift-Return behavior, and Markdown research artifacts.
+- Release build passes. Runtime diagnosis detects L01N8A at 1280×800 with a 593×800 portrait stage and 687×800 composer.
+- The new package contains the Screen Recording usage description, but final signing correctly stops because the local identity is currently reported as untrusted.
 
 - The packaged app launches from its installed bundle and opens the shared mind database.
 - The bundle contains all 67 portraits and 18 chibis.
@@ -58,7 +65,7 @@ Still awaiting proof or approval:
 
 - One-time trust and private-key approval for `Veyra Local Code Signing`, followed by two signed rebuilds proving a stable designated requirement and retained Screen Recording approval.
 - Real-browser screenshots and console, accessibility, focus-order, overflow, contrast, and layout-shift proof for all six composer directions. Browser discovery returned no available browser on 2026-08-11.
-- Aim's composer direction or hybrid choice before topic persistence or production UI implementation.
+- Signed packaging and installation of the new Margin Companion build. The existing installed app was not replaced.
 - Screen Recording permission and real OCR behavior.
 - Live visual review of the packaged app on L01N8A.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
