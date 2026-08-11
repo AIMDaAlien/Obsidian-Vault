@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T22:51:49Z",
+  "generated_at": "2026-08-11T23:00:52Z",
   "tree": [
     {
       "path": "README.md",
@@ -982,34 +982,6 @@
       "type": "file"
     },
     {
-      "path": "Projects/Holo Companion",
-      "type": "dir"
-    },
-    {
-      "path": "Projects/Holo Companion/00 - Project Overview.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/Holo Companion/01 - Architecture and Implementation Plan.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/Holo Companion/02 - Mind, Personality, and Memory.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/Holo Companion/03 - Assets, Expressions, and Display.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/Holo Companion/04 - Models, Research, and Privacy.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/Holo Companion/05 - Build and Verification Record.md",
-      "type": "file"
-    },
-    {
       "path": "Projects/Homelab NOC Skills",
       "type": "dir"
     },
@@ -1535,6 +1507,34 @@
     },
     {
       "path": "Projects/TypingLab/README.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/Veyra Companion/00 - Project Overview.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion/01 - Architecture and Implementation Plan.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion/02 - Mind, Personality, and Memory.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion/03 - Assets, Expressions, and Display.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion/04 - Models, Research, and Privacy.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion/05 - Build and Verification Record.md",
       "type": "file"
     },
     {
@@ -2461,40 +2461,6 @@
       "updated": "2026-07-31",
       "title": "Word Progression and Public Release Roadmap"
     },
-    "Projects/Holo Companion/00 - Project Overview.md": {
-      "project": "Veyra Companion",
-      "status": "Signed Margin Companion installed; Screen Recording grant and live hardware proof pending",
-      "repository": "/Users/aim/Downloads/Holo_Companion_Sprites",
-      "platform": "macOS",
-      "updated": "2026-08-11",
-      "title": "Veyra Companion"
-    },
-    "Projects/Holo Companion/01 - Architecture and Implementation Plan.md": {
-      "project": "Holo Companion",
-      "status": "Packaged app installed; hardware and model-selection gates open",
-      "updated": "2026-08-11",
-      "title": "Architecture and Implementation Plan"
-    },
-    "Projects/Holo Companion/02 - Mind, Personality, and Memory.md": {
-      "project": "Veyra Companion",
-      "updated": "2026-08-10",
-      "title": "Mind, Personality, and Memory"
-    },
-    "Projects/Holo Companion/03 - Assets, Expressions, and Display.md": {
-      "project": "Holo Companion",
-      "updated": "2026-08-10",
-      "title": "Assets, Expressions, and Display"
-    },
-    "Projects/Holo Companion/04 - Models, Research, and Privacy.md": {
-      "project": "Holo Companion",
-      "updated": "2026-08-10",
-      "title": "Models, Research, and Privacy"
-    },
-    "Projects/Holo Companion/05 - Build and Verification Record.md": {
-      "project": "Veyra Companion",
-      "updated": "2026-08-11",
-      "title": "Build and Verification Record"
-    },
     "Projects/Homelab NOC Skills/Docker and Portainer Setup.md": {
       "created": "2026-01-07T22:57:31.997978",
       "modified": "2026-01-10T11:36:27.766509",
@@ -3090,6 +3056,40 @@
       "published_to_garden": true,
       "title": "TypingLab Documentation Index"
     },
+    "Projects/Veyra Companion/00 - Project Overview.md": {
+      "project": "Veyra Companion",
+      "status": "Veyra rename installed; Screen Recording grant and live visual proof pending",
+      "repository": "/Users/aim/Downloads/Veyra_Companion_Sprites",
+      "platform": "macOS",
+      "updated": "2026-08-11",
+      "title": "Veyra Companion"
+    },
+    "Projects/Veyra Companion/01 - Architecture and Implementation Plan.md": {
+      "project": "Veyra Companion",
+      "status": "Packaged app installed; hardware and model-selection gates open",
+      "updated": "2026-08-11",
+      "title": "Architecture and Implementation Plan"
+    },
+    "Projects/Veyra Companion/02 - Mind, Personality, and Memory.md": {
+      "project": "Veyra Companion",
+      "updated": "2026-08-10",
+      "title": "Mind, Personality, and Memory"
+    },
+    "Projects/Veyra Companion/03 - Assets, Expressions, and Display.md": {
+      "project": "Veyra Companion",
+      "updated": "2026-08-10",
+      "title": "Assets, Expressions, and Display"
+    },
+    "Projects/Veyra Companion/04 - Models, Research, and Privacy.md": {
+      "project": "Veyra Companion",
+      "updated": "2026-08-10",
+      "title": "Models, Research, and Privacy"
+    },
+    "Projects/Veyra Companion/05 - Build and Verification Record.md": {
+      "project": "Veyra Companion",
+      "updated": "2026-08-11",
+      "title": "Build and Verification Record"
+    },
     "Systems/Development Tools.md": {
       "title": "Development Tools & Productivity"
     },
@@ -3632,14 +3632,6 @@
       "02 - Word Progression and Public Release Roadmap",
       "Projects/README"
     ],
-    "Projects/Holo Companion/00 - Project Overview.md": [
-      "01 - Architecture and Implementation Plan",
-      "02 - Mind, Personality, and Memory",
-      "03 - Assets, Expressions, and Display",
-      "04 - Models, Research, and Privacy",
-      "05 - Build and Verification Record",
-      "Projects/README"
-    ],
     "Projects/Homelab NOC Skills/Project Overview - NOC Skills Homelab.md": [
       "Pi-hole Migration - RPi B+ to RPi 5 NVMe",
       "Docker and Portainer Setup",
@@ -4064,6 +4056,14 @@
       "09 - UI Components Guide",
       "10 - Deployment Guide",
       "11 - User Guide"
+    ],
+    "Projects/Veyra Companion/00 - Project Overview.md": [
+      "01 - Architecture and Implementation Plan",
+      "02 - Mind, Personality, and Memory",
+      "03 - Assets, Expressions, and Display",
+      "04 - Models, Research, and Privacy",
+      "05 - Build and Verification Record",
+      "Projects/README"
     ],
     "Systems/Development Tools.md": [
       "Programming/Python Fundamentals",
