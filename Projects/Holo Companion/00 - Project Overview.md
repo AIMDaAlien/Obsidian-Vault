@@ -1,16 +1,16 @@
 ---
-project: Holo Companion
+project: Veyra Companion
 status: Packaged app installed; Screen Recording and live approval pending
 repository: /Users/aim/Downloads/Holo_Companion_Sprites
 platform: macOS
 updated: 2026-08-11
 ---
 
-# Holo Companion
+# Veyra Companion
 
 ## Purpose
 
-Holo Companion is Aim's private, local macOS companion. Holo combines a persistent conversational mind, deterministic expressions, screen and cursor awareness, local research, and a dedicated-display interface.
+Veyra Companion is Aim's private, local macOS companion. Veyra combines a persistent conversational mind, deterministic expressions, screen and cursor awareness, local research, and a dedicated-display interface. The repository, database path, Swift symbols, and asset IDs retain their historical `Holo*` names for compatibility.
 
 She is not designed as an otome chatbot or engagement product. The goal is a perceptive long-term partner who can be warm, teasing, skeptical, disciplinary, and practically useful without pretending to be human.
 
@@ -32,15 +32,17 @@ Implemented:
 - Cursor, poke-pressure, pat, idle-affect, foreground-app, OCR, and external development-event awareness.
 - Bounded qualitative research through local SearXNG then the Unraid instance.
 - Quiet-hour and daily-limit initiative policy.
-- Native `Holo Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Holo Companion.app`.
+- Native `Veyra Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Veyra Companion.app`.
+- Persistent composer restoration from SQLite, transient touch status, single-family sprite transitions, and observation-driven expression feedback with cooldowns.
 
 Verified on 2026-08-11:
 
 - The packaged app launches from its installed bundle and opens the shared mind database.
 - The bundle contains all 67 portraits and 18 chibis.
 - The `com.aim.holo-companion` LaunchAgent is installed and its RunAtLoad invocation succeeds.
-- 25 Swift tests, release build, plist validation, code-sign verification, and app installation pass.
-- Repository commit `6ee6d9e` is pushed to `origin/main`.
+- 26 Swift tests, release build, plist validation, code-sign verification, and app installation pass.
+- Runtime proof confirmed one installed process, restored transcript history, and visible CLI action feedback without terminating the resident app.
+- Repository commit `8433709` is pushed to `origin/main`.
 
 Verified on 2026-08-10:
 
@@ -63,7 +65,7 @@ Still awaiting proof or approval:
 - Primary model API: LM Studio at `127.0.0.1:1234`.
 - Research: `127.0.0.1:8082`, then Unraid `192.168.0.120:8082`.
 - Dedicated display name: `L01N8A`; detected AppKit frame: 1280×800.
-- Raw screen frames remain in memory and are never stored by Holo.
+- Raw screen frames remain in memory and are never stored by Veyra. Capture input is downsampled to at most 1280 pixels on its longest edge before OCR.
 - OCR and activity summaries expire after 24 hours.
 - Conversation history remains until Aim edits or deletes it.
 - Search queries and public page requests may leave the LAN; memories, screenshots, OCR dumps, and unrelated private context are not added to search queries.

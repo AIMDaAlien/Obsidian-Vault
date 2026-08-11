@@ -1,9 +1,38 @@
 ---
-project: Holo Companion
+project: Veyra Companion
 updated: 2026-08-11
 ---
 
 # Build and Verification Record
+
+## 2026-08-11 — State Repair and Public Rename
+
+Repository commit: `8433709` (`Fix companion state and rename Veyra`), pushed to `origin/main`.
+
+### Implemented
+
+- Renamed the public UI and installed bundle to Veyra; retained the bundle identifier, database path, catalog IDs, and internal `Holo*` symbols for compatibility.
+- Removed the stale development process that was producing a second sprite window.
+- Changed transparent sprite drawing to replace old pixels and disabled portrait-to-chibi crossfades, preventing persistent mixed-family composites.
+- Restored the latest 50 stored conversation messages into the composer after launch.
+- Moved poke and pat copy into three-second header state so touch does not pollute or replace chat history.
+- Closed reaction events before thinking or tool events begin, preventing hard-state leakage.
+- Processed all unseen activity rows in order and added cooldown-limited attentive/thoughtful feedback for foreground-app and OCR changes.
+- Kept image preprocessing native and memory-only, with a 1280-pixel longest-edge cap before Vision OCR.
+- Moved `--emit-event` handling before AppKit startup so CLI feedback no longer starts or terminates a second UI instance.
+
+### Proof
+
+- 26 Swift tests pass, including image downsampling geometry.
+- Release build, plist validation, shell syntax, Git whitespace, code signing, packaging, and installation pass.
+- Accessibility inspection confirmed all 12 stored messages were visible after relaunch.
+- A real `started`/`success` event appeared in the live transcript despite surrounding OCR/activity rows.
+- The resident process PID survived a later CLI event and remained the only companion process.
+- No file under `Assets/` changed.
+
+### Open Gate
+
+The ad-hoc rebuild invalidated the prior Screen Recording approval. macOS now reports `The user declined TCCs for application, window, display capture`; enable **Veyra Companion** under **System Settings → Privacy & Security → Screen & System Audio Recording**, then restart Veyra.
 
 ## 2026-08-11 — Packaged macOS App
 

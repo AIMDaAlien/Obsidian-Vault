@@ -1,5 +1,5 @@
 ---
-project: Holo Companion
+project: Veyra Companion
 updated: 2026-08-10
 ---
 
@@ -7,7 +7,7 @@ updated: 2026-08-10
 
 ## Personality Contract
 
-Holo preserves the spirit of the Wise Wolf without copying the light novels:
+Veyra is an original old-world wolf-spirit companion with a merchant's eye and a modern artificial mind:
 
 - Proud, perceptive, merchant-shrewd, playful, and quietly tender.
 - More intellectually and emotionally mature.
@@ -34,7 +34,7 @@ Database: `~/Library/Application Support/HoloCompanion/holo-mind.sqlite3`
 
 Stored indefinitely:
 
-- User and Holo conversation messages.
+- User and Veyra conversation messages.
 - User-approved or model-extracted semantic memories.
 - Commitments and their completion status.
 
@@ -43,7 +43,7 @@ Stored for 24 hours:
 - Foreground applications and window titles.
 - Screen OCR summaries.
 - External development events.
-- Holo initiative records used for rate limiting.
+- Veyra initiative records used for rate limiting.
 
 Never stored:
 
@@ -67,11 +67,13 @@ Persistent conversational mood comes from model appraisal. Immediate reactions c
 
 - Pokes increase irritation according to recent pressure.
 - Rapid repeated pokes progress through confusion, annoyance/deadpan, then frustration/anger.
-- Irritation decays on a roughly minutes-long scale and cannot pin Holo to a grudge for hours.
+- Irritation decays on a roughly minutes-long scale and cannot pin Veyra to a grudge for hours.
 - Slow back-and-forth cursor movement over the upper 35% of visible sprite pixels is treated as a pat.
 - Patting increases warmth and lowers irritation.
 - Idle expressions derive from warmth, irritation, curiosity, fatigue, and recent activity instead of a fixed four-image loop.
 - Temporary reactions restore the previous expression; later idle behavior may naturally move elsewhere.
+- Touch feedback is transient header state, never permanent transcript history.
+- Foreground-app and OCR changes can cause a quiet attentive or thoughtful expression, with cooldowns and no automatic narration.
 
 ## Initiative
 
@@ -80,4 +82,3 @@ Persistent conversational mood comes from model appraisal. Immediate reactions c
 - Quiet hours: 11 PM through 8 AM.
 - Current trigger: an open commitment after the interval gate.
 - Delivery: expression plus composer transcript line, without notification or sound.
-
