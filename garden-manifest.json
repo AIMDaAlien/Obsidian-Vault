@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T14:15:33Z",
+  "generated_at": "2026-08-11T14:41:20Z",
   "tree": [
     {
       "path": "README.md",
@@ -2462,12 +2462,12 @@
       "title": "Word Progression and Public Release Roadmap"
     },
     "Projects/Holo Companion/00 - Project Overview.md": {
-      "project": "Holo Companion",
+      "project": "Veyra Companion",
       "status": "Packaged app installed; Screen Recording and live approval pending",
       "repository": "/Users/aim/Downloads/Holo_Companion_Sprites",
       "platform": "macOS",
       "updated": "2026-08-11",
-      "title": "Holo Companion"
+      "title": "Veyra Companion"
     },
     "Projects/Holo Companion/01 - Architecture and Implementation Plan.md": {
       "project": "Holo Companion",
@@ -2476,7 +2476,7 @@
       "title": "Architecture and Implementation Plan"
     },
     "Projects/Holo Companion/02 - Mind, Personality, and Memory.md": {
-      "project": "Holo Companion",
+      "project": "Veyra Companion",
       "updated": "2026-08-10",
       "title": "Mind, Personality, and Memory"
     },
@@ -2491,7 +2491,7 @@
       "title": "Models, Research, and Privacy"
     },
     "Projects/Holo Companion/05 - Build and Verification Record.md": {
-      "project": "Holo Companion",
+      "project": "Veyra Companion",
       "updated": "2026-08-11",
       "title": "Build and Verification Record"
     },
