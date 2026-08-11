@@ -13,6 +13,7 @@ Active and archived project work. Each project has its own subfolder with releva
 - **Homelab NOC Skills/** - Network operations center practice and troubleshooting
 - **Sovereign AI Stack/** - Fully local, privacy-first AI assistant (Ollama + OpenClaw + Discord)
 - **Local Language Engine/** - Standalone Android, Mac-hosted private Arabic tutor with progressive English-to-Arabic UI
+- **Holo Companion/** - Private macOS companion with persistent memory, deterministic expressions, screen awareness, and local qualitative research
 
 ## Archive
 
