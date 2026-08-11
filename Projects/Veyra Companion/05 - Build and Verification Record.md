@@ -23,12 +23,12 @@ Historical entries below retain their exact former identifiers and commit titles
 - The signed installed bundle satisfies its designated requirement as `com.aim.veyra-companion`.
 - Database migration preserved 14 messages and one topic; the old active storage directory and LaunchAgent are gone.
 - Veyra is running from `~/Applications/Veyra Companion.app`; LM Studio retains only `veyra-fast`.
+- Renamed the private GitHub repository to `AIMDaAlien/Veyra_Companion_Sprites`; `origin/main` and local `main` both resolve to `81f3b0c`.
 
 ### Open Gates
 
 - The new bundle identifier reports `screenCaptureAuthorized=false`; Aim must grant Screen Recording once.
 - Native visual acceptance remains open pending a fresh L01N8A screenshot.
-- The five local commits have not been pushed, and the GitHub repository still has its historical remote name.
 
 ## 2026-08-11 — Stable Screen Permission and Composer Study (Partial)
 

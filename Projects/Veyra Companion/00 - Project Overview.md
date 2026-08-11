@@ -51,7 +51,7 @@ Verified on 2026-08-11:
 - The catalog and installed bundle contain 85 uniquely named Veyra assets: 67 portraits and 18 chibis.
 - The old LaunchAgent is removed; `com.aim.veyra-companion` is installed and Veyra is running as the renamed executable.
 - LM Studio retains only `veyra-fast`; the superseded fast and embedding aliases were unloaded.
-- Structural commits `0b85f22`, `ee209ac`, `74c2330`, `c90310a`, and `81f3b0c` are local and not yet pushed.
+- Structural commits `0b85f22`, `ee209ac`, `74c2330`, `c90310a`, and `81f3b0c` are pushed to the private `AIMDaAlien/Veyra_Companion_Sprites` GitHub repository.
 
 Verified on 2026-08-10:
 
