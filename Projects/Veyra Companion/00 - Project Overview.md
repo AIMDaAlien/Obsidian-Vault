@@ -1,6 +1,6 @@
 ---
 project: Veyra Companion
-status: Veyra rename installed; Screen Recording grant and live visual proof pending
+status: Signed AppKit build installed; portrait and Screen Recording verified; visual-reply proof pending
 repository: /Users/aim/Downloads/Veyra_Companion_Sprites
 platform: macOS
 updated: 2026-08-11
@@ -18,7 +18,7 @@ Canonical repository: `/Users/aim/Downloads/Veyra_Companion_Sprites`
 
 ## Current Status
 
-**Aim approved Margin Companion A. Its native AppKit layout, topic persistence, and Markdown research handoff are installed with a stable local signature; Screen Recording approval and live hardware proof remain.**
+**Aim approved Margin Companion A. Its native AppKit layout, topic persistence, visual context, and Markdown research handoff are installed with a stable local signature. The portrait and Screen Recording grant are live; an end-to-end visual reply remains to verify.**
 
 Implemented:
 
@@ -38,6 +38,7 @@ Implemented:
 - Visual context replaces OCR: the latest non-Veyra display frame is reduced to a 768-pixel long edge, JPEG-compressed, and attached to the existing local Bonsai vision request only when Aim sends a message. Frames are not stored.
 - Mind uses the Field Notes palette, human-readable rows, useful empty states, current visual-context/privacy status, and hides stale OCR/error dumps when capture is disabled.
 - Approved Field Notes Margin Companion in native AppKit: 593/687 dedicated-display split, 64/620/116 composer regions, large chronological turn rows, paper/ink styling, and New Topic/Mind-only permanent header controls.
+- The dedicated layout now uses separate borderless windows for the transparent 593×800 portrait stage and opaque 687×800 composer. Aim physically confirmed Veyra is visible again with the desktop background showing through.
 - SQLite topics with one-active-topic enforcement, historical-message migration, active-topic inference isolation, exact transcript restoration, and cancelled partial-output preservation.
 - Return sends, Shift-Return inserts a newline, `Command-N` creates a topic, and text sizing lives in Mind while retaining `Command-Plus`/`Command-Minus`.
 - Research writes a standalone Markdown report under `~/Documents/Veyra Research/` and returns a clickable local file pointer in chat.
@@ -48,7 +49,8 @@ Verified on 2026-08-11:
 - Release build passes. Runtime diagnosis detects L01N8A at 1280×800 with a 593×800 portrait stage and 687×800 composer.
 - Two signed installs pass strict code-sign verification with the same designated requirement: bundle ID `com.aim.veyra-companion` plus certificate SHA-1 `11e6fbcc37d446911d84f9a3f4ae9706bc3dace8`.
 - The signed app is installed and running from `~/Applications/Veyra Companion.app`; its runtime diagnosis confirms the exact 1280×800, 593/687 dedicated layout.
-- The installed process reports `screenCaptureAuthorized=false`, so the new stable identity still needs its one-time Screen Recording grant.
+- Aim physically confirmed the installed split-window build shows Veyra and the transparent desktop background on L01N8A.
+- System Settings and the running app confirm Screen Recording is enabled. The activity database records the visual-context stream starting with Veyra windows and the dedicated display excluded.
 - The previous database migrated transactionally to `~/Library/Application Support/VeyraCompanion/veyra-mind.sqlite3` with all 14 messages and one topic preserved; a closed backup remains under `Veyra Migration Backups`.
 - The catalog and installed bundle contain 85 uniquely named Veyra assets: 67 portraits and 18 chibis.
 - The old LaunchAgent is removed; `com.aim.veyra-companion` is installed and Veyra is running as the renamed executable.
@@ -66,9 +68,7 @@ Verified on 2026-08-10:
 
 Still awaiting proof or approval:
 
-- One-time Screen Recording approval for the signed identity, followed by a rebuild proving the approval is retained.
-- Screen Recording permission and end-to-end visual-context behavior through the installed app.
-- Live visual review of the packaged app on L01N8A.
+- End-to-end visual-context behavior through a real installed-app conversation.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
 - Qwen3.6-35B-A3B Q2/MTP versus 4-bit model selection benchmark.
 
@@ -90,4 +90,5 @@ Still awaiting proof or approval:
 - [[03 - Assets, Expressions, and Display]]
 - [[04 - Models, Research, and Privacy]]
 - [[05 - Build and Verification Record]]
+- [[06 - Troubleshooting and Findings Log]]
 - [[Projects/README]]

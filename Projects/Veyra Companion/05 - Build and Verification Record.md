@@ -7,6 +7,30 @@ updated: 2026-08-11
 
 Historical entries below retain their exact former identifiers and commit titles. Current names are recorded here.
 
+## 2026-08-11 — Portrait Compositor and Visual Context Repair
+
+### Implemented
+
+- Replaced noisy Vision OCR with send-time visual analysis through the existing Bonsai vision model.
+- Aggressively reduced 1440p frames to a 768-pixel long edge and 55% JPEG before local inference.
+- Reworked Mind into readable Field Notes rows with useful state and privacy summaries.
+- Replaced the confusing disabled permission button with **Manage Visual Context** when capture is active.
+- Split the dedicated portrait and composer into separate 593×800 transparent and 687×800 opaque borderless windows.
+
+### Proof
+
+- Commits: `8fa06a5`, `3d7680c`, and `452aa14`.
+- 32 Swift tests, release build, packaging, installation, and strict code signing pass.
+- System Settings, the running process, and the activity database confirm Screen Recording and visual-context startup.
+- WindowServer reports the exact two-window geometry.
+- Aim physically confirmed that Veyra is visible again and the desktop background shows through.
+
+### Open Gate
+
+- A real installed-app conversation must still prove that the captured 768-pixel frame reaches Bonsai and informs Veyra's reply.
+
+Full failure evidence and discarded approaches: [[06 - Troubleshooting and Findings Log]].
+
 ## 2026-08-11 — Complete Veyra Rename and Structural Commits
 
 ### Implemented
