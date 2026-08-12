@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T00:01:00Z",
+  "generated_at": "2026-08-12T14:46:26Z",
   "tree": [
     {
       "path": "README.md",
@@ -1574,6 +1574,10 @@
       "type": "file"
     },
     {
+      "path": "Systems/Storage Cleanup and TM Backup Decisions.md",
+      "type": "file"
+    },
+    {
       "path": "Systems/Homelab",
       "type": "dir"
     },
@@ -3123,6 +3127,9 @@
     },
     "Systems/README.md": {
       "title": "Systems"
+    },
+    "Systems/Storage Cleanup and TM Backup Decisions.md": {
+      "title": "Storage Cleanup & TM Backup Decisions"
     },
     "Systems/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learned.md": {
       "created": "2025-10-14",
