@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T23:45:57Z",
+  "generated_at": "2026-08-12T00:01:00Z",
   "tree": [
     {
       "path": "README.md",
@@ -1538,6 +1538,10 @@
       "type": "file"
     },
     {
+      "path": "Projects/Veyra Companion/06 - Troubleshooting and Findings Log.md",
+      "type": "file"
+    },
+    {
       "path": "Systems",
       "type": "dir"
     },
@@ -3058,7 +3062,7 @@
     },
     "Projects/Veyra Companion/00 - Project Overview.md": {
       "project": "Veyra Companion",
-      "status": "Veyra rename installed; Screen Recording grant and live visual proof pending",
+      "status": "Signed AppKit build installed; portrait and Screen Recording verified; visual-reply proof pending",
       "repository": "/Users/aim/Downloads/Veyra_Companion_Sprites",
       "platform": "macOS",
       "updated": "2026-08-11",
@@ -3089,6 +3093,12 @@
       "project": "Veyra Companion",
       "updated": "2026-08-11",
       "title": "Build and Verification Record"
+    },
+    "Projects/Veyra Companion/06 - Troubleshooting and Findings Log.md": {
+      "project": "Veyra Companion",
+      "type": "troubleshooting-log",
+      "updated": "2026-08-11",
+      "title": "Troubleshooting and Findings Log"
     },
     "Systems/Development Tools.md": {
       "title": "Development Tools & Productivity"
@@ -4063,7 +4073,11 @@
       "03 - Assets, Expressions, and Display",
       "04 - Models, Research, and Privacy",
       "05 - Build and Verification Record",
+      "06 - Troubleshooting and Findings Log",
       "Projects/README"
+    ],
+    "Projects/Veyra Companion/05 - Build and Verification Record.md": [
+      "06 - Troubleshooting and Findings Log"
     ],
     "Systems/Development Tools.md": [
       "Programming/Python Fundamentals",
