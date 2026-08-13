@@ -57,3 +57,15 @@ laguna image stays for Qwen). Added deep-niche banks:
 - bank_7: tech deep cuts (18), homelab/self-hosted (15), security (10)
 - bank_8: Islamic knowledge (15), deeper math (15), multi-hop reasoning (10)
 Full battery now 317 questions across 28 domains.
+
+## Qwen 317-question baseline (2026-08-12)
+
+- Raw: 305/317 (96.2%); effective ~311/317 (98%) after grading artifacts.
+- Perfect (100%): obscure science 14/14, esoteric history 15/15, rare trivia
+  20/20, Islamic knowledge 15/15, homelab 15/15, math2 15/15, multihop 10/10,
+  security 10/10, food science 13/13, tech2 17/18.
+- Genuine misses (only 3): Unraid version (says 6.14, stale), Seven Sisters
+  (said Conoco), HTTP idempotency (said PUT — arguably correct, PUT is idempotent).
+- Language insight: Qwen outputs NATIVE SCRIPT (감사합니다, Вода, سلام,
+  Ευχαριστώ) not romanizations — grader artifact, actually stronger multilingual.
+- This is the reference baseline for future model fingerprinting.
