@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T03:46:43Z",
+  "generated_at": "2026-08-13T14:16:59Z",
   "tree": [
     {
       "path": "README.md",
@@ -119,6 +119,10 @@
     },
     {
       "path": "IT Projects/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Session Notes/2026-08-12 Session Continuation.md",
       "type": "file"
     },
     {
@@ -2229,6 +2233,9 @@
     },
     "IT Projects/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md": {
       "title": "2026-06-27 Home Lab Restoration & Expansion"
+    },
+    "IT Projects/Session Notes/2026-08-12 Session Continuation.md": {
+      "title": "2026-08-12 Session Continuation"
     },
     "Learning Journals/3D Printing Optimization Journey.md": {
       "garden_path": "Learning/3D Printing Optimization Journey.md",
