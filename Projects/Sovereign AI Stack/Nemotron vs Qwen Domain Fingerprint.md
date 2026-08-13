@@ -46,4 +46,14 @@ At these quants, indistinguishable on general knowledge. Pick by:
 - results/fingerprint-{qwen,nemotron}.json
 - results/agentic-{qwen,nemotron}.json
 - results/hardagentic-{qwen,nemotron}.json
-- fingerprint-bench.py + bank_{1-4}.py (130 questions, retry-capable)
+- fingerprint-bench.py + bank_{1-8}.py (317 questions, retry-capable)
+
+## Expanded niche battery (banks 5-8, +187 questions)
+
+Nemotron removed (26GB freed, container + roster + compose clean; the rebuilt
+laguna image stays for Qwen). Added deep-niche banks:
+- bank_5: obscure science (14), esoteric history (15), rare trivia (20)
+- bank_6: 18 more languages, regional/cultural (10), food science (13), geo depth (14)
+- bank_7: tech deep cuts (18), homelab/self-hosted (15), security (10)
+- bank_8: Islamic knowledge (15), deeper math (15), multi-hop reasoning (10)
+Full battery now 317 questions across 28 domains.
