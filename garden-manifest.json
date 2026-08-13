@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T14:46:26Z",
+  "generated_at": "2026-08-13T00:16:34Z",
   "tree": [
     {
       "path": "README.md",
@@ -1087,6 +1087,10 @@
     },
     {
       "path": "Projects/Sovereign AI Stack/Maple-Preview 20B.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Nemotron vs Qwen Domain Fingerprint.md",
       "type": "file"
     },
     {
@@ -2572,6 +2576,9 @@
     },
     "Projects/Sovereign AI Stack/Maple-Preview 20B.md": {
       "title": "Maple-Preview 20B"
+    },
+    "Projects/Sovereign AI Stack/Nemotron vs Qwen Domain Fingerprint.md": {
+      "title": "Nemotron 3.5 Lightning vs Qwen 3.6 — Domain Fingerprint"
     },
     "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md": {
       "tags": "[sovereign-ai, project-overview, self-hosted, privacy, llm]",
