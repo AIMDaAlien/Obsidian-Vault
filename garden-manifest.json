@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T21:53:33Z",
+  "generated_at": "2026-08-14T23:43:23Z",
   "tree": [
     {
       "path": "README.md",
@@ -1103,6 +1103,10 @@
     },
     {
       "path": "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Qwen3.8-27B.md",
       "type": "file"
     },
     {
@@ -2596,6 +2600,9 @@
     },
     "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md": {
       "title": "Project Status - Sovereign AI Stack"
+    },
+    "Projects/Sovereign AI Stack/Qwen3.8-27B.md": {
+      "title": "Qwen3.8-27B — Deployment & Benchmark vs Qwen3.6"
     },
     "Projects/Sovereign AI Stack/Setup Tutorial - Sovereign AI Stack.md": {
       "title": "Setup Tutorial - Sovereign AI Stack"
