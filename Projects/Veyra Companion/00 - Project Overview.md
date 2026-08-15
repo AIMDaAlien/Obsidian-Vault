@@ -1,6 +1,6 @@
 ---
 project: Veyra Companion
-status: Signed AppKit build installed; bundled Fish S2 Pro speech enabled on external output; MacBook speakers blocked; visual-reply proof pending
+status: Installed build; Qwen3.5-4B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted
 repository: /Users/aim/Downloads/Veyra_Companion_Sprites
 platform: macOS
 updated: 2026-08-15
@@ -18,14 +18,14 @@ Canonical repository: `/Users/aim/Downloads/Veyra_Companion_Sprites`
 
 ## Current Status
 
-**Aim approved Margin Companion A. Its native AppKit layout, topic persistence, visual context, and Markdown research handoff are installed with a stable local signature. The portrait and Screen Recording grant are live; an end-to-end visual reply remains to verify.**
+**Margin Companion A is installed. Fast replies and visual awareness now run through bundled Qwen3.5-4B; deep, creative, and research work run through external Qwen3.8-27B. Bonsai is removed from the runtime, and Fish S2 Pro speech remains brief/proactive and external-output-only.**
 
 Implemented:
 
 - Typed mood, activity, and app-event expression selection across 85 approved assets.
 - L01N8A detection by display name with persisted UUID fallback.
 - Dedicated and portable display layouts, composer text sizing, and transparent-pixel hit testing.
-- Streaming local conversation through LM Studio.
+- Fast brief/normal conversation through a bundled Qwen3.5-4B MLX worker on `127.0.0.1:8112`; deep, creative, and research conversation through external Qwen3.8-27B on `127.0.0.1:8110`; embeddings through LM Studio on `127.0.0.1:1234`.
 - Automatic brief, normal, deep, creative, and research response modes.
 - SQLite conversation, memory, commitment, activity, and embedding storage.
 - Editable Mind panel.
@@ -35,16 +35,28 @@ Implemented:
 - Native `Veyra Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Veyra Companion.app`.
 - Persistent composer restoration from SQLite, transient touch status, single-family sprite transitions, and observation-driven expression feedback with cooldowns.
 - Permission-safe screen awareness: launch preflight only, plus a deliberate enable action in Mind Settings.
-- Visual context replaces OCR: the latest non-Veyra display frame is reduced to a 768-pixel long edge, JPEG-compressed, and attached to the existing local Bonsai vision request only when Aim sends a message. Frames are not stored.
-- Bundled Fish S2 Pro TTS with `EN-H`/`JA-B`/`AR-O`, whole mixed-language lines, external-output-only playback, and a hard MacBook-speaker block.
+- Visual context replaces OCR: when a frame is available, Qwen3.5-4B produces a concise factual screen description into `awarenessContext`; frames are never stored and are not sent to Qwen3.8.
+- Bundled Fish S2 Pro TTS with `EN-H`/`JA-B`/`AR-O`, whole mixed-language lines, external-output-only playback, and a hard MacBook-speaker block. The cached 8-bit Fish S2 Pro was benchmarked on `8124` and not promoted: warm was 4.05s versus the 3.5s gate.
 - Mind uses the Field Notes palette, human-readable rows, useful empty states, current visual-context/privacy status, and hides stale OCR/error dumps when capture is disabled.
 - Approved Field Notes Margin Companion in native AppKit: 593/687 dedicated-display split, 64/620/116 composer regions, large chronological turn rows, paper/ink styling, and New Topic/Mind-only permanent header controls.
 - The dedicated layout now uses separate borderless windows for the transparent 593×800 portrait stage and opaque 687×800 composer. Aim physically confirmed Veyra is visible again with the desktop background showing through.
 - SQLite topics with one-active-topic enforcement, historical-message migration, active-topic inference isolation, exact transcript restoration, and cancelled partial-output preservation.
 - Return sends, Shift-Return inserts a newline, `Command-N` creates a topic, and text sizing lives in Mind while retaining `Command-Plus`/`Command-Minus`.
-- Research writes a standalone Markdown report under `~/Documents/Veyra Research/` and returns a clickable local file pointer in chat.
+- Research writes a standalone Markdown report under `~/Documents/Veyra Research/` and returns a clickable local file pointer in chat. Before research starts, Veyra shows a non-blocking warning: “Close heavy apps before research.”
 
 Verified on 2026-08-15:
+
+Verified on 2026-08-15, small-lane swap:
+
+- 44 Swift tests pass after the routing and shutdown changes.
+- Release build, packaging, install, codesign, worker self-test, and selected-voice hashes pass.
+- Installed app starts Qwen3.5-4B on `127.0.0.1:8112`; brief, normal, deep, and research `--core-check` paths all return real replies.
+- Qwen3.5-4B visual QA correctly identified the active terminal window and command text without hallucinating missing content.
+- Installed speech worker starts on `127.0.0.1:8123`; `/v1/warm` returns `204` and `/v1/speech` returns 24 kHz mono PCM16.
+- `--diagnose` reports `Nothing Ear` as the eligible external output; built-in routes remain blocked.
+- 8-bit Fish S2 Pro benchmark failed only the warm gate: `4.05s` versus `<= 3.5s`. Median generation speed was `0.982x` with no clipping, so the default remains the full Fish S2 Pro model.
+
+Verified earlier on 2026-08-15:
 
 - 44 Swift tests pass, including stage-cue removal, mixed-language handling, and external-output classification.
 - Worker self-test, release build, package, codesign, bundled-worker hash, and selected-voice SHA-256 checks pass.
@@ -76,15 +88,17 @@ Verified on 2026-08-10:
 
 Still awaiting proof or approval:
 
-- End-to-end visual-context behavior through a real installed-app conversation.
+- Audible brief/proactive speech through a real installed-app conversation, not just worker-level WAV proof.
+- Live Qwen3.5-4B small-model replacement audition: current interim stays until a candidate passes multilingual short-reply conversation testing.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
-- Qwen3.6-35B-A3B Q2/MTP versus 4-bit model selection benchmark.
 
 ## Hardware and Privacy
 
 - Host: 14-inch MacBook Pro, M5 Pro, 48 GB unified memory.
-- Primary model API: LM Studio at `127.0.0.1:1234`.
-- Research: `127.0.0.1:8082`, then Unraid `192.168.0.120:8082`.
+- Fast model API: bundled MLX worker at `127.0.0.1:8112` (`mlx-community/Qwen3.5-4B-MLX-4bit`).
+- Deep/research model API: external Rapid-MLX worker at `127.0.0.1:8110` (`qwen3.8-27b-4bit`).
+- Embedding model API: LM Studio at `127.0.0.1:1234`.
+- Research search: `127.0.0.1:8082`, then Unraid `192.168.0.120:8082`.
 - Dedicated display name: `L01N8A`; detected AppKit frame: 1280×800.
 - Raw screen frames remain in memory and are never stored by Veyra. The current frame is downsampled to at most 768 pixels on its longest edge and JPEG-compressed before local visual analysis.
 - Activity summaries expire after 24 hours; legacy OCR rows remain only in the migrated database and are no longer produced or shown as live context.
