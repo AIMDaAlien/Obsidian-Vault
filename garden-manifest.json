@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T23:43:23Z",
+  "generated_at": "2026-08-15T20:25:48Z",
   "tree": [
     {
       "path": "README.md",
@@ -3087,16 +3087,16 @@
     },
     "Projects/Veyra Companion/00 - Project Overview.md": {
       "project": "Veyra Companion",
-      "status": "Signed AppKit build installed; portrait and Screen Recording verified; visual-reply proof pending",
+      "status": "Signed AppKit build installed; bundled Fish S2 Pro speech enabled on external output; MacBook speakers blocked; visual-reply proof pending",
       "repository": "/Users/aim/Downloads/Veyra_Companion_Sprites",
       "platform": "macOS",
-      "updated": "2026-08-11",
+      "updated": "2026-08-15",
       "title": "Veyra Companion"
     },
     "Projects/Veyra Companion/01 - Architecture and Implementation Plan.md": {
       "project": "Veyra Companion",
       "status": "Packaged app installed; hardware and model-selection gates open",
-      "updated": "2026-08-11",
+      "updated": "2026-08-15",
       "title": "Architecture and Implementation Plan"
     },
     "Projects/Veyra Companion/02 - Mind, Personality, and Memory.md": {
@@ -3116,13 +3116,13 @@
     },
     "Projects/Veyra Companion/05 - Build and Verification Record.md": {
       "project": "Veyra Companion",
-      "updated": "2026-08-11",
+      "updated": "2026-08-15",
       "title": "Build and Verification Record"
     },
     "Projects/Veyra Companion/06 - Troubleshooting and Findings Log.md": {
       "project": "Veyra Companion",
       "type": "troubleshooting-log",
-      "updated": "2026-08-11",
+      "updated": "2026-08-15",
       "title": "Troubleshooting and Findings Log"
     },
     "Systems/Development Tools.md": {
