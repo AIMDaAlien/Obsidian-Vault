@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T21:40:53Z",
+  "generated_at": "2026-08-15T21:55:55Z",
   "tree": [
     {
       "path": "README.md",
@@ -3111,7 +3111,7 @@
     },
     "Projects/Veyra Companion/04 - Models, Research, and Privacy.md": {
       "project": "Veyra Companion",
-      "updated": "2026-08-10",
+      "updated": "2026-08-15",
       "title": "Models, Research, and Privacy"
     },
     "Projects/Veyra Companion/05 - Build and Verification Record.md": {
