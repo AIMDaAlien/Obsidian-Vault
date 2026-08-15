@@ -7,6 +7,30 @@ updated: 2026-08-15
 
 Historical entries below retain their exact former identifiers and commit titles. Current names are recorded here.
 
+## 2026-08-15 — LFM2.5-VL-3B Fast and Vision Replacement
+
+### Implemented
+
+- Set the bundled fast lane to `LiquidAI/LFM2.5-VL-3B-MLX-4bit` on `127.0.0.1:8112`, replacing `mlx-community/Qwen3.5-4B-MLX-4bit`.
+- Split conversation allowlisting by role: fast accepts only `lfm2.5-vl-3b`; deliberate accepts only `qwen3.8-27b`; Heretic, Bonsai, Qwen3.5, and legacy Qwen remain rejected.
+- Raised the fast-lane context from 16K to 32K.
+- Replaced the stale Bonsai test placeholder in `VeyraMindTests` with the new fast model and 32K context.
+- Kept worker launch args, `/v1/models` warm polling, screen-description logic, endpoints, embeddings on `1234`, TTS, and research routing unchanged.
+
+### Proof
+
+- 44 Swift tests pass from `Controller`.
+- `swift build -c release` passes.
+- Release `--core-check` starts and warms LFM2.5-VL-3B on `8112`, returns a brief reply, and leaves `8110` and `1234` running.
+- `http://127.0.0.1:8112/v1/models` reports `LiquidAI/LFM2.5-VL-3B-MLX-4bit`.
+- `VEYRA_FAST_MODEL=qwen3.8-27b-4bit` is rejected by the fast allowlist; the release core-check still starts LFM2.5-VL-3B.
+- `VEYRA_DELIBERATE_MODEL=LiquidAI/LFM2.5-VL-3B-MLX-4bit` is rejected by the deliberate allowlist; a deep core-check still succeeds through Qwen3.8 on `8110`.
+
+### Open Gates
+
+- Package, install, codesign, and installed-app physical-display/visual-context smoke remain deferred for this pass.
+- The Qwen3.5-4B cache stays on disk for rollback only and is no longer a valid runtime conversation model.
+
 ## 2026-08-15 — Small-Lane Speech and Model Swap
 
 ### Implemented

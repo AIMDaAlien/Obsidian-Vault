@@ -1,6 +1,6 @@
 ---
 project: Veyra Companion
-status: Installed build; Qwen3.5-4B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted
+status: Installed build; LFM2.5-VL-3B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted
 repository: /Users/aim/Downloads/Veyra_Companion_Sprites
 platform: macOS
 updated: 2026-08-15
@@ -18,14 +18,14 @@ Canonical repository: `/Users/aim/Downloads/Veyra_Companion_Sprites`
 
 ## Current Status
 
-**Margin Companion A is installed. Fast replies and visual awareness now run through bundled Qwen3.5-4B; deep, creative, and research work run through external Qwen3.8-27B. Bonsai is removed from the runtime, and Fish S2 Pro speech remains brief/proactive and external-output-only.**
+**Margin Companion A is installed. Fast replies and visual awareness now run through bundled LFM2.5-VL-3B; deep, creative, and research work run through external Qwen3.8-27B. Qwen3.5-4B and Bonsai are removed from the runtime, and Fish S2 Pro speech remains brief/proactive and external-output-only.**
 
 Implemented:
 
 - Typed mood, activity, and app-event expression selection across 85 approved assets.
 - L01N8A detection by display name with persisted UUID fallback.
 - Dedicated and portable display layouts, composer text sizing, and transparent-pixel hit testing.
-- Fast brief/normal conversation through a bundled Qwen3.5-4B MLX worker on `127.0.0.1:8112`; deep, creative, and research conversation through external Qwen3.8-27B on `127.0.0.1:8110`; embeddings through LM Studio on `127.0.0.1:1234`.
+- Fast brief/normal conversation through a bundled LFM2.5-VL-3B MLX worker on `127.0.0.1:8112`; deep, creative, and research conversation through external Qwen3.8-27B on `127.0.0.1:8110`; embeddings through LM Studio on `127.0.0.1:1234`.
 - Automatic brief, normal, deep, creative, and research response modes.
 - Casual replies are brevity-constrained: brief is one or two sentences at most 30 words, normal is two to four sentences at most 80 words; deep, creative, and research keep their longer ceilings.
 - SQLite conversation, memory, commitment, activity, and embedding storage.
@@ -36,7 +36,7 @@ Implemented:
 - Native `Veyra Companion.app` bundle with bundled assets, login startup, and a consistent install path at `~/Applications/Veyra Companion.app`.
 - Persistent composer restoration from SQLite, transient touch status, single-family sprite transitions, and observation-driven expression feedback with cooldowns.
 - Permission-safe screen awareness: launch preflight only, plus a deliberate enable action in Mind Settings.
-- Visual context replaces OCR: when a frame is available, Qwen3.5-4B produces a concise factual screen description into `awarenessContext`; frames are never stored and are not sent to Qwen3.8.
+- Visual context replaces OCR: when a frame is available, LFM2.5-VL-3B produces a concise factual screen description into `awarenessContext`; frames are never stored and are not sent to Qwen3.8.
 - Bundled Fish S2 Pro TTS with `EN-H`/`JA-B`/`AR-O`, whole mixed-language lines, external-output-only playback, and a hard MacBook-speaker block. The cached 8-bit Fish S2 Pro was benchmarked on `8124` and not promoted: warm was 4.05s versus the 3.5s gate.
 - Mind uses the Field Notes palette, human-readable rows, useful empty states, current visual-context/privacy status, and hides stale OCR/error dumps when capture is disabled.
 - Approved Field Notes Margin Companion in native AppKit: 593/687 dedicated-display split, 64/620/116 composer regions, large chronological turn rows, paper/ink styling, and New Topic/Mind-only permanent header controls.
@@ -45,7 +45,13 @@ Implemented:
 - Return sends, Shift-Return inserts a newline, `Command-N` creates a topic, and text sizing lives in Mind while retaining `Command-Plus`/`Command-Minus`.
 - Research writes a standalone Markdown report under `~/Documents/Veyra Research/` and returns a clickable local file pointer in chat. Before research starts, Veyra shows a non-blocking warning: “Close heavy apps before research.”
 
-Verified on 2026-08-15:
+Verified on 2026-08-15, fast-model replacement:
+
+- LFM2.5-VL-3B is promoted from audition candidate to the bundled fast/vision lane on `127.0.0.1:8112`, replacing Qwen3.5-4B.
+- Conversation allowlisting is split by lane: fast accepts only `lfm2.5-vl-3b`; deliberate accepts only `qwen3.8-27b`; Heretic, Bonsai, Qwen3.5, and legacy Qwen remain blocked.
+- Fast-lane context is raised from 16K to 32K.
+
+Verified earlier on 2026-08-15:
 
 Verified on 2026-08-15, small-lane swap:
 
@@ -90,13 +96,12 @@ Verified on 2026-08-10:
 Still awaiting proof or approval:
 
 - Audible brief/proactive speech through a real installed-app conversation, not just worker-level WAV proof.
-- Live Qwen3.5-4B small-model replacement audition: current interim stays until a candidate passes multilingual short-reply conversation testing.
 - Manual review of the Mind panel, pat gesture feel, initiative wording, and streamed composer behavior.
 
 ## Hardware and Privacy
 
 - Host: 14-inch MacBook Pro, M5 Pro, 48 GB unified memory.
-- Fast model API: bundled MLX worker at `127.0.0.1:8112` (`mlx-community/Qwen3.5-4B-MLX-4bit`).
+- Fast model API: bundled MLX worker at `127.0.0.1:8112` (`LiquidAI/LFM2.5-VL-3B-MLX-4bit`).
 - Deep/research model API: external Rapid-MLX worker at `127.0.0.1:8110` (`qwen3.8-27b-4bit`).
 - Embedding model API: LM Studio at `127.0.0.1:1234`.
 - Research search: `127.0.0.1:8082`, then Unraid `192.168.0.120:8082`.

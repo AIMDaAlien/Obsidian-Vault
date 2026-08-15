@@ -7,43 +7,28 @@ updated: 2026-08-15
 
 ## Current Runtime
 
-- Fast/default model: `mlx-community/Qwen3.5-4B-MLX-4bit` on `127.0.0.1:8112`.
+- Fast/default model: `LiquidAI/LFM2.5-VL-3B-MLX-4bit` on `127.0.0.1:8112`.
 - Deliberate lane: `qwen3.8-27b-4bit` on `127.0.0.1:8110`.
 - Embedding model: Nomic Embed Text v1.5 as `veyra-embed` on LM Studio `127.0.0.1:1234`.
-- Bonsai is removed from the runtime.
-- Conversation model allowlisting permits only the intended Qwen3.5-4B and Qwen3.8-27B runtime IDs; Heretic and legacy Qwen remain blocked.
-- `VEYRA_FAST_MODEL` and `VEYRA_DELIBERATE_MODEL` are honored only when they pass the allowlist.
+- Qwen3.5-4B and Bonsai are removed from the runtime.
+- Conversation model allowlisting is split by lane: fast permits only `lfm2.5-vl-3b` and deliberate permits only `qwen3.8-27b`; Heretic and legacy Qwen remain blocked.
+- `VEYRA_FAST_MODEL` and `VEYRA_DELIBERATE_MODEL` are honored only when they pass their lane-specific allowlists.
 
 ## Routing Rules
 
 | Mode | Model | Endpoint | Context |
 |---|---|---|---|
-| Brief, normal, proactive | Qwen3.5-4B | `127.0.0.1:8112` | 16K |
+| Brief, normal, proactive | LFM2.5-VL-3B | `127.0.0.1:8112` | 32K |
 | Deep, creative, research | Qwen3.8-27B | `127.0.0.1:8110` | 32K |
 | Embeddings | `veyra-embed` | `127.0.0.1:1234` | 2K |
 
-Visual awareness is a separate Qwen3.5-4B call: a downscaled local frame becomes a concise factual text description in `awarenessContext`. Qwen3.8 never receives the image.
+Visual awareness is a separate LFM2.5-VL-3B call: a downscaled local frame becomes a concise factual text description in `awarenessContext`. Qwen3.8 never receives the image.
 
-## Small-Model Replacement Shortlist
+## Small-Model Replacement Resolved
 
-Qwen3.5-4B is the interim fast model until a replacement passes live multilingual conversation testing.
+LFM2.5-VL-3B is the new fast/vision model, not an interim placeholder. It replaced Qwen3.5-4B after passing the multilingual short-reply and screenshot audition.
 
-Known MLX candidates under roughly 4 GB:
-
-| Candidate | Resident size | Notes |
-|---|---|---|
-| `mlx-community/Qwen3.5-4B-MLX-4bit` | ~2.9 GB | Multimodal; current interim; verified for brief/normal and visual description |
-| `mlx-community/Ministral-3-3B-Instruct-2512-4bit` | ~2.6 GB | Next multilingual short-reply candidate |
-| `mlx-community/LFM2.5-1.2B-Instruct-4bit` | small | Public MLX-community candidate; reports English, Arabic, Japanese, and other language support |
-| `mlx-community/granite-4.1-3b-4bit` | ~2.0 GB | Lower confidence for Arabic and Japanese naturalness |
-
-Recommended ranking:
-
-1. Qwen3.5-4B first because it is multimodal and already verified.
-2. Ministral or LFM2.5 as the next audition candidates.
-3. Granite lower priority until Arabic/Japanese short-reply quality is shown.
-
-Rank by multilingual naturalness, resident size, MLX support, and time-to-first-token. Keep Qwen3.5-4B as interim until a replacement passes live conversation testing.
+The prior shortlist is closed. Qwen3.5-4B remains cached on disk for rollback only and is no longer a valid runtime conversation model.
 
 ## Qualitative Research Agent
 
@@ -96,6 +81,6 @@ Never intentionally sent to search engines or fetched websites:
 - LAN addresses.
 - Unrelated personal context.
 
-Screen frames remain in memory and are only read locally by Qwen3.5-4B. They are never persisted by Veyra and never sent to the external Qwen3.8 service or to the internet.
+Screen frames remain in memory and are only read locally by LFM2.5-VL-3B. They are never persisted by Veyra and never sent to the external Qwen3.8 service or to the internet.
 
 Search-query sanitization removes local paths and LAN addresses. A result fetch also rejects private network targets to prevent SearXNG results from becoming an SSRF path.

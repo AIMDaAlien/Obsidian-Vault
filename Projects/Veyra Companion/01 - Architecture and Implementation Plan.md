@@ -1,6 +1,6 @@
 ---
 project: Veyra Companion
-status: Small-lane model routing live; TTS external-output-only; Bonsai removed
+status: LFM2.5-VL-3B small-lane routing live; TTS external-output-only; Qwen3.5-4B and Bonsai removed
 updated: 2026-08-15
 ---
 
@@ -11,7 +11,7 @@ updated: 2026-08-15
 ```mermaid
 flowchart LR
     Cursor[Cursor and touch geometry] --> Runtime[Veyra runtime]
-    Screen[ScreenCaptureKit] --> Vision[Qwen3.5-4B vision]
+    Screen[ScreenCaptureKit] --> Vision[LFM2.5-VL-3B vision]
     Vision --> Awareness[awarenessContext]
     Apps[NSWorkspace app events] --> Runtime
     CLI[Codex and tool event CLI] --> Mind[(Veyra Mind SQLite)]
@@ -22,7 +22,7 @@ flowchart LR
     Router --> Research[Bounded research agent]
     Research --> LocalSearX[Local SearXNG]
     Research --> UnraidSearX[Unraid SearXNG fallback]
-    Router --> Fast[Qwen3.5-4B bundled worker :8112]
+    Router --> Fast[LFM2.5-VL-3B bundled worker :8112]
     Router --> Deep[Qwen3.8-27B external worker :8110]
     Fast --> Stream[Streamed written reply]
     Deep --> Stream
@@ -46,20 +46,20 @@ flowchart LR
 - Nomic embeddings supplement lexical retrieval. Linear cosine search is intentional for a single-user database.
 - `ResearchAgent` performs at most three search/evidence rounds and keeps at most eight sources.
 - Immediate app events remain authoritative over model mood.
-- Screen awareness is permission-gated. When enabled, a downscaled frame is sent to Qwen3.5-4B for a concise textual description; raw frames are never persisted and are never sent to Qwen3.8.
+- Screen awareness is permission-gated. When enabled, a downscaled frame is sent to LFM2.5-VL-3B for a concise textual description; raw frames are never persisted and are never sent to Qwen3.8.
 - Foreground-app and CLI work events enter the same activity ledger used by conversation context.
 
 ## Model Lanes
 
 | Lane | Model | Endpoint | Notes |
 |---|---|---|---|
-| Brief, normal, proactive, visual awareness | `mlx-community/Qwen3.5-4B-MLX-4bit` | `127.0.0.1:8112` | Bundled MLX worker started, warmed, and terminated with Veyra |
+| Brief, normal, proactive, visual awareness | `LiquidAI/LFM2.5-VL-3B-MLX-4bit` | `127.0.0.1:8112` | Bundled MLX worker started, warmed, and terminated with Veyra; 32K context |
 | Deep, creative, research | `qwen3.8-27b-4bit` | `127.0.0.1:8110` | External Rapid-MLX service; Veyra checks and warns but does not manage it |
 | Embeddings | Nomic Embed Text v1.5 as `veyra-embed` | `127.0.0.1:1234` | LM Studio remains embeddings-only |
 
-- Bonsai is removed from the runtime. Conversation allowlisting accepts only the intended Qwen3.5-4B and Qwen3.8-27B runtime IDs; Heretic and legacy Qwen remain blocked.
+- Qwen3.5-4B and Bonsai are removed from the runtime. Conversation allowlisting is split by lane: fast accepts only `lfm2.5-vl-3b` and deliberate accepts only `qwen3.8-27b`; Heretic and legacy Qwen remain blocked.
 - Research continues through `ResearchAgent`, using Qwen3.8 on `8110`.
-- When a screenshot exists, Qwen3.5-4B writes a short factual screen description into `awarenessContext`. The image is not sent to Qwen3.8.
+- When a screenshot exists, LFM2.5-VL-3B writes a short factual screen description into `awarenessContext`. The image is not sent to Qwen3.8.
 - Before `ResearchAgent.run`, Veyra shows a non-blocking warning: “Close heavy apps before research.”
 
 ## Bundled Speech Runtime
@@ -93,15 +93,14 @@ These are safety ceilings, not target lengths. There is no universal 180-token c
 - Verify L01N8A exclusion, 0-point left margin, 15-point composer gap, streaming, Mind panel, and text sizing.
 - Tune pat distance/speed only from physical use.
 
-### Phase 2 — Small-model replacement audition
+### Phase 2 — Small-model replacement resolved
 
-- Qwen3.5-4B is the verified interim fast/vision model.
-- Rank MLX-available sub-4GB candidates by multilingual naturalness, resident size, MLX support, and time-to-first-token.
-- Keep the interim until a replacement passes live brief/normal conversation testing in English, Arabic, and Japanese.
+- LFM2.5-VL-3B is the verified fast/vision model, promoted from the small-model replacement shortlist.
+- It replaced Qwen3.5-4B after passing the multilingual short-reply and screenshot audition.
 
 ### Phase 3 — Awareness and TTS refinement
 
-- Visual awareness now uses Qwen3.5-4B text descriptions instead of OCR. Remaining work is tuning proactive interventions from real use and validating explicit “what can you see?” behavior without persisting the frame.
+- Visual awareness now uses LFM2.5-VL-3B text descriptions instead of OCR. Remaining work is tuning proactive interventions from real use and validating explicit “what can you see?” behavior without persisting the frame.
 - Subjective emotional acceptance of brief/proactive speech on real external audio remains open.
 
 ## Acceptance Gates
