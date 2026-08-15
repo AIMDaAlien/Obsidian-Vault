@@ -7,6 +7,38 @@ updated: 2026-08-15
 
 Historical entries below retain their exact former identifiers and commit titles. Current names are recorded here.
 
+## 2026-08-15 — Small-Lane Speech and Model Swap
+
+### Implemented
+
+- Added a bundled Qwen3.5-4B MLX worker on `127.0.0.1:8112` that Veyra starts, warms through `/v1/models`, and terminates on shutdown.
+- Routed brief/normal/proactive and visual awareness through Qwen3.5-4B; deep/creative/research continue through external Qwen3.8-27B on `127.0.0.1:8110`.
+- Kept embeddings on LM Studio `127.0.0.1:1234` only.
+- Removed Bonsai from the runtime and restricted conversation model allowlisting to `qwen3.5-4b` and `qwen3.8-27b`; Heretic and legacy Qwen remain blocked.
+- Replaced send-time OCR/image context with a concise Qwen3.5-4B screen description written into `awarenessContext`; Qwen3.8 never receives the image.
+- Added the non-blocking research warning “Close heavy apps before research.” before `ResearchAgent.run`.
+- Kept speech limited to brief replies plus proactive check-ins and external-output-only.
+- Fixed shutdown orphaning so `VeyraRuntime.stop()` terminates the speech and fast-model workers synchronously.
+- Tightened casual reply length: brief is one or two sentences at most 30 words, normal is two to four sentences at most 80 words, with token ceilings lowered to `256` and `768`.
+
+### Proof
+
+- 44 Swift tests pass after the shutdown patch.
+- Speech worker `--self-test` passes; `DEFAULT_MODEL` remains `mlx-community/fish-audio-s2-pro`.
+- Installed-app core checks pass for brief, normal, deep, and research.
+- Qwen3.5-4B visual QA correctly identified the active terminal window and command text without hallucinating missing content.
+- Installed speech worker `/v1/warm` returns `204`; `/v1/speech` returns 24 kHz mono PCM16.
+- `--diagnose` reports `Nothing Ear` as the eligible external output; built-in routes remain blocked.
+- Cached 8-bit Fish S2 Pro benchmark on isolated `8124`: 24 kHz mono PCM16, no clipping, median speed `0.982x`, but warm `4.05s` failed the required `<= 3.5s`. Not promoted.
+- Installed-app brevity smoke: `me:hair` returned one short sentence with no question; a normal-lane request returned a direct multi-sentence reply under the new guidance.
+
+### Open Gates
+
+- Rebuild/package/install must be rerun after the shutdown patch and the installed app smoke-checked again.
+- Subjective brief/proactive speech acceptance on real external audio remains open.
+- Live small-model replacement audition remains open; Qwen3.5-4B stays interim until a candidate passes multilingual conversation testing.
+- Long-run worker termination, memory, and idle/coexistence checks remain open.
+
 ## 2026-08-15 — Bundled Fish S2 Pro Speech Runtime and External-Only Routing
 
 ### Implemented

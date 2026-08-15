@@ -1,37 +1,49 @@
 ---
 project: Veyra Companion
-updated: 2026-08-10
+updated: 2026-08-15
 ---
 
 # Models, Research, and Privacy
 
 ## Current Runtime
 
-- Fast/default model: `prism-ml/bonsai-27b` as LM Studio alias `veyra-fast`.
-- Context: 16K.
-- MTP load flag: enabled where accepted by LM Studio.
-- Embedding model: Nomic Embed Text v1.5 as `veyra-embed`, 2K context.
-- Deliberate lane: optional through `VEYRA_DELIBERATE_MODEL`; not selected until benchmark approval.
-- API bind: `127.0.0.1:1234`.
+- Fast/default model: `mlx-community/Qwen3.5-4B-MLX-4bit` on `127.0.0.1:8112`.
+- Deliberate lane: `qwen3.8-27b-4bit` on `127.0.0.1:8110`.
+- Embedding model: Nomic Embed Text v1.5 as `veyra-embed` on LM Studio `127.0.0.1:1234`.
+- Bonsai is removed from the runtime.
+- Conversation model allowlisting permits only the intended Qwen3.5-4B and Qwen3.8-27B runtime IDs; Heretic and legacy Qwen remain blocked.
+- `VEYRA_FAST_MODEL` and `VEYRA_DELIBERATE_MODEL` are honored only when they pass the allowlist.
 
-The old Veyra-tuned Qwen3.6-35B-A3B MXFP4 path is documented but the local weights are currently absent.
+## Routing Rules
 
-## Model Selection Candidates
+| Mode | Model | Endpoint | Context |
+|---|---|---|---|
+| Brief, normal, proactive | Qwen3.5-4B | `127.0.0.1:8112` | 16K |
+| Deep, creative, research | Qwen3.8-27B | `127.0.0.1:8110` | 32K |
+| Embeddings | `veyra-embed` | `127.0.0.1:1234` | 2K |
 
-- Qwen3.6-35B-A3B Q2 MLX plus compatible MTP drafter.
-- Veyra-tuned Qwen3.6-35B-A3B MXFP4.
-- Qwen3.6-35B-A3B OptiQ 4-bit MTP.
-- Bonsai 27B 2-bit.
-- Official Qwen3.6-27B 4-bit.
+Visual awareness is a separate Qwen3.5-4B call: a downscaled local frame becomes a concise factual text description in `awarenessContext`. Qwen3.8 never receives the image.
 
-Selection requires measured warm first-token latency, decode speed, structured-output reliability, memory pressure, prompt-copying resistance, long-form coherence, coaching quality, creative constraint-following, and source faithfulness.
+## Small-Model Replacement Shortlist
 
-References:
+Qwen3.5-4B is the interim fast model until a replacement passes live multilingual conversation testing.
 
-- [Qwen3.6-35B-A3B model card](https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/README.md)
-- [MLX MTP drafter](https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-MTP-bf16/blob/main/README.md)
-- [LM Studio Responses API](https://lmstudio.ai/docs/developer/openai-compat/responses)
-- [LM Studio structured output](https://beta.lmstudio.ai/docs/developer/openai-compat/structured-output)
+Known MLX candidates under roughly 4 GB:
+
+| Candidate | Resident size | Notes |
+|---|---|---|
+| `mlx-community/Qwen3.5-4B-MLX-4bit` | ~2.9 GB | Multimodal; current interim; verified for brief/normal and visual description |
+| `mlx-community/Ministral-3-3B-Instruct-2512-4bit` | ~2.6 GB | Next multilingual short-reply candidate |
+| `mlx-community/LFM2.5-1.2B-Instruct-4bit` | small | Public MLX-community candidate; reports English, Arabic, Japanese, and other language support |
+| `mlx-community/granite-4.1-3b-4bit` | ~2.0 GB | Lower confidence for Arabic and Japanese naturalness |
+
+Recommended ranking:
+
+1. Qwen3.5-4B first because it is multimodal and already verified.
+2. Ministral or LFM2.5 as the next audition candidates.
+3. Granite lower priority until Arabic/Japanese short-reply quality is shown.
+
+Rank by multilingual naturalness, resident size, MLX support, and time-to-first-token. Keep Qwen3.5-4B as interim until a replacement passes live conversation testing.
 
 ## Qualitative Research Agent
 
@@ -40,9 +52,11 @@ Research is not a single search-summary call. The implemented harness performs:
 1. A sanitized initial query.
 2. SearXNG search and public-page retrieval.
 3. An evidence ledger with source title, URL, snippet, and bounded excerpt.
-4. A local-model gap evaluation covering credibility, missing evidence, and disagreement.
+4. A Qwen3.8 gap evaluation covering credibility, missing evidence, and disagreement.
 5. Up to two follow-up rounds.
 6. A cited local synthesis with a deterministic source appendix.
+
+Before research begins, Veyra shows a non-blocking warning: “Close heavy apps before research.”
 
 Limits:
 
@@ -77,10 +91,11 @@ Allowed to leave the LAN during research:
 Never intentionally sent to search engines or fetched websites:
 
 - Veyra memories or raw transcript history.
-- Screenshots or OCR dumps.
+- Raw screen frames or local visual descriptions.
 - Local filesystem paths.
 - LAN addresses.
 - Unrelated personal context.
 
-Search-query sanitization removes local paths and LAN addresses. A result fetch also rejects private network targets to prevent SearXNG results from becoming an SSRF path.
+Screen frames remain in memory and are only read locally by Qwen3.5-4B. They are never persisted by Veyra and never sent to the external Qwen3.8 service or to the internet.
 
+Search-query sanitization removes local paths and LAN addresses. A result fetch also rejects private network targets to prevent SearXNG results from becoming an SSRF path.

@@ -27,6 +27,7 @@ Implemented:
 - Dedicated and portable display layouts, composer text sizing, and transparent-pixel hit testing.
 - Fast brief/normal conversation through a bundled Qwen3.5-4B MLX worker on `127.0.0.1:8112`; deep, creative, and research conversation through external Qwen3.8-27B on `127.0.0.1:8110`; embeddings through LM Studio on `127.0.0.1:1234`.
 - Automatic brief, normal, deep, creative, and research response modes.
+- Casual replies are brevity-constrained: brief is one or two sentences at most 30 words, normal is two to four sentences at most 80 words; deep, creative, and research keep their longer ceilings.
 - SQLite conversation, memory, commitment, activity, and embedding storage.
 - Editable Mind panel.
 - Cursor, poke-pressure, pat, idle-affect, foreground-app, visual screen context, and external development-event awareness.
