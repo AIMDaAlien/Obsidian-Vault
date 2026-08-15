@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T20:25:48Z",
+  "generated_at": "2026-08-15T21:40:53Z",
   "tree": [
     {
       "path": "README.md",
@@ -3087,7 +3087,7 @@
     },
     "Projects/Veyra Companion/00 - Project Overview.md": {
       "project": "Veyra Companion",
-      "status": "Signed AppKit build installed; bundled Fish S2 Pro speech enabled on external output; MacBook speakers blocked; visual-reply proof pending",
+      "status": "Installed build; Qwen3.5-4B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted",
       "repository": "/Users/aim/Downloads/Veyra_Companion_Sprites",
       "platform": "macOS",
       "updated": "2026-08-15",
@@ -3095,7 +3095,7 @@
     },
     "Projects/Veyra Companion/01 - Architecture and Implementation Plan.md": {
       "project": "Veyra Companion",
-      "status": "Packaged app installed; hardware and model-selection gates open",
+      "status": "Small-lane model routing live; TTS external-output-only; Bonsai removed",
       "updated": "2026-08-15",
       "title": "Architecture and Implementation Plan"
     },
