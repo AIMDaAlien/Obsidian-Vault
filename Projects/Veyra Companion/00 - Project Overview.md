@@ -1,9 +1,9 @@
 ---
 project: Veyra Companion
-status: Signed AppKit build installed; portrait and Screen Recording verified; visual-reply proof pending
+status: Signed AppKit build installed; bundled Fish S2 Pro speech enabled on external output; MacBook speakers blocked; visual-reply proof pending
 repository: /Users/aim/Downloads/Veyra_Companion_Sprites
 platform: macOS
-updated: 2026-08-11
+updated: 2026-08-15
 ---
 
 # Veyra Companion
@@ -36,12 +36,20 @@ Implemented:
 - Persistent composer restoration from SQLite, transient touch status, single-family sprite transitions, and observation-driven expression feedback with cooldowns.
 - Permission-safe screen awareness: launch preflight only, plus a deliberate enable action in Mind Settings.
 - Visual context replaces OCR: the latest non-Veyra display frame is reduced to a 768-pixel long edge, JPEG-compressed, and attached to the existing local Bonsai vision request only when Aim sends a message. Frames are not stored.
+- Bundled Fish S2 Pro TTS with `EN-H`/`JA-B`/`AR-O`, whole mixed-language lines, external-output-only playback, and a hard MacBook-speaker block.
 - Mind uses the Field Notes palette, human-readable rows, useful empty states, current visual-context/privacy status, and hides stale OCR/error dumps when capture is disabled.
 - Approved Field Notes Margin Companion in native AppKit: 593/687 dedicated-display split, 64/620/116 composer regions, large chronological turn rows, paper/ink styling, and New Topic/Mind-only permanent header controls.
 - The dedicated layout now uses separate borderless windows for the transparent 593×800 portrait stage and opaque 687×800 composer. Aim physically confirmed Veyra is visible again with the desktop background showing through.
 - SQLite topics with one-active-topic enforcement, historical-message migration, active-topic inference isolation, exact transcript restoration, and cancelled partial-output preservation.
 - Return sends, Shift-Return inserts a newline, `Command-N` creates a topic, and text sizing lives in Mind while retaining `Command-Plus`/`Command-Minus`.
 - Research writes a standalone Markdown report under `~/Documents/Veyra Research/` and returns a clickable local file pointer in chat.
+
+Verified on 2026-08-15:
+
+- 44 Swift tests pass, including stage-cue removal, mixed-language handling, and external-output classification.
+- Worker self-test, release build, package, codesign, bundled-worker hash, and selected-voice SHA-256 checks pass.
+- The installed app starts the bundled worker on `127.0.0.1:8123`; warm returns `204` and generated audio is 24 kHz mono PCM16 with no clipping.
+- `Nothing Ear` is the active external default, so speech is live; MacBook Pro Speakers and other built-in routes are rejected.
 
 Verified on 2026-08-11:
 

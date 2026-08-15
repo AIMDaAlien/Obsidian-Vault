@@ -1,11 +1,34 @@
 ---
 project: Veyra Companion
-updated: 2026-08-11
+updated: 2026-08-15
 ---
 
 # Build and Verification Record
 
 Historical entries below retain their exact former identifiers and commit titles. Current names are recorded here.
+
+## 2026-08-15 — Bundled Fish S2 Pro Speech Runtime and External-Only Routing
+
+### Implemented
+
+- Added a bundled Python stdlib speech worker for `mlx-community/fish-audio-s2-pro` with `warm`, `speech`, and `unload` endpoints.
+- Mapped the selected identities `EN-H`, `JA-B`, and `AR-O` to their retained anchor WAVs and reference texts.
+- Added `BundledSpeechWorker` to start and stop the worker from the installed app.
+- Enabled speech by default while keeping the manual Mind toggle available.
+- Hard-blocked built-in audio routes, including MacBook Pro Speakers; playback requires an eligible external output.
+- Kept mixed-language replies as one synthesis pass and stripped `[stage cues]` before synthesis.
+
+### Proof
+
+- 44 Swift tests pass.
+- Worker self-test, release build, package, strict codesign, bundled-worker hash, and selected-voice SHA-256 checks pass.
+- Installed `~/Applications/Veyra Companion.app` and confirmed the running app started the worker on `127.0.0.1:8123`.
+- Live worker: warm `204`; EN, AR, JA, and mixed lines returned 24 kHz mono PCM16 with no clipping.
+- Measured warmed latency: EN p95 2.90s at 0.625x; AR 2.99s at 0.622x; JA 2.64s at 0.615x.
+
+### Open Gates
+
+- Subjective emotional listening and long-run memory/idle/coexistence checks remain open.
 
 ## 2026-08-11 — Portrait Compositor and Visual Context Repair
 

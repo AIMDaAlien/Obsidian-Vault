@@ -1,10 +1,29 @@
 ---
 project: Veyra Companion
 type: troubleshooting-log
-updated: 2026-08-11
+updated: 2026-08-15
 ---
 
 # Troubleshooting and Findings Log
+
+## 2026-08-15 — Fish S2 Pro Worker Runtime Fixes
+
+### Findings
+
+- Passing the anchor path directly to Fish failed because the installed `mlx_audio` adapter expects a loaded MLX audio array, not a file path.
+- `ThreadingHTTPServer` failed synthesis with a thread-local MLX stream error; a single-threaded `HTTPServer` keeps model load and generation on one thread.
+
+### Fix
+
+- Warm loads the model and each selected anchor into memory at the model sample rate.
+- Synthesis randomizes the MLX seed, generates the whole cleaned line in one pass, resamples to 24 kHz mono PCM16, and normalizes below clipping.
+- The worker rejects unknown voice IDs and fails closed on missing anchors or synthesis errors.
+
+### Decision
+
+- Speech is enabled by default but only when CoreAudio reports an eligible external output.
+- MacBook Pro Speakers and all other built-in routes are hard-blocked before playback.
+- Mixed-language lines stay whole; the anchor follows Arabic → Japanese → English priority.
 
 ## 2026-08-11 — Missing Portrait on L01N8A
 

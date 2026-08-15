@@ -1,7 +1,7 @@
 ---
 project: Veyra Companion
 status: Packaged app installed; hardware and model-selection gates open
-updated: 2026-08-11
+updated: 2026-08-15
 ---
 
 # Architecture and Implementation Plan
@@ -22,6 +22,8 @@ flowchart LR
     Research --> UnraidSearX[Unraid SearXNG fallback]
     Router --> LM[LM Studio local model]
     LM --> Stream[Streamed written reply]
+    Stream --> TTS[Fish S2 Pro bundled worker]
+    TTS --> Audio[Eligible external output only]
     LM --> Appraisal[Background mood and memory appraisal]
     Appraisal --> Mind
     Appraisal --> Arbiter[Expression arbiter]
@@ -41,6 +43,15 @@ flowchart LR
 - Immediate app events remain authoritative over model mood.
 - Screen OCR runs at most every two seconds; capture is limited to one frame per second and excludes Veyra's windows and dedicated display.
 - Foreground-app and CLI work events enter the same activity ledger used by conversation context.
+
+## Bundled Speech Runtime
+
+- TTS is enabled by default and reads only the final cleaned conversational line from the local text LLM.
+- `SpeechPolicy` keeps a mixed-language line whole and chooses Arabic → Japanese → English for the anchor voice.
+- The bundled Fish S2 Pro worker maps `EN-H`, `JA-B`, and `AR-O` to their selected anchor WAVs and synthesizes the whole line in one pass.
+- Audio playback is allowed only when CoreAudio reports an eligible external output. Built-in routes, including MacBook Pro Speakers, always fail closed.
+- The worker is bundled under `Contents/Resources/SpeechWorker`; the model weights and Python environment remain in their existing external caches.
+- Measured cold warm is about 3.3–3.9 seconds; warmed short replies are about 2.6–5.8 seconds at roughly 0.6× real time.
 
 ## Response Budgets
 
