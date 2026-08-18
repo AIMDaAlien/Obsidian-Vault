@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T16:21:40Z",
+  "generated_at": "2026-08-18T16:45:40Z",
   "tree": [
     {
       "path": "README.md",
@@ -1103,14 +1103,6 @@
     },
     {
       "path": "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/Sovereign AI Stack/Qwen3.8 Engine Benchmark.md",
-      "type": "file"
-    },
-    {
-      "path": "Projects/Sovereign AI Stack/Qwen3.8 Runtime Shootout.md",
       "type": "file"
     },
     {
@@ -2609,14 +2601,8 @@
     "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md": {
       "title": "Project Status - Sovereign AI Stack"
     },
-    "Projects/Sovereign AI Stack/Qwen3.8 Engine Benchmark.md": {
-      "title": "Qwen3.8-27B — Engine & Quant Benchmark (M5 Pro)"
-    },
-    "Projects/Sovereign AI Stack/Qwen3.8 Runtime Shootout.md": {
-      "title": "Qwen3.8-27B — Runtime & Quant Shootout (M5 Pro)"
-    },
     "Projects/Sovereign AI Stack/Qwen3.8-27B.md": {
-      "title": "Qwen3.8-27B — Deployment & Benchmark vs Qwen3.6"
+      "title": "Qwen3.8-27B — Deploy, Benchmarks, Verdict"
     },
     "Projects/Sovereign AI Stack/Setup Tutorial - Sovereign AI Stack.md": {
       "title": "Setup Tutorial - Sovereign AI Stack"
@@ -3753,6 +3739,7 @@
       "LFM2.5-2.6B"
     ],
     "Projects/Sovereign AI Stack/LLM Benchmark Registry - Mac vs Unraid.md": [
+      "Qwen3.8-27B",
       "Gemma 4 12B QAT Q8",
       "Gemma 4 12B QAT Q4",
       "LFM2.5-8B-A1B",
