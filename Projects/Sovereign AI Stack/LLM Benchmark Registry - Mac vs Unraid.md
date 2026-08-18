@@ -21,6 +21,7 @@
 
 | Model | Quant | Size | RAM RSS | tps | Full 76 | Text 58 | Knowledge | Research | Planning | Summary |
 |---|---|---|---|---|---|---|---|---|---|---|
+| [[Qwen3.8-27B]] | MLX 4-bit | 16.1 GB | ~2 GB idle | 14-15 | — | — | — | — | — | — |
 | [[Gemma 4 12B QAT Q8]] | 8-bit | 11.9 GB | 4.7–13 GB | ~7 | 68/76 (89.5%) | 55/58 (94.8%) | 40/40 | 6/6 | 8/8 | 1/4 |
 | [[Gemma 4 12B QAT Q4]] | 4-bit | 10.3 GB | 9.7 GB | ~7.4 | 66/76 (86.8%) | 55/58 (94.8%) | 40/40 | 6/6 | 8/8 | 1–2/4 |
 | [[LFM2.5-8B-A1B]] | MLX 8-bit | 8.4 GB | 9.1 GB | 107 | — | 53/58 (91.4%) | 39/40 | 6/6 | 8/8 | 1–2/4 |
@@ -29,6 +30,8 @@
 | [[Maple-Preview 20B]] | 2-bit ternary | 5.3 GB | 2.2 GB | 172.5 | — | 46/58 (79.3%) | 38/40 | 0/6* | 7/8 | 1/4 |
 
 \* Maple research 0/6 = runtime limitation (mlx-lm server has no native tools). It refused to fabricate the FIFA answer — honest non-fabrication, counted as miss by the harness.
+
+Note: Qwen3.8 scored 308/317 on the 317-question fingerprint battery + 17/17 hard-agentic — see [[Qwen3.8-27B]] for the full suite. It sits outside the 76/58 legacy batteries (superseded by the 317-question bank).
 
 ## Scores — Unraid (128 GB + RTX 3060)
 
@@ -49,6 +52,7 @@
 
 ## Related
 
+- [[Qwen3.8-27B]]
 - [[Gemma 4 12B QAT Q8]]
 - [[Gemma 4 12B QAT Q4]]
 - [[LFM2.5-8B-A1B]]
