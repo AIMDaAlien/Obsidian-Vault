@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T22:25:56Z",
+  "generated_at": "2026-08-18T16:21:40Z",
   "tree": [
     {
       "path": "README.md",
@@ -1103,6 +1103,14 @@
     },
     {
       "path": "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Qwen3.8 Engine Benchmark.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Qwen3.8 Runtime Shootout.md",
       "type": "file"
     },
     {
@@ -2600,6 +2608,12 @@
     },
     "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md": {
       "title": "Project Status - Sovereign AI Stack"
+    },
+    "Projects/Sovereign AI Stack/Qwen3.8 Engine Benchmark.md": {
+      "title": "Qwen3.8-27B — Engine & Quant Benchmark (M5 Pro)"
+    },
+    "Projects/Sovereign AI Stack/Qwen3.8 Runtime Shootout.md": {
+      "title": "Qwen3.8-27B — Runtime & Quant Shootout (M5 Pro)"
     },
     "Projects/Sovereign AI Stack/Qwen3.8-27B.md": {
       "title": "Qwen3.8-27B — Deployment & Benchmark vs Qwen3.6"
