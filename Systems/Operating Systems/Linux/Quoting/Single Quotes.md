@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Prevent the shell from doing any interpreting of special chars including globs, variables, command substitution, and other metachars.
 
 For example, to make the `$` simply mean a `$`, rather than an indicator to the shell to look for value of variable, execute the second command displayed below:

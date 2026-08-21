@@ -1,3 +1,6 @@
+---
+tags: []
+---
 # Personal Setup
 
 #systems #setup #index

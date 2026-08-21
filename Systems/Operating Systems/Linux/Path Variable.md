@@ -1,3 +1,6 @@
+---
+tags: []
+---
 The `PATH` variable is an essential [[Bash]] shell variable which contains a list that defines which [[Directories inside Linux file system]] the shell looks in to find cmds. If a valid cmd is entered and the shell returns a "command not found", its because the Bash shell was unable to locate a cmd by that name in any directories in that path. 
 
 The following command displays the path of the current shell:

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ![[Pasted image 20230621201150.png]]
 
 With pipes, you can connect multiple cmds to chain simpler, repetitive tasks and create new solutions. 

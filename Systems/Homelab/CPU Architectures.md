@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ### X 86 Pros:
 - Compatibility
 - Performance 

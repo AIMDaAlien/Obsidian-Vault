@@ -1,3 +1,6 @@
+---
+tags: [session-log, checklist]
+---
 # 2026-06-27 Home Lab Restoration & Expansion
 
 ## what happened

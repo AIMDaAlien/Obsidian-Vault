@@ -1,3 +1,6 @@
+---
+tags: [hardware-constraints]
+---
 ### Useful as a [[Home Server]] in your [[Home Lab]].
 
 1. **Desktop Replacement**: lightweight desktop for basic web browsing and coding

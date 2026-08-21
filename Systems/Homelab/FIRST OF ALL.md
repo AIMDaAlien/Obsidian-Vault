@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Document anything useful that makes you stand out among others
 
 - Showing off your [[Home Lab]] into the web site that you created

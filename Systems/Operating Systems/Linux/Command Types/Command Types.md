@@ -1,3 +1,6 @@
+---
+tags: []
+---
 A way to learn more about a cmd is to look at its origins. The `type` cmd can be used to determine info about cmd type.
 
 `type cmd ` 

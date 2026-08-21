@@ -1,3 +1,6 @@
+---
+tags: []
+---
 *Creating an archive with `tar` requires two named options:*
 `-c`  -- Create an archive
 `-f ARCHIVE`  -- use archive file 

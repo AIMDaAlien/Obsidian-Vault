@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Relative paths start from the current directory. It gives directions to a file to the current directory in the filesystem. They don't start with / but rather with the name of the directory contained within the current directory. 
 
 The argument is an example of the simplest relative path

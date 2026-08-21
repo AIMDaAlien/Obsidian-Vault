@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ###### Used to map larger cmds to shorter key sequences. When the shell sees an alias being executed, it substitutes the longer sequence before proceeding to interpret cmds. 
 
 For example, the cmd `ls -l` is commonly aliased as `l` or `ll`.  Because these smaller cmds are easier to type, it becomes faster to run the `ls -l` cmd line.

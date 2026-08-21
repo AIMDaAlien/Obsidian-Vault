@@ -1,3 +1,6 @@
+---
+tags: []
+---
 
 *Local  or shell variables* only exist in the current shell. When the user closes a terminal window or shell, all of the variables are lost.
 They are often associated with user based tasks and are lowercase by convention.

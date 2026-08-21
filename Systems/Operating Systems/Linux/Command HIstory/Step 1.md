@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Execute a cmd then execute the `history` cmd
 
 `echo Hi`

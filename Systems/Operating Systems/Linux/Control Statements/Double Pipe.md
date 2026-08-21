@@ -1,3 +1,6 @@
+---
+tags: []
+---
 `command1 || command2`
 
 ###### The double pipe `||` is a logical "or". Depending on the result of the first command, the second command will either run or be skipped.

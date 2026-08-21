@@ -1,3 +1,6 @@
+---
+tags: [local-ai, hardware-constraints]
+---
 # Local AI Stack Research - Gemma 4 on M5 Pro
 
 > Research distilled from web sources, 2026-08-10. Separate from the benchmark registry.

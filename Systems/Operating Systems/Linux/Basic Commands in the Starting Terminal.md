@@ -1,3 +1,6 @@
+---
+tags: []
+---
 -  `clear` or  *ctrl+l*  -- to clear everything
 
 - `touch file1.txt ` -- to create a file 

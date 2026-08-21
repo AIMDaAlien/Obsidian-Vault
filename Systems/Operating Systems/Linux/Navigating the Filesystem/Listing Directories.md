@@ -1,3 +1,6 @@
+---
+tags: []
+---
 When `-d` is used with [[ls]] , it refers to the current directory, and not the contents within it. Without other options, its rather meaningless. Recall that the current directory is always referred to with [[The . Char]].
 
 ![[Pasted image 20230619052949.png]]

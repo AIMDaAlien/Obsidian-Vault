@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ##### Exporting allows the var to be accessible by other programs.
 ![[Pasted image 20230621195102.png]]
 ****Refer back to [[printenv]]***

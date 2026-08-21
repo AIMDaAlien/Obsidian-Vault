@@ -1,3 +1,6 @@
+---
+tags: [guide, monitoring, hardware-constraints]
+---
 # Systems
 
 Infrastructure, operating systems, networking, and tooling documentation.

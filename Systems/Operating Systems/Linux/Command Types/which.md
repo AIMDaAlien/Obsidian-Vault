@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Determines if there's an executable file . In this case, date that is located within a directory listed in the `PATH` value. (Also see [[Environment Variables]])
 
 `which date`

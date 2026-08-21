@@ -1,3 +1,6 @@
+---
+tags: []
+---
 `whereis` cmd (from [[Where Are These Commands Located]]) is specifically made to find cmds and man pages but not files or directories.
 
 To find file or directory, use `locate` to search a database of all files and directories that were on the system when the database was created.

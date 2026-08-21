@@ -1,3 +1,6 @@
+---
+tags: [hardware-constraints]
+---
 There are several other devices, beyond microcontrollers and Raspberry Pi boards, that are featureful and well-suited for learning and experimentation in the fields of IoT and operating systems. Here are some options:
 
 1. **BeagleBone:**

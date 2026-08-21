@@ -1,5 +1,5 @@
 ---
-tags: [unraid, hardware-swap, troubleshooting, homelab]
+tags: [unraid, hardware-swap, troubleshooting, homelab, session-log, reliability, hardware-constraints, checklist]
 created: 2026-06-20
 ---
 

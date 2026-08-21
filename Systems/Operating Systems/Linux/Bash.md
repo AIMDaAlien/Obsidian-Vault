@@ -1,3 +1,6 @@
+---
+tags: []
+---
 The Bash shell has other features:
 
 - **Scripting**:  The ability to place commands in a file and then interpret (effectively use bash to execute file contents of) file, resulting in all commands being executed. This feature also has programming features such as [[Conditional Logic]] and create functions.

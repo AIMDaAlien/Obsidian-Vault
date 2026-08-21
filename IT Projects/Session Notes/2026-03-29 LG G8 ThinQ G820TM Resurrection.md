@@ -1,18 +1,7 @@
 ---
 created: 2026-04-01
 modified: 2026-04-01
-tags:
-  - android
-  - hardware
-  - troubleshooting
-  - flashing
-  - EDL
-  - qualcomm
-  - LG
-  - LGUP
-  - ADB
-  - DAC
-  - repair
+tags: [android, hardware, troubleshooting, flashing, EDL, qualcomm, LG, LGUP, ADB, DAC, repair, session-log, hardening]
 privacy_scan: not_scanned
 published_to_garden: false
 visibility: private

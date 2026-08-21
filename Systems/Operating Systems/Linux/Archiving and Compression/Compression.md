@@ -1,3 +1,6 @@
+---
+tags: []
+---
 #### Benefits
 - When making a large number of files available, such as the source code to an application or a collection of documents, it is easier for people to download a compressed archive than it is to download files individually.
 - Log files have a habit of filling disks, so it is helpful to split them by date and compress older versions.

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 To be able to see the name of the kernel youre using, type the following cmd:
 `uname`
 

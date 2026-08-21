@@ -1,3 +1,6 @@
+---
+tags: [reliability, local-ai]
+---
 # Storage Cleanup & TM Backup Decisions
 
 > 2026-08-12. Mac storage freed 41G -> 83G free. Decisions made during cleanup.

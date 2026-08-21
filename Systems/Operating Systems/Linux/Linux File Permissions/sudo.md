@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Sudo is a cmd that stands for "superuser do!". 
 
 `sudo COMMAND`

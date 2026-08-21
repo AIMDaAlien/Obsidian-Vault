@@ -1,3 +1,6 @@
+---
+tags: [reliability]
+---
 **[[Archiving]]** -- Combines multiple files into one, which reduces the overhead in individual files and makes the files easier to transmit.
 
 **[[Compression]]** -- Makes the files smaller by removing redundant information

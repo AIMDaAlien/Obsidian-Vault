@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Everything in Linux is a file.
 
 To change perms, you use [[chmod]]. 

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 *Environment variables, aka global variables* are available system-wide in all shells used by [[Bash]] when interpreting commands and performing tasks. The system automatically recreates environment variables when new [[Shell]] are opened. 
 
 In simple words, [[Variables]] are defined only in a particular block. Outside that block, it's undefined. 

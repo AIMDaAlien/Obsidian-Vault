@@ -1,3 +1,6 @@
+---
+tags: [website-rebuild, hardening, portfolio-piece, checklist]
+---
 # Matrix-Decode Privacy Filter Implementation
 
 > **Tags**: #web-development #privacy #animation #javascript #css #github-pages #portfolio

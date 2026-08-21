@@ -1,4 +1,5 @@
 ---
+tags: [guide, hardening]
 garden_path: Router Configuration/02 - DNS Configuration.md
 last_published: '2025-11-30T20:04:52.594703'
 published_to_garden: true

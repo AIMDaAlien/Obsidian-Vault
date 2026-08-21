@@ -1,5 +1,5 @@
 ---
-tags: [github-pages, deployment, hosting, web-development, portfolio]
+tags: [github-pages, deployment, hosting, web-development, portfolio, troubleshooting, website-rebuild, hardening, portfolio-piece, checklist]
 created: 2025-10-01
 updated: 2026-08-01
 published_to_garden: true

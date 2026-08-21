@@ -1,3 +1,6 @@
+---
+tags: [checklist]
+---
 # Obsidian Productivity Mastery
 
 #obsidian #productivity #knowledge-management #hotkeys #workflow

@@ -1,3 +1,6 @@
+---
+tags: [reliability]
+---
 
 When an archive is decompressed, and one or more files are extracted this is called un-archiving.
 

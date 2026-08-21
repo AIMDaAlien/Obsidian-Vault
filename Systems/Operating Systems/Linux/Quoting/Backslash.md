@@ -1,3 +1,6 @@
+---
+tags: []
+---
 There's also an alternative to [[Single Quotes]] a single char. Consider the follwing message:
 `The service costs $1 and the path is $PATH`
 

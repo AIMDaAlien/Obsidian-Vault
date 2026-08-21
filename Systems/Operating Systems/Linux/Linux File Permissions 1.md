@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Linux inherited the unix model of file ownership and permissions. Every file has a set of permissions.
 
 **User**

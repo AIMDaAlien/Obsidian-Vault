@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ###### The double ampersand `&&` acts as a logical "and"; if the first command is successful, then the second cmd will also run. If the first cmd fails, then the second cmd wont run.
 
 Consider first the concept of failure and success for commands. For example, consider the `ls` cmd. It succeeds if the given directory is accessible and fails if it isnt. 

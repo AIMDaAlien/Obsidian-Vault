@@ -1,3 +1,6 @@
+---
+tags: [troubleshooting, marketing, website-rebuild, hardening, hardware-constraints, portfolio-piece, checklist]
+---
 # About Me - Website Content Draft
 
 > **Tags**: #portfolio #content-draft #bio #about-me #web-development

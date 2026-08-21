@@ -1,3 +1,6 @@
+---
+tags: [guide, session-log, hardening]
+---
 # 🐧 The Gentleman's Guide to Starting DevOps on Arch Linux
 
 **Date:** January 02, 2026

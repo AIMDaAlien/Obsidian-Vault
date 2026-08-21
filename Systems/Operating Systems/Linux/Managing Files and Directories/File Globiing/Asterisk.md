@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ##### The * is used to represent zero or more of any char in a filename. 
 
 For example, to display all of the files in the `/etc` directory that begin with the letter `t`:

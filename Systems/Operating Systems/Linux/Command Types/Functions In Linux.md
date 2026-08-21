@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Functions can also be built using existing cmds to either create new cmds or to override cmds bult-in to the shell or cmds stored in files. **[[Aliases]] and functions are normally loaded from the initialization files when the shell first starts. 
 
 

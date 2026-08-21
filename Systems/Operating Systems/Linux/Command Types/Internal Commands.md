@@ -1,1 +1,4 @@
+---
+tags: []
+---
 Aka built-in cmds, are built into the shell itself. A good example is the `cd` cmd as it is a part of the [[Bash]] [[Shell]] . When a user types the `cd` cmd, the Bash shell is already executing the 

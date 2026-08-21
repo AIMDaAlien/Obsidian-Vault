@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ##### To add read, write, and execute to the user of a particular file, we would type:
 `chmod u+rwx file.txt`
 

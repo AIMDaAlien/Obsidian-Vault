@@ -1,3 +1,6 @@
+---
+tags: []
+---
 - Buy or make your own router
 - Get a mesh wifi something like "TP-Link Deco AX 1800"
 - You'll want to get a switch with 8-16 ports for when you get smart home devices

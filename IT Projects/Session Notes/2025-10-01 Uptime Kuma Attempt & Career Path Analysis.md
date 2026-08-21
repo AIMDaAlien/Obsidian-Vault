@@ -1,3 +1,6 @@
+---
+tags: [session-log, troubleshooting, monitoring, checklist]
+---
 # Session: Uptime Kuma Attempt & Career Path Analysis
 **Date:** October 1, 2025  
 **Duration:** ~45 minutes  

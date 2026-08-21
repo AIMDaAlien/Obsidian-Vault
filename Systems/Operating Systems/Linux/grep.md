@@ -1,3 +1,6 @@
+---
+tags: []
+---
 (Globally search a regular expression and print)
 
 `grep '<text to be searched>' <file/files>`

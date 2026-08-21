@@ -1,3 +1,6 @@
+---
+tags: []
+---
 There's times where you want to show all of the files a directory as well as all of the files in all subdirectories under that directory. This is called *Recursive listing*.
 
 Use `ls -R`

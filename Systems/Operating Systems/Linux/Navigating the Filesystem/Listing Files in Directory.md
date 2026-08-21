@@ -1,3 +1,6 @@
+---
+tags: []
+---
 [[ls]] is powerful in that it can help you navigate in the filesystem.
 
 It can be used to list directory contents as well. Give the path to the directory as an argument. ![[Pasted image 20230619050809.png]]

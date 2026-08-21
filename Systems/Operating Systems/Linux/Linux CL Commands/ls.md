@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Is used to list info about directories and files. By default it shows info for the current directory.
 Use `-l`  to shoe this info in the long format which gives additional info about files located in the current working directory.
 

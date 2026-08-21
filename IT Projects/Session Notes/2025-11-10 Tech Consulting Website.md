@@ -1,3 +1,6 @@
+---
+tags: [session-log, payments, website-rebuild, checklist]
+---
 # Session 2025-11-10 - Tech Consulting Website
 
 **Date:** 2025-11-10

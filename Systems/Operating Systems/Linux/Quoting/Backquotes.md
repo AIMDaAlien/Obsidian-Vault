@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ###### Backquotes or backticks are used to specify a cmd within a cmd, a process called *command substitution*. 
  
  Note the output of the `date` cmd:

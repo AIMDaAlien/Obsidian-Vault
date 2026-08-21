@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 
 [[Man Pages]]
 Each section is made to give specific info about a cmd. While there are common sections seen in most man pages, some devs also create sections only available on specific man pages. [[Searching Man Pages]]

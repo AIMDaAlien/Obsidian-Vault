@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Binary executables stored in directories that are searched by the shell. If a user types the `ls` cmd, then the shell searches through the directories that are listed in the `PATH` variable to try to find a file named `ls` that it can execute. 
 
 If a cmd misbehaves, or is not accessible, it is helpful to know where the shell is finding the cmd or which version it's using. It'd be tedious to look in directories listed in `PATH`  variable. Instead, [[which]]  cmd displays the full path to the cmd in question:

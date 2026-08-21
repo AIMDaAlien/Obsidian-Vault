@@ -1,4 +1,5 @@
 ---
+tags: [guide, hardening]
 garden_path: Router Configuration/01 - Network Connection Settings.md
 last_published: '2025-11-30T20:04:41.860495'
 published_to_garden: true

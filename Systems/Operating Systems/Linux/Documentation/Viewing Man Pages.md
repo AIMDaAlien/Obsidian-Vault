@@ -1,3 +1,6 @@
+---
+tags: []
+---
 [[Man Pages]]
 `man command`
 

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Is used to show your current *location*  or current *working* directory. 
 
 `pwd`

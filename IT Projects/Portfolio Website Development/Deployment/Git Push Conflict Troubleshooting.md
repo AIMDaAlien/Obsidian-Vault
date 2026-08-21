@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting, website-rebuild, hardening, reliability, portfolio-piece]
+---
 # Git Troubleshooting - Non-Fast-Forward & Push Conflicts
 
 > **Tags**: #git #troubleshooting #version-control #github #deployment

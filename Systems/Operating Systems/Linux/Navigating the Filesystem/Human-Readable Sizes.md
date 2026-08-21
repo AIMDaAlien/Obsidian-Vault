@@ -1,3 +1,6 @@
+---
+tags: []
+---
 `ls -l` displays file sizes in bytes. For text files, a byte is 1 character. For smaller files, byte sizes are fine. However for larger files, its hard to comprehend how large the file is. 
 
 ![[Pasted image 20230619052546.png]]

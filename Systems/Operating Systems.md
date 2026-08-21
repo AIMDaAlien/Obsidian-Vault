@@ -1,3 +1,6 @@
+---
+tags: []
+---
 # Operating Systems
 
 #systems #operating-systems #index

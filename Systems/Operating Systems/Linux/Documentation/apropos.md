@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Is another way of seeing [[Man Pages]] summaries with a keyword.
 
 `apropos` password  =  `man -k password` 

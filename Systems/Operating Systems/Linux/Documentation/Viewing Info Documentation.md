@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ### `info command`
 
 For example, to show the info page of `ls` 

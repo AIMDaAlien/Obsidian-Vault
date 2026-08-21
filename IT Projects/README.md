@@ -1,3 +1,6 @@
+---
+tags: [troubleshooting, monitoring, hardening]
+---
 # IT Projects
 
 Technical implementation projects, session logs, and writeups focused on IT infrastructure and development work.

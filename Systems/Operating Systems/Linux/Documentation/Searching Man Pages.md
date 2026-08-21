@@ -1,3 +1,6 @@
+---
+tags: []
+---
 To search a term in [[Man Pages]], type / 
 
 If match found, itll be highlighted. Press N to move to next term. 

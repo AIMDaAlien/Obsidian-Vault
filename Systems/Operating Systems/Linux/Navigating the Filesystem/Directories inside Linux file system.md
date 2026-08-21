@@ -1,3 +1,6 @@
+---
+tags: []
+---
 At the top, there is the **/directory**.  [[What are directories]]
 
 Under that root directorate, there’s more directories which are said to be subdirectories of the root. Simply called **“parent”** directories.

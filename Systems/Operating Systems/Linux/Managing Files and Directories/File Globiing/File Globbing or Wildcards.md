@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Limits which files or directories you see. For example, * char can match "zero or more characters" in a filename. Execute the following cmd to show only the files that start with the letter s in `/etc` directory:
 ``ls -d /etc/s*``
 

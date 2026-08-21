@@ -1,3 +1,6 @@
+---
+tags: [session-log]
+---
 # 2026-08-12 Session Continuation
 
 > Short handoff note. Too many compactions this session, this is where we left off.

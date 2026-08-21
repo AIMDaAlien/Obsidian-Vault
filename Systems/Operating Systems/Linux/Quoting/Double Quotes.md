@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Stop the shell from interpreting **some** metacharacters (special characters) , including glob chars.
 
 ***Glob characters, aka wild cards, are symbols that have special meaning to the shell; they are interpreted by the shell itself before it attempts to run any command. Glob characters include the  `*` , `?` , `[ ]`, among others.

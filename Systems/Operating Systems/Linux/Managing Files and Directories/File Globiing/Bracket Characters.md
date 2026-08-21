@@ -1,3 +1,6 @@
+---
+tags: []
+---
 The [] chars are used to match a single char by representing a range of chars that are possible matches. 
 For example, the `/etc/[gu]*` pattern matches any file that begins with either a `g` or `u` character and contains zero or more additional characters:
 ![[Pasted image 20230621184757.png]]

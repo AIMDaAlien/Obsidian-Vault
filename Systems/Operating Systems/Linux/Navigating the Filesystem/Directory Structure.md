@@ -1,3 +1,6 @@
+---
+tags: []
+---
 On windows, the *top level*  of the directory structure is called *My Computer*. Physical devices, such as hard drives or network drives, show up under My computer and are each assigned a drive letter such as C: or D:
 
 A visual representation of a Windows directory structure:

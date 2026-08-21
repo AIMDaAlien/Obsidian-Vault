@@ -1,3 +1,6 @@
+---
+tags: [session-log, troubleshooting]
+---
 # Network Troubleshooting Log: Intermittent WAN Instability
 
 #troubleshooting #network #homelab #dns #coaxial #physical-layer #diagnostic

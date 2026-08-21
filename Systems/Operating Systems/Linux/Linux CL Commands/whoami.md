@@ -1,3 +1,6 @@
+---
+tags: []
+---
 The output should look like the following:
 ![[Pasted image 20230608100915.png]]
 

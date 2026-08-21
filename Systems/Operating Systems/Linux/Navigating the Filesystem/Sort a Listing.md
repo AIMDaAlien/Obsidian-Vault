@@ -1,3 +1,6 @@
+---
+tags: []
+---
 By default, `ls` sorts files alphabetically by file name. Sometimes it may be useful to sort fiels using different criteria.
 
 To sort files by size, use `-S`

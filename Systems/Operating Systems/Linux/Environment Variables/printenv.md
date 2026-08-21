@@ -1,3 +1,6 @@
+---
+tags: []
+---
 #### Creating new environment variables
 New variables can be created by typing a new variable name and assigning it a value in ("") separated by =. When the var is created, use  `echo`. 
 $ must precede the var name while showing the value using echo. Not required while creating the var though.

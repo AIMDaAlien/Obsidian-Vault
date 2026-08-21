@@ -1,3 +1,6 @@
+---
+tags: []
+---
 To determine where the user is currently located within the filesystem, use [[pwd]].
 
 ![[Pasted image 20230617152638.png]]

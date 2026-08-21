@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Like `man` in [[Man Pages]], a listing of movement cmds is available by Shift+H while reading the info doc.
 ![[Pasted image 20230611183406.png]]
 

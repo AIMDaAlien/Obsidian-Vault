@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Regardless of which directory the user is in, two periods always represents one directory higher relative to the current directory, sometimes referred to the *parent directory*. To move from the `Art` directory to the `School` directory"
 ![[Pasted image 20230619050251.png]]
 

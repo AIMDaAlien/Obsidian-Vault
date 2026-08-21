@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Use `whereis` to search for location of a cmd or source files or [[Man Pages]]. 
 ![[Pasted image 20230610220359.png]]
 

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 The ? Char represents any single char. Each question mark char matches exactly one char, no more or less. 
 
 Suppose you want to show all of the files in the `/etc` directory that begin with the letter t and have exactly 7 chars after the t char. 
