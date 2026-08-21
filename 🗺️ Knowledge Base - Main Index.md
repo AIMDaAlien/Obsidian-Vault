@@ -77,6 +77,19 @@ Technical projects, session logs, and implementation writeups.
 
 ---
 
+### Bridges
+Cross-cutting topic entry points. When a question spans folders ("where is my billing setup?"), start here — each bridge maps the topic to its notes.
+
+| Bridge | Covers |
+|--------|--------|
+| [[Bridges/Customer Workflow Bridge]] | The customer journey, end to end (Teardown Cafe) |
+| [[Bridges/Payments & Billing Bridge]] | Money in/out — payments, billing, costs |
+| [[Bridges/Branding & Design Bridge]] | Visual identity — design system, logo, photography |
+| [[Bridges/Marketing & Social Media Bridge]] | Channels + what's actually working (all ventures) |
+| [[Bridges/Homelab Bridge]] | What's running, where the lab docs live (3 layers) |
+
+---
+
 ### Myself
 Career development and personal growth.
 
@@ -151,4 +164,4 @@ All dated session/log files follow the format: `YYYY-MM-DD Topic.md`
 ---
 
 *Tags: #moc #index #navigation #organization*
-*Updated: 2026-02-08 | Version: 3.0 (Post-Refactor)*
+*Updated: 2026-08-21 | Version: 3.1 (Bridges added)*
