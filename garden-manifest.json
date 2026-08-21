@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T16:45:40Z",
+  "generated_at": "2026-08-21T22:29:52Z",
   "tree": [
     {
       "path": "README.md",
@@ -19,6 +19,30 @@
     },
     {
       "path": "🗺️ Knowledge Base - Main Index.md",
+      "type": "file"
+    },
+    {
+      "path": "Bridges",
+      "type": "dir"
+    },
+    {
+      "path": "Bridges/Branding & Design Bridge.md",
+      "type": "file"
+    },
+    {
+      "path": "Bridges/Customer Workflow Bridge.md",
+      "type": "file"
+    },
+    {
+      "path": "Bridges/Homelab Bridge.md",
+      "type": "file"
+    },
+    {
+      "path": "Bridges/Marketing & Social Media Bridge.md",
+      "type": "file"
+    },
+    {
+      "path": "Bridges/Payments & Billing Bridge.md",
       "type": "file"
     },
     {
@@ -2140,10 +2164,37 @@
   ],
   "metadata": {
     "README.md": {
+      "tags": "[]",
       "title": "Knowledge Base Vault"
     },
     "🗺️ Knowledge Base - Main Index.md": {
+      "tags": "[monitoring, hardware-constraints]",
       "title": "Knowledge Base - Main Index"
+    },
+    "Bridges/Branding & Design Bridge.md": {
+      "tags": "[bridge, branding]",
+      "created": "2026-08-21",
+      "title": "Branding & Design Bridge"
+    },
+    "Bridges/Customer Workflow Bridge.md": {
+      "tags": "[bridge, customer-workflow]",
+      "created": "2026-08-21",
+      "title": "Customer Workflow Bridge"
+    },
+    "Bridges/Homelab Bridge.md": {
+      "tags": "[bridge, homelab]",
+      "created": "2026-08-21",
+      "title": "Homelab Bridge"
+    },
+    "Bridges/Marketing & Social Media Bridge.md": {
+      "tags": "[bridge, marketing]",
+      "created": "2026-08-21",
+      "title": "Marketing & Social Media Bridge"
+    },
+    "Bridges/Payments & Billing Bridge.md": {
+      "tags": "[bridge, payments]",
+      "created": "2026-08-21",
+      "title": "Payments & Billing Bridge"
     },
     "IT Projects/Building a Privacy-First Obsidian Publishing System.md": {
       "created": "2024-11-28 16:30:00",
@@ -2152,15 +2203,16 @@
       "modified": "2024-11-28 16:30:00",
       "privacy_scan": "not_scanned",
       "published_to_garden": true,
-      "tags": null,
+      "tags": "[]",
       "visibility": "public",
       "title": "Building a Privacy-First Obsidian Publishing System"
     },
     "IT Projects/README.md": {
+      "tags": "[troubleshooting, monitoring]",
       "title": "IT Projects"
     },
     "IT Projects/Home Lab/00 - Server Inventory.md": {
-      "tags": "[homelab, server-inventory, unraid, hardware]",
+      "tags": "[homelab, server-inventory, unraid, hardware, monitoring, reliability, hardware-constraints]",
       "created": "2026-06-27",
       "published_to_garden": true,
       "last_published": "2026-07-29T23:14:32",
@@ -2168,21 +2220,21 @@
       "title": "Server Inventory"
     },
     "IT Projects/Home Lab/01 - Services Dashboard.md": {
-      "tags": "[homelab, services, dashboard]",
+      "tags": "[homelab, services, dashboard, security, reliability, hardware-constraints]",
       "created": "2026-07-25",
       "published_to_garden": true,
       "last_published": "2026-07-25T21:05:10.185673",
       "title": "Services Dashboard"
     },
     "IT Projects/Home Lab/02 - Network Map.md": {
-      "tags": "[homelab, network, map]",
+      "tags": "[homelab, network, map, monitoring]",
       "created": "2026-07-25",
       "published_to_garden": true,
       "last_published": "2026-07-25T21:05:10.185673",
       "title": "Network Map"
     },
     "IT Projects/Portfolio Website Development/README.md": {
-      "tags": "[portfolio, web-development, project-index, github-pages]",
+      "tags": "[portfolio, web-development, project-index, github-pages, troubleshooting, branding, website-rebuild, portfolio-piece, checklist]",
       "created": "2025-10-01",
       "updated": "2026-08-01",
       "published_to_garden": true,
@@ -2190,13 +2242,15 @@
       "title": "Portfolio Website Development — Project Overview"
     },
     "IT Projects/Portfolio Website Development/Content/About Me Draft.md": {
+      "tags": "[troubleshooting, website-rebuild, hardware-constraints, portfolio-piece, checklist]",
       "title": "About Me - Website Content Draft"
     },
     "IT Projects/Portfolio Website Development/Deployment/Git Push Conflict Troubleshooting.md": {
+      "tags": "[troubleshooting, website-rebuild, reliability, portfolio-piece]",
       "title": "Git Troubleshooting - Non-Fast-Forward & Push Conflicts"
     },
     "IT Projects/Portfolio Website Development/Deployment/Github Pages Setup.md": {
-      "tags": "[github-pages, deployment, hosting, web-development, portfolio]",
+      "tags": "[github-pages, deployment, hosting, web-development, portfolio, troubleshooting, website-rebuild, security, portfolio-piece, checklist]",
       "created": "2025-10-01",
       "updated": "2026-08-01",
       "published_to_garden": true,
@@ -2204,125 +2258,586 @@
       "title": "GitHub Pages Setup & Deployment"
     },
     "IT Projects/Portfolio Website Development/Features/Privacy Filter - Matrix Decode.md": {
+      "tags": "[website-rebuild, portfolio-piece, checklist]",
       "title": "Matrix-Decode Privacy Filter Implementation"
     },
     "IT Projects/Session Notes/2025-10-01 Uptime Kuma Attempt & Career Path Analysis.md": {
+      "tags": "[session-log, troubleshooting, monitoring, checklist]",
       "title": "Session: Uptime Kuma Attempt & Career Path Analysis"
     },
     "IT Projects/Session Notes/2025-11-10 Tech Consulting Website.md": {
+      "tags": "[session-log, payments, website-rebuild, checklist]",
       "title": "Session 2025-11-10 - Tech Consulting Website"
     },
     "IT Projects/Session Notes/2026-01-02 Starting Omarchy (Arch Linux).md": {
+      "tags": "[session-log, security]",
       "title": "🐧 The Gentleman's Guide to Starting DevOps on Arch Linux"
     },
     "IT Projects/Session Notes/2026-01-09 Troubleshooting DNS Loop.md": {
+      "tags": "[session-log, troubleshooting]",
       "title": "Troubleshooting Report: The \"DNS Loop\" & Pi-hole Integration"
     },
     "IT Projects/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md": {
+      "tags": "[session-log, troubleshooting]",
       "title": "Network Troubleshooting Log: Intermittent WAN Instability"
     },
     "IT Projects/Session Notes/2026-03-29 LG G8 ThinQ G820TM Resurrection.md": {
       "created": "2026-04-01",
       "modified": "2026-04-01",
-      "tags": null,
+      "tags": "[android, hardware, troubleshooting, flashing, EDL, qualcomm, LG, LGUP, ADB, DAC, repair, session-log]",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
       "visibility": "private",
       "title": "Troubleshooting Report: The Great LG G8 ThinQ (G820TM) Resurrection"
     },
     "IT Projects/Session Notes/2026-06-20 Unraid Hardware Swap ASRock B660M.md": {
-      "tags": "[unraid, hardware-swap, troubleshooting, homelab]",
+      "tags": "[unraid, hardware-swap, troubleshooting, homelab, session-log, reliability, hardware-constraints, checklist]",
       "created": "2026-06-20",
       "title": "Unraid Server Hardware Swap — B660M + 12600KF Transplant"
     },
     "IT Projects/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md": {
+      "tags": "[session-log, checklist]",
       "title": "2026-06-27 Home Lab Restoration & Expansion"
     },
     "IT Projects/Session Notes/2026-08-12 Session Continuation.md": {
+      "tags": "[session-log]",
       "title": "2026-08-12 Session Continuation"
     },
     "Learning Journals/3D Printing Optimization Journey.md": {
+      "tags": "[reliability, cost]",
       "garden_path": "Learning/3D Printing Optimization Journey.md",
       "last_published": "2025-11-28T20:36:42.343273",
       "published_to_garden": true,
       "title": "3D Printing Optimization Journey"
     },
     "Learning Journals/Performance Comparison Methods.md": {
+      "tags": "[]",
       "garden_path": "Learning/Performance Comparison Methods.md",
       "last_published": "2025-11-28T20:37:48.936762",
       "published_to_garden": true,
       "title": "Performance Comparison Methods"
     },
     "Learning Journals/Privacy Hardening Journey.md": {
+      "tags": "[hardening, security]",
       "garden_path": "Learning/Privacy Hardening Journey.md",
       "last_published": "2025-11-28T20:36:24.940201",
       "published_to_garden": true,
       "title": "Privacy Hardening Journey"
     },
     "Learning Journals/README.md": {
+      "tags": "[troubleshooting]",
       "title": "Learning Journals"
     },
     "Learning Journals/Tech Research Strategies.md": {
+      "tags": "[troubleshooting, marketing]",
       "garden_path": "Learning/Tech Research Strategies.md",
       "last_published": "2025-11-28T20:37:22.982957",
       "published_to_garden": true,
       "title": "Tech Research Strategies"
     },
     "Learning Journals/Troubleshooting Lessons Learned.md": {
+      "tags": "[troubleshooting]",
       "garden_path": "Learning/Troubleshooting Lessons Learned.md",
       "last_published": "2025-11-28T20:37:01.979909",
       "published_to_garden": true,
       "title": "Troubleshooting Lessons Learned"
     },
     "Programming Concepts/Computer Science Concepts.md": {
+      "tags": "[]",
       "title": "Computer Science Concepts"
     },
     "Programming Concepts/README.md": {
+      "tags": "[]",
       "title": "Programming Concepts"
     },
     "Programming Concepts/Web Development.md": {
+      "tags": "[]",
       "title": "Web Development"
     },
     "Programming Concepts/C/C Programming.md": {
+      "tags": "[]",
       "title": "C Programming Fundamentals"
     },
+    "Programming Concepts/C/For Loops in C.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/C/Loops in C.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/C/Variables In C.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/C/Data Types in C/Data Types and Variables.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/C/Data Types in C/char.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/C/Data Types in C/float.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/C/Data Types in C/int.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/C/Data Types in C/void.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 1,2.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 10,11.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 12,13.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 14,15.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 16,17.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 18,19,20.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 21,22,23.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 24,25.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 26,27.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 28,29,30.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 3,4.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 31.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 32,33,34,35.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 36,37.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 38,39.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 40,41,42.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 43,44.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 45.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 46.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 47,48,49,50.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 5,6,7.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 51,52.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 53,54.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 55,56.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 57,58.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 59, 60,61.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 62.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 63.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 64, 65.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 66,67.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 68,69.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 70,71.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 72,73.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 74,75,76.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 77,78,79.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 8,9.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 80,81,82.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 83.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 84,85.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 86,87.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 88,89.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/Build a Cafe Menu/Step 90.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/CSS Colored Markers/Add  other markers.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/CSS Colored Markers/Add color to marker.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/CSS Colored Markers/Adding content.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/CSS Colored Markers/Create the page.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/CSS Colored Markers/Meta Elements.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/CSS/CSS Colored Markers/Start Styling.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/General Programming/Compilation.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/General Programming/Computing Languages.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/General Programming/Interpretation.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/General Programming/Source Code.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/General Programming/Syntactic Sugar.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/General Programming/Variables.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 1.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 10.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 11.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 12.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 13.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 14.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 15.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 16.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 17.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 18.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 19.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 2.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 20.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 21.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 22.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 23.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 24.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 25.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 26.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 27.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 28.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 29.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 3.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 30.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 31.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 32.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 33.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 34.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 35.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 36.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 37.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 38.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 39.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 4.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 40.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 41.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 42.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 43.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 44.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 45.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 46.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 47.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 48.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 49.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 5.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 50.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 51.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 52.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 53.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 54.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 55.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 56.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 57.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 58.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 59.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 6.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 60.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 61.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 62.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 63.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 64.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 65.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 66.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 67.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 68.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 69.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 7.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 8.md": {
+      "tags": "[branding]"
+    },
+    "Programming Concepts/HTML/Build CatPhotoApp/Step 9.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/CS50_s Introduction to Computer Science.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Dictionaries.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Error Handling with Try-Except.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/File Handling.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/For Loops and Iteration.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Functions with Return Values.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Introduction to Python.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Libraries and Modules.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Loops in Python.md": {
+      "tags": "[]"
+    },
     "Programming Concepts/Python/Nested If Else Statements.md": {
+      "tags": "[]",
       "title": "What is the score?"
     },
     "Programming Concepts/Python/Python Advanced Topics.md": {
+      "tags": "[]",
       "garden_path": "Programming/Python Advanced Topics.md",
       "last_published": "2025-11-30T20:11:11.267741",
       "published_to_garden": true,
       "title": "Python Advanced Topics"
     },
     "Programming Concepts/Python/Python Control Flow.md": {
+      "tags": "[]",
       "garden_path": "Programming/Python Control Flow.md",
       "last_published": "2025-11-30T20:09:38.360425",
       "published_to_garden": true,
       "title": "Python Control Flow"
     },
     "Programming Concepts/Python/Python Data Structures.md": {
+      "tags": "[]",
       "garden_path": "Programming/Python Data Structures.md",
       "last_published": "2025-11-30T20:08:57.982181",
       "published_to_garden": true,
       "title": "Python Data Structures"
     },
     "Programming Concepts/Python/Python Functions.md": {
+      "tags": "[]",
       "garden_path": "Programming/Python Functions.md",
       "last_published": "2025-11-30T20:10:22.496859",
       "published_to_garden": true,
       "title": "Python Functions"
     },
     "Programming Concepts/Python/Python Fundamentals.md": {
+      "tags": "[]",
       "garden_path": "Programming/Python Fundamentals.md",
       "last_published": "2025-11-30T20:08:22.834687",
       "published_to_garden": true,
       "title": "Python Fundamentals"
     },
+    "Programming Concepts/Python/Python User Input.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Python and Computer Memory.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/Python as a Calculator.md": {
+      "tags": "[]"
+    },
+    "Programming Concepts/Python/String Manipulation.md": {
+      "tags": "[]"
+    },
     "Programming Concepts/Python/Walrus Operator (new).md": {
+      "tags": "[]",
       "title": "using Walrus operator"
     },
+    "Programming Concepts/Python/While Loops.md": {
+      "tags": "[]"
+    },
     "Projects/README.md": {
+      "tags": "[troubleshooting, payments, branding, marketing, local-ai]",
       "title": "Projects"
     },
     "Projects/3D Print Shoppe/2024-12-05 Session Notes.md": {
@@ -2330,47 +2845,60 @@
       "modified": "2025-12-05T17:11:52.151958",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": "[]",
+      "tags": "[session-log, marketing]",
       "title": "3D Print Shoppe - Session Notes 2024-12-05",
       "visibility": "private"
+    },
+    "Projects/3D Print Shoppe/3D Print Shoppe - Development Summary.md": {
+      "tags": "[]"
     },
     "Projects/3D Print Shoppe/3D Print Shoppe - Marketing Strategy.md": {
       "created": "2025-12-05T17:13:45.173169",
       "modified": "2025-12-05T17:13:45.173169",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": "[]",
+      "tags": "[marketing]",
       "title": "3D Print Shoppe - Marketing Strategy",
       "visibility": "private"
     },
     "Projects/3D Print Shoppe/3D Print Shoppe - Technical Recommendations.md": {
+      "tags": "[payments, branding, checklist]",
       "title": "3D Print Shoppe - Technical Recommendations"
     },
     "Projects/3D Print Shoppe/Architecture Decisions.md": {
+      "tags": "[decision-record, branding, website-rebuild]",
       "title": "Architecture Decisions"
     },
     "Projects/3D Print Shoppe/Branding & Assets.md": {
+      "tags": "[payments, branding, checklist]",
       "title": "Branding & Assets"
     },
     "Projects/3D Print Shoppe/Business & Marketing Guide.md": {
+      "tags": "[guide, marketing, cost]",
       "title": "Business & Marketing Guide - 3D Print Shoppe"
     },
     "Projects/3D Print Shoppe/Business Plan Overview.md": {
+      "tags": "[payments, marketing, reliability]",
       "title": "Business Plan Overview"
     },
     "Projects/3D Print Shoppe/Common Issues & Patterns.md": {
+      "tags": "[]",
       "title": "Common Issues & Patterns"
     },
     "Projects/3D Print Shoppe/Custom Order System.md": {
+      "tags": "[payments, branding, checklist]",
       "title": "Custom Order System"
     },
     "Projects/3D Print Shoppe/Customer Inquiries & Responses.md": {
+      "tags": "[customer-workflow]",
       "title": "Customer Inquiries & Responses"
     },
     "Projects/3D Print Shoppe/Market Research Findings.md": {
+      "tags": "[]",
       "title": "Market Research Findings"
     },
     "Projects/3D Print Shoppe/Payment Workflow.md": {
+      "tags": "[payments, branding, cost, checklist]",
       "title": "Payment Workflow"
     },
     "Projects/3D Print Shoppe/Project - 3D Print Shoppe - Current State.md": {
@@ -2378,36 +2906,48 @@
       "modified": "2025-12-09T14:50:40.067481",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": "[]",
+      "tags": "[payments, branding, checklist]",
       "title": "3D Print Shoppe - Current State",
       "visibility": "private"
     },
     "Projects/3D Print Shoppe/Project - Current State.md": {
+      "tags": "[troubleshooting, checklist]",
       "title": "Project - Current State"
     },
     "Projects/3D Print Shoppe/QA Process - Comprehensive Website Audit.md": {
+      "tags": "[marketing, checklist]",
       "title": "QA Process - Comprehensive Website Audit"
     },
     "Projects/3D Print Shoppe/Quick Reference - Development Guide.md": {
+      "tags": "[guide, website-rebuild, checklist]",
       "title": "Quick Reference - Development Guide"
     },
     "Projects/3D Print Shoppe/README - Main Index.md": {
+      "tags": "[marketing, website-rebuild, checklist]",
       "title": "3D Print Business - Main Index"
     },
     "Projects/3D Print Shoppe/Subagent Workflow Guide.md": {
+      "tags": "[guide, website-rebuild, checklist]",
       "title": "Subagent Workflow Guide"
     },
     "Projects/3D Print Shoppe/Technical Architecture.md": {
+      "tags": "[website-rebuild]",
       "title": "Technical Architecture - 3D Print Shoppe"
     },
     "Projects/3D Print Shoppe/Testing Procedures.md": {
+      "tags": "[checklist]",
       "title": "Testing Procedures"
     },
     "Projects/3D Print Shoppe/Website Rebuild - Nov 2025.md": {
+      "tags": "[branding, website-rebuild]",
       "title": "Website Rebuild - November 2025"
     },
     "Projects/3D Print Shoppe/Website Technical Specs.md": {
+      "tags": "[website-rebuild, checklist]",
       "title": "Website Technical Specs"
+    },
+    "Projects/Archive/Budget SAS Drive NAS Build Guide.md": {
+      "tags": "[guide, troubleshooting, security, hardware-constraints, cost]"
     },
     "Projects/Archive/Claude-Cursor Workflow.md": {
       "tags": "[workflow, claude, cursor, ai-collaboration, teardown-cafe]",
@@ -2415,12 +2955,14 @@
       "title": "Claude-Cursor Workflow"
     },
     "Projects/Archive/GrapheneOS Migration Guide - Complete Documentation.md": {
+      "tags": "[guide, security, checklist]",
       "garden_path": "Projects/Archive/GrapheneOS Migration Guide - Complete Documentation.md",
       "last_published": "2025-11-28T19:42:08.163886",
       "published_to_garden": true,
       "title": "GrapheneOS Migration Guide: From Verizon Hell to Privacy Success"
     },
     "Projects/Archive/Knowledge Garden - Sidebar Implementation Session.md": {
+      "tags": "[session-log, troubleshooting]",
       "title": "Knowledge Garden - Sidebar Implementation Session"
     },
     "Projects/Archive/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md": {
@@ -2428,40 +2970,46 @@
       "modified": "2026-03-15T00:00:00.000000",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": null,
+      "tags": "[hardware-constraints]",
       "title": "Pi-hole Migration: RPi B+ → RPi 5 NVMe",
       "visibility": "review"
     },
     "Projects/Archive/Pi-hole Setup Guide - Complete Journey.md": {
+      "tags": "[guide, hardware-constraints]",
       "garden_path": "Projects/Archive/Pi-hole Setup Guide - Complete Journey.md",
       "last_published": "2025-11-28T19:41:13.152631",
       "published_to_garden": true,
       "title": "Pi-hole Setup: Raspberry Pi 3 B+"
     },
     "Projects/Archive/Pi-hole TrueNAS Network Conflict Troubleshooting.md": {
+      "tags": "[troubleshooting, hardware-constraints]",
       "title": "Pi-hole Stopped Working After TrueNAS Setup"
     },
     "Projects/Archive/Tag System & Portfolio Integration.md": {
-      "tags": "[teardown-cafe, obsidian, tags, portfolio, integration]",
+      "tags": "[teardown-cafe, obsidian, tags, portfolio, integration, hardware-constraints, portfolio-piece]",
       "created": "2025-10-20",
       "title": "Tag System & Portfolio Integration"
     },
     "Projects/Archive/Teardown Documentation Lessons.md": {
+      "tags": "[marketing]",
       "title": "Teardown Documentation Lessons"
     },
     "Projects/Archive/TrueNAS Build Guide.md": {
+      "tags": "[guide, hardware-constraints, cost]",
       "garden_path": "Projects/Archive/TrueNAS Build Guide.md",
       "last_published": "2025-11-28T19:41:06.987212",
       "published_to_garden": true,
       "title": "Building a Beast: TrueNAS SAS Server for $270"
     },
     "Projects/Archive/WireGuard VPN Setup.md": {
+      "tags": "[troubleshooting, security, hardware-constraints]",
       "garden_path": "Projects/Archive/WireGuard VPN Setup.md",
       "last_published": "2025-11-28T19:41:38.709685",
       "published_to_garden": true,
       "title": "WireGuard VPN Setup"
     },
     "Projects/Corne Accuracy Trainer/00 - Project Overview.md": {
+      "tags": "[reliability]",
       "project": "Corne Accuracy Trainer",
       "status": "Private working release — public customization roadmap defined",
       "repository": "https://github.com/AIMDaAlien/aim-corne-accuracy-trainer",
@@ -2471,6 +3019,7 @@
       "title": "Corne Accuracy Trainer"
     },
     "Projects/Corne Accuracy Trainer/01 - Technical Architecture and Product Record.md": {
+      "tags": "[reliability]",
       "project": "Corne Accuracy Trainer",
       "status": "Implemented private release",
       "repository": "/Users/aim/Documents/Corne Accuracy Trainer",
@@ -2478,6 +3027,7 @@
       "title": "Technical Architecture and Product Record"
     },
     "Projects/Corne Accuracy Trainer/02 - Word Progression and Public Release Roadmap.md": {
+      "tags": "[]",
       "project": "Corne Accuracy Trainer",
       "status": "Approved direction — not yet implemented",
       "repository": "/Users/aim/Documents/Corne Accuracy Trainer",
@@ -2489,7 +3039,7 @@
       "modified": "2026-01-10T11:36:27.766509",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": null,
+      "tags": "[hardware-constraints, checklist]",
       "title": "Docker and Portainer Setup Guide",
       "visibility": "private"
     },
@@ -2498,7 +3048,7 @@
       "modified": "2026-03-15T00:00:00.000000",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": null,
+      "tags": "[troubleshooting, monitoring, interview-prep]",
       "title": "NOC Skills Homelab Project",
       "visibility": "private"
     },
@@ -2507,7 +3057,7 @@
       "modified": "2026-01-10T23:18:48.631817",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": null,
+      "tags": "[monitoring]",
       "title": "Prometheus + Grafana Stack",
       "visibility": "review"
     },
@@ -2516,11 +3066,12 @@
       "modified": "2026-01-10T23:18:57.729892",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": null,
+      "tags": "[troubleshooting, monitoring, interview-prep]",
       "title": "Troubleshooting Log - NOC Skills Homelab",
       "visibility": "private"
     },
     "Projects/Local Language Engine/00 - Project Overview.md": {
+      "tags": "[hardware-constraints, cost]",
       "project": "Local Language Engine",
       "status": "Standalone Android and beginner UI proven — release hardening active",
       "phase": "Physical-device pipeline and progressive interface proven; dependability hardening",
@@ -2530,6 +3081,7 @@
       "title": "Local Language Engine"
     },
     "Projects/Local Language Engine/01 - Architecture and Implementation Plan.md": {
+      "tags": "[local-ai]",
       "project": "Local Language Engine",
       "status": "Standalone Android and beginner UI proven — release hardening active",
       "repository": "/Users/aim/Documents/language-engine",
@@ -2537,6 +3089,7 @@
       "title": "Architecture and Implementation Plan"
     },
     "Projects/Local Language Engine/02 - Build, Device, and Product Record.md": {
+      "tags": "[local-ai, hardware-constraints]",
       "project": "Local Language Engine",
       "status": "Standalone Android and beginner UI proven — release hardening active",
       "repository": "/Users/aim/Documents/language-engine",
@@ -2544,8 +3097,11 @@
       "updated": "2026-07-30",
       "title": "Build, Device, and Product Record"
     },
+    "Projects/Portfolio Website/Current State.md": {
+      "tags": "[security, hardware-constraints, cost, portfolio-piece, checklist]"
+    },
     "Projects/Portfolio Website/Project - Current State.md": {
-      "tags": "[portfolio, web-development, knowledge-garden, homelab, github-pages]",
+      "tags": "[portfolio, web-development, knowledge-garden, homelab, github-pages, website-rebuild, reliability, hardware-constraints, portfolio-piece, checklist]",
       "created": "2025-10-26",
       "updated": "2026-08-01",
       "published_to_garden": true,
@@ -2553,208 +3109,263 @@
       "title": "Portfolio Website — Current State"
     },
     "Projects/Portfolio Website/docs/Building a Knowledge Garden with D3.md": {
+      "tags": "[portfolio-piece]",
       "title": "Building a Knowledge Garden with D3.js"
     },
     "Projects/Portfolio Website/docs/CSS Breakpoint Strategy.md": {
+      "tags": "[portfolio-piece, checklist]",
       "title": "CSS Breakpoint Strategy"
     },
     "Projects/Portfolio Website/docs/GitHub API for Dynamic Content.md": {
+      "tags": "[portfolio-piece]",
       "title": "GitHub API for Dynamic Content"
     },
     "Projects/Portfolio Website/docs/Mobile Responsive Sidebar Patterns.md": {
+      "tags": "[portfolio-piece]",
       "title": "Mobile Responsive Sidebar Patterns"
     },
     "Projects/Sovereign AI Stack/Architecture Guide - Sovereign AI Stack.md": {
+      "tags": "[guide, security, local-ai]",
       "title": "Architecture Guide - Sovereign AI Stack"
     },
     "Projects/Sovereign AI Stack/Deepwen-3.6.md": {
+      "tags": "[local-ai, cost]",
       "title": "Deepwen-3.6"
     },
     "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q4.md": {
+      "tags": "[local-ai]",
       "title": "Gemma 4 12B QAT Q4"
     },
     "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q8.md": {
+      "tags": "[local-ai]",
       "title": "Gemma 4 12B QAT Q8"
     },
     "Projects/Sovereign AI Stack/LFM2.5-2.6B.md": {
+      "tags": "[local-ai]",
       "title": "LFM2.5-2.6B"
     },
     "Projects/Sovereign AI Stack/LFM2.5-8B-A1B.md": {
+      "tags": "[local-ai]",
       "title": "LFM2.5-8B-A1B"
     },
     "Projects/Sovereign AI Stack/LLM Benchmark Registry - Mac vs Unraid.md": {
+      "tags": "[local-ai]",
       "title": "LLM Benchmark Registry — Mac vs Unraid"
     },
     "Projects/Sovereign AI Stack/Maple-Preview 20B.md": {
+      "tags": "[local-ai]",
       "title": "Maple-Preview 20B"
     },
     "Projects/Sovereign AI Stack/Nemotron vs Qwen Domain Fingerprint.md": {
+      "tags": "[cost]",
       "title": "Nemotron 3.5 Lightning vs Qwen 3.6 — Domain Fingerprint"
     },
     "Projects/Sovereign AI Stack/Project Overview - Sovereign AI Stack.md": {
-      "tags": "[sovereign-ai, project-overview, self-hosted, privacy, llm]",
+      "tags": "[sovereign-ai, project-overview, self-hosted, privacy, llm, local-ai]",
       "created": "2026-02-10",
       "published_to_garden": true,
       "last_published": "2026-07-29T23:14:32",
       "title": "Project Overview - Sovereign AI Stack"
     },
     "Projects/Sovereign AI Stack/Project Status - Sovereign AI Stack.md": {
+      "tags": "[security, local-ai]",
       "title": "Project Status - Sovereign AI Stack"
     },
     "Projects/Sovereign AI Stack/Qwen3.8-27B.md": {
+      "tags": "[local-ai, hardware-constraints]",
       "title": "Qwen3.8-27B — Deploy, Benchmarks, Verdict"
     },
     "Projects/Sovereign AI Stack/Setup Tutorial - Sovereign AI Stack.md": {
+      "tags": "[local-ai, checklist]",
       "title": "Setup Tutorial - Sovereign AI Stack"
     },
     "Projects/Sovereign AI Stack/Speed Myth - Ollama vs Text-Gen-WebUI.md": {
+      "tags": "[]",
       "title": "Speed Myth - Ollama vs Text-Gen-WebUI"
     },
     "Projects/Sovereign AI Stack/Ternary Bonsai 27B.md": {
+      "tags": "[local-ai]",
       "title": "Ternary Bonsai 27B"
     },
     "Projects/Sovereign AI Stack/Unraid Qwen3.6 Terminal Agent - July 2026.md": {
-      "tags": "[sovereign-ai, unraid, qwen, terminal-agent, llm]",
+      "tags": "[sovereign-ai, unraid, qwen, terminal-agent, llm, local-ai]",
       "created": "2026-07-28",
       "published_to_garden": true,
       "last_published": "2026-07-29T23:14:32",
       "title": "Unraid Qwen3.6 terminal agent"
     },
     "Projects/Teardown Cafe/Session Index.md": {
+      "tags": "[session-log]",
       "title": "📊 Session Index"
     },
     "Projects/Teardown Cafe/Teardown Cafe.md": {
+      "tags": "[]",
       "title": "Teardown Cafe"
     },
     "Projects/Teardown Cafe/Workflow Dashboard.md": {
+      "tags": "[checklist]",
       "title": "📊 Workflow Dashboard"
     },
     "Projects/Teardown Cafe/claude-cursor-collaboration-prompt.md": {
+      "tags": "[]",
       "title": "🤝 Claude-Cursor AI Collaboration Prompt Template"
     },
     "Projects/Teardown Cafe/obsidian-context-filter.md": {
+      "tags": "[]",
       "title": "🔗 Obsidian Context Filter for Teardown Cafe"
     },
     "Projects/Teardown Cafe/simple-workflow-guide.md": {
+      "tags": "[guide]",
       "title": "🚀 Simple Workflow Guide for Teardown Cafe"
     },
+    "Projects/Teardown Cafe/Documentation/Adding Entries.md": {
+      "tags": "[troubleshooting, hardware-constraints]"
+    },
     "Projects/Teardown Cafe/Documentation/Building Material You 3 Website Lessons.md": {
-      "tags": "#guide #lessons-learned #astro #material-you #accessibility #ui-ux",
+      "tags": "[guide, lessons-learned, astro, material-you, accessibility, ui-ux]",
       "created": "2025-10-19",
       "related": null,
       "title": "Building a Material You 3 Website - Lessons Learned"
     },
     "Projects/Teardown Cafe/Documentation/Content Workflow.md": {
+      "tags": "[reliability, checklist]",
       "title": "Teardown Cafe - Content Workflow"
     },
     "Projects/Teardown Cafe/Documentation/Context Prompt.md": {
-      "tags": "#prompt #context #claude #workflow",
+      "tags": "[prompt, context, claude, workflow, troubleshooting]",
       "created": "2025-10-19",
       "title": "Teardown Cafe - Context Establishment Prompt"
     },
     "Projects/Teardown Cafe/Documentation/Current State.md": {
+      "tags": "[troubleshooting, website-rebuild, hardware-constraints, checklist]",
       "garden_path": "Projects/Teardown Cafe/Documentation/Current State.md",
       "last_published": "2025-11-28T19:47:28.436847",
       "published_to_garden": true,
       "title": "Teardown Cafe - Current State"
     },
     "Projects/Teardown Cafe/Documentation/Deployment Guide (Projects).md": {
-      "tags": "[teardown-cafe, deployment, vercel, workflow]",
+      "tags": "[teardown-cafe, deployment, vercel, workflow, guide, website-rebuild]",
       "created": "2025-10-20",
       "title": "Teardown Cafe - Deployment Guide"
     },
     "Projects/Teardown Cafe/Documentation/Deployment Guide.md": {
+      "tags": "[guide, website-rebuild, security]",
       "garden_path": "Projects/Teardown Cafe/Documentation/Deployment Guide.md",
       "last_published": "2025-11-28T19:46:59.816145",
       "published_to_garden": true,
       "title": "Should show 216.198.79.1 in ANSWER SECTION"
     },
     "Projects/Teardown Cafe/Documentation/Design System.md": {
+      "tags": "[]",
       "garden_path": "Projects/Teardown Cafe/Documentation/Design System.md",
       "last_published": "2025-11-28T19:46:36.154237",
       "published_to_garden": true,
       "title": "Teardown Cafe - Design System"
     },
     "Projects/Teardown Cafe/Documentation/Documentation Index.md": {
+      "tags": "[troubleshooting, checklist]",
       "title": "Teardown Cafe - Documentation Index"
     },
     "Projects/Teardown Cafe/Documentation/Portfolio Presentation.md": {
+      "tags": "[decision-record, website-rebuild, portfolio-piece, checklist]",
       "title": "Teardown Cafe - Portfolio Presentation"
     },
     "Projects/Teardown Cafe/Documentation/Project Overview.md": {
+      "tags": "[troubleshooting, website-rebuild, hardware-constraints]",
       "garden_path": "Projects/Teardown Cafe/Documentation/Project Overview.md",
       "last_published": "2025-11-28T19:45:58.975545",
       "published_to_garden": true,
       "title": "Teardown Cafe - Project Overview"
     },
     "Projects/Teardown Cafe/Documentation/Technical Setup.md": {
+      "tags": "[]",
       "garden_path": "Projects/Teardown Cafe/Documentation/Technical Setup.md",
       "last_published": "2025-11-28T19:46:13.010423",
       "published_to_garden": true,
       "title": "Teardown Cafe - Technical Setup"
     },
     "Projects/Teardown Cafe/Documentation/Troubleshooting.md": {
+      "tags": "[troubleshooting]",
       "title": "Teardown Cafe - Troubleshooting & Lessons Learned"
     },
     "Projects/Teardown Cafe/Documentation/TrueNAS Build Entry.md": {
+      "tags": "[troubleshooting, hardware-constraints, cost, checklist]",
       "title": "TrueNAS Enterprise SAS Build - Teardown Cafe Entry"
     },
     "Projects/Teardown Cafe/Sessions/2025-10-21 Cursor Session 2.md": {
+      "tags": "[session-log]",
       "title": "Cursor Session - October 21, 2025 at 03:57 PM"
     },
     "Projects/Teardown Cafe/Sessions/2025-10-21 Cursor Session.md": {
+      "tags": "[session-log]",
       "title": "Cursor Session - October 21, 2025 at 03:56 PM"
     },
     "Projects/Tech Consulting/Client Boundaries & Scripts.md": {
+      "tags": "[customer-workflow, cost]",
       "title": "Client Boundaries & Scripts"
     },
     "Projects/Tech Consulting/Current State.md": {
+      "tags": "[payments, website-rebuild, checklist]",
       "title": "Tech Consulting Website - Current State"
     },
     "Projects/Tech Consulting/Key Lessons & Insights.md": {
+      "tags": "[marketing]",
       "title": "Key Lessons & Insights"
     },
     "Projects/Tech Consulting/Launch Strategy - First 30 Days.md": {
+      "tags": "[payments, checklist]",
       "title": "Launch Strategy - First 30 Days"
     },
     "Projects/Tech Consulting/Marketing Channels.md": {
+      "tags": "[marketing]",
       "title": "Marketing Channels & Strategy"
     },
     "Projects/Tech Consulting/Pricing Strategy.md": {
+      "tags": "[]",
       "title": "Pricing Strategy & Psychology"
     },
     "Projects/Tech Consulting/Quick Start Checklist.md": {
+      "tags": "[marketing, checklist]",
       "title": "Quick Start Checklist"
     },
     "Projects/Tech Consulting/Tech Consultation Launch Guide.md": {
+      "tags": "[guide, marketing]",
       "title": "Tech Consultation Side Business - Launch Guide"
     },
     "Projects/Tech Consulting/Tech Consultation Services.md": {
+      "tags": "[security, cost]",
       "title": "Tech Consultation Services"
     },
     "Projects/Tech Consulting/Tools & Client Workflow.md": {
+      "tags": "[customer-workflow, payments]",
       "title": "Tools & Client Workflow"
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/Quick Reference.md": {
+      "tags": "[website-rebuild, reliability, checklist]",
       "title": "Quick Reference - Key Learnings"
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/README.md": {
+      "tags": "[branding, website-rebuild, checklist]",
       "title": "Tech Consultation Business Playbook"
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/Business Strategy/Positioning and Brand Strategy.md": {
+      "tags": "[branding]",
       "title": "Positioning and Brand Strategy"
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/Design System/Material 3 Expressive - Core Principles.md": {
+      "tags": "[checklist]",
       "title": "Material 3 Expressive - Core Principles"
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/Technical Implementation/Dark Mode Implementation.md": {
+      "tags": "[checklist]",
       "title": "Dark Mode Implementation - Material You Approach"
     },
     "Projects/Tech Consulting/Tech Consultation Playbook/Templates/Client Intake Template.md": {
+      "tags": "[customer-workflow, reliability, cost, checklist]",
       "title": "Client Intake Template"
     },
     "Projects/The Penthouse/00 - Knowledge Hub.md": {
-      "tags": "[penthouse, rebuild, knowledge-base, obsidian]",
+      "tags": "[penthouse, rebuild, knowledge-base, obsidian, decision-record, website-rebuild]",
       "created": "2026-03-05",
       "published_to_garden": true,
       "last_published": "2026-07-25T21:05:10.185673",
@@ -2762,7 +3373,7 @@
       "title": "The Penthouse Rebuild Knowledge Hub"
     },
     "Projects/The Penthouse/01 - Rebuild Timeline.md": {
-      "tags": "[penthouse, timeline, changelog, rebuild]",
+      "tags": "[penthouse, timeline, changelog, rebuild, website-rebuild]",
       "created": "2026-03-05",
       "published_to_garden": true,
       "last_published": "2026-07-25T21:05:10.185673",
@@ -2776,7 +3387,7 @@
       "title": "Architecture in Plain English"
     },
     "Projects/The Penthouse/03 - Stability Rules (Anti-Tech-Debt).md": {
-      "tags": "[penthouse, tech-debt, quality-gates, reliability]",
+      "tags": "[penthouse, tech-debt, quality-gates, reliability, security]",
       "created": "2026-03-05",
       "published_to_garden": true,
       "visibility": "public",
@@ -2790,14 +3401,14 @@
       "title": "Reliability Fix Log"
     },
     "Projects/The Penthouse/05 - Multi-Model Delegation Workflow.md": {
-      "tags": "[penthouse, ai-workflow, delegation, multi-agent]",
+      "tags": "[penthouse, ai-workflow, delegation, multi-agent, security]",
       "created": "2026-03-05",
       "published_to_garden": true,
       "visibility": "public",
       "title": "Multi-Model AI Delegation Workflow"
     },
     "Projects/The Penthouse/06 - Copyable Rebuild Checklist.md": {
-      "tags": "[penthouse, checklist, mvp, execution]",
+      "tags": "[penthouse, checklist, mvp, execution, website-rebuild]",
       "created": "2026-03-05",
       "published_to_garden": true,
       "visibility": "public",
@@ -2818,7 +3429,7 @@
       "title": "Live Chat Essentials"
     },
     "Projects/The Penthouse/09 - Realtime Hardening.md": {
-      "tags": "[penthouse, realtime, socket, android, reliability]",
+      "tags": "[penthouse, realtime, socket, android, reliability, hardening, security]",
       "created": "2026-03-08",
       "published_to_garden": true,
       "visibility": "public",
@@ -2846,12 +3457,12 @@
       "title": "Native Notifications and Strict Read Receipts"
     },
     "Projects/The Penthouse/13 - MVP Stability Plan v2.md": {
-      "tags": "[penthouse, mvp, stability, backend-first, obsidian]",
+      "tags": "[penthouse, mvp, stability, backend-first, obsidian, website-rebuild]",
       "created": "2026-03-12",
       "title": "MVP Stability Plan v2"
     },
     "Projects/The Penthouse/14 - Opencode Handoff.md": {
-      "tags": "[penthouse, handoff, historical]",
+      "tags": "[penthouse, handoff, historical, website-rebuild]",
       "created": "2026-03-12",
       "archived": "2026-03-22",
       "published_to_garden": true,
@@ -2859,7 +3470,7 @@
       "title": "Opencode Handoff (Historical)"
     },
     "Projects/The Penthouse/15 - PWA Rebuild.md": {
-      "tags": "[penthouse, pwa, sveltekit, rebuild]",
+      "tags": "[penthouse, pwa, sveltekit, rebuild, website-rebuild]",
       "created": "2026-04-09",
       "published_to_garden": true,
       "visibility": "public",
@@ -2887,7 +3498,7 @@
       "title": "Wave C — Community Features"
     },
     "Projects/The Penthouse/19 - v4 Clean-Room Rebuild.md": {
-      "tags": "[penthouse, v4, rebuild, sveltekit, drizzle]",
+      "tags": "[penthouse, v4, rebuild, sveltekit, drizzle, website-rebuild, security]",
       "created": "2026-05-07",
       "published_to_garden": true,
       "last_published": "2026-07-25T21:05:10.185673",
@@ -2905,12 +3516,12 @@
       "modified": "2026-02-13T10:37:00.000000",
       "privacy_scan": "not_scanned",
       "published_to_garden": false,
-      "tags": null,
+      "tags": "[penthouse, deployment, android, truenas, caddy, session-log, troubleshooting, security, reliability, checklist]",
       "title": "The Penthouse - Session Notes 2026-02-13",
       "visibility": "private"
     },
     "Projects/The Penthouse/21 - v4.2 Privacy Terms and Operator Trust.md": {
-      "tags": "[penthouse, v4.2, privacy, terms, admin, hardening]",
+      "tags": "[penthouse, v4.2, privacy, terms, admin, hardening, reliability]",
       "created": "2026-07-14",
       "published_to_garden": true,
       "last_published": "2026-07-25T21:05:10.185673",
@@ -2930,28 +3541,28 @@
       "title": "Trust and Safety Blocks"
     },
     "Projects/The Penthouse/PWA-00 - Knowledge Hub.md": {
-      "tags": "[penthouse, pwa, sveltekit, knowledge-base]",
+      "tags": "[penthouse, pwa, sveltekit, knowledge-base, website-rebuild]",
       "created": "2026-04-05",
       "published_to_garden": true,
       "visibility": "public",
       "title": "The Penthouse PWA — Knowledge Hub"
     },
     "Projects/The Penthouse Self-Hosting/00 - Index.md": {
-      "tags": "[self-hosting, truenas, unraid, docker, ops, penthouse-v1]",
+      "tags": "[self-hosting, truenas, unraid, docker, ops, penthouse-v1, website-rebuild, security]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
       "title": "Self-Hosting a Chat App on TrueNAS — Index"
     },
     "Projects/The Penthouse Self-Hosting/01 - Architecture.md": {
-      "tags": "[self-hosting, truenas, docker, caddy, networking]",
+      "tags": "[self-hosting, truenas, docker, caddy, networking, security]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
       "title": "Architecture — TrueNAS, Public Internet, No Proxy"
     },
     "Projects/The Penthouse Self-Hosting/02 - TrueNAS Deploy Runbook.md": {
-      "tags": "[self-hosting, truenas, docker, deployment, runbook]",
+      "tags": "[self-hosting, truenas, docker, deployment, runbook, security, reliability]",
       "created": "2026-02-17",
       "published_to_garden": true,
       "visibility": "public",
@@ -2972,14 +3583,14 @@
       "title": "IP Drift and DDNS (Cloudflare DNS-Only)"
     },
     "Projects/The Penthouse Self-Hosting/05 - Git Push Auto-Deploy.md": {
-      "tags": "[self-hosting, ci-cd, github-actions, deployment]",
+      "tags": "[self-hosting, ci-cd, github-actions, deployment, security]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
       "title": "Git Push Auto-Deploy (GitHub Actions Self-Hosted Runner on TrueNAS)"
     },
     "Projects/The Penthouse Self-Hosting/06 - Deploy Downtime Minimization.md": {
-      "tags": "[self-hosting, deployment, downtime, docker]",
+      "tags": "[self-hosting, deployment, downtime, docker, security]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
@@ -2993,7 +3604,7 @@
       "title": "Security Gotchas (Self-Hosted, Public Internet)"
     },
     "Projects/The Penthouse Self-Hosting/08 - SSH Hardening on TrueNAS.md": {
-      "tags": "[self-hosting, ssh, truenas, security]",
+      "tags": "[self-hosting, ssh, truenas, security, hardening]",
       "created": "2026-02-18",
       "published_to_garden": true,
       "visibility": "public",
@@ -3007,21 +3618,21 @@
       "title": "Disk Exhaustion Prevention (Home Server, Docker)"
     },
     "Projects/The Penthouse Self-Hosting/10 - Mobile Update Versioning Protocol.md": {
-      "tags": "[self-hosting, mobile, updates, versioning, expo]",
+      "tags": "[self-hosting, mobile, updates, versioning, expo, website-rebuild]",
       "created": "2026-02-21",
       "published_to_garden": true,
       "visibility": "public",
       "title": "Mobile Update and Versioning Protocol (Expo + Self-Hosted APK)"
     },
     "Projects/The Penthouse Self-Hosting/11 - What Changed Between Notes.md": {
-      "tags": "[self-hosting, changelog, v1, penthouse]",
+      "tags": "[self-hosting, changelog, v1, penthouse, branding]",
       "created": "2026-03-03",
       "published_to_garden": true,
       "visibility": "public",
       "title": "What Changed Between Notes (v1 Phase 1 Summary)"
     },
     "Projects/The Penthouse Self-Hosting/12 - Unraid Pool Recovery 2026-08-04.md": {
-      "tags": "[self-hosting, unraid, zfs, docker, recovery, penthouse]",
+      "tags": "[self-hosting, unraid, zfs, docker, recovery, penthouse, security, reliability]",
       "created": "2026-08-04",
       "updated": "2026-08-04",
       "published_to_garden": false,
@@ -3029,63 +3640,74 @@
       "title": "Unraid Pool Recovery - 2026-08-04"
     },
     "Projects/TypingLab/00 - TypingLab Project Overview.md": {
+      "tags": "[]",
       "garden_path": "Projects/TypingLab/00 - TypingLab Project Overview.md",
       "last_published": "2025-11-28T19:44:25.536276",
       "published_to_garden": true,
       "title": "TypingLab Project Overview"
     },
     "Projects/TypingLab/01 - Technical Architecture.md": {
+      "tags": "[]",
       "garden_path": "Projects/TypingLab/01 - Technical Architecture.md",
       "last_published": "2025-11-28T19:44:32.154028",
       "published_to_garden": true,
       "title": "Technical Architecture"
     },
     "Projects/TypingLab/02 - Implementation Journey.md": {
+      "tags": "[reliability]",
       "garden_path": "Projects/TypingLab/02 - Implementation Journey.md",
       "last_published": "2025-11-28T19:44:39.870517",
       "published_to_garden": true,
       "title": "Implementation Journey"
     },
     "Projects/TypingLab/03 - Research Findings.md": {
+      "tags": "[]",
       "garden_path": "Projects/TypingLab/03 - Research Findings.md",
       "last_published": "2025-11-28T19:44:49.340420",
       "published_to_garden": true,
       "title": "Research Findings"
     },
     "Projects/TypingLab/04 - Performance Optimization.md": {
+      "tags": "[cost, checklist]",
       "garden_path": "Projects/TypingLab/04 - Performance Optimization.md",
       "last_published": "2025-11-28T19:44:59.350292",
       "published_to_garden": true,
       "title": "Performance Optimization"
     },
     "Projects/TypingLab/05 - Adaptive Algorithm Deep Dive.md": {
+      "tags": "[]",
       "garden_path": "Projects/TypingLab/05 - Adaptive Algorithm Deep Dive.md",
       "last_published": "2025-11-28T19:45:11.399277",
       "published_to_garden": true,
       "title": "Adaptive Algorithm Deep Dive"
     },
     "Projects/TypingLab/06 - Subagent Implementation Guide.md": {
+      "tags": "[guide, checklist]",
       "garden_path": "Projects/TypingLab/06 - Subagent Implementation Guide.md",
       "last_published": "2025-11-28T19:45:25.120974",
       "published_to_garden": true,
       "title": "Subagent Implementation Guide"
     },
     "Projects/TypingLab/07 - Testing and Verification.md": {
+      "tags": "[checklist]",
       "garden_path": "Projects/TypingLab/07 - Testing and Verification.md",
       "last_published": "2025-11-28T19:45:40.660845",
       "published_to_garden": true,
       "title": "Testing and Verification"
     },
     "Projects/TypingLab/Project - Current State.md": {
+      "tags": "[checklist]",
       "title": "Project - Current State"
     },
     "Projects/TypingLab/README.md": {
+      "tags": "[security]",
       "garden_path": "Projects/TypingLab/README.md",
       "last_published": "2025-11-28T19:44:19.618104",
       "published_to_garden": true,
       "title": "TypingLab Documentation Index"
     },
     "Projects/Veyra Companion/00 - Project Overview.md": {
+      "tags": "[local-ai]",
       "project": "Veyra Companion",
       "status": "Installed build; LFM2.5-VL-3B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted",
       "repository": "/Users/aim/Downloads/Veyra_Companion_Sprites",
@@ -3094,63 +3716,95 @@
       "title": "Veyra Companion"
     },
     "Projects/Veyra Companion/01 - Architecture and Implementation Plan.md": {
+      "tags": "[]",
       "project": "Veyra Companion",
       "status": "LFM2.5-VL-3B small-lane routing live; TTS external-output-only; Qwen3.5-4B and Bonsai removed",
       "updated": "2026-08-15",
       "title": "Architecture and Implementation Plan"
     },
     "Projects/Veyra Companion/02 - Mind, Personality, and Memory.md": {
+      "tags": "[]",
       "project": "Veyra Companion",
       "updated": "2026-08-10",
       "title": "Mind, Personality, and Memory"
     },
     "Projects/Veyra Companion/03 - Assets, Expressions, and Display.md": {
+      "tags": "[]",
       "project": "Veyra Companion",
       "updated": "2026-08-10",
       "title": "Assets, Expressions, and Display"
     },
     "Projects/Veyra Companion/04 - Models, Research, and Privacy.md": {
+      "tags": "[local-ai]",
       "project": "Veyra Companion",
       "updated": "2026-08-15",
       "title": "Models, Research, and Privacy"
     },
     "Projects/Veyra Companion/05 - Build and Verification Record.md": {
+      "tags": "[local-ai]",
       "project": "Veyra Companion",
       "updated": "2026-08-15",
       "title": "Build and Verification Record"
     },
     "Projects/Veyra Companion/06 - Troubleshooting and Findings Log.md": {
+      "tags": "[troubleshooting, local-ai]",
       "project": "Veyra Companion",
       "type": "troubleshooting-log",
       "updated": "2026-08-15",
       "title": "Troubleshooting and Findings Log"
     },
     "Systems/Development Tools.md": {
+      "tags": "[]",
       "title": "Development Tools & Productivity"
     },
     "Systems/Local AI Stack Research - Gemma 4 on M5 Pro.md": {
+      "tags": "[local-ai, hardware-constraints]",
       "title": "Local AI Stack Research - Gemma 4 on M5 Pro"
     },
     "Systems/Obsidian Productivity Mastery.md": {
+      "tags": "[checklist]",
       "title": "Obsidian Productivity Mastery"
     },
     "Systems/Obsidian Vault Git Sync.md": {
+      "tags": "[reliability]",
       "system": "Obsidian Notes Vault",
       "status": "Repaired and syncing",
       "updated": "2026-08-11",
       "title": "Obsidian Vault Git Sync"
     },
     "Systems/Operating Systems.md": {
+      "tags": "[]",
       "title": "Operating Systems"
     },
     "Systems/Personal Setup.md": {
+      "tags": "[]",
       "title": "Personal Setup"
     },
     "Systems/README.md": {
+      "tags": "[monitoring, hardware-constraints]",
       "title": "Systems"
     },
     "Systems/Storage Cleanup and TM Backup Decisions.md": {
+      "tags": "[reliability, local-ai]",
       "title": "Storage Cleanup & TM Backup Decisions"
+    },
+    "Systems/Homelab/CPU Architectures.md": {
+      "tags": "[]"
+    },
+    "Systems/Homelab/FIRST OF ALL.md": {
+      "tags": "[]"
+    },
+    "Systems/Homelab/Home Lab.md": {
+      "tags": "[hardware-constraints]"
+    },
+    "Systems/Homelab/Home Networking.md": {
+      "tags": "[]"
+    },
+    "Systems/Homelab/Home Server.md": {
+      "tags": "[security, reliability, hardware-constraints]"
+    },
+    "Systems/Homelab/Other Devices.md": {
+      "tags": "[hardware-constraints]"
     },
     "Systems/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learned.md": {
       "created": "2025-10-14",
@@ -3158,7 +3812,7 @@
       "last_published": "2025-11-30T20:06:51.819191",
       "published_to_garden": true,
       "status": "complete",
-      "tags": null,
+      "tags": "[troubleshooting, monitoring, security, hardware-constraints]",
       "title": "Prometheus & Grafana Monitoring Stack - Lessons Learned"
     },
     "Systems/Homelab/Prometheus Grafana Stack - Implementation Guide.md": {
@@ -3168,55 +3822,370 @@
       "published_to_garden": true,
       "related": null,
       "status": "deployed",
-      "tags": null,
+      "tags": "[guide, monitoring, hardware-constraints]",
       "title": "Prometheus + Grafana Monitoring Stack - Implementation Guide"
     },
+    "Systems/Homelab/Raspberry Pi.md": {
+      "tags": "[hardware-constraints]"
+    },
+    "Systems/Homelab/Syncthing.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Bash.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Basic Commands in the Starting Terminal.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Commands.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/File Type.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Hard Link Count.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux File Permissions 1.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Local Variables.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Path Variable.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Pipes in Linux.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Shell.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/What are directories.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/grep.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/root directory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Archiving and Compression/Archiving.md": {
+      "tags": "[reliability]"
+    },
+    "Systems/Operating Systems/Linux/Archiving and Compression/Compression.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Archiving and Compression/Create Mode.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Archiving and Compression/Difference Between archiving and Compression.md": {
+      "tags": "[reliability]"
+    },
+    "Systems/Operating Systems/Linux/Command HIstory/History.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command HIstory/Step 1.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command HIstory/Step 2.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command HIstory/Step 3.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Aliases.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Command Types.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/External Commands.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Functions In Linux.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Internal Commands.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Step 1.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Step 2.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Step 3.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/Step 4.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Command Types/which.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Control Statements/Double Ampersand &&.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Control Statements/Double Pipe.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Control Statements/Semicolon _.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Additional System Documentation.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Exploring Info Documentation.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Find Any File or Directory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Finding Commands and Documentation.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Help from a Directory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Info Documentation.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Man Pages Sections Categorized.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Man Pages.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Navigating Info Nodes.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Searching Man Pages.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Sections Within Man Pages.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Using Help Option.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Viewing Info Documentation.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Viewing Man Pages.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/Where Are These Commands Located.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Documentation/apropos.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Environment Variables/Changing Values.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Environment Variables/Environment Variables.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Environment Variables/Export.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Environment Variables/env Commands.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Environment Variables/printenv.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Environment Variables/unset.md": {
+      "tags": "[]"
+    },
     "Systems/Operating Systems/Linux/Linux CL Commands/Linux CL Commands (Directories).md": {
+      "tags": "[]",
       "title": "Create Directories"
     },
+    "Systems/Operating Systems/Linux/Linux CL Commands/ls.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux CL Commands/pwd.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux CL Commands/uname.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux CL Commands/whoami.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux File Permissions/Changing Linux File Perms.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux File Permissions/chmod.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux File Permissions/chown.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Linux File Permissions/sudo.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Managing Files and Directories/File Globiing/Asterisk.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Managing Files and Directories/File Globiing/Bracket Characters.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Managing Files and Directories/File Globiing/Exclamation Point Char.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Managing Files and Directories/File Globiing/File Globbing or Wildcards.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Managing Files and Directories/File Globiing/Listing With Globs.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Managing Files and Directories/File Globiing/Question Mark.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Absolute Paths.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Absolute vs. Relative pathnames.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Changing Directories.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Current Directory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Directories inside Linux file system.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Directory Structure.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Human-Readable Sizes.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Listing Directories.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Listing Files in Directory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Listing Hidden Files.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Long Display Listing.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Paths.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Recursive Listing.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Relative Paths.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/Sort a Listing.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/The . . Chars.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Navigating the Filesystem/The . Char.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Quoting/Backquotes.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Quoting/Backslash.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Quoting/Double Quotes.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Quoting/Single Quotes.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Character Sequence Wildcard.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Character Set Wildcard.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Comment or Trim Strings.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Current Directory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Parent DIrectory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Path Directory Separator.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Single Character Wildcard.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/Tilde Home Directory.md": {
+      "tags": "[]"
+    },
+    "Systems/Operating Systems/Linux/Special Chars For Bash/What are Special Chars.md": {
+      "tags": "[]"
+    },
     "Systems/Router Configuration/00 - Router Optimization Index.md": {
+      "tags": "[security, reliability]",
       "garden_path": "Router Configuration/00 - Router Optimization Index.md",
       "last_published": "2025-11-30T20:04:32.124216",
       "published_to_garden": true,
       "title": "Router Optimization Guide"
     },
     "Systems/Router Configuration/01 - Network Connection Settings.md": {
+      "tags": "[security]",
       "garden_path": "Router Configuration/01 - Network Connection Settings.md",
       "last_published": "2025-11-30T20:04:41.860495",
       "published_to_garden": true,
       "title": "Network Connection Settings"
     },
     "Systems/Router Configuration/02 - DNS Configuration.md": {
+      "tags": "[security]",
       "garden_path": "Router Configuration/02 - DNS Configuration.md",
       "last_published": "2025-11-30T20:04:52.594703",
       "published_to_garden": true,
       "title": "DNS Configuration"
     },
     "Systems/Router Configuration/03 - Dynamic DNS Setup.md": {
+      "tags": "[security, hardware-constraints]",
       "garden_path": "Router Configuration/03 - Dynamic DNS Setup.md",
       "last_published": "2025-11-30T20:05:03.063712",
       "published_to_garden": true,
       "title": "Dynamic DNS Setup"
     },
     "Systems/Router Configuration/04 - Advanced Wireless Settings.md": {
+      "tags": "[security]",
       "garden_path": "Router Configuration/04 - Advanced Wireless Settings.md",
       "last_published": "2025-11-30T20:05:16.209468",
       "published_to_garden": true,
       "title": "Advanced Wireless Settings"
     },
     "Systems/Router Configuration/05 - ALG Settings.md": {
+      "tags": "[security]",
       "garden_path": "Router Configuration/05 - ALG Settings.md",
       "last_published": "2025-11-30T20:05:32.548512",
       "published_to_garden": true,
       "title": "ALG Settings (Application Layer Gateway)"
     },
     "Systems/Router Configuration/06 - VPN Configuration.md": {
+      "tags": "[security]",
       "garden_path": "Router Configuration/06 - VPN Configuration.md",
       "last_published": "2025-11-30T20:05:45.157850",
       "published_to_garden": true,
       "title": "VPN Configuration"
     },
     "Systems/Router Configuration/07 - Performance Optimization Checklist.md": {
+      "tags": "[checklist]",
       "garden_path": "Router Configuration/07 - Performance Optimization Checklist.md",
       "last_published": "2025-11-30T20:06:06.475062",
       "published_to_garden": true,
@@ -3253,12 +4222,43 @@
       "IT Projects/Session Notes",
       "IT Projects/Website Development",
       "IT Projects/Building a Privacy-First Obsidian Publishing System",
+      "Bridges/Customer Workflow Bridge",
+      "Bridges/Payments & Billing Bridge",
+      "Bridges/Branding & Design Bridge",
+      "Bridges/Marketing & Social Media Bridge",
+      "Bridges/Homelab Bridge",
       "Myself/Career",
       "Learning Journals/3D Printing Optimization Journey",
       "Learning Journals/Privacy Hardening Journey",
       "Learning Journals/Tech Research Strategies",
       "Learning Journals/Performance Comparison Methods",
       "Learning Journals/Troubleshooting Lessons Learned"
+    ],
+    "Bridges/Branding & Design Bridge.md": [
+      "Building Material You 3 Website Lessons",
+      "Portfolio Presentation",
+      "Personal Brand & Writing"
+    ],
+    "Bridges/Customer Workflow Bridge.md": [
+      "Product Photography Workflow",
+      "Payments & Billing",
+      "Building Material You 3 Website Lessons",
+      "Marketing & Social Media Bridge"
+    ],
+    "Bridges/Homelab Bridge.md": [
+      "01 - Services Dashboard",
+      "02 - Network Map",
+      "00 - Server Inventory",
+      "Home Lab",
+      "Home Networking",
+      "Home Server",
+      "Project Overview - NOC Skills Homelab",
+      "Prometheus Grafana Stack - Implementation Guide"
+    ],
+    "Bridges/Marketing & Social Media Bridge.md": [
+      "3D Print Shoppe - Marketing Strategy",
+      "Business & Marketing Guide",
+      "Marketing Channels"
     ],
     "IT Projects/README.md": [
       "Knowledge Base - Main Index",
