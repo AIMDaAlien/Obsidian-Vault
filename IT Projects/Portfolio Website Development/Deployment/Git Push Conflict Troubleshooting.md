@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting, website-rebuild, hardening, reliability, portfolio-piece]
+tags: [troubleshooting, website-rebuild, reliability, portfolio-piece]
 ---
 # Git Troubleshooting - Non-Fast-Forward & Push Conflicts
 

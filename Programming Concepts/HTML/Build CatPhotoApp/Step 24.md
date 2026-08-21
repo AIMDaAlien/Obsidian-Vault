@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 A figure caption (`figcaption`) element is used to add a caption to describe the image contained within the `figure` element. 
 For example, `<figcaption>A cute cat</figcaption>` adds the caption `A cute cat`.

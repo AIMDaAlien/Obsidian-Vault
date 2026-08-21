@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardening, local-ai, hardware-constraints]
+tags: [local-ai, hardware-constraints]
 project: Local Language Engine
 status: Standalone Android and beginner UI proven — release hardening active
 repository: /Users/aim/Documents/language-engine

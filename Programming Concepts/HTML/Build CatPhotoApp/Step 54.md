@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Forms commonly use checkboxes for questions that may have more than one answer. For example, here's a checkbox with the option of `tacos`: `<input type="checkbox"> tacos`.
 

@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 `figure`  represents self-contained content and will allow you to associate an image with a caption.
 

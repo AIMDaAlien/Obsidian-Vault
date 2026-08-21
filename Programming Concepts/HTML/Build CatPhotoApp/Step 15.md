@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 In previous steps you used an anchor element to turn text into a link. Other types of sontent can also become links by wrapping it in anchor tags. 
 

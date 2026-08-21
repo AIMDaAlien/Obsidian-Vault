@@ -1,5 +1,5 @@
 ---
-tags: [payments, website-rebuild, hardening, checklist]
+tags: [payments, website-rebuild, checklist]
 ---
 # Tech Consulting Website - Current State
 

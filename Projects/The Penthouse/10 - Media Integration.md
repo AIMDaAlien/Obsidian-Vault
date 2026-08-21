@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, media, uploads, gif, hardening]
+tags: [penthouse, media, uploads, gif]
 created: 2026-03-08
 published_to_garden: true
 visibility: public

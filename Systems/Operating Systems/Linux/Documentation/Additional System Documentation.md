@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 On most systems, there is a directory where additional docs are found.
 

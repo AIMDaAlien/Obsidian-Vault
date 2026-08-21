@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Now you will add a web form to collect info from users.
 

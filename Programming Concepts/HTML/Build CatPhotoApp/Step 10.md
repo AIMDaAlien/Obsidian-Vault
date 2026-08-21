@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 
 You can link to another page with the anchor (`a`) element. 

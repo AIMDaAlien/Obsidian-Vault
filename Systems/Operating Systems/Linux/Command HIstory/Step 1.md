@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Execute a cmd then execute the `history` cmd
 

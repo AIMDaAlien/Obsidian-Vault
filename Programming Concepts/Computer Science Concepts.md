@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 # Computer Science Concepts
 

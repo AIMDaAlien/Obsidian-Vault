@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 project: Corne Accuracy Trainer
 status: Approved direction — not yet implemented
 repository: /Users/aim/Documents/Corne Accuracy Trainer

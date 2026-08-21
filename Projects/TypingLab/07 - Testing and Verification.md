@@ -1,5 +1,5 @@
 ---
-tags: [guide, checklist]
+tags: [checklist]
 garden_path: Projects/TypingLab/07 - Testing and Verification.md
 last_published: '2025-11-28T19:45:40.660845'
 published_to_garden: true

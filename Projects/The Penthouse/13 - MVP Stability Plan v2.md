@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, mvp, stability, backend-first, obsidian, website-rebuild, hardening]
+tags: [penthouse, mvp, stability, backend-first, obsidian, website-rebuild]
 created: 2026-03-12
 ---
 

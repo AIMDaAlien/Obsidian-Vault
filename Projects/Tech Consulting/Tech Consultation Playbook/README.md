@@ -1,5 +1,5 @@
 ---
-tags: [branding, website-rebuild, hardening, checklist]
+tags: [branding, website-rebuild, checklist]
 ---
 # Tech Consultation Business Playbook
 

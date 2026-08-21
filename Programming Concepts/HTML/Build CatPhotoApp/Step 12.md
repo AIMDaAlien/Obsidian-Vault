@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 In the previous step you turned the words `link to cat pictures` into a link by placing them between opining and closing anchor (`a`) tags. You can do the same to words inside of an element.
 

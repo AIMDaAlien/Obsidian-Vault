@@ -1,5 +1,5 @@
 ---
-tags: [hardening, reliability, hardware-constraints]
+tags: [security, reliability, hardware-constraints]
 ---
 - Choose a [[CPU Architectures]] for your home server
 - [[Raspberry Pi]] home server for web hosting, file storage, and more

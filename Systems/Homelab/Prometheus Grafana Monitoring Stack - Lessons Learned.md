@@ -4,7 +4,7 @@ garden_path: Systems/Homelab/Prometheus Grafana Monitoring Stack - Lessons Learn
 last_published: '2025-11-30T20:06:51.819191'
 published_to_garden: true
 status: complete
-tags: [null, troubleshooting, monitoring, hardening, hardware-constraints]
+tags: [troubleshooting, monitoring, security, hardware-constraints]
 ---
 
 # Prometheus & Grafana Monitoring Stack - Lessons Learned

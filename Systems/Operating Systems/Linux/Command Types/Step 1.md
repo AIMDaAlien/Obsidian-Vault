@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 The `type` cmd can be used to determine info about cmd types
 `type command`

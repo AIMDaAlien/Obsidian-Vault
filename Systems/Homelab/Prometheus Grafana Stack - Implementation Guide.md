@@ -6,7 +6,7 @@ published_to_garden: true
 related:
 - - Prometheus Grafana Monitoring Stack - Lessons Learned
 status: deployed
-tags: [null, guide, monitoring, hardware-constraints]
+tags: [guide, monitoring, hardware-constraints]
 ---
 
 # Prometheus + Grafana Monitoring Stack - Implementation Guide

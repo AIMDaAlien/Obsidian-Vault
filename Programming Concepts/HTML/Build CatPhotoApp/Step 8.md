@@ -1,5 +1,5 @@
 ---
-tags: [guide, branding]
+tags: [branding]
 ---
 HTML attributes are special words used in the opning tag of an element's behavior. The  `src` attribute in an `img` element specifies the image's URL.
 

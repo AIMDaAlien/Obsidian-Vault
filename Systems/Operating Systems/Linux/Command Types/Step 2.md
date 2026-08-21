@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 [[External Commands]] are binary executables stored in directories that are searched by the [[Shell]]. If a user types `ls`, the shell searches through the directories that are listed in  `PATH` variable to try to find a file named `ls` that can be executed. 
 Use `which` to show the full path to `ls`

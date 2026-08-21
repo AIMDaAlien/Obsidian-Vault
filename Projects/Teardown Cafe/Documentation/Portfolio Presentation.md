@@ -1,5 +1,5 @@
 ---
-tags: [decision-record, website-rebuild, hardening, portfolio-piece, checklist]
+tags: [decision-record, website-rebuild, portfolio-piece, checklist]
 ---
 
 ---

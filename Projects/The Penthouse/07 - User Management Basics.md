@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, user-management, auth, admin, guide]
+tags: [penthouse, user-management, auth, admin]
 created: 2026-03-08
 published_to_garden: true
 visibility: public

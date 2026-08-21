@@ -1,5 +1,5 @@
 ---
-tags: [guide, session-log]
+tags: [session-log]
 ---
 # 📊 Session Index
 

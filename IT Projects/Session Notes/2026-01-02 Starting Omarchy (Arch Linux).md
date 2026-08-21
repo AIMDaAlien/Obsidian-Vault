@@ -1,5 +1,5 @@
 ---
-tags: [guide, session-log, hardening]
+tags: [session-log, security]
 ---
 # 🐧 The Gentleman's Guide to Starting DevOps on Arch Linux
 

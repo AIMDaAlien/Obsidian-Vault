@@ -1,5 +1,5 @@
 ---
-tags: [guide, local-ai, checklist]
+tags: [local-ai, checklist]
 ---
 # Setup Tutorial - Sovereign AI Stack
 

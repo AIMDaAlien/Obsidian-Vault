@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Add a target attribute with the value `_blank` to the anchor (`a`) element's opening tag, so that the link opens in an new tab.
 

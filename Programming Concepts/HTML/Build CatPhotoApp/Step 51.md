@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 The `legend` element acts as a caption for the context in the `fieldset` element. It gives usewrs context about what they should enter into thast part of the form. 
 

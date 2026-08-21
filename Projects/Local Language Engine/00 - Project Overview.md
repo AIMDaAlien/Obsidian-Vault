@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardening, local-ai, hardware-constraints, cost]
+tags: [hardware-constraints, cost]
 project: Local Language Engine
 status: Standalone Android and beginner UI proven — release hardening active
 phase: Physical-device pipeline and progressive interface proven; dependability hardening

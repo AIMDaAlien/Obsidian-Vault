@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardening]
+tags: []
 ---
 **Tag:** [[DevLog]] [[3D Print Shoppe]] [[UI/UX]] **Date:** 2025-12-04
 

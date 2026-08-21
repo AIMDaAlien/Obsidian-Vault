@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 project: Veyra Companion
 status: LFM2.5-VL-3B small-lane routing live; TTS external-output-only; Qwen3.5-4B and Bonsai removed
 updated: 2026-08-15

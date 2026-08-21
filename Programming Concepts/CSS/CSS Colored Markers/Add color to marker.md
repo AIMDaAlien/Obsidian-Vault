@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 11. One way to add color to an element is to use a *color* *keyword*, like `black,cyan, or yellow`.
 Here's how to target the class `freecodecamp`: 

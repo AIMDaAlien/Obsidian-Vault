@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 1. As you learned in the last few steps of [[Step 68]], there is a basic structure needed to start building your web page.
 

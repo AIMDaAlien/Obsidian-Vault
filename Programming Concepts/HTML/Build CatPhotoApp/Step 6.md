@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 In the previous step, you put `h1`, `h2`, comment, and `p` elements inside `main` element. This is called *nesting*. 
 

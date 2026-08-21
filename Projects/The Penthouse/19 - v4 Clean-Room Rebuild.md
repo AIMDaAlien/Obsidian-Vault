@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, v4, rebuild, sveltekit, drizzle, website-rebuild, hardening]
+tags: [penthouse, v4, rebuild, sveltekit, drizzle, website-rebuild, security]
 created: 2026-05-07
 published_to_garden: true
 last_published: '2026-07-25T21:05:10.185673'

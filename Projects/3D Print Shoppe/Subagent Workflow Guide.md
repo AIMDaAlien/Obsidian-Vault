@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting, website-rebuild, checklist]
+tags: [guide, website-rebuild, checklist]
 ---
 # Subagent Workflow Guide
 

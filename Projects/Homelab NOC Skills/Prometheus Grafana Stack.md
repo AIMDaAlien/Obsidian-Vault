@@ -3,7 +3,7 @@ created: '2026-01-10T12:05:16.232280'
 modified: '2026-01-10T23:18:48.631817'
 privacy_scan: not_scanned
 published_to_garden: false
-tags: [monitoring, hardening]
+tags: [monitoring]
 - prometheus
 - grafana
 - monitoring

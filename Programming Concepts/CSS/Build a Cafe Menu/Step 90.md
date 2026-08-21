@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Add one last image under the `Desserts` heading using the url `https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg`. Give the image an `alt` value of `pie icon`.
 ```html

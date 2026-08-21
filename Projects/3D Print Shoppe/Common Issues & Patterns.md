@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting]
+tags: []
 ---
 # Common Issues & Patterns
 

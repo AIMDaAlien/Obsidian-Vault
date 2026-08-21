@@ -3,7 +3,7 @@ created: '2025-12-05T17:11:52.151958'
 modified: '2025-12-05T17:11:52.151958'
 privacy_scan: not_scanned
 published_to_garden: false
-tags: [session-log, marketing, hardening]
+tags: [session-log, marketing]
 title: 3D Print Shoppe   Session Notes 2024 12 05
 visibility: private
 ---

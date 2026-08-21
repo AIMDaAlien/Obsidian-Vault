@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Add the `name` attribute with the value `personality` to the checkbox `input` element.
 

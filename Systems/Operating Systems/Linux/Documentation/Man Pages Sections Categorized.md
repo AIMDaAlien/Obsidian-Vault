@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 We have been showing [[Man Pages]] for cmds. However, there are many different types of cmds  (user commands, system commands, and administration commands), configuration files and other features, such as libraries and kernel components, that require documentation. 
 

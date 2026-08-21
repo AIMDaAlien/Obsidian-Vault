@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting, hardening, hardware-constraints, cost]
+tags: [guide, troubleshooting, security, hardware-constraints, cost]
 ---
 
 

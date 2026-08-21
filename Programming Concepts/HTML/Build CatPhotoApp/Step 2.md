@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 `h1` to `h6` heading elements are used to shoe the importance f content below them. The lower the number, the higher its importance, so `h2` is less important than `h1`. Only one `h1` element per page and place lower importance headings below higher ones. 
 

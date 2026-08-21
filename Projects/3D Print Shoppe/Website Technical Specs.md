@@ -1,5 +1,5 @@
 ---
-tags: [website-rebuild, hardening, checklist]
+tags: [website-rebuild, checklist]
 ---
 # Website Technical Specs
 

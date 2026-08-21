@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Before adding any content, you should make use of a `section` element to separate the cat photos content from the future content.
 

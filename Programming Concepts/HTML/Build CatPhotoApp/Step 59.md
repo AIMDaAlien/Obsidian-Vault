@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Add a final checkbox after the previous one with an `id` attribute value of `energetic`. The `name` attribute should be the same as the previous checkbox.
 

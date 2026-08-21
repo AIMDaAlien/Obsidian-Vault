@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 The `strong` element is used to indicate that some text is of strong importance or urgent. 
 

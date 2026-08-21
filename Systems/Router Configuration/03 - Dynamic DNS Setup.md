@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardening, hardware-constraints]
+tags: [security, hardware-constraints]
 garden_path: Router Configuration/03 - Dynamic DNS Setup.md
 last_published: '2025-11-30T20:05:03.063712'
 published_to_garden: true

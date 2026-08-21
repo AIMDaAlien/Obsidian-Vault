@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Add another checkbox after the one you just added. [[Step 54]] The `id` attribute value should be `lazy` and the `name` attribute value should be the same as the last checkbox.
 

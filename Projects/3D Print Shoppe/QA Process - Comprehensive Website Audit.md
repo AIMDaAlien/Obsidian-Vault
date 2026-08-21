@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, marketing, checklist]
+tags: [marketing, checklist]
 ---
 # QA Process - Comprehensive Website Audit
 

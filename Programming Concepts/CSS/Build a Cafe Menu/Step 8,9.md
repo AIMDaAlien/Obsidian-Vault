@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 8. There will be two sections on the menu. One for coffees and one for desserts. Add a `section` element within the `main` element so you have a place to put all the coffees available.
 

@@ -1,5 +1,5 @@
 ---
-tags: [guide, customer-workflow, cost]
+tags: [customer-workflow, cost]
 ---
 # Client Boundaries & Scripts
 

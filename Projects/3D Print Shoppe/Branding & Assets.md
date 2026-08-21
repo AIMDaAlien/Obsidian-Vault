@@ -1,5 +1,5 @@
 ---
-tags: [payments, branding, marketing, checklist]
+tags: [payments, branding, checklist]
 ---
 # Branding & Assets
 

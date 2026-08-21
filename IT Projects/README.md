@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, monitoring, hardening]
+tags: [troubleshooting, monitoring]
 ---
 # IT Projects
 

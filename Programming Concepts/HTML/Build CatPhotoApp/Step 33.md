@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Time to add a new section. Add a third `section` element below the second `section`.
 

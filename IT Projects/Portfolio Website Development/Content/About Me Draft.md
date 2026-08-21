@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, marketing, website-rebuild, hardening, hardware-constraints, portfolio-piece, checklist]
+tags: [troubleshooting, website-rebuild, hardware-constraints, portfolio-piece, checklist]
 ---
 # About Me - Website Content Draft
 

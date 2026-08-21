@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 To view the history list of a terminal, use `history` [[Systems/Operating Systems/Linux/Command HIstory/Step 1]]
 If the command is in the list that `history` generates, it can be executed by typing ! And the number next to the command.

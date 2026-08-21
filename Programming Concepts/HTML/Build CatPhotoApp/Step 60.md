@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Like radio buttons, form data for selected checkboxes are `name` / `value` attribute pairs. While the `value` attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
 

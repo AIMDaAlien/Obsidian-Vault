@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardening, checklist]
+tags: [guide, security, checklist]
 garden_path: Projects/Archive/GrapheneOS Migration Guide - Complete Documentation.md
 last_published: '2025-11-28T19:42:08.163886'
 published_to_garden: true

@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 `id` attribute is used to identify specific HTML elements. Each `id` attribute's value must be unique from all other `id` values for the entire page.
 

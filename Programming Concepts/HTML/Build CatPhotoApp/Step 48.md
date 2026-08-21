@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Noticew that both radio buttons can be selected at the same time. To make be able to select only one button, both buttons must have a `name` atribute with the same value.
 

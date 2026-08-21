@@ -1,5 +1,5 @@
 ---
-tags: [guide, session-log, troubleshooting]
+tags: [session-log, troubleshooting]
 ---
 # Troubleshooting Report: The "DNS Loop" & Pi-hole Integration
 **Tags:** #Networking #Homelab #Troubleshooting #PiHole #TPLink #DNS

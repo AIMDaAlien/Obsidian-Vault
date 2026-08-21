@@ -1,5 +1,5 @@
 ---
-tags: [guide, website-rebuild, hardening]
+tags: [guide, website-rebuild, security]
 garden_path: Projects/Teardown Cafe/Documentation/Deployment Guide.md
 last_published: '2025-11-28T19:46:59.816145'
 published_to_garden: true

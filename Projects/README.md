@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting, payments, branding, marketing, hardening, local-ai]
+tags: [troubleshooting, payments, branding, marketing, local-ai]
 ---
 # Projects
 

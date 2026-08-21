@@ -1,5 +1,5 @@
 ---
-tags: [hardening, checklist]
+tags: [checklist]
 ---
 # Project - Current State
 

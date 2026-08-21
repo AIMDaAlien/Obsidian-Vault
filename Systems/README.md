@@ -1,5 +1,5 @@
 ---
-tags: [guide, monitoring, hardware-constraints]
+tags: [monitoring, hardware-constraints]
 ---
 # Systems
 

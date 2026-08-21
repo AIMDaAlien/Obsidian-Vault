@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Now you will add a footer section to the page.
 

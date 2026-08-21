@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, checklist, mvp, execution, guide, website-rebuild]
+tags: [penthouse, checklist, mvp, execution, website-rebuild]
 created: 2026-03-05
 published_to_garden: true
 visibility: public

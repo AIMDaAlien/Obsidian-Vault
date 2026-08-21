@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 The code for an ordered list (ol) is similar to an unordered list, but list items in ol are numbered when shown.
 

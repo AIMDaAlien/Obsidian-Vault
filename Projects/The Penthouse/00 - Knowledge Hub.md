@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, rebuild, knowledge-base, obsidian, guide, decision-record, website-rebuild, hardening]
+tags: [penthouse, rebuild, knowledge-base, obsidian, decision-record, website-rebuild]
 created: 2026-03-05
 published_to_garden: true
 last_published: '2026-07-25T21:05:10.185673'

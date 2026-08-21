@@ -1,5 +1,5 @@
 ---
-tags: [website-rebuild, hardening, reliability, checklist]
+tags: [website-rebuild, reliability, checklist]
 ---
 # Quick Reference - Key Learnings
 

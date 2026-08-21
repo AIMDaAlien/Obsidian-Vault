@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 3. The `title` is one of several elements that give extra info not visible on the web page, but useful for search engines or how the page gets displayed.
 

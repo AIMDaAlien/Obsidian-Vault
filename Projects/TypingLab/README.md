@@ -1,5 +1,5 @@
 ---
-tags: [hardening]
+tags: [security]
 garden_path: Projects/TypingLab/README.md
 last_published: '2025-11-28T19:44:19.618104'
 published_to_garden: true

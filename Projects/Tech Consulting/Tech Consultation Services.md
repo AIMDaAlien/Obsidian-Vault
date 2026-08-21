@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardening, cost]
+tags: [security, cost]
 ---
 # Tech Consultation Services
 

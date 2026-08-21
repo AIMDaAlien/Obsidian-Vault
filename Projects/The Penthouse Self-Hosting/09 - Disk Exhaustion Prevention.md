@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, truenas, docker, disk, ops, guide, website-rebuild]
+tags: [self-hosting, truenas, docker, disk, ops]
 created: 2026-02-18
 published_to_garden: true
 visibility: public

@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Nest a `p` element with the text `No Copyright - freeCodeCamp.org` within the `footer` element.
 

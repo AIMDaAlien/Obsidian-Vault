@@ -1,5 +1,5 @@
 ---
-tags: [guide, checklist]
+tags: [checklist]
 garden_path: Router Configuration/07 - Performance Optimization Checklist.md
 last_published: '2025-11-30T20:06:06.475062'
 published_to_garden: true

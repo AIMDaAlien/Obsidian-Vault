@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, ssh, truenas, security, guide, hardening]
+tags: [self-hosting, ssh, truenas, security, hardening]
 created: 2026-02-18
 published_to_garden: true
 visibility: public

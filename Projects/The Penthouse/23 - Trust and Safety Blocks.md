@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, trust-safety, blocks, direct-messages, release, hardening]
+tags: [penthouse, trust-safety, blocks, direct-messages, release]
 created: 2026-08-09
 visibility: private
 ---

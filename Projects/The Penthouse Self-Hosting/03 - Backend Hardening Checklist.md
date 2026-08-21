@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, security, backend, hardening, guide]
+tags: [self-hosting, security, backend, hardening]
 created: 2026-02-18
 published_to_garden: true
 visibility: public

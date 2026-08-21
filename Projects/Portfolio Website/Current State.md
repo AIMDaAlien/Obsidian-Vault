@@ -1,5 +1,5 @@
 ---
-tags: [hardening, hardware-constraints, cost, portfolio-piece, checklist]
+tags: [security, hardware-constraints, cost, portfolio-piece, checklist]
 ---
 ### October 26, 2025 - Portfolio Knowledge Garden Updates
 - [x] Fixed Obsidian vault sync issue (6 weeks of updates pushed to GitHub)

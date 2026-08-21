@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 garden_path: Projects/TypingLab/05 - Adaptive Algorithm Deep Dive.md
 last_published: '2025-11-28T19:45:11.399277'
 published_to_garden: true

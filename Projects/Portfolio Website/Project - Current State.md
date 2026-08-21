@@ -1,5 +1,5 @@
 ---
-tags: [portfolio, web-development, knowledge-garden, homelab, github-pages, website-rebuild, hardening, reliability, hardware-constraints, portfolio-piece, checklist]
+tags: [portfolio, web-development, knowledge-garden, homelab, github-pages, website-rebuild, reliability, hardware-constraints, portfolio-piece, checklist]
 created: 2025-10-26
 updated: 2026-08-01
 published_to_garden: true

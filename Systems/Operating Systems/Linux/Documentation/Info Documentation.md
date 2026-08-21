@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 [[Man Pages]] are good sources, but tend to have some disadvantages. One example being that each man page is a separate doc, not related to any other man page. While some have `SEE ALSO` section, they tend to be independent sources of documentation.
 

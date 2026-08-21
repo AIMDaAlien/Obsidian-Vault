@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, hardening, hardware-constraints]
+tags: [troubleshooting, hardware-constraints]
 ---
 
 

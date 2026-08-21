@@ -1,5 +1,5 @@
 ---
-tags: [guide, checklist]
+tags: [checklist]
 ---
 # 📊 Workflow Dashboard
 

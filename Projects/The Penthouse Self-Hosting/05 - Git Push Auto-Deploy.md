@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, ci-cd, github-actions, deployment, guide, website-rebuild, hardening]
+tags: [self-hosting, ci-cd, github-actions, deployment, security]
 created: 2026-02-18
 published_to_garden: true
 visibility: public

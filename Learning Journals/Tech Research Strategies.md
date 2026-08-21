@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, marketing, hardening]
+tags: [troubleshooting, marketing]
 garden_path: Learning/Tech Research Strategies.md
 last_published: '2025-11-28T20:37:22.982957'
 published_to_garden: true

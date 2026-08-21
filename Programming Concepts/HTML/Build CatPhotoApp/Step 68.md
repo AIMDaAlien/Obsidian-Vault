@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 All pages should begin with `<!DOCTYPE html>`. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
 

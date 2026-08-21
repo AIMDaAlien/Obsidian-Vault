@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting, checklist]
+tags: [troubleshooting, checklist]
 ---
 # Project - Current State
 

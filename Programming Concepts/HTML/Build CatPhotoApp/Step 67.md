@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Notice that the entire contents of the page are nested within an `html` element. All other elements must be descendants of this `html` element.
 

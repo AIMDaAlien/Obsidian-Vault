@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 If you select the `Indoor` radio button and submit the form, the form data for the button is based on its `name` and `value` attributes. 
 Since your radio buttons do not have a `value` attribute, the form data will include `indoor-outdoor=on`, which is not useful when you have multiple buttons.

@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 There are many kinds of inputs you can create using the `type` attribute. You can easily create a password field. Reset button, or a control to let users select a file from their computer. 
 

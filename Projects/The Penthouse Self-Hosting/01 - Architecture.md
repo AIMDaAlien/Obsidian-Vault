@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, truenas, docker, caddy, networking, guide, hardening]
+tags: [self-hosting, truenas, docker, caddy, networking, security]
 created: 2026-02-17
 published_to_garden: true
 visibility: public

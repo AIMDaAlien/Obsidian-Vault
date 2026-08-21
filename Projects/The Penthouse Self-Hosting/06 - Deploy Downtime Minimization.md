@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, deployment, downtime, docker, guide, hardening]
+tags: [self-hosting, deployment, downtime, docker, security]
 created: 2026-02-18
 published_to_garden: true
 visibility: public

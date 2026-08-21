@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 8. As a reminder, here's how to target a paragraph element and align it to the right:  [[Step 10,11]]
 ![[Pasted image 20230621215642.png]]

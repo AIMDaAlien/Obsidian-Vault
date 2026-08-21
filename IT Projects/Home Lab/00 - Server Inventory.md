@@ -1,5 +1,5 @@
 ---
-tags: [homelab, server-inventory, unraid, hardware, guide, monitoring, reliability, hardware-constraints]
+tags: [homelab, server-inventory, unraid, hardware, monitoring, reliability, hardware-constraints]
 created: 2026-06-27
 published_to_garden: true
 last_published: '2026-07-29T23:14:32'

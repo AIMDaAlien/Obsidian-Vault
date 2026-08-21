@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 To execute a cmd again, type the exclamation point and the history list number. [[History]]
 `! 9`

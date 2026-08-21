@@ -1,5 +1,5 @@
 ---
-tags: [guide, customer-workflow, payments]
+tags: [customer-workflow, payments]
 ---
 # Tools & Client Workflow
 

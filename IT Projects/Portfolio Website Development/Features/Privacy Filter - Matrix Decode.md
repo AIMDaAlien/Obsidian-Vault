@@ -1,5 +1,5 @@
 ---
-tags: [website-rebuild, hardening, portfolio-piece, checklist]
+tags: [website-rebuild, portfolio-piece, checklist]
 ---
 # Matrix-Decode Privacy Filter Implementation
 

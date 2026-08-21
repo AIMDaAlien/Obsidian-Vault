@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 ![[Pasted image 20230617114519.png]]
 

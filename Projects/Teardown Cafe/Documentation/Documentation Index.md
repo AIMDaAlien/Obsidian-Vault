@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting, hardening, checklist]
+tags: [troubleshooting, checklist]
 ---
 # Teardown Cafe - Documentation Index
 

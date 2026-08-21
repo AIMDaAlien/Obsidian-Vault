@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 Even though you added your button below the text input, they appear next to each other on the page. That's because both `input` and `button` elements are *inline elements*, which don't appear on new lines. 
 

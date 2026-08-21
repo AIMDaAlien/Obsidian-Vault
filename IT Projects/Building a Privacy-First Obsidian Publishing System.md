@@ -5,7 +5,7 @@ last_published: '2025-11-28T12:28:48.200334'
 modified: 2024-11-28 16:30:00
 privacy_scan: not_scanned
 published_to_garden: true
-tags: [hardening]
+tags: []
 - mcp
 - obsidian
 - privacy

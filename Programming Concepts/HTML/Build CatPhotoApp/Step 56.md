@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 There's another way to associate an `input` element's text with the element itself. You can nest the text within `label`  and add a `for` attribute with the same value as the `input` element's `id` attribute.
 

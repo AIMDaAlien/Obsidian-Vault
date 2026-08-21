@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, truenas, unraid, docker, ops, penthouse-v1, guide, website-rebuild, hardening]
+tags: [self-hosting, truenas, unraid, docker, ops, penthouse-v1, website-rebuild, security]
 created: 2026-02-17
 published_to_garden: true
 visibility: public

@@ -1,5 +1,5 @@
 ---
-tags: [guide, local-ai]
+tags: [local-ai]
 project: Veyra Companion
 updated: 2026-08-15
 ---

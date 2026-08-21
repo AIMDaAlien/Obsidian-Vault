@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 When you add a lower rank heading element to the page, its implied that youre starting a new subsection.
 

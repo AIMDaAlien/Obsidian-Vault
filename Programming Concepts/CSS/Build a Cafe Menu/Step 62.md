@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 62. Typography of heading elements (e.g. `h1`, `h2`) is set by default values of users' browsers.
 

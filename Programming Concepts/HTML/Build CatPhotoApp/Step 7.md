@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 You can add images to your website by using `img`. They have an opening tag without a closing tag. 
 

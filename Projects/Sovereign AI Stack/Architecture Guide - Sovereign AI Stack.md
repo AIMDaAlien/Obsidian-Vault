@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardening, local-ai]
+tags: [guide, security, local-ai]
 ---
 # Architecture Guide - Sovereign AI Stack
 

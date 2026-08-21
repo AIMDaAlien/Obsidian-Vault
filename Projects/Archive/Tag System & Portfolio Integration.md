@@ -1,5 +1,5 @@
 ---
-tags: [teardown-cafe, obsidian, tags, portfolio, integration, guide, hardware-constraints, portfolio-piece]
+tags: [teardown-cafe, obsidian, tags, portfolio, integration, hardware-constraints, portfolio-piece]
 created: 2025-10-20
 ---
 

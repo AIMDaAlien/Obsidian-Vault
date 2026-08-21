@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 In order for a form's data to be accessed by the location specified in `action` attribute, you must give the text field a `name` attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax for an email address text field:
 `<input type="text" name="email">`.

@@ -1,5 +1,5 @@
 ---
-tags: [guide, marketing, checklist]
+tags: [marketing, checklist]
 ---
 # Quick Start Checklist
 

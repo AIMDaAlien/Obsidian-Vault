@@ -1,5 +1,5 @@
 ---
-tags: [homelab, services, dashboard, guide, hardening, reliability, hardware-constraints]
+tags: [homelab, services, dashboard, security, reliability, hardware-constraints]
 created: 2026-07-25
 published_to_garden: true
 last_published: '2026-07-25T21:05:10.185673'

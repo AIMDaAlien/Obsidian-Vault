@@ -3,7 +3,7 @@ created: 2026-02-13T10:37:00.000000
 modified: 2026-02-13T10:37:00.000000
 privacy_scan: not_scanned
 published_to_garden: false
-tags: [penthouse, deployment, android, truenas, caddy, guide, session-log, troubleshooting, hardening, reliability, checklist]
+tags: [penthouse, deployment, android, truenas, caddy, session-log, troubleshooting, security, reliability, checklist]
 title: The Penthouse - Session Notes 2026-02-13
 visibility: private
 ---

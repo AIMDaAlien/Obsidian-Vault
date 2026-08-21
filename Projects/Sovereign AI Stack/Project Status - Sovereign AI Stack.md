@@ -1,5 +1,5 @@
 ---
-tags: [hardening, local-ai]
+tags: [security, local-ai]
 ---
 # Project Status - Sovereign AI Stack
 

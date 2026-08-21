@@ -1,5 +1,5 @@
 ---
-tags: [guide, reliability]
+tags: [reliability]
 project: Corne Accuracy Trainer
 status: Private working release — public customization roadmap defined
 repository: https://github.com/AIMDaAlien/aim-corne-accuracy-trainer

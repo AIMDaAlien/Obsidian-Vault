@@ -1,5 +1,5 @@
 ---
-tags: [customer-workflow, hardening, reliability, cost, checklist]
+tags: [customer-workflow, reliability, cost, checklist]
 ---
 # Client Intake Template
 

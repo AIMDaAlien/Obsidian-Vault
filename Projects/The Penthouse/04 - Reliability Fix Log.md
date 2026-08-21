@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, reliability, bugs, postmortem, guide, troubleshooting]
+tags: [penthouse, reliability, bugs, postmortem]
 created: 2026-03-05
 published_to_garden: true
 visibility: public

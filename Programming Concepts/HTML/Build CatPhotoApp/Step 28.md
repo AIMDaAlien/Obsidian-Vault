@@ -1,5 +1,5 @@
 ---
-tags: [guide]
+tags: []
 ---
 After the ordered list, add another `figure` element.
 

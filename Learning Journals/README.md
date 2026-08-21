@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, hardening]
+tags: [troubleshooting]
 ---
 # Learning Journals
 

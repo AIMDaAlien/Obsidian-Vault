@@ -1,5 +1,5 @@
 ---
-tags: [homelab, network, map, guide, monitoring]
+tags: [homelab, network, map, monitoring]
 created: 2026-07-25
 published_to_garden: true
 last_published: '2026-07-25T21:05:10.185673'
