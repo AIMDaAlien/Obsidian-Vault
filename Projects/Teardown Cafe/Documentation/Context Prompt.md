@@ -1,5 +1,5 @@
 ---
-tags: #prompt #context #claude #workflow
+tags: [prompt, context, claude, workflow, troubleshooting]
 created: 2025-10-19
 ---
 

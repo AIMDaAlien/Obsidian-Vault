@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 
 You can link to another page with the anchor (`a`) element. 
 For example, `<a href='https://freecodecamp.org'></a>` would link to `freecodecamp.org`.

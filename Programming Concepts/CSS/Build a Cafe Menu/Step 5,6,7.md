@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 5. Time to add come menu content. Add a `main` element within the existing `body` element. It will eventually contain pricing info about coffee and desserts offered by the café.
 
 ```css

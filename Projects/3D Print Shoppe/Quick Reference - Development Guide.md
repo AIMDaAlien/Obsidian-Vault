@@ -1,3 +1,6 @@
+---
+tags: [guide, website-rebuild, checklist]
+---
 # Quick Reference - Development Guide
 
 **Date:** November 8, 2025  

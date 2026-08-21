@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting, checklist]
+---
 # Project - Current State
 
 ## Quick Context

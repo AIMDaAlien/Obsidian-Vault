@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, changelog, v1, penthouse]
+tags: [self-hosting, changelog, v1, penthouse, troubleshooting, branding, hardening]
 created: 2026-03-03
 published_to_garden: true
 visibility: public

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 6. You're ready to add content to the page. 
 Within the `body`, nest an `h1` with the text `CSS Color Markers`. 
 ```html

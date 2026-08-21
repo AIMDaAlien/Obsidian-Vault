@@ -1,3 +1,6 @@
+---
+tags: [troubleshooting, hardening, hardware-constraints]
+---
 
 
 ## Adding New Teardown Entries

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 # 🔗 Obsidian Context Filter for Teardown Cafe
 
 ## Quick Context Setup

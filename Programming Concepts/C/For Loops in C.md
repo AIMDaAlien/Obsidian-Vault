@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ![[Pasted image 20230616113325.png]]
 
 Does exactly the same thing but with more logic int hte first line

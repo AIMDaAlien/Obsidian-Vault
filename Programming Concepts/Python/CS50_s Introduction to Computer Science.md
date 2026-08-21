@@ -1,3 +1,6 @@
+---
+tags: []
+---
 C is everywhere and is under the hood of most computer languages. 
 
 Computer science itself is the study of "information"

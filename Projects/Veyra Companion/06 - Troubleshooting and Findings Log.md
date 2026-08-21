@@ -1,4 +1,5 @@
 ---
+tags: [guide, troubleshooting, local-ai]
 project: Veyra Companion
 type: troubleshooting-log
 updated: 2026-08-15

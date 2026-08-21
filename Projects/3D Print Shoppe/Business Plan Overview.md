@@ -1,3 +1,6 @@
+---
+tags: [payments, marketing, reliability]
+---
 # Business Plan Overview
 
 ## Business Model

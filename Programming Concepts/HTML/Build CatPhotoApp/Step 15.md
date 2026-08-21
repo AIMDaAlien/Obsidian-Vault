@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 In previous steps you used an anchor element to turn text into a link. Other types of sontent can also become links by wrapping it in anchor tags. 
 
 Turn the image into a link by surrounding it with necessary element tags. Use `https://freecatphotoapp.com` as the anchor's `href` attribute value.

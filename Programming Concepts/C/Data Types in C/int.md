@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ##### int
 - Used for variables that store integers
 - Integers always use up 4 bytes of memory (32 bits). This means the range of values they can store is limited to 32 bits of info.

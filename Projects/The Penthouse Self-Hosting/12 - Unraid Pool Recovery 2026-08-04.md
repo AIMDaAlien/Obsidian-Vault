@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, unraid, zfs, docker, recovery, penthouse]
+tags: [self-hosting, unraid, zfs, docker, recovery, penthouse, website-rebuild, hardening, reliability]
 created: 2026-08-04
 updated: 2026-08-04
 published_to_garden: false

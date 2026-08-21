@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 # 🚀 Simple Workflow Guide for Teardown Cafe
 
 ## 🎯 **For Non-Technical Users**

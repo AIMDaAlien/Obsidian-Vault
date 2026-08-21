@@ -1,4 +1,5 @@
 ---
+tags: [guide]
 garden_path: Projects/Teardown Cafe/Documentation/Technical Setup.md
 last_published: '2025-11-28T19:46:13.010423'
 published_to_garden: true

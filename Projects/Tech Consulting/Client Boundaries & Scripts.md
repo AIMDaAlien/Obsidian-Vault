@@ -1,3 +1,6 @@
+---
+tags: [guide, customer-workflow, cost]
+---
 # Client Boundaries & Scripts
 
 ## Scope Creep Scenarios

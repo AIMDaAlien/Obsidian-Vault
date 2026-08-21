@@ -1,3 +1,6 @@
+---
+tags: [branding, website-rebuild, hardening, checklist]
+---
 # Tech Consultation Business Playbook
 
 **Comprehensive knowledge base for launching local tech consultation services**

@@ -1,3 +1,6 @@
+---
+tags: [branding, website-rebuild]
+---
 # Website Rebuild - November 2025
 
 ## Context

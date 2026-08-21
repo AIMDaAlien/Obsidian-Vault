@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Another type of [[Loops in Python]]  is the `while` loop which repeats a block of code as long as a [[Conditional Logic]] remains true. Example:
 
 

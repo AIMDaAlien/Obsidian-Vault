@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 After the last `img` element, add a `figcaption` element with the text 
 ``Cats fate other cats.``
 

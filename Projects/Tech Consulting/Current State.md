@@ -1,3 +1,6 @@
+---
+tags: [payments, website-rebuild, hardening, checklist]
+---
 # Tech Consulting Website - Current State
 
 **Last Updated:** 2025-11-10

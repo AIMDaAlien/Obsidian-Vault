@@ -1,5 +1,5 @@
 ---
-tags: [teardown-cafe, deployment, vercel, workflow]
+tags: [teardown-cafe, deployment, vercel, workflow, guide, website-rebuild]
 created: 2025-10-20
 ---
 

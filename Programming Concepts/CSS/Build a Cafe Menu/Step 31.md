@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 31. Starting below the existing coffee/price pair, add the following coffee and prices using `article` elements with two nested `p` elements inside each. As before, the first `p` element's text should contain the coffee flavor and the second `p` element's text should contain the price.
        ![[Pasted image 20230619084544.png]]
 

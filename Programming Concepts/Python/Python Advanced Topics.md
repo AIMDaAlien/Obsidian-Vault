@@ -1,4 +1,5 @@
 ---
+tags: []
 garden_path: Programming/Python Advanced Topics.md
 last_published: '2025-11-30T20:11:11.267741'
 published_to_garden: true

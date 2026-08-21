@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Create another radio button below the first one, nest it inside a `label` element with `Outdoor` as the label text. Give the radio button an `id` attribute with `outdoor` as the value.
 
 ```html

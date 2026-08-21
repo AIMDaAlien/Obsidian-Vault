@@ -1,3 +1,6 @@
+---
+tags: []
+---
 
 Python provides functionality for reading from and writing to files. Here's an example of reading from a file:
 

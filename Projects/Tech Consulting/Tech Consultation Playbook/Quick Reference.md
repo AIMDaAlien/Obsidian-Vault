@@ -1,3 +1,6 @@
+---
+tags: [website-rebuild, hardening, reliability, checklist]
+---
 # Quick Reference - Key Learnings
 
 #quick-reference #cheatsheet

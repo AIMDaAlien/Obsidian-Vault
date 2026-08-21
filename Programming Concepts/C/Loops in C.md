@@ -1,3 +1,6 @@
+---
+tags: []
+---
 
 ![[Pasted image 20230616112817.png]]
 Is the same as:

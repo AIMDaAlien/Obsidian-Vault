@@ -1,3 +1,6 @@
+---
+tags: []
+---
 # Pricing Strategy & Psychology
 
 ## Price Points (Proven)

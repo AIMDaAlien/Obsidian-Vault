@@ -1,3 +1,6 @@
+---
+tags: [marketing]
+---
 # Teardown Documentation Lessons
 
 ## Image Attribution & Organization

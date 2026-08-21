@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting, payments, branding, marketing, hardening, local-ai]
+---
 # Projects
 
 Active and archived project work. Each project has its own subfolder with relevant documentation, session notes, and implementation details.

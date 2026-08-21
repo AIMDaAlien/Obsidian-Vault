@@ -1,3 +1,6 @@
+---
+tags: [guide, checklist]
+---
 # 📊 Workflow Dashboard
 
 > **Real-time project status and AI collaboration overview**

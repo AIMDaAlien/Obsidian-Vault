@@ -1,4 +1,5 @@
 ---
+tags: [hardening]
 garden_path: Learning/Performance Comparison Methods.md
 last_published: '2025-11-28T20:37:48.936762'
 published_to_garden: true

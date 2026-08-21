@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, ai-workflow, delegation, multi-agent]
+tags: [penthouse, ai-workflow, delegation, multi-agent, guide, troubleshooting, hardening]
 created: 2026-03-05
 published_to_garden: true
 visibility: public

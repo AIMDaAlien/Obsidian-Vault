@@ -1,3 +1,6 @@
+---
+tags: [payments, branding, checklist]
+---
 # 3D Print Shoppe - Technical Recommendations
 
 **Created:** 2024-11-23  

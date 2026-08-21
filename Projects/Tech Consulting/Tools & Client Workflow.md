@@ -1,3 +1,6 @@
+---
+tags: [guide, customer-workflow, payments]
+---
 # Tools & Client Workflow
 
 ## Tech Stack (All Free)

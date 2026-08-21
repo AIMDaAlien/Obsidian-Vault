@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, pwa, sveltekit, knowledge-base]
+tags: [penthouse, pwa, sveltekit, knowledge-base, website-rebuild]
 created: 2026-04-05
 published_to_garden: true
 visibility: public

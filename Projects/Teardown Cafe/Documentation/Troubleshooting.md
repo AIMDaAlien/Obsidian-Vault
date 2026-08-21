@@ -1,3 +1,6 @@
+---
+tags: [troubleshooting]
+---
 # Teardown Cafe - Troubleshooting & Lessons Learned
 
 ## Major Issues Encountered

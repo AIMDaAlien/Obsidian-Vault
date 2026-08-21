@@ -1,5 +1,5 @@
 ---
-tags: [workflow, claude, cursor, ai-collaboration, teardown-cafe]
+tags: [workflow, claude, cursor, ai-collaboration, teardown-cafe, guide]
 created: 2025-10-20
 ---
 

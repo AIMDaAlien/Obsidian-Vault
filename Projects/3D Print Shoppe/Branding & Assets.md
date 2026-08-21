@@ -1,3 +1,6 @@
+---
+tags: [payments, branding, marketing, checklist]
+---
 # Branding & Assets
 
 **Last Updated:** 2024-11-23  

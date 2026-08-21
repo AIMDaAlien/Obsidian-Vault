@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 1. As you learned in the last few steps of [[Step 68]], there is a basic structure needed to start building your web page.
 
 Add the `<!DOCTYPE html>` tag, and an `html` element with a `lang` attribute of `en`.

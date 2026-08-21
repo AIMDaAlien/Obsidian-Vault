@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 After `h3` with the `Things cat love` text, add an unordered list (`ul`) element. Note that nothing will be shown at this point.
 
 ```html

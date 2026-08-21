@@ -1,4 +1,5 @@
 ---
+tags: [hardening]
 garden_path: Learning/Privacy Hardening Journey.md
 last_published: '2025-11-28T20:36:24.940201'
 published_to_garden: true

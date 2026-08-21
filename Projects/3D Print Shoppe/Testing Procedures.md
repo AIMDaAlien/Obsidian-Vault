@@ -1,3 +1,6 @@
+---
+tags: [checklist]
+---
 # Testing Procedures
 
 **Date:** November 8, 2025  

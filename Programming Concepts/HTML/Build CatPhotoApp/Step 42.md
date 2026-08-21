@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Use the `button` element to create a clickable button. 
 For example, `<button>Click Here</button>` creates a button with the text `Click Here`.
 

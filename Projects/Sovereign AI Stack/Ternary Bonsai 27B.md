@@ -1,3 +1,6 @@
+---
+tags: [local-ai]
+---
 # Ternary Bonsai 27B
 
 > Status: deployed + benchmarked. Mac-local (was already in LM Studio), rapid-mlx.

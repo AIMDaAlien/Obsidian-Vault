@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 To improve accessibitlity of the image you added, add an `alt` attribute with the text:
 ``Five cats looking around a field.
 

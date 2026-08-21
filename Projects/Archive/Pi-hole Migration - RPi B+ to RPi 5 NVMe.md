@@ -3,7 +3,7 @@ created: '2026-03-15T00:00:00.000000'
 modified: '2026-03-15T00:00:00.000000'
 privacy_scan: not_scanned
 published_to_garden: false
-tags:
+tags: [guide, hardening, hardware-constraints]
 - homelab
 - networking
 - dns

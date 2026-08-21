@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, architecture, overview]
+tags: [penthouse, architecture, overview, guide]
 created: 2026-03-05
 published_to_garden: true
 visibility: public

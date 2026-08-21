@@ -1,3 +1,6 @@
+---
+tags: []
+---
 
 These store key-value pairs allow you to quickly access values based on their associated keys. Here's an example:
 

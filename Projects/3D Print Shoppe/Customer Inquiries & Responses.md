@@ -1,3 +1,6 @@
+---
+tags: [customer-workflow]
+---
 # Customer Inquiries & Responses
 *Active leads from first Nextdoor post*
 

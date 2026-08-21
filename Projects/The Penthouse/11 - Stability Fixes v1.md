@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, stability, fixes, android]
+tags: [penthouse, stability, fixes, android, hardening]
 created: 2026-03-08
 published_to_garden: true
 visibility: public

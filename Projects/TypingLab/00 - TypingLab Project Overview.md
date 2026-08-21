@@ -1,4 +1,5 @@
 ---
+tags: [guide, hardening]
 garden_path: Projects/TypingLab/00 - TypingLab Project Overview.md
 last_published: '2025-11-28T19:44:25.536276'
 published_to_garden: true

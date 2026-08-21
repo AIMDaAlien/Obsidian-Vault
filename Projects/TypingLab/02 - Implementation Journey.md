@@ -1,4 +1,5 @@
 ---
+tags: [guide, reliability]
 garden_path: Projects/TypingLab/02 - Implementation Journey.md
 last_published: '2025-11-28T19:44:39.870517'
 published_to_garden: true

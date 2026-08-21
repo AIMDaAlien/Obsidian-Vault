@@ -1,3 +1,6 @@
+---
+tags: [checklist]
+---
 # Material 3 Expressive - Core Principles
 
 #design-system #m3-expressive #reference

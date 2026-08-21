@@ -1,3 +1,6 @@
+---
+tags: [guide, hardening, local-ai]
+---
 # Architecture Guide - Sovereign AI Stack
 
 > Deep dive into the network topology, data flow, and design decisions behind the sovereign AI stack.

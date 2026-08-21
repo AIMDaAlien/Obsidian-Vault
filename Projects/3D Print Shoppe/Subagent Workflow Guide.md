@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting, website-rebuild, checklist]
+---
 # Subagent Workflow Guide
 
 **Date:** November 8, 2025  

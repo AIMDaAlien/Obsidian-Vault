@@ -3,7 +3,7 @@ created: '2025-12-05T17:13:45.173169'
 modified: '2025-12-05T17:13:45.173169'
 privacy_scan: not_scanned
 published_to_garden: false
-tags: []
+tags: [marketing, hardening]
 title: 3D Print Shoppe   Marketing Strategy
 visibility: private
 ---

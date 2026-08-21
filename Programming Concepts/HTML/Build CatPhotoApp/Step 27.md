@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 The code for an ordered list (ol) is similar to an unordered list, but list items in ol are numbered when shown.
 
 After the second `section` element's last `h3` element, add an ordered list with thesse three list items:

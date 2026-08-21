@@ -1,3 +1,6 @@
+---
+tags: []
+---
 The three arrow symbols are called "prompt". Next to the prompt will be the instructions. 
 Example:   ``>>> 2 + 3``
 

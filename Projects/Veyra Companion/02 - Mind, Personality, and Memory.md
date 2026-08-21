@@ -1,4 +1,5 @@
 ---
+tags: [guide]
 project: Veyra Companion
 updated: 2026-08-10
 ---

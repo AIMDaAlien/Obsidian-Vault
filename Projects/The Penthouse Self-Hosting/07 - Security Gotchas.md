@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, security, gotchas]
+tags: [self-hosting, security, gotchas, guide, hardening]
 created: 2026-02-18
 published_to_garden: true
 visibility: public

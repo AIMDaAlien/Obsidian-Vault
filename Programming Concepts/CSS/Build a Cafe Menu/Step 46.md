@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Add a second `section` element below the first for displaying the desserts offered by the café.
 
 ```html

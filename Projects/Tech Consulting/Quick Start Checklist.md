@@ -1,3 +1,6 @@
+---
+tags: [guide, marketing, checklist]
+---
 # Quick Start Checklist
 
 ## TODAY (2 hours)

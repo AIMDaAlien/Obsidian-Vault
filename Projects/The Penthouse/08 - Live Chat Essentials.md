@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, realtime, typing, presence]
+tags: [penthouse, realtime, typing, presence, guide]
 created: 2026-03-08
 published_to_garden: true
 visibility: public

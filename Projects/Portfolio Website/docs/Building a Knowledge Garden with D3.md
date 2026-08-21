@@ -1,3 +1,6 @@
+---
+tags: [portfolio-piece]
+---
 # Building a Knowledge Garden with D3.js
 
 A Zettelkasten-style graph visualization for exploring interconnected notes.

@@ -1,3 +1,6 @@
+---
+tags: [decision-record, branding, website-rebuild]
+---
 # Architecture Decisions
 
 **Date:** November 8, 2025  

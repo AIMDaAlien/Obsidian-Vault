@@ -1,3 +1,6 @@
+---
+tags: [website-rebuild, hardening, checklist]
+---
 # Website Technical Specs
 
 ## Overview

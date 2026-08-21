@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, pwa, polls, slash-commands, note-to-self]
+tags: [penthouse, pwa, polls, slash-commands, note-to-self, marketing]
 created: 2026-04-09
 published_to_garden: true
 visibility: public

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Replit is a tool to build and run python code. Replit is an integrated development environment, or [[IDE]] for short. IDEs can be helpful when programming for offering a user friendly working environment for programmers. 
 
 {The alternative to using and IDE is to work directly in the CLI [[CS50 Linux (CLI)]].}

@@ -1,3 +1,6 @@
+---
+tags: [payments, checklist]
+---
 # Launch Strategy - First 30 Days
 
 ## Week 1: Foundation (Day 1-7)

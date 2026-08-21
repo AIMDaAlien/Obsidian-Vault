@@ -1,4 +1,5 @@
 ---
+tags: [guide, hardware-constraints]
 garden_path: Projects/Archive/Pi-hole Setup Guide - Complete Journey.md
 last_published: '2025-11-28T19:41:13.152631'
 published_to_garden: true

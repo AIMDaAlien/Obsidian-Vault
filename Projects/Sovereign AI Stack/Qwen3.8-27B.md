@@ -1,3 +1,6 @@
+---
+tags: [local-ai, hardware-constraints]
+---
 # Qwen3.8-27B — Deploy, Benchmarks, Verdict
 
 > 2026-08-18. Canonical note. Mac-local (M5 Pro 48GB), qwen3_5 arch

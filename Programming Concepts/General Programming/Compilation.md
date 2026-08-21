@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ##### The source program is translated once (however it must be repeated each time you modify [[Source Code]]). By getting a file containing the machine code.  Now you can distribute the file worldwide.
 
 *The program that performs translation is called a **compiler** or **translator**. 

@@ -1,3 +1,6 @@
+---
+tags: [local-ai]
+---
 # Maple-Preview 20B
 
 > Status: deployed + benchmarked. Mac-local, dedicated mlx-lm fork.

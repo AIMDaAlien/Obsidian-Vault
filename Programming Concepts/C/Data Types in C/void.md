@@ -1,3 +1,6 @@
+---
+tags: []
+---
 - Is a type but not a *data type*
 
 - Functions have a **void** return type, which means they dont return a value

@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Inside the third element, add an `h2` element with the text:
 `Cat Form`
 

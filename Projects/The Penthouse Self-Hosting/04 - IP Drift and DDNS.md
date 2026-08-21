@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, ddns, cloudflare, tls, networking]
+tags: [self-hosting, ddns, cloudflare, tls, networking, guide, hardening]
 created: 2026-02-17
 published_to_garden: true
 visibility: public

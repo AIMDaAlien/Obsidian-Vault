@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting, hardening, hardware-constraints, cost]
+---
 
 
 ---

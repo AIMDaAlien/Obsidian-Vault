@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Within the second `section` element, add a new `h2` elements with the text `Cat Lists`. 
 
 ```html

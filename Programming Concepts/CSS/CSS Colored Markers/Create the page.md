@@ -1,3 +1,6 @@
+---
+tags: []
+---
 1. Start out how you'd create any html webpage:
 ```html
 <!DOCTYPE html> 

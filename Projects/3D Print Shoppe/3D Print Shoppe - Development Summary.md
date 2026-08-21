@@ -1,3 +1,6 @@
+---
+tags: [guide, hardening]
+---
 **Tag:** [[DevLog]] [[3D Print Shoppe]] [[UI/UX]] **Date:** 2025-12-04
 
 ## 🚀 Sprint Focus: Polish & Consistency

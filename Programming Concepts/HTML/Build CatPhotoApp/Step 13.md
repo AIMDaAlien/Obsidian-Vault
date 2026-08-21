@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Now that you turned the text `cat photos` inside `p` into a link, you wont need the sexond link below `p`.
 Delete the entire anchor element below p.
 

@@ -1,4 +1,5 @@
 ---
+tags: []
 garden_path: Projects/Teardown Cafe/Documentation/Design System.md
 last_published: '2025-11-28T19:46:36.154237'
 published_to_garden: true

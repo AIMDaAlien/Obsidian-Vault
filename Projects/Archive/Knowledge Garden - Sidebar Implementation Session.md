@@ -1,3 +1,6 @@
+---
+tags: [session-log, troubleshooting]
+---
 # Knowledge Garden - Sidebar Implementation Session
 
 **Date:** 2025-10-26

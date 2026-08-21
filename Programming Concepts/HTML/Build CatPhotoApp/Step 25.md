@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Emphasize the word *love* in the `figcaption` by wrapping it in an emphasis `em` element. 
 
 ```html 

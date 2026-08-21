@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Use list item (`li`) elements to create items in a list. Here's an example of list items in an unordered list:
 ![[Pasted image 20230615093720.png]]
 

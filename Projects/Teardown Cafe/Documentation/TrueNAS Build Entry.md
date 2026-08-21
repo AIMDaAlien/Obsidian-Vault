@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting, hardware-constraints, cost, checklist]
+---
 # TrueNAS Enterprise SAS Build - Teardown Cafe Entry
 
 > **For teardown-cafe project:** `/Users/aim/Documents/teardown-cafe/src/content/teardowns/`  

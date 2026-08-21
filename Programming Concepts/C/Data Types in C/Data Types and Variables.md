@@ -1,3 +1,6 @@
+---
+tags: []
+---
 - #### Creating a variable 
     You need to specify the data type of the variable and give it a name.
     

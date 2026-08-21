@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, mobile, updates, versioning, expo]
+tags: [self-hosting, mobile, updates, versioning, expo, website-rebuild]
 created: 2026-02-21
 published_to_garden: true
 visibility: public

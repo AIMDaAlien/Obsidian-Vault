@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Sometimes decision structures are more complex than dual- alt decision statements. 
 
 The following chart shows a program to figure a letter grade based on a user's score. We have a series of conditional statements with different criteria. 

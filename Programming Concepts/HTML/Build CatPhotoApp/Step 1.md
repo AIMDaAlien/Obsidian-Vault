@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 ```html
 <html>
 	<body>

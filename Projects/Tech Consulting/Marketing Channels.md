@@ -1,3 +1,6 @@
+---
+tags: [marketing]
+---
 # Marketing Channels & Strategy
 
 ## Primary Channels (Priority Order)

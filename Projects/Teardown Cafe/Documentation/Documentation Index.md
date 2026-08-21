@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting, hardening, checklist]
+---
 # Teardown Cafe - Documentation Index
 
 ## 📋 Quick Navigation

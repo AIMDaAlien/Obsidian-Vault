@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Add a `footer` element below the `main` element, where you can add additional info. 
 
 ```html

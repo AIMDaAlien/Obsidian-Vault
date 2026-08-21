@@ -1,3 +1,6 @@
+---
+tags: [guide, session-log]
+---
 # 📊 Session Index
 
 > **Auto-generated index of all AI collaboration sessions**

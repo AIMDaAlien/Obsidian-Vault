@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, realtime, socket, android, reliability]
+tags: [penthouse, realtime, socket, android, reliability, guide, hardening]
 created: 2026-03-08
 published_to_garden: true
 visibility: public

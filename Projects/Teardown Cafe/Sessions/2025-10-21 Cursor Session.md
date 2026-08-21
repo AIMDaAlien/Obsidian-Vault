@@ -1,3 +1,6 @@
+---
+tags: [session-log]
+---
 # Cursor Session - October 21, 2025 at 03:56 PM
 
 **Session ID:** `2025-10-21-1556-cursor-session`  

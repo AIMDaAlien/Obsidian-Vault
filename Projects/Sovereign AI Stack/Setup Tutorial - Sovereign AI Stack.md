@@ -1,3 +1,6 @@
+---
+tags: [guide, local-ai, checklist]
+---
 # Setup Tutorial - Sovereign AI Stack
 
 > A step-by-step guide to building a private AI assistant using Ollama, OpenClaw, and Discord. Written from real experience — includes every gotcha encountered during setup.

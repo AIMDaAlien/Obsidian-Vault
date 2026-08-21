@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ##### Float 
 - Used for variables that store *floating-point/ real numbers*
 - Always take up 4 bytes of memory (32  bits).

@@ -1,3 +1,6 @@
+---
+tags: [marketing, website-rebuild, checklist]
+---
 # 3D Print Business - Main Index
 
 **Business Name:** 3D Print Shoppe  

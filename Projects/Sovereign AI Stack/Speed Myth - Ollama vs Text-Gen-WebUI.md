@@ -1,3 +1,6 @@
+---
+tags: []
+---
 # Speed Myth - Ollama vs Text-Gen-WebUI
 
 > **TL;DR:** Gemini's claim that text-gen-webui is ~30% faster than Ollama is true for EXL2/GPTQ models, but completely irrelevant for vision models which only exist as GGUF.

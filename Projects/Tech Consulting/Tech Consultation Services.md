@@ -1,3 +1,6 @@
+---
+tags: [guide, hardening, cost]
+---
 # Tech Consultation Services
 
 ## Service 1: Tech Translator Call (Launch Month 2)

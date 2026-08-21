@@ -1,3 +1,6 @@
+---
+tags: [troubleshooting, marketing, checklist]
+---
 # QA Process - Comprehensive Website Audit
 
 **Date:** November 8, 2025  

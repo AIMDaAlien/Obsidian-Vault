@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 11. One way to add color to an element is to use a *color* *keyword*, like `black,cyan, or yellow`.
 Here's how to target the class `freecodecamp`: 
 ![[Pasted image 20230621220540.png]]

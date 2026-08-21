@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Functions can return values, allowing you to perform operations and retrieve results from a function call. Example:
 
 

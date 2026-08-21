@@ -1,3 +1,6 @@
+---
+tags: [guide, marketing]
+---
 # Tech Consultation Side Business - Launch Guide
 
 ## Overview

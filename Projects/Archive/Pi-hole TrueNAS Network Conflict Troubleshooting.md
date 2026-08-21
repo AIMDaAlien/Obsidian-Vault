@@ -1,3 +1,6 @@
+---
+tags: [troubleshooting, hardware-constraints]
+---
 # Pi-hole Stopped Working After TrueNAS Setup
 
 > **Problem**: Pi-hole was working perfectly until TrueNAS server was added to the network. After that, devices stopped getting DNS filtering and ads/trackers were no longer blocked.

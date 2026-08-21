@@ -1,3 +1,6 @@
+---
+tags: [local-ai]
+---
 # LLM Benchmark Registry — Mac vs Unraid
 
 > Last updated: 2026-08-09

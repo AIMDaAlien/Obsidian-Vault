@@ -1,3 +1,6 @@
+---
+tags: []
+---
 # Knowledge Base Vault
 
 A personal knowledge management system built in [Obsidian](https://obsidian.md/), covering programming, systems administration, project documentation, and career development.

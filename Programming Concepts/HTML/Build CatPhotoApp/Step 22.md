@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 After the unordered list, add a new image with an `src` attribute value set to:
 https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg
 And its `alt` attribute value to:

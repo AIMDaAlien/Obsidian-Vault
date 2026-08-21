@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Inside the figure element you added, nest an `ing` element with `src` attribute set to `https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg`
 
 ```html

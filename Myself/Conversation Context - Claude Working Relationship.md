@@ -1,5 +1,5 @@
 ---
-tags: #meta #working-relationship #conversation-context #reference
+tags: [meta, working-relationship, conversation-context, reference, troubleshooting, hardening, hardware-constraints]
 created: 2025-10-14
 last_updated: 2025-10-14
 purpose: Reference document for re-establishing context in future conversations

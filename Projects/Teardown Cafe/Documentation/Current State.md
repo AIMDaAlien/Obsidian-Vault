@@ -1,4 +1,5 @@
 ---
+tags: [guide, troubleshooting, website-rebuild, hardening, hardware-constraints, checklist]
 garden_path: Projects/Teardown Cafe/Documentation/Current State.md
 last_published: '2025-11-28T19:47:28.436847'
 published_to_garden: true

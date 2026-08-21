@@ -1,3 +1,6 @@
+---
+tags: [branding]
+---
 # Positioning and Brand Strategy
 
 #business #strategy #positioning #tech-consulting

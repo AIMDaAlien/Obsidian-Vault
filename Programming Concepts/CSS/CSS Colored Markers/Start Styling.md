@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 8. As a reminder, here's how to target a paragraph element and align it to the right:  [[Step 10,11]]
 ![[Pasted image 20230621215642.png]]
 Create a new CSS rule that targets the `h1`, and set its `text-align` to center.

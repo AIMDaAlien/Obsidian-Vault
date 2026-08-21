@@ -1,3 +1,6 @@
+---
+tags: [customer-workflow, hardening, reliability, cost, checklist]
+---
 # Client Intake Template
 
 #template #client-management

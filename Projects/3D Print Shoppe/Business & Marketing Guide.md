@@ -1,3 +1,6 @@
+---
+tags: [guide, marketing, cost]
+---
 # Business & Marketing Guide - 3D Print Shoppe
 
 **Business:** 3D Print Shoppe  

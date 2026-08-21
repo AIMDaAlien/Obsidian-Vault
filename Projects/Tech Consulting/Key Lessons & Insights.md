@@ -1,3 +1,6 @@
+---
+tags: [marketing]
+---
 # Key Lessons & Insights
 
 ## What Actually Matters (Priority Order)

@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 You can add images to your website by using `img`. They have an opening tag without a closing tag. 
 
 A tag for an element without a closing tag is know as a *self-closing tag.*

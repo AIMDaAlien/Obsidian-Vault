@@ -1,3 +1,6 @@
+---
+tags: [payments, branding, cost, checklist]
+---
 # Payment Workflow
 
 **Last Updated:** 2024-11-23  

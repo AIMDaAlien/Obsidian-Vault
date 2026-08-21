@@ -1,3 +1,6 @@
+---
+tags: [hardening, checklist]
+---
 # Project - Current State
 
 > **Real-time snapshot of TypingLab project status**

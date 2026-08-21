@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, tech-debt, quality-gates, reliability]
+tags: [penthouse, tech-debt, quality-gates, reliability, guide, hardening]
 created: 2026-03-05
 published_to_garden: true
 visibility: public

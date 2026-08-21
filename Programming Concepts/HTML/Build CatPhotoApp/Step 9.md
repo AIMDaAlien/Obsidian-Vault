@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 All `img` elements shoudl have an `alt` attribute. `alt` 's text is used for screen readers to improve accessibility and is displayed if the image fails to load. 
 For example, `<img src="cat.jpg" alt="A cat">` has an `alt` attribute with the text `A cat`.
 

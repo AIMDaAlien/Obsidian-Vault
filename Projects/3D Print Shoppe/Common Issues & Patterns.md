@@ -1,3 +1,6 @@
+---
+tags: [guide, troubleshooting]
+---
 # Common Issues & Patterns
 
 **Date:** November 8, 2025  

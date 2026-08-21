@@ -1,4 +1,5 @@
 ---
+tags: [guide, reliability]
 project: Corne Accuracy Trainer
 status: Implemented private release
 repository: /Users/aim/Documents/Corne Accuracy Trainer

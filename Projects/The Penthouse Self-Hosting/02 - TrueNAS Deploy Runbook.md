@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, truenas, docker, deployment, runbook]
+tags: [self-hosting, truenas, docker, deployment, runbook, guide, hardening, reliability]
 created: 2026-02-17
 published_to_garden: true
 visibility: public

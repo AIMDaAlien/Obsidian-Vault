@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 3. The `title` is one of several elements that give extra info not visible on the web page, but useful for search engines or how the page gets displayed.
 
 In `head`, nest a `meta` element with an attribute named `charset` set to value `utf-8` to tell the browser how to encode characters for the page. *`meta` elements are self-closing*. 

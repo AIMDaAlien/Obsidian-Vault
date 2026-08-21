@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Next, youll add some new form `input` elements, so add another `fieldset` element directly below the current `fieldset` element. 
 
 ```html

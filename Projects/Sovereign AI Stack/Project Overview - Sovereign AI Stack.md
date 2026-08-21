@@ -1,5 +1,5 @@
 ---
-tags: [sovereign-ai, project-overview, self-hosted, privacy, llm]
+tags: [sovereign-ai, project-overview, self-hosted, privacy, llm, hardening, local-ai]
 created: 2026-02-10
 published_to_garden: true
 last_published: '2026-07-29T23:14:32'

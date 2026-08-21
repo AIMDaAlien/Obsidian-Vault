@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, handoff, historical]
+tags: [penthouse, handoff, historical, website-rebuild, hardening]
 created: 2026-03-12
 archived: 2026-03-22
 published_to_garden: true

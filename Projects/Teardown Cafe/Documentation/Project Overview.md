@@ -1,4 +1,5 @@
 ---
+tags: [troubleshooting, marketing, website-rebuild, hardening, hardware-constraints]
 garden_path: Projects/Teardown Cafe/Documentation/Project Overview.md
 last_published: '2025-11-28T19:45:58.975545'
 published_to_garden: true

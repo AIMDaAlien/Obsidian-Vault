@@ -1,3 +1,6 @@
+---
+tags: [portfolio-piece, checklist]
+---
 # CSS Breakpoint Strategy
 
 A systematic approach to responsive design using three breakpoints.

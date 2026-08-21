@@ -1,3 +1,6 @@
+---
+tags: []
+---
 Walrus operator is another name for assignment expression in python. 
 According to the official documentation, its a way to assign to variables within an expression using the notation NAME := expression. 
 

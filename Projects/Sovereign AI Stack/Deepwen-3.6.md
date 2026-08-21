@@ -1,3 +1,6 @@
+---
+tags: [local-ai, cost]
+---
 # Deepwen-3.6
 
 > Status: deployed on Unraid, benchmark pending. quimmedes/Deepwen-3.6.

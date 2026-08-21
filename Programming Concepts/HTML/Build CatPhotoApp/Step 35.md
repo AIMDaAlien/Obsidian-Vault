@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 Now you will add a web form to collect info from users.
 
 After the `Cat Form` heading, add `form`

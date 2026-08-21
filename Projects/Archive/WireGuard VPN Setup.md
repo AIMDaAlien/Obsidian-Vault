@@ -1,4 +1,5 @@
 ---
+tags: [troubleshooting, hardening, hardware-constraints]
 garden_path: Projects/Archive/WireGuard VPN Setup.md
 last_published: '2025-11-28T19:41:38.709685'
 published_to_garden: true

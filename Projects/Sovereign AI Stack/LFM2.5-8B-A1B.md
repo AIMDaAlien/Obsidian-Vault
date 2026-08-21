@@ -1,3 +1,6 @@
+---
+tags: [local-ai]
+---
 # LFM2.5-8B-A1B
 
 > Status: deployed + benchmarked. Mac-local, rapid-mlx.

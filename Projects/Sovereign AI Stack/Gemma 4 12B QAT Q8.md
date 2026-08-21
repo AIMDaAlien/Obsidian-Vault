@@ -1,3 +1,6 @@
+---
+tags: [local-ai]
+---
 # Gemma 4 12B QAT Q8
 
 > Status: deployed + benchmarked. Mac-local, rapid-mlx.

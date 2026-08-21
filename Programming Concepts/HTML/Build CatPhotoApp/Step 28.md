@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 After the ordered list, add another `figure` element.
 
 ```html

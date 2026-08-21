@@ -1,5 +1,5 @@
 ---
-tags: [sovereign-ai, unraid, qwen, terminal-agent, llm]
+tags: [sovereign-ai, unraid, qwen, terminal-agent, llm, local-ai]
 created: 2026-07-28
 published_to_garden: true
 last_published: '2026-07-29T23:14:32'

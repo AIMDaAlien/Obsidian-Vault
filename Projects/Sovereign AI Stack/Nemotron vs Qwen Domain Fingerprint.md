@@ -1,3 +1,6 @@
+---
+tags: [cost]
+---
 # Nemotron 3.5 Lightning vs Qwen 3.6 — Domain Fingerprint
 
 > 2026-08-12. 130-question battery across 15 domains, deterministic grading.

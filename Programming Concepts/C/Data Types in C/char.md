@@ -1,3 +1,6 @@
+---
+tags: []
+---
 ##### Char
 - Used for variables that will store single characters
 - Chars always take up 1 byte of memory (8 bits). This means the range of values they can store is limited to 8 bits of info.

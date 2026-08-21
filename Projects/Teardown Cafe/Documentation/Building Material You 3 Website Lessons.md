@@ -1,5 +1,5 @@
 ---
-tags: #guide #lessons-learned #astro #material-you #accessibility #ui-ux
+tags: [guide, lessons-learned, astro, material-you, accessibility, ui-ux]
 created: 2025-10-19
 related: 
   - "[[Teardown Cafe - Current State]]"

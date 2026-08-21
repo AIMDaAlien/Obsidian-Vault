@@ -1,3 +1,6 @@
+---
+tags: []
+---
 14. Now that you've made one marker centered with color, time to add other markers.
 In the `container div`, add two more div elements and give them each a class of `marker`.
 ```html

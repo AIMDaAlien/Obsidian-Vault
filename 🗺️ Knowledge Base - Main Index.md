@@ -1,3 +1,6 @@
+---
+tags: [guide, monitoring, hardware-constraints]
+---
 # Knowledge Base - Main Index
 
 #moc #index #navigation #knowledge-base

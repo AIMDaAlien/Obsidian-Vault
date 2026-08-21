@@ -1,4 +1,5 @@
 ---
+tags: [troubleshooting]
 garden_path: Learning/Troubleshooting Lessons Learned.md
 last_published: '2025-11-28T20:37:01.979909'
 published_to_garden: true

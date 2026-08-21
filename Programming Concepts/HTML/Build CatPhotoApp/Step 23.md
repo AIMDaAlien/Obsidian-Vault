@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 `figure`  represents self-contained content and will allow you to associate an image with a caption.
 
 Nest the image you added within a `figure` element.

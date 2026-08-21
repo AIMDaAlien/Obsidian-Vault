@@ -1,3 +1,6 @@
+---
+tags: []
+---
 In C, variables end with semicolon
 ![[Pasted image 20230607141247.png]]
 

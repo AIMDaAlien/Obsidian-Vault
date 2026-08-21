@@ -1,3 +1,6 @@
+---
+tags: []
+---
 # 🤝 Claude-Cursor AI Collaboration Prompt Template
 
 ## 🎯 **Copy this prompt when starting a new conversation with Claude:**

@@ -1,3 +1,6 @@
+---
+tags: []
+---
 High level programming languages are somewhat similar to natural ones where they use symbols, words and conventions readable to humans. These languages enable humans to express cmds to computers that are much more complex than those offered by IL's (instruction list).
 
 A program written in a high level language is called a [[Source Code]]. The file containing the source code is called the source file. 

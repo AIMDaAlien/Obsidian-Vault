@@ -1,4 +1,5 @@
 ---
+tags: [guide, local-ai]
 project: Veyra Companion
 status: Installed build; LFM2.5-VL-3B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted
 repository: /Users/aim/Downloads/Veyra_Companion_Sprites

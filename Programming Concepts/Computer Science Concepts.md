@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 # Computer Science Concepts
 
 #computer-science #hardware #cpu #programming #theory #cs50

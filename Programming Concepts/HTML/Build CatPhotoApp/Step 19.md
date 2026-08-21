@@ -1,3 +1,6 @@
+---
+tags: [guide]
+---
 When you add a lower rank heading element to the page, its implied that youre starting a new subsection.
 
 After the last `h2` element of the second `section` element, add an `h3` element with this text:

@@ -1,3 +1,6 @@
+---
+tags: [troubleshooting, hardening]
+---
 # Learning Journals
 
 Personal experience notes capturing lessons learned, methodology evolution, and optimization discoveries. These are reflective "journey" documents rather than structured tutorials.

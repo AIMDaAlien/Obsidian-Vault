@@ -1,3 +1,6 @@
+---
+tags: [hardening, reliability, checklist]
+---
 # Teardown Cafe - Content Workflow
 
 ## Overview

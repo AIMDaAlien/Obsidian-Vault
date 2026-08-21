@@ -1,3 +1,6 @@
+---
+tags: [decision-record, website-rebuild, hardening, portfolio-piece, checklist]
+---
 
 ---
 tags: [teardown-cafe, portfolio, career]

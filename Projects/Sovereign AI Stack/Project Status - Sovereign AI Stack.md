@@ -1,3 +1,6 @@
+---
+tags: [hardening, local-ai]
+---
 # Project Status - Sovereign AI Stack
 
 > **Last Updated:** 2026-02-10
