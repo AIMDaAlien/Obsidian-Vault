@@ -107,8 +107,8 @@ Current automated baseline: 31 passing tests before the 2026-08-22 commit.
 - Sites project metadata: `.openai/hosting.json`
 - Sites source remote: `sites`
 - Private deployment: https://corne-accuracy-trainer.aliennerd8988.chatgpt.site
-- Current deployed release: Sites version 7 from `6639238`
-- Adaptive Today update: source-only until a separate deployment is approved
+- Current deployed release: Sites version 8 from `d9bc3ec`
+- Deployment completed privately on 2026-08-22
 
 Do not call the private deployment broken when an unauthenticated request
 returns HTTP 401. Verify from an authenticated owner browser, deployment state,

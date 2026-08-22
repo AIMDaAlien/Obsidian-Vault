@@ -43,9 +43,9 @@ The current PWA includes:
 - progress/backup v4 with deterministic v1–v3 migration.
 
 The source repository is now `/Users/aim/Documents/Projects/Corne Accuracy Trainer`.
-The private deployment remains on the older Sites release; this adaptive update
-does not deploy it. Real-browser responsive/install/offline proof, three physical
-Corne sessions, and the two-week learning check remain open acceptance gates.
+The private deployment now runs Sites version 8 from app commit `d9bc3ec`.
+Real-browser responsive/install/offline proof, three physical Corne sessions,
+and the two-week learning check remain open acceptance gates.
 
 ## Product Rules
 

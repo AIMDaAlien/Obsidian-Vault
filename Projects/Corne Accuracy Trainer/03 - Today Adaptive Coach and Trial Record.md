@@ -42,7 +42,7 @@ single personal-best WPM.
 - `git diff --check`: passing.
 - Browser visual/accessibility/install/offline pass: pending because the
   available browser connector failed to initialize during implementation.
-- Deployment: not changed.
+- Deployment: private Sites version 8 from `d9bc3ec`, published 2026-08-22.
 
 ## Physical and Two-Week Trial
 
