@@ -1,9 +1,9 @@
 ---
 tags: [reliability]
 project: Corne Accuracy Trainer
-status: Implemented private release
-repository: /Users/aim/Documents/Corne Accuracy Trainer
-updated: 2026-07-31
+status: Adaptive Today coach implemented
+repository: /Users/aim/Documents/Projects/Corne Accuracy Trainer
+updated: 2026-08-22
 ---
 
 # Technical Architecture and Product Record
@@ -55,9 +55,10 @@ flowchart TD
 
 ## Progress and Analytics
 
-`TrainingProgress` version 2 preserves lifetime output counters, recent
+`TrainingProgress` version 4 preserves lifetime output counters, recent
 accuracy windows, the remediation queue, clean-line streaks, mastery, post-
-mastery speed lines, and up to 2,000 attempt records.
+mastery speed lines, up to 2,000 attempt records, layer-keyed review state,
+and up to 90 daily assessments.
 
 Each retained attempt may contain:
 
@@ -76,10 +77,10 @@ loss, and after pauses over two seconds.
 
 ## Persistence Contract
 
-- Profile key: `corne-accuracy.profile.v1`
-- Progress key: `corne-accuracy.progress.v1` containing normalized v2 data
-- Backup export version: 2
-- Accepted backup versions: 1 and 2
+- Profile key: `corne-accuracy.profile.v2`
+- Progress key: `corne-accuracy.progress.v4`
+- Backup export version: 4
+- Accepted backup versions: 1–4
 - History limit: 2,000 attempts
 - Speed line limit: 20
 - No account, backend, telemetry, or cloud progress sync
@@ -91,13 +92,13 @@ output history survives.
 ## Verification Commands
 
 ```bash
-cd "/Users/aim/Documents/Corne Accuracy Trainer"
+cd "/Users/aim/Documents/Projects/Corne Accuracy Trainer"
 npm test
 npm run build
 npm start
 ```
 
-Current automated baseline: 16 passing tests at commit `df76c22`.
+Current automated baseline: 31 passing tests before the 2026-08-22 commit.
 
 ## Deployment Record
 
@@ -106,7 +107,8 @@ Current automated baseline: 16 passing tests at commit `df76c22`.
 - Sites project metadata: `.openai/hosting.json`
 - Sites source remote: `sites`
 - Private deployment: https://corne-accuracy-trainer.aliennerd8988.chatgpt.site
-- Current documented release: Sites version 4 from `df76c22`
+- Current deployed release: Sites version 7 from `6639238`
+- Adaptive Today update: source-only until a separate deployment is approved
 
 Do not call the private deployment broken when an unauthenticated request
 returns HTTP 401. Verify from an authenticated owner browser, deployment state,

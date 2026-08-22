@@ -1,11 +1,11 @@
 ---
 tags: [reliability]
 project: Corne Accuracy Trainer
-status: Private working release — public customization roadmap defined
+status: Adaptive Today coach implemented — physical trial pending
 repository: https://github.com/AIMDaAlien/aim-corne-accuracy-trainer
-local_repository: /Users/aim/Documents/Corne Accuracy Trainer
+local_repository: /Users/aim/Documents/Projects/Corne Accuracy Trainer
 deployment: https://corne-accuracy-trainer.aliennerd8988.chatgpt.site
-updated: 2026-07-31
+updated: 2026-08-22
 ---
 
 # Corne Accuracy Trainer
@@ -23,7 +23,7 @@ preferences without editing source code.
 
 ## Current State
 
-**Private working release — public customization roadmap defined**
+**Adaptive Today coach implemented — physical trial pending**
 
 The current PWA includes:
 
@@ -33,14 +33,19 @@ The current PWA includes:
 - automatic three-clean-use remediation for failed keys and bigrams;
 - Weak Spot Lab confidence metrics and a physical-layout heatmap;
 - session-only focused drills for the weakest keys and transitions;
-- local-only progress, profile editing, JSON backup, and v1-to-v2 migration;
+- local-only progress, profile editing, JSON backup, and legacy migration;
 - offline app-shell caching and installable PWA metadata;
 - WPM and raw timing hidden until mastery.
+- one adaptive 12–20 minute session with Recall, Repair, Transfer, and Check;
+- layer-keyed 1/3/7-day reviews and one counted assessment per local day;
+- extra practice that does not move review dates or add another assessment;
+- a seven-session clean-throughput trend after mastery;
+- progress/backup v4 with deterministic v1–v3 migration.
 
-The private production deployment and private GitHub repository both track
-commit `df76c22` as of this note. A real-browser responsive, install, and
-offline-reload pass remains an explicit release check; the original deployment
-session could not run browser automation.
+The source repository is now `/Users/aim/Documents/Projects/Corne Accuracy Trainer`.
+The private deployment remains on the older Sites release; this adaptive update
+does not deploy it. Real-browser responsive/install/offline proof, three physical
+Corne sessions, and the two-week learning check remain open acceptance gates.
 
 ## Product Rules
 
@@ -69,7 +74,8 @@ session could not run browser automation.
 
 - [[01 - Technical Architecture and Product Record]]
 - [[02 - Word Progression and Public Release Roadmap]]
+- [[03 - Today Adaptive Coach and Trial Record]]
 - Parent index: [[Projects/README]]
-- Local repository: `/Users/aim/Documents/Corne Accuracy Trainer`
+- Local repository: `/Users/aim/Documents/Projects/Corne Accuracy Trainer`
 - GitHub: https://github.com/AIMDaAlien/aim-corne-accuracy-trainer
 - Private app: https://corne-accuracy-trainer.aliennerd8988.chatgpt.site

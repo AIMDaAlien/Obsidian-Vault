@@ -1,12 +1,17 @@
 ---
 tags: []
 project: Corne Accuracy Trainer
-status: Approved direction — not yet implemented
-repository: /Users/aim/Documents/Corne Accuracy Trainer
-updated: 2026-07-31
+status: Core-word transfer implemented — broader stages remain roadmap
+repository: /Users/aim/Documents/Projects/Corne Accuracy Trainer
+updated: 2026-08-22
 ---
 
 # Word Progression and Public Release Roadmap
+
+> [!info] Current state
+> The reviewed core-word corpus, learned-output filtering, weak-target bias,
+> anchor-word mixing, and Today-session Transfer phase are implemented. Broader
+> vocabulary stages, personal corpora, and public release work remain deferred.
 
 ## Approved Direction
 
@@ -133,9 +138,9 @@ unrelated progress.
 
 ### Trust and compatibility
 
-- Choose and add an open-source license; none exists today.
-- Add a public repository README, screenshots, setup instructions, privacy
-  statement, contribution guide, and profile-schema documentation.
+- MIT licensing, README, privacy statement, contribution guide, and schema
+  documentation are implemented.
+- Add release screenshots and finish setup documentation for public readers.
 - Document backup/profile schema compatibility and migration policy.
 - Verify install, upgrade, offline reload, backup restore, and retained metrics.
 
@@ -150,8 +155,8 @@ unrelated progress.
 
 ### Distribution
 
-- Keep GitHub private until the license, README, privacy statement, and generic
-  profile onboarding are ready.
+- Repository visibility remains a separate owner decision; licensing, README,
+  privacy statement, and generic profile onboarding are ready.
 - Publish a tagged preview release before declaring the format stable.
 - Make schema changes additive where possible and retain old backup import.
 - Public hosting is a separate approval from making the source repository
@@ -167,7 +172,5 @@ unrelated progress.
 5. Add public documentation, license, CI, browser evidence, and a tagged beta.
 6. Ask Aim separately before changing GitHub or hosting visibility.
 
-Skipped for now: implementation, word-list dependency, trigrams, accounts,
-cloud sync, and public visibility. Add each only when its release gate is
-clear.
-
+Skipped for now: broader word stages, trigrams, accounts, cloud sync, and
+public visibility changes. Add each only when its release gate is clear.
