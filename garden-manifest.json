@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T14:01:16Z",
+  "generated_at": "2026-08-22T14:10:22Z",
   "tree": [
     {
       "path": "README.md",
@@ -1007,6 +1007,10 @@
     },
     {
       "path": "Projects/Corne Accuracy Trainer/02 - Word Progression and Public Release Roadmap.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Corne Accuracy Trainer/03 - Today Adaptive Coach and Trial Record.md",
       "type": "file"
     },
     {
@@ -3011,28 +3015,36 @@
     "Projects/Corne Accuracy Trainer/00 - Project Overview.md": {
       "tags": "[reliability]",
       "project": "Corne Accuracy Trainer",
-      "status": "Private working release — public customization roadmap defined",
+      "status": "Adaptive Today coach implemented — physical trial pending",
       "repository": "https://github.com/AIMDaAlien/aim-corne-accuracy-trainer",
-      "local_repository": "/Users/aim/Documents/Corne Accuracy Trainer",
+      "local_repository": "/Users/aim/Documents/Projects/Corne Accuracy Trainer",
       "deployment": "https://corne-accuracy-trainer.aliennerd8988.chatgpt.site",
-      "updated": "2026-07-31",
+      "updated": "2026-08-22",
       "title": "Corne Accuracy Trainer"
     },
     "Projects/Corne Accuracy Trainer/01 - Technical Architecture and Product Record.md": {
       "tags": "[reliability]",
       "project": "Corne Accuracy Trainer",
-      "status": "Implemented private release",
-      "repository": "/Users/aim/Documents/Corne Accuracy Trainer",
-      "updated": "2026-07-31",
+      "status": "Adaptive Today coach implemented",
+      "repository": "/Users/aim/Documents/Projects/Corne Accuracy Trainer",
+      "updated": "2026-08-22",
       "title": "Technical Architecture and Product Record"
     },
     "Projects/Corne Accuracy Trainer/02 - Word Progression and Public Release Roadmap.md": {
       "tags": "[]",
       "project": "Corne Accuracy Trainer",
-      "status": "Approved direction — not yet implemented",
-      "repository": "/Users/aim/Documents/Corne Accuracy Trainer",
-      "updated": "2026-07-31",
+      "status": "Core-word transfer implemented — broader stages remain roadmap",
+      "repository": "/Users/aim/Documents/Projects/Corne Accuracy Trainer",
+      "updated": "2026-08-22",
       "title": "Word Progression and Public Release Roadmap"
+    },
+    "Projects/Corne Accuracy Trainer/03 - Today Adaptive Coach and Trial Record.md": {
+      "tags": "[learning, reliability]",
+      "project": "Corne Accuracy Trainer",
+      "status": "Implemented — physical trial pending",
+      "repository": "/Users/aim/Documents/Projects/Corne Accuracy Trainer",
+      "updated": "2026-08-22",
+      "title": "Today Adaptive Coach and Trial Record"
     },
     "Projects/Homelab NOC Skills/Docker and Portainer Setup.md": {
       "created": "2026-01-07T22:57:31.997978",
@@ -4668,7 +4680,13 @@
     "Projects/Corne Accuracy Trainer/00 - Project Overview.md": [
       "01 - Technical Architecture and Product Record",
       "02 - Word Progression and Public Release Roadmap",
+      "03 - Today Adaptive Coach and Trial Record",
       "Projects/README"
+    ],
+    "Projects/Corne Accuracy Trainer/03 - Today Adaptive Coach and Trial Record.md": [
+      "00 - Project Overview",
+      "01 - Technical Architecture and Product Record",
+      "02 - Word Progression and Public Release Roadmap"
     ],
     "Projects/Homelab NOC Skills/Project Overview - NOC Skills Homelab.md": [
       "Pi-hole Migration - RPi B+ to RPi 5 NVMe",
