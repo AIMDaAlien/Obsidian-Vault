@@ -43,6 +43,13 @@ Note: Qwen3.8 scored 308/317 on the 317-question fingerprint battery + 17/17 har
 | [[Qwen3.6 35B A3B Abliterated]] | Q6_K + MTP | 27.2 GB | ~27 GB | ~13 | — | — | — | — | — |
 | [[Deepwen-3.6]] | Q4.5-MoQ | 19.7 GB | — | — | pending | pending | pending | pending | pending |
 
+### [[Qwen3.8-Flash-Next]] (176B MoE — supersedes the 58/76 batteries)
+
+- 9-task deterministic agentic: **9/9** vs Qwen3.6 NVFP4 7/9 (strict
+  instruction/format adherence is the differentiator; both pass every trap).
+- ~14.5 tok/s decode (memory-bandwidth bound, `--cpu-moe`). Quant-sensitivity
+  shootout (Q3_K_XL vs IQ3_XXS) in progress — see [[Qwen3.8-Flash-Next]].
+
 ## Key takeaways
 
 - **Speed vs competence tradeoff is stark.** Maple 172 tps / 2.2 GB vs Gemma Q4 7.4 tps / 9.7 GB — 23× faster at ¼ the RAM, but 79% vs 96% text score.
@@ -56,6 +63,7 @@ Note: Qwen3.8 scored 308/317 on the 317-question fingerprint battery + 17/17 har
 ## Related
 
 - [[Qwen3.8-27B]]
+- [[Qwen3.8-Flash-Next]]
 - [[Gemma 4 12B QAT Q8]]
 - [[Gemma 4 12B QAT Q4]]
 - [[LFM2.5-8B-A1B]]

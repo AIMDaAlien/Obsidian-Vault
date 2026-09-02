@@ -1,12 +1,35 @@
 ---
-tags: [local-ai]
+tags: [local-ai, benchmarks, privacy, voice]
 project: Veyra Companion
-updated: 2026-08-15
+updated: 2026-09-02
 ---
 
 # Models, Research, and Privacy
 
-## Current Runtime
+## Current Configuration
+
+| Job | Model or service | Why it has that job |
+|---|---|---|
+| Fast companion replies and screen-aware context | `mlx-community/Qwen3.5-4B-MLX-4bit` | It is the current compact visual model. A text-only candidate cannot replace this lane without first restoring trustworthy screen awareness. |
+| Deliberate research | `qwen3.8-27b-4bit` | Research is allowed to use the larger capable model. It is a separate lane, not proof that every short reply should wait for it. |
+| Embeddings | `veyra-embed` in LM Studio | Retrieval and memory indexing only. |
+| Japanese speech | Irodori v4.1 with `JA-B` | Selected by Aim's listening review for emotional range and identity fit. |
+
+## Language and Speech Boundary
+
+English is canonical. Veyra replies in English regardless of whether Aim writes in English, Japanese, or Arabic. Short eligible English replies can be translated privately to Japanese, then synthesized with `JA-B`. The Japanese rendition is never displayed, stored, searched, or included in research.
+
+Speech is external-output-only. Translation or synthesis failure means silence: Veyra must never fall back to a system voice. New topic, cancellation, or output-route loss must stop playback.
+
+## Current Candidate Decision
+
+The compact tests are role-specific, not a universal intelligence ranking. Qwen3.5-4B remains the fast lane because it preserves visual awareness, but it needs behavioral repair and retest. Nanbeige 4.2 is the stronger compact text-reasoning result but remains text-only and uses a special runtime. Spark-X2.5-4B is clean in short English turns but weaker on practical field tasks and is also text-only. No replacement is approved.
+
+See [[08 - Current Progress and Acceptance]] for the current evidence ledger and [[07 - Voice and Companion Model Benchmarks]] for the full method, result table, voice casting rationale, and next gates.
+
+## Historical Record — Superseded by the 2026-09-02 Configuration
+
+### 2026-08-15 Runtime Snapshot
 
 - Fast/default model: `LiquidAI/LFM2.5-VL-3B-MLX-4bit` on `127.0.0.1:8112`.
 - Deliberate lane: `qwen3.8-27b-4bit` on `127.0.0.1:8110`.
@@ -15,7 +38,7 @@ updated: 2026-08-15
 - Conversation model allowlisting is split by lane: fast permits only `lfm2.5-vl-3b` and deliberate permits only `qwen3.8-27b`; Heretic and legacy Qwen remain blocked.
 - `VEYRA_FAST_MODEL` and `VEYRA_DELIBERATE_MODEL` are honored only when they pass their lane-specific allowlists.
 
-## Routing Rules
+### 2026-08-15 Routing Rules
 
 | Mode | Model | Endpoint | Context |
 |---|---|---|---|
@@ -25,13 +48,13 @@ updated: 2026-08-15
 
 Visual awareness is a separate LFM2.5-VL-3B call: a downscaled local frame becomes a concise factual text description in `awarenessContext`. Qwen3.8 never receives the image.
 
-## Small-Model Replacement Resolved
+### 2026-08-15 Small-Model Replacement Decision
 
 LFM2.5-VL-3B is the new fast/vision model, not an interim placeholder. It replaced Qwen3.5-4B after passing the multilingual short-reply and screenshot audition.
 
 The prior shortlist is closed. Qwen3.5-4B remains cached on disk for rollback only and is no longer a valid runtime conversation model.
 
-## Qualitative Research Agent
+### Historical Qualitative Research Agent
 
 Research is not a single search-summary call. The implemented harness performs:
 
@@ -53,7 +76,7 @@ Limits:
 - Public HTTP/HTTPS only; loopback, LAN, link-local, and `.local` result URLs are rejected.
 - JavaScript-only and inaccessible pages may provide only their SearXNG snippet.
 
-## SearXNG
+### Historical SearXNG State
 
 Order:
 
@@ -67,7 +90,7 @@ Observed on 2026-08-10:
 - Unraid JSON search returns HTTP 403 because JSON output is disabled.
 - HTML search works, so Veyra now falls back to native SearXNG HTML parsing.
 
-## Outbound Privacy Boundary
+### Historical Outbound Privacy Boundary
 
 Allowed to leave the LAN during research:
 

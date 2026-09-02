@@ -1,10 +1,10 @@
 ---
 tags: [local-ai]
 project: Veyra Companion
-status: Installed build; LFM2.5-VL-3B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted
-repository: /Users/aim/Downloads/Veyra_Companion_Sprites
+status: Installed build; Qwen3.5-4B screen-aware fast lane, Qwen3.8-27B research lane, English-canonical text, and private Japanese Irodori speech
+repository: /Users/aim/Documents/Projects/Veyra_Companion_Sprites
 platform: macOS
-updated: 2026-08-15
+updated: 2026-09-02
 ---
 
 # Veyra Companion
@@ -15,9 +15,17 @@ Veyra Companion is Aim's private, local macOS companion. Veyra combines a persis
 
 She is not designed as an otome chatbot or engagement product. The goal is a perceptive long-term partner who can be warm, teasing, skeptical, disciplinary, and practically useful without pretending to be human.
 
-Canonical repository: `/Users/aim/Downloads/Veyra_Companion_Sprites`
+Canonical repository: `/Users/aim/Documents/Projects/Veyra_Companion_Sprites`
 
-## Current Status
+## Current Status — 2026-09-02
+
+Veyra's visible conversation and memory are English-only. Short eligible English replies may be translated privately into Japanese for speech; the Japanese text is not shown, stored, searched, or added to research. Irodori v4.1 with the retained `JA-B` identity is the selected Japanese voice. The warmed installed English-to-Japanese-to-audio chain measured 1.852 seconds; voice choice was made by listening for emotional fit, not by a synthetic quality score.
+
+The current fast lane is `mlx-community/Qwen3.5-4B-MLX-4bit`, because it is the candidate in this group that preserves screen awareness. The larger `qwen3.8-27b-4bit` remains the deliberate research lane. Recent text-only challengers are not replacements: Nanbeige 4.2 is the stronger compact reasoning result but has no visual input and needs a special runtime; Spark-X2.5-4B is cleaner in short English turns but weaker on the practical field suite.
+
+See [[08 - Current Progress and Acceptance]] for the current evidence ledger, [[07 - Voice and Companion Model Benchmarks]] for the benchmark method and decisions, and [[04 - Models, Research, and Privacy]] for the operating rules. The historical snapshots below predate the 2026-09-01 routing and speech changes; they are retained as history, not current operating guidance.
+
+## Historical Status Snapshot — Superseded
 
 **Margin Companion A is installed. Fast replies and visual awareness now run through bundled LFM2.5-VL-3B; deep, creative, and research work run through external Qwen3.8-27B. Qwen3.5-4B and Bonsai are removed from the runtime, and Fish S2 Pro speech remains brief/proactive and external-output-only.**
 

@@ -1,12 +1,18 @@
 ---
 tags: [local-ai]
 project: Veyra Companion
-updated: 2026-08-15
+updated: 2026-09-02
 ---
 
 # Build and Verification Record
 
 Historical entries below retain their exact former identifiers and commit titles. Current names are recorded here.
+
+## Current Acceptance Record — 2026-09-02
+
+The authoritative current status is [[08 - Current Progress and Acceptance]]. It distinguishes installed/live proof from benchmark-only evidence and open gates. Fresh source validation on 2026-09-02: `swift test` passed **47/47**. The installed app, Irodori speech worker, and Qwen3.5 fast VLM worker were also observed running; the worker accepted `POST /v1/warm` with `204`.
+
+The historical entries below must not be read as the current LFM/Fish/Arabic architecture. Those entries are preserved for provenance only.
 
 ## 2026-08-15 — LFM2.5-VL-3B Fast and Vision Replacement
 
