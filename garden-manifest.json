@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T16:58:35Z",
+  "generated_at": "2026-09-02T14:12:15Z",
   "tree": [
     {
       "path": "README.md",
@@ -51,6 +51,10 @@
     },
     {
       "path": "IT Projects/Building a Privacy-First Obsidian Publishing System.md",
+      "type": "file"
+    },
+    {
+      "path": "IT Projects/Local AI Benchmark Content Site.md",
       "type": "file"
     },
     {
@@ -1098,6 +1102,14 @@
       "type": "file"
     },
     {
+      "path": "Projects/Sovereign AI Stack/Frontier Landscape - What Fits 128GB.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/GLM-5.3-Flash.md",
+      "type": "file"
+    },
+    {
       "path": "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q4.md",
       "type": "file"
     },
@@ -1135,6 +1147,10 @@
     },
     {
       "path": "Projects/Sovereign AI Stack/Qwen3.8-27B.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Sovereign AI Stack/Qwen3.8-Flash-Next.md",
       "type": "file"
     },
     {
@@ -1579,6 +1595,14 @@
     },
     {
       "path": "Projects/Veyra Companion/06 - Troubleshooting and Findings Log.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion/07 - Voice and Companion Model Benchmarks.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Veyra Companion/08 - Current Progress and Acceptance.md",
       "type": "file"
     },
     {
@@ -2210,6 +2234,10 @@
       "tags": "[]",
       "visibility": "public",
       "title": "Building a Privacy-First Obsidian Publishing System"
+    },
+    "IT Projects/Local AI Benchmark Content Site.md": {
+      "tags": "[local-ai, side-project, monetization]",
+      "title": "Local AI Benchmark Content Site — Plan"
     },
     "IT Projects/README.md": {
       "tags": "[troubleshooting, monitoring]",
@@ -3144,6 +3172,14 @@
       "tags": "[local-ai, cost]",
       "title": "Deepwen-3.6"
     },
+    "Projects/Sovereign AI Stack/Frontier Landscape - What Fits 128GB.md": {
+      "tags": "[local-ai, hardware-constraints, unraid]",
+      "title": "Frontier Landscape — what fits 128 GB (Aug 2026)"
+    },
+    "Projects/Sovereign AI Stack/GLM-5.3-Flash.md": {
+      "tags": "[local-ai, hardware-constraints, unraid]",
+      "title": "GLM-5.3-Flash (320B-A18B) — feasibility: NO-GO on this box"
+    },
     "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q4.md": {
       "tags": "[local-ai]",
       "title": "Gemma 4 12B QAT Q4"
@@ -3186,6 +3222,10 @@
     "Projects/Sovereign AI Stack/Qwen3.8-27B.md": {
       "tags": "[local-ai, hardware-constraints]",
       "title": "Qwen3.8-27B — Deploy, Benchmarks, Verdict"
+    },
+    "Projects/Sovereign AI Stack/Qwen3.8-Flash-Next.md": {
+      "tags": "[local-ai, hardware-constraints, unraid]",
+      "title": "Qwen3.8-Flash-Next (176B MoE)"
     },
     "Projects/Sovereign AI Stack/Setup Tutorial - Sovereign AI Stack.md": {
       "tags": "[local-ai, checklist]",
@@ -3721,10 +3761,10 @@
     "Projects/Veyra Companion/00 - Project Overview.md": {
       "tags": "[local-ai]",
       "project": "Veyra Companion",
-      "status": "Installed build; LFM2.5-VL-3B fast/vision and Qwen3.8-27B heavy/research routing live; Fish S2 Pro speech external-output-only; 8-bit Fish benchmarked but not promoted",
-      "repository": "/Users/aim/Downloads/Veyra_Companion_Sprites",
+      "status": "Installed build; Qwen3.5-4B screen-aware fast lane, Qwen3.8-27B research lane, English-canonical text, and private Japanese Irodori speech",
+      "repository": "/Users/aim/Documents/Projects/Veyra_Companion_Sprites",
       "platform": "macOS",
-      "updated": "2026-08-15",
+      "updated": "2026-09-02",
       "title": "Veyra Companion"
     },
     "Projects/Veyra Companion/01 - Architecture and Implementation Plan.md": {
@@ -3747,15 +3787,15 @@
       "title": "Assets, Expressions, and Display"
     },
     "Projects/Veyra Companion/04 - Models, Research, and Privacy.md": {
-      "tags": "[local-ai]",
+      "tags": "[local-ai, benchmarks, privacy, voice]",
       "project": "Veyra Companion",
-      "updated": "2026-08-15",
+      "updated": "2026-09-02",
       "title": "Models, Research, and Privacy"
     },
     "Projects/Veyra Companion/05 - Build and Verification Record.md": {
       "tags": "[local-ai]",
       "project": "Veyra Companion",
-      "updated": "2026-08-15",
+      "updated": "2026-09-02",
       "title": "Build and Verification Record"
     },
     "Projects/Veyra Companion/06 - Troubleshooting and Findings Log.md": {
@@ -3764,6 +3804,20 @@
       "type": "troubleshooting-log",
       "updated": "2026-08-15",
       "title": "Troubleshooting and Findings Log"
+    },
+    "Projects/Veyra Companion/07 - Voice and Companion Model Benchmarks.md": {
+      "tags": "[local-ai, benchmarks, voice, veyra]",
+      "project": "Veyra Companion",
+      "type": "decision-record",
+      "updated": "2026-09-02",
+      "title": "Voice and Companion Model Benchmarks"
+    },
+    "Projects/Veyra Companion/08 - Current Progress and Acceptance.md": {
+      "tags": "[local-ai, veyra, progress, acceptance]",
+      "project": "Veyra Companion",
+      "type": "progress-record",
+      "updated": "2026-09-02",
+      "title": "Current Progress and Acceptance"
     },
     "Systems/Development Tools.md": {
       "tags": "[]",
@@ -4272,6 +4326,14 @@
       "Business & Marketing Guide",
       "Marketing Channels"
     ],
+    "IT Projects/Local AI Benchmark Content Site.md": [
+      "Project Overview - Sovereign AI Stack",
+      "Qwen3.8-Flash-Next",
+      "Qwen3.8-27B",
+      "GLM-5.3-Flash",
+      "Frontier Landscape - What Fits 128GB",
+      "LLM Benchmark Registry - Mac vs Unraid"
+    ],
     "IT Projects/README.md": [
       "Knowledge Base - Main Index",
       "Systems/README",
@@ -4744,6 +4806,15 @@
       "Qwen3.6 35B A3B Abliterated",
       "LLM Benchmark Registry - Mac vs Unraid"
     ],
+    "Projects/Sovereign AI Stack/Frontier Landscape - What Fits 128GB.md": [
+      "GLM-5.3-Flash",
+      "Qwen3.8-Flash-Next",
+      "LLM Benchmark Registry - Mac vs Unraid"
+    ],
+    "Projects/Sovereign AI Stack/GLM-5.3-Flash.md": [
+      "Qwen3.8-Flash-Next",
+      "LLM Benchmark Registry - Mac vs Unraid"
+    ],
     "Projects/Sovereign AI Stack/Gemma 4 12B QAT Q4.md": [
       "Gemma 4 12B QAT Q8"
     ],
@@ -4766,6 +4837,7 @@
       "Maple-Preview 20B",
       "Qwen3.6 35B A3B Abliterated",
       "Deepwen-3.6",
+      "Qwen3.8-Flash-Next",
       "Unraid Qwen3.6 Terminal Agent - July 2026"
     ],
     "Projects/Sovereign AI Stack/Maple-Preview 20B.md": [
@@ -4785,6 +4857,11 @@
       "Project Overview - Sovereign AI Stack",
       "Setup Tutorial - Sovereign AI Stack",
       "Architecture Guide - Sovereign AI Stack"
+    ],
+    "Projects/Sovereign AI Stack/Qwen3.8-Flash-Next.md": [
+      "Qwen3.8-27B",
+      "LLM Benchmark Registry - Mac vs Unraid",
+      "Unraid Qwen3.6 Terminal Agent - July 2026"
     ],
     "Projects/Sovereign AI Stack/Setup Tutorial - Sovereign AI Stack.md": [
       "Project Overview - Sovereign AI Stack",
@@ -5115,16 +5192,28 @@
       "11 - User Guide"
     ],
     "Projects/Veyra Companion/00 - Project Overview.md": [
+      "08 - Current Progress and Acceptance",
+      "07 - Voice and Companion Model Benchmarks",
+      "04 - Models, Research, and Privacy",
       "01 - Architecture and Implementation Plan",
       "02 - Mind, Personality, and Memory",
       "03 - Assets, Expressions, and Display",
-      "04 - Models, Research, and Privacy",
       "05 - Build and Verification Record",
       "06 - Troubleshooting and Findings Log",
       "Projects/README"
     ],
+    "Projects/Veyra Companion/04 - Models, Research, and Privacy.md": [
+      "08 - Current Progress and Acceptance",
+      "07 - Voice and Companion Model Benchmarks"
+    ],
     "Projects/Veyra Companion/05 - Build and Verification Record.md": [
+      "08 - Current Progress and Acceptance",
       "06 - Troubleshooting and Findings Log"
+    ],
+    "Projects/Veyra Companion/08 - Current Progress and Acceptance.md": [
+      "07 - Voice and Companion Model Benchmarks",
+      "04 - Models, Research, and Privacy",
+      "05 - Build and Verification Record"
     ],
     "Systems/Development Tools.md": [
       "Programming/Python Fundamentals",
