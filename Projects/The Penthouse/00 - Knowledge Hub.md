@@ -3,7 +3,7 @@ tags: [penthouse, rebuild, knowledge-base, obsidian, decision-record, website-re
 created: 2026-03-05
 published_to_garden: true
 last_published: '2026-07-25T21:05:10.185673'
-updated: 2026-08-04
+updated: 2026-09-03
 ---
 
 # The Penthouse Rebuild Knowledge Hub
@@ -41,6 +41,7 @@ This vault is the "what we built and why" map for people joining the project lat
 21. [[21 - v4.2 Privacy Terms and Operator Trust]] - public legal pages and real admin diagnostics
 22. [[22 - v4.3 Collaboration Wave]] - community discovery, forwarding, files, and gated embeds
 23. [[23 - Trust and Safety Blocks]] - block enforcement, verification, and remaining pre-commit race fixes
+24. [[24 - Security and Build Hardening]] - dependency, build, CORS, CSP, limiter, realtime revocation, and Android cleanup proof
 
 ## Source docs in repo
 
@@ -50,12 +51,13 @@ This vault is the "what we built and why" map for people joining the project lat
 - [[../../services/api/docs/RELIABILITY_DRILL|Reliability Drill Runbook]]
 - [[../../antigravity/customizations|Antigravity customizations]]
 
-## Current active state (as of 2026-08-04)
+## Current active state (as of 2026-09-03)
 
 - Production now runs on Unraid rather than the historical TrueNAS paths documented below.
 - The August 4 outage was recovered by restoring the existing `cache` and `downloads` ZFS pool assignments. See [[../The Penthouse Self-Hosting/12 - Unraid Pool Recovery 2026-08-04]].
 - Public web and API are live at `penthouse.blog` and `api.penthouse.blog`; deployed revision proof was `3a6f013` after recovery.
-- Trust & Safety blocks are implemented and verified in a dirty worktree, but are not committed or deployed. See [[23 - Trust and Safety Blocks]] for the remaining concurrency and stale-state fixes.
+- Trust & Safety blocks are live at revision `f03f3d0`; see [[23 - Trust and Safety Blocks]].
+- Security and build hardening is implemented and locally verified on `hardening/security-build-integrity`; it remains unpushed and undeployed pending Aim's local inspection. See [[24 - Security and Build Hardening]].
 - Older TrueNAS, v2.1, and clean-room status sections below remain historical records unless a newer note explicitly supersedes them.
 
 ## Current status (as of 2026-04-15)
