@@ -48,6 +48,7 @@ Infrastructure, operating systems, networking, and tools.
 | [[Systems/Router Configuration]] | TP-Link optimization (8-part guide, 00-07) |
 | [[Systems/Obsidian Productivity Mastery]] | Vault management |
 | [[Systems/Personal Setup]] | Workspace optimization |
+| [[Systems/K2-Horizon MoVA Serving and Benchmarks]] | K2 MoE on Unraid + M5 Pro, tuning findings |
 
 ---
 
