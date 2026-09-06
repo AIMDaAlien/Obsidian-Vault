@@ -71,3 +71,20 @@ Templates for all of these live in the `antigravity/templates/` folder in the re
 - DeepSeek V4 Pro has been superseded in the active workflow by DeepSeek V4 Flash 0731.
 - Qwen is used to offload mundane, token-heavy building, not security judgment or release approval.
 - Test execution is delegated to DeepSeek V4 Flash 0731; Codex reviews the evidence and owns the final release decision.
+
+## Historical attribution note (2026-09-06)
+
+The retained 22 January–3 March commits identify human Git authors only, so no
+model attribution is confirmed for that period. The most plausible working
+hypothesis is the Claude lanes recorded in the following March handoffs: Sonnet
+for frontend/mobile implementation and Opus for decomposition, review, and
+difficult debugging. That fits the early work's shape—mobile chat UI, component
+decomposition, responsive polish,
+notifications, test expansion, and backend/realtime hardening—but it remains an
+inference, not evidence of authorship.
+
+Do not collapse the names: generic Claude/Sonnet is not proof of Claude Sonnet
+4.6; Claude Opus 4.6 and later Opus 4.7 are separate documented references; and
+no retained primary source names a Claude 3.7-era model. The first exact local
+model execution evidence is Codex `gpt-5.3-codex` on 2026-03-04. See
+`01 - Rebuild Timeline.md` for the commit-level early-work record.
