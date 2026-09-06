@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T19:05:14Z",
+  "generated_at": "2026-09-06T20:30:57Z",
   "tree": [
     {
       "path": "README.md",
@@ -1651,6 +1651,10 @@
     },
     {
       "path": "Systems/Development Tools.md",
+      "type": "file"
+    },
+    {
+      "path": "Systems/K2-Horizon MoVA Serving and Benchmarks.md",
       "type": "file"
     },
     {
@@ -3890,6 +3894,9 @@
       "tags": "[]",
       "title": "Development Tools & Productivity"
     },
+    "Systems/K2-Horizon MoVA Serving and Benchmarks.md": {
+      "title": "K2-Horizon MoVA 36B-A4B — Serving & Benchmarks"
+    },
     "Systems/Local AI Stack Research - Gemma 4 on M5 Pro.md": {
       "tags": "[local-ai, hardware-constraints]",
       "title": "Local AI Stack Research - Gemma 4 on M5 Pro"
@@ -4345,6 +4352,7 @@
       "Systems/Router Configuration",
       "Systems/Obsidian Productivity Mastery",
       "Systems/Personal Setup",
+      "Systems/K2-Horizon MoVA Serving and Benchmarks",
       "Projects/3D Print Shoppe",
       "Projects/Teardown Cafe",
       "Projects/Tech Consulting",
@@ -5290,6 +5298,11 @@
       "Github Pages Setup",
       "Git Push Conflict Troubleshooting",
       "Privacy Filter - Matrix Decode"
+    ],
+    "Systems/K2-Horizon MoVA Serving and Benchmarks.md": [
+      "Local AI Benchmark Content Site",
+      "Local AI Stack Research - Gemma 4 on M5 Pro",
+      "unraid-qwen38-notes"
     ],
     "Systems/Obsidian Productivity Mastery.md": [
       "🗺️ Knowledge Base - Main Index",
