@@ -1,8 +1,20 @@
 {
-  "generated_at": "2026-09-06T22:08:54Z",
+  "generated_at": "2026-09-07T00:35:35Z",
   "tree": [
     {
       "path": "README.md",
+      "type": "file"
+    },
+    {
+      "path": "Teardown Cafe - Content Workflow.md",
+      "type": "file"
+    },
+    {
+      "path": "Teardown Cafe - Documentation Index.md",
+      "type": "file"
+    },
+    {
+      "path": "Teardown Cafe - Technical Setup.md",
       "type": "file"
     },
     {
@@ -1691,10 +1703,6 @@
     },
     {
       "path": "Systems/Homelab/CPU Architectures.md",
-      "type": "file"
-    },
-    {
-      "path": "Systems/Homelab/FIRST OF ALL.md",
       "type": "file"
     },
     {
@@ -3931,9 +3939,6 @@
     "Systems/Homelab/CPU Architectures.md": {
       "tags": "[]"
     },
-    "Systems/Homelab/FIRST OF ALL.md": {
-      "tags": "[]"
-    },
     "Systems/Homelab/Home Lab.md": {
       "tags": "[hardware-constraints]"
     },
@@ -5333,9 +5338,6 @@
       "Knowledge Base - Main Index",
       "Programming Concepts/README",
       "IT Projects/README"
-    ],
-    "Systems/Homelab/FIRST OF ALL.md": [
-      "Home Lab"
     ],
     "Systems/Homelab/Home Lab.md": [
       "Home Server",
