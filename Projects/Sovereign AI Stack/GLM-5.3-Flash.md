@@ -36,6 +36,25 @@ Strictly worse than [[Qwen3.8-Flash-Next]] on this hardware on every axis
 would run well on the future Mac Studio M5 Ultra 512 GB (Oct 2026) at IQ3_XXS/Q3
 with ~100+ tok/s unified-memory decode, but not on 128 GB + a 12 GB GPU.
 
+## Update 2026-09-06: cluster path re-opens it (conditionally)
+
+Against the Unraid box alone this stays a NO-GO. But the hypothetical
+**Unraid + gaming-rig cluster** (see [[LLM Benchmark Registry - Mac vs Unraid]])
+changes the memory math: ~192 GB pooled RAM + ~28 GB VRAM across two hosts.
+
+- **Fits:** UD-IQ1_S 93 GB, UD-Q2_K_XL 109 GB, UD-IQ3_XXS 120 GB, and
+  UD-Q3_K_XL 148 GB (tight). IQ4_XS/Q4_K_M do not leave usable context.
+- **Runtime is still fork-only** (`glm5_next`, Unsloth branch) — not mainline.
+  Multi-node RPC on a fresh fork adds fragility; wait for mainline merge.
+- **Speed expectation 5-9 tok/s** — 18B active streamed across two hosts'
+  DDR4 over RPC. Slower than Flash-Next's 14.7 on one box.
+- **Energy:** both machines loaded ≈ 500-600 W. Wake-on-LAN demand-start only;
+  not an always-on resident.
+
+Verdict unchanged as a resident; feasible as an on-demand experiment once
+`glm5_next` lands in mainline llama.cpp. First big-model cluster target should
+be Qwen3.7-235B (mainline support, similar fit, likely better agentic scores).
+
 ## Related
 
 - [[Qwen3.8-Flash-Next]]
