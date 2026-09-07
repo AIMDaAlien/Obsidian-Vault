@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T00:35:35Z",
+  "generated_at": "2026-09-07T01:05:43Z",
   "tree": [
     {
       "path": "README.md",
@@ -1687,6 +1687,10 @@
     },
     {
       "path": "Systems/Personal Setup.md",
+      "type": "file"
+    },
+    {
+      "path": "Systems/Qwen3.8-Flash-Next 262K Context on Unraid.md",
       "type": "file"
     },
     {
@@ -3928,6 +3932,9 @@
       "tags": "[]",
       "title": "Personal Setup"
     },
+    "Systems/Qwen3.8-Flash-Next 262K Context on Unraid.md": {
+      "title": "Qwen3.8-Flash-Next (Qwen4-exp) on Unraid — 262K Context & Tuning"
+    },
     "Systems/README.md": {
       "tags": "[monitoring, hardware-constraints]",
       "title": "Systems"
@@ -4358,6 +4365,7 @@
       "Systems/Obsidian Productivity Mastery",
       "Systems/Personal Setup",
       "Systems/K2-Horizon MoVA Serving and Benchmarks",
+      "Systems/Qwen3.8-Flash-Next 262K Context on Unraid",
       "Projects/3D Print Shoppe",
       "Projects/Teardown Cafe",
       "Projects/Tech Consulting",
@@ -5333,6 +5341,11 @@
       "Systems/Development Tools",
       "Systems/Operating Systems",
       "🗺️ Knowledge Base - Main Index"
+    ],
+    "Systems/Qwen3.8-Flash-Next 262K Context on Unraid.md": [
+      "K2-Horizon MoVA Serving and Benchmarks",
+      "Local AI Benchmark Content Site",
+      "opencode-qwen-deepseek-setup"
     ],
     "Systems/README.md": [
       "Knowledge Base - Main Index",
