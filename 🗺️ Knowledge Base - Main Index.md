@@ -49,6 +49,7 @@ Infrastructure, operating systems, networking, and tools.
 | [[Systems/Obsidian Productivity Mastery]] | Vault management |
 | [[Systems/Personal Setup]] | Workspace optimization |
 | [[Systems/K2-Horizon MoVA Serving and Benchmarks]] | K2 MoE on Unraid + M5 Pro, tuning findings |
+| [[Systems/Qwen3.8-Flash-Next 262K Context on Unraid]] | Qwen4-exp arch, 262K ctx on 12 GB GPU, ncmoe frontier |
 
 ---
 
