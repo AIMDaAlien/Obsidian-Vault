@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T01:05:43Z",
+  "generated_at": "2026-09-07T01:35:53Z",
   "tree": [
     {
       "path": "README.md",
@@ -15,10 +15,6 @@
     },
     {
       "path": "Teardown Cafe - Technical Setup.md",
-      "type": "file"
-    },
-    {
-      "path": "Untitled 1.base",
       "type": "file"
     },
     {
@@ -4923,9 +4919,11 @@
       "LFM2.5-2.6B",
       "Ternary Bonsai 27B",
       "Maple-Preview 20B",
+      "K2-Horizon MoVA Serving and Benchmarks",
       "Qwen3.6 35B A3B Abliterated",
-      "Deepwen-3.6",
       "Qwen3.8-Flash-Next",
+      "Qwen3.8-Flash-Next 262K Context on Unraid",
+      "Deepwen-3.6",
       "Unraid Qwen3.6 Terminal Agent - July 2026"
     ],
     "Projects/Sovereign AI Stack/Maple-Preview 20B.md": [
