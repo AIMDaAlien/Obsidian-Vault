@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T01:35:53Z",
+  "generated_at": "2026-09-16T13:45:49Z",
   "tree": [
     {
       "path": "README.md",
@@ -1047,6 +1047,18 @@
     },
     {
       "path": "Projects/Homelab NOC Skills/Troubleshooting Log.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Ironmind",
+      "type": "dir"
+    },
+    {
+      "path": "Projects/Ironmind/Autonomous Task Loop.md",
+      "type": "file"
+    },
+    {
+      "path": "Projects/Ironmind/Ironmind Hub.md",
       "type": "file"
     },
     {
@@ -3165,6 +3177,19 @@
       "title": "Troubleshooting Log - NOC Skills Homelab",
       "visibility": "private"
     },
+    "Projects/Ironmind/Autonomous Task Loop.md": {
+      "tags": "[ironmind, devops, task-loop, opencode]",
+      "created": "2026-09-15",
+      "updated": "2026-09-15",
+      "project-path": "~/Documents/Projects/ironmind",
+      "title": "Ironmind — Autonomous Task Loop"
+    },
+    "Projects/Ironmind/Ironmind Hub.md": {
+      "tags": "[ironmind, hub]",
+      "created": "2026-09-07",
+      "project-path": "~/Documents/Projects/ironmind",
+      "title": "Ironmind — Hub"
+    },
     "Projects/Local Language Engine/00 - Project Overview.md": {
       "tags": "[hardware-constraints, cost]",
       "project": "Local Language Engine",
@@ -4843,6 +4868,14 @@
       "Projects/Archive/Pi-hole Setup Guide - Complete Journey",
       "Projects/Archive/Pi-hole Migration - RPi B+ to RPi 5 NVMe",
       "Projects/Archive/TrueNAS Build Guide"
+    ],
+    "Projects/Ironmind/Autonomous Task Loop.md": [
+      "Ironmind Hub",
+      "Qwen3.8-Flash-Next",
+      "Qwen3.8-27B"
+    ],
+    "Projects/Ironmind/Ironmind Hub.md": [
+      "Autonomous Task Loop"
     ],
     "Projects/Local Language Engine/00 - Project Overview.md": [
       "01 - Architecture and Implementation Plan",
