@@ -109,7 +109,7 @@ npm run dev
 -  Component creation
 -  Technical implementation
 
-## 🆘 **When You're Stuck**
+##  **When You're Stuck**
 
 1. **Update your Obsidian note** with the problem
 2. **Run the save commands** above
