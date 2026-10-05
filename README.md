@@ -1,41 +1,19 @@
 ---
-tags: []
+published: true
+tags: [index]
 ---
 # Knowledge Base Vault
 
-A personal knowledge management system built in [Obsidian](https://obsidian.md/), covering programming, systems administration, project documentation, and career development.
+Personal knowledge vault, read by Obsidian locally and published to the portfolio Knowledge Garden on GitHub Pages.
 
-## Structure
+Start at [[Index]]. Notes are organized by category:
 
-```
-├── Programming Concepts/   Languages (Python, C, SQL, CSS, HTML), CS theory, general programming
-├── Systems/                Homelab infrastructure, Linux, router configuration, tools
-├── IT Projects/            Technical project logs, session notes, web development
-├── Projects/               Non-IT projects: 3D printing, tech consulting, portfolio, etc.
-├── Learning Journals/      Methodology reflections and learning experiences
-├── Myself/                 Career development and personal growth
-```
+- 01 Projects - per-project documentation, indexes, and handoffs
+- 02 Homelab - server inventory, network, services, logs
+- 03 AI and Local Models - model research, benchmarks, serving notes
+- 04 Programming - language and CS concept notes
+- 05 Linux and Systems - Linux command line and OS notes
+- 06 Learning Journals - reflective writeups and lessons learned
+- 07 Tools and Workflow - Obsidian, publishing, business bridges
 
-## Topics Covered
-
-- **Programming**: Python fundamentals through advanced topics, C, web development (HTML/CSS), SQL, general CS theory
-- **Systems**: Linux command line and shell scripting, homelab setup (Docker, Proxmox, networking), router configuration
-- **Projects**: Local 3D printing business, tech consulting service, typing practice app, portfolio website, community repair cafe concept
-- **Career**: Data center operations, IT certifications, skill development tracking
-
-## Conventions
-
-- Plain markdown files — portable and readable outside Obsidian
-- Wikilinks (`[[path/note]]`) for internal cross-referencing
-- Sequential guides use `00 - Title.md` numbering
-- Session logs follow `YYYY-MM-DD Topic.md` format
-- Each major folder contains a `README.md` with its own index
-- Tags: `#beginner` / `#intermediate` / `#advanced`, `#programming` / `#systems` / `#theory`
-
-## Navigation
-
-Open `Knowledge Base - Main Index.md` in Obsidian for the full interactive index with linked tables and quick access shortcuts.
-
-## License
-
-Personal knowledge base. Not intended for redistribution.
+Only notes explicitly marked "keep private" are excluded from the garden.
