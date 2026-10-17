@@ -1,0 +1,8 @@
+_private/
+.obsidian/
+.DS_Store
+*.tmp
+.stfolder/
+__pycache__/
+*.pyc
+01 Projects/Ironmind/docs
