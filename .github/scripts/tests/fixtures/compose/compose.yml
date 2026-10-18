@@ -1,0 +1,18 @@
+published: published
+sources:
+  - name: m5pro
+    path: m5pro
+    machine: m5pro
+    syncthing_folder: aaa
+  - name: bigrig
+    path: bigrig
+    machine: bigrig
+    syncthing_folder: bbb
+    attachments: _attachments
+    path_map:
+      "01 Projects/The Penthouse/": "01 Projects/Penthouse/"
+protected: [.github/, .gitignore, README.md, garden-manifest.json, curation.yml]
+exclude_dirs: [_inbox, .obsidian, .trash, _private]
+exclude_ext: [json, jsonl, log, csv, py, sh, patch, txt, exit-code]
+image_ext: [png, svg, jpg, jpeg, gif, webp]
+syncthing_api: "<lan-ip-1>:8384"
