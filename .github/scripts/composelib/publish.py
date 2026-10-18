@@ -2,6 +2,8 @@
 import json
 import subprocess
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -27,20 +29,49 @@ class PushError(ComposeError):
         self.commit = commit
 
 
-def syncthing_idle(api: str, api_key: str, folder_ids: list[str]) -> tuple[bool, str]:
-    """True when every folder reports state idle; any error is (False, reason)."""
+BUSY_STATES = {"scanning", "syncing", "sync-preparing", "sync-waiting", "scan-waiting",
+               "cleaning", "clean-waiting"}
+
+
+def _folder_state(base: str, api_key: str, folder: str) -> str:
+    """The folder's Syncthing state; raises on HTTP, network or JSON trouble."""
+    req = urllib.request.Request(f"{base}/rest/db/status?folder={urllib.parse.quote(folder)}",
+                                 headers={"X-API-Key": api_key})
+    try:
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.load(resp)
+    except urllib.error.HTTPError as exc:
+        exc.close()
+        raise
+    state = data.get("state") if isinstance(data, dict) else None
+    if not isinstance(state, str) or not state:
+        raise ValueError("no state in response")
+    return state
+
+
+def syncthing_idle(api: str, api_key: str, folder_ids: list[str]) -> tuple[str, str]:
+    """("idle" | "busy" | "error", detail) over every folder; an error outranks busy.
+
+    Busy means a folder is scanning or syncing; idle means all are idle. Any other
+    state, or any HTTP, network or JSON failure, is an error.
+    """
     base = api if "://" in api else f"http://{api}"
+    errors, busy = [], []
     for folder in folder_ids:
-        req = urllib.request.Request(f"{base}/rest/db/status?folder={folder}",
-                                     headers={"X-API-Key": api_key})
         try:
-            with urllib.request.urlopen(req, timeout=5) as resp:
-                state = json.load(resp).get("state")
-        except Exception as exc:  # network, HTTP, timeout or bad JSON: all mean "not known idle"
-            return False, f"syncthing query failed for {folder}: {type(exc).__name__}"
-        if state != "idle":
-            return False, f"syncthing folder {folder} is {state}"
-    return True, "idle"
+            state = _folder_state(base, api_key, folder)
+        except Exception as exc:  # HTTP, network, timeout, bad JSON
+            errors.append(f"syncthing: {folder}: {type(exc).__name__}: {exc}")
+            continue
+        if state in BUSY_STATES:
+            busy.append(f"syncthing folder {folder} is {state}")
+        elif state != "idle":
+            errors.append(f"syncthing: {folder}: {state}")
+    if errors:
+        return "error", "\n".join(errors)
+    if busy:
+        return "busy", "; ".join(busy)
+    return "idle", "idle"
 
 
 def fast_forward(repo: Path) -> str:

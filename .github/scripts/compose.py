@@ -126,8 +126,10 @@ def run(args) -> int:
             key = os.environ.get("SYNCTHING_API_KEY")
             if not key:
                 raise ComposeError("syncthing api key missing")
-            idle, why = syncthing_idle(cfg.syncthing_api, key, [s.syncthing_folder for s in cfg.sources])
-            busy = None if idle else why
+            state, why = syncthing_idle(cfg.syncthing_api, key, [s.syncthing_folder for s in cfg.sources])
+            if state == "error":
+                raise ComposeError(why)
+            busy = why if state == "busy" else None
         if busy:
             report.status, report.reason = "busy", busy
         else:

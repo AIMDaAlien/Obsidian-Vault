@@ -1,14 +1,19 @@
+import contextlib
+import io
 import json
+import os
 import shutil
 import subprocess
 import sys
 import tempfile
 import unittest
+import urllib.error
 from pathlib import Path
+from unittest import mock
 
 from composelib import ComposeError
 from composelib.publish import (RunReport, commit_and_push, fast_forward, read_last_counts,
-                                run_gate, write_report)
+                                run_gate, syncthing_idle, write_report)
 
 SCRIPTS = Path(__file__).resolve().parent.parent
 FIXTURE = Path(__file__).resolve().parent / "fixtures" / "compose"
@@ -91,6 +96,58 @@ class FastForward(TmpCase):
         with self.assertRaises(ComposeError) as cm:
             fast_forward(clone)
         self.assertTrue(str(cm.exception).startswith("remote diverged"))
+
+
+def fake_urlopen(states):
+    """urlopen stand-in: states maps folder id to a state string, a body bytes, or an exception."""
+    def urlopen(req, timeout=None):
+        folder = req.full_url.rsplit("folder=", 1)[1]
+        value = states[folder]
+        if isinstance(value, Exception):
+            raise value
+        body = value if isinstance(value, bytes) else json.dumps({"state": value}).encode()
+        return io.BytesIO(body)
+    return urlopen
+
+
+class Syncthing(unittest.TestCase):
+    def check(self, states):
+        with mock.patch("urllib.request.urlopen", fake_urlopen(states)):
+            return syncthing_idle("http://syncthing.invalid:8384", "k", list(states))
+
+    def http_error(self, code):
+        return urllib.error.HTTPError("http://syncthing.invalid", code, "Forbidden", {}, io.BytesIO(b""))
+
+    def test_all_idle(self):
+        self.assertEqual(self.check({"a": "idle", "b": "idle"}), ("idle", "idle"))
+
+    def test_busy_states_name_the_folder(self):
+        for state in ("scanning", "syncing", "sync-preparing", "sync-waiting", "scan-waiting",
+                      "cleaning", "clean-waiting"):
+            self.assertEqual(self.check({"a": "idle", "b": state}),
+                             ("busy", f"syncthing folder b is {state}"), state)
+
+    def test_other_states_are_errors(self):
+        for state in ("error", "unknown", "paused"):
+            self.assertEqual(self.check({"a": state, "b": "idle"}), ("error", f"syncthing: a: {state}"))
+
+    def test_error_outranks_busy(self):
+        self.assertEqual(self.check({"a": "syncing", "b": "error"}), ("error", "syncthing: b: error"))
+
+    def test_http_403_is_error(self):
+        state, detail = self.check({"a": self.http_error(403)})
+        self.assertEqual(state, "error")
+        self.assertTrue(detail.startswith("syncthing: a: HTTPError"), detail)
+        self.assertIn("403", detail)
+
+    def test_connection_refused_is_error(self):
+        state, detail = self.check({"a": urllib.error.URLError(ConnectionRefusedError(61, "refused"))})
+        self.assertEqual(state, "error")
+        self.assertTrue(detail.startswith("syncthing: a: URLError"), detail)
+
+    def test_bad_json_and_missing_state_are_errors(self):
+        for body in (b"{not json", b"[]", b"{}"):
+            self.assertEqual(self.check({"a": body})[0], "error", body)
 
 
 class Gate(TmpCase):
@@ -211,6 +268,31 @@ class Cli(TmpCase):
                               env={"PATH": "/usr/bin:/bin"})
         self.assertEqual(proc.returncode, 1)
         self.assertIn("syncthing api key missing", (self.work / "last-run.md").read_text(encoding="utf-8"))
+
+    def run_inprocess(self, states):
+        import compose
+        args = compose.parse_args(["--config", str(self.config), "--no-push"])
+        out = io.StringIO()
+        with mock.patch.dict(os.environ, {"SYNCTHING_API_KEY": "k"}), \
+                mock.patch("urllib.request.urlopen", fake_urlopen(states)), \
+                mock.patch("composelib.publish.NOTIFY_SCRIPT", self.tmp / "no-notify"), \
+                contextlib.redirect_stdout(out), contextlib.redirect_stderr(out):
+            return compose.run(args), out.getvalue()
+
+    def test_syncthing_busy_exits_0_without_composing(self):
+        before = git(self.clone, "rev-parse", "HEAD")
+        code, _ = self.run_inprocess({"aaa": "idle", "bbb": "syncing"})
+        self.assertEqual(code, 0)
+        self.assertIn("— busy", self.last_md())
+        self.assertIn("syncthing folder bbb is syncing", self.last_md())
+        self.assertEqual(git(self.clone, "rev-parse", "HEAD"), before)
+
+    def test_syncthing_error_fails_and_notifies(self):
+        code, out = self.run_inprocess({"aaa": "error", "bbb": "idle"})
+        self.assertEqual(code, 1)
+        self.assertTrue(self.last_md().splitlines()[0].endswith("— failed"))
+        self.assertIn("syncthing: aaa: error", self.last_md())
+        self.assertIn("notify: syncthing: aaa: error", out)
 
     def test_bad_arguments_exit_2(self):
         proc = subprocess.run([sys.executable, str(SCRIPTS / "compose.py")], capture_output=True, text=True)
