@@ -57,9 +57,14 @@ timeout -k 2m 45m docker run --rm --init --name vault-publisher --pull=never --n
     --report-dir /vault --require-terms /root/.vault-privacy-terms "$@" >> "$LOG" 2>&1 || rc=$?
 
 if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
-    log "run timed out after 45 minutes (rc=$rc)"
+    if [ "$rc" -eq 124 ]; then
+        why="timed out after 45 minutes"
+    else
+        why="killed (timeout or OOM)"
+    fi
+    log "run $why (rc=$rc)"
     docker kill vault-publisher >/dev/null 2>&1 || true
-    notify "run timed out after 45 minutes"
+    notify "run $why"
     exit "$rc"
 fi
 log "run end rc=$rc"

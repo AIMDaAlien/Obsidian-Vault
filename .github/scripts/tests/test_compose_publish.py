@@ -106,21 +106,24 @@ class FastForward(TmpCase):
         self.assertIn("unpushed local commit", str(cm.exception))
         self.assertEqual(git(clone, "log", "-1", "--format=%s").strip(), "hand edit")
 
-    def test_publisher_commit_on_diverged_clone_still_fails(self):
+    def test_publisher_commit_on_diverged_clone_is_discarded(self):
         origin, clone = make_origin_and_clone(self.tmp)
         other = self.tmp / "other"
         git(self.tmp, "clone", str(origin), str(other))
         init_identity(other)
-        (other / "up.md").write_text("x\n")
+        (other / "garden-manifest.json").write_text("{}\n")
         git(other, "add", "-A")
-        git(other, "commit", "-m", "upstream")
+        git(other, "commit", "-m", "manifest")
         git(other, "push", "origin", "HEAD:main")
         (clone / "local.md").write_text("x\n")
         git(clone, "add", "-A")
         git(clone, "commit", "-m", "vault publish: run")
-        with self.assertRaises(ComposeError) as cm:
-            fast_forward(clone)
-        self.assertTrue(str(cm.exception).startswith("remote diverged"))
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            head, discarded = fast_forward(clone)
+        self.assertEqual(discarded, 1)
+        self.assertIn("discarded 1 unpushed publisher commit(s)", out.getvalue())
+        self.assertEqual(head, git(origin, "rev-parse", "main").strip())
+        self.assertFalse((clone / "local.md").exists())
 
     def test_true_divergence_says_remote_diverged(self):
         origin, clone = make_origin_and_clone(self.tmp)
@@ -512,6 +515,26 @@ class Cli(TmpCase):
         self.assertIn("discarded 1 unpushed publisher commit(s)", proc.stdout)
         self.assertEqual(json.loads((self.work / "last-run.json").read_text())["discarded"], 1)
         self.assertEqual(self.origin_head(), git(self.clone, "rev-parse", "HEAD").strip())
+
+    def test_rejected_push_after_ci_commit_is_recomputed_and_pushed(self):
+        git(self.clone, "remote", "set-url", "--push", "origin", str(self.tmp / "nowhere.git"))
+        self.assertEqual(self.run_cli().returncode, 1)
+        git(self.clone, "remote", "set-url", "--push", "origin", str(self.origin))
+        other = self.tmp / "other"
+        git(self.tmp, "clone", str(self.origin), str(other))
+        init_identity(other)
+        (other / "garden-manifest.json").write_text("{}\n")
+        git(other, "add", "-A")
+        git(other, "commit", "-m", "manifest")
+        git(other, "push", "origin", "HEAD:main")
+        manifest = self.origin_head()
+        proc = self.run_cli()
+        self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+        self.assertIn("discarded 1 unpushed publisher commit(s)", proc.stdout)
+        self.assertNotEqual(self.origin_head(), manifest)
+        self.assertEqual(git(self.origin, "rev-parse", "main~1").strip(), manifest)
+        self.assertTrue(git(self.origin, "log", "-1", "--format=%s", "main").startswith("vault publish:"))
+        self.assertTrue((self.clone / "Index.md").is_file())
 
     def test_push_failure_reports_commit_and_reason(self):
         git(self.clone, "remote", "set-url", "--push", "origin", str(self.tmp / "nowhere.git"))

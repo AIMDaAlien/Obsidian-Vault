@@ -87,16 +87,17 @@ def syncthing_idle(api: str, api_key: str, folder_ids: list[str]) -> tuple[str, 
 def fast_forward(repo: Path) -> tuple[str, int]:
     """Move the clone to origin/main; returns (new HEAD, publisher commits discarded).
 
-    Unpushed commits are dropped only when every one of them is a publisher commit
-    (their content is recomputed from the sources); any other local work fails the run.
+    Local commits not on origin/main are dropped only when every one of them is a
+    publisher commit (their content is recomputed from the sources), whether or not
+    origin/main also moved. Any other local commit fails the run.
     """
     _git(repo, "fetch", "origin", "main")
     discarded = 0
     if _git(repo, "merge-base", "--is-ancestor", "HEAD", "origin/main", check=False).returncode != 0:
-        if _git(repo, "merge-base", "--is-ancestor", "origin/main", "HEAD", check=False).returncode != 0:
-            raise ComposeError("remote diverged: local HEAD is not an ancestor of origin/main")
         subjects = _git(repo, "log", "--format=%s", "origin/main..HEAD").stdout.splitlines()
         if not subjects or not all(s.startswith(PUBLISHER_PREFIX) for s in subjects):
+            if _git(repo, "merge-base", "--is-ancestor", "origin/main", "HEAD", check=False).returncode != 0:
+                raise ComposeError("remote diverged: local HEAD is not an ancestor of origin/main")
             short = _git(repo, "rev-parse", "--short", "HEAD").stdout.strip()
             raise ComposeError(f"unpushed local commit {short} is ahead of origin/main; "
                                "push it or reset the clone")
