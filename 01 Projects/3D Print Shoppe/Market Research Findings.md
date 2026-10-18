@@ -204,7 +204,7 @@ project: 3D Print Shoppe
 
 ### Key Learnings
 - **Don't compete on price** - compete on service and customization
-- **B2B > B2C profit margins** - Stephanie V type clients are gold
+- **B2B > B2C profit margins** - <customer-B> type clients are gold
 - **Batching efficiency** - Print multiples of bestsellers overnight
 - **Marketing:** User-generated content > professional photos
 - **Website:** Simple catalog > complex customization tools

@@ -4,6 +4,8 @@ created: 2026-09-07
 publish: true
 project: Ironmind
 project-path: ~/Documents/Projects/ironmind
+featured: 64
+summary: "A Mac menu-bar app that hands me one tiny exercise or thinking card after 30 minutes of sitting. Rebuilt around the single feature I actually used."
 ---
 
 # Ironmind - Hub

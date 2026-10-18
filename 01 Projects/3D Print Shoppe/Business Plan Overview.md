@@ -27,7 +27,7 @@ project: 3D Print Shoppe
 2. **Gift buyers** - Holiday, birthdays, personalized items
 3. **Plant enthusiasts** - Custom planters, eco-conscious
 4. **Practical fixers** - Replacement parts, phone stands
-5. **B2B clients** - Bulk orders (Stephanie V - elderly gifts)
+5. **B2B clients** - Bulk orders (<customer-B> - elderly gifts)
 
 ## Pricing Strategy
 **Sweet Spot:** $20-50 (premium vs Amazon $5-20)

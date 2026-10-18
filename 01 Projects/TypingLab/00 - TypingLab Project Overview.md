@@ -3,6 +3,8 @@ tags: []
 created: 2025-11-18
 publish: true
 project: TypingLab
+featured: 61
+summary: "An offline typing trainer that works without internet and sends nothing anywhere. It adapts lessons to your weakest keys and unlocks letters as you improve."
 ---
 
 # TypingLab Project Overview

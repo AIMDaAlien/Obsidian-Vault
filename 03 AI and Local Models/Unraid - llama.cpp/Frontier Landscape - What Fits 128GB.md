@@ -4,6 +4,8 @@ created: 2026-09-02
 publish: true
 machine: unraid
 engine: llama.cpp
+featured: 49
+summary: "Is there a smarter open AI model than mine that fits a 128 GB home server? A sorted table of the biggest models shows why the answer is no."
 ---
 # Frontier Landscape — what fits 128 GB (Aug 2026)
 

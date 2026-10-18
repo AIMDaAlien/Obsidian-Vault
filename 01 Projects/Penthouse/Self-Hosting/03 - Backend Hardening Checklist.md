@@ -2,8 +2,9 @@
 tags: [self-hosting, security, backend, hardening]
 created: 2026-02-18
 publish: true
-featured: 1
+featured: 32
 project: Penthouse
+summary: "Practical security and reliability fixes for a small chat server: database safety, login tokens, permission checks, uploads and locked-down containers."
 ---
 
 # Backend Hardening Checklist

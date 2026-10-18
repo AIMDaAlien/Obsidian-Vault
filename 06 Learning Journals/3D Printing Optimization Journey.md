@@ -2,6 +2,8 @@
 tags: [reliability, cost, 3d-printing, bambu-lab, optimization, gcode, petg-cf]
 created: 2025-09-21
 publish: true
+featured: 79
+summary: "Skipping repeated calibration steps cut about three minutes from every 3D print start, with the exact settings I use for carbon-fiber filament."
 ---
 
 # 3D Printing Optimization Journey

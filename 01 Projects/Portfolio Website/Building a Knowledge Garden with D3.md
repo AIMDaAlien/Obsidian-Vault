@@ -3,6 +3,8 @@ tags: [portfolio-piece]
 created: 2025-12-09
 publish: true
 project: Portfolio Website
+featured: 75
+summary: "How the Knowledge Garden graph works: notes become dots, links between notes become lines, and well-connected notes drift to the middle. Code included."
 ---
 # Building a Knowledge Garden with D3.js
 

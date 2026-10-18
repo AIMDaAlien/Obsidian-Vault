@@ -2,8 +2,9 @@
 tags: [penthouse, architecture, overview]
 created: 2026-03-05
 publish: true
-featured: 11
+featured: 54
 project: Penthouse
+summary: "How a small private chat app is built: the app, the server, a shared rulebook and a database, and what happens in the moment you hit send."
 ---
 
 # Architecture in Plain English

@@ -2,6 +2,8 @@
 tags: [guide, security, checklist]
 created: 2025-10-02
 publish: true
+featured: 78
+summary: "My failed try at installing a privacy-focused phone system on a carrier-locked phone, and the checklist that let me succeed on a cheaper damaged one."
 ---
 
 # GrapheneOS Migration Guide: From Verizon Hell to Privacy Success

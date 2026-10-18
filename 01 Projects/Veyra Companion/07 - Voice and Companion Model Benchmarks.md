@@ -5,6 +5,8 @@ updated: 2026-09-02
 publish: true
 project: Veyra Companion
 type: decision-record
+featured: 60
+summary: "How I compared small AI models for a desktop companion beyond a single score: 10 graded tasks, 12 behaviour probes, and why the winner was a voice, not a model."
 ---
 
 # Voice and Companion Model Benchmarks

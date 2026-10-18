@@ -2,6 +2,8 @@
 tags: [troubleshooting, hardware-constraints]
 created: 2025-10-13
 publish: true
+featured: 14
+summary: "Ad blocking silently stopped after I added a storage server to my network. Root cause: one wrong setting made the wrong device the network's router."
 ---
 # Pi-hole Stopped Working After TrueNAS Setup
 

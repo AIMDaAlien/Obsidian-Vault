@@ -2,6 +2,8 @@
 tags: [guide, hardware-constraints]
 created: 2025-09-23
 publish: true
+featured: 18
+summary: "A whole-home ad blocker on a $35 Raspberry Pi: the parts, the one-character typo that broke it, and a TV that went from 14,000 to under 100 requests a day."
 ---
 
 # Pi-hole Setup: Raspberry Pi 3 B+

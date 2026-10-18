@@ -3,6 +3,8 @@ tags: [reliability, checklist]
 created: 2025-10-15
 publish: true
 project: Teardown Cafe
+featured: 66
+summary: "A repeatable process for publishing a hardware-teardown blog post, from taking photos to stripping hidden location data, taking 45 to 80 minutes each."
 ---
 # Teardown Cafe - Content Workflow
 

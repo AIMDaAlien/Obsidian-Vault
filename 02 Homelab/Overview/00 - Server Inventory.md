@@ -3,6 +3,8 @@ tags: [homelab, server-inventory, unraid, hardware, monitoring, reliability, har
 created: 2026-06-27
 publish: true
 last_incident: 2026-06-27
+featured: 12
+summary: "A tour of every machine in my home lab and its job: storage server, DNS Pi, a backup computer that takes over if the main one fails, and an AI box."
 ---
 
 # Server Inventory

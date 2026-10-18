@@ -2,7 +2,8 @@
 tags: [session-log, troubleshooting]
 created: 2026-01-09
 publish: true
-featured: 7
+featured: 17
+summary: "Pointing my router at my own ad blocker knocked out the whole network. How I got back in, and the safer two-tier DNS layout I use now."
 ---
 # Troubleshooting Report: The "DNS Loop" & Pi-hole Integration
 **Tags:** #Networking #Homelab #Troubleshooting #PiHole #TPLink #DNS

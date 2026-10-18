@@ -3,6 +3,8 @@ tags: [marketing]
 created: 2025-11-16
 publish: true
 project: Tech Consulting
+featured: 72
+summary: "What mattered most when launching a small local tech-help business: start with one service, use warm referrals, and the real income math behind it."
 ---
 # Key Lessons & Insights
 

@@ -3,6 +3,8 @@ tags: [troubleshooting]
 created: 2025-10-15
 publish: true
 project: Teardown Cafe
+featured: 65
+summary: "Six real website-build problems, each with what broke, the root cause and the fix, from outdated framework knowledge to a script that failed on a Mac."
 ---
 # Teardown Cafe - Troubleshooting & Lessons Learned
 

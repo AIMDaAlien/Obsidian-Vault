@@ -4,6 +4,8 @@ created: 2026-08-10
 publish: true
 machine: unraid
 engine: llama.cpp
+featured: 53
+summary: "An AI model replied with nothing but slashes. The cause was a switch that turned off its thinking step, and turning it back on fixed it."
 ---
 # Deepwen-3.6
 

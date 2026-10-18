@@ -18,7 +18,7 @@ project: 3D Print Shoppe
 ```
 Subject: Re: Photo to 3D request
 
-Hi Henock,
+Hi <customer-A>,
 
 Thanks for reaching out! Photo-to-3D is tricky - here's the real deal:
 
@@ -58,7 +58,7 @@ email@example.com
 ```
 Subject: Holiday gifts for your clients - Let's chat!
 
-Hi Stephanie,
+Hi <customer-B>,
 
 This sounds like a great fit! I specialize in decorative items
 perfect for gifting.
@@ -279,7 +279,7 @@ ORD-002 | 10/27 | Steph V. | Holiday | Contact | TBD | N | N | - | B2B bulk
 **Day 7:** "Thanks again! If you need anything else, I'm here."
 **Day 30:** "Holiday season coming up - need any gift items?"
 
-### B2B Clients (Stephanie type)
+### B2B Clients (<customer-B> type)
 **Immediately:** Respond with bulk pricing
 **Week 1:** Follow up if no response
 **Week 2:** Send catalog of suitable items

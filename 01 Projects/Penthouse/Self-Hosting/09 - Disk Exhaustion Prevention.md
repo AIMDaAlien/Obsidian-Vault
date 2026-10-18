@@ -3,6 +3,8 @@ tags: [self-hosting, truenas, docker, disk, ops]
 created: 2026-02-18
 publish: true
 project: Penthouse
+featured: 28
+summary: "Why home servers mysteriously stop, and four cheap fixes: cap container logs, rotate cron logs, prune Docker cache weekly, and trim the SQLite journal."
 ---
 
 # Disk Exhaustion Prevention (Home Server, Docker)

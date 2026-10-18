@@ -2,7 +2,8 @@
 tags: [session-log, troubleshooting, network, homelab, dns, coaxial, physical-layer, diagnostic]
 created: 2026-01-22
 publish: true
-featured: 3
+featured: 15
+summary: "Internet kept dropping for everyone in the house. Modem error counts pointed to a coax cable crushed under furniture; moving it cut errors from 1,145 to zero."
 ---
 # Network Troubleshooting Log: Intermittent WAN Instability
 

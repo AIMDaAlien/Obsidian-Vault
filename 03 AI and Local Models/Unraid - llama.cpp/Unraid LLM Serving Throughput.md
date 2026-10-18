@@ -2,9 +2,10 @@
 tags: [penthouse, unraid, llm, llama-cpp, throughput, benchmark]
 created: 2026-09-16
 publish: true
-featured: 15
+featured: 50
 machine: unraid
 engine: llama.cpp
+summary: "Updating the software that runs my home AI server made it 17% faster with no settings changes; I compared it with a rival engine."
 ---
 
 # Unraid LLM Serving Throughput

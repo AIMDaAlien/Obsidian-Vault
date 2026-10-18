@@ -3,6 +3,8 @@ tags: []
 created: 2025-11-18
 publish: true
 project: TypingLab
+featured: 62
+summary: "How a typing trainer decides what to practice: it scores each key, unlocks new keys at 35 WPM and 95% accuracy, and aims 70% of practice at weak keys."
 ---
 
 # Adaptive Algorithm Deep Dive

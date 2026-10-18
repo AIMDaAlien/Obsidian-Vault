@@ -3,6 +3,8 @@ tags: [self-hosting, ci-cd, github-actions, deployment, security]
 created: 2026-02-18
 publish: true
 project: Penthouse
+featured: 34
+summary: "Deploy a home server by pushing to GitHub: a self-hosted runner pulls, rebuilds only the app and checks health, plus what can still break it."
 ---
 
 # Git Push Auto-Deploy (GitHub Actions Self-Hosted Runner on TrueNAS)

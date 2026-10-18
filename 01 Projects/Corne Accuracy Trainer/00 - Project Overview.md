@@ -8,6 +8,8 @@ status: Adaptive Today coach implemented — physical trial pending
 repository: https://github.com/AIMDaAlien/aim-corne-accuracy-trainer
 local_repository: ~/Documents/Projects/Corne Accuracy Trainer
 deployment: <private-deployment>
+featured: 63
+summary: "A typing trainer for a 46-key split keyboard that teaches accuracy first: every mistake restarts the line, and speed stays hidden until you master the keys."
 ---
 
 # Corne Accuracy Trainer

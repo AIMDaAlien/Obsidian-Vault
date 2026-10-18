@@ -4,6 +4,8 @@ created: 2025-10-19
 publish: true
 project: Teardown Cafe
 related: ['[[Teardown Cafe - Current State]]', '[[Teardown Cafe Technical Setup]]', '[[Teardown Cafe - Design System]]', '[[Claude Interaction Guidelines]]']
+featured: 67
+summary: "Design choices and mistakes from building a dark, accessible website, including a Focus Mode toggle that switches off distracting animation for readers."
 ---
 
 # Building a Material You 3 Website - Lessons Learned

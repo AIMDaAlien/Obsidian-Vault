@@ -3,6 +3,8 @@ tags: [guide, marketing, cost]
 created: 2025-11-21
 publish: true
 project: 3D Print Shoppe
+featured: 70
+summary: "How I priced and marketed a neighborhood 3D-printing side business: price tiers and margins, running costs of about $1.50 a month, customer steps and risks."
 ---
 # Business & Marketing Guide - 3D Print Shoppe
 

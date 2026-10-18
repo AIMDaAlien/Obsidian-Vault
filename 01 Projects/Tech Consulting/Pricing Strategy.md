@@ -3,6 +3,8 @@ tags: []
 created: 2025-11-16
 publish: true
 project: Tech Consulting
+featured: 71
+summary: "How a student tech consultant priced three services against Geek Squad and local shops, when to use flat or hourly rates, and when to raise prices."
 ---
 # Pricing Strategy & Psychology
 

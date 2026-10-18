@@ -2,6 +2,8 @@
 tags: [linux]
 created: 2025-09-15
 publish: true
+featured: 82
+summary: "How Linux file permissions work and how to set them with chmod, using letters or the three-digit number shortcut like 751."
 ---
 ##### To add read, write, and execute to the user of a particular file, we would type:
 `chmod u+rwx file.txt`

@@ -2,7 +2,6 @@
 tags: [self-hosting, truenas, unraid, docker, ops, penthouse-v1, website-rebuild, security]
 created: 2026-02-17
 publish: true
-featured: 4
 project: Penthouse
 ---
 

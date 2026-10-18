@@ -2,7 +2,8 @@
 tags: []
 created: 2026-03-15
 publish: true
-featured: 6
+featured: 5
+summary: "I moved my network's ad-blocking DNS from a dying 512MB Raspberry Pi to a Pi 5 on NVMe storage, broke the internet twice, and documented both fixes."
 ---
 ---
 created: '2026-03-15T00:00:00.000000'

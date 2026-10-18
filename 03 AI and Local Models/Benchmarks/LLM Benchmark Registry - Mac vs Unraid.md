@@ -2,7 +2,8 @@
 tags: [local-ai]
 created: 2026-08-10
 publish: true
-featured: 13
+featured: 37
+summary: "A scoreboard of local AI models on my laptop and home server, graded by exact-match checks with no AI judge, showing the real speed versus accuracy tradeoff."
 ---
 # LLM Benchmark Registry — Mac vs Unraid
 

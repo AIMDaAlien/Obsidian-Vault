@@ -5,6 +5,8 @@ created: 2025-01-01
 publish: true
 machine: unraid
 engine: llama.cpp
+featured: 40
+summary: "How I got a 176-billion-parameter AI to read a 262,000-token conversation on a modest home server, and which settings made it fast enough."
 ---
 
 # Qwen3.8-Flash-Next (Qwen4-exp) on Unraid — 262K Context & Tuning

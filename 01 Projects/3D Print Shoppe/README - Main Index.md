@@ -62,7 +62,7 @@ project: 3D Print Shoppe
 ### Week 3: Optimization
 - [ ] Analyze first week data
 - [ ] Adjust catalog based on interest
-- [ ] B2B outreach (Stephanie V, cafe)
+- [ ] B2B outreach (<customer-B>, cafe)
 - [ ] Add FAQ based on questions
 - [ ] 2nd Nextdoor post
 
@@ -207,7 +207,7 @@ project: 3D Print Shoppe
 2. **License diligence critical** - CC0 simplest for launch
 3. **Local > global initially** - Leverage Nextdoor advantage
 4. **Bundling increases AOV** - 15-20% discount drives multi-item orders
-5. **B2B > B2C margins** - Stephanie V type clients are gold
+5. **B2B > B2C margins** - <customer-B> type clients are gold
 
 ---
 
@@ -269,7 +269,7 @@ project: 3D Print Shoppe
 ##  Current Priorities (This Week)
 
 **Highest Priority:**
-1. Respond to 3 customer inquiries (Henock, Stephanie, test print)
+1. Respond to 3 customer inquiries (<customer-A>, <customer-B>, test print)
 2. Complete website MVP (8 products minimum)
 3. Take product photos (6-8 items)
 4. Purchase domain (your-domain.com)

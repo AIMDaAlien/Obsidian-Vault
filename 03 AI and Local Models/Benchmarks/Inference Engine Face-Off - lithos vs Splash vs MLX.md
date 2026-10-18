@@ -4,6 +4,8 @@ created: 2026-10-17
 publish: true
 machine: mac
 engine: lithos, splash, mlx
+featured: 36
+summary: "I tested three programs that run AI on a laptop. The fastest was 4.5x quicker than Apple's own, yet still too slow for real coding work."
 ---
 # Inference Engine Face-Off: lithos vs Splash vs MLX
 

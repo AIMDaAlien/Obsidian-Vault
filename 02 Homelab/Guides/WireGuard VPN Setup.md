@@ -2,6 +2,8 @@
 tags: [troubleshooting, security, hardware-constraints]
 created: 2025-09-30
 publish: true
+featured: 26
+summary: "How to set up a private tunnel back to your home network from your phone in about 30 minutes, so ad blocking follows you everywhere."
 ---
 
 # WireGuard VPN Setup

@@ -3,8 +3,9 @@ tags: [self-hosting, unraid, zfs, docker, recovery, penthouse, security, reliabi
 created: 2026-08-04
 updated: 2026-08-04
 publish: true
-featured: 5
+featured: 11
 project: Penthouse
+summary: "A home server went dark after a storage reshuffle; the cause was two lost drive-pool assignments, and the fix restored them with no data loss."
 ---
 
 # Unraid Pool Recovery - 2026-08-04

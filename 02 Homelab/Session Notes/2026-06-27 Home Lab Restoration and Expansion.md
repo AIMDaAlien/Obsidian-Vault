@@ -2,6 +2,8 @@
 tags: [session-log, checklist]
 created: 2026-07-29
 publish: true
+featured: 19
+summary: "A failed disk-resize erased every app on my home server. I rebuilt all 13 from scratch and fixed the resize so the new storage has room to grow."
 ---
 # 2026-06-27 Home Lab Restoration & Expansion
 

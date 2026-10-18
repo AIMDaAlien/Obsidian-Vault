@@ -10,6 +10,8 @@ status: Mac-only rebuild underway - Phase 3 core built, blind voice test ready t
 repository: ~/Documents/Projects/language-engine
 phase: Phase 3 - native Mac app and voice loop (core built)
 platform: Mac
+featured: 58
+summary: "A private Arabic tutor that runs entirely on my own MacBook: what it teaches, the 36 GB memory budget it must stay under, and the key design decisions."
 ---
 
 # Local Language Engine

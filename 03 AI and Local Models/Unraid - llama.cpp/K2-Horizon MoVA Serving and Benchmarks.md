@@ -5,6 +5,8 @@ created: 2025-01-01
 publish: true
 machine: unraid
 engine: llama.cpp
+featured: 41
+summary: "One forgotten power-saving setting made my home AI server run at less than half speed. Fixing it and two other tweaks took it from 9.5 to 22 words per second."
 ---
 
 # K2-Horizon MoVA 36B-A4B — Serving & Benchmarks

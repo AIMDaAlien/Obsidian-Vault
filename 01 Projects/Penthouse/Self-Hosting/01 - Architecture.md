@@ -3,6 +3,8 @@ tags: [self-hosting, truenas, docker, caddy, networking, security]
 created: 2026-02-17
 publish: true
 project: Penthouse
+featured: 33
+summary: "How a home server is exposed to the internet safely: only a reverse proxy faces outside, behind router port forwarding, with free HTTPS certificates."
 ---
 
 # Architecture — TrueNAS, Public Internet, No Proxy

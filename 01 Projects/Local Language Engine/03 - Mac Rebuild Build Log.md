@@ -7,6 +7,8 @@ machine: mac
 engine: mlx
 project: Local Language Engine
 status: Mac-only rebuild underway - Phase 3 core built, voice tests pending
+featured: 57
+summary: "Why I rebuilt my Arabic tutor to run on one Mac, and how I picked its AI model by testing three of them on 100 sentences. Includes timings and a glossary."
 ---
 
 # Mac Rebuild Build Log

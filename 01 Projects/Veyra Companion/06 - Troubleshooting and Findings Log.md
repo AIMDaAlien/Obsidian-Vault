@@ -5,6 +5,8 @@ updated: 2026-08-15
 publish: true
 project: Veyra Companion
 type: troubleshooting-log
+featured: 59
+summary: "Debugging log from a local desktop AI companion: a character image vanished on screen. Six fixes failed. Splitting one window into two solved it."
 ---
 
 # Troubleshooting and Findings Log

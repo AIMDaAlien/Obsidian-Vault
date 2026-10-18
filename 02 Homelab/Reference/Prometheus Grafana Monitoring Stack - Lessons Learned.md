@@ -2,8 +2,9 @@
 tags: [troubleshooting, monitoring, security, hardware-constraints]
 created: 2025-10-14
 publish: true
-featured: 12
+featured: 20
 status: complete
+summary: "I planned a monitoring setup on the wrong Raspberry Pi. Checking the hardware showed it was far weaker, so I worked out RAM needs and upgraded to a Pi 5."
 ---
 
 # Prometheus & Grafana Monitoring Stack - Lessons Learned

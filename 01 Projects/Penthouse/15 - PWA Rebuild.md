@@ -3,6 +3,8 @@ tags: [penthouse, pwa, sveltekit, rebuild, website-rebuild]
 created: 2026-04-09
 publish: true
 project: Penthouse
+featured: 56
+summary: "Why a chat app moved from an installable Android file to a website that installs itself: updates land instantly and the download shrank from ~10MB to ~200KB."
 ---
 
 # PWA Rebuild

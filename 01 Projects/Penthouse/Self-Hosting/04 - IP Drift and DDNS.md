@@ -3,6 +3,8 @@ tags: [self-hosting, ddns, cloudflare, tls, networking]
 created: 2026-02-17
 publish: true
 project: Penthouse
+featured: 27
+summary: "A home server's public address changes, which silently broke its HTTPS certificates; a 5-minute script that updates DNS only when the address drifts fixes it."
 ---
 
 # IP Drift and DDNS (Cloudflare DNS-Only)

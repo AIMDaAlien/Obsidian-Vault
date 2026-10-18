@@ -3,6 +3,8 @@ tags: [decision-record, branding, website-rebuild]
 created: 2025-11-08
 publish: true
 project: 3D Print Shoppe
+featured: 69
+summary: "Why I built my print-shop site as a static site with a tiny cart, a JSON product list and email-link forms, and what I rejected (Next.js, Redux, a database)."
 ---
 # Architecture Decisions
 

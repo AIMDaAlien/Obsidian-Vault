@@ -3,6 +3,8 @@ title: BigRig TUF X670E BIOS Configuration
 tags: [homelab]
 created: 2025-01-01
 publish: true
+featured: 25
+summary: "A step-by-step guide to tuning the settings of an AI-server motherboard for speed and low idle power, including the mistakes that can waste days."
 ---
 
 # TUF GAMING X670E-PLUS WIFI + Ryzen 9 7950X — BIOS configuration for local AI inference

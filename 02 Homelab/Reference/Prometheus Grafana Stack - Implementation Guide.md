@@ -5,6 +5,8 @@ publish: true
 status: deployed
 related:
 - [Prometheus Grafana Monitoring Stack - Lessons Learned]
+featured: 21
+summary: "A step-by-step guide to a home monitoring dashboard on a Raspberry Pi 5 that uses under 300MB of memory, with commands, expected output and fixes."
 ---
 
 # Prometheus + Grafana Monitoring Stack - Implementation Guide

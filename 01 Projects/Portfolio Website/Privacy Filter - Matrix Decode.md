@@ -3,6 +3,8 @@ tags: [website-rebuild, portfolio-piece, checklist]
 created: 2025-10-11
 publish: true
 project: Portfolio Website
+featured: 74
+summary: "How to hide an email and phone number behind black redaction bars that scramble and decode into real text when hovered. Full code included."
 ---
 # Matrix-Decode Privacy Filter Implementation
 

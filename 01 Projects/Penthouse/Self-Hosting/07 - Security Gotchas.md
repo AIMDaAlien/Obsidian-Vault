@@ -3,6 +3,8 @@ tags: [self-hosting, security, gotchas]
 created: 2026-02-18
 publish: true
 project: Penthouse
+featured: 31
+summary: "Seven mistakes common in first-time public servers, such as leaked tokens, wildcard CORS, shared rate limits and unchecked file paths, and how to avoid each."
 ---
 
 # Security Gotchas (Self-Hosted, Public Internet)

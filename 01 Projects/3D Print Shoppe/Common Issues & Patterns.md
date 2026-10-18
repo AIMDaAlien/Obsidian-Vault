@@ -3,6 +3,8 @@ tags: []
 created: 2025-11-08
 publish: true
 project: 3D Print Shoppe
+featured: 68
+summary: "Ten bugs from building a small online shop (broken buttons, double-loaded data, cart items merging by mistake) with the cause and fix for each."
 ---
 # Common Issues & Patterns
 

@@ -2,6 +2,8 @@
 tags: [linux, shell]
 created: 2025-09-15
 publish: true
+featured: 81
+summary: "How your terminal decides what a command is: built in, a separate program, a shortcut (alias) or a function, and how to check which one runs."
 ---
 
 These are my personal notes from a Linux command-line course.

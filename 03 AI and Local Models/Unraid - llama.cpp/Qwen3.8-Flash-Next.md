@@ -4,6 +4,8 @@ created: 2026-09-02
 publish: true
 machine: unraid
 engine: llama.cpp
+featured: 48
+summary: "How I fit a huge 176B-parameter AI onto a 128 GB home server, the rule that decided which version fits, and which speed tricks worked or backfired."
 ---
 # Qwen3.8-Flash-Next (176B MoE)
 

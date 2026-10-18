@@ -2,6 +2,8 @@
 tags: [hardening, security, privacy, android, smart-devices, data-protection]
 created: 2025-09-21
 publish: true
+featured: 80
+summary: "Practical steps I took to stop a phone and a smart speaker leaking data, ranked by effort versus payoff."
 ---
 
 # Privacy Hardening Journey

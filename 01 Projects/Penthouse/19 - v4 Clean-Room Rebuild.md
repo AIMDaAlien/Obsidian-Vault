@@ -3,6 +3,8 @@ tags: [penthouse, v4, rebuild, sveltekit, drizzle, website-rebuild, security]
 created: 2026-05-07
 publish: true
 project: Penthouse
+featured: 55
+summary: "Why a chat app was rebuilt from scratch: 29 patched-together database migrations and a 2,287-line page became a cleaner stack, with reasons for each choice."
 ---
 
 # v4 Clean-Room Rebuild

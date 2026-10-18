@@ -4,6 +4,8 @@ created: 2026-08-14
 publish: true
 machine: mac
 engine: mlx
+featured: 42
+summary: "I tried three precision levels of one AI model on 33 tricky questions. The cheapest scored best and was fastest, so extra precision was wasted."
 ---
 # Qwen3.8-27B — Deploy, Benchmarks, Verdict
 

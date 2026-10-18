@@ -2,7 +2,8 @@
 tags: [mcp, obsidian, privacy, automation, publishing, technical]
 created: 2024-11-28
 publish: true
-featured: 8
+featured: 76
+summary: "How I built a tool that scans my private notes for leaked addresses and passwords before publishing the safe ones to my public site."
 ---
 
 # Building a Privacy-First Obsidian Publishing System

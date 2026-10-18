@@ -3,6 +3,8 @@ tags: [self-hosting, ssh, truenas, security, hardening]
 created: 2026-02-18
 publish: true
 project: Penthouse
+featured: 30
+summary: "A lock-out-safe way to switch a server to key-only SSH login with no root access, plus the TrueNAS quirk that makes manual edits vanish on reboot."
 ---
 
 # SSH Hardening on TrueNAS SCALE

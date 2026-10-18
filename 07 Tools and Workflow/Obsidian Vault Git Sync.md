@@ -3,9 +3,10 @@ tags: [reliability]
 created: 2026-08-11
 updated: 2026-08-11
 publish: true
-featured: 9
+featured: 77
 status: Repaired and syncing
 system: Obsidian Notes Vault
+summary: "My notes stopped syncing to GitHub after a reset broke their shared history. The error, how I merged both sides without losing anything, and the fix."
 ---
 
 # Obsidian Vault Git Sync

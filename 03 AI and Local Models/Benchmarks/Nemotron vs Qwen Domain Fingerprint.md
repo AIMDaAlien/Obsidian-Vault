@@ -2,6 +2,8 @@
 tags: [cost]
 created: 2026-08-12
 publish: true
+featured: 51
+summary: "I quizzed two AI models on 130 questions across 15 subjects. They tied on scores but differ in which recent facts they know and how much they overthink."
 ---
 # Nemotron 3.5 Lightning vs Qwen 3.6 — Domain Fingerprint
 

@@ -2,6 +2,8 @@
 tags: [session-log, troubleshooting, monitoring, checklist]
 created: 2025-10-01
 publish: true
+featured: 23
+summary: "A monitoring install kept crashing. The cause was a 10-year-old Raspberry Pi chip too old for modern software, so I chose a $45 upgrade over a hack."
 ---
 # Session: Uptime Kuma Attempt & Career Path Analysis
 **Date:** October 1, 2025

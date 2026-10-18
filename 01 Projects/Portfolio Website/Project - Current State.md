@@ -3,8 +3,9 @@ tags: [portfolio, web-development, knowledge-garden, homelab, github-pages, webs
 created: 2025-10-26
 updated: 2026-08-01
 publish: true
-featured: 10
+featured: 9
 project: Portfolio Website
+summary: "How my portfolio works: plain HTML with no framework, a notes garden that updates itself, and a live server-health panel that exposes no private details."
 ---
 
 # Portfolio Website — Current State

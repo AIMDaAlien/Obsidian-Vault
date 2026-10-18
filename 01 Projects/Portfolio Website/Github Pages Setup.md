@@ -4,6 +4,8 @@ created: 2025-10-01
 updated: 2026-08-01
 publish: true
 project: Portfolio Website
+featured: 73
+summary: "How to host a static site free on GitHub Pages with your own domain and HTTPS, what to check after each push, and the common reasons changes do not appear."
 ---
 
 # GitHub Pages Setup & Deployment

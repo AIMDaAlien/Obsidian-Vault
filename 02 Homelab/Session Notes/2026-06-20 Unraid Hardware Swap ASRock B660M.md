@@ -2,6 +2,8 @@
 tags: [unraid, hardware-swap, troubleshooting, homelab, session-log, reliability, hardware-constraints, checklist]
 created: 2026-06-20
 publish: true
+featured: 6
+summary: "After moving my home server onto new parts the screen froze for hours. The culprit was a wireless keyboard dongle, not the hardware. Every lead I tried."
 ---
 
 # Unraid Server Hardware Swap — B660M + 12600KF Transplant

@@ -2,8 +2,9 @@
 tags: [penthouse, reliability, bugs, postmortem]
 created: 2026-03-05
 publish: true
-featured: 2
+featured: 3
 project: Penthouse
+summary: "Ten real bugs from building a chat app, each with what users saw, the root cause and the fix: duplicate messages, stuck sends, crashes, low contrast."
 ---
 
 # Reliability Fix Log

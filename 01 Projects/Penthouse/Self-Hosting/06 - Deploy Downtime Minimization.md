@@ -3,6 +3,8 @@ tags: [self-hosting, deployment, downtime, docker, security]
 created: 2026-02-18
 publish: true
 project: Penthouse
+featured: 29
+summary: "How to update an app on one home server with only a couple of seconds of blip: rebuild beside the old copy, restart only the app, and drain connections."
 ---
 
 # Deploy Downtime Minimization (Compose + Caddy)

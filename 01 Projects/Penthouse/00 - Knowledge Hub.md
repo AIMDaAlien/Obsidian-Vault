@@ -4,6 +4,8 @@ created: 2026-03-05
 updated: 2026-10-12
 publish: true
 project: Penthouse
+featured: 1
+summary: "The map of a self-hosted chat app rebuilt from scratch: what was built, why, in what order, and where every decision and fix is written down."
 ---
 
 # The Penthouse Rebuild Knowledge Hub
