@@ -6,7 +6,7 @@ from pathlib import Path
 
 from composelib import ComposeError
 from composelib.config import load_config
-from composelib.tree import TreeStats, apply_tree, count_notes, guard_sources, plan_tree
+from composelib.tree import TreeStats, apply_tree, count_notes, guard_sources, plan_tree, skipped_protected
 
 FIX = Path(__file__).parent / "fixtures" / "compose"
 
@@ -84,6 +84,31 @@ class PlanTree(TempCase):
         self.assertIn("\nIndex.md", msg)
 
 
+class SourceSafety(TempCase):
+    def test_protected_and_git_source_paths_are_skipped(self):
+        cfg = self.fixture_copy()
+        m5 = self.tmp / "fx" / "m5pro"
+        (m5 / "README.md").write_text("# Readme\n")
+        (m5 / ".git").mkdir()
+        (m5 / ".git" / "HEAD").write_text("ref\n")
+        plan = plan_tree(cfg)
+        self.assertNotIn("README.md", plan)
+        self.assertFalse([k for k in plan if k.startswith(".git/")])
+        self.assertIn("Index.md", plan)
+        self.assertEqual(skipped_protected(cfg), [".git/HEAD", "README.md"])
+
+    def test_symlinked_source_file_is_not_planned(self):
+        cfg = self.fixture_copy()
+        outside = self.tmp / "outside.md"
+        outside.write_text("# Outside\n")
+        link = self.tmp / "fx" / "m5pro" / "Link.md"
+        link.symlink_to(outside)
+        (self.tmp / "fx" / "m5pro" / "Broken.md").symlink_to(self.tmp / "missing.md")
+        plan = plan_tree(cfg)
+        self.assertNotIn("Link.md", plan)
+        self.assertNotIn("Broken.md", plan)
+
+
 class ApplyTree(TempCase):
     def setUp(self):
         super().setUp()
@@ -118,6 +143,12 @@ class ApplyTree(TempCase):
         self.assertFalse((self.pub / "gone").exists())
         for rel in (".github/x", "README.md", "garden-manifest.json"):
             self.assertTrue((self.pub / rel).exists(), rel)
+
+    def test_git_file_untouched(self):
+        self.pub.mkdir()
+        (self.pub / ".git").write_text("gitdir: elsewhere\n")
+        apply_tree(self.plan, self.cfg)
+        self.assertTrue((self.pub / ".git").is_file())
 
     def test_git_dir_untouched(self):
         (self.pub / ".git").mkdir(parents=True)

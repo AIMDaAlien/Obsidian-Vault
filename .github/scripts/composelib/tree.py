@@ -20,13 +20,18 @@ class TreeStats:
     removed: int
 
 
-def _walk(root: Path, exclude_dirs: list[str]):
-    """Yield (relative posix path, absolute path) of files outside excluded dirs."""
+def _walk(root: Path, exclude_dirs: list[str], skip_symlinks: bool = False):
+    """Yield (relative posix path, absolute path) of files outside excluded dirs.
+
+    skip_symlinks is for source vaults: a symlink must never publish what it points at.
+    """
     skip = set(exclude_dirs)
     for dirpath, dirnames, filenames in os.walk(root):
         dirnames[:] = [d for d in dirnames if d not in skip]
         for name in filenames:
             full = Path(dirpath) / name
+            if skip_symlinks and full.is_symlink():
+                continue
             yield full.relative_to(root).as_posix(), full
 
 
@@ -37,7 +42,7 @@ def _ext(rel: str) -> str:
 def _embedded_names(src: Source, cfg: Config) -> set[str]:
     """Basenames of everything the source's notes embed with ![[..]] or ![](..)."""
     names: set[str] = set()
-    for rel, full in _walk(src.path, cfg.exclude_dirs):
+    for rel, full in _walk(src.path, cfg.exclude_dirs, skip_symlinks=True):
         if _ext(rel) != "md":
             continue
         text = full.read_text(encoding="utf-8", errors="replace")
@@ -53,14 +58,18 @@ def _published_path(rel: str, src: Source) -> str:
     return rel
 
 
-def plan_tree(cfg: Config) -> dict[str, tuple[str, Path]]:
-    """Map each published relative path to (source name, source file)."""
+def _is_git(rel: str) -> bool:
+    return rel == ".git" or rel.startswith(".git/")
+
+
+def _scan(cfg: Config) -> tuple[dict[str, tuple[str, Path]], list[str]]:
     plan: dict[str, tuple[str, Path]] = {}
     clashes: set[str] = set()
+    skipped: list[str] = []
     for src in cfg.sources:
         embedded = _embedded_names(src, cfg) if src.attachments else set()
         prefix = src.attachments.strip("/") + "/" if src.attachments else None
-        for rel, full in _walk(src.path, cfg.exclude_dirs):
+        for rel, full in _walk(src.path, cfg.exclude_dirs, skip_symlinks=True):
             ext = _ext(rel)
             if ext in cfg.exclude_ext:
                 continue
@@ -68,13 +77,30 @@ def plan_tree(cfg: Config) -> dict[str, tuple[str, Path]]:
                 if ext not in cfg.image_ext or full.name not in embedded:
                     continue
             out = _published_path(rel, src)
+            if _is_git(out) or _is_protected(out, cfg):
+                skipped.append(out)
+                continue
             if out in plan:
                 clashes.add(out)
             else:
                 plan[out] = (src.name, full)
     if clashes:
         raise ComposeError("collision:\n" + "\n".join(sorted(clashes)))
-    return plan
+    return plan, sorted(skipped)
+
+
+def plan_tree(cfg: Config) -> dict[str, tuple[str, Path]]:
+    """Map each published relative path to (source name, source file).
+
+    Source files that would land on a protected or .git path are left out;
+    skipped_protected lists them.
+    """
+    return _scan(cfg)[0]
+
+
+def skipped_protected(cfg: Config) -> list[str]:
+    """Published paths that source files were dropped from because they are protected or .git."""
+    return _scan(cfg)[1]
 
 
 def _is_protected(rel: str, cfg: Config) -> bool:
@@ -102,12 +128,14 @@ def apply_tree(plan: dict[str, tuple[str, Path]], cfg: Config) -> TreeStats:
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
     for rel, full in _walk(root, [".git"]):
+        if _is_git(rel):
+            continue
         if rel not in plan and not _is_protected(rel, cfg):
             full.unlink()
             removed += 1
     for dirpath, dirnames, _ in os.walk(root, topdown=False):
         rel = Path(dirpath).relative_to(root).as_posix()
-        if rel == "." or rel == ".git" or rel.startswith(".git/"):
+        if rel == "." or _is_git(rel):
             continue
         if not os.listdir(dirpath):
             os.rmdir(dirpath)
