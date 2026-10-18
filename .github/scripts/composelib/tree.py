@@ -12,6 +12,10 @@ from .config import Config, Source
 WIKI_EMBED = re.compile(r"!\[\[([^\]|#]+)")
 MD_EMBED = re.compile(r"!\[[^\]]*\]\(([^)\s]+)")
 
+# Syncthing metadata: never published, counted or scanned, whatever compose.yml says.
+SYNCTHING_DIRS = (".stfolder", ".stversions")
+SYNCTHING_FILES = (".stignore",)
+
 
 @dataclass(frozen=True)
 class TreeStats:
@@ -20,19 +24,30 @@ class TreeStats:
     removed: int
 
 
-def _walk(root: Path, exclude_dirs: list[str], skip_symlinks: bool = False):
+def _walk(root: Path, exclude_dirs: list[str], skip_symlinks: bool = False,
+          exclude_files: tuple[str, ...] | list[str] = ()):
     """Yield (relative posix path, absolute path) of files outside excluded dirs.
 
     skip_symlinks is for source vaults: a symlink must never publish what it points at.
+    exclude_files are file names skipped at any depth.
     """
     skip = set(exclude_dirs)
+    skip_files = set(exclude_files)
     for dirpath, dirnames, filenames in os.walk(root):
         dirnames[:] = [d for d in dirnames if d not in skip]
         for name in filenames:
+            if name in skip_files:
+                continue
             full = Path(dirpath) / name
             if skip_symlinks and full.is_symlink():
                 continue
             yield full.relative_to(root).as_posix(), full
+
+
+def _source_walk(root: Path, cfg: Config):
+    """Walk a source vault: config exclusions plus Syncthing metadata, no symlinks."""
+    return _walk(root, [*cfg.exclude_dirs, *SYNCTHING_DIRS], skip_symlinks=True,
+                 exclude_files=(*cfg.exclude_files, *SYNCTHING_FILES))
 
 
 def _ext(rel: str) -> str:
@@ -42,7 +57,7 @@ def _ext(rel: str) -> str:
 def _embedded_names(src: Source, cfg: Config) -> set[str]:
     """Basenames of everything the source's notes embed with ![[..]] or ![](..)."""
     names: set[str] = set()
-    for rel, full in _walk(src.path, cfg.exclude_dirs, skip_symlinks=True):
+    for rel, full in _source_walk(src.path, cfg):
         if _ext(rel) != "md":
             continue
         text = full.read_text(encoding="utf-8", errors="replace")
@@ -69,7 +84,7 @@ def _scan(cfg: Config) -> tuple[dict[str, tuple[str, Path]], list[str]]:
     for src in cfg.sources:
         embedded = _embedded_names(src, cfg) if src.attachments else set()
         prefix = src.attachments.strip("/") + "/" if src.attachments else None
-        for rel, full in _walk(src.path, cfg.exclude_dirs, skip_symlinks=True):
+        for rel, full in _source_walk(src.path, cfg):
             ext = _ext(rel)
             if ext in cfg.exclude_ext:
                 continue
@@ -146,9 +161,10 @@ DEFAULT_EXCLUDE_DIRS = ["_inbox", ".obsidian", ".trash", "_private"]
 
 
 def count_notes(path: Path, exclude_dirs: list[str] | None = None) -> int:
-    """Markdown files under path, outside excluded dirs."""
+    """Markdown files under path, outside excluded dirs and Syncthing metadata."""
     skip = DEFAULT_EXCLUDE_DIRS if exclude_dirs is None else exclude_dirs
-    return sum(1 for rel, _ in _walk(Path(path), skip) if _ext(rel) == "md")
+    return sum(1 for rel, _ in _walk(Path(path), [*skip, *SYNCTHING_DIRS], exclude_files=SYNCTHING_FILES)
+               if _ext(rel) == "md")
 
 
 def guard_sources(cfg: Config, last_counts: dict[str, int]) -> None:

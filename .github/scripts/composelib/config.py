@@ -24,6 +24,7 @@ class Config:
     exclude_ext: list[str]
     image_ext: list[str]
     syncthing_api: str
+    exclude_files: list[str] = field(default_factory=lambda: [".stignore"])
 
 
 def load_config(path: Path) -> Config:
@@ -50,4 +51,5 @@ def load_config(path: Path) -> Config:
         exclude_ext=list(raw["exclude_ext"]),
         image_ext=list(raw["image_ext"]),
         syncthing_api=raw["syncthing_api"],
+        exclude_files=list(raw.get("exclude_files", [".stignore"])),
     )

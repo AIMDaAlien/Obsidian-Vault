@@ -109,6 +109,42 @@ class SourceSafety(TempCase):
         self.assertNotIn("Broken.md", plan)
 
 
+class SyncthingMetadata(TempCase):
+    def add_metadata(self, cfg):
+        for src in cfg.sources:
+            (src.path / ".stignore").write_text("// ignore\n")
+            (src.path / ".stfolder").mkdir(exist_ok=True)
+            (src.path / ".stfolder" / "marker.txt").write_text("")
+            (src.path / ".stversions").mkdir(exist_ok=True)
+            (src.path / ".stversions" / "old~.md").write_text("# Old version\n")
+
+    def test_metadata_never_planned_and_two_stignores_do_not_collide(self):
+        cfg = self.fixture_copy()
+        self.assertNotIn("exclude_files", (self.tmp / "fx" / "compose.yml").read_text())
+        self.add_metadata(cfg)
+        plan = plan_tree(cfg)
+        self.assertFalse([k for k in plan if k.split("/")[-1] == ".stignore"
+                          or k.startswith((".stfolder/", ".stversions/"))])
+
+    def test_metadata_excluded_even_when_config_clears_exclude_files(self):
+        cfg = dataclasses.replace(self.fixture_copy(), exclude_files=[])
+        self.add_metadata(cfg)
+        self.assertNotIn(".stignore", plan_tree(cfg))
+
+    def test_count_notes_ignores_versions(self):
+        cfg = self.fixture_copy()
+        self.add_metadata(cfg)
+        self.assertEqual(count_notes(cfg.sources[0].path, cfg.exclude_dirs), 3)
+        self.assertEqual(count_notes(cfg.sources[1].path), 3)
+
+    def test_config_reads_exclude_files_with_default(self):
+        self.assertEqual(load_config(FIX / "compose.yml").exclude_files, [".stignore"])
+        prod = Path(__file__).resolve().parents[2] / "unraid" / "compose.yml"
+        cfg = load_config(prod)
+        self.assertEqual(cfg.exclude_files, [".stignore"])
+        self.assertTrue({".stfolder", ".stversions"} <= set(cfg.exclude_dirs))
+
+
 class ApplyTree(TempCase):
     def setUp(self):
         super().setUp()
