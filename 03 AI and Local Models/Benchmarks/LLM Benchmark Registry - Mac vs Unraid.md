@@ -14,7 +14,7 @@ featured: 13
 
 | Box | Spec | Role | Runs what |
 |---|---|---|---|
-| **Mac M5 Pro (this)** | 48 GB unified memory, ~400+ GB/s bandwidth | **Interactive daily driver** — everything you touch directly: chat, coding agents, vision/OCR, companion | Models that fit fully in unified memory; bandwidth makes it 2-3× faster per watt than the Unraid box |
+| **Mac M5 Pro (this)** | 48 GB unified memory, ~290 GB/s bandwidth measured (307 GB/s on paper). Corrected 2026-10-17, see [[Inference Engine Face-Off - lithos vs Splash vs MLX]] | **Interactive daily driver** — everything you touch directly: chat, coding agents, vision/OCR, companion | Models that fit fully in unified memory; bandwidth makes it 2-3× faster per watt than the Unraid box |
 | **Unraid** (<lan-ip-5>) | 128 GB DDR4, i5-12600KF 16T, RTX 3060 12 GB | **Always-on headless server** — serves APIs (OpenCode, gateways) whether the Mac is awake or not | Large MoE models with experts in system RAM, attention on GPU; capacity play, not speed play |
 
 Rule of thumb: **a model you interact with lives on the Mac; a model that must be always reachable for tools/agents lives on Unraid — and if it exists on both, the Mac version is the interactive one.**

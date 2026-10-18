@@ -14,7 +14,7 @@ engine: mlx
 
 - **3.8 beats 3.6.** Replaced everywhere on Mac. Better knowledge, cleaner tool calls, fresher data.
 - **4-bit is the only quant worth running.** 8-bit costs 40% decode speed + 13GB RAM, gets ZERO quality gain. Higher quant does NOT fix the model's weak spots (multi-step arithmetic).
-- **MTP/spec-decode = measured dead end** on this Mac. Memory-bandwidth bound, not step bound.
+- **MTP through rapid-mlx and LM Studio = no gain** on this Mac. But spec-decode itself isnt a dead end. Splash's DFlash2 draft model got 77 tok/s on code vs 16 for plain MLX, about 4.5x faster (measured 2026-10-17, see [[Inference Engine Face-Off - lithos vs Splash vs MLX]]).
 - **Long context = prefill-bound.** LM Studio's NAX engine is 2.5x faster at prefill than rapid-mlx. Use it for big-context ingestion.
 
 ## vs Qwen3.6 (317-question fingerprint + agentic)
@@ -53,7 +53,8 @@ Easy bank (20 riddle/trap questions): all quants 18/20, misses were grader artif
 | LM Studio e2e at 32K | 5.25 t/s incl | — | 2.3x faster than rapid-mlx end-to-end |
 
 Findings:
-- **MTP works but doesn't help.** Sidecar loaded + drafting, still 13.3 t/s. Dense 27B reads ~14GB weights/token — bandwidth is the wall, not serial steps. Rapid-mlx auto-disables spec decode on hybrid models unless forced; MTPLX custom head rejected, standard-path sidecar accepted.
+- **MTP works but doesn't help.** Sidecar loaded + drafting, still 13.3 t/s. Rapid-mlx auto-disables spec decode on hybrid models unless forced; MTPLX custom head rejected, standard-path sidecar accepted.
+- **Correction (2026-10-17):** I originally wrote that bandwidth is the wall so spec-decode cant help. That was backwards. Dense 27B reads ~14GB of weights per pass, and a good draft model lets one pass check several guessed tokens at once, which is exactly what beats a bandwidth wall. The no-gain result was specific to these MTP setups. Splash's DFlash2 draft made this model about 4.5x faster on code. See [[Inference Engine Face-Off - lithos vs Splash vs MLX]].
 - **NPU/ANE not reachable.** MLX runs on GPU (Metal). NPU path = Apple's Foundation Models framework, doesn't exist for Qwen3.8. LM Studio "NAX" = Metal-optimized MLX, not NPU.
 - **GGUF/llama.cpp dropped.** Slower on Metal than MLX; MLX is the native Apple Silicon option.
 - **KV cache is tiny** (64 layers, 4 KV heads, 3-of-4 layers DeltaNet = no KV growth). 256K ctx ≈ 2-3GB at int4. 4-bit (16GB) + KV = ~19GB, fits 48GB with headroom.
