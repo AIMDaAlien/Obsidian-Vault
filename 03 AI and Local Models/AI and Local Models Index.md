@@ -8,6 +8,7 @@ publish: true
 Notes in 03 AI and Local Models, grouped by subfolder.
 
 ## Benchmarks
+- [[Inference Engine Face-Off - lithos vs Splash vs MLX]]
 - [[LLM Benchmark Registry - Mac vs Unraid]]
 - [[Local AI Benchmark Content Site]]
 - [[Nemotron vs Qwen Domain Fingerprint]]
