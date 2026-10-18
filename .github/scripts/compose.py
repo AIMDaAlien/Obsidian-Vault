@@ -13,7 +13,7 @@ from composelib.config import load_config
 from composelib.links import build_index, resolve_bare_embeds, unwrap_excluded_links
 from composelib.notes import (apply_curation, frontmatter_ranks, load_curation,
                               normalize_note, rank_errors, validate_curation)
-from composelib.publish import (RunReport, _git, commit_and_push, fast_forward, notify,
+from composelib.publish import (PushError, RunReport, _git, commit_and_push, fast_forward, notify,
                                 read_last_counts, run_gate, syncthing_idle, write_report)
 from composelib.tree import apply_tree, count_notes, guard_sources, plan_tree, skipped_protected
 
@@ -49,6 +49,8 @@ def _compose(args, cfg, report: RunReport, last_counts: dict[str, int]) -> None:
             created = date.fromtimestamp(src.stat().st_mtime).isoformat()
             _rewrite(root, rel, lambda t: normalize_note(t, machines[name], created))
     curation = args.curation or args.config.parent / "curation.yml"
+    if args.curation and not curation.is_file():
+        raise ComposeError(f"curation file missing: {curation}")
     entries = load_curation(curation) if curation.is_file() else []
     errors = rank_errors(root) + validate_curation(entries, root, frontmatter_ranks(root, mac_paths))
     if errors:
@@ -69,6 +71,8 @@ def _compose(args, cfg, report: RunReport, last_counts: dict[str, int]) -> None:
         _rewrite(root, rel, fix)
     if entries:
         shutil.copy2(curation, root / "curation.yml")
+    else:
+        (root / "curation.yml").unlink(missing_ok=True)
     ok, report.gate = run_gate(repo)
     if not ok:
         raise ComposeError("privacy gate failed:\n" + report.gate)
@@ -79,8 +83,12 @@ def _compose(args, cfg, report: RunReport, last_counts: dict[str, int]) -> None:
         report.status = "dry-run"
         return
     names = ", ".join(f"{s.name} {report.counts[s.name]} notes" for s in cfg.sources)
-    message = f"vault publish: {datetime.now():%Y-%m-%d %H:%M} ({names})"
-    report.commit = commit_and_push(repo, message, push=not args.no_push)
+    message = f"vault publish: {report.timestamp} ({names})"
+    try:
+        report.commit = commit_and_push(repo, message, push=not args.no_push)
+    except PushError as exc:
+        report.commit = exc.commit
+        raise
     report.status = "ok" if report.commit else "no-op"
 
 
@@ -103,13 +111,15 @@ def run(args) -> int:
             idle, why = syncthing_idle(cfg.syncthing_api, key, [s.syncthing_folder for s in cfg.sources])
             busy = None if idle else why
         if busy:
-            report.status, report.reason, report.counts = "busy", busy, last_counts
+            report.status, report.reason = "busy", busy
         else:
             _compose(args, cfg, report, last_counts)
-    except ComposeError as exc:
-        report.status, report.reason, code = "failed", str(exc), 1
-        report.counts = last_counts or report.counts
-        notify(str(exc).splitlines()[0])
+    except Exception as exc:  # unattended run: any failure must be reported, never a bare traceback
+        reason = str(exc) if isinstance(exc, ComposeError) else f"{type(exc).__name__}: {exc}"
+        report.status, report.reason, code = "failed", reason, 1
+        notify(reason.splitlines()[0] if reason else type(exc).__name__)
+    if report.status not in ("ok", "no-op"):
+        report.counts = last_counts  # only a completed run moves the guard baseline
     report.duration_s = time.monotonic() - start
     report_dir.mkdir(parents=True, exist_ok=True)
     write_report(md_path, json_path, report)

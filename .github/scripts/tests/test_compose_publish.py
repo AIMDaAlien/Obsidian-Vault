@@ -72,8 +72,25 @@ class FastForward(TmpCase):
         git(clone, "commit", "-m", "local only")
         with self.assertRaises(ComposeError) as cm:
             fast_forward(clone)
-        self.assertTrue(str(cm.exception).startswith("remote diverged"))
+        self.assertIn("unpushed local commit", str(cm.exception))
+        self.assertIn("ahead of origin/main", str(cm.exception))
         self.assertEqual(git(clone, "log", "-1", "--format=%s").strip(), "local only")
+
+    def test_true_divergence_says_remote_diverged(self):
+        origin, clone = make_origin_and_clone(self.tmp)
+        other = self.tmp / "other"
+        git(self.tmp, "clone", str(origin), str(other))
+        init_identity(other)
+        (other / "up.md").write_text("x\n")
+        git(other, "add", "-A")
+        git(other, "commit", "-m", "upstream")
+        git(other, "push", "origin", "HEAD:main")
+        (clone / "local.md").write_text("x\n")
+        git(clone, "add", "-A")
+        git(clone, "commit", "-m", "local only")
+        with self.assertRaises(ComposeError) as cm:
+            fast_forward(clone)
+        self.assertTrue(str(cm.exception).startswith("remote diverged"))
 
 
 class Gate(TmpCase):
@@ -105,6 +122,18 @@ class CommitAndPush(TmpCase):
         git(clone, "add", "-A")
         sha = commit_and_push(clone, "msg", push=True)
         self.assertEqual(sha, git(origin, "rev-parse", "main").strip())
+
+
+    def test_push_failure_keeps_commit_and_reason(self):
+        from composelib.publish import PushError
+        origin, clone = make_origin_and_clone(self.tmp)
+        git(clone, "remote", "set-url", "origin", str(self.tmp / "nowhere.git"))
+        (clone / "a.md").write_text("a\n")
+        git(clone, "add", "-A")
+        with self.assertRaises(PushError) as cm:
+            commit_and_push(clone, "msg", push=True)
+        self.assertTrue(str(cm.exception).startswith("push failed:"))
+        self.assertEqual(cm.exception.commit, git(clone, "rev-parse", "HEAD").strip())
 
 
 class Report(TmpCase):
@@ -202,6 +231,86 @@ class Cli(TmpCase):
         note = (self.clone / "01 Projects/Penthouse/Penthouse Remake.md").read_text(encoding="utf-8")
         self.assertIn("featured: 2", note)
         self.assertIn("summary:", note)
+
+    def last_md(self):
+        return (self.work / "last-run.md").read_text(encoding="utf-8")
+
+    def test_malformed_curation_yaml_fails_with_report(self):
+        (self.work / "curation.yml").write_text("- path: [unclosed\n")
+        proc = self.run_cli("--no-push")
+        self.assertEqual(proc.returncode, 1)
+        self.assertTrue(self.last_md().splitlines()[0].endswith("— failed"))
+
+    def test_explicit_missing_curation_fails(self):
+        missing = self.work / "nope.yml"
+        proc = self.run_cli("--no-push", "--curation", str(missing))
+        self.assertEqual(proc.returncode, 1)
+        self.assertIn(f"curation file missing: {missing}", self.last_md())
+
+    def test_default_curation_absent_is_skipped(self):
+        proc = self.run_cli("--no-push")
+        self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+        self.assertFalse((self.clone / "curation.yml").exists())
+
+    def test_mac_note_untouched_bigrig_notes_get_machine(self):
+        proc = self.run_cli("--no-push")
+        self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+        src = (self.work / "m5pro" / "Index.md").read_text(encoding="utf-8")
+        pub = (self.clone / "Index.md").read_text(encoding="utf-8")
+        self.assertNotIn("machine:", pub.split("---")[1])
+        self.assertEqual(pub.split("---")[1], src.split("---")[1])
+        remake = (self.clone / "01 Projects/Penthouse/Penthouse Remake.md").read_text(encoding="utf-8")
+        self.assertIn("machine: bigrig", remake)
+
+    def test_curation_rank_clash_with_mac_frontmatter_fails(self):
+        curation = self.work / "curation.yml"
+        curation.write_text('- path: "01 Projects/Penthouse/Penthouse Remake.md"\n  featured: 1\n')
+        proc = self.run_cli("--no-push")
+        self.assertEqual(proc.returncode, 1)
+        self.assertIn("rank 1 already used by Index.md", self.last_md())
+
+    def test_gate_hit_fails_and_leaves_index_and_origin_clean(self):
+        token = "tskey-" + "auth-" + "abcdefghij1234567890"
+        (self.work / "bigrig" / "Leak.md").write_text(f"# Leak\n\n{token}\n")
+        before = self.origin_head()
+        proc = self.run_cli("--no-push")
+        self.assertEqual(proc.returncode, 1)
+        self.assertTrue(self.last_md().splitlines()[0].endswith("— failed"))
+        subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=self.clone, check=True)
+        self.assertEqual(self.origin_head(), before)
+
+    def test_stale_curation_removed_when_curation_goes_away(self):
+        curation = self.work / "curation.yml"
+        curation.write_text('- path: "01 Projects/Penthouse/Penthouse Remake.md"\n  featured: 2\n')
+        self.assertEqual(self.run_cli().returncode, 0)
+        self.assertTrue((self.clone / "curation.yml").is_file())
+        curation.unlink()
+        self.assertEqual(self.run_cli().returncode, 0)
+        self.assertFalse((self.clone / "curation.yml").exists())
+        self.assertIn("curation.yml", git(self.clone, "show", "--name-status", "--format=", "HEAD"))
+
+    def counts(self):
+        return json.loads((self.work / "last-run.json").read_text())["counts"]
+
+    def test_dry_run_and_failure_preserve_counts(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        self.assertEqual(self.counts(), {"m5pro": 3, "bigrig": 3})
+        (self.work / "bigrig" / "Extra.md").write_text("# Extra\n")
+        self.assertEqual(self.run_cli("--dry-run").returncode, 0)
+        self.assertEqual(self.counts(), {"m5pro": 3, "bigrig": 3})
+
+    def test_first_run_failure_writes_no_counts(self):
+        (self.work / "bigrig" / "Index.md").write_text("# clash\n")
+        self.assertEqual(self.run_cli("--no-push").returncode, 1)
+        self.assertEqual(self.counts(), {})
+
+    def test_push_failure_reports_commit_and_reason(self):
+        git(self.clone, "remote", "set-url", "--push", "origin", str(self.tmp / "nowhere.git"))
+        proc = self.run_cli()
+        self.assertEqual(proc.returncode, 1)
+        self.assertIn("push failed:", self.last_md())
+        data = json.loads((self.work / "last-run.json").read_text())
+        self.assertEqual(data["commit"], git(self.clone, "rev-parse", "HEAD").strip())
 
 
 if __name__ == "__main__":

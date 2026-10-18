@@ -19,6 +19,14 @@ def _git(repo: Path, *args: str, check: bool = True) -> subprocess.CompletedProc
     return proc
 
 
+class PushError(ComposeError):
+    """The commit exists locally but could not be pushed."""
+
+    def __init__(self, message: str, commit: str):
+        super().__init__(message)
+        self.commit = commit
+
+
 def syncthing_idle(api: str, api_key: str, folder_ids: list[str]) -> tuple[bool, str]:
     """True when every folder reports state idle; any error is (False, reason)."""
     base = api if "://" in api else f"http://{api}"
@@ -39,6 +47,10 @@ def fast_forward(repo: Path) -> str:
     """Move the clone to origin/main, refusing when local HEAD has unpushed work."""
     _git(repo, "fetch", "origin", "main")
     if _git(repo, "merge-base", "--is-ancestor", "HEAD", "origin/main", check=False).returncode != 0:
+        if _git(repo, "merge-base", "--is-ancestor", "origin/main", "HEAD", check=False).returncode == 0:
+            short = _git(repo, "rev-parse", "--short", "HEAD").stdout.strip()
+            raise ComposeError(f"unpushed local commit {short} is ahead of origin/main; "
+                               "push it or reset the clone")
         raise ComposeError("remote diverged: local HEAD is not an ancestor of origin/main")
     _git(repo, "reset", "--hard", "origin/main")
     return _git(repo, "rev-parse", "HEAD").stdout.strip()
@@ -60,9 +72,13 @@ def commit_and_push(repo: Path, message: str, push: bool) -> str | None:
     if _git(repo, "diff", "--cached", "--quiet", check=False).returncode == 0:
         return None
     _git(repo, "commit", "-m", message)
+    commit = _git(repo, "rev-parse", "HEAD").stdout.strip()
     if push:
-        _git(repo, "push", "origin", "HEAD:main")
-    return _git(repo, "rev-parse", "HEAD").stdout.strip()
+        proc = _git(repo, "push", "origin", "HEAD:main", check=False)
+        if proc.returncode != 0:
+            first = (proc.stderr.strip() or proc.stdout.strip()).splitlines()[:1]
+            raise PushError(f"push failed: {first[0] if first else 'unknown error'}", commit)
+    return commit
 
 
 @dataclass

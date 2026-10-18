@@ -2,7 +2,7 @@ published: published
 sources:
   - name: m5pro
     path: m5pro
-    machine: m5pro
+    machine: mac
     syncthing_folder: aaa
   - name: bigrig
     path: bigrig
