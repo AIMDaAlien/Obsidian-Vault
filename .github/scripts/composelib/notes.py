@@ -13,10 +13,15 @@ H1 = re.compile(r"^#\s+(.+)$")
 POSITIVE_INT = re.compile(r"^[1-9][0-9]*$")
 CURATION_KEYS = {"path", "featured", "summary", "publish"}
 SUMMARY_MAX = 160
+QUOTED_KEYS = {"summary", "title"}
 
 
 def split_frontmatter(text: str) -> tuple[list[str] | None, str]:
-    """Return (lines between the --- delimiters, body after), or (None, text) without frontmatter."""
+    """Return (lines between the --- delimiters, body after), or (None, text) without frontmatter.
+
+    CRLF is normalised to LF first, so the returned text is always LF.
+    """
+    text = text.replace("\r\n", "\n")
     if not text.startswith("---\n"):
         return None, text
     lines = text[4:].split("\n")
@@ -60,7 +65,7 @@ def get_key(lines: list[str], key: str) -> str | None:
 
 
 def set_key(lines: list[str], key: str, value: str) -> list[str]:
-    if key == "summary":
+    if key in QUOTED_KEYS:
         value = '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
     new = f"{key}: {value}"
     span = _find_key(lines, key)
@@ -141,8 +146,13 @@ def validate_curation(entries: list[CurationEntry], published_root: Path,
                 for other, rank in frontmatter_ranks.items():
                     if rank == e.featured and other != e.path:
                         errors.append(f"rank {rank} already used by {other}")
-        if e.summary is not None and len(e.summary) > SUMMARY_MAX:
-            errors.append(f"summary too long ({len(e.summary)} > {SUMMARY_MAX}): {e.path}")
+        if e.summary is not None:
+            if not isinstance(e.summary, str):
+                errors.append(f"{e.path}: summary must be a string")
+            elif len(e.summary) > SUMMARY_MAX:
+                errors.append(f"summary too long ({len(e.summary)} > {SUMMARY_MAX}): {e.path}")
+        if e.publish is not None and not isinstance(e.publish, bool):
+            errors.append(f"{e.path}: publish must be true or false")
     return errors
 
 

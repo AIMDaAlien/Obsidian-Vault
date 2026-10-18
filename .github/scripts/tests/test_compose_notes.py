@@ -102,6 +102,21 @@ class Normalize(unittest.TestCase):
         self.assertEqual(get_key(lines, "machine"), "other")
         self.assertEqual(get_key(lines, "title"), "Mine")
 
+    def test_crlf_note_keeps_single_block_and_publish_false(self):
+        text = "---\r\npublish: false\r\n---\r\n# T\r\n\r\nBody\r\n"
+        out = normalize_note(text, "mac", "2026-10-18")
+        self.assertEqual(out.count("---\n"), 2)
+        self.assertNotIn("\r", out)
+        lines, body = split_frontmatter(out)
+        self.assertEqual(get_key(lines, "publish"), "false")
+        self.assertEqual(body, "# T\n\nBody\n")
+
+    def test_colon_title_is_quoted(self):
+        out = normalize_note("# Note: Subtitle\n", "mac", "2026-10-18")
+        lines, _ = split_frontmatter(out)
+        self.assertIn('title: "Note: Subtitle"', lines)
+        self.assertEqual(get_key(lines, "title"), "Note: Subtitle")
+
     def test_no_h1_means_no_title(self):
         out = normalize_note("---\npublish: true\n---\njust text\n", "mac", "2026-10-18")
         self.assertIsNone(get_key(split_frontmatter(out)[0], "title"))
@@ -110,7 +125,7 @@ class Normalize(unittest.TestCase):
         out = normalize_note("# Plain\n\nText\n", "bigrig", "2026-10-18")
         lines, body = split_frontmatter(out)
         self.assertEqual(lines, ["tags: []", "created: 2026-10-18", "publish: true",
-                                 "machine: bigrig", "title: Plain"])
+                                 "machine: bigrig", 'title: "Plain"'])
         self.assertEqual(body, "# Plain\n\nText\n")
 
     def test_other_keys_untouched(self):
@@ -169,6 +184,23 @@ class CurationTests(TempCase):
         self.assertEqual(validate_curation([self.entry("A.md", summary=long)], root, {}),
                          ["summary too long (161 > 160): A.md"])
         self.assertEqual(validate_curation([self.entry("A.md", summary="x" * 160)], root, {}), [])
+
+    def test_rank_clash_names_other_path_only(self):
+        root = self.root_with(**{"A.md": "# A\n", "M.md": "---\nfeatured: 3\n---\n"})
+        self.assertEqual(validate_curation([self.entry("M.md", featured=3)], root, {"M.md": 3}), [])
+        self.assertEqual(validate_curation([self.entry("A.md", featured=3)], root, {"M.md": 3}),
+                         ["rank 3 already used by M.md"])
+
+    def test_publish_must_be_bool(self):
+        root = self.root_with(**{"A.md": "# A\n"})
+        self.assertEqual(validate_curation([self.entry("A.md", publish="false")], root, {}),
+                         ["A.md: publish must be true or false"])
+        self.assertEqual(validate_curation([self.entry("A.md", publish=False)], root, {}), [])
+
+    def test_summary_must_be_string(self):
+        root = self.root_with(**{"A.md": "# A\n"})
+        self.assertEqual(validate_curation([self.entry("A.md", summary=123)], root, {}),
+                         ["A.md: summary must be a string"])
 
     def test_non_positive_rank_is_error(self):
         root = self.root_with(**{"A.md": "# A\n"})
