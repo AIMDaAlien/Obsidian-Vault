@@ -66,8 +66,9 @@ class FastForward(TmpCase):
         git(other, "add", "-A")
         git(other, "commit", "-m", "upstream")
         git(other, "push", "origin", "HEAD:main")
-        head = fast_forward(clone)
+        head, discarded = fast_forward(clone)
         self.assertEqual(head, git(other, "rev-parse", "HEAD").strip())
+        self.assertEqual(discarded, 0)
         self.assertTrue((clone / "new.md").exists())
 
     def test_local_unpushed_commit_fails_diverged(self):
@@ -80,6 +81,46 @@ class FastForward(TmpCase):
         self.assertIn("unpushed local commit", str(cm.exception))
         self.assertIn("ahead of origin/main", str(cm.exception))
         self.assertEqual(git(clone, "log", "-1", "--format=%s").strip(), "local only")
+
+    def test_unpushed_publisher_commits_are_discarded(self):
+        origin, clone = make_origin_and_clone(self.tmp)
+        for n in (1, 2):
+            (clone / f"pub{n}.md").write_text("x\n")
+            git(clone, "add", "-A")
+            git(clone, "commit", "-m", f"vault publish: run {n}")
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            head, discarded = fast_forward(clone)
+        self.assertEqual(discarded, 2)
+        self.assertIn("discarded 2 unpushed publisher commit(s)", out.getvalue())
+        self.assertEqual(head, git(origin, "rev-parse", "main").strip())
+        self.assertFalse((clone / "pub1.md").exists())
+
+    def test_mixed_unpushed_commits_still_fail(self):
+        _, clone = make_origin_and_clone(self.tmp)
+        for subject in ("vault publish: run", "hand edit"):
+            (clone / f"{subject[:4]}.md").write_text("x\n")
+            git(clone, "add", "-A")
+            git(clone, "commit", "-m", subject)
+        with self.assertRaises(ComposeError) as cm:
+            fast_forward(clone)
+        self.assertIn("unpushed local commit", str(cm.exception))
+        self.assertEqual(git(clone, "log", "-1", "--format=%s").strip(), "hand edit")
+
+    def test_publisher_commit_on_diverged_clone_still_fails(self):
+        origin, clone = make_origin_and_clone(self.tmp)
+        other = self.tmp / "other"
+        git(self.tmp, "clone", str(origin), str(other))
+        init_identity(other)
+        (other / "up.md").write_text("x\n")
+        git(other, "add", "-A")
+        git(other, "commit", "-m", "upstream")
+        git(other, "push", "origin", "HEAD:main")
+        (clone / "local.md").write_text("x\n")
+        git(clone, "add", "-A")
+        git(clone, "commit", "-m", "vault publish: run")
+        with self.assertRaises(ComposeError) as cm:
+            fast_forward(clone)
+        self.assertTrue(str(cm.exception).startswith("remote diverged"))
 
     def test_true_divergence_says_remote_diverged(self):
         origin, clone = make_origin_and_clone(self.tmp)
@@ -148,6 +189,30 @@ class Syncthing(unittest.TestCase):
     def test_bad_json_and_missing_state_are_errors(self):
         for body in (b"{not json", b"[]", b"{}"):
             self.assertEqual(self.check({"a": body})[0], "error", body)
+
+
+class GitRunner(unittest.TestCase):
+    def test_timeout_becomes_compose_error(self):
+        from composelib.publish import _git
+        err = subprocess.TimeoutExpired(["git", "fetch"], 600)
+        with mock.patch("composelib.publish.subprocess.run", side_effect=err) as run:
+            with self.assertRaises(ComposeError) as cm:
+                _git(Path("."), "fetch", "origin", "main")
+        self.assertEqual(str(cm.exception), "git fetch origin main timed out")
+        self.assertEqual(run.call_args.kwargs["timeout"], 600)
+
+    def test_batch_ssh_command_set_unless_present(self):
+        from composelib.publish import GIT_SSH_COMMAND, _git
+        done = subprocess.CompletedProcess(["git"], 0, "", "")
+        with mock.patch.dict(os.environ), mock.patch("composelib.publish.subprocess.run",
+                                                      return_value=done) as run:
+            os.environ.pop("GIT_SSH_COMMAND", None)
+            _git(Path("."), "status")
+            self.assertEqual(run.call_args.kwargs["env"]["GIT_SSH_COMMAND"], GIT_SSH_COMMAND)
+            self.assertIn("BatchMode=yes", GIT_SSH_COMMAND)
+            os.environ["GIT_SSH_COMMAND"] = "ssh -i other"
+            _git(Path("."), "status")
+            self.assertEqual(run.call_args.kwargs["env"]["GIT_SSH_COMMAND"], "ssh -i other")
 
 
 class Gate(TmpCase):
@@ -437,6 +502,16 @@ class Cli(TmpCase):
         fixture.write_text("---\nfeatured: yes\n---\n# X\n")
         proc = self.run_cli("--no-push")
         self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+
+    def test_failed_push_is_discarded_on_next_run(self):
+        git(self.clone, "remote", "set-url", "--push", "origin", str(self.tmp / "nowhere.git"))
+        self.assertEqual(self.run_cli().returncode, 1)
+        git(self.clone, "remote", "set-url", "--push", "origin", str(self.origin))
+        proc = self.run_cli()
+        self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+        self.assertIn("discarded 1 unpushed publisher commit(s)", proc.stdout)
+        self.assertEqual(json.loads((self.work / "last-run.json").read_text())["discarded"], 1)
+        self.assertEqual(self.origin_head(), git(self.clone, "rev-parse", "HEAD").strip())
 
     def test_push_failure_reports_commit_and_reason(self):
         git(self.clone, "remote", "set-url", "--push", "origin", str(self.tmp / "nowhere.git"))

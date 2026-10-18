@@ -1,5 +1,6 @@
 """Git, privacy gate, Syncthing, report and notification helpers for a compose run."""
 import json
+import os
 import subprocess
 import sys
 import urllib.error
@@ -12,10 +13,19 @@ from . import ComposeError
 
 NOTIFY_SCRIPT = Path("/usr/local/emhttp/webGui/scripts/notify")
 GATE_SCRIPT = ".github/scripts/privacy-gate.py"
+GIT_TIMEOUT = 600
+GIT_SSH_COMMAND = "ssh -o BatchMode=yes -o ConnectTimeout=20 -o ServerAliveInterval=15 -o ServerAliveCountMax=4"
+PUBLISHER_PREFIX = "vault publish:"
 
 
 def _git(repo: Path, *args: str, check: bool = True) -> subprocess.CompletedProcess:
-    proc = subprocess.run(["git", *args], cwd=repo, capture_output=True, text=True)
+    env = os.environ.copy()
+    env.setdefault("GIT_SSH_COMMAND", GIT_SSH_COMMAND)
+    try:
+        proc = subprocess.run(["git", *args], cwd=repo, capture_output=True, text=True,
+                              env=env, timeout=GIT_TIMEOUT)
+    except subprocess.TimeoutExpired as exc:
+        raise ComposeError(f"git {' '.join(args)} timed out") from exc
     if check and proc.returncode != 0:
         raise ComposeError(f"git {' '.join(args)} failed: {proc.stderr.strip() or proc.stdout.strip()}")
     return proc
@@ -74,17 +84,26 @@ def syncthing_idle(api: str, api_key: str, folder_ids: list[str]) -> tuple[str, 
     return "idle", "idle"
 
 
-def fast_forward(repo: Path) -> str:
-    """Move the clone to origin/main, refusing when local HEAD has unpushed work."""
+def fast_forward(repo: Path) -> tuple[str, int]:
+    """Move the clone to origin/main; returns (new HEAD, publisher commits discarded).
+
+    Unpushed commits are dropped only when every one of them is a publisher commit
+    (their content is recomputed from the sources); any other local work fails the run.
+    """
     _git(repo, "fetch", "origin", "main")
+    discarded = 0
     if _git(repo, "merge-base", "--is-ancestor", "HEAD", "origin/main", check=False).returncode != 0:
-        if _git(repo, "merge-base", "--is-ancestor", "origin/main", "HEAD", check=False).returncode == 0:
+        if _git(repo, "merge-base", "--is-ancestor", "origin/main", "HEAD", check=False).returncode != 0:
+            raise ComposeError("remote diverged: local HEAD is not an ancestor of origin/main")
+        subjects = _git(repo, "log", "--format=%s", "origin/main..HEAD").stdout.splitlines()
+        if not subjects or not all(s.startswith(PUBLISHER_PREFIX) for s in subjects):
             short = _git(repo, "rev-parse", "--short", "HEAD").stdout.strip()
             raise ComposeError(f"unpushed local commit {short} is ahead of origin/main; "
                                "push it or reset the clone")
-        raise ComposeError("remote diverged: local HEAD is not an ancestor of origin/main")
+        discarded = len(subjects)
+        print(f"discarded {discarded} unpushed publisher commit(s)")
     _git(repo, "reset", "--hard", "origin/main")
-    return _git(repo, "rev-parse", "HEAD").stdout.strip()
+    return _git(repo, "rev-parse", "HEAD").stdout.strip(), discarded
 
 
 def run_gate(repo: Path) -> tuple[bool, str]:
@@ -125,6 +144,7 @@ class RunReport:
     skipped: list[str] = field(default_factory=list)
     gate: str = ""
     commit: str | None = None
+    discarded: int = 0
     duration_s: float = 0.0
     reason: str = ""
 
@@ -139,6 +159,7 @@ def write_report(md_path: Path, json_path: Path | None, report: RunReport) -> No
         "",
         f"- reason: {report.reason or '-'}",
         f"- commit: {report.commit or '-'}",
+        f"- discarded: {report.discarded} unpushed publisher commit(s)",
         f"- counts: {', '.join(f'{k} {v}' for k, v in report.counts.items()) or '-'}",
         f"- files: {report.added} added, {report.changed} changed, {report.removed} removed",
         f"- duration: {report.duration_s:.1f}s",

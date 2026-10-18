@@ -50,7 +50,7 @@ def _check_terms(path: Path | None) -> None:
 def _compose(args, cfg, report: RunReport, last_counts: dict[str, int]) -> None:
     repo, root = cfg.published, cfg.published
     guard_sources(cfg, last_counts)
-    fast_forward(repo)
+    _, report.discarded = fast_forward(repo)
     plan = plan_tree(cfg)
     report.skipped = skipped_protected(cfg)
     stats = apply_tree(plan, cfg)
