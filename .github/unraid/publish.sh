@@ -24,9 +24,11 @@ if ! flock -n 9; then
     exit 0
 fi
 
-key=$(sed -n 's/.*<apikey>\(.*\)<\/apikey>.*/\1/p' /mnt/cache/appdata/syncthing/config.xml | head -1)
-
 log "run start"
+key=$(sed -n 's/.*<apikey>\(.*\)<\/apikey>.*/\1/p' /mnt/cache/appdata/syncthing/config.xml 2>/dev/null | head -1 || true)
+if [ -z "$key" ]; then
+    log "syncthing api key not found in config.xml"
+fi
 rc=0
 docker run --rm --network host \
     -v /mnt/cache/vault/sources:/sources:ro \

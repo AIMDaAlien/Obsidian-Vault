@@ -17,10 +17,12 @@ Start at [[Index]]. Notes are organized by category:
 - 06 Learning Journals - reflective writeups and lessons learned
 - 07 Tools and Workflow - Obsidian, publishing, business bridges
 
-Only notes explicitly marked "keep private" are excluded from the garden.
+A note is published when its frontmatter has `publish: true`; everything else stays out of the garden, and a privacy gate blocks any push that contains an address, key, or personal identifier.
 
 ## How this vault is published
 
 Notes live in two source vaults on two machines. Syncthing delivers each one, receive-only, to an Unraid server. A compose job runs every 15 minutes: it merges the sources, applies `curation.yml`, runs the privacy gate, and pushes the result here.
 
 Never edit this repository directly. The next compose run overwrites any change made here.
+
+Curation overrides (featured rank, summary, publish) for notes from the BigRig live in `curation.yml` on the Unraid hub and are copied into this repo on every publish.
