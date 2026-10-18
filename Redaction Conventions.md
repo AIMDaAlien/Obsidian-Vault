@@ -29,3 +29,5 @@ The `<lan-ip-N>` numbering is stable across the vault, so `<lan-ip-1>` always me
 Some lines, such as device-enrollment URLs and commands that carry credentials, were removed outright rather than replaced, because a placeholder would not make them safe to share.
 
 An HTML comment of the form `<!-- embed removed: name (file not in vault) -->` marks where a note embedded an image or file that was never part of the vault, so the original reference is kept for context but nothing renders. A line reading *screenshot removed: showed workstation identifiers* marks a screenshot that was deleted because it showed details of my computer, such as a user folder path.
+
+Since 2026-10-18 this vault is composed and published from the Unraid hub; the Mac only syncs its notes there.
