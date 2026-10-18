@@ -111,6 +111,8 @@ The engines werent broken. Splash's own published number for this chip is 74 tok
 
 ## Fixes to My Older Notes
 
+Both of these are now corrected in the notes themselves.
+
 - My LLM Benchmark Registry note says the M5 Pro has about 400+ GB/s memory bandwidth. I measured about 290 GB/s here.
 - My Qwen3.8-27B note says speculative decoding was a dead end on this Mac. With Splash's draft model it wasnt. It was about 4.5x faster than plain MLX on code (77 vs 16).
 
