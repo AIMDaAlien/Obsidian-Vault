@@ -65,9 +65,20 @@ Changed: `iommu=pt` (all 27 groups identity), NMI watchdog off, governor from a 
 
 The model's own encoder (Q8_0 requantization of the BF16 mmproj, 615 MB, llama.cpp rules) runs on the GPU as upstream's `strata-vision` helper; the C++ front end now takes OpenAI `image_url` parts (data: URLs, local files; JPEG/PNG/GIF/BMP; no network fetch). Eight end-to-end checks pass. Cost with `--vram-reserve-mib 2200`: −3% decode short, −6% after 80K (775 fewer cached experts), prefill unchanged. Real screenshot read-back: title, selected entry and all four file names correct; one of two IP ports missed. 2048 image tokens only matter above ~1024-token images.
 
+## Task-suite wall clock (frozen 24-task DeepSWE2, seed 40, medium reasoning)
+
+| | Oct 13: 0.1.39, 250 W | now: 0.1.43.1 + Volta table, 125 W, vision reserve on |
+|---|---:|---:|
+| median task wall | 37.2 s | 32.6 s |
+| total, 24 tasks | 1017 s | 954 s |
+| median TTFT (≈650-token prompts) | 1.5 s | 1.6 s |
+| median decode | 77.3 tok/s | 84.5 tok/s |
+| passes | 22/24 | 23/24 |
+
+17 of 24 tasks faster, paired geometric-mean wall ratio 0.909; on the 14 tasks whose answers were within 15% of the same length, median wall 37.3 → 32.3 s. The 125 W configuration beats the card's 250 W run from five days ago on wall clock, with one more task passing (e21-index-invalidation). Short-prompt TTFT is unchanged: a 650-token prompt prefills in ~1.5 s either way.
+
 ## Still open
 
-- Task-suite wall clock (frozen 24-task DeepSWE2, seed 40) on the final configuration — running.
 - Prefill is now the long-prompt bottleneck (180K ≈ 3 min). Candidates: `STRATA_PREFILL_AUTO_MAX=32768`; upstream PR 1401's FP16 tensor-core prompt kernels for sm_70 (+10% prompt, unmerged, conflicts); PR 2355/2356 (+5–7% prompt on V100).
 - `--adapt-async 1` (opt-in in 0.1.43.1), adaptive-cache tuning for long contexts (hit rate 87% at 80K+), `--spec-min-p`, `--ple-row-cache`, PLE table on the unencrypted Samsung SSD (measure the per-token read share first).
 - Hardware: CPU reaches its 85 °C BIOS cap under any sustained all-core load; the −20 Curve Optimizer remains the prime suspect for the silent power-offs.
