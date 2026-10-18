@@ -144,7 +144,7 @@ The LG G8 uses **UFS (Universal Flash Storage)**, which organizes storage into m
 
 The `edl` tool's `printgpt` command dumped the full partition table so we could verify exactly where `laf_a` and `laf_b` live before writing anything:
 
-![[LG-G8-gpt-partition-table-laf.png]]
+![[images/LG-G8-gpt-partition-table-laf.png]]
 
 > **What you're seeing:** The raw GPT (GUID Partition Table) — the "map" of the phone's storage. Each row is a partition with its name, memory address offset, size, and UUID. `laf_a` and `laf_b` are visible near the top. `abl`, `xbl`, `vbmeta`, `boot`, `modem` — every critical low-level partition is listed here. Scrolling this table confirmed LAF's location before writing.
 
@@ -185,7 +185,7 @@ With `laf` restored, the phone could enter LG's **Download Mode** — the prereq
 
 ### The Phone Receiving Firmware
 
-![[LG-G8-download-mode-tmous-restore.png]]
+![[images/LG-G8-download-mode-tmous-restore.png]]
 
 > **What you're seeing:** The G8's screen during the LGUP flash. The USB sync icon confirms the cable connection is active. The progress bar is moving. Most importantly — the bottom of the screen shows `533A B20 TMO_US` and `Official / E / L / R0 / id : 3(TMO_US)`. The `TMO_US` identifier is the T-Mobile carrier flag being written. At this moment, the phone was accepting its correct identity for the first time since the bad cross-flash.
 
@@ -206,7 +206,7 @@ With `laf` restored, the phone could enter LG's **Download Mode** — the prereq
 
 ### LGUP in Action — The Identity Crisis Visible in the Tool
 
-![[LG-G8-LGUP-G850UM-identity-crisis.png]]
+![[images/LG-G8-LGUP-G850UM-identity-crisis.png]]
 
 > **What you're seeing:** LGUP 1.16.0.3 (Lab Version) mid-flash at 11%, sending `system_b 59/181 lun 0`. The KDZ loaded in the file path is correctly the T-Mobile file (`G820TM10q_00_TMO_US_OP_0110.kdz`). But look at the **title bar**: `LGUP[LM-G850UM – G8 ThinQ]`. LGUP is detecting the phone's *current* (wrong) identity as G850UM, while simultaneously flashing the correct T-Mobile firmware over it. This is the transition point — the old identity being overwritten in real time. DLL Version: 2.1.0.52, which is above the minimum version 1.9.39.7 required for G8/SM8150 devices.
 
