@@ -211,14 +211,38 @@ class CurationTests(TempCase):
     def test_non_integer_frontmatter_rank_reported(self):
         for raw in ('"3"', "yes", "2.5", "0"):
             root = self.root_with(**{"A.md": f"---\nfeatured: {raw}\n---\n# A\n"})
-            errs = rank_errors(root)
+            errs = rank_errors(root, {"A.md"})
             self.assertEqual(len(errs), 1, raw)
             self.assertIn("featured must be an integer", errs[0])
             self.assertTrue(errs[0].startswith("A.md: "))
 
     def test_valid_and_absent_ranks_not_reported(self):
         root = self.root_with(**{"A.md": "---\nfeatured: 4\n---\n", "B.md": "# B\n"})
-        self.assertEqual(rank_errors(root), [])
+        self.assertEqual(rank_errors(root, {"A.md", "B.md"}), [])
+
+    def test_rank_errors_ignore_paths_outside_the_plan(self):
+        root = self.root_with(**{"A.md": "---\nfeatured: 4\n---\n"})
+        (root / "fixtures").mkdir()
+        (root / "fixtures" / "x.md").write_text("---\nfeatured: yes\n---\n")
+        self.assertEqual(rank_errors(root, {"A.md"}), [])
+        self.assertEqual(len(rank_errors(root, {"A.md", "fixtures/x.md"})), 1)
+
+    def test_path_outside_tree_is_error(self):
+        root = self.root_with(**{"A.md": "# A\n"})
+        outside = self.tmp / "outside.md"
+        outside.write_text("# Outside\n")
+        for bad in (str(outside), "../outside.md", "sub/../../outside.md", "./A.md"):
+            self.assertEqual(validate_curation([self.entry(bad, featured=1)], root, {}),
+                             [f"{bad}: path must be relative and inside the published tree"], bad)
+
+    def test_dotted_file_name_is_not_a_parent_segment(self):
+        root = self.root_with(**{"..A.md": "# A\n"})
+        self.assertEqual(validate_curation([self.entry("..A.md")], root, {}), [])
+
+    def test_duplicate_path_is_error(self):
+        root = self.root_with(**{"A.md": "# A\n"})
+        errs = validate_curation([self.entry("A.md", featured=1), self.entry("A.md", summary="s")], root, {})
+        self.assertEqual(errs, ["duplicate path: A.md"])
 
     def test_frontmatter_ranks_only_for_mac_paths(self):
         root = self.root_with(**{"A.md": "---\nfeatured: 4\n---\n", "B.md": "---\nfeatured: 5\n---\n",

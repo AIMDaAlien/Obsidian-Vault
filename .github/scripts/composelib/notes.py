@@ -128,12 +128,27 @@ def load_curation(path: Path) -> list[CurationEntry]:
     return entries
 
 
+def _inside_tree(path) -> bool:
+    """False for absolute paths, any '..' segment, or a leading './'."""
+    if not isinstance(path, str) or not path:
+        return False
+    return not (path.startswith(("/", "./")) or Path(path).is_absolute()
+                or ".." in path.replace("\\", "/").split("/"))
+
+
 def validate_curation(entries: list[CurationEntry], published_root: Path,
                       frontmatter_ranks: dict[str, int]) -> list[str]:
     """Error strings for the entries; an empty list means valid."""
     errors: list[str] = []
     seen: dict[int, str] = {}
+    seen_paths: set[str] = set()
     for e in entries:
+        if not _inside_tree(e.path):
+            errors.append(f"{e.path}: path must be relative and inside the published tree")
+            continue
+        if e.path in seen_paths:
+            errors.append(f"duplicate path: {e.path}")
+        seen_paths.add(e.path)
         if not (Path(published_root) / e.path).is_file():
             errors.append(f"unknown path: {e.path}")
         if e.featured is not None:
@@ -170,11 +185,11 @@ def apply_curation(text: str, entry: CurationEntry) -> str:
     return join_frontmatter(lines, body)
 
 
-def _featured_values(published_root: Path):
-    """Yield (published path, raw featured text) for notes that have a featured key."""
+def _featured_values(published_root: Path, paths: set[str]):
+    """Yield (published path, raw featured text) for planned notes that have a featured key."""
     root = Path(published_root)
     for rel, full in _walk(root, [".git"]):
-        if not rel.endswith(".md"):
+        if not rel.endswith(".md") or rel not in paths:
             continue
         lines, _ = split_frontmatter(full.read_text(encoding="utf-8", errors="replace"))
         raw = None if lines is None else _raw_value(lines, "featured")
@@ -184,10 +199,11 @@ def _featured_values(published_root: Path):
 
 def frontmatter_ranks(published_root: Path, mac_paths: set[str]) -> dict[str, int]:
     """{published path: rank} for Mac notes with a valid integer featured value."""
-    return {rel: int(raw) for rel, raw in _featured_values(published_root)
-            if rel in mac_paths and POSITIVE_INT.match(raw)}
+    return {rel: int(raw) for rel, raw in _featured_values(published_root, mac_paths)
+            if POSITIVE_INT.match(raw)}
 
 
-def rank_errors(published_root: Path) -> list[str]:
+def rank_errors(published_root: Path, paths: set[str]) -> list[str]:
+    """Bad featured values among the given published paths (the compose plan)."""
     return sorted(f"{rel}: featured must be an integer, got '{raw}'"
-                  for rel, raw in _featured_values(published_root) if not POSITIVE_INT.match(raw))
+                  for rel, raw in _featured_values(published_root, paths) if not POSITIVE_INT.match(raw))

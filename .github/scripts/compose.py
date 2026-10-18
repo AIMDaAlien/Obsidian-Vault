@@ -26,12 +26,25 @@ def parse_args(argv=None):
     p.add_argument("--skip-syncthing-check", action="store_true")
     p.add_argument("--curation", type=Path)
     p.add_argument("--report-dir", type=Path)
+    p.add_argument("--require-terms", type=Path, metavar="PATH",
+                   help="fail unless this privacy terms file exists and lists at least one term")
     return p.parse_args(argv)
 
 
 def _rewrite(root: Path, rel: str, fn) -> None:
     path = root / rel
     path.write_text(fn(path.read_text(encoding="utf-8")), encoding="utf-8", newline="")
+
+
+def _check_terms(path: Path | None) -> None:
+    """Refuse to run when the owner's privacy terms file is required but absent or empty."""
+    if path is None:
+        return
+    if not path.is_file():
+        raise ComposeError(f"privacy terms file missing: {path}")
+    lines = (line.strip() for line in path.read_text(encoding="utf-8", errors="replace").splitlines())
+    if not any(line and not line.startswith("#") for line in lines):
+        raise ComposeError(f"privacy terms file missing: {path} (no terms in it)")
 
 
 def _compose(args, cfg, report: RunReport, last_counts: dict[str, int]) -> None:
@@ -52,7 +65,7 @@ def _compose(args, cfg, report: RunReport, last_counts: dict[str, int]) -> None:
     if args.curation and not curation.is_file():
         raise ComposeError(f"curation file missing: {curation}")
     entries = load_curation(curation) if curation.is_file() else []
-    errors = rank_errors(root) + validate_curation(entries, root, frontmatter_ranks(root, mac_paths))
+    errors = rank_errors(root, set(plan)) + validate_curation(entries, root, frontmatter_ranks(root, mac_paths))
     if errors:
         raise ComposeError("curation invalid:\n" + "\n".join(errors))
     for entry in entries:
@@ -105,6 +118,7 @@ def run(args) -> int:
             json_path = None  # leave the unreadable file exactly as it is
             raise ComposeError(f"last-run.json unreadable: {exc}") from exc
         cfg = load_config(args.config)
+        _check_terms(args.require_terms)
         report.counts = {s.name: count_notes(s.path, cfg.exclude_dirs) if s.path.is_dir() else 0
                          for s in cfg.sources}
         busy = None

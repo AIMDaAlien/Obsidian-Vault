@@ -321,6 +321,41 @@ class Cli(TmpCase):
         self.assertEqual(self.run_cli("--no-push").returncode, 1)
         self.assertEqual(self.counts(), {})
 
+    def test_missing_terms_file_fails_before_gate(self):
+        token = "tskey-" + "auth-" + "abcdefghij1234567890"
+        (self.work / "bigrig" / "Leak.md").write_text(f"# Leak\n\n{token}\n")
+        before_origin, before_clone = self.origin_head(), git(self.clone, "rev-parse", "HEAD")
+        missing = self.work / "no-terms"
+        proc = self.run_cli("--require-terms", str(missing))
+        self.assertEqual(proc.returncode, 1)
+        md = self.last_md()
+        self.assertTrue(md.splitlines()[0].endswith("— failed"))
+        self.assertIn(f"privacy terms file missing: {missing}", md)
+        self.assertNotIn("privacy gate failed", md)
+        self.assertEqual(self.origin_head(), before_origin)
+        self.assertEqual(git(self.clone, "rev-parse", "HEAD"), before_clone)
+        self.assertEqual(git(self.clone, "status", "--porcelain").strip(), "")
+
+    def test_empty_terms_file_fails(self):
+        terms = self.work / "terms"
+        terms.write_text("# only a comment\n\n")
+        proc = self.run_cli("--no-push", "--require-terms", str(terms))
+        self.assertEqual(proc.returncode, 1)
+        self.assertIn(f"privacy terms file missing: {terms}", self.last_md())
+
+    def test_present_terms_file_runs(self):
+        terms = self.work / "terms"
+        terms.write_text("some-unused-phrase-xyz\n")
+        proc = self.run_cli("--no-push", "--require-terms", str(terms))
+        self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+
+    def test_bad_featured_in_github_fixture_does_not_fail_run(self):
+        fixture = self.clone / ".github/scripts/tests/fixtures/x.md"
+        fixture.parent.mkdir(parents=True)
+        fixture.write_text("---\nfeatured: yes\n---\n# X\n")
+        proc = self.run_cli("--no-push")
+        self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+
     def test_push_failure_reports_commit_and_reason(self):
         git(self.clone, "remote", "set-url", "--push", "origin", str(self.tmp / "nowhere.git"))
         proc = self.run_cli()
