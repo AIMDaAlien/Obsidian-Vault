@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T21:08:52Z",
+  "generated_at": "2026-10-18T21:09:19Z",
   "tree": [
     {
       "path": "Index.md",
@@ -11,6 +11,54 @@
     },
     {
       "path": "Redaction Conventions.md",
+      "type": "file"
+    },
+    {
+      "path": "markdown practice.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index",
+      "type": "dir"
+    },
+    {
+      "path": "00 Index/Agents & Tooling.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Benchmarks.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Hermes Runs — Session Index.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Knowledge Garden.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Models & Serving.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Omarchy & Desktop.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Qwen3.8 Rig.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Rig & Hardware.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Vault Map.md",
+      "type": "file"
+    },
+    {
+      "path": "00 Index/Web App.md",
       "type": "file"
     },
     {
@@ -322,6 +370,10 @@
       "type": "file"
     },
     {
+      "path": "01 Projects/Penthouse/Penthouse Remake.md",
+      "type": "file"
+    },
+    {
       "path": "01 Projects/Penthouse/Rebuild Archive",
       "type": "dir"
     },
@@ -506,6 +558,26 @@
       "type": "file"
     },
     {
+      "path": "01 Projects/Philosopher",
+      "type": "dir"
+    },
+    {
+      "path": "01 Projects/Philosopher/Philosopher KB.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Philosopher/Philosopher Model.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Philosopher/Philosopher Project.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Philosopher/Philosopher dsh Backend.md",
+      "type": "file"
+    },
+    {
       "path": "01 Projects/Portfolio Website",
       "type": "dir"
     },
@@ -555,6 +627,42 @@
     },
     {
       "path": "01 Projects/Portfolio Website/Tag System & Portfolio Integration.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/RAFT Laya Router",
+      "type": "dir"
+    },
+    {
+      "path": "01 Projects/RAFT Laya Router/RAFT Laya Router.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Strata",
+      "type": "dir"
+    },
+    {
+      "path": "01 Projects/Strata/Strata Bench.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Strata/Strata RTX 3060 long-context tuning.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Strata/Strata V100 setup and benchmarks — 2026-10-13.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Swarm Dashboard",
+      "type": "dir"
+    },
+    {
+      "path": "01 Projects/Swarm Dashboard/Swarm Dashboard.md",
       "type": "file"
     },
     {
@@ -898,6 +1006,42 @@
       "type": "file"
     },
     {
+      "path": "02 Homelab/Hardware",
+      "type": "dir"
+    },
+    {
+      "path": "02 Homelab/Hardware/Dual Tesla P100 vs 2nd 9060 XT.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/Fan Control (MSI Z690-A).md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/GPU Crash & Vulkan Device Pinning.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/GPU-Overclock-Research.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/Hardware Specs & Roles - Rig Fleet (Sep 2026).md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/Maya V100 preflight and Qwen fallback — 2026-10-13.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/Raspberry Pi B+ Utility Node.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/Rig Hardware & Display.md",
+      "type": "file"
+    },
+    {
       "path": "02 Homelab/Overview",
       "type": "dir"
     },
@@ -1066,6 +1210,66 @@
       "type": "dir"
     },
     {
+      "path": "03 AI and Local Models/Benchmarks/2026-09-22 Rebench — Coherent Multi-Domain Scoreboard.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/2026-09-23 Rebench2 — Role-Tagged Scoreboard.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/2026-09-23 v3 — Small Models vs Ornith Real Research Bench.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/2026-09-24 Flash-Next Effort Sweep — Lenified Grader.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/2026-09-24 v3 Results — K2 wins on capability, Ornith loses the research core.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/2026-09-24 v4 Results — Thinking flips the ranking.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen 27B vs Flash DeepSWE2.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen vs Flash — Methods and artifacts.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Bench Suite (~bench).md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Benchmark Methodology.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Browser Debloat & Benchmark 2026-09-19.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-lowlen.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-med.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-xhigh.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/HF Trending Models Survey.md",
+      "type": "file"
+    },
+    {
       "path": "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md",
       "type": "file"
     },
@@ -1078,7 +1282,55 @@
       "type": "file"
     },
     {
+      "path": "03 AI and Local Models/Benchmarks/MASSIVE-RIG.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Model Benchmarks Archive.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Model Benchmarks.md",
+      "type": "file"
+    },
+    {
       "path": "03 AI and Local Models/Benchmarks/Nemotron vs Qwen Domain Fingerprint.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Open Local Thinking-Partner Models.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/ReBench rebench-flash-ad384.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/ReBench rebench-laguna.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/ReBench rebench-ornith-23g.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/ReBench rebench-ornith-iq2m.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/ReBench rebench-qwenq5-low.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/ReBench rebench-qwenq5-off.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/ReBench2 <tag>.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/V100 coding-model comparison — 2026-10-14.md",
       "type": "file"
     },
     {
@@ -1115,6 +1367,42 @@
     },
     {
       "path": "03 AI and Local Models/Mac - MLX/Ternary Bonsai 27B.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving",
+      "type": "dir"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/Flash-Next AD384.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/Flash-Next llama.cpp Audit 2026-09-28.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/Laguna XS-2.1.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/Ornith-1.5 35B.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/Qwen-Q5 27B.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/Unraid Flash-Next.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/Unraid LLM Control Center.md",
+      "type": "file"
+    },
+    {
+      "path": "03 AI and Local Models/Models & Serving/llama.cpp Upgrade Roadmap.md",
       "type": "file"
     },
     {
@@ -1554,6 +1842,22 @@
       "type": "file"
     },
     {
+      "path": "05 Linux and Systems/Omarchy",
+      "type": "dir"
+    },
+    {
+      "path": "05 Linux and Systems/Omarchy/Desktop Session Persistence.md",
+      "type": "file"
+    },
+    {
+      "path": "05 Linux and Systems/Omarchy/Omarchy Plugins & Shell Widgets.md",
+      "type": "file"
+    },
+    {
+      "path": "05 Linux and Systems/Omarchy/Omarchy Trim Debloat & Idle Policy.md",
+      "type": "file"
+    },
+    {
       "path": "05 Linux and Systems/Quoting",
       "type": "dir"
     },
@@ -1674,6 +1978,50 @@
       "type": "file"
     },
     {
+      "path": "07 Tools and Workflow/Agents",
+      "type": "dir"
+    },
+    {
+      "path": "07 Tools and Workflow/Agents/DeepSeek Harness Setup.md",
+      "type": "file"
+    },
+    {
+      "path": "07 Tools and Workflow/Agents/Hermes Install & Config Port.md",
+      "type": "file"
+    },
+    {
+      "path": "_attachments",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/maya-v100-20261013",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/model-benchmarks",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/qwen27b-flash-matched-20261012-165802",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/qwen27b-flash-matched-20261012-165802/results",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/strata-prefill-20261010",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/strata-rtx3060-showcase",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/v100-20261013",
+      "type": "dir"
+    },
+    {
       "path": "images",
       "type": "dir"
     }
@@ -1706,6 +2054,162 @@
       "publish": true,
       "title": "Redaction Conventions",
       "updated": "2026-10-17"
+    },
+    "markdown practice.md": {
+      "tags": [],
+      "created": "2026-10-15",
+      "publish": false,
+      "machine": "bigrig",
+      "title": "markdown practice",
+      "updated": "2026-10-18"
+    },
+    "00 Index/Agents & Tooling.md": {
+      "type": "moc",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "moc",
+        "agents",
+        "tooling"
+      ],
+      "updated": "2026-09-23",
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Agents & Tooling"
+    },
+    "00 Index/Benchmarks.md": {
+      "type": "moc",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "moc",
+        "benchmark"
+      ],
+      "updated": "2026-10-12",
+      "publish": true,
+      "created": "2026-10-12",
+      "machine": "bigrig",
+      "title": "Benchmarks"
+    },
+    "00 Index/Hermes Runs — Session Index.md": {
+      "type": "index",
+      "topic": "Hermes session history",
+      "updated": "2026-09-23",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "sessions",
+        "index"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Hermes Runs — Session Index"
+    },
+    "00 Index/Knowledge Garden.md": {
+      "type": "benchmark-log",
+      "topic": "Knowledge Garden",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "vault",
+        "logging"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Knowledge Garden",
+      "updated": "2026-10-18"
+    },
+    "00 Index/Models & Serving.md": {
+      "type": "moc",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "moc",
+        "models",
+        "serving"
+      ],
+      "updated": "2026-10-17",
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Models & Serving"
+    },
+    "00 Index/Omarchy & Desktop.md": {
+      "type": "moc",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "moc",
+        "omarchy",
+        "desktop"
+      ],
+      "updated": "2026-09-23",
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Omarchy & Desktop"
+    },
+    "00 Index/Qwen3.8 Rig.md": {
+      "type": "index",
+      "topic": "Qwen3.8 Rig",
+      "updated": "2026-10-17",
+      "category": "Models & Serving",
+      "tags": [
+        "model",
+        "rig",
+        "serving",
+        "index"
+      ],
+      "publish": true,
+      "created": "2026-09-21",
+      "machine": "bigrig",
+      "title": "Qwen3.8 Rig"
+    },
+    "00 Index/Rig & Hardware.md": {
+      "type": "moc",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "moc",
+        "rig",
+        "hardware"
+      ],
+      "updated": "2026-09-23",
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Rig & Hardware"
+    },
+    "00 Index/Vault Map.md": {
+      "type": "moc",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "moc",
+        "index"
+      ],
+      "updated": "2026-09-23",
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Vault Map"
+    },
+    "00 Index/Web App.md": {
+      "type": "moc",
+      "category": "Meta",
+      "tags": [
+        "meta",
+        "moc",
+        "webapp"
+      ],
+      "updated": "2026-09-23",
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Web App"
     },
     "01 Projects/Projects Index.md": {
       "tags": [
@@ -2618,6 +3122,18 @@
       "title": "The Penthouse PWA — Knowledge Hub",
       "updated": "2026-10-17"
     },
+    "01 Projects/Penthouse/Penthouse Remake.md": {
+      "type": "benchmark-log",
+      "topic": "Penthouse Remake",
+      "publish": true,
+      "created": "2026-09-26",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "Penthouse Remake",
+      "updated": "2026-10-18"
+    },
     "01 Projects/Penthouse/Rebuild Archive/15 - PWA Migration (SvelteKit).md": {
       "tags": [
         "penthouse",
@@ -3119,6 +3635,58 @@
       "title": "Unraid Production Operations",
       "updated": "2026-10-17"
     },
+    "01 Projects/Philosopher/Philosopher KB.md": {
+      "type": "benchmark-log",
+      "topic": "Philosopher KB",
+      "publish": true,
+      "created": "2026-10-06",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "Philosopher KB",
+      "updated": "2026-10-18"
+    },
+    "01 Projects/Philosopher/Philosopher Model.md": {
+      "type": "benchmark-log",
+      "topic": "Philosopher Model",
+      "publish": true,
+      "created": "2026-10-06",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "Philosopher Model",
+      "updated": "2026-10-18"
+    },
+    "01 Projects/Philosopher/Philosopher Project.md": {
+      "type": "project-overview",
+      "topic": "Philosopher Project",
+      "status": "active",
+      "repo": "~/Work/philosopher",
+      "publish": true,
+      "created": "2026-10-07",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "Philosopher Project — Decisions, Tests & State",
+      "featured": 8,
+      "summary": "A private AI philosophy partner that must cite real sources: tested against 40 trick questions, it made up zero quotations.",
+      "updated": "2026-10-18"
+    },
+    "01 Projects/Philosopher/Philosopher dsh Backend.md": {
+      "type": "benchmark-log",
+      "topic": "Philosopher dsh Backend",
+      "publish": true,
+      "created": "2026-10-11",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "Philosopher dsh Backend",
+      "updated": "2026-10-18"
+    },
     "01 Projects/Portfolio Website/About Me Draft.md": {
       "tags": [
         "troubleshooting",
@@ -3289,6 +3857,98 @@
       "project": "Portfolio Website",
       "title": "Tag System & Portfolio Integration",
       "updated": "2026-10-17"
+    },
+    "01 Projects/RAFT Laya Router/RAFT Laya Router.md": {
+      "type": "note",
+      "category": "Agents & Tooling",
+      "tags": [
+        "agents",
+        "routing",
+        "calibration",
+        "raft"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "RAFT — Laya task router (Penthouse)",
+      "featured": 52,
+      "summary": "A small AI that decides which bigger AI should do a job, and only acts when confident; tested honestly, savings were modest.",
+      "updated": "2026-10-18"
+    },
+    "01 Projects/Strata/Strata Bench.md": {
+      "type": "benchmark-log",
+      "topic": "Strata Bench",
+      "publish": true,
+      "created": "2026-10-12",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "Strata Bench",
+      "updated": "2026-10-18"
+    },
+    "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md": {
+      "type": "project-showcase",
+      "topic": "Strata RTX 3060 optimization",
+      "created": "2026-10-11",
+      "tags": [
+        "strata",
+        "benchmarks",
+        "optimization",
+        "rtx3060",
+        "showcase"
+      ],
+      "publish": true,
+      "machine": "bigrig",
+      "title": "Strata on the RTX 3060: optimization showcase",
+      "featured": 2,
+      "summary": "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed.",
+      "updated": "2026-10-18"
+    },
+    "01 Projects/Strata/Strata RTX 3060 long-context tuning.md": {
+      "type": "benchmark-report",
+      "topic": "Strata long-context tuning",
+      "created": "2026-10-10",
+      "tags": [
+        "strata",
+        "benchmarks",
+        "optimization",
+        "rtx3060"
+      ],
+      "publish": true,
+      "machine": "bigrig",
+      "title": "Strata: faster long-context responses on the RTX 3060",
+      "updated": "2026-10-18"
+    },
+    "01 Projects/Strata/Strata V100 setup and benchmarks — 2026-10-13.md": {
+      "type": "note",
+      "category": "Strata",
+      "tags": [
+        "omarchy",
+        "strata"
+      ],
+      "updated": "2026-10-13",
+      "publish": true,
+      "created": "2026-10-13",
+      "machine": "bigrig",
+      "title": "Strata V100 setup and benchmarks — 2026-10-13",
+      "featured": 7,
+      "summary": "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
+    },
+    "01 Projects/Swarm Dashboard/Swarm Dashboard.md": {
+      "type": "benchmark-log",
+      "topic": "Swarm Dashboard",
+      "category": "Agents & Tooling",
+      "tags": [
+        "agents",
+        "dashboard",
+        "python"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Swarm Dashboard",
+      "updated": "2026-10-18"
     },
     "01 Projects/Teardown Cafe/99 - Current Handoff.md": {
       "title": "99 - Current Handoff",
@@ -4158,6 +4818,134 @@
       "title": "WireGuard VPN Setup",
       "updated": "2026-10-18"
     },
+    "02 Homelab/Hardware/Dual Tesla P100 vs 2nd 9060 XT.md": {
+      "type": "hardware-decision",
+      "topic": "MASSIVE-RIG GPU upgrade",
+      "updated": "2026-09-23",
+      "category": "Rig & Hardware",
+      "tags": [
+        "rig",
+        "hardware",
+        "gpu",
+        "decision"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Dual Tesla P100 vs a 2nd RX 9060 XT",
+      "featured": 22,
+      "summary": "Two used datacenter GPUs or one more consumer card for a home AI box: the numbers behind the choice."
+    },
+    "02 Homelab/Hardware/Fan Control (MSI Z690-A).md": {
+      "type": "troubleshooting",
+      "topic": "MASSIVE-RIG fans",
+      "status": "blocked on reboot",
+      "updated": "2026-09-23",
+      "category": "Rig & Hardware",
+      "tags": [
+        "rig",
+        "hardware",
+        "fans",
+        "blocked"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Fan Control (MSI Z690-A)"
+    },
+    "02 Homelab/Hardware/GPU Crash & Vulkan Device Pinning.md": {
+      "type": "troubleshooting",
+      "topic": "llama-server SIGABRT",
+      "updated": "2026-09-23",
+      "category": "Rig & Hardware",
+      "tags": [
+        "rig",
+        "vulkan",
+        "gpu",
+        "troubleshooting"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "GPU Crash & Vulkan Device Pinning",
+      "featured": 16,
+      "summary": "Our AI server kept crashing; the trace showed it was secretly using the weak display chip, and one setting fixed it."
+    },
+    "02 Homelab/Hardware/GPU-Overclock-Research.md": {
+      "type": "note",
+      "category": "Rig & Hardware",
+      "tags": [
+        "omarchy",
+        "rig-hardware"
+      ],
+      "updated": "2026-09-25",
+      "publish": true,
+      "created": "2026-09-25",
+      "machine": "bigrig",
+      "title": "GPU Maxing / OC Research — Sept 2026 (rig: Z690-A DDR4, 13600K, RX 9060 XT 16GB, RTX 3060 12GB)"
+    },
+    "02 Homelab/Hardware/Hardware Specs & Roles - Rig Fleet (Sep 2026).md": {
+      "type": "note",
+      "category": "Rig & Hardware",
+      "tags": [
+        "omarchy",
+        "rig-hardware"
+      ],
+      "updated": "2026-09-26",
+      "publish": true,
+      "created": "2026-09-26",
+      "machine": "bigrig",
+      "title": "Hardware Specs & Roles — Rig Fleet (Sep 2026)",
+      "featured": 13,
+      "summary": "Which of my three machines does what, with their parts: the AI desktop, the Unraid server and the laptop, as of September 2026."
+    },
+    "02 Homelab/Hardware/Maya V100 preflight and Qwen fallback — 2026-10-13.md": {
+      "type": "note",
+      "category": "Rig & Hardware",
+      "tags": [
+        "omarchy",
+        "rig-hardware"
+      ],
+      "updated": "2026-10-17",
+      "publish": true,
+      "created": "2026-10-13",
+      "machine": "bigrig",
+      "title": "Maya V100 preflight and Qwen fallback — 2026-10-13"
+    },
+    "02 Homelab/Hardware/Raspberry Pi B+ Utility Node.md": {
+      "type": "hardware-decision",
+      "topic": "Raspberry Pi 1 B+",
+      "updated": "2026-09-23",
+      "category": "Rig & Hardware",
+      "tags": [
+        "hardware",
+        "iot",
+        "decision",
+        "small-models"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Raspberry Pi B+ (2014) as a Utility Node",
+      "featured": 24,
+      "summary": "What a 2014 Raspberry Pi can still usefully do in a modern home lab, and what it cannot."
+    },
+    "02 Homelab/Hardware/Rig Hardware & Display.md": {
+      "type": "hardware",
+      "topic": "MASSIVE-RIG",
+      "updated": "2026-10-17",
+      "category": "Rig & Hardware",
+      "tags": [
+        "rig",
+        "hardware",
+        "display",
+        "hyprland"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Rig Hardware & Display"
+    },
     "02 Homelab/Overview/00 - Server Inventory.md": {
       "tags": [
         "homelab",
@@ -4504,7 +5292,7 @@
       "created": "2026-04-01",
       "publish": false,
       "title": "Troubleshooting Report: The Great LG G8 ThinQ (G820TM) Resurrection",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Session Notes/2026-06-20 Unraid Hardware Swap ASRock B660M.md": {
       "tags": [
@@ -4582,6 +5370,228 @@
       "title": "AI and Local Models Index",
       "updated": "2026-10-17"
     },
+    "03 AI and Local Models/Benchmarks/2026-09-22 Rebench — Coherent Multi-Domain Scoreboard.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "featured": 45,
+      "summary": "Re-running six AI setups on the same fair test flipped the old ranking: the supposed quality champion was just slow.",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/2026-09-23 Rebench2 — Role-Tagged Scoreboard.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "2026-09-23 Rebench2 — Role-Tagged Suite Scoreboard (new suite)",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/2026-09-23 v3 — Small Models vs Ornith Real Research Bench.md": {
+      "type": "note",
+      "category": "Benchmarks",
+      "tags": [
+        "omarchy",
+        "benchmarks"
+      ],
+      "updated": "2026-10-17",
+      "publish": true,
+      "created": "2026-09-24",
+      "machine": "bigrig",
+      "title": "2026-09-23 v3 — Small Models vs Ornith Single-GPU (Real Research-Subagent Bench)"
+    },
+    "03 AI and Local Models/Benchmarks/2026-09-24 Flash-Next Effort Sweep — Lenified Grader.md": {
+      "type": "note",
+      "category": "Benchmarks",
+      "tags": [
+        "omarchy",
+        "benchmarks"
+      ],
+      "updated": "2026-09-24",
+      "publish": true,
+      "created": "2026-09-24",
+      "machine": "bigrig",
+      "title": "2026-09-24 Flash-Next Effort Sweep — Lenified Grader (low / medium / xhigh)",
+      "featured": 46,
+      "summary": "Telling an AI to think harder made it slower and less accurate: maximum effort took 4x longer and scored worse."
+    },
+    "03 AI and Local Models/Benchmarks/2026-09-24 v3 Results — K2 wins on capability, Ornith loses the research core.md": {
+      "type": "note",
+      "category": "Benchmarks",
+      "tags": [
+        "omarchy",
+        "benchmarks"
+      ],
+      "updated": "2026-10-17",
+      "publish": true,
+      "created": "2026-09-24",
+      "machine": "bigrig",
+      "title": "2026-09-24 v3 Results — K2 wins on capability, Ornith loses the research core",
+      "featured": 47,
+      "summary": "A tiny 3.7B-parameter AI beat a model ten times its size on real document research, once the test itself was fixed."
+    },
+    "03 AI and Local Models/Benchmarks/2026-09-24 v4 Results — Thinking flips the ranking.md": {
+      "type": "note",
+      "category": "Benchmarks",
+      "tags": [
+        "omarchy",
+        "benchmarks"
+      ],
+      "updated": "2026-09-24",
+      "publish": true,
+      "created": "2026-09-24",
+      "machine": "bigrig",
+      "title": "2026-09-24 v4 Results — Thinking flips the ranking: LiteResearcher wins",
+      "featured": 10,
+      "summary": "Letting small AI models think before answering reshuffled the leaderboard: the former last-place model rose to first."
+    },
+    "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen 27B vs Flash DeepSWE2.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "date": "2026-10-12",
+      "updated": "2026-10-12",
+      "suite": "contract-v2",
+      "distinct_tasks": 24,
+      "runs_per_model": 3,
+      "recorded_results": 144,
+      "tags": [
+        "benchmark",
+        "qwen",
+        "flash",
+        "strata",
+        "deepswe2",
+        "local-inference"
+      ],
+      "publish": true,
+      "created": "2026-10-12",
+      "machine": "bigrig",
+      "title": "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
+      "featured": 35,
+      "summary": "A fair, repeated head-to-head of two coding AIs showed the supposed winner was not reliably better, a correction the data forced."
+    },
+    "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen vs Flash — Methods and artifacts.md": {
+      "type": "methodology",
+      "category": "Benchmarks",
+      "date": "2026-10-12",
+      "updated": "2026-10-12",
+      "tags": [
+        "benchmark",
+        "methodology",
+        "deepswe2",
+        "audit",
+        "reproducibility"
+      ],
+      "publish": true,
+      "created": "2026-10-12",
+      "machine": "bigrig",
+      "title": "2026-10-12 Matched Qwen vs Flash — Methods and artifacts"
+    },
+    "03 AI and Local Models/Benchmarks/Bench Suite (~bench).md": {
+      "type": "methodology",
+      "topic": "bench suite",
+      "updated": "2026-10-12",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "tooling",
+        "harness"
+      ],
+      "publish": true,
+      "created": "2026-10-12",
+      "machine": "bigrig",
+      "title": "Bench Suite (`~/bench`)"
+    },
+    "03 AI and Local Models/Benchmarks/Benchmark Methodology.md": {
+      "type": "methodology",
+      "topic": "Benchmark Methodology",
+      "updated": "2026-10-12",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "methodology"
+      ],
+      "publish": true,
+      "created": "2026-10-12",
+      "machine": "bigrig",
+      "title": "Benchmark Methodology"
+    },
+    "03 AI and Local Models/Benchmarks/Browser Debloat & Benchmark 2026-09-19.md": {
+      "type": "documentation",
+      "topic": "Browser Debloat & Benchmark 2026-09-19",
+      "category": "Omarchy & Desktop",
+      "tags": [
+        "browsers",
+        "debloat",
+        "benchmark"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Browser Debloat & Benchmark — 2026-09-19",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-lowlen.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-24",
+      "machine": "bigrig",
+      "title": "Flash-Next effort sweep: eff-flash-lowlen",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-med.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-24",
+      "machine": "bigrig",
+      "title": "Flash-Next effort sweep: eff-flash-med",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-xhigh.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-24",
+      "machine": "bigrig",
+      "title": "Flash-Next effort sweep: eff-flash-xhigh",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/HF Trending Models Survey.md": {
+      "type": "benchmark-log",
+      "topic": "HF Trending Models Survey",
+      "publish": true,
+      "created": "2026-10-01",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "HF Trending Models Survey",
+      "updated": "2026-10-18"
+    },
     "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md": {
       "tags": [
         "local-ai",
@@ -4618,6 +5628,51 @@
       "title": "Local AI Benchmark Content Site — Plan",
       "updated": "2026-10-17"
     },
+    "03 AI and Local Models/Benchmarks/MASSIVE-RIG.md": {
+      "type": "benchmark-log",
+      "topic": "MASSIVE-RIG",
+      "publish": true,
+      "created": "2026-09-29",
+      "tags": [
+        "omarchy"
+      ],
+      "updated": "2026-10-17",
+      "machine": "bigrig",
+      "title": "MASSIVE-RIG",
+      "featured": 39,
+      "summary": "We tried every common speed-up on a home AI server; most did nothing, and measuring that saved real money."
+    },
+    "03 AI and Local Models/Benchmarks/Model Benchmarks Archive.md": {
+      "type": "archive",
+      "topic": "Qwen3.8 Rig — historical benchmark log",
+      "updated": "2026-09-21",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "archive"
+      ],
+      "publish": true,
+      "created": "2026-09-21",
+      "machine": "bigrig",
+      "title": "Model Benchmarks Archive"
+    },
+    "03 AI and Local Models/Benchmarks/Model Benchmarks.md": {
+      "type": "benchmark-hub",
+      "topic": "Model Benchmarks",
+      "updated": "2026-10-17",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "hub",
+        "index"
+      ],
+      "publish": true,
+      "created": "2026-10-12",
+      "machine": "bigrig",
+      "title": "Model Benchmarks",
+      "featured": 38,
+      "summary": "Which home-run AI models code best and fastest? One chart shows the trade-off, and the surprise that thinking less made the daily model better."
+    },
     "03 AI and Local Models/Benchmarks/Nemotron vs Qwen Domain Fingerprint.md": {
       "tags": [
         "cost"
@@ -4628,6 +5683,125 @@
       "summary": "I quizzed two AI models on 130 questions across 15 subjects. They tied on scores but differ in which recent facts they know and how much they overthink.",
       "title": "Nemotron 3.5 Lightning vs Qwen 3.6 — Domain Fingerprint",
       "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/Open Local Thinking-Partner Models.md": {
+      "type": "benchmark-log",
+      "topic": "Open Local Thinking-Partner Models",
+      "publish": true,
+      "created": "2026-10-06",
+      "tags": [
+        "omarchy"
+      ],
+      "machine": "bigrig",
+      "title": "Open Local Thinking-Partner Models",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/ReBench rebench-flash-ad384.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "ReBench rebench-flash-ad384",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/ReBench rebench-laguna.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "ReBench rebench-laguna",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/ReBench rebench-ornith-23g.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "ReBench rebench-ornith-23g",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/ReBench rebench-ornith-iq2m.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "ReBench rebench-ornith-iq2m",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/ReBench rebench-qwenq5-low.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "ReBench rebench-qwenq5-low",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/ReBench rebench-qwenq5-off.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "ReBench rebench-qwenq5-off",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/ReBench2 <tag>.md": {
+      "type": "benchmark-run",
+      "category": "Benchmarks",
+      "tags": [
+        "benchmark",
+        "metalbench"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "ReBench2 <tag>",
+      "updated": "2026-10-18"
+    },
+    "03 AI and Local Models/Benchmarks/V100 coding-model comparison — 2026-10-14.md": {
+      "type": "benchmark-results",
+      "category": "Benchmarks",
+      "tags": [
+        "omarchy",
+        "benchmarks",
+        "v100"
+      ],
+      "updated": "2026-10-14",
+      "publish": true,
+      "created": "2026-10-14",
+      "machine": "bigrig",
+      "title": "V100 coding-model comparison — 2026-10-14",
+      "featured": 44,
+      "summary": "We tested a rival AI on the same coding tasks: it took 5x longer and solved a third as many, so we stopped the project."
     },
     "03 AI and Local Models/Mac - MLX/Gemma 4 12B QAT Q4.md": {
       "tags": [
@@ -4720,6 +5894,141 @@
       "engine": "mlx",
       "title": "Ternary Bonsai 27B",
       "updated": "2026-10-17"
+    },
+    "03 AI and Local Models/Models & Serving/Flash-Next AD384.md": {
+      "type": "model",
+      "model": "Qwen3.8-Flash-Next-AD-3.84bpw-IQ4_XS",
+      "host": "MASSIVE-RIG (CUDA build, -ot .ffn_.*_exps.=CPU)",
+      "quant": "IQ4_XS-M64",
+      "updated": "2026-10-17",
+      "category": "Models & Serving",
+      "tags": [
+        "model",
+        "benchmark",
+        "llama.cpp",
+        "serving"
+      ],
+      "publish": true,
+      "created": "2026-09-21",
+      "machine": "bigrig",
+      "title": "Flash-Next AD384"
+    },
+    "03 AI and Local Models/Models & Serving/Flash-Next llama.cpp Audit 2026-09-28.md": {
+      "type": "note",
+      "topic": "llama.cpp engine audit — Qwen3.8-Flash-Next 176B on the rig",
+      "updated": "2026-09-28",
+      "tags": [
+        "llama.cpp",
+        "serving",
+        "flash-next",
+        "audit",
+        "performance"
+      ],
+      "publish": true,
+      "created": "2026-09-28",
+      "machine": "bigrig",
+      "title": "Flash-Next llama.cpp Audit (2026-09-28)",
+      "featured": 43,
+      "summary": "Hunting a 20% speedup on a giant AI model: the real bottleneck turned out to be CPU math, not disk or memory."
+    },
+    "03 AI and Local Models/Models & Serving/Laguna XS-2.1.md": {
+      "type": "model",
+      "model": "Laguna XS-2.1 (Q4_K_M)",
+      "host": "Unraid (port 18007, container llm-laguna-xs21, image local/qwen38-flash-cuda)",
+      "quant": "Q4_K_M, 33B total / 3B active MoE (260K ctx)",
+      "updated": "2026-10-17",
+      "category": "Models & Serving",
+      "tags": [
+        "model",
+        "unraid",
+        "benchmark"
+      ],
+      "publish": true,
+      "created": "2026-09-21",
+      "machine": "bigrig",
+      "title": "Laguna XS-2.1 33B (3B active)"
+    },
+    "03 AI and Local Models/Models & Serving/Ornith-1.5 35B.md": {
+      "type": "model",
+      "model": "Ornith-1.5-35B-A3B",
+      "host": "MASSIVE-RIG (AMD 9060 XT lane)",
+      "quant": "IQ2_M / MTPv2-23G-ICE",
+      "updated": "2026-10-17",
+      "category": "Models & Serving",
+      "tags": [
+        "model",
+        "benchmark",
+        "amd-lane"
+      ],
+      "publish": true,
+      "created": "2026-09-21",
+      "machine": "bigrig",
+      "title": "Ornith-1.5 35B"
+    },
+    "03 AI and Local Models/Models & Serving/Qwen-Q5 27B.md": {
+      "type": "model",
+      "model": "Swift-Qwen3.8-27B-Q5_K_M",
+      "host": "MASSIVE-RIG (port 8080, daily autostart)",
+      "quant": "Q5_K_M",
+      "updated": "2026-10-17",
+      "category": "Models & Serving",
+      "tags": [
+        "model",
+        "benchmark",
+        "daily-driver"
+      ],
+      "publish": true,
+      "created": "2026-09-21",
+      "machine": "bigrig",
+      "title": "Qwen-Q5 27B"
+    },
+    "03 AI and Local Models/Models & Serving/Unraid Flash-Next.md": {
+      "type": "model",
+      "model": "Qwen3.8-Flash-Next UD-IQ3_XXS",
+      "host": "Unraid (port 18006, container llm-qwen38-flash)",
+      "quant": "IQ3_XXS (ncmoe 48 experts on DDR4)",
+      "updated": "2026-09-21",
+      "category": "Models & Serving",
+      "tags": [
+        "model",
+        "unraid",
+        "benchmark"
+      ],
+      "publish": true,
+      "created": "2026-09-21",
+      "machine": "bigrig",
+      "title": "Unraid Flash-Next"
+    },
+    "03 AI and Local Models/Models & Serving/Unraid LLM Control Center.md": {
+      "type": "ops",
+      "topic": "Unraid LLM serving",
+      "updated": "2026-09-23",
+      "category": "Models & Serving",
+      "tags": [
+        "unraid",
+        "serving",
+        "docker",
+        "ops"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Unraid LLM Control Center"
+    },
+    "03 AI and Local Models/Models & Serving/llama.cpp Upgrade Roadmap.md": {
+      "type": "ops",
+      "topic": "llama.cpp versions",
+      "updated": "2026-09-23",
+      "category": "Models & Serving",
+      "tags": [
+        "llama.cpp",
+        "versions",
+        "ops"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "llama.cpp Upgrade Roadmap (rig + Unraid)"
     },
     "03 AI and Local Models/Unraid - Ollama/Architecture Guide - Sovereign AI Stack.md": {
       "tags": [
@@ -5001,7 +6310,7 @@
       "created": "2025-09-15",
       "publish": true,
       "title": "Semicolon _",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "05 Linux and Systems/Documentation/Additional System Documentation.md": {
       "tags": [
@@ -5609,6 +6918,54 @@
       "title": "The . Char",
       "updated": "2026-10-17"
     },
+    "05 Linux and Systems/Omarchy/Desktop Session Persistence.md": {
+      "type": "ops",
+      "topic": "Omarchy desktop",
+      "updated": "2026-09-23",
+      "category": "Omarchy & Desktop",
+      "tags": [
+        "omarchy",
+        "hyprland",
+        "tmux",
+        "crash-recovery"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Desktop Session Persistence (Hyprland / tmux)"
+    },
+    "05 Linux and Systems/Omarchy/Omarchy Plugins & Shell Widgets.md": {
+      "type": "ops",
+      "topic": "Omarchy desktop",
+      "updated": "2026-09-23",
+      "category": "Omarchy & Desktop",
+      "tags": [
+        "omarchy",
+        "quickshell",
+        "plugins",
+        "bar"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Omarchy Plugins & Shell Widgets"
+    },
+    "05 Linux and Systems/Omarchy/Omarchy Trim Debloat & Idle Policy.md": {
+      "type": "ops",
+      "topic": "Omarchy desktop",
+      "updated": "2026-09-23",
+      "category": "Omarchy & Desktop",
+      "tags": [
+        "omarchy",
+        "debloat",
+        "power",
+        "update-policy"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Omarchy Trim, Debloat & Idle Policy"
+    },
     "05 Linux and Systems/Quoting/Backquotes.md": {
       "tags": [
         "cli"
@@ -5890,6 +7247,38 @@
       "publish": true,
       "title": "Tools and Workflow Index",
       "updated": "2026-10-17"
+    },
+    "07 Tools and Workflow/Agents/DeepSeek Harness Setup.md": {
+      "type": "ops",
+      "topic": "DeepSeek Harness (dsh)",
+      "updated": "2026-09-23",
+      "category": "Agents & Tooling",
+      "tags": [
+        "dsh",
+        "opencode",
+        "config",
+        "sandbox"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "DeepSeek Harness Setup"
+    },
+    "07 Tools and Workflow/Agents/Hermes Install & Config Port.md": {
+      "type": "ops",
+      "topic": "Hermes / opencode configuration",
+      "updated": "2026-09-23",
+      "category": "Agents & Tooling",
+      "tags": [
+        "hermes",
+        "opencode",
+        "config",
+        "ops"
+      ],
+      "publish": true,
+      "created": "2026-09-23",
+      "machine": "bigrig",
+      "title": "Hermes Install & Config Port"
     }
   },
   "links": {
@@ -5904,6 +7293,152 @@
     ],
     "README.md": [
       "Index"
+    ],
+    "00 Index/Agents & Tooling.md": [
+      "Vault Map",
+      "Hermes Install & Config Port",
+      "DeepSeek Harness Setup",
+      "Swarm Dashboard",
+      "RAFT Laya Router",
+      "Models & Serving",
+      "Desktop Session Persistence",
+      "Omarchy Plugins & Shell Widgets",
+      "Benchmarks",
+      "Raspberry Pi B+ Utility Node"
+    ],
+    "00 Index/Benchmarks.md": [
+      "Vault Map",
+      "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
+      "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Bench Suite (~bench)",
+      "Model Benchmarks Archive",
+      "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "ReBench rebench-qwenq5-low",
+      "ReBench rebench-qwenq5-off",
+      "ReBench rebench-flash-ad384",
+      "ReBench rebench-ornith-23g",
+      "ReBench rebench-ornith-iq2m",
+      "ReBench rebench-laguna",
+      "Models & Serving",
+      "Rig & Hardware",
+      "RAFT Laya Router"
+    ],
+    "00 Index/Hermes Runs — Session Index.md": [
+      "Vault Map",
+      "Rig Hardware & Display",
+      "Qwen3.8 Rig",
+      "Dual Tesla P100 vs 2nd 9060 XT",
+      "Hermes Install & Config Port",
+      "Omarchy Trim Debloat & Idle Policy",
+      "GPU Crash & Vulkan Device Pinning",
+      "Omarchy Plugins & Shell Widgets",
+      "Ornith-1.5 35B",
+      "Benchmark Methodology",
+      "Knowledge Garden",
+      "Swarm Dashboard",
+      "Unraid LLM Control Center",
+      "Unraid Flash-Next",
+      "Flash-Next AD384",
+      "Browser Debloat & Benchmark 2026-09-19",
+      "DeepSeek Harness Setup",
+      "Model Benchmarks",
+      "Laguna XS-2.1",
+      "llama.cpp Upgrade Roadmap",
+      "Fan Control (MSI Z690-A)",
+      "RAFT Laya Router",
+      "Bench Suite (~bench)",
+      "Raspberry Pi B+ Utility Node",
+      "Desktop Session Persistence",
+      "Navigation & Theme System Enhancement",
+      "Navigation & Theme System Enhancement - Final",
+      "Model Benchmarks Archive"
+    ],
+    "00 Index/Knowledge Garden.md": [
+      "Vault Map",
+      "Hermes Runs — Session Index",
+      "Omarchy & Desktop",
+      "Benchmarks"
+    ],
+    "00 Index/Models & Serving.md": [
+      "Desktop Session Persistence",
+      "Strata V100 setup and benchmarks — 2026-10-13",
+      "Vault Map",
+      "Qwen3.8 Rig",
+      "Unraid LLM Control Center",
+      "Qwen-Q5 27B",
+      "Flash-Next AD384",
+      "Unraid Flash-Next",
+      "Laguna XS-2.1",
+      "Ornith-1.5 35B",
+      "llama.cpp Upgrade Roadmap",
+      "Rig & Hardware",
+      "GPU Crash & Vulkan Device Pinning",
+      "Benchmarks",
+      "Benchmark Methodology",
+      "Agents & Tooling",
+      "Omarchy Plugins & Shell Widgets"
+    ],
+    "00 Index/Omarchy & Desktop.md": [
+      "Vault Map",
+      "Omarchy Trim Debloat & Idle Policy",
+      "Omarchy Plugins & Shell Widgets",
+      "Desktop Session Persistence",
+      "Browser Debloat & Benchmark 2026-09-19",
+      "Models & Serving",
+      "Bench Suite (~bench)",
+      "Agents & Tooling"
+    ],
+    "00 Index/Qwen3.8 Rig.md": [
+      "Desktop Session Persistence",
+      "Strata V100 setup and benchmarks — 2026-10-13",
+      "Models & Serving",
+      "Vault Map",
+      "Model Benchmarks",
+      "Qwen-Q5 27B",
+      "Flash-Next AD384",
+      "Unraid Flash-Next",
+      "Ornith-1.5 35B",
+      "Bench Suite (~bench)",
+      "Benchmark Methodology",
+      "Rig Hardware & Display",
+      "GPU Crash & Vulkan Device Pinning",
+      "Model Benchmarks Archive",
+      "Laguna XS-2.1"
+    ],
+    "00 Index/Rig & Hardware.md": [
+      "Vault Map",
+      "Rig Hardware & Display",
+      "GPU Crash & Vulkan Device Pinning",
+      "Fan Control (MSI Z690-A)",
+      "Dual Tesla P100 vs 2nd 9060 XT",
+      "Raspberry Pi B+ Utility Node",
+      "Models & Serving",
+      "Benchmarks"
+    ],
+    "00 Index/Vault Map.md": [
+      "Rig & Hardware",
+      "Omarchy & Desktop",
+      "Models & Serving",
+      "Benchmarks",
+      "Agents & Tooling",
+      "Web App",
+      "Rig Hardware & Display",
+      "Qwen3.8 Rig",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Unraid LLM Control Center",
+      "Omarchy Plugins & Shell Widgets",
+      "Hermes Runs — Session Index",
+      "Knowledge Garden",
+      "Model Benchmarks Archive"
+    ],
+    "00 Index/Web App.md": [
+      "Vault Map",
+      "Navigation & Theme System Enhancement",
+      "Navigation & Theme System Enhancement - Final",
+      "Hermes Runs — Session Index"
     ],
     "01 Projects/Projects Index.md": [
       "Index",
@@ -6147,6 +7682,15 @@
     "01 Projects/Penthouse/Self-Hosting/10 - Mobile Update Versioning Protocol.md": [
       "15 - PWA Rebuild"
     ],
+    "01 Projects/Philosopher/Philosopher Model.md": [
+      "Philosopher Project"
+    ],
+    "01 Projects/Philosopher/Philosopher Project.md": [
+      "Philosopher Model",
+      "Philosopher KB",
+      "Open Local Thinking-Partner Models",
+      "Ornith-1.5 35B"
+    ],
     "01 Projects/Portfolio Website/About Me Draft.md": [
       "Privacy Filter - Matrix Decode",
       "Github Pages Setup"
@@ -6207,6 +7751,39 @@
       "Deployment Guide",
       "Claude-Cursor Workflow",
       "Teardown Cafe"
+    ],
+    "01 Projects/RAFT Laya Router/RAFT Laya Router.md": [
+      "Agents & Tooling",
+      "Vault Map",
+      "Bench Suite (~bench)",
+      "Models & Serving",
+      "Qwen3.8 Rig",
+      "Flash-Next AD384",
+      "Raspberry Pi B+ Utility Node"
+    ],
+    "01 Projects/Strata/Strata Bench.md": [
+      "Strata RTX 3060 Optimization Showcase",
+      "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
+      "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
+      "Strata RTX 3060 long-context tuning"
+    ],
+    "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md": [
+      "Strata RTX 3060 long-context tuning",
+      "Strata Bench",
+      "Model Benchmarks"
+    ],
+    "01 Projects/Strata/Strata RTX 3060 long-context tuning.md": [
+      "Strata RTX 3060 Optimization Showcase",
+      "Strata Bench",
+      "Models & Serving",
+      "Benchmark Methodology"
+    ],
+    "01 Projects/Swarm Dashboard/Swarm Dashboard.md": [
+      "Agents & Tooling",
+      "Vault Map",
+      "Desktop Session Persistence",
+      "Hermes Install & Config Port",
+      "Omarchy Plugins & Shell Widgets"
     ],
     "01 Projects/Teardown Cafe/Branding & Design Bridge.md": [
       "Building Material You 3 Website Lessons",
@@ -6471,6 +8048,47 @@
       "TrueNAS Build Guide",
       "Budget SAS Drive NAS Build Guide"
     ],
+    "02 Homelab/Hardware/Dual Tesla P100 vs 2nd 9060 XT.md": [
+      "Rig & Hardware",
+      "Vault Map",
+      "Rig Hardware & Display"
+    ],
+    "02 Homelab/Hardware/Fan Control (MSI Z690-A).md": [
+      "Rig & Hardware",
+      "Vault Map",
+      "Rig Hardware & Display",
+      "Omarchy Trim Debloat & Idle Policy"
+    ],
+    "02 Homelab/Hardware/GPU Crash & Vulkan Device Pinning.md": [
+      "Rig & Hardware",
+      "Vault Map",
+      "Rig Hardware & Display",
+      "Qwen3.8 Rig",
+      "Hermes Install & Config Port"
+    ],
+    "02 Homelab/Hardware/Maya V100 preflight and Qwen fallback — 2026-10-13.md": [
+      "V100 coding-model comparison — 2026-10-14"
+    ],
+    "02 Homelab/Hardware/Raspberry Pi B+ Utility Node.md": [
+      "Rig & Hardware",
+      "Vault Map",
+      "Model Benchmarks",
+      "RAFT Laya Router"
+    ],
+    "02 Homelab/Hardware/Rig Hardware & Display.md": [
+      "Flash-Next llama.cpp Audit 2026-09-28",
+      "MASSIVE-RIG",
+      "Philosopher dsh Backend",
+      "Strata V100 setup and benchmarks — 2026-10-13",
+      "Rig & Hardware",
+      "Vault Map",
+      "Qwen3.8 Rig",
+      "Model Benchmarks",
+      "GPU Crash & Vulkan Device Pinning",
+      "Dual Tesla P100 vs 2nd 9060 XT",
+      "Fan Control (MSI Z690-A)",
+      "Omarchy Trim Debloat & Idle Policy"
+    ],
     "02 Homelab/Reference/Home Lab.md": [
       "Home Server",
       "Raspberry Pi",
@@ -6570,6 +8188,87 @@
       "Unraid LLM Serving Throughput",
       "Unraid Qwen3.6 Terminal Agent - July 2026"
     ],
+    "03 AI and Local Models/Benchmarks/2026-09-22 Rebench — Coherent Multi-Domain Scoreboard.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/2026-09-23 Rebench2 — Role-Tagged Scoreboard.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/2026-09-23 v3 — Small Models vs Ornith Real Research Bench.md": [
+      "2026-09-24 v3 Results — K2 wins on capability, Ornith loses the research core",
+      "2026-09-24 v4 Results — Thinking flips the ranking",
+      "2026-09-23 Rebench2 — Role-Tagged Scoreboard"
+    ],
+    "03 AI and Local Models/Benchmarks/2026-09-24 v3 Results — K2 wins on capability, Ornith loses the research core.md": [
+      "2026-09-24 v4 Results — Thinking flips the ranking",
+      "2026-09-23 v3 — Small Models vs Ornith Real Research Bench",
+      "2026-09-23 Small Models vs Ornith (v2)",
+      "Model Benchmarks"
+    ],
+    "03 AI and Local Models/Benchmarks/2026-09-24 v4 Results — Thinking flips the ranking.md": [
+      "2026-09-24 v3 Results — K2 wins on capability, Ornith loses the research core",
+      "2026-09-23 v3 — Small Models vs Ornith Real Research Bench",
+      "Model Benchmarks"
+    ],
+    "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen 27B vs Flash DeepSWE2.md": [
+      "Model Benchmarks",
+      "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
+      "Strata Bench",
+      "Benchmark Methodology"
+    ],
+    "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen vs Flash — Methods and artifacts.md": [
+      "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
+      "Model Benchmarks"
+    ],
+    "03 AI and Local Models/Benchmarks/Bench Suite (~bench).md": [
+      "Benchmarks",
+      "Vault Map",
+      "Model Benchmarks",
+      "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
+      "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
+      "Benchmark Methodology",
+      "Qwen3.8 Rig"
+    ],
+    "03 AI and Local Models/Benchmarks/Benchmark Methodology.md": [
+      "Benchmarks",
+      "Vault Map",
+      "Model Benchmarks",
+      "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
+      "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
+      "Qwen-Q5 27B",
+      "Bench Suite (~bench)"
+    ],
+    "03 AI and Local Models/Benchmarks/Browser Debloat & Benchmark 2026-09-19.md": [
+      "Omarchy & Desktop",
+      "Vault Map",
+      "Omarchy Trim Debloat & Idle Policy",
+      "Omarchy Plugins & Shell Widgets",
+      "Agents & Tooling"
+    ],
+    "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-lowlen.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-med.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/Flash-Next effort sweep: eff-flash-xhigh.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
     "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md": [
       "Qwen3.8-27B",
       "LLM Benchmark Registry - Mac vs Unraid",
@@ -6599,6 +8298,82 @@
       "Frontier Landscape - What Fits 128GB",
       "LLM Benchmark Registry - Mac vs Unraid"
     ],
+    "03 AI and Local Models/Benchmarks/MASSIVE-RIG.md": [
+      "Rig Hardware & Display"
+    ],
+    "03 AI and Local Models/Benchmarks/Model Benchmarks Archive.md": [
+      "Benchmarks",
+      "Vault Map",
+      "Qwen3.8 Rig",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Bench Suite (~bench)",
+      "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "Flash-Next AD384"
+    ],
+    "03 AI and Local Models/Benchmarks/Model Benchmarks.md": [
+      "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "2026-09-23 Rebench2 — Role-Tagged Scoreboard",
+      "Benchmarks",
+      "Vault Map",
+      "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
+      "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
+      "Strata RTX 3060 Optimization Showcase",
+      "Flash-Next AD384\\",
+      "Qwen-Q5 27B\\",
+      "Unraid Flash-Next\\",
+      "Laguna XS-2.1\\",
+      "Laguna XS-2.1",
+      "Qwen-Q5 27B",
+      "Flash-Next AD384",
+      "Unraid Flash-Next",
+      "Ornith-1.5 35B",
+      "Benchmark Methodology",
+      "Bench Suite (~bench)",
+      "Hermes Runs — Session Index"
+    ],
+    "03 AI and Local Models/Benchmarks/ReBench rebench-flash-ad384.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/ReBench rebench-laguna.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/ReBench rebench-ornith-23g.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/ReBench rebench-ornith-iq2m.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/ReBench rebench-qwenq5-low.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/ReBench rebench-qwenq5-off.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
+    "03 AI and Local Models/Benchmarks/ReBench2 <tag>.md": [
+      "Benchmarks",
+      "Model Benchmarks",
+      "Benchmark Methodology",
+      "Vault Map"
+    ],
     "03 AI and Local Models/Mac - MLX/Gemma 4 12B QAT Q4.md": [
       "Gemma 4 12B QAT Q8"
     ],
@@ -6619,6 +8394,80 @@
     ],
     "03 AI and Local Models/Mac - MLX/Ternary Bonsai 27B.md": [
       "Gemma 4 12B QAT Q4"
+    ],
+    "03 AI and Local Models/Models & Serving/Flash-Next AD384.md": [
+      "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "Models & Serving",
+      "Vault Map",
+      "Model Benchmarks",
+      "Qwen-Q5 27B",
+      "Unraid Flash-Next",
+      "Ornith-1.5 35B",
+      "Laguna XS-2.1",
+      "Benchmark Methodology",
+      "GPU Crash & Vulkan Device Pinning",
+      "llama.cpp Upgrade Roadmap"
+    ],
+    "03 AI and Local Models/Models & Serving/Laguna XS-2.1.md": [
+      "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "Models & Serving",
+      "Vault Map",
+      "Model Benchmarks",
+      "Unraid Flash-Next",
+      "Unraid LLM Control Center",
+      "Benchmark Methodology",
+      "Bench Suite (~bench)"
+    ],
+    "03 AI and Local Models/Models & Serving/Ornith-1.5 35B.md": [
+      "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "Models & Serving",
+      "Vault Map",
+      "Model Benchmarks",
+      "Rig Hardware & Display",
+      "Qwen-Q5 27B",
+      "Flash-Next AD384",
+      "Benchmark Methodology"
+    ],
+    "03 AI and Local Models/Models & Serving/Qwen-Q5 27B.md": [
+      "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
+      "Models & Serving",
+      "Vault Map",
+      "Model Benchmarks",
+      "Flash-Next AD384",
+      "Ornith-1.5 35B",
+      "Unraid Flash-Next",
+      "Laguna XS-2.1",
+      "Benchmark Methodology",
+      "Bench Suite (~bench)",
+      "Qwen3.8 Rig",
+      "Omarchy Plugins & Shell Widgets"
+    ],
+    "03 AI and Local Models/Models & Serving/Unraid Flash-Next.md": [
+      "Models & Serving",
+      "Vault Map",
+      "Model Benchmarks",
+      "Flash-Next AD384",
+      "Unraid LLM Control Center",
+      "Laguna XS-2.1",
+      "Benchmark Methodology",
+      "llama.cpp Upgrade Roadmap"
+    ],
+    "03 AI and Local Models/Models & Serving/Unraid LLM Control Center.md": [
+      "Models & Serving",
+      "Vault Map",
+      "Laguna XS-2.1",
+      "Unraid Flash-Next",
+      "llama.cpp Upgrade Roadmap",
+      "Hermes Install & Config Port"
+    ],
+    "03 AI and Local Models/Models & Serving/llama.cpp Upgrade Roadmap.md": [
+      "Models & Serving",
+      "Vault Map",
+      "Flash-Next llama.cpp Audit 2026-09-28",
+      "Rig Hardware & Display",
+      "Unraid LLM Control Center",
+      "Unraid Flash-Next",
+      "Qwen3.8 Rig"
     ],
     "03 AI and Local Models/Unraid - Ollama/Architecture Guide - Sovereign AI Stack.md": [
       "Project Overview - Sovereign AI Stack",
@@ -6973,6 +8822,29 @@
     "05 Linux and Systems/Navigating the Filesystem/The . . Chars.md": [
       "The . Char"
     ],
+    "05 Linux and Systems/Omarchy/Desktop Session Persistence.md": [
+      "Omarchy & Desktop",
+      "Vault Map",
+      "Omarchy Trim Debloat & Idle Policy",
+      "Qwen3.8 Rig",
+      "Rig Hardware & Display"
+    ],
+    "05 Linux and Systems/Omarchy/Omarchy Plugins & Shell Widgets.md": [
+      "Omarchy & Desktop",
+      "Vault Map",
+      "Omarchy Trim Debloat & Idle Policy",
+      "Qwen3.8 Rig",
+      "Swarm Dashboard"
+    ],
+    "05 Linux and Systems/Omarchy/Omarchy Trim Debloat & Idle Policy.md": [
+      "Omarchy & Desktop",
+      "Vault Map",
+      "Fan Control (MSI Z690-A)",
+      "Browser Debloat & Benchmark 2026-09-19",
+      "Omarchy Plugins & Shell Widgets",
+      "Rig Hardware & Display",
+      "llama.cpp Upgrade Roadmap"
+    ],
     "05 Linux and Systems/Quoting/Backquotes.md": [
       "Bash"
     ],
@@ -7046,6 +8918,21 @@
       "GrapheneOS Migration Guide - Complete Documentation",
       "Obsidian Productivity Mastery",
       "Obsidian Vault Git Sync"
+    ],
+    "07 Tools and Workflow/Agents/DeepSeek Harness Setup.md": [
+      "Agents & Tooling",
+      "Vault Map",
+      "Hermes Install & Config Port",
+      "Qwen3.8 Rig",
+      "Omarchy Plugins & Shell Widgets"
+    ],
+    "07 Tools and Workflow/Agents/Hermes Install & Config Port.md": [
+      "Agents & Tooling",
+      "Vault Map",
+      "DeepSeek Harness Setup",
+      "Swarm Dashboard",
+      "Qwen3.8 Rig",
+      "Bench Suite (~bench)"
     ]
   }
 }
