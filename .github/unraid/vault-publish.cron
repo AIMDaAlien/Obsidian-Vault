@@ -1,0 +1,1 @@
+*/15 * * * * /mnt/cache/vault/bin/publish.sh >/dev/null 2>&1

@@ -19,8 +19,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
+      - name: Install test dependencies
+        run: pip install pyyaml
+
       - name: Run script tests
-        run: python3 -m unittest discover -s .github/scripts/tests
+        run: python3 -m unittest discover -s .github/scripts/tests -t .github/scripts
 
       - name: Privacy gate
         run: python3 .github/scripts/privacy-gate.py --base-ref "${{ github.event.before }}"

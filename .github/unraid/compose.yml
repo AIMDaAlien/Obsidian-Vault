@@ -1,0 +1,18 @@
+published: /vault/published
+sources:
+  - name: m5pro
+    path: /sources/m5pro
+    machine: mac
+    syncthing_folder: m5pro-vault
+  - name: bigrig
+    path: /sources/bigrig
+    machine: bigrig
+    syncthing_folder: omarchy-vault
+    path_map:
+      "01 Projects/The Penthouse/": "01 Projects/Penthouse/"
+    attachments: _attachments
+protected: [".github/", ".gitignore", "README.md", "garden-manifest.json", "curation.yml"]
+exclude_dirs: ["_inbox", "_private", ".obsidian", ".trash"]
+exclude_ext: ["json", "jsonl", "log", "csv", "py", "sh", "patch", "txt", "exit-code"]
+image_ext: ["png", "svg", "jpg", "jpeg", "gif", "webp"]
+syncthing_api: http://127.0.0.1:8384

@@ -18,3 +18,9 @@ Start at [[Index]]. Notes are organized by category:
 - 07 Tools and Workflow - Obsidian, publishing, business bridges
 
 Only notes explicitly marked "keep private" are excluded from the garden.
+
+## How this vault is published
+
+Notes live in two source vaults on two machines. Syncthing delivers each one, receive-only, to an Unraid server. A compose job runs every 15 minutes: it merges the sources, applies `curation.yml`, runs the privacy gate, and pushes the result here.
+
+Never edit this repository directly. The next compose run overwrites any change made here.

@@ -1,0 +1,53 @@
+# Curation overrides applied by the compose job (spec 6.1). BigRig notes only; Mac notes carry
+# featured/summary in their own frontmatter. Keys per entry: path, featured, summary, publish.
+- path: "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md"
+  featured: 2
+  summary: "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed."
+- path: "01 Projects/Strata/Strata V100 setup and benchmarks \u2014 2026-10-13.md"
+  featured: 7
+  summary: "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
+- path: "01 Projects/Philosopher/Philosopher Project.md"
+  featured: 8
+  summary: "A private AI philosophy partner that must cite real sources: tested against 40 trick questions, it made up zero quotations."
+- path: "03 AI and Local Models/Benchmarks/2026-09-24 v4 Results \u2014 Thinking flips the ranking.md"
+  featured: 10
+  summary: "Letting small AI models think before answering reshuffled the leaderboard: the former last-place model rose to first."
+- path: "02 Homelab/Hardware/Hardware Specs & Roles - Rig Fleet (Sep 2026).md"
+  featured: 13
+  summary: "Which of my three machines does what, with their parts: the AI desktop, the Unraid server and the laptop, as of September 2026."
+- path: "02 Homelab/Hardware/GPU Crash & Vulkan Device Pinning.md"
+  featured: 16
+  summary: "Our AI server kept crashing; the trace showed it was secretly using the weak display chip, and one setting fixed it."
+- path: "02 Homelab/Hardware/Dual Tesla P100 vs 2nd 9060 XT.md"
+  featured: 22
+  summary: "Two used datacenter GPUs or one more consumer card for a home AI box: the numbers behind the choice."
+- path: "02 Homelab/Hardware/Raspberry Pi B+ Utility Node.md"
+  featured: 24
+  summary: "What a 2014 Raspberry Pi can still usefully do in a modern home lab, and what it cannot."
+- path: "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen 27B vs Flash DeepSWE2.md"
+  featured: 35
+  summary: "A fair, repeated head-to-head of two coding AIs showed the supposed winner was not reliably better, a correction the data forced."
+- path: "03 AI and Local Models/Benchmarks/Model Benchmarks.md"
+  featured: 38
+  summary: "Which home-run AI models code best and fastest? One chart shows the trade-off, and the surprise that thinking less made the daily model better."
+- path: "03 AI and Local Models/Benchmarks/MASSIVE-RIG.md"
+  featured: 39
+  summary: "We tried every common speed-up on a home AI server; most did nothing, and measuring that saved real money."
+- path: "03 AI and Local Models/Models & Serving/Flash-Next llama.cpp Audit 2026-09-28.md"
+  featured: 43
+  summary: "Hunting a 20% speedup on a giant AI model: the real bottleneck turned out to be CPU math, not disk or memory."
+- path: "V100 coding-model comparison \u2014 2026-10-14.md"
+  featured: 44
+  summary: "We tested a rival AI on the same coding tasks: it took 5x longer and solved a third as many, so we stopped the project."
+- path: "03 AI and Local Models/Benchmarks/2026-09-22 Rebench \u2014 Coherent Multi-Domain Scoreboard.md"
+  featured: 45
+  summary: "Re-running six AI setups on the same fair test flipped the old ranking: the supposed quality champion was just slow."
+- path: "03 AI and Local Models/Benchmarks/2026-09-24 Flash-Next Effort Sweep \u2014 Lenified Grader.md"
+  featured: 46
+  summary: "Telling an AI to think harder made it slower and less accurate: maximum effort took 4x longer and scored worse."
+- path: "03 AI and Local Models/Benchmarks/2026-09-24 v3 Results \u2014 K2 wins on capability, Ornith loses the research core.md"
+  featured: 47
+  summary: "A tiny 3.7B-parameter AI beat a model ten times its size on real document research, once the test itself was fixed."
+- path: "01 Projects/RAFT Laya Router/RAFT Laya Router.md"
+  featured: 52
+  summary: "A small AI that decides which bigger AI should do a job, and only acts when confident; tested honestly, savings were modest."
