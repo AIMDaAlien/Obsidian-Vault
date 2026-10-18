@@ -100,8 +100,8 @@ def resolve_bare_embeds(text, index, image_ext=IMAGE_EXT):
     return _map_prose(text, lambda s: WIKILINK_RE.sub(sub, s)), unresolved
 
 
-def unwrap_excluded_links(text, index, exclude_ext):
-    """Replace links to excluded or absent non-Markdown files with their display text.
+def unwrap_excluded_links(text, index, exclude_ext, image_ext=IMAGE_EXT):
+    """Replace links to excluded-extension files, or images missing from the index, with display text.
 
     Returns (text, unwrapped targets in document order).
     """
@@ -111,11 +111,7 @@ def unwrap_excluded_links(text, index, exclude_ext):
         bang, target, _anchor, _pipe, alias = m.groups()
         name = target.strip()
         ext = _ext(name)
-        if not ext or ext == "md":
-            return m.group(0)
-        dead = ext in exclude_ext or (
-            re.fullmatch(r"[a-z][a-z0-9]{0,4}", ext) and _base(name).lower() not in index
-        )
+        dead = ext in exclude_ext or (ext in image_ext and _base(name).lower() not in index)
         if not dead:
             return m.group(0)
         unwrapped.append(name)

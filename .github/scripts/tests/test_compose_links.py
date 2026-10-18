@@ -90,6 +90,16 @@ class Unwrap(unittest.TestCase):
         out, done = unwrap_excluded_links("x ![[a/c.png]] y", {}, EXT)
         self.assertEqual(out, "x c y"); self.assertEqual(done, ["a/c.png"])
 
+    def test_dotted_note_names_untouched(self):
+        for idx in ({}, {"node.js.md": ["Node.js.md"]}):
+            for t in ("[[Node.js]]", "[[llama.cpp]]", "[[Next.js]]", "[[ASP.NET]]"):
+                self.assertEqual(unwrap_excluded_links(t, idx, EXT), (t, []))
+
+    def test_chart_png_absent_unwrapped_present_kept(self):
+        self.assertEqual(unwrap_excluded_links("[[chart.png]]", {}, EXT), ("chart", ["chart.png"]))
+        t = "[[chart.png]]"
+        self.assertEqual(unwrap_excluded_links(t, {"chart.png": ["x/chart.png"]}, EXT), (t, []))
+
     def test_markdown_target_untouched(self):
         t = "[[a/b.md]]"
         self.assertEqual(unwrap_excluded_links(t, {}, EXT), (t, []))
