@@ -77,6 +77,21 @@ The model's own encoder (Q8_0 requantization of the BF16 mmproj, 615 MB, llama.c
 
 17 of 24 tasks faster, paired geometric-mean wall ratio 0.909; on the 14 tasks whose answers were within 15% of the same length, median wall 37.3 → 32.3 s. The 125 W configuration beats the card's 250 W run from five days ago on wall clock, with one more task passing (e21-index-invalidation). Short-prompt TTFT is unchanged: a 650-token prompt prefills in ~1.5 s either way.
 
+## Round 2 at 125 W (final text config, 12 workers; 2 rounds, 80K + 2 short)
+
+| candidate | decode short | decode after 80K | prefill 80K | GPU J/tok | gate |
+| --- | ---: | ---: | ---: | ---: | --- |
+| final (reference) | 80.9 | 82.0 | 1185 | 1.96 | 2/2 |
+| `--adapt-async 1` | **85.5** | **89.5** | 1184 | **1.84** | 2/2 |
+| `STRATA_PREFILL_AUTO_MAX=32768` | 82.5 | 83.6 | **1204** | 1.96 | 2/2 |
+| `--adapt-every 2` | 84.8 | 78.1 | 1183 | 1.90 | 2/2 |
+| `--adapt-swaps 192` | 81.1 | 77.2 | 1183 | 1.88 | 2/2 |
+| `--ple-row-cache 4194304` | 80.6 | 81.3 | 1182 | 1.98 | 2/2 |
+
+The async adaptive tier (opt-in in 0.1.43.1; upstream: answers can differ slightly from the blocking tier) is +6-9%
+decode at lower energy; the 32K chunk ceiling +1.6% prefill. Both go to a round-3 acceptance on the production
+vision configuration plus the 24-task suite before adoption. Swap/adaptation rates and the n-gram row cache: flat.
+
 ## Still open
 
 - Prefill is now the long-prompt bottleneck (180K ≈ 3 min). Candidates: `STRATA_PREFILL_AUTO_MAX=32768`; upstream PR 1401's FP16 tensor-core prompt kernels for sm_70 (+10% prompt, unmerged, conflicts); PR 2355/2356 (+5–7% prompt on V100).
