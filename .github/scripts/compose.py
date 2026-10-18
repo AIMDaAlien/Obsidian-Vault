@@ -99,8 +99,12 @@ def run(args) -> int:
     md_path, json_path = report_dir / "last-run.md", report_dir / "last-run.json"
     code, last_counts = 0, {}
     try:
+        try:
+            last_counts = read_last_counts(json_path)
+        except (OSError, ValueError, AttributeError, TypeError) as exc:
+            json_path = None  # leave the unreadable file exactly as it is
+            raise ComposeError(f"last-run.json unreadable: {exc}") from exc
         cfg = load_config(args.config)
-        last_counts = read_last_counts(json_path)
         report.counts = {s.name: count_notes(s.path, cfg.exclude_dirs) if s.path.is_dir() else 0
                          for s in cfg.sources}
         busy = None

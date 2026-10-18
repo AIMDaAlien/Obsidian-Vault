@@ -102,7 +102,7 @@ def _bullets(items: list[str]) -> list[str]:
     return [f"- {i}" for i in items] or ["- none"]
 
 
-def write_report(md_path: Path, json_path: Path, report: RunReport) -> None:
+def write_report(md_path: Path, json_path: Path | None, report: RunReport) -> None:
     lines = [
         f"# vault publish {report.timestamp} — {report.status}",
         "",
@@ -118,6 +118,8 @@ def write_report(md_path: Path, json_path: Path, report: RunReport) -> None:
         "## Skipped protected", *_bullets(report.skipped), "",
     ]
     Path(md_path).write_text("\n".join(lines), encoding="utf-8")
+    if json_path is None:
+        return
     Path(json_path).write_text(json.dumps(asdict(report), indent=2), encoding="utf-8")
 
 

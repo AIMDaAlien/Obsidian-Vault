@@ -292,12 +292,29 @@ class Cli(TmpCase):
     def counts(self):
         return json.loads((self.work / "last-run.json").read_text())["counts"]
 
-    def test_dry_run_and_failure_preserve_counts(self):
+    def test_dry_run_preserves_counts(self):
         self.assertEqual(self.run_cli().returncode, 0)
         self.assertEqual(self.counts(), {"m5pro": 3, "bigrig": 3})
         (self.work / "bigrig" / "Extra.md").write_text("# Extra\n")
         self.assertEqual(self.run_cli("--dry-run").returncode, 0)
         self.assertEqual(self.counts(), {"m5pro": 3, "bigrig": 3})
+
+    def test_early_failure_preserves_counts(self):
+        self.assertEqual(self.run_cli().returncode, 0)
+        proc = subprocess.run([sys.executable, str(SCRIPTS / "compose.py"), "--config",
+                               str(self.work / "missing.yml"), "--report-dir", str(self.work),
+                               "--skip-syncthing-check"], cwd=self.tmp, capture_output=True, text=True)
+        self.assertEqual(proc.returncode, 1)
+        self.assertTrue(self.last_md().splitlines()[0].endswith("— failed"))
+        self.assertEqual(self.counts(), {"m5pro": 3, "bigrig": 3})
+
+    def test_corrupt_last_run_json_fails_and_is_preserved(self):
+        path = self.work / "last-run.json"
+        path.write_bytes(b"{not json")
+        proc = self.run_cli("--no-push")
+        self.assertEqual(proc.returncode, 1)
+        self.assertIn("last-run.json unreadable:", self.last_md())
+        self.assertEqual(path.read_bytes(), b"{not json")
 
     def test_first_run_failure_writes_no_counts(self):
         (self.work / "bigrig" / "Index.md").write_text("# clash\n")
