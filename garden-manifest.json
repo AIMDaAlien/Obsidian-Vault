@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T01:38:24Z",
+  "generated_at": "2026-10-18T19:59:48Z",
   "tree": [
     {
       "path": "Index.md",
@@ -1770,8 +1770,10 @@
       "created": "2025-11-08",
       "publish": true,
       "project": "3D Print Shoppe",
+      "featured": 69,
+      "summary": "Why I built my print-shop site as a static site with a tiny cart, a JSON product list and email-link forms, and what I rejected (Next.js, Redux, a database).",
       "title": "Architecture Decisions",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/3D Print Shoppe/Branding & Assets.md": {
       "tags": [
@@ -1794,8 +1796,10 @@
       "created": "2025-11-21",
       "publish": true,
       "project": "3D Print Shoppe",
+      "featured": 70,
+      "summary": "How I priced and marketed a neighborhood 3D-printing side business: price tiers and margins, running costs of about $1.50 a month, customer steps and risks.",
       "title": "Business & Marketing Guide - 3D Print Shoppe",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/3D Print Shoppe/Business Plan Overview.md": {
       "tags": [
@@ -1807,15 +1811,17 @@
       "publish": true,
       "project": "3D Print Shoppe",
       "title": "Business Plan Overview",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/3D Print Shoppe/Common Issues & Patterns.md": {
       "tags": [],
       "created": "2025-11-08",
       "publish": true,
       "project": "3D Print Shoppe",
+      "featured": 68,
+      "summary": "Ten bugs from building a small online shop (broken buttons, double-loaded data, cart items merging by mistake) with the cause and fix for each.",
       "title": "Common Issues & Patterns",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/3D Print Shoppe/Custom Order System.md": {
       "tags": [
@@ -1837,7 +1843,7 @@
       "publish": true,
       "project": "3D Print Shoppe",
       "title": "Customer Inquiries & Responses",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/3D Print Shoppe/Market Research Findings.md": {
       "tags": [],
@@ -1845,7 +1851,7 @@
       "publish": true,
       "project": "3D Print Shoppe",
       "title": "Market Research Findings",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/3D Print Shoppe/Payment Workflow.md": {
       "tags": [
@@ -1916,7 +1922,7 @@
       "publish": true,
       "project": "3D Print Shoppe",
       "title": "3D Print Business - Main Index",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/3D Print Shoppe/Subagent Workflow Guide.md": {
       "tags": [
@@ -1984,6 +1990,8 @@
       "repository": "https://github.com/AIMDaAlien/aim-corne-accuracy-trainer",
       "local_repository": "~/Documents/Projects/Corne Accuracy Trainer",
       "deployment": "<private-deployment>",
+      "featured": 63,
+      "summary": "A typing trainer for a 46-key split keyboard that teaches accuracy first: every mistake restarts the line, and speed stays hidden until you master the keys.",
       "title": "Corne Accuracy Trainer"
     },
     "01 Projects/Corne Accuracy Trainer/01 - Technical Architecture and Product Record.md": {
@@ -2066,8 +2074,10 @@
       "publish": true,
       "project": "Ironmind",
       "project-path": "~/Documents/Projects/ironmind",
+      "featured": 64,
+      "summary": "A Mac menu-bar app that hands me one tiny exercise or thinking card after 30 minutes of sitting. Rebuilt around the single feature I actually used.",
       "title": "Ironmind - Hub",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Local Language Engine/00 - Project Overview.md": {
       "tags": [
@@ -2084,6 +2094,8 @@
       "repository": "~/Documents/Projects/language-engine",
       "phase": "Phase 3 - native Mac app and voice loop (core built)",
       "platform": "Mac",
+      "featured": 58,
+      "summary": "A private Arabic tutor that runs entirely on my own MacBook: what it teaches, the 36 GB memory budget it must stay under, and the key design decisions.",
       "title": "Local Language Engine"
     },
     "01 Projects/Local Language Engine/01 - Architecture and Implementation Plan.md": {
@@ -2129,6 +2141,8 @@
       "engine": "mlx",
       "project": "Local Language Engine",
       "status": "Mac-only rebuild underway - Phase 3 core built, voice tests pending",
+      "featured": 57,
+      "summary": "Why I rebuilt my Arabic tutor to run on one Mac, and how I picked its AI model by testing three of them on 100 sentences. Includes timings and a glossary.",
       "title": "Mac Rebuild Build Log"
     },
     "01 Projects/Local Language Engine/99 - Current Handoff.md": {
@@ -2176,6 +2190,8 @@
       "updated": "2026-10-12",
       "publish": true,
       "project": "Penthouse",
+      "featured": 1,
+      "summary": "The map of a self-hosted chat app rebuilt from scratch: what was built, why, in what order, and where every decision and fix is written down.",
       "title": "The Penthouse Rebuild Knowledge Hub"
     },
     "01 Projects/Penthouse/01 - Rebuild Timeline.md": {
@@ -2200,10 +2216,11 @@
       ],
       "created": "2026-03-05",
       "publish": true,
-      "featured": 11,
+      "featured": 54,
       "project": "Penthouse",
+      "summary": "How a small private chat app is built: the app, the server, a shared rulebook and a database, and what happens in the moment you hit send.",
       "title": "Architecture in Plain English",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/03 - Stability Rules (Anti-Tech-Debt).md": {
       "tags": [
@@ -2228,10 +2245,11 @@
       ],
       "created": "2026-03-05",
       "publish": true,
-      "featured": 2,
+      "featured": 3,
       "project": "Penthouse",
+      "summary": "Ten real bugs from building a chat app, each with what users saw, the root cause and the fix: duplicate messages, stuck sends, crashes, low contrast.",
       "title": "Reliability Fix Log",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/05 - Multi-Model Delegation Workflow.md": {
       "tags": [
@@ -2383,8 +2401,10 @@
       "created": "2026-04-09",
       "publish": true,
       "project": "Penthouse",
+      "featured": 56,
+      "summary": "Why a chat app moved from an installable Android file to a website that installs itself: updates land instantly and the download shrank from ~10MB to ~200KB.",
       "title": "PWA Rebuild",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/16 - Wave A - Live Chat on the PWA.md": {
       "tags": [
@@ -2445,8 +2465,10 @@
       "created": "2026-05-07",
       "publish": true,
       "project": "Penthouse",
+      "featured": 55,
+      "summary": "Why a chat app was rebuilt from scratch: 29 patched-together database migrations and a 2,287-line page became a cleaner stack, with reasons for each choice.",
       "title": "v4 Clean-Room Rebuild",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/20 - V5 Redesign.md": {
       "tags": [
@@ -2888,10 +2910,9 @@
       ],
       "created": "2026-02-17",
       "publish": true,
-      "featured": 4,
       "project": "Penthouse",
       "title": "Self-Hosting a Chat App on TrueNAS — Index",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/01 - Architecture.md": {
       "tags": [
@@ -2905,8 +2926,10 @@
       "created": "2026-02-17",
       "publish": true,
       "project": "Penthouse",
+      "featured": 33,
+      "summary": "How a home server is exposed to the internet safely: only a reverse proxy faces outside, behind router port forwarding, with free HTTPS certificates.",
       "title": "Architecture — TrueNAS, Public Internet, No Proxy",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/02 - TrueNAS Deploy Runbook.md": {
       "tags": [
@@ -2933,10 +2956,11 @@
       ],
       "created": "2026-02-18",
       "publish": true,
-      "featured": 1,
+      "featured": 32,
       "project": "Penthouse",
+      "summary": "Practical security and reliability fixes for a small chat server: database safety, login tokens, permission checks, uploads and locked-down containers.",
       "title": "Backend Hardening Checklist",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/04 - IP Drift and DDNS.md": {
       "tags": [
@@ -2949,8 +2973,10 @@
       "created": "2026-02-17",
       "publish": true,
       "project": "Penthouse",
+      "featured": 27,
+      "summary": "A home server's public address changes, which silently broke its HTTPS certificates; a 5-minute script that updates DNS only when the address drifts fixes it.",
       "title": "IP Drift and DDNS (Cloudflare DNS-Only)",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/05 - Git Push Auto-Deploy.md": {
       "tags": [
@@ -2963,8 +2989,10 @@
       "created": "2026-02-18",
       "publish": true,
       "project": "Penthouse",
+      "featured": 34,
+      "summary": "Deploy a home server by pushing to GitHub: a self-hosted runner pulls, rebuilds only the app and checks health, plus what can still break it.",
       "title": "Git Push Auto-Deploy (GitHub Actions Self-Hosted Runner on TrueNAS)",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/06 - Deploy Downtime Minimization.md": {
       "tags": [
@@ -2977,8 +3005,10 @@
       "created": "2026-02-18",
       "publish": true,
       "project": "Penthouse",
+      "featured": 29,
+      "summary": "How to update an app on one home server with only a couple of seconds of blip: rebuild beside the old copy, restart only the app, and drain connections.",
       "title": "Deploy Downtime Minimization (Compose + Caddy)",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/07 - Security Gotchas.md": {
       "tags": [
@@ -2989,8 +3019,10 @@
       "created": "2026-02-18",
       "publish": true,
       "project": "Penthouse",
+      "featured": 31,
+      "summary": "Seven mistakes common in first-time public servers, such as leaked tokens, wildcard CORS, shared rate limits and unchecked file paths, and how to avoid each.",
       "title": "Security Gotchas (Self-Hosted, Public Internet)",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/08 - SSH Hardening on TrueNAS.md": {
       "tags": [
@@ -3003,8 +3035,10 @@
       "created": "2026-02-18",
       "publish": true,
       "project": "Penthouse",
+      "featured": 30,
+      "summary": "A lock-out-safe way to switch a server to key-only SSH login with no root access, plus the TrueNAS quirk that makes manual edits vanish on reboot.",
       "title": "SSH Hardening on TrueNAS SCALE",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/09 - Disk Exhaustion Prevention.md": {
       "tags": [
@@ -3017,8 +3051,10 @@
       "created": "2026-02-18",
       "publish": true,
       "project": "Penthouse",
+      "featured": 28,
+      "summary": "Why home servers mysteriously stop, and four cheap fixes: cap container logs, rotate cron logs, prune Docker cache weekly, and trim the SQLite journal.",
       "title": "Disk Exhaustion Prevention (Home Server, Docker)",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Penthouse/Self-Hosting/10 - Mobile Update Versioning Protocol.md": {
       "tags": [
@@ -3063,8 +3099,9 @@
       "created": "2026-08-04",
       "updated": "2026-08-04",
       "publish": true,
-      "featured": 5,
+      "featured": 11,
       "project": "Penthouse",
+      "summary": "A home server went dark after a storage reshuffle; the cause was two lost drive-pool assignments, and the fix restored them with no data loss.",
       "title": "Unraid Pool Recovery - 2026-08-04"
     },
     "01 Projects/Penthouse/Self-Hosting/13 - Unraid Production Operations.md": {
@@ -3103,8 +3140,10 @@
       "created": "2025-12-09",
       "publish": true,
       "project": "Portfolio Website",
+      "featured": 75,
+      "summary": "How the Knowledge Garden graph works: notes become dots, links between notes become lines, and well-connected notes drift to the middle. Code included.",
       "title": "Building a Knowledge Garden with D3.js",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Portfolio Website/CSS Breakpoint Strategy.md": {
       "tags": [
@@ -3157,6 +3196,8 @@
       "updated": "2026-08-01",
       "publish": true,
       "project": "Portfolio Website",
+      "featured": 73,
+      "summary": "How to host a static site free on GitHub Pages with your own domain and HTTPS, what to check after each push, and the common reasons changes do not appear.",
       "title": "GitHub Pages Setup & Deployment"
     },
     "01 Projects/Portfolio Website/Knowledge Garden - Sidebar Implementation Session.md": {
@@ -3207,8 +3248,10 @@
       "created": "2025-10-11",
       "publish": true,
       "project": "Portfolio Website",
+      "featured": 74,
+      "summary": "How to hide an email and phone number behind black redaction bars that scramble and decode into real text when hovered. Full code included.",
       "title": "Matrix-Decode Privacy Filter Implementation",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Portfolio Website/Project - Current State.md": {
       "tags": [
@@ -3226,8 +3269,9 @@
       "created": "2025-10-26",
       "updated": "2026-08-01",
       "publish": true,
-      "featured": 10,
+      "featured": 9,
       "project": "Portfolio Website",
+      "summary": "How my portfolio works: plain HTML with no framework, a notes garden that updates itself, and a live server-health panel that exposes no private details.",
       "title": "Portfolio Website — Current State"
     },
     "01 Projects/Portfolio Website/Tag System & Portfolio Integration.md": {
@@ -3417,8 +3461,10 @@
         "[[Teardown Cafe - Design System]]",
         "[[Claude Interaction Guidelines]]"
       ],
+      "featured": 67,
+      "summary": "Design choices and mistakes from building a dark, accessible website, including a Focus Mode toggle that switches off distracting animation for readers.",
       "title": "Building a Material You 3 Website - Lessons Learned",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Teardown Cafe/Documentation/Content Workflow.md": {
       "tags": [
@@ -3428,8 +3474,10 @@
       "created": "2025-10-15",
       "publish": true,
       "project": "Teardown Cafe",
+      "featured": 66,
+      "summary": "A repeatable process for publishing a hardware-teardown blog post, from taking photos to stripping hidden location data, taking 45 to 80 minutes each.",
       "title": "Teardown Cafe - Content Workflow",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Teardown Cafe/Documentation/Context Prompt.md": {
       "tags": [
@@ -3565,8 +3613,10 @@
       "created": "2025-10-15",
       "publish": true,
       "project": "Teardown Cafe",
+      "featured": 65,
+      "summary": "Six real website-build problems, each with what broke, the root cause and the fix, from outdated framework knowledge to a script that failed on a Mac.",
       "title": "Teardown Cafe - Troubleshooting & Lessons Learned",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Teardown Cafe/Documentation/TrueNAS Build Entry.md": {
       "tags": [
@@ -3642,8 +3692,10 @@
       "created": "2025-11-16",
       "publish": true,
       "project": "Tech Consulting",
+      "featured": 72,
+      "summary": "What mattered most when launching a small local tech-help business: start with one service, use warm referrals, and the real income math behind it.",
       "title": "Key Lessons & Insights",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Tech Consulting/Launch Strategy - First 30 Days.md": {
       "tags": [
@@ -3671,8 +3723,10 @@
       "created": "2025-11-16",
       "publish": true,
       "project": "Tech Consulting",
+      "featured": 71,
+      "summary": "How a student tech consultant priced three services against Geek Squad and local shops, when to use flat or hourly rates, and when to raise prices.",
       "title": "Pricing Strategy & Psychology",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/Tech Consulting/Quick Start Checklist.md": {
       "tags": [
@@ -3804,8 +3858,10 @@
       "created": "2025-11-18",
       "publish": true,
       "project": "TypingLab",
+      "featured": 61,
+      "summary": "An offline typing trainer that works without internet and sends nothing anywhere. It adapts lessons to your weakest keys and unlocks letters as you improve.",
       "title": "TypingLab Project Overview",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/TypingLab/01 - Technical Architecture.md": {
       "tags": [],
@@ -3849,8 +3905,10 @@
       "created": "2025-11-18",
       "publish": true,
       "project": "TypingLab",
+      "featured": 62,
+      "summary": "How a typing trainer decides what to practice: it scores each key, unlocks new keys at 35 WPM and 95% accuracy, and aims 70% of practice at weak keys.",
       "title": "Adaptive Algorithm Deep Dive",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "01 Projects/TypingLab/06 - Subagent Implementation Guide.md": {
       "tags": [
@@ -3964,6 +4022,8 @@
       "publish": true,
       "project": "Veyra Companion",
       "type": "troubleshooting-log",
+      "featured": 59,
+      "summary": "Debugging log from a local desktop AI companion: a character image vanished on screen. Six fixes failed. Splitting one window into two solved it.",
       "title": "Troubleshooting and Findings Log"
     },
     "01 Projects/Veyra Companion/07 - Voice and Companion Model Benchmarks.md": {
@@ -3978,6 +4038,8 @@
       "publish": true,
       "project": "Veyra Companion",
       "type": "decision-record",
+      "featured": 60,
+      "summary": "How I compared small AI models for a desktop companion beyond a single score: 10 graded tasks, 12 behaviour probes, and why the winner was a voice, not a model.",
       "title": "Voice and Companion Model Benchmarks"
     },
     "01 Projects/Veyra Companion/08 - Current Progress and Acceptance.md": {
@@ -4041,9 +4103,10 @@
       "tags": [],
       "created": "2026-03-15",
       "publish": true,
-      "featured": 6,
+      "featured": 5,
+      "summary": "I moved my network's ad-blocking DNS from a dying 512MB Raspberry Pi to a Pi 5 on NVMe storage, broke the internet twice, and documented both fixes.",
       "title": "Pi-hole Migration: RPi B+ → RPi 5 NVMe",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Guides/Pi-hole Setup Guide - Complete Journey.md": {
       "tags": [
@@ -4052,8 +4115,10 @@
       ],
       "created": "2025-09-23",
       "publish": true,
+      "featured": 18,
+      "summary": "A whole-home ad blocker on a $35 Raspberry Pi: the parts, the one-character typo that broke it, and a TV that went from 14,000 to under 100 requests a day.",
       "title": "Pi-hole Setup: Raspberry Pi 3 B+",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Guides/Pi-hole TrueNAS Network Conflict Troubleshooting.md": {
       "tags": [
@@ -4062,8 +4127,10 @@
       ],
       "created": "2025-10-13",
       "publish": true,
+      "featured": 14,
+      "summary": "Ad blocking silently stopped after I added a storage server to my network. Root cause: one wrong setting made the wrong device the network's router.",
       "title": "Pi-hole Stopped Working After TrueNAS Setup",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Guides/TrueNAS Build Guide.md": {
       "tags": [
@@ -4073,9 +4140,10 @@
       ],
       "created": "2025-10-05",
       "publish": true,
-      "featured": 14,
+      "featured": 4,
+      "summary": "How I built a 5.46TB home storage server for about $270 from secondhand enterprise drives, including the dead drive, the no-display scare, and the costs.",
       "title": "Building a Beast: TrueNAS SAS Server for $270",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Guides/WireGuard VPN Setup.md": {
       "tags": [
@@ -4085,8 +4153,10 @@
       ],
       "created": "2025-09-30",
       "publish": true,
+      "featured": 26,
+      "summary": "How to set up a private tunnel back to your home network from your phone in about 30 minutes, so ad blocking follows you everywhere.",
       "title": "WireGuard VPN Setup",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Overview/00 - Server Inventory.md": {
       "tags": [
@@ -4101,8 +4171,10 @@
       "created": "2026-06-27",
       "publish": true,
       "last_incident": "2026-06-27",
+      "featured": 12,
+      "summary": "A tour of every machine in my home lab and its job: storage server, DNS Pi, a backup computer that takes over if the main one fails, and an AI box.",
       "title": "Server Inventory",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Overview/01 - Services Dashboard.md": {
       "tags": [
@@ -4137,7 +4209,9 @@
       ],
       "created": "2025-01-01",
       "publish": true,
-      "updated": "2026-10-17"
+      "featured": 25,
+      "summary": "A step-by-step guide to tuning the settings of an AI-server motherboard for speed and low idle power, including the mistakes that can waste days.",
+      "updated": "2026-10-18"
     },
     "02 Homelab/Reference/CPU Architectures.md": {
       "tags": [],
@@ -4191,10 +4265,11 @@
       ],
       "created": "2025-10-14",
       "publish": true,
-      "featured": 12,
+      "featured": 20,
       "status": "complete",
+      "summary": "I planned a monitoring setup on the wrong Raspberry Pi. Checking the hardware showed it was far weaker, so I worked out RAM needs and upgraded to a Pi 5.",
       "title": "Prometheus & Grafana Monitoring Stack - Lessons Learned",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Reference/Prometheus Grafana Stack - Implementation Guide.md": {
       "tags": [
@@ -4208,8 +4283,10 @@
       "related": [
         "[Prometheus Grafana Monitoring Stack - Lessons Learned]"
       ],
+      "featured": 21,
+      "summary": "A step-by-step guide to a home monitoring dashboard on a Raspberry Pi 5 that uses under 300MB of memory, with commands, expected output and fixes.",
       "title": "Prometheus + Grafana Monitoring Stack - Implementation Guide",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Reference/Raspberry Pi.md": {
       "tags": [
@@ -4352,8 +4429,10 @@
       ],
       "created": "2025-10-01",
       "publish": true,
+      "featured": 23,
+      "summary": "A monitoring install kept crashing. The cause was a 10-year-old Raspberry Pi chip too old for modern software, so I chose a $45 upgrade over a hack.",
       "title": "Session: Uptime Kuma Attempt & Career Path Analysis",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Session Notes/2025-11-10 Tech Consulting Website.md": {
       "tags": [
@@ -4384,9 +4463,10 @@
       ],
       "created": "2026-01-09",
       "publish": true,
-      "featured": 7,
+      "featured": 17,
+      "summary": "Pointing my router at my own ad blocker knocked out the whole network. How I got back in, and the safer two-tier DNS layout I use now.",
       "title": "Troubleshooting Report: The \"DNS Loop\" & Pi-hole Integration",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md": {
       "tags": [
@@ -4401,9 +4481,10 @@
       ],
       "created": "2026-01-22",
       "publish": true,
-      "featured": 3,
+      "featured": 15,
+      "summary": "Internet kept dropping for everyone in the house. Modem error counts pointed to a coax cable crushed under furniture; moving it cut errors from 1,145 to zero.",
       "title": "Network Troubleshooting Log: Intermittent WAN Instability",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Session Notes/2026-03-29 LG G8 ThinQ G820TM Resurrection.md": {
       "tags": [
@@ -4438,8 +4519,10 @@
       ],
       "created": "2026-06-20",
       "publish": true,
+      "featured": 6,
+      "summary": "After moving my home server onto new parts the screen froze for hours. The culprit was a wireless keyboard dongle, not the hardware. Every lead I tried.",
       "title": "Unraid Server Hardware Swap — B660M + 12600KF Transplant",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md": {
       "tags": [
@@ -4448,8 +4531,10 @@
       ],
       "created": "2026-07-29",
       "publish": true,
+      "featured": 19,
+      "summary": "A failed disk-resize erased every app on my home server. I rebuilt all 13 from scratch and fixed the resize so the new storage has room to grow.",
       "title": "2026-06-27 Home Lab Restoration & Expansion",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Session Notes/2026-08-12 Session Continuation.md": {
       "tags": [
@@ -4506,8 +4591,10 @@
       "publish": true,
       "machine": "mac",
       "engine": "lithos, splash, mlx",
+      "featured": 36,
+      "summary": "I tested three programs that run AI on a laptop. The fastest was 4.5x quicker than Apple's own, yet still too slow for real coding work.",
       "title": "Inference Engine Face-Off: lithos vs Splash vs MLX",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Benchmarks/LLM Benchmark Registry - Mac vs Unraid.md": {
       "tags": [
@@ -4515,9 +4602,10 @@
       ],
       "created": "2026-08-10",
       "publish": true,
-      "featured": 13,
+      "featured": 37,
+      "summary": "A scoreboard of local AI models on my laptop and home server, graded by exact-match checks with no AI judge, showing the real speed versus accuracy tradeoff.",
       "title": "LLM Benchmark Registry — Mac vs Unraid",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Benchmarks/Local AI Benchmark Content Site.md": {
       "tags": [
@@ -4536,8 +4624,10 @@
       ],
       "created": "2026-08-12",
       "publish": true,
+      "featured": 51,
+      "summary": "I quizzed two AI models on 130 questions across 15 subjects. They tied on scores but differ in which recent facts they know and how much they overthink.",
       "title": "Nemotron 3.5 Lightning vs Qwen 3.6 — Domain Fingerprint",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Mac - MLX/Gemma 4 12B QAT Q4.md": {
       "tags": [
@@ -4615,8 +4705,10 @@
       "publish": true,
       "machine": "mac",
       "engine": "mlx",
+      "featured": 42,
+      "summary": "I tried three precision levels of one AI model on 33 tricky questions. The cheapest scored best and was fastest, so extra precision was wasted.",
       "title": "Qwen3.8-27B — Deploy, Benchmarks, Verdict",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Mac - MLX/Ternary Bonsai 27B.md": {
       "tags": [
@@ -4700,8 +4792,10 @@
       "publish": true,
       "machine": "unraid",
       "engine": "llama.cpp",
+      "featured": 53,
+      "summary": "An AI model replied with nothing but slashes. The cause was a switch that turned off its thinking step, and turning it back on fixed it.",
       "title": "Deepwen-3.6",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Frontier Landscape - What Fits 128GB.md": {
       "tags": [
@@ -4713,8 +4807,10 @@
       "publish": true,
       "machine": "unraid",
       "engine": "llama.cpp",
+      "featured": 49,
+      "summary": "Is there a smarter open AI model than mine that fits a 128 GB home server? A sorted table of the biggest models shows why the answer is no.",
       "title": "Frontier Landscape — what fits 128 GB (Aug 2026)",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Unraid - llama.cpp/GLM-5.3-Flash.md": {
       "tags": [
@@ -4738,7 +4834,9 @@
       "publish": true,
       "machine": "unraid",
       "engine": "llama.cpp",
-      "updated": "2026-10-17"
+      "featured": 41,
+      "summary": "One forgotten power-saving setting made my home AI server run at less than half speed. Fixing it and two other tweaks took it from 9.5 to 22 words per second.",
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Qwen3.8-Flash-Next 262K Context on Unraid.md": {
       "title": "Qwen3.8-Flash-Next 262K Context on Unraid",
@@ -4749,7 +4847,9 @@
       "publish": true,
       "machine": "unraid",
       "engine": "llama.cpp",
-      "updated": "2026-10-17"
+      "featured": 40,
+      "summary": "How I got a 176-billion-parameter AI to read a 262,000-token conversation on a modest home server, and which settings made it fast enough.",
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Qwen3.8-Flash-Next.md": {
       "tags": [
@@ -4761,8 +4861,10 @@
       "publish": true,
       "machine": "unraid",
       "engine": "llama.cpp",
+      "featured": 48,
+      "summary": "How I fit a huge 176B-parameter AI onto a 128 GB home server, the rule that decided which version fits, and which speed tricks worked or backfired.",
       "title": "Qwen3.8-Flash-Next (176B MoE)",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Unraid LLM Serving Throughput.md": {
       "tags": [
@@ -4775,11 +4877,12 @@
       ],
       "created": "2026-09-16",
       "publish": true,
-      "featured": 15,
+      "featured": 50,
       "machine": "unraid",
       "engine": "llama.cpp",
+      "summary": "Updating the software that runs my home AI server made it 17% faster with no settings changes; I compared it with a rival engine.",
       "title": "Unraid LLM Serving Throughput",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Unraid Qwen3.6 Terminal Agent - July 2026.md": {
       "tags": [
@@ -5163,8 +5266,10 @@
       ],
       "created": "2025-09-15",
       "publish": true,
+      "featured": 81,
+      "summary": "How your terminal decides what a command is: built in, a separate program, a shortcut (alias) or a function, and how to check which one runs.",
       "title": "Command Types",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "05 Linux and Systems/Fundamentals/Commands.md": {
       "tags": [
@@ -5333,8 +5438,10 @@
       ],
       "created": "2025-09-15",
       "publish": true,
+      "featured": 82,
+      "summary": "How Linux file permissions work and how to set them with chmod, using letters or the three-digit number shortcut like 751.",
       "title": "chmod",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "05 Linux and Systems/Linux File Permissions/chown.md": {
       "tags": [],
@@ -5613,8 +5720,10 @@
       ],
       "created": "2025-09-21",
       "publish": true,
+      "featured": 79,
+      "summary": "Skipping repeated calibration steps cut about three minutes from every 3D print start, with the exact settings I use for carbon-fiber filament.",
       "title": "3D Printing Optimization Journey",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "06 Learning Journals/Learning Journals Index.md": {
       "tags": [
@@ -5649,8 +5758,10 @@
       ],
       "created": "2025-09-21",
       "publish": true,
+      "featured": 80,
+      "summary": "Practical steps I took to stop a phone and a smart speaker leaking data, ranked by effort versus payoff.",
       "title": "Privacy Hardening Journey",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "06 Learning Journals/Tech Research Strategies.md": {
       "tags": [
@@ -5691,9 +5802,10 @@
       ],
       "created": "2024-11-28",
       "publish": true,
-      "featured": 8,
+      "featured": 76,
+      "summary": "How I built a tool that scans my private notes for leaked addresses and passwords before publishing the safe ones to my public site.",
       "title": "Building a Privacy-First Obsidian Publishing System",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "07 Tools and Workflow/Claude-Cursor Workflow.md": {
       "tags": [
@@ -5730,8 +5842,10 @@
       ],
       "created": "2025-10-02",
       "publish": true,
+      "featured": 78,
+      "summary": "My failed try at installing a privacy-focused phone system on a carrier-locked phone, and the checklist that let me succeed on a cheaper damaged one.",
       "title": "GrapheneOS Migration Guide: From Verizon Hell to Privacy Success",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "07 Tools and Workflow/Obsidian Productivity Mastery.md": {
       "tags": [
@@ -5762,9 +5876,10 @@
       "created": "2026-08-11",
       "updated": "2026-08-11",
       "publish": true,
-      "featured": 9,
+      "featured": 77,
       "status": "Repaired and syncing",
       "system": "Obsidian Notes Vault",
+      "summary": "My notes stopped syncing to GitHub after a reset broke their shared history. The error, how I merged both sides without losing anything, and the fix.",
       "title": "Obsidian Vault Git Sync"
     },
     "07 Tools and Workflow/Tools and Workflow Index.md": {
