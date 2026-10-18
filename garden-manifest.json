@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T21:09:19Z",
+  "generated_at": "2026-10-18T21:15:24Z",
   "tree": [
     {
       "path": "Index.md",
@@ -655,6 +655,10 @@
     },
     {
       "path": "01 Projects/Strata/Strata V100 setup and benchmarks — 2026-10-13.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Strata/Strata V100 tuning — 2026-10-18.md",
       "type": "file"
     },
     {
@@ -2015,6 +2019,10 @@
     },
     {
       "path": "_attachments/strata-rtx3060-showcase",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/strata-v100-tuning-20261018",
       "type": "dir"
     },
     {
@@ -3934,6 +3942,20 @@
       "title": "Strata V100 setup and benchmarks — 2026-10-13",
       "featured": 7,
       "summary": "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
+    },
+    "01 Projects/Strata/Strata V100 tuning — 2026-10-18.md": {
+      "type": "note",
+      "category": "Strata",
+      "tags": [
+        "omarchy",
+        "strata",
+        "v100"
+      ],
+      "updated": "2026-10-18",
+      "publish": true,
+      "created": "2026-10-18",
+      "machine": "bigrig",
+      "title": "Strata V100 tuning — 2026-10-18"
     },
     "01 Projects/Swarm Dashboard/Swarm Dashboard.md": {
       "type": "benchmark-log",
@@ -7763,6 +7785,7 @@
     ],
     "01 Projects/Strata/Strata Bench.md": [
       "Strata RTX 3060 Optimization Showcase",
+      "Strata V100 tuning — 2026-10-18",
       "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
       "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
       "Strata RTX 3060 long-context tuning"
