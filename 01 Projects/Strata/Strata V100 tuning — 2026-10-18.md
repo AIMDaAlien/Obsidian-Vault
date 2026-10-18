@@ -19,12 +19,12 @@ Goal: the most useful tokens per second and per joule out of one Tesla V100-PCIe
 
 ![[strata-v100-tuning-20261018/headline.png]]
 
-| | morning (0.1.39, 100 W, chunk 8192) | now (0.1.43.1 + Volta table, 125 W, chunk 16384) |
+| | morning (0.1.39, 100 W, chunk 8192) | production now (0.1.43.1 + Volta table + async cache, 125 W, chunk 32768, vision loaded) |
 |---|---:|---:|
-| decode, short prompts | 67 tok/s | 81 tok/s |
-| decode after an 80K prompt | 61 tok/s | 79 tok/s |
-| 80K prefill | 873 tok/s | 1180 tok/s |
-| 80K request wall / TTFT | 94.9 s / 91.4 s | 70.5 s / 67.7 s |
+| decode, short prompts | 67 tok/s | 86 tok/s |
+| decode after an 80K prompt | 61 tok/s | 90 tok/s |
+| 80K prefill | 873 tok/s | 1200 tok/s |
+| 80K request wall / TTFT | 94.9 s / 91.4 s | 68.9 s / 66 s |
 | short coding request wall (400 tokens, medium reasoning) | 8.25 s | 7.09 s |
 | GPU J per generated token | 1.9–2.1 | 1.9 |
 | idle CPU package | 85 W | 59 W |
@@ -91,6 +91,29 @@ The model's own encoder (Q8_0 requantization of the BF16 mmproj, 615 MB, llama.c
 The async adaptive tier (opt-in in 0.1.43.1; upstream: answers can differ slightly from the blocking tier) is +6-9%
 decode at lower energy; the 32K chunk ceiling +1.6% prefill. Both go to a round-3 acceptance on the production
 vision configuration plus the 24-task suite before adoption. Swap/adaptation rates and the n-gram row cache: flat.
+
+## Round 3 acceptance on the production vision configuration, and the switch (2026-10-18 evening)
+
+| | production vision config | + `--adapt-async 1` + chunk ceiling 32768 |
+| --- | ---: | ---: |
+| decode short / after 80K | 78.5 / 82.7 tok/s | **86.4 / 89.6** tok/s |
+| 80K prefill | 1182 tok/s | 1200 tok/s |
+| GPU J/token (short) | 1.90 | 1.85 |
+| correctness gate | 2/2 | 2/2 |
+| 24-task suite: median wall / total / passes | 32.6 s / 954 s / 23 | **29.6 s / 874 s / 23** |
+
+The task suite on the candidate: median task wall 29.6 s (Oct 13 at 250 W: 37.2 s), median decode 92.5 tok/s, 23/24
+passes with one task flipping each way (e11 now passes, e13 now fails; both were "varies between repeats" tasks in
+the Oct 13 three-seed campaign). Adopted. **Production since 18:3x:** the vision binary, Q8_0 encoder at 2048 image
+tokens, `--vram-reserve-mib 2400 --adapt-async 1`, `STRATA_PREFILL_AUTO_MAX=32768`, plus the earlier variables;
+backup `config.json.before-vision-async-*`. Live checks: health, eight image tests, variables and flags in the engine
+process, 125 W cap.
+
+**Against the morning (100 W, 0.1.39, chunk 8192):** short decode 67 -> 86 tok/s (+29%), decode after 80K 61 -> 90
+(+47%), 80K prefill 873 -> 1200 (+37%), 80K request 95 -> 69 s, task-suite median 37.2 s (at 250 W!) -> 29.6 s,
+with the vision encoder loaded and lower energy per token.
+
+![[strata-v100-tuning-20261018/tasks-ab.png]]
 
 ## Still open
 
