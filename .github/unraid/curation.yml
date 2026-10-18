@@ -51,3 +51,5 @@
 - path: "01 Projects/RAFT Laya Router/RAFT Laya Router.md"
   featured: 52
   summary: "A small AI that decides which bigger AI should do a job, and only acts when confident; tested honestly, savings were modest."
+- path: "markdown practice.md"
+  publish: false
