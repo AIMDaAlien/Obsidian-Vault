@@ -40,6 +40,8 @@ IP_ALLOWLIST = frozenset((
 PLACEHOLDER_USERS = frozenset(('username', 'you', 'user', 'yourname'))
 
 PHONE = re.compile(r'(?<![\d.-])(?:\+?1[-. ]?)?(?:\((\d{3})\)\s?|(\d{3})[-.\s])(\d{3})[-.\s](\d{4})(?![\d-])')
+CODE_SPAN = re.compile(r'`[^`\n]*`')
+FENCE = re.compile(r'\s*(`{3,}|~{3,})')
 PHONE_BARE = re.compile(r'\b(\d{3})(\d{3})(\d{4})\b')  # ten digits, no separators
 # macOS home paths (also inside file:// URLs) and Windows profile paths, with
 # single or escaped double backslashes and any letter case for the Windows form.
@@ -115,7 +117,7 @@ def is_allowlisted(value, before):
         return True
     if not is_rfc1918(t) and VERSION_BEFORE.search(before[-40:]):
         return True
-    return value in IP_ALLOWLIST or t[3] == 0 or t[0] == 127
+    return value in IP_ALLOWLIST or t[3] == 0 or t[0] == 127 or t[0] == 0
 
 
 def _is_doc_phone(area, exchange):
@@ -146,7 +148,12 @@ def _phrase_regex(term):
     return re.compile(r'(?<!\w)' + body + tail, re.I)
 
 
-def _line_kinds(line, extra_res):
+def _mask_code_spans(line):
+    """Blank out single-backtick code spans on one line (same length)."""
+    return CODE_SPAN.sub(lambda m: ' ' * len(m.group(0)), line)
+
+
+def _line_kinds(line, extra_res, in_fence=False):
     kinds = set()
     for m in IPV4.finditer(line):
         value = m.group(1)
@@ -168,8 +175,11 @@ def _line_kinds(line, extra_res):
                 continue
             kinds.add(name)
             break
+    # The bare 10-digit form ignores code spans and fenced blocks (counters,
+    # sysctl values); every other pattern scans the full line.
+    bare = '' if in_fence else _mask_code_spans(line)
     if 'phone' not in kinds and any(not _is_doc_phone(m.group(1), m.group(2))
-                                    for m in PHONE_BARE.finditer(line)):
+                                    for m in PHONE_BARE.finditer(bare)):
         kinds.add('phone')
     if any(rx.search(line) for rx in extra_res):
         kinds.add('extra_term')
@@ -181,8 +191,17 @@ def scan_text(text, path, extra_terms):
     extra_res = [_phrase_regex(t) for t in extra_terms if t.strip()]
     order = [name for name, _ in PATTERNS]
     hits = []
+    fence = None  # opening fence marker while inside a fenced block
     for n, line in enumerate(text.splitlines(), 1):
-        for kind in sorted(_line_kinds(line, extra_res), key=order.index):
+        fm = FENCE.match(line)
+        in_fence = fence is not None
+        if fm:
+            marker = fm.group(1)
+            if fence is None:
+                fence, in_fence = marker, True
+            elif marker[0] == fence[0] and len(marker) >= len(fence):
+                fence = None
+        for kind in sorted(_line_kinds(line, extra_res, in_fence), key=order.index):
             hits.append((path, n, kind))
     return hits
 

@@ -137,6 +137,24 @@ class ScanTextTests(unittest.TestCase):
                   '57177701990', 'id a5717770199'):
             self.assertEqual(gate.scan_text(s, 'x.md', []), [], s)
 
+    def test_first_octet_zero_is_not_an_address(self):
+        scan = lambda s: [h[2] for h in gate.scan_text(s, 'x.md', [])]
+        self.assertEqual(scan('browser 0.17.0.1 and 0.0.0.0 and 0.5.6.7'), [])
+        self.assertEqual(scan('dns 8.8.8.8'), [])
+        self.assertEqual(scan('wan 98.12.4.5'), ['public_ip'])
+        self.assertEqual(scan('lan 10.1.2.3'), ['lan_ip'])
+
+    def test_phone_bare_ignores_code(self):
+        scan = lambda s: [h[2] for h in gate.scan_text(s, 'x.md', [])]
+        self.assertEqual(scan('run `sysctl vm.max_map_count=2147483642` now'), [])
+        self.assertEqual(scan('sysctl vm.max_map_count=2147483642'), ['phone'])
+        self.assertEqual(scan('`a` then 2147483642'), ['phone'])
+        self.assertEqual(scan('```\nvalue 2147483642\n```\n'), [])
+        self.assertEqual(scan('~~~\nvalue 2147483642\n~~~\n'), [])
+        self.assertEqual(scan('```\nx\n```\nafter 2147483642\n'), ['phone'])
+        self.assertEqual(scan('`(571) 777-0199`'), ['phone'])
+        self.assertEqual(scan('(555) 123-4567'), [])
+
     def test_home_path_placeholders(self):
         for s in ('/Users/USERNAME/x', '/Users/<you>/x', '/Users/you/x'):
             self.assertEqual(gate.scan_text(s, 'x.md', []), [], s)
