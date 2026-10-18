@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T16:51:40Z",
+  "generated_at": "2026-10-18T00:36:57Z",
   "tree": [
     {
       "path": "Index.md",
@@ -1064,6 +1064,10 @@
     {
       "path": "03 AI and Local Models/Benchmarks",
       "type": "dir"
+    },
+    {
+      "path": "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md",
+      "type": "file"
     },
     {
       "path": "03 AI and Local Models/Benchmarks/LLM Benchmark Registry - Mac vs Unraid.md",
@@ -4493,6 +4497,18 @@
       "title": "AI and Local Models Index",
       "updated": "2026-10-17"
     },
+    "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md": {
+      "tags": [
+        "local-ai",
+        "benchmarks"
+      ],
+      "created": "2026-10-17",
+      "publish": true,
+      "machine": "mac",
+      "engine": "lithos, splash, mlx",
+      "title": "Inference Engine Face-Off: lithos vs Splash vs MLX",
+      "updated": "2026-10-17"
+    },
     "03 AI and Local Models/Benchmarks/LLM Benchmark Registry - Mac vs Unraid.md": {
       "tags": [
         "local-ai"
@@ -6413,6 +6429,7 @@
       "TrueNAS Build Guide"
     ],
     "03 AI and Local Models/AI and Local Models Index.md": [
+      "Inference Engine Face-Off - lithos vs Splash vs MLX",
       "LLM Benchmark Registry - Mac vs Unraid",
       "Local AI Benchmark Content Site",
       "Nemotron vs Qwen Domain Fingerprint",
@@ -6437,6 +6454,11 @@
       "Qwen3.8-Flash-Next",
       "Unraid LLM Serving Throughput",
       "Unraid Qwen3.6 Terminal Agent - July 2026"
+    ],
+    "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md": [
+      "Qwen3.8-27B",
+      "LLM Benchmark Registry - Mac vs Unraid",
+      "Local AI Stack Research - Gemma 4 on M5 Pro"
     ],
     "03 AI and Local Models/Benchmarks/LLM Benchmark Registry - Mac vs Unraid.md": [
       "Qwen3.8-27B",
