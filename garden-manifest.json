@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T00:36:57Z",
+  "generated_at": "2026-10-18T01:23:22Z",
   "tree": [
     {
       "path": "Index.md",
@@ -6461,6 +6461,7 @@
       "Local AI Stack Research - Gemma 4 on M5 Pro"
     ],
     "03 AI and Local Models/Benchmarks/LLM Benchmark Registry - Mac vs Unraid.md": [
+      "Inference Engine Face-Off - lithos vs Splash vs MLX",
       "Qwen3.8-27B",
       "Gemma 4 12B QAT Q8",
       "Gemma 4 12B QAT Q4",
@@ -6497,6 +6498,9 @@
     ],
     "03 AI and Local Models/Mac - MLX/Maple-Preview 20B.md": [
       "Ternary Bonsai 27B"
+    ],
+    "03 AI and Local Models/Mac - MLX/Qwen3.8-27B.md": [
+      "Inference Engine Face-Off - lithos vs Splash vs MLX"
     ],
     "03 AI and Local Models/Mac - MLX/Ternary Bonsai 27B.md": [
       "Gemma 4 12B QAT Q4"
