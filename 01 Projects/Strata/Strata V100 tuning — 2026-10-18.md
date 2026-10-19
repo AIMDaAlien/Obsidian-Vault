@@ -10,8 +10,9 @@ title: "Strata V100 tuning — 2026-10-18"
 ---
 # Strata V100 tuning — 2026-10-18
 
-**Interactive dashboard (every number traces to a recorded run):** https://claude.ai/artifact/SVHuTwEfnSbhAVHd55oTzp
-Record in the fork: `~/opt/UnbiasedStrata/docs/V100_TUNING.md` (branch `v100-tuning`). Data and charts: `_attachments/strata-v100-tuning-20261018/`.
+**Visual report (what was improved, seven rounds, the hardware findings):** https://claude.ai/artifact/Ty3FTvucy1Pppx4VRPP6Qg
+**Working dashboard (every dataset, every number traces to a recorded run):** https://claude.ai/artifact/SVHuTwEfnSbhAVHd55oTzp
+Record in the fork: `~/opt/UnbiasedStrata/docs/V100_TUNING.md` (branch `v100-pr1401`, rounds 1–7). Data and charts: `_attachments/strata-v100-tuning-20261018/`.
 
 Goal: the most useful tokens per second and per joule out of one Tesla V100-PCIe-32GB + Ryzen 7950X + 64 GB, on the PC that loses power under sustained load, without changing the model (Qwen3.8-Flash-Next GSQ-RCO IQ3_S, 196,608 context). Every change was paired-measured before adoption, one GPU job at a time under the thermal watchdog.
 
@@ -143,8 +144,14 @@ Housekeeping lesson: two queued windows deadlocked for two hours because each wa
 
 Closed without a run: transparent huge pages already `always` (37 of the engine's 46 GB), suffix drafting already default, the hybrid K8V4 KV cache cannot stream (would put the whole 196K KV back in VRAM). Measured, all rejected: a GPU clock ceiling (1200 / 1100 MHz) costs decode (88 → 85 → 80 tok/s) and does not clip the power transients (peaks 210–216 W regardless; they are the load burst, not the clock); pinning the engine to one CCD costs 7% decode after long prompts (the expert streaming path wants both L3s); 16 workers is a wash (−3% short decode, −14% CPU energy after long prompts); draft length 5 loses on both (acceptance 0.65 vs 0.70). Driver note: stay on 580 / CUDA 12, CUDA 13 dropped Volta. Production stays as adopted after round 6.
 
+## Final state (2026-10-19)
+
+Production: engine 0.1.43.1 with upstream PR 1401's Volta prompt kernels built in (`pr-all` binary), Volta decode table, async adaptive expert cache, prompt chunk ceiling 32768, 12 workers, draft length 4, KV int8 streamed with a 32K resident window, vision encoder (Q8_0, 2048 image tokens) loaded, GPU cap 135 W (soaked), CPU boost capped at 4.5 GHz, `powerprofilesctl balanced`, `iommu=pt`, NMI watchdog off. Both boot drop-ins installed (GPU 135 W override, CPU cap tmpfiles). Clocks unlocked, engine unpinned, opt-in PRs off, model on the ORICO drive with the Samsung copy as fallback.
+
+Against the morning (0.1.39, 100 W): short decode +34%, decode after 80K +49%, 80K prefill +47%, 80K request 95 → 65 s, 24-task suite median 37.2 s (at 250 W on Oct 13) → 29.6 s, idle CPU 85 → 59 W, CPU under load 85 → 66 °C.
+
 ## Still open
 
-- Prefill is the long-prompt bottleneck (180K ≈ 3 min) and is power-bound at 125 W: the Volta prompt kernels gave +1.3%, the chunk ceiling +2%; only watts (135 W: +6.7%) move it further.
-- `--adapt-async 1` (opt-in in 0.1.43.1), adaptive-cache tuning for long contexts (hit rate 87% at 80K+), `--spec-min-p`, `--ple-row-cache`, PLE table on the unencrypted Samsung SSD (measure the per-token read share first).
-- Hardware: CPU heat resolved by the 4.5 GHz cap (round 6); install the boot drop-in. BIOS: Restore AC Power Loss = Power On is the one setting that matters for a PC that drops power; AI Overclocking off and Curve Optimizer −20 → −10/0 are stability hygiene.
+- BIOS pass (not yet done): Restore AC Power Loss = Power On is the one setting that matters for a PC that drops power; AI Overclocking off and Curve Optimizer −20 → −10/0 are stability hygiene. With the 4.5 GHz cap in place, PBO limits matter little.
+- Prefill is the long-prompt bottleneck (180K ≈ 2.8 min) and is power-bound: kernels and chunking are exhausted (+1.3%, +2%); only watts move it (125 → 135 W: +15% at 180K). 150 W was deliberately not probed (transients already 229 W on a PC that has lost power under GPU load).
+- Software levers exhausted in round 7; the remaining margin against power loss is the PSU and the BIOS setting above. Stay on driver 580 / CUDA 12 (CUDA 13 dropped Volta).
