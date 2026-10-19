@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T15:15:29Z",
+  "generated_at": "2026-10-19T15:45:24Z",
   "tree": [
     {
       "path": "Index.md",
@@ -651,6 +651,10 @@
     },
     {
       "path": "01 Projects/Strata/Strata RTX 3060 long-context tuning.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Strata/Strata V100 Optimization Showcase.md",
       "type": "file"
     },
     {
@@ -2098,7 +2102,7 @@
         "moc",
         "benchmark"
       ],
-      "updated": "2026-10-12",
+      "updated": "2026-10-19",
       "publish": true,
       "created": "2026-10-12",
       "machine": "bigrig",
@@ -3931,6 +3935,24 @@
       "machine": "bigrig",
       "title": "Strata: faster long-context responses on the RTX 3060",
       "updated": "2026-10-18"
+    },
+    "01 Projects/Strata/Strata V100 Optimization Showcase.md": {
+      "type": "project-showcase",
+      "topic": "Strata V100 optimization",
+      "category": "Benchmarks",
+      "created": "2026-10-19",
+      "updated": "2026-10-19",
+      "tags": [
+        "strata",
+        "benchmarks",
+        "optimization",
+        "v100",
+        "volta",
+        "showcase"
+      ],
+      "publish": true,
+      "machine": "bigrig",
+      "title": "Strata on the Tesla V100: optimization showcase"
     },
     "01 Projects/Strata/Strata V100 setup and benchmarks — 2026-10-13.md": {
       "type": "note",
@@ -7353,6 +7375,8 @@
     ],
     "00 Index/Benchmarks.md": [
       "Vault Map",
+      "Strata V100 Optimization Showcase",
+      "Strata V100 tuning — 2026-10-18",
       "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
       "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
       "Model Benchmarks",
@@ -7808,6 +7832,7 @@
     ],
     "01 Projects/Strata/Strata Bench.md": [
       "Strata RTX 3060 Optimization Showcase",
+      "Strata V100 Optimization Showcase",
       "Strata V100 tuning — 2026-10-18",
       "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
       "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
@@ -7823,6 +7848,12 @@
       "Strata Bench",
       "Models & Serving",
       "Benchmark Methodology"
+    ],
+    "01 Projects/Strata/Strata V100 Optimization Showcase.md": [
+      "Benchmarks",
+      "Vault Map",
+      "Strata V100 tuning — 2026-10-18",
+      "Strata Bench"
     ],
     "01 Projects/Swarm Dashboard/Swarm Dashboard.md": [
       "Agents & Tooling",
@@ -8368,6 +8399,7 @@
       "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
       "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
       "Strata RTX 3060 Optimization Showcase",
+      "Strata V100 Optimization Showcase",
       "Flash-Next AD384\\",
       "Qwen-Q5 27B\\",
       "Unraid Flash-Next\\",
