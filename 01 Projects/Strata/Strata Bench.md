@@ -10,6 +10,7 @@ title: "Strata Bench"
 # Strata Bench
 
 > **Featured project:** [[Strata RTX 3060 Optimization Showcase]] — accepted **16.58% less response time** across six long-context workloads, with the confidence interval, evidence figures and rejected expert-kernel follow-up.
+> **Featured project:** [[Strata V100 Optimization Showcase]] — one day of paired A/B on the Tesla V100: short decode **67 → 90 tok/s**, 80K prefill **873 → 1,284 tok/s**, task-suite median **37.2 → 29.6 s**, CPU 85 → 66 °C, with the seven rounds, the soak and the rejected levers.
 
 
 ## 2026-10-18 — V100 tuning: +21% decode, +35% prefill, lower energy per token

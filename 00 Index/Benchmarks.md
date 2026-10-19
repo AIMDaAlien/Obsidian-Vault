@@ -2,7 +2,7 @@
 type: moc
 category: Meta
 tags: [meta, moc, benchmark]
-updated: 2026-10-12
+updated: 2026-10-19
 publish: true
 created: 2026-10-12
 machine: bigrig
@@ -13,6 +13,10 @@ title: "Benchmarks"
 The measurement layer: how it is done, what it scored, and every raw result page.
 
 **Vault:** [[Vault Map]]
+
+## 2026-10-19 — Tesla V100 optimization showcase
+
+[[Strata V100 Optimization Showcase]] — one day of paired A/B on the Tesla V100-PCIe-32GB serving Qwen3.8-Flash-Next IQ3_S at 196,608 context: short decode **67 → 90 tok/s**, decode after 80K **61 → 91**, 80K prefill **873 → 1,284 tok/s**, frozen 24-task suite median **37.2 → 29.6 s**, CPU under load 85 → 66 °C. Seven rounds (power cap, engine 0.1.43.1 and Volta kernels, async expert cache, CPU boost cap, vision), a 135 W soak, and every rejected lever, with the lab note [[Strata V100 tuning — 2026-10-18]] and the fork `AIMDaAlien/UnbiasedStrata-V100`.
 
 ## 2026-10-12 — Corrected matched DeepSWE2 comparison
 

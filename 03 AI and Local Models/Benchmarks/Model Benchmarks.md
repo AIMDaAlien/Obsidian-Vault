@@ -29,6 +29,8 @@ Local LLM LCB-60 + swe40 results on the MASSIVE-RIG and Unraid. Budget-corrected
 
 [[Strata RTX 3060 Optimization Showcase]] — **16.58% less response time** from accepted RTX 3060 long-context prefill tuning. Includes the six-bucket chart and confidence interval, engineering evidence, bottleneck profile, and the separately rejected expert-kernel campaign.
 
+[[Strata V100 Optimization Showcase]] — **+34 to +49% decode, +47% prefill, task-suite median 37.2 → 29.6 s** on the Tesla V100 from seven rounds of paired A/B (power cap, engine and Volta kernels, async expert cache, CPU boost cap, vision), each gated on an 80K secret check and the frozen 24-task suite. Includes the 135 W soak and every rejected lever.
+
 ## The money chart — Pareto (quality × speed)
 
 ![[_attachments/lcb60-pareto.png]]
