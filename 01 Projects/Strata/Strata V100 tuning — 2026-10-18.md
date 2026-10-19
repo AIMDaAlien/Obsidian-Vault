@@ -139,6 +139,10 @@ The engine never cashes in the boost: at 4.5 GHz every engine number is unchange
 
 Housekeeping lesson: two queued windows deadlocked for two hours because each waited on `pgrep -f` for a label that sat in its own command line. One script per window from now on.
 
+## Round 7: the last software levers before the BIOS (135 W, CPU capped)
+
+Closed without a run: transparent huge pages already `always` (37 of the engine's 46 GB), suffix drafting already default, the hybrid K8V4 KV cache cannot stream (would put the whole 196K KV back in VRAM). Measured, all rejected: a GPU clock ceiling (1200 / 1100 MHz) costs decode (88 → 85 → 80 tok/s) and does not clip the power transients (peaks 210–216 W regardless; they are the load burst, not the clock); pinning the engine to one CCD costs 7% decode after long prompts (the expert streaming path wants both L3s); 16 workers is a wash (−3% short decode, −14% CPU energy after long prompts); draft length 5 loses on both (acceptance 0.65 vs 0.70). Driver note: stay on 580 / CUDA 12, CUDA 13 dropped Volta. Production stays as adopted after round 6.
+
 ## Still open
 
 - Prefill is the long-prompt bottleneck (180K ≈ 3 min) and is power-bound at 125 W: the Volta prompt kernels gave +1.3%, the chunk ceiling +2%; only watts (135 W: +6.7%) move it further.
