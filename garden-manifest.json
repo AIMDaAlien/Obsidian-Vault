@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T22:30:26Z",
+  "generated_at": "2026-10-19T01:45:28Z",
   "tree": [
     {
       "path": "Index.md",
@@ -1975,6 +1975,10 @@
     },
     {
       "path": "07 Tools and Workflow/Obsidian Vault Git Sync.md",
+      "type": "file"
+    },
+    {
+      "path": "07 Tools and Workflow/Obsidian Vault Hub - Syncthing to Unraid Publishing.md",
       "type": "file"
     },
     {
@@ -5124,7 +5128,7 @@
       "created": "2025-09-15",
       "publish": true,
       "title": "Syncthing",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "02 Homelab/Router Configuration/00 - Router Optimization Index.md": {
       "tags": [
@@ -7253,13 +7257,32 @@
         "reliability"
       ],
       "created": "2026-08-11",
-      "updated": "2026-08-11",
+      "updated": "2026-10-18",
       "publish": true,
       "featured": 77,
-      "status": "Repaired and syncing",
+      "status": "Superseded 2026-10-18",
       "system": "Obsidian Notes Vault",
       "summary": "My notes stopped syncing to GitHub after a reset broke their shared history. The error, how I merged both sides without losing anything, and the fix.",
       "title": "Obsidian Vault Git Sync"
+    },
+    "07 Tools and Workflow/Obsidian Vault Hub - Syncthing to Unraid Publishing.md": {
+      "tags": [
+        "obsidian",
+        "syncthing",
+        "unraid",
+        "automation",
+        "publishing",
+        "privacy",
+        "knowledge-garden"
+      ],
+      "created": "2026-10-18",
+      "updated": "2026-10-18",
+      "publish": true,
+      "featured": 83,
+      "status": "Live since 2026-10-18",
+      "system": "Obsidian Notes Vault",
+      "summary": "How every device's notes flow to one Unraid hub that gates them for leaks and publishes the safe ones to my site every 15 minutes, with no git on the laptops.",
+      "title": "Obsidian Vault Hub: Syncthing to Unraid Publishing"
     },
     "07 Tools and Workflow/Tools and Workflow Index.md": {
       "tags": [
@@ -7268,7 +7291,7 @@
       "created": "2026-10-17",
       "publish": true,
       "title": "Tools and Workflow Index",
-      "updated": "2026-10-17"
+      "updated": "2026-10-18"
     },
     "07 Tools and Workflow/Agents/DeepSeek Harness Setup.md": {
       "type": "ops",
@@ -8129,6 +8152,9 @@
       "Home Server",
       "Homelab Index"
     ],
+    "02 Homelab/Reference/Syncthing.md": [
+      "Obsidian Vault Hub - Syncthing to Unraid Publishing"
+    ],
     "02 Homelab/Router Configuration/00 - Router Optimization Index.md": [
       "01 - Network Connection Settings",
       "02 - DNS Configuration",
@@ -8934,13 +8960,23 @@
       "link",
       "Development Tools"
     ],
+    "07 Tools and Workflow/Obsidian Vault Git Sync.md": [
+      "Obsidian Vault Hub - Syncthing to Unraid Publishing"
+    ],
+    "07 Tools and Workflow/Obsidian Vault Hub - Syncthing to Unraid Publishing.md": [
+      "Obsidian Vault Git Sync",
+      "Building a Privacy-First Obsidian Publishing System",
+      "Syncthing",
+      "01 - Services Dashboard"
+    ],
     "07 Tools and Workflow/Tools and Workflow Index.md": [
       "Building a Privacy-First Obsidian Publishing System",
       "Claude-Cursor Workflow",
       "Development Tools",
       "GrapheneOS Migration Guide - Complete Documentation",
       "Obsidian Productivity Mastery",
-      "Obsidian Vault Git Sync"
+      "Obsidian Vault Git Sync",
+      "Obsidian Vault Hub - Syncthing to Unraid Publishing"
     ],
     "07 Tools and Workflow/Agents/DeepSeek Harness Setup.md": [
       "Agents & Tooling",
