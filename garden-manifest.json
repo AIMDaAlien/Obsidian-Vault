@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T01:45:28Z",
+  "generated_at": "2026-10-19T02:00:22Z",
   "tree": [
     {
       "path": "Index.md",
@@ -3955,7 +3955,7 @@
         "strata",
         "v100"
       ],
-      "updated": "2026-10-18",
+      "updated": "2026-10-19",
       "publish": true,
       "created": "2026-10-18",
       "machine": "bigrig",
