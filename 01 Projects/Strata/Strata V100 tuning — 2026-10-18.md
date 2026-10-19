@@ -19,15 +19,16 @@ Goal: the most useful tokens per second and per joule out of one Tesla V100-PCIe
 
 ![[strata-v100-tuning-20261018/headline.png]]
 
-| | morning (0.1.39, 100 W, chunk 8192) | production now (0.1.43.1 + Volta table + async cache, 125 W, chunk 32768, vision loaded) |
+| | morning (0.1.39, 100 W, chunk 8192) | production now (0.1.43.1 + Volta prompt/decode kernels + async cache, 135 W, CPU capped 4.5 GHz, chunk 32768, vision loaded) |
 |---|---:|---:|
-| decode, short prompts | 67 tok/s | 86 tok/s |
-| decode after an 80K prompt | 61 tok/s | 90 tok/s |
-| 80K prefill | 873 tok/s | 1200 tok/s |
-| 80K request wall / TTFT | 94.9 s / 91.4 s | 68.9 s / 66 s |
-| short coding request wall (400 tokens, medium reasoning) | 8.25 s | 7.09 s |
-| GPU J per generated token | 1.9–2.1 | 1.9 |
+| decode, short prompts | 67 tok/s | 90 tok/s |
+| decode after an 80K prompt | 61 tok/s | 91 tok/s |
+| 80K prefill | 873 tok/s | 1284 tok/s |
+| 80K request wall / TTFT | 94.9 s / 91.4 s | 64.7 s / ~60 s |
+| short coding request wall (400 tokens, medium reasoning) | 8.25 s | 6.78 s |
+| GPU J per generated token | 1.9–2.1 | 2.06 (short) / 36 per token after 80K incl. prefill |
 | idle CPU package | 85 W | 59 W |
+| CPU Tctl under sustained load | 85 °C (BIOS cap) | 64–66 °C |
 
 No prefill-for-decode trade: both improved, because the power limit and the chunk ceiling are prefill-side levers.
 
@@ -132,7 +133,7 @@ Upstream PR 1401's FP16 tensor-core prompt kernels for sm_70 merged against thei
 
 The engine never cashes in the boost: at 4.5 GHz every engine number is unchanged while the CPU spends 31% less energy per generated token and stops at 64 °C instead of pinning the 85 °C BIOS limit. Prefill is one user-space core on the host side of the GPU pipeline, and above 4.5 GHz its clock is off the critical path. **Adopted:** `v100-tune maxfreq 4500` is live; boot persistence is the tmpfiles drop-in `~/Work/v100-20261013/adopt/cpu-maxfreq-4500.conf` (`sudo adopt/install-cpu-maxfreq.sh`). Side effect for other work on this PC: single-thread peaks lose up to 20% (5.7 → 4.5 GHz); undo with `v100-tune maxfreq reset`. This closes the cooling item and makes the BIOS boost-override / Curve Optimizer questions low-stakes.
 
-**135 W probe** (one round): prefill 1203 → 1284 tok/s (+6.7%), 80K wall 68.9 → 64.7 s, decode +2%, GPU 120 → 131 W, GPU J/token +2%. Energy-neutral per unit of work, not free; not adopted without its own soak on a PC that drops power under transients. Available if the 6% matters.
+**135 W probe** (one round): prefill 1203 → 1284 tok/s (+6.7%), 80K wall 68.9 → 64.7 s, decode +2%, GPU 120 → 131 W, GPU J/token +2%. Energy-neutral per unit of work. **Soaked and adopted (22:09–22:24):** five 180K prefills back to back, 13.3 min under load, secrets 5/5, no watchdog stop, GPU 59 °C, CPU 66 °C (the 4.5 GHz cap); power mean 133 W, p95 177 W, peak sample 219 W (125 W soak: 123 / 157 / 192). 180K prefill 939 → 1090 tok/s (+15%; longer prompts are more power-bound), 180K request 194 → 168 s. Boot override: `sudo ~/Work/v100-20261013/adopt/install-gpu-135w.sh`. 150 W not tried: the 219 W transients on a PC that has lost power under GPU load are the reason to stop here.
 
 **`STRATA_ROUTE_RESIDENT=0.5`** (two rounds): GPU expert-cache hit rate after 80K 80.5% → 92.3%, decode after 80K 87.9 → **94.4** tok/s (+7%), short +1.4%, GPU J/token −5%, 80K secret gate 2/2. It biases the router toward experts already on the GPU, so it changes which experts answer; the 24-task suite decides: **22/24 passes vs 23/24, median task wall 32.7 s vs 29.6 s** (answers ran longer, median 2886 vs 2570 generated tokens; task-level decode +0.7%). Per-token gain real, per-task result worse. **Rejected.**
 
@@ -143,4 +144,3 @@ Housekeeping lesson: two queued windows deadlocked for two hours because each wa
 - Prefill is the long-prompt bottleneck (180K ≈ 3 min) and is power-bound at 125 W: the Volta prompt kernels gave +1.3%, the chunk ceiling +2%; only watts (135 W: +6.7%) move it further.
 - `--adapt-async 1` (opt-in in 0.1.43.1), adaptive-cache tuning for long contexts (hit rate 87% at 80K+), `--spec-min-p`, `--ple-row-cache`, PLE table on the unencrypted Samsung SSD (measure the per-token read share first).
 - Hardware: CPU heat resolved by the 4.5 GHz cap (round 6); install the boot drop-in. BIOS: Restore AC Power Loss = Power On is the one setting that matters for a PC that drops power; AI Overclocking off and Curve Optimizer −20 → −10/0 are stability hygiene.
-- 135 W GPU cap: +6% long-prompt wall for +2% energy per token; needs a 15-minute soak before adoption.

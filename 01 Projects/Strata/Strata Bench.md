@@ -14,7 +14,7 @@ title: "Strata Bench"
 
 ## 2026-10-18 — V100 tuning: +21% decode, +35% prefill, lower energy per token
 
-[[Strata V100 tuning — 2026-10-18]] — paired A/B of GPU power limit and clocks (125 W adopted after a 15.6-min soak), engine 0.1.39 → 0.1.43.1 with the opt-in Volta decode table, chunk ceiling 16384, kernel audit (idle 85 → 59 W; nothing kernel-side on the engine's critical path, measured), and vision added through the model's own encoder. Rounds 4–6: Volta prompt kernels (+1.3% prefill, in production), CPU boost cap 4.5 GHz (engine unchanged, CPU energy −31%, Tctl 86 → 64 °C), 135 W probe (+6.7% prefill, not adopted), resident routing rejected by the task suite. Interactive dashboard: https://claude.ai/artifact/SVHuTwEfnSbhAVHd55oTzp
+[[Strata V100 tuning — 2026-10-18]] — paired A/B of GPU power limit and clocks (125 W adopted after a 15.6-min soak), engine 0.1.39 → 0.1.43.1 with the opt-in Volta decode table, chunk ceiling 16384, kernel audit (idle 85 → 59 W; nothing kernel-side on the engine's critical path, measured), and vision added through the model's own encoder. Rounds 4–6: Volta prompt kernels (+1.3% prefill, in production), CPU boost cap 4.5 GHz (engine unchanged, CPU energy −31%, Tctl 86 → 64 °C), 135 W soaked and adopted (+15% 180K prefill), resident routing rejected by the task suite. Interactive dashboard: https://claude.ai/artifact/SVHuTwEfnSbhAVHd55oTzp
 
 
 ## 2026-10-12 — Corrected matched DeepSWE2 comparison
