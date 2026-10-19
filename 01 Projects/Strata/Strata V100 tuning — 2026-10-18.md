@@ -115,8 +115,32 @@ with the vision encoder loaded and lower energy per token.
 
 ![[strata-v100-tuning-20261018/tasks-ab.png]]
 
+## Rounds 4–5: Volta prompt kernels, opt-in PRs, Samsung SSD (branch `v100-pr1401`)
+
+Upstream PR 1401's FP16 tensor-core prompt kernels for sm_70 merged against their true base (parity test 0 failures on this card): 80K prefill 1200 → 1212 tok/s (+1.3%, repeats across rounds), 80K wall 69.4 → 68.3 s, decode within noise. Far from the author's +10%: at 125 W the prompt path is power-bound (~960 MHz SM), so faster math buys little. PRs 2357/2358 (sm_70 decode opt-ins) and serving the shards from the Samsung 980 PRO were flat (decode after 80K swings ±4 tok/s between identical runs). **Production now runs the combined `pr-all` binary** (`local/bin/unbiased-strata-0.1.43.1-sm70-pr1401`, since 21:31; health and the eight image tests pass); the opt-ins stay off, the model stays on the ORICO drive with the Samsung copy as fallback. CPU Tctl sat at 85–86 °C in every candidate.
+
+## Round 6: the CPU was boosting for nothing (CPU cap, 135 W probe, resident routing)
+
+![[strata-v100-tuning-20261018/cpu-cap.png]]
+
+| boost cap | decode short / after 80K | 80K prefill | 80K wall | CPU J/token (80K) | Tctl max |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| uncapped (5883 MHz) | 87.4 / 88.1 | 1202 | 68.9 s | 28.5 | 85.9 °C |
+| **4500 MHz** | 87.2 / 88.4 | 1195 | 69.2 s | **19.7** | **64.4 °C** |
+| 4000 MHz | 87.1 / 86.2 | 1194 | 69.4 s | 17.6 | 57.6 °C |
+| 3500 MHz | 86.8 / 83.3 | 1195 | 69.4 s | 16.4 | 56.8 °C |
+
+The engine never cashes in the boost: at 4.5 GHz every engine number is unchanged while the CPU spends 31% less energy per generated token and stops at 64 °C instead of pinning the 85 °C BIOS limit. Prefill is one user-space core on the host side of the GPU pipeline, and above 4.5 GHz its clock is off the critical path. **Adopted:** `v100-tune maxfreq 4500` is live; boot persistence is the tmpfiles drop-in `~/Work/v100-20261013/adopt/cpu-maxfreq-4500.conf` (`sudo adopt/install-cpu-maxfreq.sh`). Side effect for other work on this PC: single-thread peaks lose up to 20% (5.7 → 4.5 GHz); undo with `v100-tune maxfreq reset`. This closes the cooling item and makes the BIOS boost-override / Curve Optimizer questions low-stakes.
+
+**135 W probe** (one round): prefill 1203 → 1284 tok/s (+6.7%), 80K wall 68.9 → 64.7 s, decode +2%, GPU 120 → 131 W, GPU J/token +2%. Energy-neutral per unit of work, not free; not adopted without its own soak on a PC that drops power under transients. Available if the 6% matters.
+
+**`STRATA_ROUTE_RESIDENT=0.5`** (two rounds): GPU expert-cache hit rate after 80K 80.5% → 92.3%, decode after 80K 87.9 → **94.4** tok/s (+7%), short +1.4%, GPU J/token −5%, 80K secret gate 2/2. It biases the router toward experts already on the GPU, so it changes which experts answer; the 24-task suite decides: ROUTERES_TASKS_PLACEHOLDER
+
+Housekeeping lesson: two queued windows deadlocked for two hours because each waited on `pgrep -f` for a label that sat in its own command line. One script per window from now on.
+
 ## Still open
 
-- Prefill is now the long-prompt bottleneck (180K ≈ 3 min). Candidates: `STRATA_PREFILL_AUTO_MAX=32768`; upstream PR 1401's FP16 tensor-core prompt kernels for sm_70 (+10% prompt, unmerged, conflicts); PR 2355/2356 (+5–7% prompt on V100).
+- Prefill is the long-prompt bottleneck (180K ≈ 3 min) and is power-bound at 125 W: the Volta prompt kernels gave +1.3%, the chunk ceiling +2%; only watts (135 W: +6.7%) move it further.
 - `--adapt-async 1` (opt-in in 0.1.43.1), adaptive-cache tuning for long contexts (hit rate 87% at 80K+), `--spec-min-p`, `--ple-row-cache`, PLE table on the unencrypted Samsung SSD (measure the per-token read share first).
-- Hardware: CPU reaches its 85 °C BIOS cap under any sustained all-core load; the −20 Curve Optimizer remains the prime suspect for the silent power-offs.
+- Hardware: CPU heat resolved by the 4.5 GHz cap (round 6); install the boot drop-in. BIOS: Restore AC Power Loss = Power On is the one setting that matters for a PC that drops power; AI Overclocking off and Curve Optimizer −20 → −10/0 are stability hygiene.
+- 135 W GPU cap: +6% long-prompt wall for +2% energy per token; needs a 15-minute soak before adoption.

@@ -1,10 +1,10 @@
 ---
 tags: [reliability]
 created: 2026-08-11
-updated: 2026-08-11
+updated: 2026-10-18
 publish: true
 featured: 77
-status: Repaired and syncing
+status: Superseded 2026-10-18
 system: Obsidian Notes Vault
 summary: "My notes stopped syncing to GitHub after a reset broke their shared history. The error, how I merged both sides without losing anything, and the fix."
 ---
@@ -31,3 +31,7 @@ Recovery:
 - Pulled the generated manifest commit `66baef8` and reran `.github/scripts/vault-auto-sync.sh` successfully.
 
 Healthy state: local `main` and `origin/main` match, and the scheduled auto-sync can pull before pushing normally.
+
+## 2026-10-18 Superseded
+
+Git was removed from the vault entirely. Notes now sync by Syncthing to an Unraid hub, which is the only publisher. See [[Obsidian Vault Hub - Syncthing to Unraid Publishing]]. The recovery above is kept as a record of why.
