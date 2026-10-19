@@ -2,7 +2,7 @@
 type: note
 category: Strata
 tags: [omarchy, strata, v100]
-updated: 2026-10-18
+updated: 2026-10-19
 publish: true
 created: 2026-10-18
 machine: bigrig
@@ -134,7 +134,7 @@ The engine never cashes in the boost: at 4.5 GHz every engine number is unchange
 
 **135 W probe** (one round): prefill 1203 → 1284 tok/s (+6.7%), 80K wall 68.9 → 64.7 s, decode +2%, GPU 120 → 131 W, GPU J/token +2%. Energy-neutral per unit of work, not free; not adopted without its own soak on a PC that drops power under transients. Available if the 6% matters.
 
-**`STRATA_ROUTE_RESIDENT=0.5`** (two rounds): GPU expert-cache hit rate after 80K 80.5% → 92.3%, decode after 80K 87.9 → **94.4** tok/s (+7%), short +1.4%, GPU J/token −5%, 80K secret gate 2/2. It biases the router toward experts already on the GPU, so it changes which experts answer; the 24-task suite decides: ROUTERES_TASKS_PLACEHOLDER
+**`STRATA_ROUTE_RESIDENT=0.5`** (two rounds): GPU expert-cache hit rate after 80K 80.5% → 92.3%, decode after 80K 87.9 → **94.4** tok/s (+7%), short +1.4%, GPU J/token −5%, 80K secret gate 2/2. It biases the router toward experts already on the GPU, so it changes which experts answer; the 24-task suite decides: **22/24 passes vs 23/24, median task wall 32.7 s vs 29.6 s** (answers ran longer, median 2886 vs 2570 generated tokens; task-level decode +0.7%). Per-token gain real, per-task result worse. **Rejected.**
 
 Housekeeping lesson: two queued windows deadlocked for two hours because each waited on `pgrep -f` for a label that sat in its own command line. One script per window from now on.
 
