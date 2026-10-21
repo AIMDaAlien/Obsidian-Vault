@@ -7,6 +7,7 @@ featured: 83
 status: Live since 2026-10-18
 system: Obsidian Notes Vault
 summary: "How every device's notes flow to one Unraid hub that gates them for leaks and publishes the safe ones to my site every 15 minutes, with no git on the laptops."
+blurb: "Every note I write on any machine lands on one home server, which checks it for private details and publishes the safe ones here."
 ---
 
 # Obsidian Vault Hub: Syncthing to Unraid Publishing
