@@ -142,7 +142,8 @@ class Normalize(unittest.TestCase):
 
 class CurationTests(TempCase):
     def entry(self, path, **kw):
-        return CurationEntry(path, kw.get("featured"), kw.get("summary"), kw.get("publish"))
+        extra = {"blurb": kw["blurb"]} if "blurb" in kw else {}
+        return CurationEntry(path, kw.get("featured"), kw.get("summary"), kw.get("publish"), **extra)
 
     def test_load_entries(self):
         p = self.tmp / "curation.yml"
@@ -201,6 +202,25 @@ class CurationTests(TempCase):
         root = self.root_with(**{"A.md": "# A\n"})
         self.assertEqual(validate_curation([self.entry("A.md", summary=123)], root, {}),
                          ["A.md: summary must be a string"])
+
+    def test_blurb_must_be_string(self):
+        root = self.root_with(**{"A.md": "# A\n"})
+        self.assertEqual(validate_curation([self.entry("A.md", blurb=5)], root, {}),
+                         ["A.md: blurb must be a string"])
+
+    def test_blurb_over_400_is_error(self):
+        root = self.root_with(**{"A.md": "# A\n"})
+        self.assertEqual(validate_curation([self.entry("A.md", blurb="x" * 401)], root, {}),
+                         ["blurb too long (401 > 400): A.md"])
+
+    def test_apply_sets_blurb_quoted(self):
+        out = apply_curation("---\ntitle: A\n---\nbody\n", self.entry("A.md", blurb='Plain "words" here'))
+        self.assertIn('blurb: "Plain \\"words\\" here"', out)
+
+    def test_load_curation_accepts_blurb(self):
+        p = self.tmp / "curation.yml"
+        p.write_text("- path: A.md\n  blurb: hello\n")
+        self.assertEqual(load_curation(p)[0].blurb, "hello")
 
     def test_non_positive_rank_is_error(self):
         root = self.root_with(**{"A.md": "# A\n"})

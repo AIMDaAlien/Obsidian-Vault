@@ -11,9 +11,10 @@ from .tree import _walk
 KEY_LINE = re.compile(r"^([A-Za-z0-9_-]+):(.*)$")
 H1 = re.compile(r"^#\s+(.+)$")
 POSITIVE_INT = re.compile(r"^[1-9][0-9]*$")
-CURATION_KEYS = {"path", "featured", "summary", "publish"}
+CURATION_KEYS = {"path", "featured", "summary", "publish", "blurb"}
 SUMMARY_MAX = 160
-QUOTED_KEYS = {"summary", "title"}
+BLURB_MAX = 400
+QUOTED_KEYS = {"summary", "title", "blurb"}
 
 
 def split_frontmatter(text: str) -> tuple[list[str] | None, str]:
@@ -110,6 +111,7 @@ class CurationEntry:
     featured: int | None = None
     summary: str | None = None
     publish: bool | None = None
+    blurb: str | None = None
 
 
 def load_curation(path: Path) -> list[CurationEntry]:
@@ -124,7 +126,8 @@ def load_curation(path: Path) -> list[CurationEntry]:
             if key not in CURATION_KEYS:
                 raise ComposeError(f"{item['path']}: unknown key {key}")
         entries.append(CurationEntry(item["path"], item.get("featured"),
-                                     item.get("summary"), item.get("publish")))
+                                     item.get("summary"), item.get("publish"),
+                                     item.get("blurb")))
     return entries
 
 
@@ -166,6 +169,11 @@ def validate_curation(entries: list[CurationEntry], published_root: Path,
                 errors.append(f"{e.path}: summary must be a string")
             elif len(e.summary) > SUMMARY_MAX:
                 errors.append(f"summary too long ({len(e.summary)} > {SUMMARY_MAX}): {e.path}")
+        if e.blurb is not None:
+            if not isinstance(e.blurb, str):
+                errors.append(f"{e.path}: blurb must be a string")
+            elif len(e.blurb) > BLURB_MAX:
+                errors.append(f"blurb too long ({len(e.blurb)} > {BLURB_MAX}): {e.path}")
         if e.publish is not None and not isinstance(e.publish, bool):
             errors.append(f"{e.path}: publish must be true or false")
     return errors
@@ -182,6 +190,8 @@ def apply_curation(text: str, entry: CurationEntry) -> str:
         lines = set_key(lines, "summary", entry.summary)
     if entry.publish is not None:
         lines = set_key(lines, "publish", "true" if entry.publish else "false")
+    if entry.blurb is not None:
+        lines = set_key(lines, "blurb", entry.blurb)
     return join_frontmatter(lines, body)
 
 
