@@ -3,15 +3,19 @@
 - path: "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md"
   featured: 2
   summary: "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed."
+  blurb: "Strata is the engine I run AI models on at home. On a mid-range gaming card I got answers to very long prompts about a sixth faster, and proved it with repeated back-to-back tests rather than one lucky run. The note also keeps the experiment that didn't pass, because a failed result you can trust is worth more than a win you can't."
 - path: "01 Projects/Strata/Strata V100 setup and benchmarks — 2026-10-13.md"
   featured: 7
   summary: "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
+  blurb: "I put a used datacenter graphics card with 32 GB of memory into a regular home PC and set it up to run large AI models. It can read a prompt the length of a novel and answer in under two minutes. The note has the measurements, the model setups that worked, and the ones that didn't."
 - path: "01 Projects/Philosopher/Philosopher Project.md"
   featured: 8
   summary: "A private AI philosophy partner that must cite real sources: tested against 40 trick questions, it made up zero quotations."
+  blurb: "A private AI I can talk philosophy and theology with, running on my own machine. The rule it lives by is that it has to cite real sources it can actually see, so I built checks around it and tested it against 40 questions designed to tempt a fake quotation. It made up none. This note tracks the decisions, the tests and where the project stands."
 - path: "03 AI and Local Models/Benchmarks/2026-09-24 v4 Results — Thinking flips the ranking.md"
   featured: 10
   summary: "Letting small AI models think before answering reshuffled the leaderboard: the former last-place model rose to first."
+  blurb: "I run small AI models on my own hardware and score them on the same 45 research tasks. For this round I let each model think before answering. The order changed completely: the model that came last without thinking came first with it. Useful if you're picking a small model and wondering whether thinking mode is worth the wait."
 - path: "02 Homelab/Hardware/Hardware Specs & Roles - Rig Fleet (Sep 2026).md"
   featured: 13
   summary: "Which of my three machines does what, with their parts: the AI desktop, the Unraid server and the laptop, as of September 2026."

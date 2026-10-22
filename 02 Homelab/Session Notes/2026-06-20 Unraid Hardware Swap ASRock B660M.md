@@ -4,6 +4,7 @@ created: 2026-06-20
 publish: true
 featured: 6
 summary: "After moving my home server onto new parts the screen froze for hours. The culprit was a wireless keyboard dongle, not the hardware. Every lead I tried."
+blurb: "I moved my home server onto the parts from my old gaming PC and it spent the next several hours freezing and showing a black screen. I chased the RAM, the power supply, the cooler and the BIOS before finding the real cause: a wireless keyboard receiver. Every dead end is listed so the next person can skip them."
 ---
 
 # Unraid Server Hardware Swap — B660M + 12600KF Transplant

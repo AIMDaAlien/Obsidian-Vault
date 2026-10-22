@@ -1,20 +1,7 @@
 ---
-tags: []
+tags: [troubleshooting, monitoring, interview-prep, homelab, documentation, problem-solving]
 created: 2026-01-07
 publish: true
----
----
-created: '2026-01-07T22:57:45.339981'
-modified: '2026-01-10T23:18:57.729892'
-privacy_scan: not_scanned
-published_to_garden: false
-tags: [troubleshooting, monitoring, interview-prep]
-- troubleshooting
-- homelab
-- documentation
-- problem-solving
-title: Troubleshooting Log
-visibility: private
 ---
 
 # Troubleshooting Log - NOC Skills Homelab

@@ -1,21 +1,7 @@
 ---
-tags: []
+tags: [monitoring, prometheus, grafana, homelab, blackbox]
 created: 2026-01-10
 publish: true
----
----
-created: '2026-01-10T12:05:16.232280'
-modified: '2026-01-10T23:18:48.631817'
-privacy_scan: not_scanned
-published_to_garden: false
-tags: [monitoring]
-- prometheus
-- grafana
-- monitoring
-- homelab
-- blackbox
-title: Prometheus Grafana Stack
-visibility: review
 ---
 
 # Prometheus + Grafana Stack

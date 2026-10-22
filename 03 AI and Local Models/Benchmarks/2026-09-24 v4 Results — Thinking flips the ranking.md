@@ -9,6 +9,7 @@ machine: bigrig
 title: "2026-09-24 v4 Results — Thinking flips the ranking: LiteResearcher wins"
 featured: 10
 summary: "Letting small AI models think before answering reshuffled the leaderboard: the former last-place model rose to first."
+blurb: "I run small AI models on my own hardware and score them on the same 45 research tasks. For this round I let each model think before answering. The order changed completely: the model that came last without thinking came first with it. Useful if you're picking a small model and wondering whether thinking mode is worth the wait."
 ---
 
 # 2026-09-24 v4 Results — Thinking flips the ranking: LiteResearcher wins

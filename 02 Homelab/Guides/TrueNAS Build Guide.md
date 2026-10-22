@@ -4,6 +4,7 @@ created: 2025-10-05
 publish: true
 featured: 4
 summary: "How I built a 5.46TB home storage server for about $270 from secondhand enterprise drives, including the dead drive, the no-display scare, and the costs."
+blurb: "I wanted a lot of reliable storage without paying a lot for it, so I built a server around ten secondhand enterprise drives for about $270. This is the whole story: the parts and why I picked them, the drive that died on arrival, the moment it wouldn't show a picture, and what it costs to run."
 ---
 
 # Building a Beast: TrueNAS SAS Server for $270

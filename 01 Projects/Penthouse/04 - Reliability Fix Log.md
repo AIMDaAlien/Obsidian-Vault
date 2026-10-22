@@ -5,6 +5,7 @@ publish: true
 featured: 3
 project: Penthouse
 summary: "Ten real bugs from building a chat app, each with what users saw, the root cause and the fix: duplicate messages, stuck sends, crashes, low contrast."
+blurb: "Ten bugs that actually bit the Penthouse chat app, written up the same way each time: what a user saw, what was really going on underneath, and what changed to fix it. Duplicate messages, sends that got stuck, crashes on startup, text you couldn't read. It's the list I'd hand to anyone about to build something similar."
 ---
 
 # Reliability Fix Log

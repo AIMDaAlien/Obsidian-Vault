@@ -6,6 +6,7 @@ publish: true
 project: Penthouse
 featured: 1
 summary: "The map of a self-hosted chat app rebuilt from scratch: what was built, why, in what order, and where every decision and fix is written down."
+blurb: "Penthouse is a chat app I rebuilt from the ground up so I'd actually understand every piece of it. This note is the front door: it lists the other notes in the order a new person should read them, from the timeline and the plain-English architecture to the bug log and the checklists. If you only read one Penthouse note, read this one and follow the links."
 ---
 
 # The Penthouse Rebuild Knowledge Hub

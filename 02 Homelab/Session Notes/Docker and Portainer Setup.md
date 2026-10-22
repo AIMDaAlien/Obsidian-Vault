@@ -1,21 +1,7 @@
 ---
-tags: []
+tags: [hardware-constraints, checklist, docker, portainer, homelab, setup-guide, rpi5]
 created: 2026-01-07
 publish: true
----
----
-created: '2026-01-07T22:57:31.997978'
-modified: '2026-01-10T11:36:27.766509'
-privacy_scan: not_scanned
-published_to_garden: false
-tags: [hardware-constraints, checklist]
-- docker
-- portainer
-- homelab
-- setup-guide
-- rpi5
-title: Docker And Portainer Setup
-visibility: private
 ---
 
 # Docker and Portainer Setup Guide

@@ -8,6 +8,7 @@ machine: bigrig
 title: "Strata on the RTX 3060: optimization showcase"
 featured: 2
 summary: "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed."
+blurb: "Strata is the engine I run AI models on at home. On a mid-range gaming card I got answers to very long prompts about a sixth faster, and proved it with repeated back-to-back tests rather than one lucky run. The note also keeps the experiment that didn't pass, because a failed result you can trust is worth more than a win you can't."
 ---
 # Strata on the RTX 3060: optimization showcase
 

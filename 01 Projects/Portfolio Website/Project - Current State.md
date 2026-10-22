@@ -6,6 +6,7 @@ publish: true
 featured: 9
 project: Portfolio Website
 summary: "How my portfolio works: plain HTML with no framework, a notes garden that updates itself, and a live server-health panel that exposes no private details."
+blurb: "How this site works under the hood: plain web files with no framework, a notes section that updates itself whenever I publish a safe note, and a live panel showing my home server's health without exposing anything private. Written as a snapshot so I can see what changed between redesigns."
 ---
 
 # Portfolio Website — Current State

@@ -10,6 +10,7 @@ machine: bigrig
 title: "Philosopher Project — Decisions, Tests & State"
 featured: 8
 summary: "A private AI philosophy partner that must cite real sources: tested against 40 trick questions, it made up zero quotations."
+blurb: "A private AI I can talk philosophy and theology with, running on my own machine. The rule it lives by is that it has to cite real sources it can actually see, so I built checks around it and tested it against 40 questions designed to tempt a fake quotation. It made up none. This note tracks the decisions, the tests and where the project stands."
 ---
 # Philosopher Project — Decisions, Tests & State
 

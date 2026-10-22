@@ -1,25 +1,10 @@
 ---
-tags: []
+tags: [hardware-constraints, homelab, networking, dns, pihole, raspberry-pi, migration, unbound]
 created: 2026-03-15
 publish: true
 featured: 5
 summary: "I moved my network's ad-blocking DNS from a dying 512MB Raspberry Pi to a Pi 5 on NVMe storage, broke the internet twice, and documented both fixes."
----
----
-created: '2026-03-15T00:00:00.000000'
-modified: '2026-03-15T00:00:00.000000'
-privacy_scan: not_scanned
-published_to_garden: false
-tags: [hardware-constraints]
-- homelab
-- networking
-- dns
-- pihole
-- raspberry-pi
-- migration
-- unbound
-title: Pi-hole Migration - RPi B+ to RPi 5 NVMe
-visibility: review
+blurb: "Pi-hole is the little box on my network that blocks ads and tracking for every device at once. It was running on a decade-old Raspberry Pi with a failing memory card, so I moved it to a much faster Pi booting from a proper drive. The internet went down twice along the way, and both fixes are written down here."
 ---
 
 # Pi-hole Migration: RPi B+ → RPi 5 NVMe

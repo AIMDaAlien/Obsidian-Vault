@@ -9,6 +9,7 @@ machine: bigrig
 title: "Strata V100 setup and benchmarks — 2026-10-13"
 featured: 7
 summary: "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
+blurb: "I put a used datacenter graphics card with 32 GB of memory into a regular home PC and set it up to run large AI models. It can read a prompt the length of a novel and answer in under two minutes. The note has the measurements, the model setups that worked, and the ones that didn't."
 ---
 
 # Strata V100 setup and benchmarks — 2026-10-13
