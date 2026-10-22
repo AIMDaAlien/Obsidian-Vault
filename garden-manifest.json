@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T01:06:37Z",
+  "generated_at": "2026-10-22T01:14:12Z",
   "tree": [
     {
       "path": "Index.md",
@@ -2712,6 +2712,7 @@
       "project": "Penthouse",
       "featured": 1,
       "summary": "The map of a self-hosted chat app rebuilt from scratch: what was built, why, in what order, and where every decision and fix is written down.",
+      "blurb": "Penthouse is a chat app I rebuilt from the ground up so I'd actually understand every piece of it. This note is the front door: it lists the other notes in the order a new person should read them, from the timeline and the plain-English architecture to the bug log and the checklists. If you only read one Penthouse note, read this one and follow the links.",
       "title": "The Penthouse Rebuild Knowledge Hub"
     },
     "01 Projects/Penthouse/01 - Rebuild Timeline.md": {
@@ -2768,8 +2769,9 @@
       "featured": 3,
       "project": "Penthouse",
       "summary": "Ten real bugs from building a chat app, each with what users saw, the root cause and the fix: duplicate messages, stuck sends, crashes, low contrast.",
+      "blurb": "Ten bugs that actually bit the Penthouse chat app, written up the same way each time: what a user saw, what was really going on underneath, and what changed to fix it. Duplicate messages, sends that got stuck, crashes on startup, text you couldn't read. It's the list I'd hand to anyone about to build something similar.",
       "title": "Reliability Fix Log",
-      "updated": "2026-10-18"
+      "updated": "2026-10-21"
     },
     "01 Projects/Penthouse/05 - Multi-Model Delegation Workflow.md": {
       "tags": [
@@ -3689,7 +3691,8 @@
       "title": "Philosopher Project — Decisions, Tests & State",
       "featured": 8,
       "summary": "A private AI philosophy partner that must cite real sources: tested against 40 trick questions, it made up zero quotations.",
-      "updated": "2026-10-18"
+      "blurb": "A private AI I can talk philosophy and theology with, running on my own machine. The rule it lives by is that it has to cite real sources it can actually see, so I built checks around it and tested it against 40 questions designed to tempt a fake quotation. It made up none. This note tracks the decisions, the tests and where the project stands.",
+      "updated": "2026-10-21"
     },
     "01 Projects/Philosopher/Philosopher dsh Backend.md": {
       "type": "benchmark-log",
@@ -3856,6 +3859,7 @@
       "featured": 9,
       "project": "Portfolio Website",
       "summary": "How my portfolio works: plain HTML with no framework, a notes garden that updates itself, and a live server-health panel that exposes no private details.",
+      "blurb": "How this site works under the hood: plain web files with no framework, a notes section that updates itself whenever I publish a safe note, and a live panel showing my home server's health without exposing anything private. Written as a snapshot so I can see what changed between redesigns.",
       "title": "Portfolio Website — Current State"
     },
     "01 Projects/Portfolio Website/Tag System & Portfolio Integration.md": {
@@ -3919,7 +3923,8 @@
       "title": "Strata on the RTX 3060: optimization showcase",
       "featured": 2,
       "summary": "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed.",
-      "updated": "2026-10-18"
+      "blurb": "Strata is the engine I run AI models on at home. On a mid-range gaming card I got answers to very long prompts about a sixth faster, and proved it with repeated back-to-back tests rather than one lucky run. The note also keeps the experiment that didn't pass, because a failed result you can trust is worth more than a win you can't.",
+      "updated": "2026-10-21"
     },
     "01 Projects/Strata/Strata RTX 3060 long-context tuning.md": {
       "type": "benchmark-report",
@@ -3967,7 +3972,8 @@
       "machine": "bigrig",
       "title": "Strata V100 setup and benchmarks — 2026-10-13",
       "featured": 7,
-      "summary": "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
+      "summary": "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it.",
+      "blurb": "I put a used datacenter graphics card with 32 GB of memory into a regular home PC and set it up to run large AI models. It can read a prompt the length of a novel and answer in under two minutes. The note has the measurements, the model setups that worked, and the ones that didn't."
     },
     "01 Projects/Strata/Strata V100 tuning — 2026-10-18.md": {
       "type": "note",
@@ -4808,13 +4814,23 @@
       "updated": "2026-10-17"
     },
     "02 Homelab/Guides/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md": {
-      "tags": [],
+      "tags": [
+        "hardware-constraints",
+        "homelab",
+        "networking",
+        "dns",
+        "pihole",
+        "raspberry-pi",
+        "migration",
+        "unbound"
+      ],
       "created": "2026-03-15",
       "publish": true,
       "featured": 5,
       "summary": "I moved my network's ad-blocking DNS from a dying 512MB Raspberry Pi to a Pi 5 on NVMe storage, broke the internet twice, and documented both fixes.",
+      "blurb": "Pi-hole is the little box on my network that blocks ads and tracking for every device at once. It was running on a decade-old Raspberry Pi with a failing memory card, so I moved it to a much faster Pi booting from a proper drive. The internet went down twice along the way, and both fixes are written down here.",
       "title": "Pi-hole Migration: RPi B+ → RPi 5 NVMe",
-      "updated": "2026-10-18"
+      "updated": "2026-10-21"
     },
     "02 Homelab/Guides/Pi-hole Setup Guide - Complete Journey.md": {
       "tags": [
@@ -4850,8 +4866,9 @@
       "publish": true,
       "featured": 4,
       "summary": "How I built a 5.46TB home storage server for about $270 from secondhand enterprise drives, including the dead drive, the no-display scare, and the costs.",
+      "blurb": "I wanted a lot of reliable storage without paying a lot for it, so I built a server around ten secondhand enterprise drives for about $270. This is the whole story: the parts and why I picked them, the drive that died on arrival, the moment it wouldn't show a picture, and what it costs to run.",
       "title": "Building a Beast: TrueNAS SAS Server for $270",
-      "updated": "2026-10-18"
+      "updated": "2026-10-21"
     },
     "02 Homelab/Guides/WireGuard VPN Setup.md": {
       "tags": [
@@ -5357,8 +5374,9 @@
       "publish": true,
       "featured": 6,
       "summary": "After moving my home server onto new parts the screen froze for hours. The culprit was a wireless keyboard dongle, not the hardware. Every lead I tried.",
+      "blurb": "I moved my home server onto the parts from my old gaming PC and it spent the next several hours freezing and showing a black screen. I chased the RAM, the power supply, the cooler and the BIOS before finding the real cause: a wireless keyboard receiver. Every dead end is listed so the next person can skip them.",
       "title": "Unraid Server Hardware Swap — B660M + 12600KF Transplant",
-      "updated": "2026-10-18"
+      "updated": "2026-10-21"
     },
     "02 Homelab/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md": {
       "tags": [
@@ -5382,32 +5400,62 @@
       "updated": "2026-10-17"
     },
     "02 Homelab/Session Notes/Docker and Portainer Setup.md": {
-      "tags": [],
+      "tags": [
+        "hardware-constraints",
+        "checklist",
+        "docker",
+        "portainer",
+        "homelab",
+        "setup-guide",
+        "rpi5"
+      ],
       "created": "2026-01-07",
       "publish": true,
       "title": "Docker and Portainer Setup Guide",
-      "updated": "2026-10-17"
+      "updated": "2026-10-21"
     },
     "02 Homelab/Session Notes/Project Overview - NOC Skills Homelab.md": {
-      "tags": [],
+      "tags": [
+        "troubleshooting",
+        "monitoring",
+        "interview-prep",
+        "homelab",
+        "noc",
+        "career",
+        "docker",
+        "portfolio"
+      ],
       "created": "2026-01-07",
       "publish": true,
       "title": "NOC Skills Homelab Project",
-      "updated": "2026-10-17"
+      "updated": "2026-10-21"
     },
     "02 Homelab/Session Notes/Prometheus Grafana Stack.md": {
-      "tags": [],
+      "tags": [
+        "monitoring",
+        "prometheus",
+        "grafana",
+        "homelab",
+        "blackbox"
+      ],
       "created": "2026-01-10",
       "publish": true,
       "title": "Prometheus + Grafana Stack",
-      "updated": "2026-10-17"
+      "updated": "2026-10-21"
     },
     "02 Homelab/Session Notes/Troubleshooting Log.md": {
-      "tags": [],
+      "tags": [
+        "troubleshooting",
+        "monitoring",
+        "interview-prep",
+        "homelab",
+        "documentation",
+        "problem-solving"
+      ],
       "created": "2026-01-07",
       "publish": true,
       "title": "Troubleshooting Log - NOC Skills Homelab",
-      "updated": "2026-10-17"
+      "updated": "2026-10-21"
     },
     "03 AI and Local Models/AI and Local Models Index.md": {
       "tags": [
@@ -5502,7 +5550,8 @@
       "machine": "bigrig",
       "title": "2026-09-24 v4 Results — Thinking flips the ranking: LiteResearcher wins",
       "featured": 10,
-      "summary": "Letting small AI models think before answering reshuffled the leaderboard: the former last-place model rose to first."
+      "summary": "Letting small AI models think before answering reshuffled the leaderboard: the former last-place model rose to first.",
+      "blurb": "I run small AI models on my own hardware and score them on the same 45 research tasks. For this round I let each model think before answering. The order changed completely: the model that came last without thinking came first with it. Useful if you're picking a small model and wondering whether thinking mode is worth the wait."
     },
     "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen 27B vs Flash DeepSWE2.md": {
       "type": "benchmark-run",
@@ -6641,9 +6690,9 @@
     "05 Linux and Systems/Fundamentals/File Type.md": {
       "tags": [],
       "created": "2025-09-15",
-      "publish": true,
+      "publish": false,
       "title": "File Type",
-      "updated": "2026-10-17"
+      "updated": "2026-10-21"
     },
     "05 Linux and Systems/Fundamentals/Hard Link Count.md": {
       "tags": [],
@@ -6728,9 +6777,9 @@
     "05 Linux and Systems/Fundamentals/root directory.md": {
       "tags": [],
       "created": "2025-09-15",
-      "publish": true,
+      "publish": false,
       "title": "root directory",
-      "updated": "2026-10-17"
+      "updated": "2026-10-21"
     },
     "05 Linux and Systems/Linux CL Commands/Linux CL Commands (Directories).md": {
       "tags": [
