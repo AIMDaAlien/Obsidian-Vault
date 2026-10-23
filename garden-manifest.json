@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T01:14:12Z",
+  "generated_at": "2026-10-23T02:00:27Z",
   "tree": [
     {
       "path": "Index.md",
@@ -243,6 +243,14 @@
     },
     {
       "path": "01 Projects/MetalBench/99 - Current Handoff.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Mining",
+      "type": "dir"
+    },
+    {
+      "path": "01 Projects/Mining/GPU mining — V100 + RX 9060 XT — 2026-10-21.md",
       "type": "file"
     },
     {
@@ -2696,6 +2704,22 @@
       "publish": true,
       "project": "MetalBench",
       "updated": "2026-10-17"
+    },
+    "01 Projects/Mining/GPU mining — V100 + RX 9060 XT — 2026-10-21.md": {
+      "type": "note",
+      "category": "Mining",
+      "tags": [
+        "omarchy",
+        "mining",
+        "v100",
+        "rx9060xt",
+        "kryptex"
+      ],
+      "created": "2026-10-21",
+      "updated": "2026-10-22",
+      "publish": false,
+      "machine": "bigrig",
+      "title": "GPU mining — V100 + RX 9060 XT — 2026-10-21"
     },
     "01 Projects/Penthouse/00 - Knowledge Hub.md": {
       "tags": [
@@ -7427,6 +7451,7 @@
       "Vault Map",
       "Strata V100 Optimization Showcase",
       "Strata V100 tuning — 2026-10-18",
+      "GPU mining — V100 + RX 9060 XT — 2026-10-21",
       "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
       "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
       "Model Benchmarks",
@@ -7707,6 +7732,10 @@
     ],
     "01 Projects/Local Language Engine/99 - Current Handoff.md": [
       "03 - Mac Rebuild Build Log"
+    ],
+    "01 Projects/Mining/GPU mining — V100 + RX 9060 XT — 2026-10-21.md": [
+      "Strata V100 tuning — 2026-10-18",
+      "Rig & Hardware"
     ],
     "01 Projects/Penthouse/00 - Knowledge Hub.md": [
       "01 - Rebuild Timeline",
