@@ -18,6 +18,8 @@ The measurement layer: how it is done, what it scored, and every raw result page
 
 [[Strata V100 Optimization Showcase]] — one day of paired A/B on the Tesla V100-PCIe-32GB serving Qwen3.8-Flash-Next IQ3_S at 196,608 context: short decode **67 → 90 tok/s**, decode after 80K **61 → 91**, 80K prefill **873 → 1,284 tok/s**, frozen 24-task suite median **37.2 → 29.6 s**, CPU under load 85 → 66 °C. Seven rounds (power cap, engine 0.1.43.1 and Volta kernels, async expert cache, CPU boost cap, vision), a 135 W soak, and every rejected lever, with the lab note [[Strata V100 tuning — 2026-10-18]] and the fork `AIMDaAlien/UnbiasedStrata-V100`.
 
+[[GPU mining — V100 + RX 9060 XT — 2026-10-21]] — two days of measured mining tuning on the same rig: V100 on Quantus (OneZeroMiner, 150 W, **372–377 MH/s**) and RX 9060 XT on Pearl (SRBMiner, 112 W −30 mV, **≈46 TH/s**) via Kryptex account mining, ≈ **$2.74/day net** at 18.31 ¢/kWh versus −$0.6 on unMineable BeamHash. Every lever (coin per card, power limits, clock locks, intensities, undervolt, memory clock, miner choice) with the systemd setup and the bugs caught.
+
 ## 2026-10-12 — Corrected matched DeepSWE2 comparison
 
 [[2026-10-12 Matched Qwen 27B vs Flash DeepSWE2]] — six complete campaigns, 144 audited results over 24 distinct synthetic repository tasks. Flash averaged **22.67/24** versus Qwen **21.00/24**; the task-bootstrap interval for the +1.67 Flash delta is **[-2.33, +5.67]**, including zero. The historical 27B advantage was not observed on this corrected suite. The note embeds delta and capability/latency charts, with [[2026-10-12 Matched Qwen vs Flash — Methods and artifacts|full methods, provenance and all archived supporting files]].
