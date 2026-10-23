@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:00:27Z",
+  "generated_at": "2026-10-23T12:00:26Z",
   "tree": [
     {
       "path": "Index.md",
@@ -2716,7 +2716,7 @@
         "kryptex"
       ],
       "created": "2026-10-21",
-      "updated": "2026-10-22",
+      "updated": "2026-10-23",
       "publish": false,
       "machine": "bigrig",
       "title": "GPU mining — V100 + RX 9060 XT — 2026-10-21"
