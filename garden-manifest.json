@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T18:54:27Z",
+  "generated_at": "2026-10-24T18:55:24Z",
   "tree": [
     {
       "path": "Index.md",
@@ -3925,11 +3925,12 @@
       "publish": true,
       "created": "2026-10-12",
       "tags": [
-        "omarchy"
+        "omarchy",
+        "benchmark"
       ],
       "machine": "bigrig",
       "title": "Strata Bench",
-      "updated": "2026-10-19"
+      "updated": "2026-10-24"
     },
     "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md": {
       "type": "project-showcase",
@@ -3988,7 +3989,8 @@
       "category": "Strata",
       "tags": [
         "omarchy",
-        "strata"
+        "strata",
+        "benchmark"
       ],
       "updated": "2026-10-13",
       "publish": true,
@@ -5707,11 +5709,12 @@
       "publish": true,
       "created": "2026-10-01",
       "tags": [
-        "omarchy"
+        "omarchy",
+        "benchmark"
       ],
       "machine": "bigrig",
       "title": "HF Trending Models Survey",
-      "updated": "2026-10-18"
+      "updated": "2026-10-24"
     },
     "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md": {
       "tags": [
@@ -5729,25 +5732,27 @@
     },
     "03 AI and Local Models/Benchmarks/LLM Benchmark Registry - Mac vs Unraid.md": {
       "tags": [
-        "local-ai"
+        "local-ai",
+        "benchmark"
       ],
       "created": "2026-08-10",
       "publish": true,
       "featured": 37,
       "summary": "A scoreboard of local AI models on my laptop and home server, graded by exact-match checks with no AI judge, showing the real speed versus accuracy tradeoff.",
       "title": "LLM Benchmark Registry — Mac vs Unraid",
-      "updated": "2026-10-18"
+      "updated": "2026-10-24"
     },
     "03 AI and Local Models/Benchmarks/Local AI Benchmark Content Site.md": {
       "tags": [
         "local-ai",
         "side-project",
-        "monetization"
+        "monetization",
+        "benchmark"
       ],
       "created": "2026-09-02",
       "publish": true,
       "title": "Local AI Benchmark Content Site — Plan",
-      "updated": "2026-10-17"
+      "updated": "2026-10-24"
     },
     "03 AI and Local Models/Benchmarks/MASSIVE-RIG.md": {
       "type": "benchmark-log",
@@ -5755,7 +5760,8 @@
       "publish": true,
       "created": "2026-09-29",
       "tags": [
-        "omarchy"
+        "omarchy",
+        "benchmark"
       ],
       "updated": "2026-10-17",
       "machine": "bigrig",
@@ -5796,14 +5802,15 @@
     },
     "03 AI and Local Models/Benchmarks/Nemotron vs Qwen Domain Fingerprint.md": {
       "tags": [
-        "cost"
+        "cost",
+        "benchmark"
       ],
       "created": "2026-08-12",
       "publish": true,
       "featured": 51,
       "summary": "I quizzed two AI models on 130 questions across 15 subjects. They tied on scores but differ in which recent facts they know and how much they overthink.",
       "title": "Nemotron 3.5 Lightning vs Qwen 3.6 — Domain Fingerprint",
-      "updated": "2026-10-18"
+      "updated": "2026-10-24"
     },
     "03 AI and Local Models/Benchmarks/Open Local Thinking-Partner Models.md": {
       "type": "benchmark-log",
@@ -5811,11 +5818,12 @@
       "publish": true,
       "created": "2026-10-06",
       "tags": [
-        "omarchy"
+        "omarchy",
+        "benchmark"
       ],
       "machine": "bigrig",
       "title": "Open Local Thinking-Partner Models",
-      "updated": "2026-10-18"
+      "updated": "2026-10-24"
     },
     "03 AI and Local Models/Benchmarks/ReBench rebench-flash-ad384.md": {
       "type": "benchmark-run",
@@ -5994,7 +6002,8 @@
     "03 AI and Local Models/Mac - MLX/Qwen3.8-27B.md": {
       "tags": [
         "local-ai",
-        "hardware-constraints"
+        "hardware-constraints",
+        "benchmark"
       ],
       "created": "2026-08-14",
       "publish": true,
@@ -6003,7 +6012,7 @@
       "featured": 42,
       "summary": "I tried three precision levels of one AI model on 33 tricky questions. The cheapest scored best and was fastest, so extra precision was wasted.",
       "title": "Qwen3.8-27B — Deploy, Benchmarks, Verdict",
-      "updated": "2026-10-18"
+      "updated": "2026-10-24"
     },
     "03 AI and Local Models/Mac - MLX/Ternary Bonsai 27B.md": {
       "tags": [
@@ -6258,7 +6267,8 @@
     "03 AI and Local Models/Unraid - llama.cpp/K2-Horizon MoVA Serving and Benchmarks.md": {
       "title": "K2-Horizon MoVA Serving and Benchmarks",
       "tags": [
-        "local-ai"
+        "local-ai",
+        "benchmark"
       ],
       "created": "2025-01-01",
       "publish": true,
@@ -6266,7 +6276,7 @@
       "engine": "llama.cpp",
       "featured": 41,
       "summary": "One forgotten power-saving setting made my home AI server run at less than half speed. Fixing it and two other tweaks took it from 9.5 to 22 words per second.",
-      "updated": "2026-10-18"
+      "updated": "2026-10-24"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Qwen3.8-Flash-Next 262K Context on Unraid.md": {
       "title": "Qwen3.8-Flash-Next 262K Context on Unraid",
