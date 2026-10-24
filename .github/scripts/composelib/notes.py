@@ -11,7 +11,8 @@ from .tree import _walk
 KEY_LINE = re.compile(r"^([A-Za-z0-9_-]+):(.*)$")
 H1 = re.compile(r"^#\s+(.+)$")
 POSITIVE_INT = re.compile(r"^[1-9][0-9]*$")
-CURATION_KEYS = {"path", "featured", "summary", "publish", "blurb"}
+CURATION_KEYS = {"path", "featured", "summary", "publish", "blurb", "add_tags"}
+TAG_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_/-]*$")
 SUMMARY_MAX = 160
 BLURB_MAX = 400
 QUOTED_KEYS = {"summary", "title", "blurb"}
@@ -112,6 +113,7 @@ class CurationEntry:
     summary: str | None = None
     publish: bool | None = None
     blurb: str | None = None
+    add_tags: list | None = None
 
 
 def load_curation(path: Path) -> list[CurationEntry]:
@@ -127,7 +129,7 @@ def load_curation(path: Path) -> list[CurationEntry]:
                 raise ComposeError(f"{item['path']}: unknown key {key}")
         entries.append(CurationEntry(item["path"], item.get("featured"),
                                      item.get("summary"), item.get("publish"),
-                                     item.get("blurb")))
+                                     item.get("blurb"), item.get("add_tags")))
     return entries
 
 
@@ -174,6 +176,10 @@ def validate_curation(entries: list[CurationEntry], published_root: Path,
                 errors.append(f"{e.path}: blurb must be a string")
             elif len(e.blurb) > BLURB_MAX:
                 errors.append(f"blurb too long ({len(e.blurb)} > {BLURB_MAX}): {e.path}")
+        if e.add_tags is not None and not (
+                isinstance(e.add_tags, list) and e.add_tags
+                and all(isinstance(tag, str) and TAG_NAME.match(tag) for tag in e.add_tags)):
+            errors.append(f"{e.path}: add_tags must be a list of tag names")
         if e.publish is not None and not isinstance(e.publish, bool):
             errors.append(f"{e.path}: publish must be true or false")
     return errors
@@ -192,7 +198,27 @@ def apply_curation(text: str, entry: CurationEntry) -> str:
         lines = set_key(lines, "publish", "true" if entry.publish else "false")
     if entry.blurb is not None:
         lines = set_key(lines, "blurb", entry.blurb)
+    if entry.add_tags:
+        lines = _merge_tags(lines, entry.add_tags)
     return join_frontmatter(lines, body)
+
+
+def _merge_tags(lines: list[str], extra: list[str]) -> list[str]:
+    """Append tags the note lacks, keeping its own order; writes an inline list."""
+    span = _find_key(lines, "tags")
+    current: list[str] = []
+    if span is not None:
+        try:
+            parsed = yaml.safe_load("\n".join(lines[span[0]:span[1]])) or {}
+        except yaml.YAMLError:
+            parsed = {}
+        value = parsed.get("tags") if isinstance(parsed, dict) else None
+        if isinstance(value, list):
+            current = [str(v) for v in value if v is not None]
+        elif isinstance(value, str) and value.strip():
+            current = [value.strip()]
+    merged = current + [tag for tag in extra if tag not in current]
+    return set_key(lines, "tags", "[" + ", ".join(merged) + "]")
 
 
 def _featured_values(published_root: Path, paths: set[str]):

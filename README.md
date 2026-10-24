@@ -25,6 +25,6 @@ Notes live in two source vaults on two machines. Syncthing delivers each one, re
 
 Never edit this repository directly. The next compose run overwrites any change made here.
 
-Curation overrides (featured rank, summary, publish) for notes from the BigRig live in `curation.yml` on the Unraid hub and are copied into this repo on every publish. `blurb` is an optional plain-language line of up to 400 characters, shown above a note in the garden's reader mode.
+Curation overrides (featured rank, summary, publish) for notes from the BigRig live in `curation.yml` on the Unraid hub and are copied into this repo on every publish. `blurb` is an optional plain-language line of up to 400 characters, shown above a note in the garden's reader mode. `add_tags` appends tags a BigRig note lacks, for example `[benchmark]`.
 
 The publisher's secrets (its deploy key, SSH known_hosts and the privacy terms list) live only on the Unraid host, outside this repository.

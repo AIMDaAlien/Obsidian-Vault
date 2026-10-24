@@ -1,6 +1,6 @@
 # Curation overrides applied by the compose job (spec 6.1). BigRig notes only; Mac notes carry
 # featured/summary in their own frontmatter. Keys per entry: path, featured, summary, publish.
-# Keys: path, featured, summary (<=160 chars), publish, blurb (<=400 chars, plain-language line for reader mode).
+# Keys: path, featured, summary (<=160 chars), publish, blurb (<=400 chars, plain-language line for reader mode), add_tags (list of tags to append).
 - path: "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md"
   featured: 2
   summary: "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed."

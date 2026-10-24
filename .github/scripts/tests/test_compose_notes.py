@@ -142,7 +142,7 @@ class Normalize(unittest.TestCase):
 
 class CurationTests(TempCase):
     def entry(self, path, **kw):
-        extra = {"blurb": kw["blurb"]} if "blurb" in kw else {}
+        extra = {k: kw[k] for k in ("blurb", "add_tags") if k in kw}
         return CurationEntry(path, kw.get("featured"), kw.get("summary"), kw.get("publish"), **extra)
 
     def test_load_entries(self):
@@ -221,6 +221,33 @@ class CurationTests(TempCase):
         p = self.tmp / "curation.yml"
         p.write_text("- path: A.md\n  blurb: hello\n")
         self.assertEqual(load_curation(p)[0].blurb, "hello")
+
+    def test_load_curation_accepts_add_tags(self):
+        p = self.tmp / "curation.yml"
+        p.write_text("- path: A.md\n  add_tags: [benchmark]\n")
+        self.assertEqual(load_curation(p)[0].add_tags, ["benchmark"])
+
+    def test_add_tags_must_be_a_list_of_plain_words(self):
+        root = self.root_with(**{"A.md": "# A\n"})
+        self.assertEqual(validate_curation([self.entry("A.md", add_tags="benchmark")], root, {}),
+                         ["A.md: add_tags must be a list of tag names"])
+        self.assertEqual(validate_curation([self.entry("A.md", add_tags=["a, b"])], root, {}),
+                         ["A.md: add_tags must be a list of tag names"])
+        self.assertEqual(validate_curation([self.entry("A.md", add_tags=["benchmark", "local-ai"])], root, {}), [])
+
+    def test_apply_add_tags_merges_into_inline_list(self):
+        out = apply_curation("---\ntags: [omarchy, strata]\ntitle: A\n---\nbody\n",
+                             self.entry("A.md", add_tags=["benchmark", "strata"]))
+        self.assertIn("tags: [omarchy, strata, benchmark]\ntitle: A", out)
+
+    def test_apply_add_tags_merges_into_block_list(self):
+        out = apply_curation("---\ntags:\n  - llm\n  - bench\ntitle: A\n---\nbody\n",
+                             self.entry("A.md", add_tags=["benchmark"]))
+        self.assertIn("tags: [llm, bench, benchmark]\ntitle: A", out)
+
+    def test_apply_add_tags_creates_tags_when_missing(self):
+        out = apply_curation("---\ntitle: A\n---\nbody\n", self.entry("A.md", add_tags=["benchmark"]))
+        self.assertIn("tags: [benchmark]", out)
 
     def test_non_positive_rank_is_error(self):
         root = self.root_with(**{"A.md": "# A\n"})
