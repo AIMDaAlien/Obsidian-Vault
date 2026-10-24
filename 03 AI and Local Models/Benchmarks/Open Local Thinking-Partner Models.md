@@ -3,7 +3,7 @@ type: benchmark-log
 topic: Open Local Thinking-Partner Models
 publish: true
 created: 2026-10-06
-tags: [omarchy]
+tags: [omarchy, benchmark]
 machine: bigrig
 title: "Open Local Thinking-Partner Models"
 ---

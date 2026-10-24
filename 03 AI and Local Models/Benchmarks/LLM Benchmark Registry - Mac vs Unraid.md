@@ -1,5 +1,5 @@
 ---
-tags: [local-ai]
+tags: [local-ai, benchmark]
 created: 2026-08-10
 publish: true
 featured: 37

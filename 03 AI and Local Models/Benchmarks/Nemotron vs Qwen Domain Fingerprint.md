@@ -1,5 +1,5 @@
 ---
-tags: [cost]
+tags: [cost, benchmark]
 created: 2026-08-12
 publish: true
 featured: 51

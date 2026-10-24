@@ -1,5 +1,5 @@
 ---
-tags: [local-ai, hardware-constraints]
+tags: [local-ai, hardware-constraints, benchmark]
 created: 2026-08-14
 publish: true
 machine: mac

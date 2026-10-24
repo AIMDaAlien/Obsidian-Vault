@@ -3,7 +3,7 @@ type: benchmark-log
 topic: HF Trending Models Survey
 publish: true
 created: 2026-10-01
-tags: [omarchy]
+tags: [omarchy, benchmark]
 machine: bigrig
 title: "HF Trending Models Survey"
 ---

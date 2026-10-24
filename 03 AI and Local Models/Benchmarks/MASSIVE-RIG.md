@@ -3,7 +3,7 @@ type: benchmark-log
 topic: MASSIVE-RIG
 publish: true
 created: 2026-09-29
-tags: [omarchy]
+tags: [omarchy, benchmark]
 updated: 2026-10-17
 machine: bigrig
 title: "MASSIVE-RIG"

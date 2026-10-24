@@ -1,5 +1,5 @@
 ---
-tags: [local-ai, side-project, monetization]
+tags: [local-ai, side-project, monetization, benchmark]
 created: 2026-09-02
 publish: true
 ---

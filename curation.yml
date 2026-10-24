@@ -8,6 +8,7 @@
   featured: 7
   summary: "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
   blurb: "I put a used datacenter graphics card with 32 GB of memory into a regular home PC and set it up to run large AI models. It can read a prompt the length of a novel and answer in under two minutes. The note has the measurements, the model setups that worked, and the ones that didn't."
+  add_tags: [benchmark]
 - path: "01 Projects/Philosopher/Philosopher Project.md"
   featured: 8
   summary: "A private AI philosophy partner that must cite real sources: tested against 40 trick questions, it made up zero quotations."
@@ -37,6 +38,7 @@
 - path: "03 AI and Local Models/Benchmarks/MASSIVE-RIG.md"
   featured: 39
   summary: "We tried every common speed-up on a home AI server; most did nothing, and measuring that saved real money."
+  add_tags: [benchmark]
 - path: "03 AI and Local Models/Models & Serving/Flash-Next llama.cpp Audit 2026-09-28.md"
   featured: 43
   summary: "Hunting a 20% speedup on a giant AI model: the real bottleneck turned out to be CPU math, not disk or memory."
@@ -57,3 +59,9 @@
   summary: "A small AI that decides which bigger AI should do a job, and only acts when confident; tested honestly, savings were modest."
 - path: "markdown practice.md"
   publish: false
+- path: "01 Projects/Strata/Strata Bench.md"
+  add_tags: [benchmark]
+- path: "03 AI and Local Models/Benchmarks/HF Trending Models Survey.md"
+  add_tags: [benchmark]
+- path: "03 AI and Local Models/Benchmarks/Open Local Thinking-Partner Models.md"
+  add_tags: [benchmark]

@@ -3,7 +3,7 @@ type: benchmark-log
 topic: Strata Bench
 publish: true
 created: 2026-10-12
-tags: [omarchy]
+tags: [omarchy, benchmark]
 machine: bigrig
 title: "Strata Bench"
 ---
