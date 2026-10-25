@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T14:45:24Z",
+  "generated_at": "2026-10-25T15:00:24Z",
   "tree": [
     {
       "path": "Index.md",
@@ -1031,6 +1031,10 @@
     },
     {
       "path": "02 Homelab/Hardware/Hardware Specs & Roles - Rig Fleet (Sep 2026).md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Hardware/Incident 2026-10-25 — Unraid shares never mounted.md",
       "type": "file"
     },
     {
@@ -4902,6 +4906,26 @@
       "featured": 13,
       "summary": "Which of my three machines does what, with their parts: the AI desktop, the Unraid server and the laptop, as of September 2026."
     },
+    "02 Homelab/Hardware/Incident 2026-10-25 — Unraid shares never mounted.md": {
+      "type": "incident",
+      "topic": "Unraid user shares failed to mount after an unclean restart",
+      "category": "Rig & Hardware",
+      "created": "2026-10-25",
+      "updated": "2026-10-25",
+      "tags": [
+        "incident",
+        "postmortem",
+        "unraid",
+        "docker",
+        "homelab",
+        "portfolio"
+      ],
+      "publish": true,
+      "severity": "medium",
+      "status": "resolved (follow-ups open)",
+      "machine": "bigrig",
+      "title": "Incident 2026-10-25: Unraid shares never mounted, every container \\\"vanished\\\""
+    },
     "02 Homelab/Hardware/Maya V100 preflight and Qwen fallback — 2026-10-13.md": {
       "type": "note",
       "category": "Rig & Hardware",
@@ -7404,6 +7428,7 @@
       "Rig Hardware & Display",
       "GPU Crash & Vulkan Device Pinning",
       "Fan Control (MSI Z690-A)",
+      "Incident 2026-10-25 — Unraid shares never mounted",
       "Dual Tesla P100 vs 2nd 9060 XT",
       "Raspberry Pi B+ Utility Node",
       "Models & Serving",
@@ -8057,6 +8082,11 @@
       "Rig Hardware & Display",
       "Qwen3.8 Rig",
       "Hermes Install & Config Port"
+    ],
+    "02 Homelab/Hardware/Incident 2026-10-25 — Unraid shares never mounted.md": [
+      "Rig & Hardware",
+      "Vault Map",
+      "Unraid LLM Control Center"
     ],
     "02 Homelab/Hardware/Maya V100 preflight and Qwen fallback — 2026-10-13.md": [
       "V100 coding-model comparison — 2026-10-14"
