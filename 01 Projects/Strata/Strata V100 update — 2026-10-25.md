@@ -23,6 +23,8 @@ I run a large AI model, Qwen3.8 Flash-Next, on my own graphics card at home inst
 - **A label bug, not a model bug.** My model list said a smaller variant (IQ3_XXS) was loaded. The better one (IQ3_S) was running all along; two labels were out of date. Both are fixed.
 - **It's reachable from my phone, safely.** The companion app can reach the model from outside my home through an encrypted tunnel, and only with a key.
 
+![[_attachments/strata-v100-update-20261025/headline.png]]
+
 ### Words used below
 
 | Term | Meaning |
@@ -50,7 +52,7 @@ Phone and laptop traffic from outside the house needs a key. The tunnel lets thr
 
 ## 1. The conversation cache (the big one)
 
-![[strata-v100-update-20261025/conversation-cache.png]]
+![[_attachments/strata-v100-update-20261025/conversation-cache.png]]
 
 **The problem.** The model only keeps one conversation in working memory. A companion that watches my screen sends small, separate requests between chat messages, such as "what's on screen now?" or "name this chat". Each one replaced the long conversation, so my next message had to re-read all of it.
 
@@ -90,7 +92,7 @@ sequenceDiagram
 
 ## 2. Where the memory goes
 
-![[strata-v100-update-20261025/memory-map.png]]
+![[_attachments/strata-v100-update-20261025/memory-map.png]]
 
 The graphics card is full by design: whatever isn't needed for working space is filled with experts, because every expert on the card is one that doesn't have to cross the slower PCIe link. The vision encoder takes 1.2 GB of it. System RAM is dominated by the experts that don't fit on the card.
 
@@ -108,7 +110,7 @@ None was needed in the end: the conversation cache lives in system RAM, and the 
 
 ## 3. Power: 135 W → 150 W
 
-![[strata-v100-update-20261025/power-cap.png]]
+![[_attachments/strata-v100-update-20261025/power-cap.png]]
 
 The card used to run on one power cable, so I kept it at 135 W. Since 2026-10-23 it has two. I compared three limits (two rounds each, an 80K-token prompt plus short ones):
 
@@ -124,7 +126,7 @@ Writing speed doesn't change with power. It's limited by memory speed, not by ho
 
 ## 4. The newest official engine
 
-![[strata-v100-update-20261025/upstream-ab.png]]
+![[_attachments/strata-v100-update-20261025/upstream-ab.png]]
 
 The official project released Strata 0.2.6 (engine 0.1.50), which now includes the V100-specific improvements I had added to my own copy. I installed it separately and tested it with the same settings.
 
