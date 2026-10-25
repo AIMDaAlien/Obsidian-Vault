@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, hardware-constraints]
+tags: [troubleshooting, hardware-constraints, pihole, truenas, dns, networking, homelab]
 created: 2025-10-13
 publish: true
 featured: 14

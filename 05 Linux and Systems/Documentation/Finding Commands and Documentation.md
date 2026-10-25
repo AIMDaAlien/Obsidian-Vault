@@ -10,5 +10,5 @@ The example above is designed to demonstrate a scenario where two commands list 
 Based on this output, there are two `ls` cmds that list directory contents.
 Reason: UNIX had two main variants, which resulted in some cmds being developed "in parallel" thus behaving differently on different variants of UNIX. Modern distros include cmds from both UNIX variants.
 
-So when `ls` is typed, which cmd is executed?? [[Where Are These Commands Located]]
+So when `ls` is typed, which cmd is executed?? [[Man Pages#Where Are These Commands Located|Where Are These Commands Located]]
 

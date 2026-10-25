@@ -33,7 +33,7 @@ Build demonstrable NOC/Data Center technician skills through hands-on homelab pr
 
 ## Quick Links
 - [[Docker and Portainer Setup]]
-- [[Prometheus Grafana Stack]]
+- [[Prometheus Grafana Stack - Implementation Guide#Appendix, deployed state 2026-01|Prometheus Grafana Stack]]
 - [[Troubleshooting Log]]
 - [[Session Notes]]
 

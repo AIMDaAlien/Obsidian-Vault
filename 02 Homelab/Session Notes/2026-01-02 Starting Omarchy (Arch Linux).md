@@ -1,5 +1,5 @@
 ---
-tags: [session-log, security]
+tags: [session-log, security, omarchy, linux]
 created: 2026-01-09
 publish: true
 ---

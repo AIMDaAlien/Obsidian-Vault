@@ -1,15 +1,16 @@
 ---
-tags: [guide, hardware-constraints]
+tags: [guide, hardware-constraints, pihole, raspberry-pi, dns, homelab]
 created: 2025-09-23
+updated: 2026-10-25
 publish: true
 featured: 18
 summary: "A whole-home ad blocker on a $35 Raspberry Pi: the parts, the one-character typo that broke it, and a TV that went from 14,000 to under 100 requests a day."
 ---
 
-# Pi-hole Setup: Raspberry Pi 3 B+
+# Pi-hole Setup: Raspberry Pi B+ (2014)
 
 > [!abstract] TL;DR
-> First Pi-hole build on a Raspberry Pi 3 B+ with a 32GB SD card. Learned that Lite OS had broken ethernet drivers, keyboard layouts matter more than you'd think, and a one-character Unbound config typo can silently kill your DNS. End result: 40–70% of network requests blocked, Samsung TV telemetry dropped from 14,000 to under 100 daily requests.
+> First Pi-hole build on a 2014 Raspberry Pi B+ (512MB) with a 32GB SD card. Learned that Lite OS had broken ethernet drivers, keyboard layouts matter more than you'd think, and a one-character Unbound config typo can silently kill your DNS. End result: 40–70% of network requests blocked, Samsung TV telemetry dropped from 14,000 to under 100 daily requests.
 >
 > **This hardware was later retired →** [[Pi-hole Migration - RPi B+ to RPi 5 NVMe]]
 
@@ -19,7 +20,7 @@ summary: "A whole-home ad blocker on a $35 Raspberry Pi: the parts, the one-char
 
 | Component | Choice                     | Why                                                              |
 | --------- | -------------------------- | ---------------------------------------------------------------- |
-| Pi model  | Raspberry Pi 3 B+ (~$35)   | Gigabit Ethernet, 1GB RAM, low power — right-sized for Pi-hole   |
+| Pi model  | Raspberry Pi B+, 2014 (~$35) | 512MB RAM, single-core ARMv6 700MHz, 100Mbps Ethernet, low power — enough for Pi-hole |
 | Storage   | 32GB MicroSD (Class 10/A2) | Sufficient for Pi-hole + light services                          |
 | Network   | Ethernet cable             | Always use wired for DNS — WiFi drops = everyone's internet dies |
 | Cooling   | Heatsink                   | Running 24/7, keeps temps stable                                 |
@@ -42,7 +43,7 @@ summary: "A whole-home ad blocker on a $35 Raspberry Pi: the parts, the one-char
 > Tried: SD card swap, Legacy Lite, different cables. None of it helped.
 
 > [!success] Fix — Use Desktop OS, then strip the GUI
-> The Pi 3 B+ has ethernet driver quirks on Lite images. Desktop OS includes the right drivers.
+> The B+ has ethernet driver quirks on Lite images. Desktop OS includes the right drivers.
 >
 > ```bash
 > # After first boot, switch to console-only mode:
@@ -235,5 +236,5 @@ sudo apt update && sudo apt install log2ram
 ---
 
 *Original setup: September 2024*
-*Hardware: Raspberry Pi 3 B+, 32GB SanDisk SD Card*
+*Hardware: Raspberry Pi B+ (2014, 512MB), 32GB SanDisk SD Card*
 *This hardware was later retired — see [[Pi-hole Migration - RPi B+ to RPi 5 NVMe]]*

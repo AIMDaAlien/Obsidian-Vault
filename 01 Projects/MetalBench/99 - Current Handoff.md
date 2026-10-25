@@ -1,6 +1,6 @@
 ---
 title: 99 - Current Handoff
-tags: [project]
+tags: [project, benchmark, local-ai]
 created: 2025-01-01
 publish: true
 project: MetalBench

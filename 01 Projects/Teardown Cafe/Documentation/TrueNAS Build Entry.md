@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, hardware-constraints, cost, checklist, truenas, nas-build, enterprise-storage, sas-drives, zfs, raidz2, lsi-hba, budget-build, self-hosted, immich, teardown-cafe]
+tags: [troubleshooting, hardware-constraints, cost, checklist, truenas, nas-build, enterprise-storage, sas-drives, zfs, raidz2, lsi-hba, budget-build, self-hosted, immich, teardown-cafe, storage, homelab]
 created: 2025-10-19
 publish: true
 project: Teardown Cafe

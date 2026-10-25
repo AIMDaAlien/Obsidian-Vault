@@ -1,5 +1,5 @@
 ---
-tags: [reliability, local-ai]
+tags: [reliability, local-ai, backup, storage]
 created: 2026-08-12
 publish: true
 ---

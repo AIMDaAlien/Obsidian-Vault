@@ -1,5 +1,5 @@
 ---
-tags: [homelab, server-inventory, unraid, hardware, monitoring, reliability, hardware-constraints]
+tags: [homelab, server-inventory, unraid, hardware, monitoring, reliability, hardware-constraints, raspberry-pi, truenas]
 created: 2026-06-27
 publish: true
 last_incident: 2026-06-27

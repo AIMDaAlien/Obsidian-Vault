@@ -13,5 +13,5 @@ Notes in 07 Tools and Workflow, grouped by subfolder.
 - [[Development Tools]]
 - [[GrapheneOS Migration Guide - Complete Documentation]]
 - [[Obsidian Productivity Mastery]]
-- [[Obsidian Vault Git Sync]]
+- [[Obsidian Vault Hub - Syncthing to Unraid Publishing#Git sync, 2026-08 to 2026-10|Obsidian Vault Git Sync]]
 - [[Obsidian Vault Hub - Syncthing to Unraid Publishing]]

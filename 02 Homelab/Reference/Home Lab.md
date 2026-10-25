@@ -1,5 +1,5 @@
 ---
-tags: [hardware-constraints]
+tags: [hardware-constraints, homelab]
 created: 2025-09-15
 publish: true
 ---

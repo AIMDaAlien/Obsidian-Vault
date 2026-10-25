@@ -1,5 +1,5 @@
 ---
-tags: [guide, troubleshooting, security, hardware-constraints, cost]
+tags: [guide, troubleshooting, security, hardware-constraints, cost, truenas, storage, hardware]
 created: 2025-10-05
 publish: true
 ---

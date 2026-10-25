@@ -1,5 +1,5 @@
 ---
-tags: [self-hosting, truenas, docker, disk, ops]
+tags: [self-hosting, truenas, docker, disk, ops, storage]
 created: 2026-02-18
 publish: true
 project: Penthouse

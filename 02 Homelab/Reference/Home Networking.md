@@ -1,5 +1,5 @@
 ---
-tags: []
+tags: [networking, homelab]
 created: 2025-09-15
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: BigRig TUF X670E BIOS Configuration
-tags: [homelab]
+tags: [homelab, hardware]
 created: 2025-01-01
 publish: true
 featured: 25

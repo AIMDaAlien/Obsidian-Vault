@@ -1,5 +1,5 @@
 ---
-tags: [guide, hardware-constraints, cost]
+tags: [guide, hardware-constraints, cost, truenas, storage, homelab]
 created: 2025-10-05
 publish: true
 featured: 4

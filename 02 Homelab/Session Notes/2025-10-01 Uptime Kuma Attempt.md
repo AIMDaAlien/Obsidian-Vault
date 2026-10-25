@@ -1,5 +1,5 @@
 ---
-tags: [session-log, troubleshooting, monitoring, checklist]
+tags: [session-log, troubleshooting, monitoring, checklist, raspberry-pi, homelab]
 created: 2025-10-01
 publish: true
 featured: 23

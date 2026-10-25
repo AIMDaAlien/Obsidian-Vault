@@ -1,5 +1,5 @@
 ---
-tags: [security, reliability, hardware-constraints]
+tags: [security, reliability, hardware-constraints, homelab, self-hosting]
 created: 2025-09-15
 publish: true
 ---

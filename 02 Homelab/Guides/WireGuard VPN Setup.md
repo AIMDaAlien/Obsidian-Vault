@@ -1,5 +1,5 @@
 ---
-tags: [troubleshooting, security, hardware-constraints]
+tags: [troubleshooting, security, hardware-constraints, networking, homelab]
 created: 2025-09-30
 publish: true
 featured: 26

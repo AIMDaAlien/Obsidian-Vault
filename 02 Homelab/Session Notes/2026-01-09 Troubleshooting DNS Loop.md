@@ -1,5 +1,5 @@
 ---
-tags: [session-log, troubleshooting]
+tags: [session-log, troubleshooting, pihole, dns, networking]
 created: 2026-01-09
 publish: true
 featured: 17

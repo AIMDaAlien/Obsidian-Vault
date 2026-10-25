@@ -1,18 +1,19 @@
 ---
-tags: [obsidian, syncthing, unraid, automation, publishing, privacy, knowledge-garden]
-created: 2026-10-18
-updated: 2026-10-18
+tags: [obsidian, syncthing, unraid, automation, publishing, privacy, knowledge-garden, reliability, sync, homelab, self-hosting]
+created: 2025-09-15
+updated: 2026-10-25
 publish: true
-featured: 83
+featured: 77
 status: Live since 2026-10-18
 system: Obsidian Notes Vault
 summary: "How every device's notes flow to one Unraid hub that gates them for leaks and publishes the safe ones to my site every 15 minutes, with no git on the laptops."
 blurb: "Every note I write on any machine lands on one home server, which checks it for private details and publishes the safe ones here."
 ---
-
 # Obsidian Vault Hub: Syncthing to Unraid Publishing
 
-Since 2026-10-18 no device runs git for notes. Each machine keeps its own Obsidian vault, Syncthing carries it to Unraid, and Unraid is the only thing that composes, checks, and publishes to the public [Obsidian-Vault](https://github.com/AIMDaAlien/Obsidian-Vault) repo that the portfolio's Knowledge Garden reads. This replaces the per-device setup in [[Obsidian Vault Git Sync]] and the manual two-vault workflow in [[Building a Privacy-First Obsidian Publishing System]].
+> Merged 2026-10-25 from: Obsidian Vault Git Sync, Syncthing.
+
+Since 2026-10-18 no device runs git for notes. Each machine keeps its own Obsidian vault, Syncthing carries it to Unraid, and Unraid is the only thing that composes, checks, and publishes to the public [Obsidian-Vault](https://github.com/AIMDaAlien/Obsidian-Vault) repo that the portfolio's Knowledge Garden reads. This replaces the per-device setup in [[Obsidian Vault Hub - Syncthing to Unraid Publishing#Git sync, 2026-08 to 2026-10|Obsidian Vault Git Sync]] and the manual two-vault workflow in [[Building a Privacy-First Obsidian Publishing System]].
 
 ## Why
 
@@ -97,8 +98,43 @@ BigRig vault --Syncthing send-only-->  Unraid /mnt/cache/vault/sources/bigrig
 - Separate "what is published" (frontmatter and curation) from "what is checked" (the gate). Ranking is a taste decision; leaking is not.
 - Keep the thing cron executes outside anything the synced or cloned code can write to.
 
+## History
+
+### Git sync, 2026-08 to 2026-10
+
+#### 2026-08-11 Recovery
+
+Obsidian could commit locally but could not pull or push because the local repository had been reinitialized on 2026-08-09. Its new root commit shared no history with `origin/main`. The auto-sync log repeatedly reported:
+
+```text
+fatal: refusing to merge unrelated histories
+```
+
+At diagnosis, local `main` was 3 commits ahead and 235 behind. A dry-run push also failed as non-fast-forward.
+
+Recovery:
+
+- Preserved the local state on `backup/pre-reconcile-20260811-0923`.
+- Merged `origin/main` with `--allow-unrelated-histories`, keeping the five newer local note versions where both sides differed.
+- Confirmed no remote files were deleted and all remote-only notes were restored.
+- Pushed merge commit `0b8ba23`.
+- Updated `origin` to the canonical remote: `https://github.com/AIMDaAlien/Obsidian-Vault.git`.
+- Pulled the generated manifest commit `66baef8` and reran `.github/scripts/vault-auto-sync.sh` successfully.
+
+Healthy state: local `main` and `origin/main` match, and the scheduled auto-sync can pull before pushing normally.
+
+#### 2026-10-18 Superseded
+
+Git was removed from the vault entirely. Notes now sync by Syncthing to an Unraid hub, which is the only publisher. See the sections above. The recovery above is kept as a record of why.
+
+### First Syncthing setup
+
+Got this thing set up and ready to synchronize between my Z Flip and Macbook Air M4 to share this Obsidian Vault so that any notes I make on each
+
+#### 2026-10-18 Update
+
+Syncthing is now the transport for the whole notes pipeline: every device's vault is a send-only folder into the Unraid hub. The flow is documented above.
+
 ## Related
-- [[Obsidian Vault Git Sync]] (superseded)
 - [[Building a Privacy-First Obsidian Publishing System]] (the original two-vault idea this grew from)
-- [[Syncthing]]
 - [[01 - Services Dashboard]]
