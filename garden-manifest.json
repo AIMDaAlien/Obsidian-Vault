@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T15:00:24Z",
+  "generated_at": "2026-10-25T21:23:25Z",
   "tree": [
     {
       "path": "Index.md",
@@ -2082,13 +2082,14 @@
       "tags": [
         "meta",
         "vault",
-        "logging"
+        "logging",
+        "obsidian"
       ],
       "publish": true,
       "created": "2026-09-23",
       "machine": "bigrig",
       "title": "Knowledge Garden",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "00 Index/Models & Serving.md": {
       "type": "moc",
@@ -2112,7 +2113,8 @@
         "meta",
         "moc",
         "omarchy",
-        "desktop"
+        "desktop",
+        "linux"
       ],
       "updated": "2026-09-23",
       "publish": true,
@@ -2157,7 +2159,8 @@
       "tags": [
         "meta",
         "moc",
-        "index"
+        "index",
+        "obsidian"
       ],
       "updated": "2026-09-23",
       "publish": true,
@@ -3116,11 +3119,12 @@
       "publish": true,
       "created": "2026-09-26",
       "tags": [
-        "omarchy"
+        "omarchy",
+        "penthouse"
       ],
       "machine": "bigrig",
       "title": "Penthouse Remake",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "01 Projects/Penthouse/Rebuild Archive/15 - PWA Migration (SvelteKit).md": {
       "tags": [
@@ -3875,11 +3879,13 @@
       "created": "2026-10-12",
       "tags": [
         "omarchy",
-        "benchmark"
+        "benchmark",
+        "strata",
+        "local-ai"
       ],
       "machine": "bigrig",
       "title": "Strata Bench",
-      "updated": "2026-10-24"
+      "updated": "2026-10-25"
     },
     "01 Projects/Strata/Strata RTX 3060 Optimization Showcase.md": {
       "type": "project-showcase",
@@ -3890,7 +3896,9 @@
         "benchmarks",
         "optimization",
         "rtx3060",
-        "showcase"
+        "showcase",
+        "gpu",
+        "local-ai"
       ],
       "publish": true,
       "machine": "bigrig",
@@ -3898,7 +3906,7 @@
       "featured": 2,
       "summary": "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed.",
       "blurb": "Strata is the engine I run AI models on at home. On a mid-range gaming card I got answers to very long prompts about a sixth faster, and proved it with repeated back-to-back tests rather than one lucky run. The note also keeps the experiment that didn't pass, because a failed result you can trust is worth more than a win you can't.",
-      "updated": "2026-10-21"
+      "updated": "2026-10-25"
     },
     "01 Projects/Strata/Strata RTX 3060 long-context tuning.md": {
       "type": "benchmark-report",
@@ -3908,12 +3916,14 @@
         "strata",
         "benchmarks",
         "optimization",
-        "rtx3060"
+        "rtx3060",
+        "gpu",
+        "local-ai"
       ],
       "publish": true,
       "machine": "bigrig",
       "title": "Strata: faster long-context responses on the RTX 3060",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "01 Projects/Strata/Strata V100 Optimization Showcase.md": {
       "type": "project-showcase",
@@ -3927,7 +3937,9 @@
         "optimization",
         "v100",
         "volta",
-        "showcase"
+        "showcase",
+        "gpu",
+        "local-ai"
       ],
       "publish": true,
       "machine": "bigrig",
@@ -3939,7 +3951,9 @@
       "tags": [
         "omarchy",
         "strata",
-        "benchmark"
+        "benchmark",
+        "gpu",
+        "local-ai"
       ],
       "updated": "2026-10-13",
       "publish": true,
@@ -3956,7 +3970,8 @@
       "tags": [
         "omarchy",
         "strata",
-        "v100"
+        "v100",
+        "gpu"
       ],
       "updated": "2026-10-19",
       "publish": true,
@@ -4834,7 +4849,8 @@
         "rig",
         "hardware",
         "gpu",
-        "decision"
+        "decision",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -4869,7 +4885,8 @@
         "rig",
         "vulkan",
         "gpu",
-        "troubleshooting"
+        "troubleshooting",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -4883,7 +4900,9 @@
       "category": "Rig & Hardware",
       "tags": [
         "omarchy",
-        "rig-hardware"
+        "rig-hardware",
+        "gpu",
+        "hardware"
       ],
       "updated": "2026-09-25",
       "publish": true,
@@ -4896,7 +4915,9 @@
       "category": "Rig & Hardware",
       "tags": [
         "omarchy",
-        "rig-hardware"
+        "rig-hardware",
+        "hardware",
+        "homelab"
       ],
       "updated": "2026-09-26",
       "publish": true,
@@ -4931,7 +4952,9 @@
       "category": "Rig & Hardware",
       "tags": [
         "omarchy",
-        "rig-hardware"
+        "rig-hardware",
+        "gpu",
+        "hardware"
       ],
       "updated": "2026-10-17",
       "publish": true,
@@ -4948,7 +4971,11 @@
         "hardware",
         "iot",
         "decision",
-        "small-models"
+        "small-models",
+        "raspberry-pi",
+        "pihole",
+        "monitoring",
+        "backup"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -5476,7 +5503,8 @@
       "category": "Benchmarks",
       "tags": [
         "benchmark",
-        "metalbench"
+        "metalbench",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -5484,7 +5512,7 @@
       "title": "2026-09-22 Rebench — Coherent Multi-Domain Scoreboard",
       "featured": 45,
       "summary": "Re-running six AI setups on the same fair test flipped the old ranking: the supposed quality champion was just slow.",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Benchmarks/2026-09-23 Rebench2 — Role-Tagged Scoreboard.md": {
       "type": "benchmark-run",
@@ -5517,7 +5545,8 @@
       "category": "Benchmarks",
       "tags": [
         "omarchy",
-        "benchmarks"
+        "benchmarks",
+        "local-ai"
       ],
       "updated": "2026-09-24",
       "publish": true,
@@ -5573,7 +5602,8 @@
         "flash",
         "strata",
         "deepswe2",
-        "local-inference"
+        "local-inference",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-10-12",
@@ -5607,7 +5637,8 @@
       "tags": [
         "benchmark",
         "tooling",
-        "harness"
+        "harness",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-10-12",
@@ -5621,7 +5652,8 @@
       "category": "Benchmarks",
       "tags": [
         "benchmark",
-        "methodology"
+        "methodology",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-10-12",
@@ -5689,11 +5721,12 @@
       "created": "2026-10-01",
       "tags": [
         "omarchy",
-        "benchmark"
+        "benchmark",
+        "local-ai"
       ],
       "machine": "bigrig",
       "title": "HF Trending Models Survey",
-      "updated": "2026-10-24"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Benchmarks/Inference Engine Face-Off - lithos vs Splash vs MLX.md": {
       "tags": [
@@ -5740,7 +5773,8 @@
       "created": "2026-09-29",
       "tags": [
         "omarchy",
-        "benchmark"
+        "benchmark",
+        "local-ai"
       ],
       "updated": "2026-10-17",
       "machine": "bigrig",
@@ -5770,7 +5804,8 @@
       "tags": [
         "benchmark",
         "hub",
-        "index"
+        "index",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-10-12",
@@ -5798,11 +5833,12 @@
       "created": "2026-10-06",
       "tags": [
         "omarchy",
-        "benchmark"
+        "benchmark",
+        "local-ai"
       ],
       "machine": "bigrig",
       "title": "Open Local Thinking-Partner Models",
-      "updated": "2026-10-24"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Benchmarks/ReBench rebench-flash-ad384.md": {
       "type": "benchmark-run",
@@ -5901,7 +5937,9 @@
       "tags": [
         "omarchy",
         "benchmarks",
-        "v100"
+        "v100",
+        "gpu",
+        "local-ai"
       ],
       "updated": "2026-10-14",
       "publish": true,
@@ -6015,7 +6053,8 @@
         "model",
         "benchmark",
         "llama.cpp",
-        "serving"
+        "serving",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-21",
@@ -6031,7 +6070,8 @@
         "serving",
         "flash-next",
         "audit",
-        "performance"
+        "performance",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-28",
@@ -6050,7 +6090,8 @@
       "tags": [
         "model",
         "unraid",
-        "benchmark"
+        "benchmark",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-21",
@@ -6067,7 +6108,8 @@
       "tags": [
         "model",
         "benchmark",
-        "amd-lane"
+        "amd-lane",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-21",
@@ -6084,7 +6126,8 @@
       "tags": [
         "model",
         "benchmark",
-        "daily-driver"
+        "daily-driver",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-21",
@@ -6101,7 +6144,9 @@
       "tags": [
         "model",
         "unraid",
-        "benchmark"
+        "benchmark",
+        "local-ai",
+        "llama-cpp"
       ],
       "publish": true,
       "created": "2026-09-21",
@@ -6117,7 +6162,9 @@
         "unraid",
         "serving",
         "docker",
-        "ops"
+        "ops",
+        "local-ai",
+        "homelab"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -6132,7 +6179,8 @@
       "tags": [
         "llama.cpp",
         "versions",
-        "ops"
+        "ops",
+        "local-ai"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -6143,14 +6191,16 @@
       "tags": [
         "guide",
         "security",
-        "local-ai"
+        "local-ai",
+        "unraid",
+        "self-hosting"
       ],
       "created": "2026-02-12",
       "publish": true,
       "machine": "unraid",
       "engine": "ollama",
       "title": "Architecture Guide - Sovereign AI Stack",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - Ollama/Project Overview - Sovereign AI Stack.md": {
       "tags": [
@@ -6159,52 +6209,62 @@
         "self-hosted",
         "privacy",
         "llm",
-        "local-ai"
+        "local-ai",
+        "unraid"
       ],
       "created": "2026-02-10",
       "publish": true,
       "machine": "unraid",
       "engine": "ollama",
       "title": "Project Overview - Sovereign AI Stack",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - Ollama/Project Status - Sovereign AI Stack.md": {
       "tags": [
         "security",
-        "local-ai"
+        "local-ai",
+        "unraid",
+        "self-hosting"
       ],
       "created": "2026-02-12",
       "publish": true,
       "machine": "unraid",
       "engine": "ollama",
       "title": "Project Status - Sovereign AI Stack",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - Ollama/Setup Tutorial - Sovereign AI Stack.md": {
       "tags": [
         "local-ai",
-        "checklist"
+        "checklist",
+        "unraid",
+        "docker"
       ],
       "created": "2026-02-12",
       "publish": true,
       "machine": "unraid",
       "engine": "ollama",
       "title": "Setup Tutorial - Sovereign AI Stack",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - Ollama/Speed Myth - Ollama vs Text-Gen-WebUI.md": {
-      "tags": [],
+      "tags": [
+        "local-ai",
+        "unraid"
+      ],
       "created": "2026-02-12",
       "publish": true,
       "machine": "unraid",
       "engine": "ollama",
       "title": "Speed Myth - Ollama vs Text-Gen-WebUI",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Deepwen-3.6.md": {
       "tags": [
         "local-ai",
-        "cost"
+        "cost",
+        "unraid",
+        "llama-cpp"
       ],
       "created": "2026-08-10",
       "publish": true,
@@ -6213,7 +6273,7 @@
       "featured": 53,
       "summary": "An AI model replied with nothing but slashes. The cause was a switch that turned off its thinking step, and turning it back on fixed it.",
       "title": "Deepwen-3.6",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Frontier Landscape - What Fits 128GB.md": {
       "tags": [
@@ -6234,20 +6294,23 @@
       "tags": [
         "local-ai",
         "hardware-constraints",
-        "unraid"
+        "unraid",
+        "llama-cpp"
       ],
       "created": "2026-09-02",
       "publish": true,
       "machine": "unraid",
       "engine": "llama.cpp",
       "title": "GLM-5.3-Flash (320B-A18B) — feasibility: NO-GO on this box",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - llama.cpp/K2-Horizon MoVA Serving and Benchmarks.md": {
       "title": "K2-Horizon MoVA Serving and Benchmarks",
       "tags": [
         "local-ai",
-        "benchmark"
+        "benchmark",
+        "unraid",
+        "llama-cpp"
       ],
       "created": "2025-01-01",
       "publish": true,
@@ -6255,12 +6318,14 @@
       "engine": "llama.cpp",
       "featured": 41,
       "summary": "One forgotten power-saving setting made my home AI server run at less than half speed. Fixing it and two other tweaks took it from 9.5 to 22 words per second.",
-      "updated": "2026-10-24"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Qwen3.8-Flash-Next 262K Context on Unraid.md": {
       "title": "Qwen3.8-Flash-Next 262K Context on Unraid",
       "tags": [
-        "local-ai"
+        "local-ai",
+        "unraid",
+        "llama-cpp"
       ],
       "created": "2025-01-01",
       "publish": true,
@@ -6268,13 +6333,14 @@
       "engine": "llama.cpp",
       "featured": 40,
       "summary": "How I got a 176-billion-parameter AI to read a 262,000-token conversation on a modest home server, and which settings made it fast enough.",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Qwen3.8-Flash-Next.md": {
       "tags": [
         "local-ai",
         "hardware-constraints",
-        "unraid"
+        "unraid",
+        "llama-cpp"
       ],
       "created": "2026-09-02",
       "publish": true,
@@ -6283,7 +6349,7 @@
       "featured": 48,
       "summary": "How I fit a huge 176B-parameter AI onto a 128 GB home server, the rule that decided which version fits, and which speed tricks worked or backfired.",
       "title": "Qwen3.8-Flash-Next (176B MoE)",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Unraid LLM Serving Throughput.md": {
       "tags": [
@@ -6292,7 +6358,8 @@
         "llm",
         "llama-cpp",
         "throughput",
-        "benchmark"
+        "benchmark",
+        "local-ai"
       ],
       "created": "2026-09-16",
       "publish": true,
@@ -6301,7 +6368,7 @@
       "engine": "llama.cpp",
       "summary": "Updating the software that runs my home AI server made it 17% faster with no settings changes; I compared it with a rival engine.",
       "title": "Unraid LLM Serving Throughput",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "03 AI and Local Models/Unraid - llama.cpp/Unraid Qwen3.6 Terminal Agent - July 2026.md": {
       "tags": [
@@ -6929,7 +6996,8 @@
         "omarchy",
         "hyprland",
         "tmux",
-        "crash-recovery"
+        "crash-recovery",
+        "linux"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -6945,7 +7013,8 @@
         "omarchy",
         "quickshell",
         "plugins",
-        "bar"
+        "bar",
+        "linux"
       ],
       "publish": true,
       "created": "2026-09-23",
@@ -6961,7 +7030,8 @@
         "omarchy",
         "debloat",
         "power",
-        "update-policy"
+        "update-policy",
+        "linux"
       ],
       "publish": true,
       "created": "2026-09-23",
