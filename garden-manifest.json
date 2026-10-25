@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T23:30:33Z",
+  "generated_at": "2026-10-25T23:45:23Z",
   "tree": [
     {
       "path": "Index.md",
@@ -3938,7 +3938,7 @@
       "topic": "Strata V100 optimization",
       "category": "Benchmarks",
       "created": "2026-10-19",
-      "updated": "2026-10-19",
+      "updated": "2026-10-25",
       "tags": [
         "strata",
         "benchmarks",
@@ -7900,6 +7900,7 @@
       "Benchmarks",
       "Vault Map",
       "Strata V100 tuning — 2026-10-18",
+      "Strata V100 update — 2026-10-25",
       "Strata Bench"
     ],
     "01 Projects/Strata/Strata V100 update — 2026-10-25.md": [
