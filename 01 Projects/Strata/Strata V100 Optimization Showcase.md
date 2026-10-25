@@ -3,7 +3,7 @@ type: project-showcase
 topic: Strata V100 optimization
 category: Benchmarks
 created: 2026-10-19
-updated: 2026-10-19
+updated: 2026-10-25
 tags: [strata, benchmarks, optimization, v100, volta, showcase, gpu, local-ai]
 publish: true
 machine: bigrig
@@ -18,6 +18,14 @@ title: "Strata on the Tesla V100: optimization showcase"
 ![[strata-v100-tuning-20261018/headline.png]]
 
 **Visual report:** https://claude.ai/artifact/Ty3FTvucy1Pppx4VRPP6Qg · **Working dashboard (every dataset):** https://claude.ai/artifact/SVHuTwEfnSbhAVHd55oTzp · **Code and record:** https://github.com/AIMDaAlien/UnbiasedStrata-V100 (`docs/V100_TUNING.md`) · **Full lab note:** [[Strata V100 tuning — 2026-10-18]]
+
+> [!info] Update 2026-10-25
+> The card now has two power connectors and runs at **150 W** (80K prefill 1,298 → 1,393 tok/s, soaked).
+> The **conversation cache** is on: a long chat interrupted by side requests answers its next message in
+> **1 s instead of 62 s**, with identical answers.
+> Upstream Strata 0.2.6 was tested: +9% long-prompt prefill but even on the task suite, so it was not adopted.
+> Vision passed 7/7.
+> Details and charts: [[Strata V100 update — 2026-10-25]]. The numbers below are the 2026-10-18/19 results.
 
 ## Result at a glance
 

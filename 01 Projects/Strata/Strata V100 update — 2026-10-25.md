@@ -20,7 +20,7 @@ I run a large AI model, Qwen3.8 Flash-Next, on my own graphics card at home inst
 - **The card got a little more power, so it's a little faster.** It now has two power cables, so I raised its limit from 135 W to 150 W. Long documents are read about 7% faster, and the brief power spikes stay at the card's rating.
 - **I tested the newest official version of the engine.** It reads long prompts 9% faster, but on 24 real coding tasks it came out even, so I kept my tuned version and set the new one aside, ready.
 - **Vision is unchanged and checked.** The model read all seven details correctly from two full-resolution test screenshots, and still answered correctly with both screenshots plus a 180,000-token document at once.
-- **A label bug, not a model bug.** My model list said a smaller variant (IQ3_XXS) was loaded. The better one (IQ3_S) was running all along; two labels were out of date. Both are fixed.
+- **A label bug, not a model bug.** My model list said a smaller variant (IQ3_XXS) was loaded. The better one (IQ3_S) was running all along; the labels were out of date and are now fixed, including the engine's own name for itself.
 - **It's reachable from my phone, safely.** The companion app can reach the model from outside my home through an encrypted tunnel, and only with a key.
 
 ![[_attachments/strata-v100-update-20261025/headline.png]]
@@ -154,7 +154,7 @@ The vision encoder is the model's own (not a bolted-on captioner), running on th
 The model actually loaded has always been **IQ3_S**: the config points at the IQ3_S files, and the engine log shows it loading them. Two labels were wrong:
 
 1. **My model list** (`fleet.yaml`, which feeds the bar widget and the agent configs) still described the setup from when this ran on an RTX 3060: "IQ3_XXS", "RTX 3060", and an old port. Its status dot was actually checking a different program on that port. It now reads *Local · Strata V100 (IQ3_S)* on the right port.
-2. **The engine's own name for itself** is a fixed string in its source code ending in `iq3_xxs`, left over from the original project. It's only a label: requests aren't checked against it, and the gateway calls the model `flash`. Changing it means rebuilding the engine, so it stays for now.
+2. **The engine's own name for itself** is a fixed string in its source code ending in `iq3_xxs`, left over from the original project. It's only a label: requests aren't checked against it, and the gateway calls the model `flash`. I added a setting for it and rebuilt the engine (one file recompiled), so it now reports `qwen3.8-flash-next-iq3_s`. Writing speed is the same on the old and new builds when given identical prompts.
 
 ## 7. Reaching it from outside the house
 
@@ -168,13 +168,11 @@ The model actually loaded has always been **IQ3_S**: the config points at the IQ
 ## Still open
 
 - **BIOS:** set "Restore on AC power loss" to Power On, so the PC comes back by itself after an outage. Also stability tidying: AI overclocking off, Curve Optimizer −20 → −10/0.
-- Optional: rebuild the engine so it calls itself `iq3_s`.
-- Merge the gateway's key-check branch into its main branch before the next gateway rebuild.
 
 ## Technical details
 
 - **Production:**
-  - Engine `unbiased-strata-0.1.43.1-sm70-pr1401`, IQ3_S, context 196,608.
+  - Engine `unbiased-strata-0.1.43.1-sm70-pr1401-name` (adds `--model-name`), IQ3_S, context 196,608.
   - INT8 KV with a 32K window on the card, `--resident-experts`, `--adapt-async 1`, `--vram-reserve-mib 2400`, 12 workers.
   - Vision: Q8_0 mmproj at 2048 tokens per image.
   - New: `--conversation-cache-mib 4096 --conversation-cache-slots 3 --conversation-cache-min-tokens 8192 --conversation-cache-min-free-mib 5120`.
