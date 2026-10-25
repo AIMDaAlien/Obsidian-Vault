@@ -3,7 +3,7 @@ type: benchmark-log
 topic: Penthouse Remake
 publish: true
 created: 2026-09-26
-tags: [omarchy]
+tags: [omarchy, penthouse]
 machine: bigrig
 title: "Penthouse Remake"
 ---

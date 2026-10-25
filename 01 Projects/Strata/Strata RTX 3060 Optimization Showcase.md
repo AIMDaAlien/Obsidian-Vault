@@ -2,7 +2,7 @@
 type: project-showcase
 topic: Strata RTX 3060 optimization
 created: 2026-10-11
-tags: [strata, benchmarks, optimization, rtx3060, showcase]
+tags: [strata, benchmarks, optimization, rtx3060, showcase, gpu, local-ai]
 publish: true
 machine: bigrig
 title: "Strata on the RTX 3060: optimization showcase"

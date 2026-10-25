@@ -1,7 +1,7 @@
 ---
 type: benchmark-results
 category: Benchmarks
-tags: [omarchy, benchmarks, v100]
+tags: [omarchy, benchmarks, v100, gpu, local-ai]
 updated: 2026-10-14
 publish: true
 created: 2026-10-14

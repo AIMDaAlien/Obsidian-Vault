@@ -1,5 +1,5 @@
 ---
-tags: [penthouse, unraid, llm, llama-cpp, throughput, benchmark]
+tags: [penthouse, unraid, llm, llama-cpp, throughput, benchmark, local-ai]
 created: 2026-09-16
 publish: true
 featured: 50

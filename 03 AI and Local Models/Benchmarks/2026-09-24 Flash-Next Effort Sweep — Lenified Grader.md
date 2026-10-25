@@ -1,7 +1,7 @@
 ---
 type: note
 category: Benchmarks
-tags: [omarchy, benchmarks]
+tags: [omarchy, benchmarks, local-ai]
 updated: 2026-09-24
 publish: true
 created: 2026-09-24

@@ -3,7 +3,7 @@ type: troubleshooting
 topic: llama-server SIGABRT
 updated: 2026-09-23
 category: Rig & Hardware
-tags: [rig, vulkan, gpu, troubleshooting]
+tags: [rig, vulkan, gpu, troubleshooting, local-ai]
 publish: true
 created: 2026-09-23
 machine: bigrig

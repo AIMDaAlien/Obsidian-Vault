@@ -1,5 +1,5 @@
 ---
-tags: [local-ai, cost]
+tags: [local-ai, cost, unraid, llama-cpp]
 created: 2026-08-10
 publish: true
 machine: unraid

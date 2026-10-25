@@ -3,7 +3,7 @@ type: ops
 topic: llama.cpp versions
 updated: 2026-09-23
 category: Models & Serving
-tags: [llama.cpp, versions, ops]
+tags: [llama.cpp, versions, ops, local-ai]
 publish: true
 created: 2026-09-23
 machine: bigrig

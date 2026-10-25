@@ -1,7 +1,7 @@
 ---
 type: benchmark-run
 category: Benchmarks
-tags: [benchmark, metalbench]
+tags: [benchmark, metalbench, local-ai]
 publish: true
 created: 2026-09-23
 machine: bigrig

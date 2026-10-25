@@ -1,6 +1,6 @@
 ---
 title: K2-Horizon MoVA Serving and Benchmarks
-tags: [local-ai, benchmark]
+tags: [local-ai, benchmark, unraid, llama-cpp]
 created: 2025-01-01
 publish: true
 machine: unraid

@@ -1,7 +1,7 @@
 ---
 type: note
 category: Strata
-tags: [omarchy, strata, v100]
+tags: [omarchy, strata, v100, gpu]
 updated: 2026-10-19
 publish: true
 created: 2026-10-18

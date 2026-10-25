@@ -5,7 +5,7 @@ host: Unraid (port 18006, container llm-qwen38-flash)
 quant: IQ3_XXS (ncmoe 48 experts on DDR4)
 updated: 2026-09-21
 category: Models & Serving
-tags: [model, unraid, benchmark]
+tags: [model, unraid, benchmark, local-ai, llama-cpp]
 publish: true
 created: 2026-09-21
 machine: bigrig

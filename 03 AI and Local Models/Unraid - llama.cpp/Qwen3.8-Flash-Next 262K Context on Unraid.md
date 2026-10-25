@@ -1,6 +1,6 @@
 ---
 title: Qwen3.8-Flash-Next 262K Context on Unraid
-tags: [local-ai]
+tags: [local-ai, unraid, llama-cpp]
 created: 2025-01-01
 publish: true
 machine: unraid

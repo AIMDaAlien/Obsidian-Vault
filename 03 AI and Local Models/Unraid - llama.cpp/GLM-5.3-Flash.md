@@ -1,5 +1,5 @@
 ---
-tags: [local-ai, hardware-constraints, unraid]
+tags: [local-ai, hardware-constraints, unraid, llama-cpp]
 created: 2026-09-02
 publish: true
 machine: unraid

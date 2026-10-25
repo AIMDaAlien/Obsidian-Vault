@@ -1,5 +1,5 @@
 ---
-tags: [guide, security, local-ai]
+tags: [guide, security, local-ai, unraid, self-hosting]
 created: 2026-02-12
 publish: true
 machine: unraid

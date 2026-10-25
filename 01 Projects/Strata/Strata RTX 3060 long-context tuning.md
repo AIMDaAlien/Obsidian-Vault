@@ -2,7 +2,7 @@
 type: benchmark-report
 topic: Strata long-context tuning
 created: 2026-10-10
-tags: [strata, benchmarks, optimization, rtx3060]
+tags: [strata, benchmarks, optimization, rtx3060, gpu, local-ai]
 publish: true
 machine: bigrig
 title: "Strata: faster long-context responses on the RTX 3060"

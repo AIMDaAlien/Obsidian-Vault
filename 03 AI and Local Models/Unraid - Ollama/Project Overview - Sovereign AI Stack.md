@@ -1,5 +1,5 @@
 ---
-tags: [sovereign-ai, project-overview, self-hosted, privacy, llm, local-ai]
+tags: [sovereign-ai, project-overview, self-hosted, privacy, llm, local-ai, unraid]
 created: 2026-02-10
 publish: true
 machine: unraid

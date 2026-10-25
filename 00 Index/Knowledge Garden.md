@@ -2,7 +2,7 @@
 type: benchmark-log
 topic: Knowledge Garden
 category: Meta
-tags: [meta, vault, logging]
+tags: [meta, vault, logging, obsidian]
 publish: true
 created: 2026-09-23
 machine: bigrig

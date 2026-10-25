@@ -5,7 +5,7 @@ host: Unraid (port 18007, container llm-laguna-xs21, image local/qwen38-flash-cu
 quant: Q4_K_M, 33B total / 3B active MoE (260K ctx)
 updated: 2026-10-17
 category: Models & Serving
-tags: [model, unraid, benchmark]
+tags: [model, unraid, benchmark, local-ai]
 publish: true
 created: 2026-09-21
 machine: bigrig

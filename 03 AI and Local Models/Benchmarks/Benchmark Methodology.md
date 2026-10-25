@@ -3,7 +3,7 @@ type: methodology
 topic: Benchmark Methodology
 updated: 2026-10-12
 category: Benchmarks
-tags: [benchmark, methodology]
+tags: [benchmark, methodology, local-ai]
 publish: true
 created: 2026-10-12
 machine: bigrig

@@ -1,7 +1,7 @@
 ---
 type: note
 category: Rig & Hardware
-tags: [omarchy, rig-hardware]
+tags: [omarchy, rig-hardware, hardware, homelab]
 updated: 2026-09-26
 publish: true
 created: 2026-09-26

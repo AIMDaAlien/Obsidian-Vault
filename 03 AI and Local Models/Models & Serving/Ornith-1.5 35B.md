@@ -5,7 +5,7 @@ host: MASSIVE-RIG (AMD 9060 XT lane)
 quant: IQ2_M / MTPv2-23G-ICE
 updated: 2026-10-17
 category: Models & Serving
-tags: [model, benchmark, amd-lane]
+tags: [model, benchmark, amd-lane, local-ai]
 publish: true
 created: 2026-09-21
 machine: bigrig

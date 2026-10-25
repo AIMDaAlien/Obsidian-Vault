@@ -4,11 +4,12 @@
   featured: 2
   summary: "Tuning a home GPU to answer huge prompts 16.6% faster, proven with paired tests, plus the follow-up experiment that honestly failed."
   blurb: "Strata is the engine I run AI models on at home. On a mid-range gaming card I got answers to very long prompts about a sixth faster, and proved it with repeated back-to-back tests rather than one lucky run. The note also keeps the experiment that didn't pass, because a failed result you can trust is worth more than a win you can't."
+  add_tags: [gpu, local-ai]
 - path: "01 Projects/Strata/Strata V100 setup and benchmarks — 2026-10-13.md"
   featured: 7
   summary: "Putting a used 32 GB datacenter GPU in a home PC: it reads 128,000-token prompts and answers in under two minutes, with the benchmarks to prove it."
   blurb: "I put a used datacenter graphics card with 32 GB of memory into a regular home PC and set it up to run large AI models. It can read a prompt the length of a novel and answer in under two minutes. The note has the measurements, the model setups that worked, and the ones that didn't."
-  add_tags: [benchmark]
+  add_tags: [benchmark, gpu, local-ai]
 - path: "01 Projects/Philosopher/Philosopher Project.md"
   featured: 8
   summary: "A private AI philosophy partner that must cite real sources: tested against 40 trick questions, it made up zero quotations."
@@ -20,37 +21,47 @@
 - path: "02 Homelab/Hardware/Hardware Specs & Roles - Rig Fleet (Sep 2026).md"
   featured: 13
   summary: "Which of my three machines does what, with their parts: the AI desktop, the Unraid server and the laptop, as of September 2026."
+  add_tags: [hardware, homelab]
 - path: "02 Homelab/Hardware/GPU Crash & Vulkan Device Pinning.md"
   featured: 16
   summary: "Our AI server kept crashing; the trace showed it was secretly using the weak display chip, and one setting fixed it."
+  add_tags: [local-ai]
 - path: "02 Homelab/Hardware/Dual Tesla P100 vs 2nd 9060 XT.md"
   featured: 22
   summary: "Two used datacenter GPUs or one more consumer card for a home AI box: the numbers behind the choice."
+  add_tags: [local-ai]
 - path: "02 Homelab/Hardware/Raspberry Pi B+ Utility Node.md"
   featured: 24
   summary: "What a 2014 Raspberry Pi can still usefully do in a modern home lab, and what it cannot."
+  add_tags: [raspberry-pi, pihole, monitoring, backup]
 - path: "03 AI and Local Models/Benchmarks/2026-10-12 Matched Qwen 27B vs Flash DeepSWE2.md"
   featured: 35
   summary: "A fair, repeated head-to-head of two coding AIs showed the supposed winner was not reliably better, a correction the data forced."
+  add_tags: [local-ai]
 - path: "03 AI and Local Models/Benchmarks/Model Benchmarks.md"
   featured: 38
   summary: "Which home-run AI models code best and fastest? One chart shows the trade-off, and the surprise that thinking less made the daily model better."
+  add_tags: [local-ai]
 - path: "03 AI and Local Models/Benchmarks/MASSIVE-RIG.md"
   featured: 39
   summary: "We tried every common speed-up on a home AI server; most did nothing, and measuring that saved real money."
-  add_tags: [benchmark]
+  add_tags: [benchmark, local-ai]
 - path: "03 AI and Local Models/Models & Serving/Flash-Next llama.cpp Audit 2026-09-28.md"
   featured: 43
   summary: "Hunting a 20% speedup on a giant AI model: the real bottleneck turned out to be CPU math, not disk or memory."
+  add_tags: [local-ai]
 - path: "03 AI and Local Models/Benchmarks/V100 coding-model comparison — 2026-10-14.md"
   featured: 44
   summary: "We tested a rival AI on the same coding tasks: it took 5x longer and solved a third as many, so we stopped the project."
+  add_tags: [gpu, local-ai]
 - path: "03 AI and Local Models/Benchmarks/2026-09-22 Rebench — Coherent Multi-Domain Scoreboard.md"
   featured: 45
   summary: "Re-running six AI setups on the same fair test flipped the old ranking: the supposed quality champion was just slow."
+  add_tags: [local-ai]
 - path: "03 AI and Local Models/Benchmarks/2026-09-24 Flash-Next Effort Sweep — Lenified Grader.md"
   featured: 46
   summary: "Telling an AI to think harder made it slower and less accurate: maximum effort took 4x longer and scored worse."
+  add_tags: [local-ai]
 - path: "03 AI and Local Models/Benchmarks/2026-09-24 v3 Results — K2 wins on capability, Ornith loses the research core.md"
   featured: 47
   summary: "A tiny 3.7B-parameter AI beat a model ten times its size on real document research, once the test itself was fixed."
@@ -60,8 +71,72 @@
 - path: "markdown practice.md"
   publish: false
 - path: "01 Projects/Strata/Strata Bench.md"
-  add_tags: [benchmark]
+  add_tags: [benchmark, strata, local-ai]
 - path: "03 AI and Local Models/Benchmarks/HF Trending Models Survey.md"
-  add_tags: [benchmark]
+  add_tags: [benchmark, local-ai]
 - path: "03 AI and Local Models/Benchmarks/Open Local Thinking-Partner Models.md"
-  add_tags: [benchmark]
+  add_tags: [benchmark, local-ai]
+- path: "05 Linux and Systems/Omarchy/Omarchy Plugins & Shell Widgets.md"
+  add_tags: [linux]
+- path: "05 Linux and Systems/Omarchy/Desktop Session Persistence.md"
+  add_tags: [linux]
+- path: "05 Linux and Systems/Omarchy/Omarchy Trim Debloat & Idle Policy.md"
+  add_tags: [linux]
+- path: "00 Index/Vault Map.md"
+  add_tags: [obsidian]
+- path: "00 Index/Omarchy & Desktop.md"
+  add_tags: [linux]
+- path: "00 Index/Knowledge Garden.md"
+  add_tags: [obsidian]
+- path: "01 Projects/Strata/Strata V100 tuning — 2026-10-18.md"
+  add_tags: [gpu]
+- path: "01 Projects/Strata/Strata V100 Optimization Showcase.md"
+  add_tags: [gpu, local-ai]
+- path: "01 Projects/Strata/Strata RTX 3060 long-context tuning.md"
+  add_tags: [gpu, local-ai]
+- path: "01 Projects/Penthouse/Penthouse Remake.md"
+  add_tags: [penthouse]
+- path: "03 AI and Local Models/Unraid - llama.cpp/Qwen3.8-Flash-Next.md"
+  add_tags: [llama-cpp]
+- path: "03 AI and Local Models/Unraid - llama.cpp/K2-Horizon MoVA Serving and Benchmarks.md"
+  add_tags: [unraid, llama-cpp]
+- path: "03 AI and Local Models/Unraid - llama.cpp/Qwen3.8-Flash-Next 262K Context on Unraid.md"
+  add_tags: [unraid, llama-cpp]
+- path: "03 AI and Local Models/Unraid - llama.cpp/GLM-5.3-Flash.md"
+  add_tags: [llama-cpp]
+- path: "03 AI and Local Models/Unraid - llama.cpp/Deepwen-3.6.md"
+  add_tags: [unraid, llama-cpp]
+- path: "03 AI and Local Models/Unraid - llama.cpp/Unraid LLM Serving Throughput.md"
+  add_tags: [local-ai]
+- path: "03 AI and Local Models/Models & Serving/llama.cpp Upgrade Roadmap.md"
+  add_tags: [local-ai]
+- path: "03 AI and Local Models/Models & Serving/Unraid Flash-Next.md"
+  add_tags: [local-ai, llama-cpp]
+- path: "03 AI and Local Models/Models & Serving/Flash-Next AD384.md"
+  add_tags: [local-ai]
+- path: "03 AI and Local Models/Models & Serving/Laguna XS-2.1.md"
+  add_tags: [local-ai]
+- path: "03 AI and Local Models/Models & Serving/Unraid LLM Control Center.md"
+  add_tags: [local-ai, homelab]
+- path: "03 AI and Local Models/Models & Serving/Ornith-1.5 35B.md"
+  add_tags: [local-ai]
+- path: "03 AI and Local Models/Models & Serving/Qwen-Q5 27B.md"
+  add_tags: [local-ai]
+- path: "03 AI and Local Models/Unraid - Ollama/Architecture Guide - Sovereign AI Stack.md"
+  add_tags: [unraid, self-hosting]
+- path: "03 AI and Local Models/Unraid - Ollama/Speed Myth - Ollama vs Text-Gen-WebUI.md"
+  add_tags: [local-ai, unraid]
+- path: "03 AI and Local Models/Unraid - Ollama/Setup Tutorial - Sovereign AI Stack.md"
+  add_tags: [unraid, docker]
+- path: "03 AI and Local Models/Unraid - Ollama/Project Overview - Sovereign AI Stack.md"
+  add_tags: [unraid]
+- path: "03 AI and Local Models/Unraid - Ollama/Project Status - Sovereign AI Stack.md"
+  add_tags: [unraid, self-hosting]
+- path: "03 AI and Local Models/Benchmarks/Benchmark Methodology.md"
+  add_tags: [local-ai]
+- path: "03 AI and Local Models/Benchmarks/Bench Suite (~bench).md"
+  add_tags: [local-ai]
+- path: "02 Homelab/Hardware/Maya V100 preflight and Qwen fallback — 2026-10-13.md"
+  add_tags: [gpu, hardware]
+- path: "02 Homelab/Hardware/GPU-Overclock-Research.md"
+  add_tags: [gpu, hardware]

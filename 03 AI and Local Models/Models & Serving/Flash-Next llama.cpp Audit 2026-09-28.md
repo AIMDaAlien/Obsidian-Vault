@@ -2,7 +2,7 @@
 type: note
 topic: llama.cpp engine audit — Qwen3.8-Flash-Next 176B on the rig
 updated: 2026-09-28
-tags: [llama.cpp, serving, flash-next, audit, performance]
+tags: [llama.cpp, serving, flash-next, audit, performance, local-ai]
 publish: true
 created: 2026-09-28
 machine: bigrig

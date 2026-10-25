@@ -5,7 +5,7 @@ host: MASSIVE-RIG (port 8080, daily autostart)
 quant: Q5_K_M
 updated: 2026-10-17
 category: Models & Serving
-tags: [model, benchmark, daily-driver]
+tags: [model, benchmark, daily-driver, local-ai]
 publish: true
 created: 2026-09-21
 machine: bigrig

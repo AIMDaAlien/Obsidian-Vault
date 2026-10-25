@@ -1,7 +1,7 @@
 ---
 type: note
 category: Rig & Hardware
-tags: [omarchy, rig-hardware]
+tags: [omarchy, rig-hardware, gpu, hardware]
 updated: 2026-10-17
 publish: true
 created: 2026-10-13

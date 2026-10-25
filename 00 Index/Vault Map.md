@@ -1,7 +1,7 @@
 ---
 type: moc
 category: Meta
-tags: [meta, moc, index]
+tags: [meta, moc, index, obsidian]
 updated: 2026-09-23
 publish: true
 created: 2026-09-23

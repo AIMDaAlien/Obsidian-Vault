@@ -3,7 +3,7 @@ type: hardware-decision
 topic: Raspberry Pi 1 B+
 updated: 2026-09-23
 category: Rig & Hardware
-tags: [hardware, iot, decision, small-models]
+tags: [hardware, iot, decision, small-models, raspberry-pi, pihole, monitoring, backup]
 publish: true
 created: 2026-09-23
 machine: bigrig

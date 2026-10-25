@@ -1,5 +1,5 @@
 ---
-tags: [local-ai, checklist]
+tags: [local-ai, checklist, unraid, docker]
 created: 2026-02-12
 publish: true
 machine: unraid

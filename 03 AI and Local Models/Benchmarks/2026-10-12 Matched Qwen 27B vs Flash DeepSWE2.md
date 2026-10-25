@@ -7,7 +7,7 @@ suite: contract-v2
 distinct_tasks: 24
 runs_per_model: 3
 recorded_results: 144
-tags: [benchmark, qwen, flash, strata, deepswe2, local-inference]
+tags: [benchmark, qwen, flash, strata, deepswe2, local-inference, local-ai]
 publish: true
 created: 2026-10-12
 machine: bigrig

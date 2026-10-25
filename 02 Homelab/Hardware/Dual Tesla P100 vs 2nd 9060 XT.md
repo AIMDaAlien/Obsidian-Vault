@@ -3,7 +3,7 @@ type: hardware-decision
 topic: MASSIVE-RIG GPU upgrade
 updated: 2026-09-23
 category: Rig & Hardware
-tags: [rig, hardware, gpu, decision]
+tags: [rig, hardware, gpu, decision, local-ai]
 publish: true
 created: 2026-09-23
 machine: bigrig

@@ -3,7 +3,7 @@ type: benchmark-hub
 topic: Model Benchmarks
 updated: 2026-10-17
 category: Benchmarks
-tags: [benchmark, hub, index]
+tags: [benchmark, hub, index, local-ai]
 publish: true
 created: 2026-10-12
 machine: bigrig

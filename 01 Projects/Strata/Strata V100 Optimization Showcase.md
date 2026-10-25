@@ -4,7 +4,7 @@ topic: Strata V100 optimization
 category: Benchmarks
 created: 2026-10-19
 updated: 2026-10-19
-tags: [strata, benchmarks, optimization, v100, volta, showcase]
+tags: [strata, benchmarks, optimization, v100, volta, showcase, gpu, local-ai]
 publish: true
 machine: bigrig
 title: "Strata on the Tesla V100: optimization showcase"

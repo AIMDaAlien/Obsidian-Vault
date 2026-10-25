@@ -1,5 +1,5 @@
 ---
-tags: []
+tags: [local-ai, unraid]
 created: 2026-02-12
 publish: true
 machine: unraid

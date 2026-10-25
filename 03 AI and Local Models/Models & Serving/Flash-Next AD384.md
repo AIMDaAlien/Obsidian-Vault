@@ -5,7 +5,7 @@ host: MASSIVE-RIG (CUDA build, -ot .ffn_.*_exps.=CPU)
 quant: IQ4_XS-M64
 updated: 2026-10-17
 category: Models & Serving
-tags: [model, benchmark, llama.cpp, serving]
+tags: [model, benchmark, llama.cpp, serving, local-ai]
 publish: true
 created: 2026-09-21
 machine: bigrig

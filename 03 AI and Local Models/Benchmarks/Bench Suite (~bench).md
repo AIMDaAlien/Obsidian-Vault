@@ -3,7 +3,7 @@ type: methodology
 topic: bench suite
 updated: 2026-10-12
 category: Benchmarks
-tags: [benchmark, tooling, harness]
+tags: [benchmark, tooling, harness, local-ai]
 publish: true
 created: 2026-10-12
 machine: bigrig

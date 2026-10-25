@@ -3,7 +3,7 @@ type: ops
 topic: Omarchy desktop
 updated: 2026-09-23
 category: Omarchy & Desktop
-tags: [omarchy, hyprland, tmux, crash-recovery]
+tags: [omarchy, hyprland, tmux, crash-recovery, linux]
 publish: true
 created: 2026-09-23
 machine: bigrig

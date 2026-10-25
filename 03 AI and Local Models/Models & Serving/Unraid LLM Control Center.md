@@ -3,7 +3,7 @@ type: ops
 topic: Unraid LLM serving
 updated: 2026-09-23
 category: Models & Serving
-tags: [unraid, serving, docker, ops]
+tags: [unraid, serving, docker, ops, local-ai, homelab]
 publish: true
 created: 2026-09-23
 machine: bigrig

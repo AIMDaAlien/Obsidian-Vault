@@ -1,7 +1,7 @@
 ---
 type: note
 category: Strata
-tags: [omarchy, strata, benchmark]
+tags: [omarchy, strata, benchmark, gpu, local-ai]
 updated: 2026-10-13
 publish: true
 created: 2026-10-13
