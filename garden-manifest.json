@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T18:55:24Z",
+  "generated_at": "2026-10-25T14:45:24Z",
   "tree": [
     {
       "path": "Index.md",
@@ -1002,18 +1002,6 @@
       "type": "file"
     },
     {
-      "path": "02 Homelab/Guides/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md",
-      "type": "file"
-    },
-    {
-      "path": "02 Homelab/Guides/Pi-hole Setup Guide - Complete Journey.md",
-      "type": "file"
-    },
-    {
-      "path": "02 Homelab/Guides/Pi-hole TrueNAS Network Conflict Troubleshooting.md",
-      "type": "file"
-    },
-    {
       "path": "02 Homelab/Guides/TrueNAS Build Guide.md",
       "type": "file"
     },
@@ -1074,6 +1062,26 @@
       "type": "file"
     },
     {
+      "path": "02 Homelab/Raspberry Pi",
+      "type": "dir"
+    },
+    {
+      "path": "02 Homelab/Raspberry Pi/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Raspberry Pi/Pi-hole Setup Guide - Complete Journey.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Raspberry Pi/Pi-hole TrueNAS Network Conflict Troubleshooting.md",
+      "type": "file"
+    },
+    {
+      "path": "02 Homelab/Raspberry Pi/Raspberry Pi.md",
+      "type": "file"
+    },
+    {
       "path": "02 Homelab/Reference",
       "type": "dir"
     },
@@ -1102,23 +1110,11 @@
       "type": "file"
     },
     {
-      "path": "02 Homelab/Reference/Prometheus Grafana Monitoring Stack - Lessons Learned.md",
-      "type": "file"
-    },
-    {
       "path": "02 Homelab/Reference/Prometheus Grafana Stack - Implementation Guide.md",
       "type": "file"
     },
     {
-      "path": "02 Homelab/Reference/Raspberry Pi.md",
-      "type": "file"
-    },
-    {
       "path": "02 Homelab/Reference/Storage Cleanup and TM Backup Decisions.md",
-      "type": "file"
-    },
-    {
-      "path": "02 Homelab/Reference/Syncthing.md",
       "type": "file"
     },
     {
@@ -1203,10 +1199,6 @@
     },
     {
       "path": "02 Homelab/Session Notes/Project Overview - NOC Skills Homelab.md",
-      "type": "file"
-    },
-    {
-      "path": "02 Homelab/Session Notes/Prometheus Grafana Stack.md",
       "type": "file"
     },
     {
@@ -1558,10 +1550,6 @@
       "type": "file"
     },
     {
-      "path": "05 Linux and Systems/Documentation/Exploring Info Documentation.md",
-      "type": "file"
-    },
-    {
       "path": "05 Linux and Systems/Documentation/Find Any File or Directory.md",
       "type": "file"
     },
@@ -1578,39 +1566,7 @@
       "type": "file"
     },
     {
-      "path": "05 Linux and Systems/Documentation/Man Pages Sections Categorized.md",
-      "type": "file"
-    },
-    {
       "path": "05 Linux and Systems/Documentation/Man Pages.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Documentation/Navigating Info Nodes.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Documentation/Searching Man Pages.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Documentation/Sections Within Man Pages.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Documentation/Using Help Option.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Documentation/Viewing Info Documentation.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Documentation/Viewing Man Pages.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Documentation/Where Are These Commands Located.md",
       "type": "file"
     },
     {
@@ -1790,14 +1746,6 @@
       "type": "dir"
     },
     {
-      "path": "05 Linux and Systems/Navigating the Filesystem/Absolute Paths.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Navigating the Filesystem/Absolute vs. Relative pathnames.md",
-      "type": "file"
-    },
-    {
       "path": "05 Linux and Systems/Navigating the Filesystem/Changing Directories.md",
       "type": "file"
     },
@@ -1839,10 +1787,6 @@
     },
     {
       "path": "05 Linux and Systems/Navigating the Filesystem/Recursive Listing.md",
-      "type": "file"
-    },
-    {
-      "path": "05 Linux and Systems/Navigating the Filesystem/Relative Paths.md",
       "type": "file"
     },
     {
@@ -1983,10 +1927,6 @@
     },
     {
       "path": "07 Tools and Workflow/Obsidian Productivity Mastery.md",
-      "type": "file"
-    },
-    {
-      "path": "07 Tools and Workflow/Obsidian Vault Git Sync.md",
       "type": "file"
     },
     {
@@ -2698,12 +2638,14 @@
     "01 Projects/MetalBench/99 - Current Handoff.md": {
       "title": "99 - Current Handoff",
       "tags": [
-        "project"
+        "project",
+        "benchmark",
+        "local-ai"
       ],
       "created": "2025-01-01",
       "publish": true,
       "project": "MetalBench",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "01 Projects/Mining/GPU mining — V100 + RX 9060 XT — 2026-10-21.md": {
       "type": "note",
@@ -3604,7 +3546,8 @@
         "truenas",
         "docker",
         "disk",
-        "ops"
+        "ops",
+        "storage"
       ],
       "created": "2026-02-18",
       "publish": true,
@@ -3612,7 +3555,7 @@
       "featured": 28,
       "summary": "Why home servers mysteriously stop, and four cheap fixes: cap container logs, rotate cron logs, prune Docker cache weekly, and trim the SQLite journal.",
       "title": "Disk Exhaustion Prevention (Home Server, Docker)",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "01 Projects/Penthouse/Self-Hosting/10 - Mobile Update Versioning Protocol.md": {
       "tags": [
@@ -3652,7 +3595,9 @@
         "recovery",
         "penthouse",
         "security",
-        "reliability"
+        "reliability",
+        "storage",
+        "homelab"
       ],
       "created": "2026-08-04",
       "updated": "2026-08-04",
@@ -4374,13 +4319,15 @@
         "budget-build",
         "self-hosted",
         "immich",
-        "teardown-cafe"
+        "teardown-cafe",
+        "storage",
+        "homelab"
       ],
       "created": "2025-10-19",
       "publish": true,
       "project": "Teardown Cafe",
       "title": "TrueNAS Enterprise SAS Build - Teardown Cafe Entry",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "01 Projects/Teardown Cafe/Session Notes/2025-10-21 Cursor Session 2.md": {
       "tags": [
@@ -4832,61 +4779,24 @@
         "troubleshooting",
         "security",
         "hardware-constraints",
-        "cost"
+        "cost",
+        "truenas",
+        "storage",
+        "hardware"
       ],
       "created": "2025-10-05",
       "publish": true,
       "title": "Budget SAS Drive NAS Build Guide",
-      "updated": "2026-10-17"
-    },
-    "02 Homelab/Guides/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md": {
-      "tags": [
-        "hardware-constraints",
-        "homelab",
-        "networking",
-        "dns",
-        "pihole",
-        "raspberry-pi",
-        "migration",
-        "unbound"
-      ],
-      "created": "2026-03-15",
-      "publish": true,
-      "featured": 5,
-      "summary": "I moved my network's ad-blocking DNS from a dying 512MB Raspberry Pi to a Pi 5 on NVMe storage, broke the internet twice, and documented both fixes.",
-      "blurb": "Pi-hole is the little box on my network that blocks ads and tracking for every device at once. It was running on a decade-old Raspberry Pi with a failing memory card, so I moved it to a much faster Pi booting from a proper drive. The internet went down twice along the way, and both fixes are written down here.",
-      "title": "Pi-hole Migration: RPi B+ → RPi 5 NVMe",
-      "updated": "2026-10-21"
-    },
-    "02 Homelab/Guides/Pi-hole Setup Guide - Complete Journey.md": {
-      "tags": [
-        "guide",
-        "hardware-constraints"
-      ],
-      "created": "2025-09-23",
-      "publish": true,
-      "featured": 18,
-      "summary": "A whole-home ad blocker on a $35 Raspberry Pi: the parts, the one-character typo that broke it, and a TV that went from 14,000 to under 100 requests a day.",
-      "title": "Pi-hole Setup: Raspberry Pi 3 B+",
-      "updated": "2026-10-18"
-    },
-    "02 Homelab/Guides/Pi-hole TrueNAS Network Conflict Troubleshooting.md": {
-      "tags": [
-        "troubleshooting",
-        "hardware-constraints"
-      ],
-      "created": "2025-10-13",
-      "publish": true,
-      "featured": 14,
-      "summary": "Ad blocking silently stopped after I added a storage server to my network. Root cause: one wrong setting made the wrong device the network's router.",
-      "title": "Pi-hole Stopped Working After TrueNAS Setup",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Guides/TrueNAS Build Guide.md": {
       "tags": [
         "guide",
         "hardware-constraints",
-        "cost"
+        "cost",
+        "truenas",
+        "storage",
+        "homelab"
       ],
       "created": "2025-10-05",
       "publish": true,
@@ -4894,20 +4804,22 @@
       "summary": "How I built a 5.46TB home storage server for about $270 from secondhand enterprise drives, including the dead drive, the no-display scare, and the costs.",
       "blurb": "I wanted a lot of reliable storage without paying a lot for it, so I built a server around ten secondhand enterprise drives for about $270. This is the whole story: the parts and why I picked them, the drive that died on arrival, the moment it wouldn't show a picture, and what it costs to run.",
       "title": "Building a Beast: TrueNAS SAS Server for $270",
-      "updated": "2026-10-21"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Guides/WireGuard VPN Setup.md": {
       "tags": [
         "troubleshooting",
         "security",
-        "hardware-constraints"
+        "hardware-constraints",
+        "networking",
+        "homelab"
       ],
       "created": "2025-09-30",
       "publish": true,
       "featured": 26,
       "summary": "How to set up a private tunnel back to your home network from your phone in about 30 minutes, so ad blocking follows you everywhere.",
       "title": "WireGuard VPN Setup",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Hardware/Dual Tesla P100 vs 2nd 9060 XT.md": {
       "type": "hardware-decision",
@@ -5045,7 +4957,9 @@
         "hardware",
         "monitoring",
         "reliability",
-        "hardware-constraints"
+        "hardware-constraints",
+        "raspberry-pi",
+        "truenas"
       ],
       "created": "2026-06-27",
       "publish": true,
@@ -5053,7 +4967,7 @@
       "featured": 12,
       "summary": "A tour of every machine in my home lab and its job: storage server, DNS Pi, a backup computer that takes over if the main one fails, and an AI box.",
       "title": "Server Inventory",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Overview/01 - Services Dashboard.md": {
       "tags": [
@@ -5081,16 +4995,83 @@
       "title": "Network Map",
       "updated": "2026-10-17"
     },
+    "02 Homelab/Raspberry Pi/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md": {
+      "tags": [
+        "hardware-constraints",
+        "homelab",
+        "networking",
+        "dns",
+        "pihole",
+        "raspberry-pi",
+        "migration",
+        "unbound"
+      ],
+      "created": "2026-03-15",
+      "publish": true,
+      "featured": 5,
+      "summary": "I moved my network's ad-blocking DNS from a dying 512MB Raspberry Pi to a Pi 5 on NVMe storage, broke the internet twice, and documented both fixes.",
+      "blurb": "Pi-hole is the little box on my network that blocks ads and tracking for every device at once. It was running on a decade-old Raspberry Pi with a failing memory card, so I moved it to a much faster Pi booting from a proper drive. The internet went down twice along the way, and both fixes are written down here.",
+      "title": "Pi-hole Migration: RPi B+ → RPi 5 NVMe",
+      "updated": "2026-10-25"
+    },
+    "02 Homelab/Raspberry Pi/Pi-hole Setup Guide - Complete Journey.md": {
+      "tags": [
+        "guide",
+        "hardware-constraints",
+        "pihole",
+        "raspberry-pi",
+        "dns",
+        "homelab"
+      ],
+      "created": "2025-09-23",
+      "updated": "2026-10-25",
+      "publish": true,
+      "featured": 18,
+      "summary": "A whole-home ad blocker on a $35 Raspberry Pi: the parts, the one-character typo that broke it, and a TV that went from 14,000 to under 100 requests a day.",
+      "title": "Pi-hole Setup: Raspberry Pi B+ (2014)"
+    },
+    "02 Homelab/Raspberry Pi/Pi-hole TrueNAS Network Conflict Troubleshooting.md": {
+      "tags": [
+        "troubleshooting",
+        "hardware-constraints",
+        "pihole",
+        "truenas",
+        "dns",
+        "networking",
+        "homelab"
+      ],
+      "created": "2025-10-13",
+      "publish": true,
+      "featured": 14,
+      "summary": "Ad blocking silently stopped after I added a storage server to my network. Root cause: one wrong setting made the wrong device the network's router.",
+      "title": "Pi-hole Stopped Working After TrueNAS Setup",
+      "updated": "2026-10-25"
+    },
+    "02 Homelab/Raspberry Pi/Raspberry Pi.md": {
+      "tags": [
+        "hardware-constraints",
+        "homelab",
+        "raspberry-pi",
+        "pihole",
+        "hardware"
+      ],
+      "created": "2025-09-15",
+      "updated": "2026-10-25",
+      "publish": true,
+      "summary": "The two Raspberry Pis in my homelab, a 512MB B+ and a 4GB Pi 5, and the Pi-hole notes that moved from one to the other.",
+      "title": "Raspberry Pi"
+    },
     "02 Homelab/Reference/BigRig TUF X670E BIOS Configuration.md": {
       "title": "BigRig TUF X670E BIOS Configuration",
       "tags": [
-        "homelab"
+        "homelab",
+        "hardware"
       ],
       "created": "2025-01-01",
       "publish": true,
       "featured": 25,
       "summary": "A step-by-step guide to tuning the settings of an AI-server motherboard for speed and low idle power, including the mistakes that can waste days.",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Reference/CPU Architectures.md": {
       "tags": [],
@@ -5101,30 +5082,36 @@
     },
     "02 Homelab/Reference/Home Lab.md": {
       "tags": [
-        "hardware-constraints"
+        "hardware-constraints",
+        "homelab"
       ],
       "created": "2025-09-15",
       "publish": true,
       "title": "Home Lab",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Reference/Home Networking.md": {
-      "tags": [],
+      "tags": [
+        "networking",
+        "homelab"
+      ],
       "created": "2025-09-15",
       "publish": true,
       "title": "Home Networking",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Reference/Home Server.md": {
       "tags": [
         "security",
         "reliability",
-        "hardware-constraints"
+        "hardware-constraints",
+        "homelab",
+        "self-hosting"
       ],
       "created": "2025-09-15",
       "publish": true,
       "title": "Home Server",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Reference/Other Devices.md": {
       "tags": [
@@ -5135,65 +5122,38 @@
       "title": "Other Devices",
       "updated": "2026-10-17"
     },
-    "02 Homelab/Reference/Prometheus Grafana Monitoring Stack - Lessons Learned.md": {
-      "tags": [
-        "troubleshooting",
-        "monitoring",
-        "security",
-        "hardware-constraints"
-      ],
-      "created": "2025-10-14",
-      "publish": true,
-      "featured": 20,
-      "status": "complete",
-      "summary": "I planned a monitoring setup on the wrong Raspberry Pi. Checking the hardware showed it was far weaker, so I worked out RAM needs and upgraded to a Pi 5.",
-      "title": "Prometheus & Grafana Monitoring Stack - Lessons Learned",
-      "updated": "2026-10-18"
-    },
     "02 Homelab/Reference/Prometheus Grafana Stack - Implementation Guide.md": {
       "tags": [
         "guide",
         "monitoring",
-        "hardware-constraints"
+        "hardware-constraints",
+        "troubleshooting",
+        "security",
+        "prometheus",
+        "grafana",
+        "homelab",
+        "blackbox",
+        "raspberry-pi"
       ],
-      "created": "2025-10-18",
+      "created": "2025-10-14",
+      "updated": "2026-10-25",
       "publish": true,
       "status": "deployed",
-      "related": [
-        "[Prometheus Grafana Monitoring Stack - Lessons Learned]"
-      ],
-      "featured": 21,
-      "summary": "A step-by-step guide to a home monitoring dashboard on a Raspberry Pi 5 that uses under 300MB of memory, with commands, expected output and fixes.",
-      "title": "Prometheus + Grafana Monitoring Stack - Implementation Guide",
-      "updated": "2026-10-18"
-    },
-    "02 Homelab/Reference/Raspberry Pi.md": {
-      "tags": [
-        "hardware-constraints"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Raspberry Pi",
-      "updated": "2026-10-17"
+      "featured": 20,
+      "summary": "A home monitoring stack on a Raspberry Pi 5 in under 300MB of RAM: the build steps, the wrong-Pi lesson that started it, and the deployed config.",
+      "title": "Prometheus + Grafana Monitoring Stack - Implementation Guide"
     },
     "02 Homelab/Reference/Storage Cleanup and TM Backup Decisions.md": {
       "tags": [
         "reliability",
-        "local-ai"
+        "local-ai",
+        "backup",
+        "storage"
       ],
       "created": "2026-08-12",
       "publish": true,
       "title": "Storage Cleanup & TM Backup Decisions",
-      "updated": "2026-10-17"
-    },
-    "02 Homelab/Reference/Syncthing.md": {
-      "tags": [
-        "sync"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Syncthing",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Router Configuration/00 - Router Optimization Index.md": {
       "tags": [
@@ -5304,14 +5264,16 @@
         "session-log",
         "troubleshooting",
         "monitoring",
-        "checklist"
+        "checklist",
+        "raspberry-pi",
+        "homelab"
       ],
       "created": "2025-10-01",
       "publish": true,
       "featured": 23,
       "summary": "A monitoring install kept crashing. The cause was a 10-year-old Raspberry Pi chip too old for modern software, so I chose a $45 upgrade over a hack.",
       "title": "Session: Uptime Kuma Attempt & Career Path Analysis",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Session Notes/2025-11-10 Tech Consulting Website.md": {
       "tags": [
@@ -5328,24 +5290,29 @@
     "02 Homelab/Session Notes/2026-01-02 Starting Omarchy (Arch Linux).md": {
       "tags": [
         "session-log",
-        "security"
+        "security",
+        "omarchy",
+        "linux"
       ],
       "created": "2026-01-09",
       "publish": true,
       "title": "The Gentleman's Guide to Starting DevOps on Arch Linux",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Session Notes/2026-01-09 Troubleshooting DNS Loop.md": {
       "tags": [
         "session-log",
-        "troubleshooting"
+        "troubleshooting",
+        "pihole",
+        "dns",
+        "networking"
       ],
       "created": "2026-01-09",
       "publish": true,
       "featured": 17,
       "summary": "Pointing my router at my own ad blocker knocked out the whole network. How I got back in, and the safer two-tier DNS layout I use now.",
       "title": "Troubleshooting Report: The \"DNS Loop\" & Pi-hole Integration",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Session Notes/2026-01-20 Network Troubleshooting Log - Intermittent WAN Instability.md": {
       "tags": [
@@ -5394,7 +5361,8 @@
         "session-log",
         "reliability",
         "hardware-constraints",
-        "checklist"
+        "checklist",
+        "hardware"
       ],
       "created": "2026-06-20",
       "publish": true,
@@ -5402,7 +5370,7 @@
       "summary": "After moving my home server onto new parts the screen froze for hours. The culprit was a wireless keyboard dongle, not the hardware. Every lead I tried.",
       "blurb": "I moved my home server onto the parts from my old gaming PC and it spent the next several hours freezing and showing a black screen. I chased the RAM, the power supply, the cooler and the BIOS before finding the real cause: a wireless keyboard receiver. Every dead end is listed so the next person can skip them.",
       "title": "Unraid Server Hardware Swap — B660M + 12600KF Transplant",
-      "updated": "2026-10-21"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Session Notes/2026-06-27 Home Lab Restoration and Expansion.md": {
       "tags": [
@@ -5454,20 +5422,7 @@
       "created": "2026-01-07",
       "publish": true,
       "title": "NOC Skills Homelab Project",
-      "updated": "2026-10-21"
-    },
-    "02 Homelab/Session Notes/Prometheus Grafana Stack.md": {
-      "tags": [
-        "monitoring",
-        "prometheus",
-        "grafana",
-        "homelab",
-        "blackbox"
-      ],
-      "created": "2026-01-10",
-      "publish": true,
-      "title": "Prometheus + Grafana Stack",
-      "updated": "2026-10-21"
+      "updated": "2026-10-25"
     },
     "02 Homelab/Session Notes/Troubleshooting Log.md": {
       "tags": [
@@ -6386,7 +6341,7 @@
       "created": "2026-10-17",
       "publish": true,
       "title": "Linux and Systems Index",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "05 Linux and Systems/Archiving and Compression/Archiving.md": {
       "tags": [
@@ -6452,15 +6407,6 @@
       "title": "Additional System Documentation",
       "updated": "2026-10-17"
     },
-    "05 Linux and Systems/Documentation/Exploring Info Documentation.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Exploring Info Documentation",
-      "updated": "2026-10-17"
-    },
     "05 Linux and Systems/Documentation/Find Any File or Directory.md": {
       "tags": [
         "linux"
@@ -6468,7 +6414,7 @@
       "created": "2025-09-15",
       "publish": true,
       "title": "Find Any File or Directory",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "05 Linux and Systems/Documentation/Finding Commands and Documentation.md": {
       "tags": [
@@ -6477,7 +6423,7 @@
       "created": "2025-09-15",
       "publish": true,
       "title": "Finding Commands and Documentation",
-      "updated": "2026-10-17"
+      "updated": "2026-10-25"
     },
     "05 Linux and Systems/Documentation/Help from a Directory.md": {
       "tags": [
@@ -6493,91 +6439,19 @@
         "linux"
       ],
       "created": "2025-09-15",
+      "updated": "2026-10-25",
       "publish": true,
-      "title": "Info Documentation",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Man Pages Sections Categorized.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Man Pages Sections Categorized",
-      "updated": "2026-10-17"
+      "title": "Info Documentation"
     },
     "05 Linux and Systems/Documentation/Man Pages.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Man Pages",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Navigating Info Nodes.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Navigating Info Nodes",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Searching Man Pages.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Searching Man Pages",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Sections Within Man Pages.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Sections Within Man Pages",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Using Help Option.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Using Help Option",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Viewing Info Documentation.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Viewing Info Documentation",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Viewing Man Pages.md": {
       "tags": [
         "linux",
         "cli"
       ],
       "created": "2025-09-15",
+      "updated": "2026-10-25",
       "publish": true,
-      "title": "Viewing Man Pages",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Documentation/Where Are These Commands Located.md": {
-      "tags": [
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Where Are These Commands Located",
-      "updated": "2026-10-17"
+      "title": "Man Pages"
     },
     "05 Linux and Systems/Documentation/apropos.md": {
       "tags": [
@@ -6897,23 +6771,6 @@
       "title": "sudo",
       "updated": "2026-10-17"
     },
-    "05 Linux and Systems/Navigating the Filesystem/Absolute Paths.md": {
-      "tags": [
-        "cli",
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Absolute Paths",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Navigating the Filesystem/Absolute vs. Relative pathnames.md": {
-      "tags": [],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Absolute vs. Relative pathnames",
-      "updated": "2026-10-17"
-    },
     "05 Linux and Systems/Navigating the Filesystem/Changing Directories.md": {
       "tags": [
         "cli",
@@ -7001,25 +6858,15 @@
         "linux"
       ],
       "created": "2025-09-15",
+      "updated": "2026-10-25",
       "publish": true,
-      "title": "Paths",
-      "updated": "2026-10-17"
+      "title": "Paths"
     },
     "05 Linux and Systems/Navigating the Filesystem/Recursive Listing.md": {
       "tags": [],
       "created": "2025-09-15",
       "publish": true,
       "title": "Recursive Listing",
-      "updated": "2026-10-17"
-    },
-    "05 Linux and Systems/Navigating the Filesystem/Relative Paths.md": {
-      "tags": [
-        "cli",
-        "linux"
-      ],
-      "created": "2025-09-15",
-      "publish": true,
-      "title": "Relative Paths",
       "updated": "2026-10-17"
     },
     "05 Linux and Systems/Navigating the Filesystem/Sort a Listing.md": {
@@ -7357,19 +7204,6 @@
       "title": "Obsidian Productivity Mastery",
       "updated": "2026-10-17"
     },
-    "07 Tools and Workflow/Obsidian Vault Git Sync.md": {
-      "tags": [
-        "reliability"
-      ],
-      "created": "2026-08-11",
-      "updated": "2026-10-18",
-      "publish": true,
-      "featured": 77,
-      "status": "Superseded 2026-10-18",
-      "system": "Obsidian Notes Vault",
-      "summary": "My notes stopped syncing to GitHub after a reset broke their shared history. The error, how I merged both sides without losing anything, and the fix.",
-      "title": "Obsidian Vault Git Sync"
-    },
     "07 Tools and Workflow/Obsidian Vault Hub - Syncthing to Unraid Publishing.md": {
       "tags": [
         "obsidian",
@@ -7378,12 +7212,16 @@
         "automation",
         "publishing",
         "privacy",
-        "knowledge-garden"
+        "knowledge-garden",
+        "reliability",
+        "sync",
+        "homelab",
+        "self-hosting"
       ],
-      "created": "2026-10-18",
-      "updated": "2026-10-18",
+      "created": "2025-09-15",
+      "updated": "2026-10-25",
       "publish": true,
-      "featured": 83,
+      "featured": 77,
       "status": "Live since 2026-10-18",
       "system": "Obsidian Notes Vault",
       "summary": "How every device's notes flow to one Unraid hub that gates them for leaks and publishes the safe ones to my site every 15 minutes, with no git on the laptops.",
@@ -7397,7 +7235,7 @@
       "created": "2026-10-17",
       "publish": true,
       "title": "Tools and Workflow Index",
-      "updated": "2026-10-18"
+      "updated": "2026-10-25"
     },
     "07 Tools and Workflow/Agents/DeepSeek Harness Setup.md": {
       "type": "ops",
@@ -8202,18 +8040,6 @@
       "Project Overview - NOC Skills Homelab",
       "Prometheus Grafana Stack - Implementation Guide"
     ],
-    "02 Homelab/Guides/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md": [
-      "Pi-hole Setup Guide - Complete Journey",
-      "Project Overview - NOC Skills Homelab",
-      "Pi-hole TrueNAS Network Conflict Troubleshooting"
-    ],
-    "02 Homelab/Guides/Pi-hole Setup Guide - Complete Journey.md": [
-      "Pi-hole Migration - RPi B+ to RPi 5 NVMe"
-    ],
-    "02 Homelab/Guides/Pi-hole TrueNAS Network Conflict Troubleshooting.md": [
-      "TrueNAS Build Guide",
-      "Budget SAS Drive NAS Build Guide"
-    ],
     "02 Homelab/Hardware/Dual Tesla P100 vs 2nd 9060 XT.md": [
       "Rig & Hardware",
       "Vault Map",
@@ -8255,6 +8081,28 @@
       "Fan Control (MSI Z690-A)",
       "Omarchy Trim Debloat & Idle Policy"
     ],
+    "02 Homelab/Raspberry Pi/Pi-hole Migration - RPi B+ to RPi 5 NVMe.md": [
+      "Pi-hole Setup Guide - Complete Journey",
+      "Project Overview - NOC Skills Homelab",
+      "Pi-hole TrueNAS Network Conflict Troubleshooting"
+    ],
+    "02 Homelab/Raspberry Pi/Pi-hole Setup Guide - Complete Journey.md": [
+      "Pi-hole Migration - RPi B+ to RPi 5 NVMe"
+    ],
+    "02 Homelab/Raspberry Pi/Pi-hole TrueNAS Network Conflict Troubleshooting.md": [
+      "TrueNAS Build Guide",
+      "Budget SAS Drive NAS Build Guide"
+    ],
+    "02 Homelab/Raspberry Pi/Raspberry Pi.md": [
+      "Homelab Index",
+      "Pi-hole Setup Guide - Complete Journey",
+      "Pi-hole TrueNAS Network Conflict Troubleshooting",
+      "Pi-hole Migration - RPi B+ to RPi 5 NVMe",
+      "Raspberry Pi B+ Utility Node",
+      "Project Overview - NOC Skills Homelab",
+      "00 - Server Inventory",
+      "Home Server"
+    ],
     "02 Homelab/Reference/Home Lab.md": [
       "Home Server",
       "Raspberry Pi",
@@ -8266,14 +8114,7 @@
       "Raspberry Pi"
     ],
     "02 Homelab/Reference/Prometheus Grafana Stack - Implementation Guide.md": [
-      "Prometheus Grafana Monitoring Stack - Lessons Learned"
-    ],
-    "02 Homelab/Reference/Raspberry Pi.md": [
-      "Home Server",
-      "Homelab Index"
-    ],
-    "02 Homelab/Reference/Syncthing.md": [
-      "Obsidian Vault Hub - Syncthing to Unraid Publishing"
+      "Prometheus Grafana Stack - Implementation Guide"
     ],
     "02 Homelab/Router Configuration/00 - Router Optimization Index.md": [
       "01 - Network Connection Settings",
@@ -8324,7 +8165,7 @@
     "02 Homelab/Session Notes/Project Overview - NOC Skills Homelab.md": [
       "Pi-hole Migration - RPi B+ to RPi 5 NVMe",
       "Docker and Portainer Setup",
-      "Prometheus Grafana Stack",
+      "Prometheus Grafana Stack - Implementation Guide",
       "Troubleshooting Log",
       "Session Notes",
       "Pi-hole Setup Guide - Complete Journey",
@@ -8710,20 +8551,11 @@
       "Double Pipe",
       "Semicolon _",
       "Additional System Documentation",
-      "Exploring Info Documentation",
+      "Info Documentation",
       "Find Any File or Directory",
       "Finding Commands and Documentation",
       "Help from a Directory",
-      "Info Documentation",
-      "Man Pages Sections Categorized",
       "Man Pages",
-      "Navigating Info Nodes",
-      "Searching Man Pages",
-      "Sections Within Man Pages",
-      "Using Help Option",
-      "Viewing Info Documentation",
-      "Viewing Man Pages",
-      "Where Are These Commands Located",
       "apropos",
       "Changing Values",
       "Environment Variables",
@@ -8762,8 +8594,7 @@
       "chmod",
       "chown",
       "sudo",
-      "Absolute Paths",
-      "Absolute vs. Relative pathnames",
+      "Paths",
       "Changing Directories",
       "Current Directory",
       "Directories inside Linux file system",
@@ -8773,9 +8604,7 @@
       "Listing Files in Directory",
       "Listing Hidden Files",
       "Long Display Listing",
-      "Paths",
       "Recursive Listing",
-      "Relative Paths",
       "Sort a Listing",
       "The . . Chars",
       "The . Char",
@@ -8802,51 +8631,18 @@
       "Archiving",
       "Compression"
     ],
-    "05 Linux and Systems/Documentation/Exploring Info Documentation.md": [
-      "Info Documentation"
-    ],
     "05 Linux and Systems/Documentation/Find Any File or Directory.md": [
-      "Where Are These Commands Located"
+      "Man Pages"
     ],
     "05 Linux and Systems/Documentation/Finding Commands and Documentation.md": [
-      "Man Pages",
-      "Where Are These Commands Located"
+      "Man Pages"
     ],
     "05 Linux and Systems/Documentation/Info Documentation.md": [
-      "Man Pages",
-      "Viewing Info Documentation"
-    ],
-    "05 Linux and Systems/Documentation/Man Pages Sections Categorized.md": [
-      "Man Pages",
-      "Where Are These Commands Located"
+      "Man Pages"
     ],
     "05 Linux and Systems/Documentation/Man Pages.md": [
-      "Viewing Man Pages"
-    ],
-    "05 Linux and Systems/Documentation/Navigating Info Nodes.md": [
-      "Man Pages"
-    ],
-    "05 Linux and Systems/Documentation/Searching Man Pages.md": [
-      "Man Pages"
-    ],
-    "05 Linux and Systems/Documentation/Sections Within Man Pages.md": [
       "Man Pages",
-      "Searching Man Pages",
       "Double Pipe"
-    ],
-    "05 Linux and Systems/Documentation/Using Help Option.md": [
-      "Man Pages"
-    ],
-    "05 Linux and Systems/Documentation/Viewing Info Documentation.md": [
-      "Navigating Info Nodes",
-      "Exploring Info Documentation"
-    ],
-    "05 Linux and Systems/Documentation/Viewing Man Pages.md": [
-      "Man Pages",
-      "Sections Within Man Pages"
-    ],
-    "05 Linux and Systems/Documentation/Where Are These Commands Located.md": [
-      "Man Pages"
     ],
     "05 Linux and Systems/Documentation/apropos.md": [
       "Man Pages"
@@ -8943,12 +8739,6 @@
     "05 Linux and Systems/Linux File Permissions/sudo.md": [
       "chown"
     ],
-    "05 Linux and Systems/Navigating the Filesystem/Absolute Paths.md": [
-      "pwd"
-    ],
-    "05 Linux and Systems/Navigating the Filesystem/Absolute vs. Relative pathnames.md": [
-      "Relative Paths"
-    ],
     "05 Linux and Systems/Navigating the Filesystem/Changing Directories.md": [
       "Tilde Home Directory"
     ],
@@ -8979,11 +8769,7 @@
       "Hard Link Count"
     ],
     "05 Linux and Systems/Navigating the Filesystem/Paths.md": [
-      "Absolute Paths",
-      "Relative Paths"
-    ],
-    "05 Linux and Systems/Navigating the Filesystem/Relative Paths.md": [
-      "Absolute Paths",
+      "Paths",
       "pwd"
     ],
     "05 Linux and Systems/Navigating the Filesystem/Sort a Listing.md": [
@@ -9081,13 +8867,9 @@
       "link",
       "Development Tools"
     ],
-    "07 Tools and Workflow/Obsidian Vault Git Sync.md": [
-      "Obsidian Vault Hub - Syncthing to Unraid Publishing"
-    ],
     "07 Tools and Workflow/Obsidian Vault Hub - Syncthing to Unraid Publishing.md": [
-      "Obsidian Vault Git Sync",
+      "Obsidian Vault Hub - Syncthing to Unraid Publishing",
       "Building a Privacy-First Obsidian Publishing System",
-      "Syncthing",
       "01 - Services Dashboard"
     ],
     "07 Tools and Workflow/Tools and Workflow Index.md": [
@@ -9096,7 +8878,6 @@
       "Development Tools",
       "GrapheneOS Migration Guide - Complete Documentation",
       "Obsidian Productivity Mastery",
-      "Obsidian Vault Git Sync",
       "Obsidian Vault Hub - Syncthing to Unraid Publishing"
     ],
     "07 Tools and Workflow/Agents/DeepSeek Harness Setup.md": [
