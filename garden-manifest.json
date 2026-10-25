@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T21:23:25Z",
+  "generated_at": "2026-10-25T22:30:23Z",
   "tree": [
     {
       "path": "Index.md",
@@ -671,6 +671,10 @@
     },
     {
       "path": "01 Projects/Strata/Strata V100 tuning — 2026-10-18.md",
+      "type": "file"
+    },
+    {
+      "path": "01 Projects/Strata/Strata V100 update — 2026-10-25.md",
       "type": "file"
     },
     {
@@ -1983,6 +1987,10 @@
     },
     {
       "path": "_attachments/strata-v100-tuning-20261018",
+      "type": "dir"
+    },
+    {
+      "path": "_attachments/strata-v100-update-20261025",
       "type": "dir"
     },
     {
@@ -3978,6 +3986,22 @@
       "created": "2026-10-18",
       "machine": "bigrig",
       "title": "Strata V100 tuning — 2026-10-18"
+    },
+    "01 Projects/Strata/Strata V100 update — 2026-10-25.md": {
+      "type": "note",
+      "category": "Strata",
+      "tags": [
+        "strata",
+        "v100",
+        "benchmarks",
+        "vision",
+        "homelab"
+      ],
+      "created": "2026-10-25",
+      "updated": "2026-10-25",
+      "publish": true,
+      "machine": "bigrig",
+      "title": "Strata V100 update — 2026-10-25"
     },
     "01 Projects/Swarm Dashboard/Swarm Dashboard.md": {
       "type": "benchmark-log",
@@ -7855,6 +7879,7 @@
     "01 Projects/Strata/Strata Bench.md": [
       "Strata RTX 3060 Optimization Showcase",
       "Strata V100 Optimization Showcase",
+      "Strata V100 update — 2026-10-25",
       "Strata V100 tuning — 2026-10-18",
       "2026-10-12 Matched Qwen 27B vs Flash DeepSWE2",
       "2026-10-12 Matched Qwen vs Flash — Methods and artifacts",
@@ -7876,6 +7901,12 @@
       "Vault Map",
       "Strata V100 tuning — 2026-10-18",
       "Strata Bench"
+    ],
+    "01 Projects/Strata/Strata V100 update — 2026-10-25.md": [
+      "Strata V100 tuning — 2026-10-18",
+      "Strata V100 Optimization Showcase",
+      "Strata Bench",
+      "Incident 2026-10-25 — Unraid shares never mounted"
     ],
     "01 Projects/Swarm Dashboard/Swarm Dashboard.md": [
       "Agents & Tooling",
