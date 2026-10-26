@@ -19,6 +19,7 @@ Everything between the kernel and the agent windows.
 - [[Omarchy Trim Debloat & Idle Policy]] — 183-package baseline trimmed to a local-LLM dev box; service list; **screensaver off / stay-awake as a state file**; Arch update discipline (`yay`, never bare `pacman -S`).
 - [[Omarchy Plugins & Shell Widgets]] — 17 community plugins; the `aim.metrics` menubar widget; the `aim.llama-switch` center-bar fleet switcher; **Quickshell API gotchas** and `omarchy restart shell`.
 - [[Desktop Session Persistence]] — this box crashes abruptly; windows/tmux come back at 0 px deviation. `hyprctl eval` = Lua dispatch; the self-kill pitfall.
+- [[Clickable File Paths in the Terminal]]: Ctrl+click a file name an assistant printed and the file manager opens with it selected; notes open in Obsidian. A tmux mouse binding plus an `xdg-open` shim for Ghostty's own links; the pointer no longer hides on key press.
 - [[Clop for Linux]]: copy a screenshot and it is already small when you paste it. A Mac app rebuilt for Wayland, with the frosted corner cards, a drop zone and draggable file names; review and build log in [[Clop for Linux — rebuild and review 2026-10-26]].
 - [[Browser Debloat & Benchmark 2026-09-19]] — Chromium/Helium/Zen flags, managed policies, renderer caps, measured RSS (~2 GB each); verdict: keep Zen + Chromium, drop Helium.
 
