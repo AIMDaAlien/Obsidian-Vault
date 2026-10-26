@@ -13,7 +13,9 @@ sources:
     attachments: _attachments
 protected: [".github/", ".gitignore", "README.md", "garden-manifest.json", "curation.yml"]
 exclude_dirs: ["_inbox", "_private", ".obsidian", ".trash", ".stfolder", ".stversions"]
-exclude_files: [".stignore"]
+# Agent-to-agent handoffs and prompts stay in the source vaults; they are not for readers.
+exclude_files: [".stignore", "99 - Current Handoff.md", "14 - Opencode Handoff.md", "V5 Design Implementation Handoff.md",
+                "Plans 2026-09 - 007-docs-triage-single-handoff.md", "claude-cursor-collaboration-prompt.md"]
 exclude_ext: ["json", "jsonl", "log", "csv", "py", "sh", "patch", "txt", "exit-code"]
 image_ext: ["png", "svg", "jpg", "jpeg", "gif", "webp"]
 syncthing_api: http://127.0.0.1:8384
