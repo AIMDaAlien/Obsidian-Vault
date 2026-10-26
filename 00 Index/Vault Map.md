@@ -17,7 +17,7 @@ Top-level map of this vault. Two audiences: the local MASSIVE-RIG setup itself, 
 | Map | Covers |
 |---|---|
 | [[Rig & Hardware]] | the box itself, display, GPU lanes, fans, hardware advisories |
-| [[Omarchy & Desktop]] | OS trimming, shell plugins/bar, session persistence, browsers, Clop, clickable file paths |
+| [[Omarchy & Desktop]] | OS trimming, shell plugins/bar, session persistence, browsers, Bolero (Clop for Linux), clickable file paths |
 | [[Models & Serving]] | models on the rig + Unraid, serve flags, deployment changes |
 | [[Benchmarks]] | hub, methodology, suite, per-model and per-run results |
 | [[Agents & Tooling]] | Hermes, opencode, dsh, swarm dashboard, the RAFT router |

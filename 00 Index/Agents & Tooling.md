@@ -20,7 +20,7 @@ The agent layer: Hermes, opencode, dsh, the swarm view, and routing.
 - [[DeepSeek Harness Setup]] — dsh on `:3080`, OpenRouter + local routes, the required dummy credential, and the **EROFS sandbox misdiagnosis** (`DSH_PERMISSION_MODE=danger-full-access`).
 - [[Swarm Dashboard]] — one stdlib TUI for all live Hermes/opencode instances (aggregator + Catppuccin TUI, <40 MB RSS).
 - [[Clickable File Paths in the Terminal]]: agents are told to print full paths, and Ctrl+click on any path in their output shows the file in the file manager or opens the note in Obsidian.
-- [[Clop for Linux]]: `clop drag FILE` hands a file an agent produced to the user as a card they can drag into a browser or chat (terminals can't drag files); the global agent instructions tell agents to use it.
+- [[Bolero]] (Clop for Linux): `bolero drag FILE` hands a file an agent produced to the user as a card they can drag into a browser or chat (terminals can't drag files); the global agent instructions tell agents to use it.
 - [[RAFT Laya Router]] — Laya 421M System-1 decider in front of the model tiers: 40-task labels, T=0.5 calibration (ECE 0.216 → 0.111), act@conf≥0.6 policy, cost measurement.
 
 ## Relevance

@@ -137,7 +137,7 @@ hl.config({
 
 **The assistant instruction**, in the global `CLAUDE.md` / `AGENTS.md`:
 
-> File paths: write every file or folder you mention to the user as a full path starting with `/` or `~/` (e.g. `~/Work/clop-linux/README.md:12`). Those are Ctrl+clickable in every terminal window (with or without tmux); a click shows the file in the file manager and opens Markdown in Obsidian.
+> File paths: write every file or folder you mention to the user as a full path starting with `/` or `~/` (e.g. `~/Work/bolero/README.md:12`). Those are Ctrl+clickable in every terminal window (with or without tmux); a click shows the file in the file manager and opens Markdown in Obsidian.
 
 ## Lessons
 
@@ -175,6 +175,6 @@ hl.config({
 
 ## Related
 
-- [[Clop for Linux]] handles the other half of handing files over: `clop drag FILE` turns a file into a card you can drag into a browser or chat.
+- [[Bolero]] handles the other half of handing files over: `bolero drag FILE` turns a file into a card you can drag into a browser or chat.
 - [[Desktop Session Persistence]] explains why every assistant terminal runs inside tmux.
 - [[Omarchy & Desktop]] · [[Agents & Tooling]]
