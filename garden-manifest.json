@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T23:47:51Z",
+  "generated_at": "2026-10-26T01:23:01Z",
   "tree": [
     {
       "path": "Index.md",
@@ -5038,7 +5038,9 @@
       ],
       "created": "2026-06-27",
       "publish": true,
-      "last_incident": "2026-06-27",
+      "last_incident": "2026-10-24",
+      "incident_summary": "Unclean shutdown · Unraid came back with SSH, Syncthing and HTTPS down",
+      "previous_incident": "Oct 18 · storage layer crashed under bulk Syncthing load and took penthouse.blog down",
       "featured": 12,
       "summary": "A tour of every machine in my home lab and its job: storage server, DNS Pi, a backup computer that takes over if the main one fails, and an AI box.",
       "title": "Server Inventory",
