@@ -2,7 +2,9 @@
 tags: [homelab, server-inventory, unraid, hardware, monitoring, reliability, hardware-constraints, raspberry-pi, truenas]
 created: 2026-06-27
 publish: true
-last_incident: 2026-06-27
+last_incident: 2026-10-24
+incident_summary: "Unclean shutdown · Unraid came back with SSH, Syncthing and HTTPS down"
+previous_incident: "Oct 18 · storage layer crashed under bulk Syncthing load and took penthouse.blog down"
 featured: 12
 summary: "A tour of every machine in my home lab and its job: storage server, DNS Pi, a backup computer that takes over if the main one fails, and an AI box."
 ---
@@ -27,11 +29,12 @@ last updated: 2026-10-05
 - **HBA**: LSI SAS2308 (IT mode, FW 20.00.06.00)
 - **Cache**: Samsung 512GB NVMe (ZFS, `cache`)
 - **Downloads pool**: WD Black SN850X 1TB NVMe (ZFS, `downloads`)
-- **Array drives**:
-  - parity: 14.6TB WUH721816AL5204
+- **Array drives** (21.8TB raw, JBOD, no parity):
   - disk1: 3.6TB HGST HUS724040ALA640
   - disk2: 1.8TB ST2000NM0045
   - disk3: 1.8TB ST2000NM0045
+  - disk4: 14.6TB WUH721816AL5204
+  - 2026-10-25: corrected; the 14.6TB drive is data disk4, not parity. The array has no parity drive.
 - **IP**: <lan-ip-5>
 - **Root pass**: stored offline (redacted from published copy)
 - **Docker image**: 35GB on `/mnt/user/system/docker/docker.img`
@@ -39,6 +42,10 @@ last updated: 2026-10-05
   - 2.4GHz wireless keyboard freezes B660M UEFI -- use wired keyboard
   - SAS drives need staggered spin-up in LSI BIOS (not configured yet)
   - Old 128GB cache NVMe unrecoverable (SanDisk USB bridge chip reports 0 bytes)
+- **Incident log**:
+  - 2026-06-27: hardware upgrade.
+  - 2026-10-18: `shfs` (the user-share layer) segfaulted under bulk Syncthing traffic through `/mnt/user`; penthouse.blog and 7 containers went down until the array was cycled.
+  - 2026-10-24: unclean shutdown; after the reboot SSH, Syncthing and HTTPS stayed down until fixed by hand, and the vault stopped publishing until 2026-10-25.
 
 ## Raspberry Pi 5
 
