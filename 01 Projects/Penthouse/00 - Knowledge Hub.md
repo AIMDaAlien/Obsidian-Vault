@@ -42,6 +42,8 @@ This vault is the "what we built and why" map for people joining the project lat
 19. [[19 - v4 Clean-Room Rebuild]] - SvelteKit, Drizzle, and decomposed chat
 20. [[20 - V5 Redesign]] - 5 themes, tokens, profile cards, chat clustering
 25. [[25 - Storage Hygiene and v4.5 Candidate]] - retention, purge jobs, quota, GIF re-encode (PR #37, 2026-10)
+26. [[26 - Docs Cleanup 2026-10]] - stale handoffs and prompts out of the repo, living docs folded (2026-10-12)
+27. [[27 - v4.5.0-alpha.1 Deployed and 5.0 Phase 1]] - 4.5.0-alpha.1 live and tagged, release/5.0 holds phase 1 + release ticket, search-visibility decision (2026-10-29)
 
 ### Archives (private, not published)
 

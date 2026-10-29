@@ -37,3 +37,4 @@ The app's since been through a full backend and frontend rebuild, but the operat
 - **2026-02-21** — Mobile update system added: automated APK publish with changelog manifest, OTA workflow, and in-app update prompts.
 - **2026-03-03** — Phase 1 mobile MVP stabilization documented: invite-only signup, startup and noise controls, smart resume, route scope pruning, and mobile test automation.
 - **2026-08-04** — Restored the healthy `cache` and `downloads` ZFS pool assignments on Unraid, restarted Docker and Penthouse, and verified the public web/API deployment. Disk4 XFS repair remains scheduled maintenance.
+- [[13 - Deploy 2026-10-29 and the Node Image Scare]] - 4.5.0-alpha.1 deploy, the unhealthy-probe lesson, host-only Caddy routes, what changed on the host
